@@ -30,11 +30,15 @@ set HTTPS_PROXY=http://10.120.136.40:8080
 set HTTP_PROXY=http://10.120.136.40:8080
 set NO_PROXY=localhost,127.0.0.1,::1
 
+## Configuración de proxy para Git
+
+
 quitar proxies
 set HTTPS_PROXY=
 set HTTP_PROXY=
 set http_proxy=
 set https_proxy=
+git config --global --unset http.proxy
 
 ## WSL set proxy
 export http_proxy=http://10.120.136.40:8080/
