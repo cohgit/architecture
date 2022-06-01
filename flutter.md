@@ -31,6 +31,7 @@ set HTTP_PROXY=http://10.120.136.40:8080
 set NO_PROXY=localhost,127.0.0.1,::1
 
 ## Configuración de proxy para Git
+git config --global http.proxy "http://10.120.136.40:8080"
 
 
 quitar proxies

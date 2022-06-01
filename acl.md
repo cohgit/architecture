@@ -46,3 +46,9 @@ Objetivos:
 ->ACL lugar
 ->Reserva de capacity
 ->Estrategia de apicast
+
+1.- Plataforma Unificada, Revisar Diagrama de requerimiento de integración de chat -> Workplace y Nice
+http://confluence.novalte.corp:8090/display/AW/P-CCA-20085+Plataforma+Unificada
+
+Hay RFP y Las historias
+Canvan de especialistas sales de la BTO Pasan a los Especialistas 
