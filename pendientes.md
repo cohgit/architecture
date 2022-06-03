@@ -81,3 +81,18 @@ CO Modelo de Capacidades (TMForum videos y entrenamientos).
 Planned Activities PA (this week):
 CO JWT flow con SpringBoot en GCP.
 CO Presentación IoT.
+
+
+## 02/06 Informe (26/05)
+Key Achievements KA (last week):
+CO Revisión de Componentes Técnicos para Wompay.
+CO Reunión con AWS Sync.
+CO Diseño de Componentes Técnicos de Integración Workplace / CXOne.
+CO POC Atlas MongoDB del AppService (Node.js).
+CO Requerimientos JIRA (Iteraciones).
+
+Planned Activities PA (this week):
+CO JWT flow con SpringBoot en GCP.
+CO Comunicación entre VPC de AWS / solicitar pedir un speaker de IoT
+CO validar con seguridad con Victor
+CO Integración CXOne son 3 canales y levantar con Glaucio el desarrollo de los mismos. 
