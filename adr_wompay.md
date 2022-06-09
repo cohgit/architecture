@@ -32,7 +32,27 @@ This are de desitions taken with domain team for technical definitions.
 1.  Recurrencia de montos fijos con kushki
     1. requiere enrolamiento por cada subscription, no se requiere esto.
 
+# Standars
+1. Los procesos JOB son kubernetes agendados por cron lanzados por kubernet de una sola ejecución. Se debe definir volumentría y mecanimos de reprocesamiento, por tanto es un layer de negocio / transaccional.
+
+
 # Assumptions
 1. No está en alcance la conciliación
 1. No está en alcance la recurrencia en Whale ZSmart salvo el metodo de pago tipo numero "16" denominado WomPay (configuración solamente).
 1. No está en alcance la recurrencia en kushki.
+
+# Wompay HLD
+## Architecture Reference
+1. Cloud see [Cloud Architecture](http://confluence.novalte.corp:8090/display/AW/Cloud+Reference+Architecture)
+1. Microservice Architecture 
+http://confluence.novalte.corp:8090/display/AW/Cloud+Reference+Architecture
+1. API definitions 
+http://confluence.novalte.corp:8090/display/AW/API+Definitions
+
+## Regulations
+1. Traceability - see [Logging](http://confluence.novalte.corp:8090/display/AW/Logging+Regulation)
+
+
+## Scope
+1. Procesos de Conciliación esta en el alcance de [P-COM-21042 - Devolución de Dinero](http://confluence.novalte.corp:8090/pages/viewpage.action?pageId=208354063)
+1. 
