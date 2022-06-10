@@ -82,8 +82,7 @@ Planned Activities PA (this week):
 CO JWT flow con SpringBoot en GCP.
 CO Presentación IoT.
 
-
-## 02/06 Informe (26/05)
+## 02/06 Informe
 Key Achievements KA (last week):
 CO Revisión de Componentes Técnicos para Wompay.
 CO Reunión con AWS Sync.
@@ -97,17 +96,30 @@ CO Comunicación entre VPC de AWS / solicitar pedir un speaker de IoT
 CO validar con seguridad con Victor
 CO Integración CXOne son 3 canales y levantar con Glaucio el desarrollo de los mismos. 
 
+## 09/06 Informe 
+Key Achievements KA (last week):
+CO Plataforma Unificada - Apoyo Diseño de API / Workplace2CXone and Click2Call
+CO AWS Comunicación VPC - gestión de accesos, acceso a postman de devops, costos de un Transit Gateway entre 2 VPC's 75USD. Ya tengo acceso a API Gateway y MiWom.
+CO COP Arquitectura - rol colaborador y presentación de AWS IoT Capabilities
+
+Planned Activities PA (this week):
+CO identificar plan de objetivos con las tareas de JIRA.
+CO cerrar HLD de Wompay.
+CO Coordinar reuniones de As Is de DevOps.
+CO Levantamiento de componentes AWS As IS.
+
 ## Reunión de Objetivos.
 
 1. Aumentar el tiempo de IoT free.
 	1. EKS optimización. 
 	1. Transit definir un mecanismo de comunicación. 
 	1. Tarea táctica VPC MiWom (integrar MiWom con TMF) con VPC ECommerce.
+	1. Faregate for EKS revisar la subutilización de recursos.
 1. Pipeline. 
-	1. OCP desarrollo es mas economico / Pedro Sala (Azure DevOps) equipo hace commit.
+	1. OCP desarrollo es mas ecónomico / Pedro Sala (Azure DevOps) equipo hace commit.
 	1. AWS incertidumbre el desarrollo cuesta caleta, 
 		Hacer un POC de un microservicio deploy diseñando el flujo de despliegue - Carlos Vasquez (gitflow)
-	1. Quality Gates
+	1. Quality Gates.
 1. Iniciativas de Pagos.
 
 Objetivos de la Semana.
