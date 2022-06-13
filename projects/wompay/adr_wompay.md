@@ -55,4 +55,4 @@ http://confluence.novalte.corp:8090/display/AW/API+Definitions
 
 ## Scope
 1. Procesos de Conciliación esta en el alcance de [P-COM-21042 - Devolución de Dinero](http://confluence.novalte.corp:8090/pages/viewpage.action?pageId=208354063)
-1. 
+1. La recurrencia quedará en el contexto de wompay y no de backend ZSmart o kushki
