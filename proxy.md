@@ -15,6 +15,10 @@ Cuando tengas que aceptar las licencias de flutter procura configurar las variab
 set HTTPS_PROXY=http://10.120.136.40:8080
 set HTTP_PROXY=http://10.120.136.40:8080
 set NO_PROXY=localhost,127.0.0.1,::1
+# All CMD
+setx HTTP_PROXY http://10.120.136.40:8080
+setx HTTPS_PROXY http://10.120.136.40:8080
+setx NO_PROXY=localhost,127.0.0.1,::1
 
 ## Configuración de proxy para Git
 git config --global http.proxy "http://10.120.136.40:8080"

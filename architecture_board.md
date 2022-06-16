@@ -128,3 +128,22 @@ Objetivos de la Semana.
 1. HLD del Wompay.
 1. Reunion DevOps As IS Luis Anabalon (EKS / Pipeline) ... punteo de la reunión.
 1. Levantamiento As IS (Carlos vasquez).
+
+
+## Apuntes 16/06/2022
+Criterios de Aceptación
+
+Operación : diferentes cluster para actualizaciones 
+Performance :
+	Comunicación: entre cluster.
+	Entregable : Bulding Block post POC.
+Desarrollo : velocidad de despliegue.
+Costos : optimización decuardo al consumo.
+Seguridad 
+
+
+StakeHolder
+Luis Anabalon (DevOps y Cloud).
+Miguel Ruiz (Middleware y BDD).
+César Ávalos (Enterprise).
+Herbierto (Customer).
