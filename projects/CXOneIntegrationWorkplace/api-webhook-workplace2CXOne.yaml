@@ -1,0 +1,66 @@
+openapi: 3.0.0
+
+info:
+  title: API Webhook Workplace2CXOne 
+  description: |
+    ## Api Webhook Integración CXOne con Workplace 
+    Integración de mensajes entre workplace y CXOne donde workplace cumple el rol de canal digital en CXOne donde cada conversación representará un caso de un customer en la herramienta de CXOne. 
+    ##### Documentación del proyecto ([P-CCA-20085+Plataforma+Unificada](http://confluence.novalte.corp:8090/display/AW/P-CCA-20085+Plataforma+Unificada))
+  version: 0.0.1
+paths:
+  /:
+    get:
+      summary: Operación destinada a informar el estado del Webhook. 
+      description: Punto de control del esta API (existo como servicio) usado por Workplace.
+      responses:
+        '200':
+          description: retorna mensaje "Server Webhook Bell-DFO UP!"
+        '500':
+          description: retorna mensaje "Catch of send"
+  /webhook:
+    get:
+      summary: Validación de token configurado en workplace.
+      description: Usado por Workplace compara Token puesto en Workplace configuración del servicio.
+      responses:
+        '200':
+          description: retorna el hub.challenge recibido como respuesta
+        '403':
+          description: retorna el siguiente 'Validación fallida. Asegúrese de que los tokens de validación coincidan.'
+    post:
+      summary: Envio del mensaje de un customer a CXOne
+      description: esta opración recibe todos los eventos marcados en workplace que se enviarán a Webhook, sin embargo API solo enviará los tipos "message_sends" a CXOne. 
+      responses:
+        '200':
+          description: retorna estatus 200 al enviar el mensaje a CXOne sin problema.
+        '500':
+          description: devuelve error en caso de algún inconveniente en el envio del mensaje.
+  /AddAction:
+    get:
+      summary: CXOne invoca esta operación con respuesta automatica sin implementar
+      description: operación con respuesta automatica sin implementar 
+      responses:
+        '200':
+          description: retorna status 200 con redirect a query.backUrl
+        '500':
+          description: sdevuelve error en caso de problema en el Webhook.
+  /RemoveAction:
+    get:
+      summary: CXOne invoca esta operación con respuesta automatica sin implementar
+      description: operación con respuesta automatica sin implementar 
+      responses:
+        '200':
+          description: retorna status 200 con redirect a query.backUrl
+        '500':
+          description: sdevuelve error en caso de problema en el Webhook.
+  /IntegrationBox/1.0/token:
+    post:
+      summary: operacion requerida para Webhooken CXOne
+      responses:
+        '200':
+          description: retorno de status 200
+  /IntegrationBox/1.0/posts/:postId([0-9-a-z]{36})/messages:
+    post:
+      summary: operacion requerida para Webhooken CXOne
+      responses:
+        '200':
+          description: retorno de status 200
