@@ -1,0 +1,68 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ELBStament",
+        "Action": "elasticloadbalancing:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "ELBServiceLinkStament",
+        "Effect": "Allow",
+        "Action": "iam:CreateServiceLinkedRole",
+        "Resource": "*",
+        "Condition": {
+            "StringEquals": {
+                "iam:AWSServiceName": "elasticloadbalancing.amazonaws.com"
+            }
+        }
+      },
+      {
+        "Sid": "VPCStament",
+        "Action": [
+            "ec2:DescribeAccountAttributes",
+            "ec2:DescribeAddresses",
+            "ec2:DescribeInternetGateways",
+            "ec2:DescribeSecurityGroups",
+            "ec2:DescribeSubnets",
+            "ec2:DescribeVpcs",
+            "ec2:DescribeVpcClassicLink",
+            "ec2:DescribeInstances",
+            "ec2:DescribeNetworkInterfaces",
+            "ec2:DescribeClassicLinkInstances",
+            "ec2:DescribeRouteTables",
+            "ec2:DescribeCoipPools",
+            "ec2:GetCoipPoolUsage",
+            "ec2:DescribeVpcPeeringConnections",
+            "cognito-idp:DescribeUserPoolClient",
+            "ec2:ModifyVpcEndpointServicePermissions",
+            "ec2:ModifyVpcEndpointServiceConfiguration",
+            "ec2:CreateVpcEndpointConnectionNotification",
+            "ec2:AcceptVpcEndpointConnections",
+            "ec2:DeleteVpcEndpoints",
+            "ec2:DescribeTags",
+            "ec2:CreateTags",
+            "ec2:DescribeVpcEndpointServices",
+            "ec2:DescribeVpcEndpointServiceConfigurations",
+            "ec2:DeleteVpcEndpointServiceConfigurations",
+            "ec2:ModifyVpcEndpointConnectionNotification",
+            "ec2:DescribeVpcEndpointConnectionNotifications",
+            "ec2:CreateVpcEndpointServiceConfiguration",
+            "ec2:DescribeVpcEndpointServicePermissions",
+            "ec2:DeleteVpcEndpointConnectionNotifications",
+            "ec2:ModifyVpcEndpointServicePayerResponsibility",
+            "ec2:CreateVpcEndpoint",
+            "ec2:StartVpcEndpointServicePrivateDnsVerification",
+            "ec2:DescribeVpcEndpoints",
+            "route53:AssociateVPCWithHostedZone",
+            "ec2:DescribeVpcEndpointConnections",
+            "ec2:RejectVpcEndpointConnections",
+            "ec2:DescribeClientVpnEndpoints",
+            "ec2:ModifyVpcEndpoint"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }
