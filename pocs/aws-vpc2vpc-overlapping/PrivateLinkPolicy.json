@@ -59,7 +59,8 @@
             "ec2:DescribeVpcEndpointConnections",
             "ec2:RejectVpcEndpointConnections",
             "ec2:DescribeClientVpnEndpoints",
-            "ec2:ModifyVpcEndpoint"
+            "ec2:ModifyVpcEndpoint",
+            "ec2:DescribeAvailabilityZones"
         ],
         "Effect": "Allow",
         "Resource": "*"

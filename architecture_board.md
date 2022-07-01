@@ -108,7 +108,44 @@ CO cerrar HLD de Wompay.
 CO Coordinar reuniones de As Is de DevOps.
 CO Levantamiento de componentes AWS As IS.
 
-## Reunión de Objetivos.
+## 16/06 Informe
+Key Achievements KA (last week):
+CO	Cierre de HLD Wompay Observaciones y Dudas con los componentes de carga de datos
+CO	AWS me entregó POC hecha por ellos de PrivateLink y se Presentó en CCoE Cloud la POC que se realizaría en Wom.
+CO	Se publica la comparación de Flutter vs React
+CO	Revisé código de integración CXOne/Workplace con el proveedor para la definición del componente WebHooks de Wom.
+CO	Nuevo Requerimiento de Trazabilidad de Migración de cuentas prepago a postpago (evaluación de riesgo con la orden de cambio de plan), se hicieron observaciones.
+CO	Integración Continua, recibe los código de templates de despliegues DevOps
+
+Planned Activities PA (this week):
+CO	Realizar POC de Integración de VPC solicitando accesos y/o Créditos en AWS.
+CO	Diseñar requerimiento de Trazabilidad de evaluaciones y ordenes.
+CO	Levantamiento As IS de Integración Continua DevOps
+
+## 23/06 Informe
+Key Achievements KA (last week):
+CO	Realizar POC de Integración de VPC, En proceso a la espera de la otorgación de permisos.
+CO  Apoyo en Swagger de INtegración de API Workplace y CXONe, explicación y entregar del swagger.
+CO  Entrenamiento de Learning path de AWS Architecting (Well-Architected y IAM Security).
+
+Planned Activities PA (this week):
+CO  revisar escenario de integración SSO con API Layer.
+CO	Diseñar requerimiento de Trazabilidad de evaluaciones y ordenes (*).
+CO	Levantamiento As IS de Integración Continua DevOps
+
+## 30/06 Informe
+Key Achievements KA (last week):
+CO Integración de VPC se otorgaron los permisos
+CO Definición de entorno de despliegue que integración CXOne y Workplace
+CO Entrenamiento AWS Architecting
+CO Difusión de Virtualización
+CO Revisión de alcances de Wompay con OneClick
+
+Planned Activities PA (this week):
+CO Integración VPC detallando los componentes y reunión con AWS (viernes)
+CO Revisar escenario de integración SSO con API Layer.
+CO Levantamiento As IS de Integración Continua DevOps
+ ## Reunión de Objetivos.
 
 1. Aumentar el tiempo de IoT free.
 	1. EKS optimización. 
