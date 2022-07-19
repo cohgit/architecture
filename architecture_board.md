@@ -108,6 +108,15 @@ CO cerrar HLD de Wompay.
 CO Coordinar reuniones de As Is de DevOps.
 CO Levantamiento de componentes AWS As IS.
 
+
+Objetivos de la Semana.
+1. Definir comunicación VPC.
+1. Cop Arquiutectura.
+1. HLD del Wompay.
+1. Reunion DevOps As IS Luis Anabalon (EKS / Pipeline) ... punteo de la reunión.
+1. Levantamiento As IS (Carlos vasquez).
+
+
 ## 16/06 Informe
 Key Achievements KA (last week):
 CO	Cierre de HLD Wompay Observaciones y Dudas con los componentes de carga de datos
@@ -122,52 +131,6 @@ CO	Realizar POC de Integración de VPC solicitando accesos y/o Créditos en AWS.
 CO	Diseñar requerimiento de Trazabilidad de evaluaciones y ordenes.
 CO	Levantamiento As IS de Integración Continua DevOps
 
-## 23/06 Informe
-Key Achievements KA (last week):
-CO	Realizar POC de Integración de VPC, En proceso a la espera de la otorgación de permisos.
-CO  Apoyo en Swagger de INtegración de API Workplace y CXONe, explicación y entregar del swagger.
-CO  Entrenamiento de Learning path de AWS Architecting (Well-Architected y IAM Security).
-
-Planned Activities PA (this week):
-CO  revisar escenario de integración SSO con API Layer.
-CO	Diseñar requerimiento de Trazabilidad de evaluaciones y ordenes (*).
-CO	Levantamiento As IS de Integración Continua DevOps
-
-## 30/06 Informe
-Key Achievements KA (last week):
-CO Integración de VPC se otorgaron los permisos
-CO Definición de entorno de despliegue que integración CXOne y Workplace
-CO Entrenamiento AWS Architecting
-CO Difusión de Virtualización
-CO Revisión de alcances de Wompay con OneClick
-
-Planned Activities PA (this week):
-CO Integración VPC detallando los componentes y reunión con AWS (viernes)
-CO Revisar escenario de integración SSO con API Layer.
-CO Levantamiento As IS de Integración Continua DevOps
- ## Reunión de Objetivos.
-
-1. Aumentar el tiempo de IoT free.
-	1. EKS optimización. 
-	1. Transit definir un mecanismo de comunicación. 
-	1. Tarea táctica VPC MiWom (integrar MiWom con TMF) con VPC ECommerce.
-	1. Faregate for EKS revisar la subutilización de recursos.
-1. Pipeline. 
-	1. OCP desarrollo es mas ecónomico / Pedro Sala (Azure DevOps) equipo hace commit.
-	1. AWS incertidumbre el desarrollo cuesta caleta, 
-		Hacer un POC de un microservicio deploy diseñando el flujo de despliegue - Carlos Vasquez (gitflow)
-	1. Quality Gates.
-1. Iniciativas de Pagos.
-
-Objetivos de la Semana.
-1. Definir comunicación VPC.
-1. Cop Arquiutectura.
-1. HLD del Wompay.
-1. Reunion DevOps As IS Luis Anabalon (EKS / Pipeline) ... punteo de la reunión.
-1. Levantamiento As IS (Carlos vasquez).
-
-
-## Apuntes 16/06/2022
 Criterios de Aceptación
 
 Operación : diferentes cluster para actualizaciones 
@@ -184,3 +147,85 @@ Luis Anabalon (DevOps y Cloud).
 Miguel Ruiz (Middleware y BDD).
 César Ávalos (Enterprise).
 Herbierto (Customer).
+
+
+## 23/06 Informe
+Key Achievements KA (last week):
+CO	Realizar POC de Integración de VPC, En proceso a la espera de la otorgación de permisos.
+CO  Apoyo en Swagger de INtegración de API Workplace y CXONe, explicación y entregar del swagger.
+CO  Entrenamiento de Learning path de AWS Architecting (Well-Architected y IAM Security).
+
+Planned Activities PA (this week):
+CO  revisar escenario de integración SSO con API Layer.
+CO	Diseñar requerimiento de Trazabilidad de evaluaciones y ordenes (*).
+CO	Levantamiento As IS de Integración Continua DevOps.
+
+ ## Reunión de Objetivos.
+
+1. Aumentar el tiempo de IoT free.
+	1. EKS optimización. 
+	1. Transit definir un mecanismo de comunicación. 
+	1. Tarea táctica VPC MiWom (integrar MiWom con TMF) con VPC ECommerce.
+	1. Faregate for EKS revisar la subutilización de recursos.
+1. Pipeline. 
+	1. OCP desarrollo es mas ecónomico / Pedro Sala (Azure DevOps) equipo hace commit.
+	1. AWS incertidumbre el desarrollo cuesta caleta, 
+		Hacer un POC de un microservicio deploy diseñando el flujo de despliegue - Carlos Vasquez (gitflow)
+	1. Quality Gates.
+1. Iniciativas de Pagos.
+
+
+## 30/06 Informe
+Key Achievements KA (last week):
+CO Integración de VPC se otorgaron los permisos
+CO Definición de entorno de despliegue que integración CXOne y Workplace
+CO Entrenamiento AWS Architecting
+CO Difusión de Virtualización
+CO Revisión de alcances de Wompay con OneClick
+
+Planned Activities PA (this week):
+CO Integración VPC detallando los componentes y reunión con AWS (viernes)
+CO Revisar escenario de integración SSO con API Layer.
+CO Levantamiento As IS de Integración Continua DevOps
+
+## 7/7 Informe
+Key Achievements KA (last week):
+CO Revisando Pruebas en POC personal AWS entre VPC's.
+CO Entrega de Diagrama de Aruqitectura CXOne y Workplace
+CO Entrenamiento AWS 
+CO Obtención de CI/CD con gitlab diseños.
+CO Revisión de Seguridad Vulnerabilidaddes identificadas.
+
+Planned Activities PA (this week):
+CO Integración VPC detallando los componentes.
+CO Presentación de CI/CD de gitlab.
+CO Revisar escenario de integración SSO con API Layer.
+CO Levantamiento As IS de Integración Continua DevOps.
+CO Liderazgo de COP 
+
+## 11/7 Objetivos de la semana
+
+-> Levantamiento de CI/CD.
+-> Azure DevOps (Pedro Salas) y en Gitlab (Carlos Vasquez).
+-> Liderasgo CoP.
+
+
+## 14/7 Informe
+Key Achievements KA (last week):
+CO Revisión y Observaciones de Wompay HLD.
+CO Conexión Private Link
+CO Capacitación de Virtualización.
+CO Entrenamiento AWS.
+CO Reunión de DevSecOps.
+
+Planned Activities PA (this week):
+CO Conexión Private Link
+CO Entrenamiento AWS.
+CO DevOps CI/CD
+
+Sin enviar
+CO Integración VPC detallando los componentes.
+CO Presentación de CI/CD de gitlab.
+CO Revisar escenario de integración SSO con API Layer.
+CO Levantamiento As IS de Integración Continua DevOps.
+CO Liderazgo de COP

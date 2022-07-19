@@ -54,13 +54,13 @@ paths:
           description: sdevuelve error en caso de problema en el Webhook.
   /IntegrationBox/1.0/token:
     post:
-      summary: operacion requerida para Webhooken CXOne
+      summary: operacion requerida para Webhook en CXOne
       responses:
         '200':
           description: retorno de status 200
   /IntegrationBox/1.0/posts/:postId([0-9-a-z]{36})/messages:
     post:
-      summary: operacion requerida para Webhooken CXOne
+      summary: operacion requerida para Webhook en CXOne
       responses:
         '200':
           description: retorno de status 200
