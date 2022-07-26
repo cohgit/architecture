@@ -229,3 +229,19 @@ CO Presentación de CI/CD de gitlab.
 CO Revisar escenario de integración SSO con API Layer.
 CO Levantamiento As IS de Integración Continua DevOps.
 CO Liderazgo de COP
+
+## 21/7 Informe
+Key Achievements KA (last week):
+CO Conexión Private Link OK entre VPC's
+CO Entrenamiento AWS.
+
+Planned Activities PA (this week):
+CO Conexión Private Link entre EKS con proyecto plataforma unificada
+CO DevOps CI/CD
+
+Sin enviar
+CO Integración VPC detallando los componentes.
+CO Presentación de CI/CD de gitlab.
+CO Revisar escenario de integración SSO con API Layer.
+CO Levantamiento As IS de Integración Continua DevOps.
+CO Liderazgo de COP
