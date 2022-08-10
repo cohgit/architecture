@@ -245,3 +245,55 @@ CO Presentación de CI/CD de gitlab.
 CO Revisar escenario de integración SSO con API Layer.
 CO Levantamiento As IS de Integración Continua DevOps.
 CO Liderazgo de COP
+
+## 28/7 Informe
+Key Achievements KA (last week):
+CO Conexión Private Link entre EKS ECommerce / Miwom
+CO Entrenamiento AWS / CICD Policy SSO Admin con AWS
+CO Capacitación de presentaciones efectivas.
+CO Documentación en confluence de PrivateLink entre EC2
+
+Planned Activities PA (this week):
+CO Revisar escenario de integración SSO con API Layer.
+CO DevOps CI/CD
+
+Sin enviar
+CO Presentación de CI/CD de gitlab.
+CO Levantamiento As IS de Integración Continua DevOps.
+CO Liderazgo de COP
+
+
+
+CO Header Enrichment : Tabla Ruteo con segmentos de IP's - Generar Token con la información de contexto
+
+
+
+
+Consulta de Comunicación de MongDB Atlas vice en AWS
+->VPC Peering (con definiciones de segmentos de red)
+->VPC PrivateLink (en caso de overlapping)
+
+
+Nada privado pasa por lo público
+Conexión encriptada o no
+Private Link para comunicación encriptada
+
+VCP peering menor latencia que PrivateLink (misma región)
+Comunicación de regiones en la VPC de servicios atlas.
+
+1.- Cluster k8s pone node en dos zonas de disponibilidad
+2.- Node Group en dos zonas de disponibilidad diferentes.
+3.- al crear el cluster puedes indicar que cree en ambos nodegrup
+4.- al crear un ingress puedes que apunte a zonas
+5.- Node autoscaling para crear los nodos en la otra zona
+6.- app 2 replicas con anti-afinidad (buena práctica) alta disponibilidad A/A
+
+
+Revisar el node autoscaling
+Revisar el k8s cluster usando al menos az
+
+
+
+
+
+roberto.rodriguez@wom.cl

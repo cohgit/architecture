@@ -44,3 +44,10 @@ Console login link : https://810163013292.signin.aws.amazon.com/console
 
 
 SafePlan CloudFront 
+
+
+
+arn:aws:ec2:us-east-1:907719427697:security-group/sg-0e3f1618d6ac7b38c
+
+
+El dispositivo se bloqueó. Comuníquese con su proveedor de servicios de Internet para obtener el código de bloqueo de SIM. Ingrese el código de bloqueo de SIM correcto para desbloquear el dispositivo Si no le quedan intentos de desbloqueo, el dispositivo se bloqueará permanentemente
