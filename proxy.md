@@ -41,6 +41,16 @@ set NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.59.0/24,192.168.49.0/24,19
 ## ssh proxy
 -o "ProxyCommand=nc --proxy 10.120.136.40:8080 %h %p"
 
+## WSL - Ubuntu APT
+en el archivo /etc/apt/apt.conf.d/proxy.conf
+Acquire::http::Proxy "http://10.120.136.40:8080/";
+Acquire::https::Proxy "http://10.120.136.40:8080/";
+
+export HTTP_PROXY=10.120.136.40:8080
+export HTTPS_PROXY=10.120.136.40:8080
+export NO_PROXY=localhost,127.0.0.1,::1
+
+
 
 ## Quitar proxies
 set HTTPS_PROXY=
@@ -51,4 +61,3 @@ set https_proxy=
 set no_proxy=
 git config --global --unset http.proxy
 npm config delete proxy
-

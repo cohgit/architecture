@@ -1,0 +1,1 @@
+https://sso-amp.ose.wom.cl:8443/auth/realms/3scale/protocol/openid-connect/token

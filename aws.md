@@ -51,3 +51,44 @@ arn:aws:ec2:us-east-1:907719427697:security-group/sg-0e3f1618d6ac7b38c
 
 
 El dispositivo se bloqueó. Comuníquese con su proveedor de servicios de Internet para obtener el código de bloqueo de SIM. Ingrese el código de bloqueo de SIM correcto para desbloquear el dispositivo Si no le quedan intentos de desbloqueo, el dispositivo se bloqueará permanentemente
+
+
+
+
+aws-dig-miwom-prod               
+aws-dig-sso-dev                  
+WOM                              
+devopspoc01                      
+aws-dig-ecomm-dev1               
+aws-it-devops-dev                
+aws-dig-app-backend-dev          
+ariful@portonics.com             
+mahabub@portonics.com            
+aws-dig-sso-qa                   
+emam.uddin@portonics.com         
+Security                         
+Log archive                      
+aws-dig-sso-prd                  
+aws-dig-web-frontend-qa          
+aws-dig-miwom-qa                 
+aws-dig-miwom-uat                
+aws-dig-miwom-dev                
+aws-shared-serv-qa               
+aws-dig-web-backend-dev          
+Audit                            
+aws-it-perf-prd                  
+aws-shared-serv-prd              
+digital-web-backend-qa           
+aws-it-devops-prd                
+aws-it-metric-prd                
+devops-aws-poc-controltowertest  
+aws-dig+ecomm-frontend-dev       
+aws-it-metric-stg                
+aws-dig-ecomm-backend-dev        
+aws-dig-web-frontend-uat         
+aws-dig-web-frontend-dev         
+aws-dig-web-backend-uat          
+Networking                       
+aws-dig-ecomm-backend-prod       
+aws-dig-ecomm-dev01              
+aws-dig-miwom-dev1

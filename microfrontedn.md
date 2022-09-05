@@ -1,0 +1,55 @@
+CDN no corresponde a la aplicacción
+NPM como repositorio de componentes
+Layout personalizado
+
+
+Aplicacción contenedora
+-> MicroFroned
+--> Componente Visual (NPM)
+
+
+Micro Aplicación
+Parcel ->
+
+
+Libertad de construir sus propias cosas para disponibilizar cosas
+
+SyleComponent / Emtion 
+-> porque permiten la extensión
+
+Microfronend con multiples framework y librerías para los kit de componentes a menos que se haga con webcomponent shadown dom (multiples librerías), colocar esvelta soluciones de diseños
+
+Module Federation¿? vistas dentro como microfronend
+
+Nov 2021
+
+Un unico sabor
+
+Premisas :
+1.- Microfrontend hacer mas con menos tiempo, aumentar la reutilización, adaptar (mala práctica)
+2.- ¿Como afrontar los requerimientos ? input's ¿cuales?
+
+miwom, fibra stack similar
+
+UX homologando una librería para tener el mismo lookandfeel
+
+Aislar por Producto y derivar por más particular
+
+model federation webpack
+
+
+
+Cloud Firts
+No Vendor looking
+
+
+
+
+
+https://womchile.visualstudio.com/WOMAC
+Williams Nicolás Silva Ortega17:22
+https://master.novalte.corp:8443/console/project/customercareapplicationservice/overview
+http://10.120.1.130/sonar/
+http://10.120.1.130/sonar
+Usuario: womacread
+Password: wom.HmDb5w
