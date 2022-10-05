@@ -53,3 +53,40 @@ http://10.120.1.130/sonar/
 http://10.120.1.130/sonar
 Usuario: womacread
 Password: wom.HmDb5w
+
+
+
+
+Solicita 1 persona 4H tiempo por día. MAT / E-COMMERCE
+Solicita 1 persona 0,5H tiempo por día. MAT / E-COMMERCE
+
+Semana del 26 de Septiembre
+
+Nestor podría entrenarnos con el código para poder partir con el acelerador.
+
+
+
+
+
+
+aws s3 ls
+aws s3api put-object --bucket micro-frontend-lab  --key wom-static-css/
+aws s3 cp dist s3://micro-frontend-lab/wom-static-css --recursive
+aws s3 sync dist s3://micro-frontend-lab/wom-static-css
+
+
+Bucket Policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicStament",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::micro-frontend-lab/*"
+        }
+    ]
+}

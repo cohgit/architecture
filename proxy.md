@@ -25,7 +25,10 @@ git config --global http.proxy "http://10.120.136.40:8080"
 
 ## WSL set proxy
 export http_proxy=http://10.120.136.40:8080/
-export https_proxy=http://10.120.136.40:8080
+export https_proxy=http://10.120.136.40:8080/
+
+export http_proxy=http://10.220.253.45:8080/
+export https_proxy=http://10.220.253.45:8080/
 
 ## configurar NPM 
 npm config set proxy http://10.120.136.40:8080/
@@ -50,7 +53,8 @@ export HTTP_PROXY=10.120.136.40:8080
 export HTTPS_PROXY=10.120.136.40:8080
 export NO_PROXY=localhost,127.0.0.1,::1
 
-
+## Maven arguments
+-Dhttps.proxyHost=10.120.136.40 -Dhttps.proxyPort=8080 -Dhttps.nonProxyHosts=localhost,127.0.0.1,::1 -Dhttp.proxyHost=10.120.136.40  -Dhttp.proxyPort=8080  -Dhttp.nonProxyHosts=localhost,127.0.0.1,::1
 
 ## Quitar proxies
 set HTTPS_PROXY=
