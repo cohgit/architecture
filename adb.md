@@ -49,3 +49,12 @@ adb shell am start -t image/* -a android.intent.action.VIEW
 
 ## list users
 adb shell pm list users
+
+## Connect to device by scrcpy
+>adb devices
+List of devices attached
+5200ccfae28a442f        device
+
+https://github.com/Genymobile/scrcpy
+>scrcpy -s 5200ccfae28a442f
+
