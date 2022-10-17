@@ -1,5 +1,8 @@
 # Configuración de proxy en computador WOM
 
+## Configuración Curl con proxy
+curl --proxy "http://10.120.136.40:8080" -sL https://j.mp/glab-cli  | sudo sh
+
 ## Configuración de proxy WOM en comandos para flutter
 end CMD 
 set https_proxy=10.120.136.40:8080
