@@ -40,5 +40,8 @@ ssh -L 8082:tmf-number-portability-service.qa.cloud.wom.cl:8081 -N -T -i privot-
 ssh -L 8082:tmf-party-management-service.qa.cloud.wom.cl:8081 -N -T -i privot-stg.pem ec2-user@54.204.34.229
 ssh -L 8082:tmf-product-inventory-service.qa.cloud.wom.cl:8081 -N -T -i privot-stg.pem ec2-user@54.204.34.229
 
+
+ssh -L 8090:confluence.novalte.corp:8090 caogaldh@192.168.249.29
+
 Andres (equipo Rodrigo Porras e-commerce/miwom)
 chico (equipo de Williams MAT angular)

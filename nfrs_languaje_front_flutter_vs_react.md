@@ -93,7 +93,7 @@ Aplicable a B2C (business-to-consumer), B2B (business-to-business) y B2E (busine
 1. Deifnición del Journey
 1. Socios en el ecosistema.
 1. TCO altos.
-1. Curva de Aprensisaje.
+1. Curva de Aprendisaje.
 1. falta de foco B2E Experiencia del colaborador (colaboración e intercambio)
 1. hoja de ruta están solo enfocadas a la experiencia digital.
 1. capacidades muy básicas conectividad e integración.

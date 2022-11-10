@@ -297,3 +297,11 @@ Revisar el k8s cluster usando al menos az
 
 
 roberto.rodriguez@wom.cl
+
+
+
+## 28/7 Informe
+Key Achievements KA (last week):
+CO 
+
+Planned Activities PA (this week):

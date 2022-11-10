@@ -55,40 +55,31 @@ El dispositivo se bloqueó. Comuníquese con su proveedor de servicios de Intern
 
 
 
-aws-dig-miwom-prod               
-aws-dig-sso-dev                  
-WOM                              
-devopspoc01                      
-aws-dig-ecomm-dev1               
-aws-it-devops-dev                
-aws-dig-app-backend-dev          
-ariful@portonics.com             
-mahabub@portonics.com            
-aws-dig-sso-qa                   
-emam.uddin@portonics.com         
-Security                         
-Log archive                      
-aws-dig-sso-prd                  
-aws-dig-web-frontend-qa          
-aws-dig-miwom-qa                 
-aws-dig-miwom-uat                
-aws-dig-miwom-dev                
-aws-shared-serv-qa               
-aws-dig-web-backend-dev          
-Audit                            
-aws-it-perf-prd                  
-aws-shared-serv-prd              
-digital-web-backend-qa           
-aws-it-devops-prd                
-aws-it-metric-prd                
-devops-aws-poc-controltowertest  
-aws-dig+ecomm-frontend-dev       
-aws-it-metric-stg                
-aws-dig-ecomm-backend-dev        
-aws-dig-web-frontend-uat         
-aws-dig-web-frontend-dev         
-aws-dig-web-backend-uat          
-Networking                       
-aws-dig-ecomm-backend-prod       
-aws-dig-ecomm-dev01              
-aws-dig-miwom-dev1
+|                                                             ListAccounts                                                             |
+|  Audit                           |  974345284596 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/974345284596  |  ACTIVE |
+|  Log archive                     |  578469937489 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/578469937489  |  ACTIVE |
+|  Networking                      |  221194685378 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/221194685378  |  ACTIVE |
+|  Security                        |  051949125628 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/051949125628  |  ACTIVE |
+|  WOM                             |  822332566469 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/822332566469  |  ACTIVE |
+|  ariful@portonics.com            |  272067106023 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/272067106023  |  ACTIVE |
+|  aws-dig-ecomm-backend-dev       |  026649068530 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/026649068530  |  ACTIVE |
+|  aws-dig-ecomm-backend-prod      |  032688915288 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/032688915288  |  ACTIVE |
+|  aws-dig-ecomm-dev01             |  501755485532 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/501755485532  |  ACTIVE |
+|  aws-dig-ecomm-dev1              |  481489380520 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/481489380520  |  ACTIVE |
+|  aws-dig-miwom-dev               |  907719427697 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/907719427697  |  ACTIVE |
+|  aws-dig-miwom-dev1              |  583595031006 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/583595031006  |  ACTIVE |
+|  aws-dig-miwom-prod              |  010646284152 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/010646284152  |  ACTIVE |
+|  aws-dig-miwom-qa                |  808725754391 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/808725754391  |  ACTIVE |
+|  aws-dig-miwom-uat               |  806634263202 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/806634263202  |  ACTIVE |
+|  aws-dig-sso-dev                 |  154697167882 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/154697167882  |  ACTIVE |
+|  aws-dig-sso-prd                 |  118301666305 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/118301666305  |  ACTIVE |
+|  aws-dig-sso-qa                  |  602562053017 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/602562053017  |  ACTIVE |
+|  aws-it-devops-dev               |  223873161867 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/223873161867  |  ACTIVE |
+|  aws-it-devops-prd               |  453653794867 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/453653794867  |  ACTIVE |
+|  aws-it-perf-prd                 |  579307215662 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/579307215662  |  ACTIVE |
+|  aws-shared-serv-prd             |  978466489058 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/978466489058  |  ACTIVE |
+|  aws-shared-serv-qa              |  721453178664 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/721453178664  |  ACTIVE |
+|  devops-aws-poc-controltowertest |  649697918454 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/649697918454  |  ACTIVE |
+|  devopspoc01                     |  064499744217 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/064499744217  |  ACTIVE |
+|  emam.uddin@portonics.com        |  975484536998 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/975484536998  |  ACTIVE |
+|  mahabub@portonics.com           |  238355964919 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/238355964919  |  ACTIVE |

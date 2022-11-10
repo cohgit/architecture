@@ -67,4 +67,16 @@ set http_proxy=
 set https_proxy=
 set no_proxy=
 git config --global --unset http.proxy
+git config --global --unset https.proxy
 npm config delete proxy
+export http_proxy
+export https_proxy
+
+
+## route directly
+C:\WINDOWS\system32>route add 10.120.10.220 MASK 255.255.255.255 192.168.254.2
+ Correcto 
+
+## route segment 
+C:\WINDOWS\system32>route add 10.120.0.0 MASK 255.255.255.255 192.168.254.2
+ Correcto 
