@@ -45,7 +45,7 @@ with open("projects.md", "w") as outMD:
   for project in projects:
     if 'gitlab.com/womcorp' in project['http_url_to_repo']:
       logging.debug("Project[{}] ID[{}] Url[{}]".format(project['name'],project['id'],project['http_url_to_repo']))
-      outMD.write("# h3. {} {} [git|{}]\n".format(project['name_with_namespace'],project['name'],project['web_url']))
+      outMD.write("# h3. {} [git|{}]\n".format(project['name_with_namespace'],project['web_url']))
       pipelines = callGitlab("/api/v4/projects/{}/pipelines?scope=finished&status=success&order_by=updated_at".format(project['id']),False)
       if (len(pipelines)>0):
         pipeline = pipelines[0]
