@@ -41,7 +41,7 @@ with open("projects.md", "w") as outMD:
   outMD.write("Este informe tiene como finalidad obtener los stage de CI/CD ejecutados en cada proyecto\n")
   outMD.write("Ejecutado el {} \n\n".format(today.strftime("%y-%m-%d")))
 
-  projects = callGitlab("/api/v4/projects?search=wom-")
+  projects = callGitlab("/api/v4/projects?search_namespaces=true&search=womcorp&membership=true")
   for project in projects:
     if 'gitlab.com/womcorp' in project['http_url_to_repo']:
       logging.debug("Project[{}] ID[{}] Url[{}]".format(project['name'],project['id'],project['http_url_to_repo']))

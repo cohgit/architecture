@@ -34,3 +34,66 @@
     1. Responsive Design
     1. API / Headless Magento
     1. Role Matrix / Permissions
+
+
+
+1. Datos WomCX - Fase 1
+    1. ¿?Migración de la operación anterior a mongo o la estrategia de servicios conectado en 
+    1. Nuevos reportes deberán ir a GCP y los reportes deberán ir a equipo de BI
+    1. (*)Considerar el uso de una tabla de transacciones MAT en Oracle para la homologación Recargas en Linea. 
+
+1. Datos WomCX - Target
+    1. Onpremise de reporte se quedan igual hasta la migración a GCP y desactivación de MAT.
+
+Cluster EKS
+1. Cuantificar el aumento de costo de la operación de los componentes actuales.
+
+
+Srv* Servicios OnPremise y Datos
+1. Fase Transicicón
+    1. Reutilización de servicios SRV
+1. Fase Target
+    1. Migración de servicios a Cloud y considerando reportes en BI
+
+Tmf* Servicios Core
+1. Fase Transicicón
+    1. Reutilización de servicios TMF del cluster de ecommerce llamado "tmf-cluster"
+        acl\acl-georesearch-service
+        acl\configuration-service
+        alb-ingress-controller\ingress-controller
+        auth\configuration-service
+        auth\login-manager
+        backoffice\backoffice
+        backoffice\configuration-service
+        ecommerce-bff\ecommerce-graphql
+        instana-agent\instana-agent
+        mesh\controller
+        mesh\crds
+        mtls-nginx\mtls-nginx-wsdl
+        mtls-nginx\mtls-nginx
+        nginx\nginx
+        tmf\configuration-service
+        tmf\tmf-account-management-service
+        tmf\tmf-agreement-management-service
+        tmf\tmf-appointment-service
+        tmf\tmf-customer-bill-service
+        tmf\tmf-customer-management-service
+        tmf\tmf-federated-id-service
+        tmf\tmf-geographic-address-service
+        tmf\tmf-geographic-site-service
+        tmf\tmf-number-portability-service
+        tmf\tmf-party-management-service
+        tmf\tmf-payment-management-service
+        tmf\tmf-prepay-balance-service
+        tmf\tmf-product-catalog-service
+        tmf\tmf-product-inventory-service
+        tmf\tmf-product-offering-qualification-service
+        tmf\tmf-product-order-service
+        tmf\tmf-resource-inventory-service
+        tmf\tmf-resource-pool-management-service
+        tmf\tmf-usage-consumption-service
+        tmf\womcl-geographic-address-service
+    1. 
+1. Fase Target
+    1. Migración de servicios a Cloud y considerando reportes en BI
+
