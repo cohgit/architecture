@@ -35,7 +35,8 @@
     1. API / Headless Magento
     1. Role Matrix / Permissions
 
-
+1. Fast Search API
+    1. Elastic Caché, Algolia vs Lucene Atlas Mongo 
 
 1. Datos WomCX - Fase 1
     1. ¿?Migración de la operación anterior a mongo o la estrategia de servicios conectado en 
@@ -45,8 +46,17 @@
 1. Datos WomCX - Target
     1. Onpremise de reporte se quedan igual hasta la migración a GCP y desactivación de MAT.
 
-Cluster EKS
-1. Cuantificar el aumento de costo de la operación de los componentes actuales.
+Cloud AWS
+1. Cuenta de AWS Account para proyecto
+    1. Fase Trasición
+        1. Cuenta AWS E-Commerce
+    1. Dase Target
+        1. Cuenta AWS Shared / Digital
+1. Cluster EKS
+    1. Fase Transición
+        1. Cuantificar el aumento de costo de la operación de los componentes actuales.
+    1. Fase Target
+
 
 
 Srv* Servicios OnPremise y Datos
@@ -97,3 +107,20 @@ Tmf* Servicios Core
 1. Fase Target
     1. Migración de servicios a Cloud y considerando reportes en BI
 
+
+
+Reunion con Atlas / MongoDB
+* Lucene Search Text Activado por los datos de MongoDB
+* AWS north virginia east-us-1, no hay cambios de plataforma
+* Atlas garantiza la HA master con replica y failover (5sgs)
+* Comunicación Clouster ATLAS directa por VPC peering
+* Costos Bajan los transfer iosp
+* RBAC user LDAP para MongoDB
+* Active Directory Conector IAM 
+* Atlas Usuarios / Certificados / IAM
+* Atlas Respaldos son basados en Sapnshots 1 hora de uno y otro con la retención
+* Atlas continuos backup (offload) para puntos de recuperación.
+* Organización de WOM / Proyectos / Cluster
+* Definiciones del Modelado de Datos y Bases de Datos de servicios para revisar la creación nuevo cluster análisis.
+* tarde 1/2 medio día
+* Compartir Arquitectura con equipo Mongo 
