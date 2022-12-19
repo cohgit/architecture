@@ -90,3 +90,16 @@ Bucket Policy
         }
     ]
 }
+
+
+
+Etapas 1 Subida de proyecto
+
+Directo
+1.- Crear proyecto react
+2.- Hacer las task de build y subida a aws s3
+
+Versionado
+1.- Hacer un pack con versión 
+2.- subir pack en ruta ó versionamiento en s3
+3.- ver con cloudfront versionamiento.

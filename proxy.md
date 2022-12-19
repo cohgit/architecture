@@ -80,3 +80,16 @@ C:\WINDOWS\system32>route add 10.120.10.220 MASK 255.255.255.255 192.168.254.2
 ## route segment 
 C:\WINDOWS\system32>route add 10.120.0.0 MASK 255.255.255.255 192.168.254.2
  Correcto 
+
+## docker ~/.docker/config.json
+{
+ "proxies":
+ {
+   "default":
+   {
+     "httpProxy": "http://10.120.136.40:8080",
+     "httpsProxy": "http://10.120.136.40:8080",
+     "noProxy": "localhost"
+   }
+ }
+}

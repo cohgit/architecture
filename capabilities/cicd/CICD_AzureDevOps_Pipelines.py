@@ -36,7 +36,7 @@ builds = callAzureDevOps("/SERVICIOS-OPENSHIFT/_apis/build/builds?api-version=7.
 
 logging.info("writing file builds md")
 with open("builds.md", "w") as outMD:
-  outMD.write("h1. Informe CI/CD Stages de los proyectos WOM\n")
+  outMD.write("h1. Informe CI/CD Stages de los proyectos AzureDevOps de WOM\n")
   outMD.write("\n")
   outMD.write("Este informe tiene como finalidad obtener los stage de CI/CD ejecutados en cada proyecto\n")
   outMD.write("Ejecutado el {} \n\n".format(today.strftime("%y-%m-%d")))

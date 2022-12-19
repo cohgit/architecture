@@ -1,45 +1,245 @@
-h1. Informe CI/CD Stages de los proyectos WOM
+h1. Informe CI/CD Stages de los proyectos AzureDevOps de WOM
 
 Este informe tiene como finalidad obtener los stage de CI/CD ejecutados en cada proyecto
-Ejecutado el 22-11-15 
+Ejecutado el 22-12-01 
 
-# h3. (SRV40434-1-0) \release\CI-RELEASE-SRV40434-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40434-1-0]
-    Last build  [20221114.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220131&view=results] on SRV40434-1-0 as completed
+# h3. (SRV40398-1-0) \release\CI-RELEASE-SRV40398-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40398-1-0]
+    Last build  [20221201.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=221627&view=results] on SRV40398-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [d09e8167-1581-436f-91e1-17b01d4bcedb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/4] |
-    | Post-job: Checkout SRV40434-1-0@release to s  | [d0bd841e-2679-412f-8510-20d73aea176c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/19] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/18] |
-    | Finalize Job  | [4c687a4d-e3be-40ad-9070-5b578822b47b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/20] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/21] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/17] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/3] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/22] |
-    | Checkout SRV40434-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/5] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/9] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/10] |
+    | Finalize Job  | [3401742d-befa-4e81-8ebb-256e4ddd436c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/13] |
+    | Initialize job  | [917b4683-4f15-492d-b0ae-3144c1be02a6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/4] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/21] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/16] |
+    | Checkpoint  | 647be040-26a9-5dc8-e53e-816b456a1809 |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/15] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/3] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/14] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/22] |
+    | Post-job: Checkout SRV40398-1-0@release to s  | [bb0c4ea9-0077-436f-8fb7-d51119593e06|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/19] |
+    | Checkout SRV40398-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/17] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Checkpoint  | bd781bc4-959b-5e3b-a04f-e3e3a97ef949 |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220131/logs/12] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221627/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+# h3. (SRV40434-1-0) \release\CI-RELEASE-SRV40434-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40434-1-0]
+    Last build  [20221128.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=221252&view=results] on SRV40434-1-0 as completed
+    Records :
+    ||Record||link||
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/13] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/16] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/3] |
+    | Finalize Job  | [0c63c6c1-a63b-4d60-b9b4-a7188a47836b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/20] |
+    | Post-job: Checkout SRV40434-1-0@release to s  | [104a458c-2fec-47ce-91e1-abbb157b1248|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/19] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/22] |
+    | Checkpoint  | 8e4d3bf7-a239-5f7e-b43c-d3ba4ec47441 |
+    | Checkout SRV40434-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/5] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/12] |
+    | Initialize job  | [eb014d51-61ee-4c56-a552-6b790bbd0d01|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/4] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/21] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/11] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/9] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221252/logs/14] |
+# h3. (SRV40066-1-0) \release\CI-RELEASE-SRV40066-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40066-1-0]
+    Last build  [20221125.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=221139&view=results] on SRV40066-1-0 as completed
+    Records :
+    ||Record||link||
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/23] |
+    | Checkpoint  | e1508972-f7ce-5ac6-eb9b-6e54a872e159 |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/18] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/13] |
+    | Finalize Job  | [e88ddabf-6b0e-4d4a-bdb5-8adefe63daa0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/22] |
+    | Initialize job  | [4da3425f-98fd-468b-a549-8ecf52de60a8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/4] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/3] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/17] |
+    | Post-job: Checkout SRV40066-1-0@release to s  | [5897dcfe-6a4e-4650-845e-b542d6feef02|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/21] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/24] |
+    | Checkout SRV40066-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/19] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221139/logs/9] |
+# h3. (SRV40409-1-0) \release\CI-RELEASE-SRV40409-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40409-1-0]
+    Last build  [20221124.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=221034&view=results] on SRV40409-1-0 as completed
+    Records :
+    ||Record||link||
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/18] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/14] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/3] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/16] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/23] |
+    | Checkout SRV40409-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/5] |
+    | Checkpoint  | b513f9d9-995a-5bb1-33ea-d87eb12a4bc1 |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Finalize Job  | [a21d9efb-296f-4e98-9ccf-e1a1886dcbfc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/21] |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Initialize job  | [e80f6749-8f9e-43b7-b797-ef0fcaf257f3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/4] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/13] |
+    | Check Merge  | [be5fcf68-652d-50fb-1aa1-5561ca3ce815|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/9] |
+    | Post-job: Checkout SRV40409-1-0@release to s  | [1c5f5a3b-1ab3-408a-959e-103263b0bd70|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/15] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/11] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/10] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/221034/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+# h3. (SRV40176-2-0) \release\CI-RELEASE-SRV40176-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40176-2-0]
+    Last build  [20221117.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220420&view=results] on SRV40176-2-0 as completed
+    Records :
+    ||Record||link||
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/19] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/18] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/13] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/3] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/17] |
+    | Checkpoint  | 4d11bf5a-2793-5753-15c7-b38d9776c974 |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/15] |
+    | Finalize Job  | [efa063a3-63d6-4e0a-9293-be2a0e3c23e0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/23] |
+    | Post-job: Checkout SRV40176-2-0@release to s  | [6e67b6f0-12ff-4348-8dac-cf46f31b07ff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/22] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/25] |
+    | Checkout SRV40176-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/20] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/11] |
+    | Initialize job  | [f1bddc99-febb-4909-a435-64c92fde93b6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/4] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220420/logs/21] |
+# h3. (ACL40360-1-0) \release\CI-RELEASE-ACL40360-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40360-1-0]
+    Last build  [20221116.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220339&view=results] on ACL40360-1-0 as completed
+    Records :
+    ||Record||link||
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/9] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/14] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/19] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/22] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/17] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/13] |
+    | Finalize Job  | [b919344a-366c-4614-9779-8a7286db4de0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/21] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/16] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/3] |
+    | Checkpoint  | 5608c764-db59-54cc-43a1-a1b46c5cb740 |
+    | Initialize job  | [bbc5901a-2662-496c-9bbc-b3561fdf3199|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/4] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/15] |
+    | Post-job: Checkout ACL40360-1-0@release to s  | [42f7ce0e-912b-4fe6-8993-bd8b543acacb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/20] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/23] |
+    | Checkout ACL40360-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/18] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220339/logs/12] |
+# h3. (SRV40359-1-0) \release\CI-RELEASE-SRV40359-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40359-1-0]
+    Last build  [20221116.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220338&view=results] on SRV40359-1-0 as completed
+    Records :
+    ||Record||link||
+    | Checkpoint  | 877785f9-8df2-50a0-15f6-1fc8976368bc |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/9] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/14] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Finalize Job  | [f6e705e7-cd76-4db7-b6ba-418a2e12934a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/19] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/22] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/17] |
+    | Post-job: Checkout SRV40359-1-0@release to s  | [5175e0c0-b8a4-4ae5-b440-8105f76f4b9c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/20] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/13] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/16] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/3] |
+    | Initialize job  | [c03abe96-41aa-4775-8310-a73d2a47796d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/4] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/23] |
+    | Checkout SRV40359-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/18] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220338/logs/12] |
+# h3. (ACL40370-1-0) \release\CI-RELEASE-ACL40370-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40370-1-0]
+    Last build  [20221116.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220311&view=results] on ACL40370-1-0 as completed
+    Records :
+    ||Record||link||
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/19] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/22] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/7] |
+    | Checkpoint  | e8116e99-0ba0-59c1-24fe-794ed5ad45b9 |
+    | Initialize job  | [f4d00129-027f-4573-901b-7cb334f94896|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/4] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/17] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/13] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/16] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/3] |
+    | Finalize Job  | [1b4dae19-8bd5-4d62-8547-987a2f7ac995|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/21] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/23] |
+    | Checkout ACL40370-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/18] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/12] |
+    | Post-job: Checkout ACL40370-1-0@release to s  | [10f81bd0-5a6f-48c2-9ba6-19da2d97fdd9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220311/logs/9] |
 # h3. (SRV40385-1-0) \release\CI-RELEASE-SRV40385-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40385-1-0]
     Last build  [20221111.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=220046&view=results] on SRV40385-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/14] |
-    | Post-job: Checkout SRV40385-1-0@release to s  | [bf3ba37f-f7e0-45e2-864d-29f183915a68|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/19] |
     | Initialize job  | [12794deb-c587-49d0-bfae-598d6cf181b0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/4] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/8] |
@@ -60,13 +260,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/12] |
+    | Post-job: Checkout SRV40385-1-0@release to s  | [bf3ba37f-f7e0-45e2-864d-29f183915a68|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/220046/logs/9] |
 # h3. (JOB40324-1-0) \release\CI-RELEASE-JOB40324-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40324-1-0]
     Last build  [20221110.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219933&view=results] on JOB40324-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [c40c0adf-565f-4894-b9f2-11471353d172|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/4] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/10] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Checkpoint  | 7e7f7652-a072-5285-3630-3ff2414e088f |
@@ -89,17 +291,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/12] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/9] |
+    | Initialize job  | [c40c0adf-565f-4894-b9f2-11471353d172|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219933/logs/4] |
 # h3. (SRV40384-1-0) \release\CI-RELEASE-SRV40384-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40384-1-0]
     Last build  [20221109.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219827&view=results] on SRV40384-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [e45a3bdc-8eea-41b4-b648-0b8540278dd7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/19] |
-    | Checkpoint  | 6d37d510-c904-570f-3c8c-4eb7ce167eb8 |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/22] |
@@ -118,15 +316,17 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [f7d62cd0-96e5-43f7-bc17-ead419052f91|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/21] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/9] |
+    | Initialize job  | [e45a3bdc-8eea-41b4-b648-0b8540278dd7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/4] |
+    | Checkpoint  | 6d37d510-c904-570f-3c8c-4eb7ce167eb8 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219827/logs/14] |
 # h3. (JOB40418-1-0) \release\CI-RELEASE-JOB40418-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40418-1-0]
     Last build  [20221108.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219717&view=results] on JOB40418-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/19] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/8] |
     | Checkpoint  | f1c6db38-26da-50ac-e2d9-689aa9ec3a26 |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/11] |
@@ -147,17 +347,15 @@ Ejecutado el 22-11-15
     | Initialize job  | [8b2ecaba-4cbf-4eb3-b39d-e8cdf798d8bc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/14] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219717/logs/9] |
 # h3. (JOB40291-1-0) \release\CI-RELEASE-JOB40291-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40291-1-0]
     Last build  [20221107.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219540&view=results] on JOB40291-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [5d645367-817d-4ed5-90ad-1373b25aed2a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/8] |
     | Post-job: Checkout JOB40291-1-0@release to s  | [7a63e686-d808-49a6-b600-6334b7c8f53c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/20] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/22] |
@@ -176,73 +374,46 @@ Ejecutado el 22-11-15
     | Initialize job  | [77e91053-794f-4a31-9437-ee6f27f529fa|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/12] |
     | Checkpoint  | 986bcd53-c67f-5bf1-7c77-f8b0fd623617 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/9] |
+    | Finalize Job  | [5d645367-817d-4ed5-90ad-1373b25aed2a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219540/logs/19] |
 # h3. (JOB40170-2-0) \release\CI-RELEASE-JOB40170-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40170-2-0]
     Last build  [20221103.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219296&view=results] on JOB40170-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | c7567b73-8e64-5f3f-a553-35bb4c7417e3 |
-    | Post-job: Checkout JOB40170-2-0@release to s  | [4d52d3ac-3544-4b82-851b-3ec4103371ad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/20] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/19] |
-    | Initialize job  | [61ca4f2b-dd63-45a5-a0af-5579e446d31e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/4] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/17] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/13] |
-    | Finalize Job  | [6a2ef090-db01-4991-ac3c-8837ec9805ac|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/3] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/23] |
-    | Checkout JOB40170-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/18] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/14] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/12] |
-# h3. (SRV40066-1-0) \release\CI-RELEASE-SRV40066-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40066-1-0]
-    Last build  [20221103.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219295&view=results] on SRV40066-1-0 as completed
-    Records :
-    ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/23] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/3] |
-    | Checkpoint  | 5154d2a4-fe95-5ffb-3f7e-95e8c3641116 |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/6] |
-    | Post-job: Checkout SRV40066-1-0@release to s  | [e79d2999-d873-4cbe-afe0-b7841bf1633a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/21] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/15] |
-    | Initialize job  | [74f5ca99-4c57-4277-818f-ba163831693d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/4] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/24] |
-    | Checkout SRV40066-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/19] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/9] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Finalize Job  | [93b217e1-ce47-486e-bcdd-f312272eb395|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/22] |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219295/logs/12] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/18] |
+    | Checkout JOB40170-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/5] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/23] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/6] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/16] |
+    | Finalize Job  | [6a2ef090-db01-4991-ac3c-8837ec9805ac|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/21] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/13] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/8] |
+    | Initialize job  | [61ca4f2b-dd63-45a5-a0af-5579e446d31e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/19] |
+    | Post-job: Checkout JOB40170-2-0@release to s  | [4d52d3ac-3544-4b82-851b-3ec4103371ad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219296/logs/20] |
+    | Checkpoint  | c7567b73-8e64-5f3f-a553-35bb4c7417e3 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40386-1-0) \release\CI-RELEASE-SRV40386-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40386-1-0]
     Last build  [20221103.4|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219217&view=results] on SRV40386-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/14] |
-    | Post-job: Checkout SRV40386-1-0@release to s  | [c5895dc6-d060-4c51-8cc5-2f52f0ae90ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/20] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/19] |
     | Initialize job  | [dcde803e-030e-4b7d-a2af-56e951512d51|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/4] |
@@ -264,14 +435,14 @@ Ejecutado el 22-11-15
     | Checkpoint  | 084cf485-93c8-5693-a47e-e99cdf2a9466 |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/12] |
+    | Post-job: Checkout SRV40386-1-0@release to s  | [c5895dc6-d060-4c51-8cc5-2f52f0ae90ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219217/logs/9] |
 # h3. (SRV40174-2-0) \release\CI-RELEASE-SRV40174-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40174-2-0]
     Last build  [20221102.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219119&view=results] on SRV40174-2-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40174-2-0@pre-release to s  | [6f665186-c425-4c92-9595-111955694ddc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/16] |
@@ -295,6 +466,10 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/12] |
+    | Post-job: Checkout SRV40174-2-0@pre-release to s  | [6f665186-c425-4c92-9595-111955694ddc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/22] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219119/logs/9] |
 # h3. (JOB40323-1-0) \release\CI-RELEASE-JOB40323-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40323-1-0]
     Last build  [20221102.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=219114&view=results] on JOB40323-1-0 as completed
     Records :
@@ -352,48 +527,10 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/219113/logs/12] |
-# h3. (SRV40176-2-0) \release\CI-RELEASE-SRV40176-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40176-2-0]
-    Last build  [20221026.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=218594&view=results] on SRV40176-2-0 as completed
-    Records :
-    ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/21] |
-    | Checkpoint  | 5960e812-2197-5042-5ff4-4deedc61a4e8 |
-    | Finalize Job  | [d4bdba66-86fb-46c9-9f3b-55ea5216c0a3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/23] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/16] |
-    | Initialize job  | [cdebead0-a353-41a4-9c9e-58752413da68|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/4] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/17] |
-    | Post-job: Checkout SRV40176-2-0@release to s  | [bcbe256f-d328-4927-a03f-9c04a532e2bc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/22] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/25] |
-    | Checkout SRV40176-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/20] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218594/logs/12] |
 # h3. (SRV40297-2-0) \release\CI-RELEASE-SRV40297-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40297-2-0]
     Last build  [20221024.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=218336&view=results] on SRV40297-2-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40297-2-0@release to s  | [c97a2c72-815c-4073-997f-013b4164f6f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/21] |
-    | Checkpoint  | 28a06d69-24d7-5339-0513-1a665d10f471 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/20] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/11] |
@@ -413,6 +550,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/12] |
+    | Post-job: Checkout SRV40297-2-0@release to s  | [c97a2c72-815c-4073-997f-013b4164f6f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/21] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/9] |
+    | Checkpoint  | 28a06d69-24d7-5339-0513-1a665d10f471 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218336/logs/14] |
 # h3. (SRV40295-2-0) \release\CI-RELEASE-SRV40295-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40295-2-0]
     Last build  [20221024.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=218335&view=results] on SRV40295-2-0 as completed
     Records :
@@ -436,26 +580,17 @@ Ejecutado el 22-11-15
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/17] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/15] |
-    | Post-job: Checkout SRV40295-2-0@release to s  | [83e03f58-9c66-4b41-8e96-cf29d41e592d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/21] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/24] |
-    | Checkout SRV40295-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/19] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/12] |
+    | Checkout SRV40295-2-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/5] |
+    | Post-job: Checkout SRV40295-2-0@release to s  | [83e03f58-9c66-4b41-8e96-cf29d41e592d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218335/logs/21] |
 # h3. (SRV40269-1-0) \release\CI-RELEASE-SRV40269-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40269-1-0]
     Last build  [20221021.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=218204&view=results] on SRV40269-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/17] |
     | Finalize Job  | [64b6999a-ff46-4a23-b30b-7ed8cc89c211|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/21] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/13] |
@@ -472,17 +607,19 @@ Ejecutado el 22-11-15
     | Checkpoint  | fcf7236f-db3f-5471-7680-e077d85eab79 |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/9] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218204/logs/19] |
 # h3. (SRV40408-1-0) \release\CI-RELEASE-SRV40408-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40408-1-0]
     Last build  [20221020.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=218032&view=results] on SRV40408-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40408-1-0@release to s  | [205b532c-ea16-4800-8981-1dca4f6795a8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/19] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/18] |
-    | Checkpoint  | 15eeb048-3867-5c5e-c747-51cb7dfed83c |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/8] |
     | Initialize job  | [27dcf819-fb59-4f8e-9471-611ea0a428ae|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/4] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/11] |
@@ -500,13 +637,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/12] |
+    | Post-job: Checkout SRV40408-1-0@release to s  | [205b532c-ea16-4800-8981-1dca4f6795a8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/19] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/9] |
+    | Checkpoint  | 15eeb048-3867-5c5e-c747-51cb7dfed83c |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/218032/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40274-1-0) \release\CI-RELEASE-SRV40274-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40274-1-0]
     Last build  [20221019.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=217892&view=results] on SRV40274-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Checkpoint  | 3c2ce9c5-22a9-5435-48a3-4272c672ab97 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/21] |
@@ -531,6 +672,9 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217892/logs/9] |
 # h3. (SRV40377-1-0) \release\CI-RELEASE-SRV40377-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40377-1-0]
     Last build  [20221018.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=217815&view=results] on SRV40377-1-0 as completed
     Records :
@@ -621,13 +765,6 @@ Ejecutado el 22-11-15
     Last build  [20221011.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=217000&view=results] on SRV40346-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40346-1-0@release to s  | [2bc7df39-3494-4716-8fa3-021314be8b4f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/20] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/7] |
@@ -646,6 +783,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/12] |
+    | Post-job: Checkout SRV40346-1-0@release to s  | [2bc7df39-3494-4716-8fa3-021314be8b4f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/217000/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40393-1-0) \release\CI-RELEASE-SRV40393-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40393-1-0]
     Last build  [20221011.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=216983&view=results] on SRV40393-1-0 as completed
     Records :
@@ -675,109 +819,15 @@ Ejecutado el 22-11-15
     | Finalize Job  | [59448bfa-eac2-4c7e-86af-e449326db1d1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216983/logs/21] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216983/logs/12] |
-# h3. (SRV40359-1-0) \release\CI-RELEASE-SRV40359-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40359-1-0]
-    Last build  [20221006.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=216695&view=results] on SRV40359-1-0 as completed
-    Records :
-    ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/14] |
-    | Post-job: Checkout SRV40359-1-0@release to s  | [5089c5f4-24e8-46af-aefb-2f37eaa6595c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [43d574ce-8465-4466-b814-42383804cbba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/21] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/7] |
-    | Initialize job  | [2e5015be-5601-4fa3-8680-7cde4befb67d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/4] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/17] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/3] |
-    | Checkpoint  | 8c473a64-356d-565a-20fe-91806c830411 |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/23] |
-    | Checkout SRV40359-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/18] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216695/logs/12] |
-# h3. (SRV40398-1-0) \release\CI-RELEASE-SRV40398-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40398-1-0]
-    Last build  [20221006.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=216681&view=results] on SRV40398-1-0 as completed
-    Records :
-    ||Record||link||
-    | Post-job: Checkout SRV40398-1-0@release to s  | [a302ce3a-fd75-4a50-9431-1b2dcd91471f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/19] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [39cf51a8-ad75-4fd9-825e-3851edf7c949|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/18] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/21] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/16] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/15] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/3] |
-    | Checkpoint  | e4e3bfb8-8907-5b1b-e2ff-9d2ed0452286 |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/14] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/22] |
-    | Finalize Job  | [134f007e-e4de-4b73-8a58-d0baff251281|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/20] |
-    | Checkout SRV40398-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/17] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216681/logs/12] |
-# h3. (ACL40360-1-0) \release\CI-RELEASE-ACL40360-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40360-1-0]
-    Last build  [20221006.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=216680&view=results] on ACL40360-1-0 as completed
-    Records :
-    ||Record||link||
-    | Post-job: Checkout ACL40360-1-0@release to s  | [c465c6ba-6eec-4fdf-9507-159d0a8f623a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/20] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | f8d5f267-a6e0-5d38-0bcb-43acc0d9a68c |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/22] |
-    | Finalize Job  | [48be0b21-9d8f-43db-bcac-70199dea082e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/21] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/17] |
-    | Initialize job  | [246f1f62-b6a9-4b20-8275-839c46bf5309|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/4] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/3] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/23] |
-    | Checkout ACL40360-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/18] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216680/logs/12] |
 # h3. (JOB40417-1-0) \release\CI-RELEASE-JOB40417-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40417-1-0]
     Last build  [20221005.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=216555&view=results] on JOB40417-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/14] |
-    | Post-job: Checkout JOB40417-1-0@release to s  | [a4b0e6b9-3153-4e7d-9294-2b801e68acb0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/17] |
     | Checkpoint  | 533d8e62-39bd-52d9-82fc-7da93a707f9a |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/13] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/16] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/3] |
     | Initialize job  | [5ef23e9c-d83b-47d5-b5a6-9693c355de31|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/4] |
@@ -790,46 +840,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/12] |
-# h3. (ACL40370-1-0) \release\CI-RELEASE-ACL40370-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40370-1-0]
-    Last build  [20220928.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=215947&view=results] on ACL40370-1-0 as completed
-    Records :
-    ||Record||link||
-    | Post-job: Checkout ACL40370-1-0@release to s  | [771d83bd-1251-4960-b7f1-016230868e76|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/20] |
-    | Finalize Job  | [16f32d11-7483-4cf7-bf72-04b32b0d797a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/14] |
+    | Post-job: Checkout JOB40417-1-0@release to s  | [a4b0e6b9-3153-4e7d-9294-2b801e68acb0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/14] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/19] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/17] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/3] |
-    | Checkpoint  | a5cdc1d2-f836-54da-0f57-a106344c43bd |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/15] |
-    | Initialize job  | [f57dea56-4cb7-45b6-be9e-ce03f06d6534|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/4] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/23] |
-    | Checkout ACL40370-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/18] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215947/logs/12] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/216555/logs/13] |
 # h3. (SRV40361-1-0) \release\CI-RELEASE-SRV40361-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40361-1-0]
     Last build  [20220926.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=215695&view=results] on SRV40361-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 2efb5461-c687-5785-4fe5-1566c55b1082 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/10] |
-    | Finalize Job  | [ca29a177-0989-415b-baba-26594ca53d56|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/20] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/18] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/21] |
@@ -847,14 +869,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/9] |
+    | Checkpoint  | 2efb5461-c687-5785-4fe5-1566c55b1082 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/14] |
+    | Finalize Job  | [ca29a177-0989-415b-baba-26594ca53d56|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215695/logs/20] |
 # h3. (SRV40361-1-0) \release\CI-PRE-RELEASE-SRV40361-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40361-1-0]
     Last build  [20220922.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=215470&view=results] on SRV40361-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/10] |
-    | Finalize Job  | [aed5becb-7c96-42d1-94bb-233178919f8a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/20] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Checkpoint  | 72020ee9-7c64-5012-2a89-3130892c7067 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/18] |
@@ -875,14 +900,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/14] |
+    | Finalize Job  | [aed5becb-7c96-42d1-94bb-233178919f8a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/20] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215470/logs/9] |
 # h3. (SRV40337-1-0) \release\CI-RELEASE-SRV40337-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40337-1-0]
     Last build  [20220921.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=215292&view=results] on SRV40337-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/14] |
-    | Initialize job  | [6358188c-9f1f-45bb-93de-2c8a023270f7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/4] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/19] |
     | Checkpoint  | b5e05483-0035-5fe2-c5f2-543386fcad39 |
@@ -904,6 +929,10 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/12] |
+    | Initialize job  | [6358188c-9f1f-45bb-93de-2c8a023270f7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/4] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/215292/logs/9] |
 # h3. (JOB40325-1-0) \release\CI-RELEASE-JOB40325-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40325-1-0]
     Last build  [20220921.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=215288&view=results] on JOB40325-1-0 as completed
     Records :
@@ -937,16 +966,6 @@ Ejecutado el 22-11-15
     Last build  [20220906.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=214272&view=results] on SRV40162-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [8d2291da-a1ed-4f62-b682-18ae8946ece4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/10] |
-    | Checkpoint  | 34c9ff65-b1c8-5ad0-a917-25ade76f159b |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/8] |
-    | Finalize Job  | [09ed0ca8-7ee0-45b9-a552-6495595235d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/23] |
     | Post-job: Checkout SRV40162-2-0@release to s  | [1452e99f-ee91-4cee-943b-6bf709d909dd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/22] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/24] |
@@ -964,47 +983,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/12] |
-# h3. (SRV40409-1-0) \release\CI-RELEASE-SRV40409-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40409-1-0]
-    Last build  [20220822.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=213166&view=results] on SRV40409-1-0 as completed
-    Records :
-    ||Record||link||
-    | Initialize job  | [eb84910c-ceb5-4aea-bbf2-0dfadefdf60c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/4] |
-    | Checkpoint  | 55ab4587-e716-556a-3e6e-123c094ecdb6 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/10] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/11] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/15] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/14] |
+    | Checkpoint  | 34c9ff65-b1c8-5ad0-a917-25ade76f159b |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/9] |
+    | Initialize job  | [8d2291da-a1ed-4f62-b682-18ae8946ece4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/4] |
+    | Finalize Job  | [09ed0ca8-7ee0-45b9-a552-6495595235d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/23] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/214272/logs/21] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/19] |
-    | Check Merge  | [be5fcf68-652d-50fb-1aa1-5561ca3ce815|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/9] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/8] |
-    | Post-job: Checkout SRV40409-1-0@release to s  | [2a01a9a2-0831-49a5-9fb1-632ffb9268e6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/20] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/12] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/14] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/17] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/3] |
-    | Finalize Job  | [37a36985-5c05-4d9f-951c-a006d1833ef7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/21] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/16] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/23] |
-    | Checkout SRV40409-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/5] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213166/logs/13] |
 # h3. (SRV40254-2-0) \release\CI-RELEASE-SRV40254-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40254-2-0]
     Last build  [20220819.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=213040&view=results] on SRV40254-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/8] |
-    | Finalize Job  | [acdf6742-514c-462e-9a9d-608f5a082b48|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/23] |
     | Checkpoint  | f947fded-5ac0-59a0-15e9-61731226a543 |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/24] |
@@ -1024,21 +1016,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/9] |
+    | Finalize Job  | [acdf6742-514c-462e-9a9d-608f5a082b48|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/23] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/213040/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40338-1-0) \release\CI-RELEASE-SRV40338-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40338-1-0]
     Last build  [20220804.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=211677&view=results] on SRV40338-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Post-job: Checkout SRV40338-1-0@release to s  | [71dec9cc-8703-4c0f-9e7e-31dcbeb672fa|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/20] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/7] |
-    | Finalize Job  | [64ee31c8-6855-4183-bb56-79f0c5ed8f26|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/21] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/17] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/13] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/16] |
@@ -1053,23 +1042,21 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Checkpoint  | 95e53136-7792-5835-d887-f1c076d3010d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/12] |
+    | Post-job: Checkout SRV40338-1-0@release to s  | [71dec9cc-8703-4c0f-9e7e-31dcbeb672fa|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/9] |
+    | Finalize Job  | [64ee31c8-6855-4183-bb56-79f0c5ed8f26|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/21] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/211677/logs/19] |
 # h3. (SRV40188-1-0) \release\CI-RELEASE-SRV40188-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40188-1-0]
     Last build  [20220713.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=209500&view=results] on SRV40188-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [6e099410-b2fe-40ed-a268-06b68a59c82e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/10] |
-    | Initialize job  | [7c83f082-7aa4-49be-942d-247519ec267e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/4] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/23] |
-    | Checkpoint  | 1ee8290f-94c0-535b-2f57-6edbe94e054a |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/3] |
@@ -1082,26 +1069,24 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/19] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/14] |
+    | Initialize job  | [7c83f082-7aa4-49be-942d-247519ec267e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/4] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/9] |
+    | Finalize Job  | [6e099410-b2fe-40ed-a268-06b68a59c82e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/22] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/7] |
+    | Checkpoint  | 1ee8290f-94c0-535b-2f57-6edbe94e054a |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/8] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/209500/logs/12] |
 # h3. (ACL40395-1-0) \release\CI-RELEASE-ACL40395-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40395-1-0]
     Last build  [20220705.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=208707&view=results] on ACL40395-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 8d6ec2cd-3884-5bab-6419-0739d3827ff7 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/12] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/8] |
-    | Initialize job  | [eba2a9dc-8e48-4e0e-88f3-61b83d3106ee|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/4] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/19] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/15] |
-    | Finalize Job  | [d742c250-07cd-4a1a-ad44-7e67c1f8055b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/18] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/14] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/3] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/13] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/20] |
     | Checkout ACL40395-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/5] |
@@ -1109,17 +1094,25 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/11] |
     | Post-job: Checkout ACL40395-1-0@release to s  | [1744c507-3b05-41eb-8453-fe857247a752|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/17] |
+    | Finalize Job  | [d742c250-07cd-4a1a-ad44-7e67c1f8055b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/15] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/19] |
+    | Initialize job  | [eba2a9dc-8e48-4e0e-88f3-61b83d3106ee|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/4] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/16] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/9] |
+    | Checkpoint  | 8d6ec2cd-3884-5bab-6419-0739d3827ff7 |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/6] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208707/logs/14] |
 # h3. (SRV40341-1-0) \release\CI-RELEASE-SRV40341-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40341-1-0]
     Last build  [20220705.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=208697&view=results] on SRV40341-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [452e5713-494f-4999-9e5d-082ff8898ab3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/7] |
@@ -1138,20 +1131,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/9] |
+    | Initialize job  | [452e5713-494f-4999-9e5d-082ff8898ab3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208697/logs/4] |
 # h3. (SRV40281-1-0) \release\CI-RELEASE-SRV40281-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40281-1-0]
     Last build  [20220701.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=208330&view=results] on SRV40281-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 2760dcac-da17-5580-8a48-1bd44d0b2016 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/17] |
     | Finalize Job  | [e7570c4e-d36b-4318-ac0e-8026acc9dab1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/21] |
@@ -1167,21 +1157,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/9] |
+    | Checkpoint  | 2760dcac-da17-5580-8a48-1bd44d0b2016 |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/208330/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40239-2-0) \release\CI-RELEASE-SRV40239-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40239-2-0]
     Last build  [20220628.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=207897&view=results] on SRV40239-2-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [30b7e5fd-43cb-4b4f-a443-20a5929a3f45|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/20] |
-    | Checkpoint  | c7386974-60c6-59ac-3c96-4bf9820eee4d |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/13] |
@@ -1197,6 +1186,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/9] |
+    | Finalize Job  | [30b7e5fd-43cb-4b4f-a443-20a5929a3f45|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/22] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/16] |
+    | Checkpoint  | c7386974-60c6-59ac-3c96-4bf9820eee4d |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/207897/logs/20] |
 # h3. (JOB40241-2-0) \release\CI-RELEASE-JOB40241-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40241-2-0]
     Last build  [20220628.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=207894&view=results] on JOB40241-2-0 as completed
     Records :
@@ -1230,16 +1230,6 @@ Ejecutado el 22-11-15
     Last build  [20220613.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=206477&view=results] on SRV40333-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/18] |
-    | Checkpoint  | c3997de3-216e-5863-5231-580b767ecf79 |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/8] |
-    | Publish code coverage   | [3466cc88-cedf-5c95-9495-665300a6857f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/12] |
-    | Post-job: Checkout SRV40333-1-0@release to s  | [039a7bfa-1ae4-48db-9b62-67218d0bc293|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/19] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/21] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/7] |
     | Finalize Job  | [f0708766-4179-437e-b197-78dd31302f49|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/20] |
     | Initialize job  | [2fbd0999-da8d-4bcf-be70-7ba0d99e7027|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/4] |
@@ -1254,19 +1244,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/11] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/21] |
+    | Post-job: Checkout SRV40333-1-0@release to s  | [039a7bfa-1ae4-48db-9b62-67218d0bc293|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/19] |
+    | Publish code coverage   | [3466cc88-cedf-5c95-9495-665300a6857f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206477/logs/8] |
+    | Checkpoint  | c3997de3-216e-5863-5231-580b767ecf79 |
 # h3. (ACL40402-1-0) \release\CI-RELEASE-ACL40402-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ACL40402-1-0]
     Last build  [20220609.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=206278&view=results] on ACL40402-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 0f718914-2b10-5150-9c8e-33b31bbd8373 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/19] |
-    | Post-job: Checkout ACL40402-1-0@release to s  | [436a3442-0f07-456b-b884-547f11b50561|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/20] |
-    | Finalize Job  | [3ed7d537-adfd-4151-9957-5ad1f93540bd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/7] |
@@ -1283,23 +1274,19 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/8] |
+    | Finalize Job  | [3ed7d537-adfd-4151-9957-5ad1f93540bd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/21] |
+    | Post-job: Checkout ACL40402-1-0@release to s  | [436a3442-0f07-456b-b884-547f11b50561|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/20] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/206278/logs/19] |
+    | Checkpoint  | 0f718914-2b10-5150-9c8e-33b31bbd8373 |
 # h3. (SRV40175-2-0) \release\CI-RELEASE-SRV40175-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-2-0]
     Last build  [20220607.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=205907&view=results] on SRV40175-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/10] |
-    | Post-job: Checkout SRV40175-2-0@release to s  | [e7514ecf-17bc-40c7-a13c-2750e2af7e4e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/21] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 0d056851-36ae-5f13-c92e-376c6cd48778 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/23] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/17] |
@@ -1313,21 +1300,23 @@ Ejecutado el 22-11-15
     | Initialize job  | [36352347-6820-4dea-9703-e353cc3e0182|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/20] |
+    | Checkpoint  | 0d056851-36ae-5f13-c92e-376c6cd48778 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/14] |
+    | Post-job: Checkout SRV40175-2-0@release to s  | [e7514ecf-17bc-40c7-a13c-2750e2af7e4e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/21] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/18] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205907/logs/8] |
 # h3. (JOB40321-1-0) \release\CI-RELEASE-JOB40321-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40321-1-0]
     Last build  [20220602.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=205542&view=results] on JOB40321-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | dfcab228-725b-5b6e-d921-00d92ee935cb |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/19] |
-    | Post-job: Checkout JOB40321-1-0@release to s  | [b80ee103-f42e-437b-bde1-4c9f9d305c53|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/20] |
-    | Finalize Job  | [19bc803d-dcd1-484c-81ac-5c10c4f670da|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/17] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/13] |
@@ -1342,19 +1331,21 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/12] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/9] |
+    | Checkpoint  | dfcab228-725b-5b6e-d921-00d92ee935cb |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/8] |
+    | Finalize Job  | [19bc803d-dcd1-484c-81ac-5c10c4f670da|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/21] |
+    | Post-job: Checkout JOB40321-1-0@release to s  | [b80ee103-f42e-437b-bde1-4c9f9d305c53|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/20] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/205542/logs/14] |
 # h3. (SRV40374-1-0) \release\CI-RELEASE-SRV40374-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40374-1-0]
     Last build  [20220525.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=204714&view=results] on SRV40374-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [22c246c7-b2a7-48de-8750-39274aa73b52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/8] |
-    | Finalize Job  | [f364fab9-a097-40f6-b805-5f6c4fc5cb6a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/21] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/17] |
@@ -1371,20 +1362,19 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/12] |
     | Checkpoint  | ddb0be92-3971-52ed-6ac5-feaa3a0fee16 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/11] |
+    | Finalize Job  | [f364fab9-a097-40f6-b805-5f6c4fc5cb6a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/19] |
+    | Initialize job  | [22c246c7-b2a7-48de-8750-39274aa73b52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204714/logs/4] |
 # h3. (SRV40362-1-0) \release\CI-RELEASE-SRV40362-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40362-1-0]
     Last build  [20220519.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=204025&view=results] on SRV40362-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [29a58515-1824-4ce2-9f92-15dd22a81237|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/19] |
-    | Copy Files to: Dockerfile copy  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/12] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/17] |
-    | Post-job: Checkout SRV40362-1-0@release to s  | [0f187929-9fb1-46d6-a38e-4dce5c0aebf0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/18] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/8] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/20] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/15] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/14] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/3] |
@@ -1398,21 +1388,20 @@ Ejecutado el 22-11-15
     | Checkpoint  | 0454e129-6d7d-59cb-4528-e5e6ce70c2c6 |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/11] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/10] |
+    | Copy Files to: Dockerfile copy  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/9] |
+    | Finalize Job  | [29a58515-1824-4ce2-9f92-15dd22a81237|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/20] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/8] |
+    | Post-job: Checkout SRV40362-1-0@release to s  | [0f187929-9fb1-46d6-a38e-4dce5c0aebf0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/18] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/204025/logs/17] |
 # h3. (SRV40097-1-0) \release\CI-RELEASE-SRV40097-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40097-1-0]
     Last build  [20220517.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=203761&view=results] on SRV40097-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/12] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [342ea292-d8f6-4955-b9e8-42995d9dd2a2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/8] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/18] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/7] |
-    | Finalize Job  | [6f16dfab-4ce3-4364-b247-8078cd151dd2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/17] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/14] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/3] |
     | Post-job: Checkout SRV40097-1-0@release to s  | [f80bd9b8-ae99-4f81-a765-a3e753bb2545|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/16] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/6] |
@@ -1423,6 +1412,17 @@ Ejecutado el 22-11-15
     | Checkpoint  | 623402ab-7c82-5499-5ef6-e02b05ec1c8b |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/11] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/15] |
+    | Initialize job  | [342ea292-d8f6-4955-b9e8-42995d9dd2a2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/12] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/14] |
+    | Finalize Job  | [6f16dfab-4ce3-4364-b247-8078cd151dd2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/18] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/203761/logs/8] |
 # h3. (SRV40186-1-1) \release\CI-RELEASE-SRV40186-1-1  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40186-1-1]
     Last build  [20220517.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=203760&view=results] on SRV40186-1-1 as completed
     Records :
@@ -1455,14 +1455,6 @@ Ejecutado el 22-11-15
     Last build  [20220510.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=202977&view=results] on SRV40246-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [d1455e21-b66e-48a1-adb7-1e60a6ed1245|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/16] |
-    | Post-job: Checkout SRV40246-2-0@release to s  | [c4bacd72-360c-46d5-9bcc-5ac8291d0d29|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/22] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/24] |
@@ -1482,17 +1474,18 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [3d9d7b25-aa28-4892-b53c-edd2905a3765|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/23] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/12] |
+    | Post-job: Checkout SRV40246-2-0@release to s  | [c4bacd72-360c-46d5-9bcc-5ac8291d0d29|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/22] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/9] |
+    | Initialize job  | [d1455e21-b66e-48a1-adb7-1e60a6ed1245|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202977/logs/14] |
 # h3. (SRV40077-1-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40077-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40077-1-0]
     Last build  [20220503.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=202238&view=results] on SRV40077-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [bdbf31a3-dd0d-4d4a-b55f-15e6040401d9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/14] |
-    | Post-job: Checkout SRV40077-1-0@womv-release to s  | [09f31633-af5e-4dba-9f51-2b2cc384fb47|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/21] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/20] |
     | Finalize Job  | [ca3187de-d320-4308-a466-45c9a149a542|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/22] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/8] |
@@ -1500,26 +1493,29 @@ Ejecutado el 22-11-15
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/13] |
-    | Checkpoint  | 7a099a5d-61f1-5628-8b8e-8d1ef2f10d13 |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/15] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/24] |
     | Checkout SRV40077-1-0@womv-release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/19] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/12] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/6] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/3] |
+    | Checkpoint  | 7a099a5d-61f1-5628-8b8e-8d1ef2f10d13 |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/9] |
+    | Initialize job  | [bdbf31a3-dd0d-4d4a-b55f-15e6040401d9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Post-job: Checkout SRV40077-1-0@womv-release to s  | [09f31633-af5e-4dba-9f51-2b2cc384fb47|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/21] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/202238/logs/14] |
 # h3. (SRV40362-1-0) \release\CI-PRE-RELEASE-SRV40362-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40362-1-0]
     Last build  [20220427.3|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=201787&view=results] on SRV40362-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile copy  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/12] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/17] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/8] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/20] |
@@ -1539,21 +1535,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/11] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/10] |
+    | Copy Files to: Dockerfile copy  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201787/logs/9] |
 # h3. (SRV40257-2-0) \release\CI-RELEASE-SRV40257-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40257-2-0]
     Last build  [20220420.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=201070&view=results] on SRV40257-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | f0b1de6d-278e-57ed-8385-310d60848889 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/24] |
-    | Initialize job  | [8edaeba4-2108-4796-b6e3-73ed26460f7c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/4] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/18] |
@@ -1570,14 +1559,21 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/12] |
     | Post-job: Checkout SRV40257-2-0@release to s  | [faf917e2-3763-4677-ac42-f736841c402a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/22] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/9] |
+    | Initialize job  | [8edaeba4-2108-4796-b6e3-73ed26460f7c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/4] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201070/logs/21] |
+    | Checkpoint  | f0b1de6d-278e-57ed-8385-310d60848889 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40256-1-0) \release\CI-RELEASE-SRV40256-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40256-1-0]
     Last build  [20220420.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=201034&view=results] on SRV40256-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40256-1-0@release to s  | [18045cc4-d6e3-4358-9d9e-08a803865915|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/16] |
@@ -1601,15 +1597,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/9] |
+    | Post-job: Checkout SRV40256-1-0@release to s  | [18045cc4-d6e3-4358-9d9e-08a803865915|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/201034/logs/22] |
 # h3. (SRV40236-1-0) \release\CI-RELEASE-SRV40236-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40236-1-0]
     Last build  [20220413.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=200495&view=results] on SRV40236-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 5a4331ad-66c5-50c3-2fb1-16a2e3a5a584 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Post-job: Checkout SRV40236-1-0@release to s  | [b1daa781-c362-41a9-b55d-3a4b39d94520|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/22] |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/16] |
@@ -1632,14 +1627,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/9] |
+    | Checkpoint  | 5a4331ad-66c5-50c3-2fb1-16a2e3a5a584 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200495/logs/14] |
 # h3. (SRV40382-1-0) \release\CI-RELEASE-SRV40382-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40382-1-0]
     Last build  [20220412.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=200341&view=results] on SRV40382-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/10] |
-    | Post-job: Checkout SRV40382-1-0@release to s  | [4c677538-c81f-4fe8-a2da-2567d57c5364|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/20] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/19] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/8] |
@@ -1661,21 +1657,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/12] |
+    | Post-job: Checkout SRV40382-1-0@release to s  | [4c677538-c81f-4fe8-a2da-2567d57c5364|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/200341/logs/9] |
 # h3. (SRV40279-1-0) \release\CI-RELEASE-SRV40279-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40279-1-0]
     Last build  [20220406.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=199691&view=results] on SRV40279-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/17] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/16] |
     | Checkpoint  | 84a94f6c-5042-5732-018f-9c69c2361c3b |
@@ -1690,21 +1679,21 @@ Ejecutado el 22-11-15
     | Post-job: Checkout SRV40279-1-0@release to s  | [03942031-beab-4ab9-9a58-dee352c66a39|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/20] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199691/logs/8] |
 # h3. (JOB40318-1-0) \release\CI-RELEASE-JOB40318-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40318-1-0]
     Last build  [20220405.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=199601&view=results] on JOB40318-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [348c118f-1423-414f-bc68-340d49a81b07|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/19] |
-    | Finalize Job  | [861c6da2-0a7b-4595-80f3-5cf518bfc88d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/17] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/13] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/16] |
@@ -1719,6 +1708,17 @@ Ejecutado el 22-11-15
     | Post-job: Checkout JOB40318-1-0@release to s  | [a8741ba0-f65b-4971-885e-e93c198138c3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/20] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/12] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/8] |
+    | Finalize Job  | [861c6da2-0a7b-4595-80f3-5cf518bfc88d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/19] |
+    | Initialize job  | [348c118f-1423-414f-bc68-340d49a81b07|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/9] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/199601/logs/10] |
 # h3. (SRV40316-1-0) \release\CI-RELEASE-SRV40316-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40316-1-0]
     Last build  [20220405.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=199600&view=results] on SRV40316-1-0 as completed
     Records :
@@ -1752,16 +1752,6 @@ Ejecutado el 22-11-15
     Last build  [20220330.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=198822&view=results] on SRV40380-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/19] |
-    | Checkpoint  | 54c1b046-fbd5-5622-9f53-4943f5189232 |
-    | Post-job: Checkout SRV40380-1-0@release to s  | [793a0020-431a-46c2-a9ca-4b9b26653416|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/20] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/17] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/13] |
@@ -1777,15 +1767,20 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/12] |
     | Initialize job  | [69282aa5-d05a-4610-9afd-fc28eba2f24a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/4] |
+    | Checkpoint  | 54c1b046-fbd5-5622-9f53-4943f5189232 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/8] |
+    | Post-job: Checkout SRV40380-1-0@release to s  | [793a0020-431a-46c2-a9ca-4b9b26653416|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198822/logs/20] |
 # h3. (SRV40229-1-0) \release\CI-RELEASE-SRV40229-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40229-1-0]
     Last build  [20220324.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=198256&view=results] on SRV40229-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/21] |
     | Post-job: Checkout SRV40229-1-0@release to s  | [4836b932-a1bf-4187-8e62-4812ddf54664|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/22] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/8] |
@@ -1808,16 +1803,15 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Initialize job  | [41e5acf0-4fca-4557-934e-eff9d6c6f71d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198256/logs/9] |
 # h3. (SRV40173-1-0) \release\CI-RELEASE-SRV40173-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40173-1-0]
     Last build  [20220323.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=198096&view=results] on SRV40173-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [e116cd59-fe26-41eb-9609-394253588bb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/23] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/21] |
     | Checkpoint  | 3cd449e4-cbce-5132-90a3-53c2a897336a |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/8] |
@@ -1839,17 +1833,16 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/21] |
+    | Finalize Job  | [e116cd59-fe26-41eb-9609-394253588bb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/23] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/198096/logs/9] |
 # h3. (SRV40258-1-0) \release\CI-RELEASE-SRV40258-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40258-1-0]
     Last build  [20220315.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=197125&view=results] on SRV40258-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [c6cbc929-ce70-42ba-b101-059db2b7430d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/4] |
-    | Checkpoint  | b052c16e-e962-5dca-864e-06eb6ff48491 |
-    | Post-job: Checkout SRV40258-1-0@release to s  | [43bb9dca-0a47-4fec-bb0f-0c23114c2ed2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/8] |
@@ -1870,15 +1863,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/12] |
+    | Post-job: Checkout SRV40258-1-0@release to s  | [43bb9dca-0a47-4fec-bb0f-0c23114c2ed2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/22] |
+    | Checkpoint  | b052c16e-e962-5dca-864e-06eb6ff48491 |
+    | Initialize job  | [c6cbc929-ce70-42ba-b101-059db2b7430d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/197125/logs/9] |
 # h3. (SRV40376-1-0) \release\CI-RELEASE-SRV40376-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40376-1-0]
     Last build  [20220314.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=196978&view=results] on SRV40376-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [533deb78-f704-446e-9a50-07b73c3e501d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/21] |
-    | Initialize job  | [4e59b014-4bfa-40cb-800f-1a6e959b92d3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/14] |
     | Post-job: Checkout SRV40376-1-0@release to s  | [b666bbff-8fbb-4b4e-9549-28513714cb64|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/20] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/19] |
@@ -1899,15 +1894,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/9] |
+    | Initialize job  | [4e59b014-4bfa-40cb-800f-1a6e959b92d3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/4] |
+    | Finalize Job  | [533deb78-f704-446e-9a50-07b73c3e501d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196978/logs/21] |
 # h3. (JOB40327-1-0) \release\CI-RELEASE-JOB40327-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40327-1-0]
     Last build  [20220309.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=196538&view=results] on JOB40327-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [af310d45-d27c-4eb3-95c4-12953a5316ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/21] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/19] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/11] |
@@ -1928,17 +1923,15 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/12] |
     | Post-job: Checkout JOB40327-1-0@release to s  | [d3b09121-7f48-40fa-b252-f8e7648a7f4e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/14] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/9] |
+    | Finalize Job  | [af310d45-d27c-4eb3-95c4-12953a5316ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/196538/logs/21] |
 # h3. (SRV40340-1-0) \release\CI-RELEASE-SRV40340-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40340-1-0]
     Last build  [20220302.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=195790&view=results] on SRV40340-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/8] |
-    | Post-job: Checkout SRV40340-1-0@release to s  | [c098b9b8-fdd3-48b7-89af-60e0ecf50d65|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/20] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/7] |
@@ -1957,6 +1950,13 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [88bcb511-08f4-462e-992f-f379b91aba01|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/21] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/9] |
+    | Post-job: Checkout SRV40340-1-0@release to s  | [c098b9b8-fdd3-48b7-89af-60e0ecf50d65|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/20] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/195790/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (JOB40322-1-0) \release\CI-RELEASE-JOB40322-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40322-1-0]
     Last build  [20220301.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=195668&view=results] on JOB40322-1-0 as completed
     Records :
@@ -1990,33 +1990,33 @@ Ejecutado el 22-11-15
     Last build  [20220221.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=194689&view=results] on SRV40283-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 32fdb05c-84c2-5cfc-0b29-037da8bde2c3 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/21] |
-    | Post-job: Checkout SRV40283-1-0@release to s  | [2e40a0d6-53a5-4b9c-a75e-4e6ddb9e9dd7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/22] |
-    | Finalize Job  | [c05c6506-f390-43a3-8e18-4f01936dd4c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/23] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/24] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/25] |
-    | Checkout SRV40283-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/5] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/16] |
+    | Finalize Job  | [c05c6506-f390-43a3-8e18-4f01936dd4c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/23] |
+    | Post-job: Checkout SRV40283-1-0@release to s  | [2e40a0d6-53a5-4b9c-a75e-4e6ddb9e9dd7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/22] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Initialize job  | [ca0fc251-6015-47c5-b4d0-df7320881dbf|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/9] |
+    | Checkpoint  | 32fdb05c-84c2-5cfc-0b29-037da8bde2c3 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/14] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/17] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/25] |
+    | Checkout SRV40283-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/194689/logs/5] |
 # h3. (SRV40294-1-0) \release\CI-RELEASE-SRV40294-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40294-1-0]
     Last build  [20220221.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=194690&view=results] on SRV40294-1-0 as completed
     Records :
@@ -2050,14 +2050,6 @@ Ejecutado el 22-11-15
     Last build  [20220216.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=193844&view=results] on SRV40383-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [f2207b83-7221-4a0f-b97a-076fc64eb451|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/21] |
-    | Initialize job  | [6d8a6ec0-0230-4321-bb18-115868d091f2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/7] |
@@ -2075,6 +2067,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/9] |
+    | Initialize job  | [6d8a6ec0-0230-4321-bb18-115868d091f2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/4] |
+    | Finalize Job  | [f2207b83-7221-4a0f-b97a-076fc64eb451|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193844/logs/14] |
 # h3. (SRV40290-2-0) \release\CI-RELEASE-SRV40290-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40290-2-0]
     Last build  [20220216.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=193828&view=results] on SRV40290-2-0 as completed
     Records :
@@ -2108,13 +2108,6 @@ Ejecutado el 22-11-15
     Last build  [20220215.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=193570&view=results] on SRV40335-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 5af9092d-c44d-57d9-0ece-0711c4b6e304 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [7944a9bb-8a7b-4ff7-886c-3bc83a0a3d46|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/21] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/19] |
     | Initialize job  | [fb2df6e8-a7f2-4836-988d-48f2a46db576|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/4] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/11] |
@@ -2133,17 +2126,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/19] |
+    | Finalize Job  | [7944a9bb-8a7b-4ff7-886c-3bc83a0a3d46|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193570/logs/9] |
+    | Checkpoint  | 5af9092d-c44d-57d9-0ece-0711c4b6e304 |
 # h3. (SRV40062-2-0) \release\CI-RELEASE-SRV40062-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40062-2-0]
     Last build  [20220215.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=193469&view=results] on SRV40062-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/16] |
-    | Finalize Job  | [6a3f5b51-29cd-4008-a966-58f893fd7672|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/22] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/8] |
     | Post-job: Checkout SRV40062-2-0@release to s  | [3de6c911-6376-4f0b-aae6-5dcca926ee06|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/21] |
     | Initialize job  | [aae708ed-42c0-4b20-8e82-62308cc77f61|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/4] |
@@ -2163,20 +2156,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/9] |
+    | Finalize Job  | [6a3f5b51-29cd-4008-a966-58f893fd7672|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/22] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/193469/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40215-2-0) \release\CI-RELEASE-SRV40215-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40215-2-0]
     Last build  [20220208.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=192561&view=results] on SRV40215-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [d183150c-e7ec-4009-b371-1c4b90e36a3d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/19] |
-    | Checkpoint  | 01dcf54d-8436-5937-dbfd-4feff5f7c68b |
-    | Finalize Job  | [38060224-3088-489b-b972-5d5992bb5dd0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/8] |
-    | Post-job: Checkout SRV40215-2-0@release to s  | [af929e82-2d46-44ea-ba0d-6b0e266d2b52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/20] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/7] |
@@ -2191,29 +2181,21 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/18] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/9] |
+    | Initialize job  | [d183150c-e7ec-4009-b371-1c4b90e36a3d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/4] |
+    | Post-job: Checkout SRV40215-2-0@release to s  | [af929e82-2d46-44ea-ba0d-6b0e266d2b52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/20] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/8] |
+    | Finalize Job  | [38060224-3088-489b-b972-5d5992bb5dd0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/21] |
+    | Checkpoint  | 01dcf54d-8436-5937-dbfd-4feff5f7c68b |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/192561/logs/12] |
 # h3. (SRV40284-1-0) \release\CI-RELEASE-SRV40284-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40284-1-0]
     Last build  [20220201.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=191718&view=results] on SRV40284-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40284-1-0@release to s  | [47a4cb44-a41b-4034-ba56-2151dcd316c6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/20] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/17] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/16] |
-    | Initialize job  | [fbf0dde6-b794-466a-afda-aa798c7603b2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/4] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/14] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/23] |
     | Finalize Job  | [a3fd6ca0-42f7-40e9-aec7-d3ecddf4c8a6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/21] |
     | Checkout SRV40284-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/18] |
@@ -2221,42 +2203,57 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Checkpoint  | 376083d0-fb62-52e4-d1e6-ed32dcb6d1ba |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/9] |
+    | Post-job: Checkout SRV40284-1-0@release to s  | [47a4cb44-a41b-4034-ba56-2151dcd316c6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/20] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/23] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/14] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/6] |
+    | Initialize job  | [fbf0dde6-b794-466a-afda-aa798c7603b2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/4] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/16] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/3] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191718/logs/7] |
 # h3. (SRV40280-1-0) \release\CI-RELEASE-SRV40280-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40280-1-0]
     Last build  [20220128.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=191346&view=results] on SRV40280-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [b7238a0f-1031-4f2e-8945-08dc3c6ea8f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/14] |
-    | Post-job: Checkout SRV40280-1-0@release to s  | [a3eaaa2b-840b-45ff-b1c0-27f9acee65e0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/8] |
-    | Finalize Job  | [e299c1be-0e5e-4f43-81a5-650196142366|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/21] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/17] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/3] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/23] |
     | Checkout SRV40280-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/18] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Checkpoint  | 616b9e36-acef-53c3-9c08-dec19fa9bc19 |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/12] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/23] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/6] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/16] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/13] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/22] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/9] |
+    | Initialize job  | [b7238a0f-1031-4f2e-8945-08dc3c6ea8f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/4] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/11] |
+    | Finalize Job  | [e299c1be-0e5e-4f43-81a5-650196142366|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Post-job: Checkout SRV40280-1-0@release to s  | [a3eaaa2b-840b-45ff-b1c0-27f9acee65e0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191346/logs/10] |
 # h3. (SRV40304-1-0) \release\CI-RELEASE-SRV40304-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40304-1-0]
     Last build  [20220126.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=191087&view=results] on SRV40304-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Initialize job  | [14aa3729-e42c-41a3-8963-3aca75ebdaab|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/4] |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/19] |
@@ -2279,19 +2276,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/191087/logs/9] |
 # h3. (SRV40302-1-0) \release\CI-RELEASE-SRV40302-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40302-1-0]
     Last build  [20220121.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=190553&view=results] on SRV40302-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/16] |
-    | Initialize job  | [d13031b6-0626-49af-a775-5a5f30a645df|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/4] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/24] |
     | Post-job: Checkout SRV40302-1-0@release to s  | [1e7cdc64-f8c6-44c3-8751-70b52e5b8ea2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/7] |
@@ -2310,51 +2301,50 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/12] |
     | Checkpoint  | a570b6e3-0f3b-5103-0609-f87b1368c4a8 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/8] |
+    | Initialize job  | [d13031b6-0626-49af-a775-5a5f30a645df|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190553/logs/21] |
 # h3. (SRV40252-2-0) \release\CI-RELEASE-SRV40252-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40252-2-0]
     Last build  [20220120.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=190268&view=results] on SRV40252-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/10] |
-    | Post-job: Checkout SRV40252-2-0@desarrollo to s  | [38ade41d-12a3-43c4-a206-23f7a53341b8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/22] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/24] |
-    | Initialize job  | [f6803f94-b163-4978-8a4d-70c3e4f90a48|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/4] |
     | Checkpoint  | 594974e9-bd95-54f0-5912-78997c99c5ad |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/25] |
-    | Checkout SRV40252-2-0@desarrollo to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/5] |
-    | Finalize Job  | [257146e0-6f3f-46c1-8d41-da2c8478e58e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/23] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/12] |
+    | Finalize Job  | [257146e0-6f3f-46c1-8d41-da2c8478e58e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/23] |
+    | Checkout SRV40252-2-0@desarrollo to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/5] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/25] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/6] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/13] |
+    | Post-job: Checkout SRV40252-2-0@desarrollo to s  | [38ade41d-12a3-43c4-a206-23f7a53341b8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/22] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/9] |
+    | Initialize job  | [f6803f94-b163-4978-8a4d-70c3e4f90a48|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/4] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/190268/logs/14] |
 # h3. (SRV40209-1-0) \release\CI-RELEASE-SRV40209-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40209-1-0]
     Last build  [20220105.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=188130&view=results] on SRV40209-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/20] |
-    | Checkpoint  | 9f5f1975-4fd4-55d4-fd28-51f52383650d |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/23] |
     | Finalize Job  | [3afb92fc-0294-4061-905d-73b12b050e57|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/22] |
     | Post-job: Checkout SRV40209-1-0@release to s  | [64d0f916-7a77-45ca-ae75-76c63c73d0b6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/21] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/7] |
@@ -2371,28 +2361,23 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/188130/logs/15] |
+    | Checkpoint  | 9f5f1975-4fd4-55d4-fd28-51f52383650d |
 # h3. (SRV40349-1-0) \release\CI-RELEASE-SRV40349-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40349-1-0]
     Last build  [20220103.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=187715&view=results] on SRV40349-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/19] |
-    | Finalize Job  | [cb0fa024-3394-4e6c-b9e8-4d29a2171206|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/17] |
-    | Post-job: Checkout SRV40349-1-0@release to s  | [d4d56c96-0edf-47f0-bab0-82b00b712b9d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/20] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/13] |
-    | Checkpoint  | 56605ebb-edc7-5bcd-2167-8af1d87f6a93 |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/16] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/3] |
-    | Initialize job  | [03798a41-3921-423e-b214-988ca4fba631|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/4] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/15] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/23] |
     | Checkout SRV40349-1-0@release to s  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/5] |
@@ -2400,19 +2385,25 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/12] |
+    | Post-job: Checkout SRV40349-1-0@release to s  | [d4d56c96-0edf-47f0-bab0-82b00b712b9d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/20] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/6] |
+    | Initialize job  | [03798a41-3921-423e-b214-988ca4fba631|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/4] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/16] |
+    | Checkpoint  | 56605ebb-edc7-5bcd-2167-8af1d87f6a93 |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/13] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/8] |
+    | Finalize Job  | [cb0fa024-3394-4e6c-b9e8-4d29a2171206|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/187715/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40299-2-0) \release\CI-RELEASE-SRV40299-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40299-2-0]
     Last build  [20211223.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=186837&view=results] on SRV40299-2-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 3b98d0f5-9327-551e-fd98-00176b7a6d84 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/10] |
-    | Finalize Job  | [2af3e171-8ac8-4677-bbb5-25f6dcd085ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/22] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/7] |
@@ -2430,6 +2421,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/12] |
+    | Finalize Job  | [2af3e171-8ac8-4677-bbb5-25f6dcd085ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/22] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/9] |
+    | Checkpoint  | 3b98d0f5-9327-551e-fd98-00176b7a6d84 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186837/logs/14] |
 # h3. (SRV40300-2-0) \release\CI-RELEASE-SRV40300-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40300-2-0]
     Last build  [20211223.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=186836&view=results] on SRV40300-2-0 as completed
     Records :
@@ -2523,24 +2523,12 @@ Ejecutado el 22-11-15
     Last build  [20211217.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=186078&view=results] on SRV40288-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [f165177b-55e8-4809-bf61-175ad342fdb1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [2e61b497-73cd-4267-b2fa-3550c7a339e7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/16] |
     | Checkpoint  | f2c2f7cd-4180-5892-ab9c-5ae0b32ccb79 |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/15] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/24] |
     | Post-job: Checkout SRV40288-1-0@release to s  | [68e48248-f1cb-43f5-9579-d0e6c94ee4a4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/21] |
@@ -2549,18 +2537,22 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/12] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/6] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/13] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/9] |
+    | Finalize Job  | [f165177b-55e8-4809-bf61-175ad342fdb1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/22] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/20] |
+    | Initialize job  | [2e61b497-73cd-4267-b2fa-3550c7a339e7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186078/logs/4] |
 # h3. (SRV40278-1-0) \release\CI-RELEASE-SRV40278-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40278-1-0]
     Last build  [20211217.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=186077&view=results] on SRV40278-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/20] |
-    | Post-job: Checkout SRV40278-1-0@release to s  | [3198f4a2-e942-414e-9cee-46e6bffba087|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/21] |
-    | Initialize job  | [14eadc7d-4be6-4965-83d2-55b92986a8d9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/4] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/23] |
@@ -2579,14 +2571,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/16] |
+    | Initialize job  | [14eadc7d-4be6-4965-83d2-55b92986a8d9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/4] |
+    | Post-job: Checkout SRV40278-1-0@release to s  | [3198f4a2-e942-414e-9cee-46e6bffba087|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/186077/logs/9] |
 # h3. (SRV40262-1-0) \release\CI-RELEASE-SRV40262-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40262-1-0]
     Last build  [20211216.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=185911&view=results] on SRV40262-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Post-job: Checkout SRV40262-1-0@release to s  | [33cb4b4b-9ef9-4d57-a98e-3c897aaa6e6d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/22] |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/16] |
@@ -2610,21 +2606,14 @@ Ejecutado el 22-11-15
     | Initialize job  | [a8870418-5d8b-4d61-ab46-e45890dadf3c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/185911/logs/9] |
 # h3. (SRV40293-1-0) \release\CI-RELEASE-SRV40293-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40293-1-0]
     Last build  [20211206.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=184858&view=results] on SRV40293-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40293-1-0@release to s  | [1863ffe9-962f-42e7-bf4c-07fcd62808ca|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/15] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/20] |
-    | Finalize Job  | [e4bc52e5-a668-419a-ad95-45452461e197|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/22] |
-    | Descargar dependencias  | [262ac53a-4b77-54e8-72eb-48ed63d484e8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/12] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/23] |
     | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/13] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/7] |
     | Initialize job  | [15042eef-5a8a-4e6b-bf93-7d94722da1bb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/4] |
@@ -2640,17 +2629,21 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/19] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/15] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/9] |
+    | Post-job: Checkout SRV40293-1-0@release to s  | [1863ffe9-962f-42e7-bf4c-07fcd62808ca|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/21] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/8] |
+    | Descargar dependencias  | [262ac53a-4b77-54e8-72eb-48ed63d484e8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/12] |
+    | Finalize Job  | [e4bc52e5-a668-419a-ad95-45452461e197|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/22] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/184858/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40064-2-0) \release\CI-RELEASE-SRV40064-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40064-2-0]
     Last build  [20211015.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=178947&view=results] on SRV40064-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/20] |
-    | Checkpoint  | 3093e178-5694-5047-710e-46e5d276d3ac |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/23] |
@@ -2670,19 +2663,17 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/12] |
     | Initialize job  | [cb1d4da2-6a0d-45d2-aa22-f3d78efea6c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/4] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/16] |
+    | Checkpoint  | 3093e178-5694-5047-710e-46e5d276d3ac |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/178947/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40228-1-0) \release\CI-RELEASE-SRV40228-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40228-1-0]
     Last build  [20210913.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=175667&view=results] on SRV40228-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [b795baa3-64d4-492f-8f00-31430e0a913c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/4] |
-    | Finalize Job  | [1677bff6-bb0e-4304-92ba-3ea688e323db|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/23] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/24] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/7] |
@@ -2701,26 +2692,19 @@ Ejecutado el 22-11-15
     | Post-job: Checkout SRV40228-1-0@release to s  | [6b1bdd5e-0d05-49cd-8985-e789610501e1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/22] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/21] |
+    | Finalize Job  | [1677bff6-bb0e-4304-92ba-3ea688e323db|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/23] |
+    | Initialize job  | [b795baa3-64d4-492f-8f00-31430e0a913c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175667/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40175-2-0) \release\CI-FIBRA-RELEASE-SRV40175-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-2-0]
     Last build  [20210910.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=175535&view=results] on SRV40175-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 1b387143-182b-5676-764c-3365804ec5dc |
-    | Post-job: Checkout SRV40175-2-0@release to s  | [fae77639-bd19-4330-bac7-3e9dba409953|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/21] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/23] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/17] |
     | Finalize Job  | [71ccbbbc-dacc-407a-b1d8-a824ff3f7558|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/22] |
     | Initialize job  | [ed8e999e-c791-4e21-8f83-b3f6710199ca|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/4] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/6] |
@@ -2731,17 +2715,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/20] |
+    | Post-job: Checkout SRV40175-2-0@release to s  | [fae77639-bd19-4330-bac7-3e9dba409953|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/21] |
+    | Checkpoint  | 1b387143-182b-5676-764c-3365804ec5dc |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/9] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/13] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/18] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/175535/logs/8] |
 # h3. (SRV40282-1-0) \release\CI-RELEASE-SRV40282-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40282-1-0]
     Last build  [20210901.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=174472&view=results] on SRV40282-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/19] |
-    | Finalize Job  | [dbf978c4-c913-437c-8284-4f5e39f81151|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/15] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/22] |
@@ -2760,19 +2753,17 @@ Ejecutado el 22-11-15
     | Post-job: Checkout SRV40282-1-0@release to s  | [cdfbb49c-0315-4ca6-b800-e8217ce61aa7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/20] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/15] |
+    | Finalize Job  | [dbf978c4-c913-437c-8284-4f5e39f81151|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/174472/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40303-1-0) \release\CI-RELEASE-SRV40303-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40303-1-0]
     Last build  [20210820.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=173317&view=results] on SRV40303-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [17138e2a-3e2e-4e42-a694-0e3e8c8e9e1f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/17] |
@@ -2789,21 +2780,19 @@ Ejecutado el 22-11-15
     | Post-job: Checkout SRV40303-1-0@release to s  | [b3a520ed-707c-4c5e-ab19-e850d2e13c25|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/20] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/9] |
+    | Initialize job  | [17138e2a-3e2e-4e42-a694-0e3e8c8e9e1f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/4] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173317/logs/19] |
 # h3. (SRV40301-1-0) \release\CI-RELEASE-SRV40301-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40301-1-0]
     Last build  [20210819.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=173143&view=results] on SRV40301-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40301-1-0@release to s  | [b4b94c5c-4546-4f60-80cd-0fb855b7d35f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 35ef262e-5fb8-51cb-d103-440a499f0484 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/13] |
@@ -2819,22 +2808,21 @@ Ejecutado el 22-11-15
     | Initialize job  | [94811e18-87da-4bf4-8913-e9886ed1ceb9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/12] |
+    | Checkpoint  | 35ef262e-5fb8-51cb-d103-440a499f0484 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/9] |
+    | Post-job: Checkout SRV40301-1-0@release to s  | [b4b94c5c-4546-4f60-80cd-0fb855b7d35f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/21] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/173143/logs/20] |
 # h3. (SRV40320-1-0) \release\CI-RELEASE-SRV40320-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40320-1-0]
     Last build  [20210812.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=172328&view=results] on SRV40320-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40320-1-0@release to s  | [1cc0fc34-0c0d-4310-8a44-13514933eac2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/19] |
-    | Initialize job  | [535d119b-1a63-4f34-a2da-21ccf656fd0f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 8611d14d-58c9-5d97-e72c-3c6054d8b4fe |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/18] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/8] |
-    | Publish code coverage   | [3466cc88-cedf-5c95-9495-665300a6857f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/12] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/21] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/16] |
     | Finalize Job  | [e35f6c4c-7684-4c22-a64c-823876325b5a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/20] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/15] |
@@ -2847,23 +2835,24 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/11] |
+    | Checkpoint  | 8611d14d-58c9-5d97-e72c-3c6054d8b4fe |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/9] |
+    | Initialize job  | [535d119b-1a63-4f34-a2da-21ccf656fd0f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/4] |
+    | Post-job: Checkout SRV40320-1-0@release to s  | [1cc0fc34-0c0d-4310-8a44-13514933eac2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/21] |
+    | Publish code coverage   | [3466cc88-cedf-5c95-9495-665300a6857f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/172328/logs/18] |
 # h3. (SRV40290-1-0) \release\CI-RELEASE-SRV40290-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40290-1-0]
     Last build  [20210809.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=171939&view=results] on SRV40290-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout SRV40290-1-0@release to s  | [70492907-ba33-4caf-ace9-15e9c60ee703|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/22] |
-    | Finalize Job  | [0e57d48e-51a3-4912-af93-191af03fbd56|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/3] |
@@ -2878,18 +2867,21 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Initialize job  | [ae986945-b3f5-4d0c-8359-ecbf959e94f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/9] |
+    | Finalize Job  | [0e57d48e-51a3-4912-af93-191af03fbd56|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/23] |
+    | Post-job: Checkout SRV40290-1-0@release to s  | [70492907-ba33-4caf-ace9-15e9c60ee703|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/22] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/11] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/171939/logs/14] |
 # h3. (SRV40251-1-0) \release\CI-RELEASE-SRV40251-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40251-1-0]
     Last build  [20210722.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=170295&view=results] on SRV40251-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/14] |
-    | Checkpoint  | e40eb058-5cf2-5005-85c8-2fa2bddd36f7 |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/21] |
-    | Finalize Job  | [28b37592-cef4-4ec0-b12f-46ee37ab88bc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/23] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/8] |
     | Initialize job  | [2ecb5214-a15c-4db1-9324-695a2a59ad7d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/4] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/11] |
@@ -2909,15 +2901,18 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Post-job: Checkout SRV40251-1-0@release to s  | [6a36b973-f2d4-45ee-9650-f00635742aac|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/12] |
+    | Checkpoint  | e40eb058-5cf2-5005-85c8-2fa2bddd36f7 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/16] |
+    | Finalize Job  | [28b37592-cef4-4ec0-b12f-46ee37ab88bc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/23] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170295/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40077-2-0) \release\CI-RELEASE-SRV40077-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40077-2-0]
     Last build  [20210722.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=170279&view=results] on SRV40077-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/19] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/15] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/11] |
@@ -2938,6 +2933,11 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/170279/logs/9] |
 # h3. (SRV40065-2-0) \release\CI-RELEASE-SRV40065-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40065-2-0]
     Last build  [20210722.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=170278&view=results] on SRV40065-2-0 as completed
     Records :
@@ -3001,13 +3001,6 @@ Ejecutado el 22-11-15
     Last build  [20210719.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=169823&view=results] on SRV40137-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | bd0650f1-eef1-582b-8675-095bc19a2bb0 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/11] |
     | Initialize job  | [14d65867-13df-4e96-af22-6d0270f15940|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/4] |
@@ -3027,19 +3020,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/9] |
+    | Checkpoint  | bd0650f1-eef1-582b-8675-095bc19a2bb0 |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169823/logs/14] |
 # h3. (SRV40063-1-0) \release\CI-RELEASE-SRV40063-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40063-1-0]
     Last build  [20210714.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=169483&view=results] on SRV40063-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/24] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/19] |
     | Initialize job  | [a2367e7b-7222-4c25-b80a-7f5906e53bb6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/4] |
@@ -3058,6 +3049,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/169483/logs/21] |
 # h3. (SRV40078-2-0) \release\CI-RELEASE-SRV40078-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40078-2-0]
     Last build  [20210714.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=169482&view=results] on SRV40078-2-0 as completed
     Records :
@@ -3091,16 +3091,6 @@ Ejecutado el 22-11-15
     Last build  [20210705.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=168507&view=results] on SRV40088-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/13] |
-    | Post-job: Checkout SRV40088-1-0@release to s  | [57b4c65f-a464-43c4-90c9-28f354bcdd43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/19] |
-    | Initialize job  | [2059e1f8-633f-4080-a2ec-4cb24abd6e07|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/4] |
-    | Finalize Job  | [40280d81-02f3-4cf4-85c9-55261dbe3d0c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/8] |
     | Checkpoint  | 0901b70a-39aa-53ad-c971-6b966eb10513 |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/22] |
@@ -3116,6 +3106,16 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Post-job: Checkout SRV40088-1-0@release to s  | [57b4c65f-a464-43c4-90c9-28f354bcdd43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/15] |
+    | Finalize Job  | [40280d81-02f3-4cf4-85c9-55261dbe3d0c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/21] |
+    | Initialize job  | [2059e1f8-633f-4080-a2ec-4cb24abd6e07|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168507/logs/4] |
 # h3. (CustomerInformationManagement) \release\CI-RELEASE-SRV40163-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/CustomerInformationManagement]
     Last build  [20210705.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=168506&view=results] on CustomerInformationManagement as completed
     Records :
@@ -3142,9 +3142,6 @@ Ejecutado el 22-11-15
     Last build  [20210702.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=168372&view=results] on SRV40203-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/20] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/16] |
@@ -3168,17 +3165,13 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Initialize job  | [ab1adea8-cafc-4ce2-81ff-eb2277bb471d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/168372/logs/9] |
 # h3. (SRV40322-1-0) \release\CI-RELEASE-SRV40322-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40322-1-0]
     Last build  [20210615.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=166856&view=results] on SRV40322-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [d9462f1c-1f80-42f0-b6f0-0a5dd6220b74|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Post-job: Checkout SRV40322-1-0@release to s  | [5fa4ca58-a8d2-431c-bb40-3973026718a7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/20] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/19] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/22] |
@@ -3197,25 +3190,17 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Checkpoint  | d49f52f8-33ce-53b2-f755-ee1234d71e79 |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/9] |
+    | Finalize Job  | [d9462f1c-1f80-42f0-b6f0-0a5dd6220b74|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/19] |
+    | Post-job: Checkout SRV40322-1-0@release to s  | [5fa4ca58-a8d2-431c-bb40-3973026718a7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/166856/logs/14] |
 # h3. (SRV40253-1-0) \release\CI-RELEASE-SRV40253-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40253-1-0]
     Last build  [20210602.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=165539&view=results] on SRV40253-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/21] |
-    | Post-job: Checkout SRV40253-1-0@release to s  | [ad968d19-805c-4ab2-9315-47a79c929674|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/22] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/16] |
-    | Initialize job  | [dc1534c7-8ebe-48fc-aece-56f174be692b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/4] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/17] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/6] |
@@ -3228,6 +3213,21 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/8] |
+    | Initialize job  | [dc1534c7-8ebe-48fc-aece-56f174be692b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/16] |
+    | Post-job: Checkout SRV40253-1-0@release to s  | [ad968d19-805c-4ab2-9315-47a79c929674|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/22] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/9] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/165539/logs/7] |
 # h3. (SRV40245-1-0) \release\CI-RELEASE-SRV40245-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40245-1-0]
     Last build  [20210602.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=165536&view=results] on SRV40245-1-0 as completed
     Records :
@@ -3263,14 +3263,6 @@ Ejecutado el 22-11-15
     Last build  [20210526.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=164661&view=results] on JOB40319-1-0 as completed
     Records :
     ||Record||link||
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/14] |
-    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/13] |
-    | Checkpoint  | 7d335158-8761-58b3-bb31-1bde462657d4 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/17] |
-    | Finalize Job  | [9d63079c-d182-4955-ad17-2fda86bdf95b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/24] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/22] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/11] |
@@ -3291,28 +3283,24 @@ Ejecutado el 22-11-15
     | Compilación Java  | [edc9bfad-9734-5fe3-8583-e02cb23b2b30|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/15] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Initialize job  | [bffb29b0-0fbc-436b-98cd-fbe1f03408ff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/4] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/9] |
+    | Checkpoint  | 7d335158-8761-58b3-bb31-1bde462657d4 |
+    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/13] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/14] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Finalize Job  | [9d63079c-d182-4955-ad17-2fda86bdf95b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/24] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/17] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/164661/logs/10] |
 # h3. (SRV40064-2-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40064-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40064-2-0]
     Last build  [20210506.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=162304&view=results] on SRV40064-2-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 0087a17c-dc30-58a5-0619-1e568355c6d4 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/17] |
-    | Initialize job  | [be326413-016a-4d8f-af6a-9bf75c9a657c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/4] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/15] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/11] |
     | Post-job: Checkout  | [68fe97ae-a0d7-41c2-a38c-c97b2bbcf5b3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/21] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/24] |
     | Finalize Job  | [8b723c2c-8067-4e01-9bda-d56e62cecf32|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/22] |
@@ -3321,18 +3309,22 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/9] |
+    | Checkpoint  | 0087a17c-dc30-58a5-0619-1e568355c6d4 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/6] |
+    | Initialize job  | [be326413-016a-4d8f-af6a-9bf75c9a657c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/4] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/162304/logs/17] |
 # h3. (SRV40064-1-0) \release\CI-RELEASE-SRV40064-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40064-1-0]
     Last build  [20210430.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=161666&view=results] on SRV40064-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [8c510707-2c5b-4b42-ac85-0348b7e19501|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/21] |
-    | Finalize Job  | [5fbc2007-7454-4ae6-812b-0dd565d7ef74|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/23] |
@@ -3351,17 +3343,18 @@ Ejecutado el 22-11-15
     | Checkpoint  | 994f16c3-5451-5615-1061-dfd9dd0e86fa |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/9] |
+    | Finalize Job  | [5fbc2007-7454-4ae6-812b-0dd565d7ef74|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/22] |
+    | Post-job: Checkout  | [8c510707-2c5b-4b42-ac85-0348b7e19501|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/161666/logs/21] |
 # h3. (SRV40309-1-0) \release\CI-RELEASE-SRV40309-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40309-1-0]
     Last build  [20210316.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=156902&view=results] on SRV40309-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/17] |
@@ -3371,23 +3364,26 @@ Ejecutado el 22-11-15
     | Checkpoint  | ec9361d4-3a32-5693-0fe6-8f323bd3c490 |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/3] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/15] |
-    | Finalize Job  | [cef3f17d-f1d0-4db1-a0af-ba1db47de714|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/21] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/23] |
-    | Post-job: Checkout  | [60829212-7c58-4873-84d5-d1b759e2ef43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/20] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/18] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/9] |
+    | Post-job: Checkout  | [60829212-7c58-4873-84d5-d1b759e2ef43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/20] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/23] |
+    | Finalize Job  | [cef3f17d-f1d0-4db1-a0af-ba1db47de714|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/21] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/15] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/156902/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40273-1-0) \release\CI-RELEASE-SRV40273-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40273-1-0]
     Last build  [20210301.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=155616&view=results] on SRV40273-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [ab83c642-4706-45ac-b59a-026c9abf693c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/10] |
-    | Initialize job  | [153c679f-a56a-4dc2-8ac5-22f40efd73b2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/4] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/21] |
@@ -3411,18 +3407,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/12] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/9] |
+    | Post-job: Checkout  | [ab83c642-4706-45ac-b59a-026c9abf693c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/22] |
+    | Initialize job  | [153c679f-a56a-4dc2-8ac5-22f40efd73b2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/4] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/155616/logs/10] |
 # h3. (SRV40255-1-0) \release\CI-RELEASE-SRV40255-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40255-1-0]
     Last build  [20210208.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=153197&view=results] on SRV40255-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [1bfe6822-581a-4323-9a06-35ee96a004ff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/23] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/16] |
-    | Initialize job  | [4208c370-84f2-47c2-9561-5abdd1d3b920|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/4] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/24] |
@@ -3442,17 +3434,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/9] |
+    | Initialize job  | [4208c370-84f2-47c2-9561-5abdd1d3b920|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/21] |
+    | Finalize Job  | [1bfe6822-581a-4323-9a06-35ee96a004ff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/153197/logs/23] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40285-1-0) \release\CI-RELEASE-SRV40285-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40285-1-0]
     Last build  [20210205.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=152965&view=results] on SRV40285-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [d865c168-f820-4b1b-9e85-0ce7f9d6a234|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/19] |
-    | Finalize Job  | [6c3b687a-f940-4ae4-b92e-4946c40c086e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/15] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/11] |
@@ -3471,13 +3464,17 @@ Ejecutado el 22-11-15
     | Checkpoint  | c6f06cf0-2ce5-5001-c25f-df0aa839be3b |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/9] |
+    | Initialize job  | [d865c168-f820-4b1b-9e85-0ce7f9d6a234|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/4] |
+    | Finalize Job  | [6c3b687a-f940-4ae4-b92e-4946c40c086e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152965/logs/13] |
 # h3. (SRV40272-1-0) \release\CI-RELEASE-SRV40272-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40272-1-0]
     Last build  [20210204.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=152908&view=results] on SRV40272-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Checkpoint  | 814e47f6-3de6-5091-1803-37844e4fbcec |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/21] |
@@ -3502,6 +3499,9 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/152908/logs/9] |
 # h3. (SRV40244-2-0) \release\CI-RELEASE-SRV40244-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40244-2-0]
     Last build  [20210204.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=152903&view=results] on SRV40244-2-0 as completed
     Records :
@@ -3537,22 +3537,6 @@ Ejecutado el 22-11-15
     Last build  [20210122.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=150829&view=results] on SRV40078-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/8] |
-    | Post-job: Checkout  | [b44e0aa1-cc7a-48fc-b301-6431146f0ad6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/21] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/23] |
-    | Finalize Job  | [9b839b60-bdd1-49ec-b720-6da14d9c0942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/17] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/15] |
     | Checkpoint  | 39880dd9-23db-53a6-6921-ce74c3e8f885 |
@@ -3563,13 +3547,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/12] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/7] |
+    | Finalize Job  | [9b839b60-bdd1-49ec-b720-6da14d9c0942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/22] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/11] |
+    | Post-job: Checkout  | [b44e0aa1-cc7a-48fc-b301-6431146f0ad6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/9] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/13] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150829/logs/18] |
 # h3. (SRV40134-1-0) \release\CI-RELEASE-SRV40134-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40134-1-0]
     Last build  [20210122.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=150807&view=results] on SRV40134-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [8a42f446-8c98-431c-b702-0ccd9e1c7606|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/10] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Checkpoint  | 82df30a1-9d80-56c7-bf1e-3c68a47c0759 |
@@ -3594,19 +3591,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/9] |
+    | Finalize Job  | [8a42f446-8c98-431c-b702-0ccd9e1c7606|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150807/logs/23] |
 # h3. (SRV40062-2-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40062-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40062-2-0]
     Last build  [20210119.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=150164&view=results] on SRV40062-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/13] |
@@ -3624,17 +3615,19 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/12] |
     | Initialize job  | [d1097086-8c28-4d2d-9ffa-ffcdbba3b540|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/150164/logs/16] |
 # h3. (SRV40305-1-0) \release\CI-RELEASE-SRV40305-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40305-1-0]
     Last build  [20210115.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=149719&view=results] on SRV40305-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 7d47d00c-4a9e-5a75-bd07-3723225ebc74 |
-    | Post-job: Checkout  | [46f1cefd-999e-45cf-aaca-3865ce301fdf|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/22] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/11] |
@@ -3655,13 +3648,17 @@ Ejecutado el 22-11-15
     | Initialize job  | [d2f64989-6bef-4d48-be6e-de196bca7a99|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/21] |
+    | Post-job: Checkout  | [46f1cefd-999e-45cf-aaca-3865ce301fdf|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/22] |
+    | Checkpoint  | 7d47d00c-4a9e-5a75-bd07-3723225ebc74 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149719/logs/9] |
 # h3. (JOB40287-1-0) \release\CI-RELEASE-JOB40287-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40287-1-0]
     Last build  [20210115.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=149530&view=results] on JOB40287-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/9] |
-    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/14] |
     | Finalize Job  | [7a4414b7-a730-4218-88df-2f43d26db662|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/21] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/19] |
@@ -3684,6 +3681,9 @@ Ejecutado el 22-11-15
     | Post-job: Checkout  | [a95c575e-1928-4dc7-a615-e6f6f28c5b93|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/20] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/14] |
+    | Copy Files to: Dockerfile  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149530/logs/9] |
 # h3. (SRV40063-1-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40063-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40063-1-0]
     Last build  [20210114.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=149461&view=results] on SRV40063-1-0 as completed
     Records :
@@ -3718,8 +3718,6 @@ Ejecutado el 22-11-15
     Last build  [20210114.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=149439&view=results] on SRV40222-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/10] |
     | Initialize job  | [ecb993c6-45c3-439f-8528-23ef80949619|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/4] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
@@ -3745,6 +3743,8 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [a5ba0ab7-4660-49dc-9da7-ebc14e09cf13|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/23] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/149439/logs/9] |
 # h3. (SRV40222-1-0) \release\CI-RELEASE-WV-SRV40222-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40222-1-0]
     Last build  [20210114.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=149440&view=results] on SRV40222-1-0 as completed
     Records :
@@ -3780,16 +3780,6 @@ Ejecutado el 22-11-15
     Last build  [20210111.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=148843&view=results] on SRV40078-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [d6e94d8a-5823-455f-9553-044840d744af|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/21] |
-    | Checkpoint  | 638af608-db3a-552b-856f-1f1d5be90008 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/8] |
-    | Finalize Job  | [898d8310-2562-4f9f-aa5c-61c4bd58faa3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/22] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/7] |
@@ -3806,19 +3796,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/9] |
+    | Checkpoint  | 638af608-db3a-552b-856f-1f1d5be90008 |
+    | Post-job: Checkout  | [d6e94d8a-5823-455f-9553-044840d744af|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/21] |
+    | Finalize Job  | [898d8310-2562-4f9f-aa5c-61c4bd58faa3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/22] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148843/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40216-2-0) \release\CI-RELEASE-SRV40216-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40216-2-0]
     Last build  [20210110.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=148694&view=results] on SRV40216-2-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 6a5e4ebf-1001-5bae-8be4-0b131996e166 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/20] |
-    | Finalize Job  | [6bfa8d90-bab1-4a51-8d4c-51e6fb085b2d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/22] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/7] |
@@ -3836,6 +3827,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/9] |
+    | Checkpoint  | 6a5e4ebf-1001-5bae-8be4-0b131996e166 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/16] |
+    | Finalize Job  | [6bfa8d90-bab1-4a51-8d4c-51e6fb085b2d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/22] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/148694/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40137-1-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40137-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40137-1-0]
     Last build  [20210110.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=148656&view=results] on SRV40137-1-0 as completed
     Records :
@@ -3870,25 +3870,6 @@ Ejecutado el 22-11-15
     Last build  [20201230.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=147330&view=results] on SRV40065-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [0946d6d8-03a2-437f-9e0e-0dc0510ba58e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/21] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/23] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/18] |
-    | Finalize Job  | [81aa7387-10d1-41a2-a824-818370ea444c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/22] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/17] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/24] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/19] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
@@ -3896,30 +3877,29 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/12] |
     | Checkpoint  | 78eae240-f030-5a41-2322-fa967e260cd2 |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/18] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/9] |
+    | Post-job: Checkout  | [0946d6d8-03a2-437f-9e0e-0dc0510ba58e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/21] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/24] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/6] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/13] |
+    | Finalize Job  | [81aa7387-10d1-41a2-a824-818370ea444c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/147330/logs/22] |
 # h3. (SRV40250-1-0) \release\CI-RELEASE-SRV40250-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40250-1-0]
     Last build  [20201201.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=143633&view=results] on SRV40250-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 4b3a835b-a24a-58bb-6b81-1a005f648a84 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/21] |
-    | Post-job: Checkout  | [6a1bd6af-1008-497f-a289-55c280da2b20|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/22] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/13] |
-    | Initialize job  | [77b5ec0a-3a6f-49c5-95f0-8ec3eea75688|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/4] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/17] |
-    | Finalize Job  | [0cc2815d-bb2b-4cd6-a5d4-aec7a2c519d1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/23] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/6] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/15] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/25] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/5] |
@@ -3927,13 +3907,30 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/12] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/16] |
+    | Post-job: Checkout  | [6a1bd6af-1008-497f-a289-55c280da2b20|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/22] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/9] |
+    | Checkpoint  | 4b3a835b-a24a-58bb-6b81-1a005f648a84 |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/6] |
+    | Finalize Job  | [0cc2815d-bb2b-4cd6-a5d4-aec7a2c519d1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/23] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/3] |
+    | Initialize job  | [77b5ec0a-3a6f-49c5-95f0-8ec3eea75688|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/4] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143633/logs/19] |
 # h3. (SRV40215-1-0) \release\CI-RELEASE-SRV40215-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40215-1-0]
     Last build  [20201130.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=143480&view=results] on SRV40215-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Initialize job  | [567a5664-e417-4a2b-8c50-3804befa4404|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/4] |
     | Finalize Job  | [aeb812ef-bf3a-4834-a39f-3b5c45afe11e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/21] |
@@ -3956,22 +3953,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143480/logs/9] |
 # h3. (SRV40223-1-0) \release\CI-RELEASE-SRV40223-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40223-1-0]
     Last build  [20201126.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=143081&view=results] on SRV40223-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [e2437098-192b-4d11-ba58-1bf659a6fcc5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/3] |
@@ -3987,18 +3975,22 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [cdde5a39-38be-4104-897e-ed33a19c8fda|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/23] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/9] |
+    | Initialize job  | [e2437098-192b-4d11-ba58-1bf659a6fcc5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/4] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/143081/logs/8] |
 # h3. (JOB40298-1-0) \release\CI-RELEASE-JOB40298-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40298-1-0]
     Last build  [20201112.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=140746&view=results] on JOB40298-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/14] |
-    | Post-job: Checkout  | [c805ff15-541c-4a7f-8fae-284e11682b4b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/20] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/19] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/22] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/17] |
@@ -4016,18 +4008,18 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/12] |
     | Initialize job  | [bd522c1c-634b-4ed1-9e1e-f445bc833373|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/4] |
+    | Post-job: Checkout  | [c805ff15-541c-4a7f-8fae-284e11682b4b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/20] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/140746/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40295-1-0) \release\CI-RELEASE-SRV40295-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40295-1-0]
     Last build  [20201104.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=139501&view=results] on SRV40295-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/18] |
@@ -4046,6 +4038,14 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Finalize Job  | [57fb6fa7-6876-4cdb-adbe-ede867dfcca7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/139501/logs/20] |
 # h3. (SRV40297-1-0) \release\CI-RELEASE-SRV40297-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40297-1-0]
     Last build  [20201104.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=139484&view=results] on SRV40297-1-0 as completed
     Records :
@@ -4080,15 +4080,6 @@ Ejecutado el 22-11-15
     Last build  [20201029.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=138561&view=results] on SRV40299-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/20] |
-    | Post-job: Checkout  | [544e770f-5a82-4494-a30b-4eed97b6ef15|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/21] |
-    | Initialize job  | [eec8b713-d045-4310-a49f-50686892e5ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/4] |
-    | Checkpoint  | 993fe672-eaad-5444-48de-523e77ae68bb |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/23] |
@@ -4106,6 +4097,15 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/16] |
+    | Checkpoint  | 993fe672-eaad-5444-48de-523e77ae68bb |
+    | Initialize job  | [eec8b713-d045-4310-a49f-50686892e5ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/4] |
+    | Post-job: Checkout  | [544e770f-5a82-4494-a30b-4eed97b6ef15|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138561/logs/20] |
 # h3. (SRV40300-1-0) \release\CI-RELEASE-SRV40300-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40300-1-0]
     Last build  [20201029.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=138558&view=results] on SRV40300-1-0 as completed
     Records :
@@ -4140,14 +4140,6 @@ Ejecutado el 22-11-15
     Last build  [20201028.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=138135&view=results] on JOB40241-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/9] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/18] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/8] |
-    | Initialize job  | [cca35d8d-4b4f-4258-96c4-6243148a2888|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/4] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/10] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/21] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/16] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/12] |
@@ -4164,18 +4156,18 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/11] |
     | Post-job: Checkout  | [b19a221b-c48b-4a34-80b7-fa91982ab1a4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/19] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/21] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/10] |
+    | Initialize job  | [cca35d8d-4b4f-4258-96c4-6243148a2888|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/4] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/18] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/13] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138135/logs/9] |
 # h3. (SRV40239-1-0) \release\CI-RELEASE-SRV40239-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40239-1-0]
     Last build  [20201028.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=138132&view=results] on SRV40239-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/20] |
-    | Post-job: Checkout  | [340e032c-96ea-4131-9b07-498fdae78587|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/11] |
     | Finalize Job  | [77f8ab45-8ba9-46a3-91cd-6d3690ab367e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/22] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/23] |
@@ -4194,13 +4186,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/16] |
+    | Post-job: Checkout  | [340e032c-96ea-4131-9b07-498fdae78587|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/21] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138132/logs/9] |
 # h3. (SRV40220-1-0) \release\CI-RELEASE-SRV40220-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40220-1-0]
     Last build  [20201027.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=138016&view=results] on SRV40220-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [e51d5a59-b797-4f2a-9305-081ae16fa877|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/10] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/21] |
@@ -4225,22 +4222,13 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Checkpoint  | 957b84fe-1a3e-5e34-7db1-eac82091c10a |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/9] |
+    | Finalize Job  | [e51d5a59-b797-4f2a-9305-081ae16fa877|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/138016/logs/23] |
 # h3. (SRV40175-1-0) \release\CI-RELEASE-SRV40175-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-1-0]
     Last build  [20201023.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=137578&view=results] on SRV40175-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/8] |
-    | Post-job: Checkout  | [c38e4cc3-c61f-480c-8dcf-67bf2f736ea1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/21] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/23] |
-    | Finalize Job  | [28d23d3b-e58f-4ab1-94da-71fb7036c252|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/3] |
@@ -4255,17 +4243,22 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/9] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/7] |
+    | Finalize Job  | [28d23d3b-e58f-4ab1-94da-71fb7036c252|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/22] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/11] |
+    | Post-job: Checkout  | [c38e4cc3-c61f-480c-8dcf-67bf2f736ea1|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/21] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137578/logs/20] |
 # h3. (SRV40176-1-0) \release\CI-RELEASE-SRV40176-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40176-1-0]
     Last build  [20201020.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=137086&view=results] on SRV40176-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/21] |
-    | Finalize Job  | [443782f4-fd0c-40c8-a7d4-4e0b4d75dfad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/23] |
-    | Post-job: Checkout  | [0737cecb-c6f8-48d8-9ff6-52514635a362|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/22] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/11] |
@@ -4286,13 +4279,17 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/12] |
     | Initialize job  | [e9b7f905-4fbe-4afb-8936-fc0bc2c5931f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/4] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/9] |
+    | Post-job: Checkout  | [0737cecb-c6f8-48d8-9ff6-52514635a362|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/22] |
+    | Finalize Job  | [443782f4-fd0c-40c8-a7d4-4e0b4d75dfad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/23] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/137086/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40175-1-1) \release\CI-RELEASE-SRV40175-1-1  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-1-1]
     Last build  [20201020.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=136980&view=results] on SRV40175-1-1 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/20] |
     | Post-job: Checkout  | [d99ca5e6-86ea-42da-aa92-548d3446bb2f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/21] |
@@ -4316,17 +4313,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/136980/logs/9] |
 # h3. (SRV40216-1-0) \release\CI-RELEASE-SRV40216-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40216-1-0]
     Last build  [20201005.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=134704&view=results] on SRV40216-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/8] |
     | Initialize job  | [88e6fc05-d9d1-4dc5-bd06-65bedf10dac5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/4] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/23] |
@@ -4346,26 +4339,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/9] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/134704/logs/20] |
 # h3. (SRV40296-1-0) \release\CI-RELEASE-SRV40296-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40296-1-0]
     Last build  [20200922.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=131859&view=results] on SRV40296-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [8f47046a-e437-405a-baf0-045872b81bfc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/21] |
-    | Finalize Job  | [59062bc6-a8d6-4312-b16c-4f2b5c11a46a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/23] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/24] |
-    | Checkpoint  | ab512c55-b162-5b9b-20f8-761d4d7dfaba |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/7] |
-    | Post-job: Checkout  | [2e9a6061-63a1-4832-8777-7c2b73f26145|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/22] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/17] |
@@ -4377,13 +4361,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/16] |
+    | Finalize Job  | [59062bc6-a8d6-4312-b16c-4f2b5c11a46a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/23] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/9] |
+    | Initialize job  | [8f47046a-e437-405a-baf0-045872b81bfc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/4] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/19] |
+    | Post-job: Checkout  | [2e9a6061-63a1-4832-8777-7c2b73f26145|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/22] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/7] |
+    | Checkpoint  | ab512c55-b162-5b9b-20f8-761d4d7dfaba |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/131859/logs/8] |
 # h3. (SRV40230-1-0) \release\CI-RELEASE-SRV40230-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40230-1-0]
     Last build  [20200915.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=130661&view=results] on SRV40230-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [93c76042-9363-4fa6-80f2-0545f6ed8747|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/10] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/21] |
@@ -4408,25 +4405,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/9] |
+    | Initialize job  | [93c76042-9363-4fa6-80f2-0545f6ed8747|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/130661/logs/4] |
 # h3. (SRV40266-1-0) \release\CI-RELEASE-SRV40266-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40266-1-0]
     Last build  [20200909.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=129451&view=results] on SRV40266-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize Job  | [f6a56561-47ef-4fde-8fc8-0d0674f0fe93|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/4] |
-    | Post Job Cleanup  | [4ccf4918-da25-40c4-82fc-1bafcf1d5c3f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/22] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Get Sources  | [e11ebdd4-4787-44d0-a42b-3c6fb07bb854|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/5] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/23] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/17] |
@@ -4438,18 +4423,25 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Checkpoint  | ce3b68d1-40e0-5e06-71af-eee328f8f0bd |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/21] |
+    | Get Sources  | [e11ebdd4-4787-44d0-a42b-3c6fb07bb854|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/5] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/9] |
+    | Post Job Cleanup  | [4ccf4918-da25-40c4-82fc-1bafcf1d5c3f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/22] |
+    | Initialize Job  | [f6a56561-47ef-4fde-8fc8-0d0674f0fe93|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/4] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/129451/logs/8] |
 # h3. (JOB40246-1-0) \release\CI-RELEASE-JOB40246-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40246-1-0]
     Last build  [20200901.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=127331&view=results] on JOB40246-1-0 as completed
     Records :
     ||Record||link||
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/13] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/16] |
-    | Create work item: Error ejecución build  | [326d7cab-04ab-5bad-5576-30db7266f427|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/23] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/8] |
-    | Post-job: Checkout  | [2b518bb9-9c3b-45b0-ba78-60c7b133c1ad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/24] |
     | Initialize job  | [b2310fe9-9822-427c-9cf6-66d73258aea4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/4] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/26] |
@@ -4469,18 +4461,18 @@ Ejecutado el 22-11-15
     | Checkpoint  | 951e81b9-7217-50ca-ce87-e80514e651f0 |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/14] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/16] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/9] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/13] |
+    | Post-job: Checkout  | [2b518bb9-9c3b-45b0-ba78-60c7b133c1ad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/24] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/8] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/21] |
+    | Create work item: Error ejecución build  | [326d7cab-04ab-5bad-5576-30db7266f427|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/127331/logs/23] |
 # h3. (SRV40190-1-0) \release\CI-RELEASE-SRV40190-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40190-1-0]
     Last build  [20200826.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=126076&view=results] on SRV40190-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 318fa988-92b7-55c8-c9f1-36031bccda53 |
-    | Initialize job  | [5530a577-34f7-40b0-b3f4-4029bdf6b029|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/8] |
     | Post-job: Checkout  | [50891644-7221-4e21-8fc3-668b576d4171|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/22] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/11] |
@@ -4500,18 +4492,18 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/12] |
     | Finalize Job  | [503ae8a8-b215-4495-bf4a-f7f7167eacdb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/23] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/21] |
+    | Initialize job  | [5530a577-34f7-40b0-b3f4-4029bdf6b029|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/126076/logs/4] |
+    | Checkpoint  | 318fa988-92b7-55c8-c9f1-36031bccda53 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (JOB40170-1-0) \release\CI-RELEASE-JOB40170-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40170-1-0]
     Last build  [20200819.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=124148&view=results] on JOB40170-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [0a283bdd-9283-4cff-b116-0c746aef129c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/19] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [74d43232-401c-43ff-bfb6-40bed718328e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/20] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/18] |
-    | Initialize job  | [fe02742c-8965-4324-adfe-59d64b982424|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/4] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/21] |
@@ -4528,6 +4520,14 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/12] |
+    | Initialize job  | [fe02742c-8965-4324-adfe-59d64b982424|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/18] |
+    | Finalize Job  | [74d43232-401c-43ff-bfb6-40bed718328e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/9] |
+    | Post-job: Checkout  | [0a283bdd-9283-4cff-b116-0c746aef129c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/124148/logs/19] |
 # h3. (SRV40174-1-0) \release\CI-RELEASE-SRV40174-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40174-1-0]
     Last build  [20200819.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=124140&view=results] on SRV40174-1-0 as completed
     Records :
@@ -4561,19 +4561,6 @@ Ejecutado el 22-11-15
     Last build  [20200810.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=121504&view=results] on SRV40261-2-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | b7906f1b-e534-5746-0e2c-0dafa44f99e9 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/14] |
-    | Finalize Job  | [c8d74c5c-288c-4c6d-8733-293b921264e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/23] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/3] |
@@ -4588,14 +4575,23 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/12] |
+    | Finalize Job  | [c8d74c5c-288c-4c6d-8733-293b921264e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/23] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/9] |
+    | Checkpoint  | b7906f1b-e534-5746-0e2c-0dafa44f99e9 |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121504/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40260-1-0) \release\CI-RELEASE-SRV40260-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40260-1-0]
     Last build  [20200807.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=121106&view=results] on SRV40260-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/8] |
@@ -4619,17 +4615,14 @@ Ejecutado el 22-11-15
     | Finalize Job  | [2026e3fb-446c-4982-8836-ed50c1219455|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/23] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/12] |
     | Initialize job  | [0c07ef15-79e6-429d-9e66-fcf07d6d8f88|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/121106/logs/9] |
 # h3. (SRV40219-2-0) \release\CI-RELEASE-SRV40219-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40219-2-0]
     Last build  [20200806.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=120594&view=results] on SRV40219-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [50927cdd-400f-4c5e-9d90-01d0fe1a16b3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/16] |
     | Post-job: Checkout  | [a80ad5bb-c168-406f-a3d4-5ab9e983fe29|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/21] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/11] |
@@ -4649,6 +4642,13 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/12] |
     | Checkpoint  | 97b43f3f-1f28-5cb9-f8bc-fcfe1cd92a93 |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/9] |
+    | Initialize job  | [50927cdd-400f-4c5e-9d90-01d0fe1a16b3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120594/logs/14] |
 # h3. (SRV40223-2-0) \release\CI-RELEASE-SRV40223-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40223-2-0]
     Last build  [20200806.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=120592&view=results] on SRV40223-2-0 as completed
     Records :
@@ -4683,18 +4683,6 @@ Ejecutado el 22-11-15
     Last build  [20200805.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=120165&view=results] on SRV40077-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/8] |
-    | Checkpoint  | d3208a65-df11-567f-45bb-6240057efdb7 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/22] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/17] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/3] |
     | Initialize job  | [4f540ed3-1f3a-4861-8b84-90f0e1a3c400|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/4] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/16] |
@@ -4708,17 +4696,22 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Post-job: Checkout  | [6a97b00f-9de4-4844-b534-f072ace19b50|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/20] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/11] |
+    | Checkpoint  | d3208a65-df11-567f-45bb-6240057efdb7 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/120165/logs/15] |
 # h3. (SRV40212-1-0) \release\CI-RELEASE-SRV40212-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40212-1-0]
     Last build  [20200728.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=117675&view=results] on SRV40212-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 942c6310-b4cc-5dbf-5b60-169861af51c0 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [e23031df-5244-47c3-919e-3a790a07c88b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/22] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/20] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/11] |
@@ -4738,18 +4731,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/9] |
+    | Checkpoint  | 942c6310-b4cc-5dbf-5b60-169861af51c0 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/20] |
+    | Finalize Job  | [e23031df-5244-47c3-919e-3a790a07c88b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/22] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117675/logs/14] |
 # h3. (SRV40257-1-0) \release\CI-RELEASE-SRV40257-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40257-1-0]
     Last build  [20200727.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=117197&view=results] on SRV40257-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | c30747db-f3d7-529e-5c3b-12e2f1a69979 |
-    | Post-job: Checkout  | [19c3090c-f9c2-4508-9891-19d0cc91ea99|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/22] |
-    | Finalize Job  | [3dedbe4b-bdc5-4218-bdd5-1f4e4d9379ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/11] |
@@ -4769,18 +4761,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/12] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/9] |
+    | Finalize Job  | [3dedbe4b-bdc5-4218-bdd5-1f4e4d9379ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/23] |
+    | Post-job: Checkout  | [19c3090c-f9c2-4508-9891-19d0cc91ea99|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/117197/logs/22] |
+    | Checkpoint  | c30747db-f3d7-529e-5c3b-12e2f1a69979 |
 # h3. (SRV40066-1-0) \release-wom-volution\CI-WOMV-RELEASE-SRV40066-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40066-1-0]
     Last build  [20200721.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=115771&view=results] on SRV40066-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/14] |
-    | Finalize Job  | [37041085-3216-4768-bddc-2bbe9efd475f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/22] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Initialize job  | [2e721de8-3a6c-4d0e-8898-43bc29284300|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/4] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/23] |
@@ -4799,48 +4791,49 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Post-job: Checkout  | [76a5636e-79fc-4f69-9f85-ecb126c5ebed|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/21] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/12] |
+    | Finalize Job  | [37041085-3216-4768-bddc-2bbe9efd475f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/22] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/9] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/20] |
+    | Initialize job  | [2e721de8-3a6c-4d0e-8898-43bc29284300|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/115771/logs/4] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40252-1-0) \release\CI-RELEASE-SRV40252-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40252-1-0]
     Last build  [20200709.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=113029&view=results] on SRV40252-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [e54679f3-d718-4ade-8a1a-16bdd176c350|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/17] |
-    | Initialize job  | [5ac06b47-705f-45b6-abe3-9af1d9af4c08|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/4] |
-    | Post-job: Checkout  | [c3e07aaf-a987-4ccc-8be6-ac02c1d9c168|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/22] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/15] |
-    | Checkpoint  | 3c1758b0-7a3c-542b-6b6c-c8ae8cc0867a |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/18] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/25] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/9] |
+    | Finalize Job  | [e54679f3-d718-4ade-8a1a-16bdd176c350|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/23] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/7] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/6] |
+    | Post-job: Checkout  | [c3e07aaf-a987-4ccc-8be6-ac02c1d9c168|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/22] |
+    | Initialize job  | [5ac06b47-705f-45b6-abe3-9af1d9af4c08|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/4] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/17] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/113029/logs/15] |
+    | Checkpoint  | 3c1758b0-7a3c-542b-6b6c-c8ae8cc0867a |
 # h3. (SRV40246-1-0) \release\CI-RELEASE-SRV40246-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40246-1-0]
     Last build  [20200706.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=112146&view=results] on SRV40246-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 93d0ea35-d773-5b38-ea15-0a00d468d7f8 |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/21] |
-    | Finalize Job  | [2d07d33d-1b6d-4f65-b827-4c40de2f1c34|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/23] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/11] |
@@ -4861,6 +4854,13 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/12] |
+    | Finalize Job  | [2d07d33d-1b6d-4f65-b827-4c40de2f1c34|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/23] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112146/logs/9] |
+    | Checkpoint  | 93d0ea35-d773-5b38-ea15-0a00d468d7f8 |
 # h3. (SRV40261-1-0) \release\CI-RELEASE-SRV40261-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40261-1-0]
     Last build  [20200706.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=112141&view=results] on SRV40261-1-0 as completed
     Records :
@@ -4896,10 +4896,6 @@ Ejecutado el 22-11-15
     Last build  [20200706.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=112134&view=results] on SRV40134-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [b9986828-f939-40d3-a10d-1b96aa9f8f6d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/21] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/16] |
@@ -4923,54 +4919,45 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/9] |
+    | Finalize Job  | [b9986828-f939-40d3-a10d-1b96aa9f8f6d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/112134/logs/23] |
 # h3. (SRV40254-1-0) \release\CI-RELEASE-SRV40254-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40254-1-0]
     Last build  [20200701.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=111197&view=results] on SRV40254-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Post-job: Checkout  | [cc73cb76-6f42-49f7-8d67-342b1f24b8e9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/22] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/24] |
-    | Initialize job  | [ef859ad5-b78e-408e-97c9-712116b905d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/4] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/17] |
-    | Finalize Job  | [a6044dc7-07c3-4b14-a6e9-a380522ab7ed|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/23] |
-    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/15] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/25] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/21] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/5] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/12] |
     | Checkpoint  | 2d99f72a-005a-525d-f820-f653818c26a1 |
+    | Post-job: Checkout  | [cc73cb76-6f42-49f7-8d67-342b1f24b8e9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/22] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/9] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/25] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/15] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/6] |
+    | Finalize Job  | [a6044dc7-07c3-4b14-a6e9-a380522ab7ed|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/23] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/3] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/13] |
+    | Initialize job  | [ef859ad5-b78e-408e-97c9-712116b905d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/4] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/111197/logs/16] |
 # h3. (SRV40248-1-0) \release\CI-RELEASE-SRV40248-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40248-1-0]
     Last build  [20200625.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=110151&view=results] on SRV40248-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [03f38227-636d-421a-9761-17c68a0a953e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/21] |
-    | Post-job: Checkout  | [88155c59-8e4d-43e7-add8-4c76fbcbcd78|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/22] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/3] |
@@ -4985,20 +4972,23 @@ Ejecutado el 22-11-15
     | Initialize job  | [28b15a9e-7f91-4bde-b5cd-dfb4fdae79ee|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/4] |
     | Shell Script: Registro Final Con Error  | c1b3b2e7-8610-5aac-437a-eac0e4169c3b |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/12] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/9] |
+    | Finalize Job  | [03f38227-636d-421a-9761-17c68a0a953e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/23] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/16] |
+    | Post-job: Checkout  | [88155c59-8e4d-43e7-add8-4c76fbcbcd78|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/22] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/110151/logs/21] |
 # h3. (SRV40186-1-0) \release\CI-RELEASE-SRV40186-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40186-1-0]
     Last build  [20200529.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=104014&view=results] on SRV40186-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Checkpoint  | 730e869a-54b8-5742-2202-34a7e9cd3555 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/8] |
-    | Finalize Job  | [65644755-3bc1-490d-a6e1-6b26cc56cb55|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/22] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/23] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/17] |
@@ -5014,20 +5004,20 @@ Ejecutado el 22-11-15
     | Post-job: Checkout  | [88a752e4-e3ac-48cd-a3f0-ea17a7386b78|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/21] |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/20] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/11] |
+    | Finalize Job  | [65644755-3bc1-490d-a6e1-6b26cc56cb55|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/22] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/104014/logs/19] |
+    | Checkpoint  | 730e869a-54b8-5742-2202-34a7e9cd3555 |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
 # h3. (SRV40275-1-0) \release\CI-RELEASE-SRV40275-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40275-1-0]
     Last build  [20200526.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=103294&view=results] on SRV40275-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Finalize Job  | [3af65226-fd12-465a-bb55-33dc71b99609|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/24] |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/21] |
-    | Initialize job  | [1024905a-54be-4237-9704-51c7891c0299|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/4] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/25] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/19] |
@@ -5045,18 +5035,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/12] |
+    | Finalize Job  | [3af65226-fd12-465a-bb55-33dc71b99609|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/24] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/9] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/16] |
+    | Initialize job  | [1024905a-54be-4237-9704-51c7891c0299|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/103294/logs/21] |
 # h3. (JOB40245-1-0) \release\CI-RELEASE-JOB40245-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40245-1-0]
     Last build  [20200519.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=101918&view=results] on JOB40245-1-0 as completed
     Records :
     ||Record||link||
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/13] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/16] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/21] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/11] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/25] |
     | Finalize Job  | [a74f4905-8840-4e10-9c44-6fcc90c437e5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/24] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/7] |
@@ -5066,36 +5058,28 @@ Ejecutado el 22-11-15
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/18] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/3] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/6] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/17] |
-    | Initialize job  | [3dc8a239-7839-4831-b7bf-ca6f380386d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/4] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/26] |
-    | Clean up docker environment  | [ec339c2b-c439-539d-f401-d5569bbc95f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/12] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/5] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/20] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/8] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/22] |
     | Post-job: Checkout  | [d1c91c3f-4f0d-4901-9f0b-eca28ea7a4b2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/23] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/14] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/16] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/9] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/13] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/5] |
+    | Clean up docker environment  | [ec339c2b-c439-539d-f401-d5569bbc95f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/12] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/26] |
+    | Initialize job  | [3dc8a239-7839-4831-b7bf-ca6f380386d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/4] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/17] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/101918/logs/20] |
 # h3. (JOB40243-1-0) \release\CI-RELEASE-JOB40243-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40243-1-0]
     Last build  [20200511.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=100255&view=results] on JOB40243-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | cd7db4e7-a76a-57f1-dbe0-026979b40071 |
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/14] |
-    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/13] |
-    | Initialize job  | [fe264373-3059-4aa4-9ece-1aaa7abbab6d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/17] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/22] |
-    | Finalize Job  | [66350534-cb22-482f-b8b9-4eb21a33eda2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/25] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/26] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/7] |
-    | Post-job: Checkout  | [aed0001d-f2c7-49d7-b7a7-7aea331319ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/24] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/20] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/16] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/19] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/3] |
@@ -5108,26 +5092,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [edc9bfad-9734-5fe3-8583-e02cb23b2b30|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/15] |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/23] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/17] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/9] |
+    | Initialize job  | [fe264373-3059-4aa4-9ece-1aaa7abbab6d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/4] |
+    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/13] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/14] |
+    | Checkpoint  | cd7db4e7-a76a-57f1-dbe0-026979b40071 |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/20] |
+    | Post-job: Checkout  | [aed0001d-f2c7-49d7-b7a7-7aea331319ce|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/24] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/26] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/8] |
+    | Finalize Job  | [66350534-cb22-482f-b8b9-4eb21a33eda2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/25] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/100255/logs/22] |
 # h3. (SRV40263-1-0) \release\CI-RELEASE-SRV40263-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40263-1-0]
     Last build  [20200429.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=97511&view=results] on SRV40263-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [3a49b834-5372-49ef-9e86-0449993d0fec|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/8] |
-    | Checkpoint  | c145ba65-a5df-5084-ea3a-624cf741f0d9 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/25] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/7] |
-    | Initialize job  | [647e40ab-cac5-4f2e-9f57-7acdeb46c277|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/4] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/17] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/6] |
@@ -5139,13 +5123,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/12] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/9] |
+    | Post-job: Checkout  | [3a49b834-5372-49ef-9e86-0449993d0fec|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/23] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/19] |
+    | Initialize job  | [647e40ab-cac5-4f2e-9f57-7acdeb46c277|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/4] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/25] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97511/logs/11] |
+    | Checkpoint  | c145ba65-a5df-5084-ea3a-624cf741f0d9 |
 # h3. (SRV40264-1-0) \release\CI-RELEASE-SRV40264-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40264-1-0]
     Last build  [20200428.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=97106&view=results] on SRV40264-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [c100c32f-de3f-46fb-9650-0e5954abc74d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/4] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/10] |
     | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/14] |
     | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/21] |
@@ -5170,6 +5167,9 @@ Ejecutado el 22-11-15
     | Checkpoint  | b6a0b24e-7990-5ccc-95f7-e51618ae6fe5 |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/12] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/9] |
+    | Initialize job  | [c100c32f-de3f-46fb-9650-0e5954abc74d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/97106/logs/4] |
 # h3. (SRV40164-1-0) \release\CI-RELEASE-SRV40164-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40164-1-0]
     Last build  [20200428.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=97073&view=results] on SRV40164-1-0 as completed
     Records :
@@ -5207,12 +5207,6 @@ Ejecutado el 22-11-15
     Last build  [20200417.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=94527&view=results] on JOB40244-1-0 as completed
     Records :
     ||Record||link||
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/14] |
-    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/13] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/17] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
     | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/22] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/11] |
@@ -5235,26 +5229,16 @@ Ejecutado el 22-11-15
     | Checkpoint  | 44fb804c-17b4-590e-21d3-e2fae00ddc9f |
     | Post-job: Checkout  | [51a72976-68d9-4aec-9f08-e34fe78a6d55|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/24] |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/23] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/9] |
+    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/13] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/14] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/17] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94527/logs/10] |
 # h3. (SRV40227-1-0) \release\CI-RELEASE-SRV40227-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40227-1-0]
     Last build  [20200416.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=94165&view=results] on SRV40227-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [809eafcc-166b-40bd-93f3-07957c88faab|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/4] |
-    | Checkpoint  | dfb24a26-fbab-51b6-532b-0ea7a620cebe |
-    | Post-job: Checkout  | [e46e36fb-84fe-4537-a616-213aa20d43ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/23] |
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/21] |
-    | Finalize Job  | [c85367c8-a22c-4613-a058-53a507324f3d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/24] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/25] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/18] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/17] |
@@ -5266,19 +5250,26 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/16] |
+    | Finalize Job  | [c85367c8-a22c-4613-a058-53a507324f3d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/24] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/9] |
+    | Post-job: Checkout  | [e46e36fb-84fe-4537-a616-213aa20d43ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/23] |
+    | Checkpoint  | dfb24a26-fbab-51b6-532b-0ea7a620cebe |
+    | Initialize job  | [809eafcc-166b-40bd-93f3-07957c88faab|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/4] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/19] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/25] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/94165/logs/8] |
 # h3. (SRV40162-1-0) \release\CI-RELEASE-SRV40162-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40162-1-0]
     Last build  [20200409.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=92135&view=results] on SRV40162-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/21] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/25] |
     | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/7] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/18] |
@@ -5297,17 +5288,19 @@ Ejecutado el 22-11-15
     | Initialize job  | [9966175c-1466-4a93-b7b6-ecae00b2ec43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/12] |
     | Finalize Job  | [2bfa3109-d414-4a53-9a20-f5aad55150e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/24] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/9] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/25] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/92135/logs/8] |
 # h3. (SRV40244-1-0) \release\CI-RELEASE-SRV40244-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40244-1-0]
     Last build  [20200325.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=88515&view=results] on SRV40244-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/14] |
-    | Post-job: Checkout  | [e5b5deb0-598c-40ad-ad80-2a09df6d265c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/23] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/21] |
-    | Checkpoint  | ca2bb8a0-58da-5508-d26f-463b90e303d2 |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/16] |
     | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/8] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/11] |
@@ -5328,6 +5321,13 @@ Ejecutado el 22-11-15
     | Initialize job  | [42612464-40bd-484f-b2f9-e547cdee5cff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/4] |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/22] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/9] |
+    | Checkpoint  | ca2bb8a0-58da-5508-d26f-463b90e303d2 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/21] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Post-job: Checkout  | [e5b5deb0-598c-40ad-ad80-2a09df6d265c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/88515/logs/23] |
 # h3. (SRV40243-1-0) \release\CI-RELEASE-SRV40243-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40243-1-0]
     Last build  [20200325.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=88507&view=results] on SRV40243-1-0 as completed
     Records :
@@ -5363,18 +5363,6 @@ Ejecutado el 22-11-15
     Last build  [20200121.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=74500&view=results] on SRV40224-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/9] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/10] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/14] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/20] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/16] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/8] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/11] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/24] |
-    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/7] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/3] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/17] |
     | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/6] |
@@ -5389,20 +5377,168 @@ Ejecutado el 22-11-15
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/21] |
     | Initialize job  | [b6cd6654-d32c-4096-bb1a-f333014b99ad|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/4] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/12] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/11] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/16] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/20] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/14] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/9] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/13] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/18] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74500/logs/24] |
+# h3. (SRV40222-1-0) \release\CI-RELEASE-SRV40222-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40222-1-0]
+    Last build  [20200121.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=74464&view=results] on SRV40222-1-0 as completed
+    Records :
+    ||Record||link||
+    | Post-job: Checkout  | [33505ef6-6932-42c4-b214-1a4816481cbb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/23] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/9] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/14] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Initialize job  | [9940b0e6-7c59-49b4-8a50-3a76d6bac296|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/4] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/21] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/16] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/25] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/19] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/18] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/13] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/3] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/17] |
+    | Finalize Job  | [4cd28ec0-ede7-45dd-951e-a0445167d4b9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/24] |
+    | Checkpoint  | 513bf445-c791-5fc8-90a0-b2b80f4e7d31 |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/26] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/20] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/22] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/74464/logs/12] |
+# h3. (SRV40078-2-0) \release\CI-RELEASE-SRV40078-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40078-2-0]
+    Last build  [20200116.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=73823&view=results] on SRV40078-2-0 as completed
+    Records :
+    ||Record||link||
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/23] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/3] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/16] |
+    | Post-job: Checkout  | [0220c3b7-6f17-4989-b3d8-af640d014242|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/21] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/14] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/24] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/5] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/18] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Finalize Job  | [01976faa-2dfd-4093-8ce1-e441a6e11ab5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/22] |
+    | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/20] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/9] |
+    | Checkpoint  | 0da6c63e-1929-52ed-3e2e-0dcc4442f94e |
+    | Initialize job  | [794a03c5-f6f9-4133-bfcf-5c04020adf43|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/4] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73823/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+# h3. (SRV40220-1-0) \release\CI-RELEASE-SRV40220-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40220-1-0]
+    Last build  [20200115.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=73562&view=results] on SRV40220-1-0 as completed
+    Records :
+    ||Record||link||
+    | Post-job: Checkout  | [d123a76a-1792-4e3a-9bc5-14ff3729672f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/17] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/6] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/10] |
+    | Initialize job  | [f973488a-ae42-4a82-83bd-4fe603b43b79|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/12] |
+    | Finalize Job  | [c2fb8b4a-cedb-4e5e-b107-6910bcfb2f6a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/19] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/15] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/14] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/9] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/2] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/13] |
+    | Checkpoint  | 2cee669f-99f2-50d8-8960-b0f16e78c114 |
+    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/5] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/11] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/20] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/4] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/16] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/73562/logs/8] |
+# h3. (SRV40175-1-0) \release\CI-RELEASE-SRV40175-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-1-0]
+    Last build  [20200110.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=72880&view=results] on SRV40175-1-0 as completed
+    Records :
+    ||Record||link||
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/12] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/2] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/16] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/5] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/14] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/24] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/4] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/18] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/20] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/11] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/10] |
+    | Checkpoint  | 03d1e0b9-9ba9-5298-f9de-6c54a995a675 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/9] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/8] |
+    | Post-job: Checkout  | [a68bfb72-caf0-4da1-8a84-0a058c858284|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/21] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/17] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/6] |
+    | Finalize Job  | [01ae4e93-f471-4bdd-9873-75946ef285d7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/22] |
+    | Initialize job  | [dc6a07d7-a9c2-4b8d-88ed-74f570e26143|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/3] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72880/logs/23] |
+# h3. (SRV40223-1-0) \release\CI-RELEASE-SRV40223-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40223-1-0]
+    Last build  [20200109.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=72647&view=results] on SRV40223-1-0 as completed
+    Records :
+    ||Record||link||
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/8] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/9] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/13] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/20] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/15] |
+    | Checkpoint  | d932c97a-9b58-556e-a84b-57487e0fcfd4 |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/7] |
+    | Finalize Job  | [906f0bac-c8ee-4388-8208-6271807b257c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/10] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/24] |
+    | Shell Script: Eliminar control M  | [a7edb30a-4867-57d7-a9a7-78d4469be21f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/6] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/18] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/17] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/12] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/2] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/16] |
+    | Initialize job  | [f873ce3f-46c9-49c1-b0f0-b2c1c4f521aa|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/3] |
+    | Copy Files to: shell  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/5] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/14] |
+    | Post-job: Checkout  | [586f17cd-db34-496b-a4b4-c93034152a92|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/22] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/25] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/4] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/19] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/21] |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/72647/logs/11] |
 # h3. (SRV40219-1-0) \release\CI-RELEASE-SRV40219-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40219-1-0]
     Last build  [20191231.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=71035&view=results] on SRV40219-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | f87ef428-1a51-582c-0a00-120865d22411 |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/10] |
-    | Finalize Job  | [719835d3-cf13-4f60-a5cd-3361a1e49978|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/18] |
-    | Post-job: Checkout  | [64c074df-0797-4436-8d72-51c318fb12a3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/17] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/19] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/13] |
@@ -5414,17 +5550,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Initialize job  | [7135dcba-d27e-420f-849f-e9c93427f549|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/3] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/12] |
+    | Post-job: Checkout  | [64c074df-0797-4436-8d72-51c318fb12a3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/17] |
+    | Finalize Job  | [719835d3-cf13-4f60-a5cd-3361a1e49978|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/18] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/6] |
+    | Checkpoint  | f87ef428-1a51-582c-0a00-120865d22411 |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/15] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/19] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/71035/logs/7] |
 # h3. (SRV40218-1-0) \release\CI-RELEASE-SRV40218-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40218-1-0]
     Last build  [20191227.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=70344&view=results] on SRV40218-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/8] |
-    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/9] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/13] |
-    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
-    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/19] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/15] |
-    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/7] |
     | Finalize Job  | [6ea0bacf-69e7-4cff-acab-6b40f89b7195|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/22] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/10] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/23] |
@@ -5444,19 +5583,39 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Shell Script: Registro Final Con Error  | [c1b3b2e7-8610-5aac-437a-eac0e4169c3b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/20] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/11] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/13] |
+    | Copy Files to: Deployment  | [be13dc5c-cd47-5df7-ca34-2234754e7bd8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/9] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/8] |
+    | Shell Script: Registro inicial  | [5fc24d03-2a19-5779-9511-5d63d825a942|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/15] |
+    | Shell Script: Registro Final Exitoso  | [24ca6ad4-b445-55a6-a924-447cb86be43f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70344/logs/19] |
+    | Create work item: Error ejecución build  | 326d7cab-04ab-5bad-5576-30db7266f427 |
+# h3. (EnterpriseApplicationIntegration) \release\CI-RELEASE-SRV40097-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/EnterpriseApplicationIntegration]
+    Last build  [20191226.5|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=70047&view=results] on EnterpriseApplicationIntegration as completed
+    Records :
+    ||Record||link||
+    | Initialize job  | [b4d904ea-eef5-47f3-89da-4f7d7f274aff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/12] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/7] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/16] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/9] |
+    | Checkpoint  | 3c8a4055-fb4b-5cc1-3175-8a65127b6926 |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/2] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/13] |
+    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/5] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/11] |
+    | Finalize Job  | [fd467e54-d7c7-4d8f-a2b9-c3ebb9365446|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/15] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/17] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/4] |
+    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
+    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/8] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/6] |
+    | Post-job: Checkout  | [546135ce-0b6e-487b-b336-02f1fd6f738f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/70047/logs/14] |
 # h3. (SRV40062-2-0) \release\CI-RELEASE-SRV40062-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40062-2-0]
     Last build  [20191218.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=68892&view=results] on SRV40062-2-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 17bb3d14-e34e-5416-44e4-1a7247652e5f |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/18] |
-    | Finalize Job  | [9bb66bd7-1285-4f01-86c4-70d464269277|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/13] |
     | Post-job: Checkout  | [23359801-465d-40f9-bf87-991e005c0472|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/16] |
@@ -5468,44 +5627,19 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Initialize job  | [3e288281-68b6-4209-90b8-f19c59db8c45|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/3] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/8] |
-# h3. (SRV40175-1-0) \release\CI-RELEASE-SRV40175-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40175-1-0]
-    Last build  [20191217.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=68575&view=results] on SRV40175-1-0 as completed
-    Records :
-    ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/10] |
-    | Post-job: Checkout  | [72e31b67-2440-4da5-af14-2a46947a4ee3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/16] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/18] |
-    | Initialize job  | [36f7bd63-9658-4a24-9545-75544345950b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/3] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/9] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/13] |
-    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/11] |
-    | Checkpoint  | abbb223b-989d-5258-2357-cf116c6aee42 |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/19] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/4] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/15] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Finalize Job  | [dd7d8693-de87-4eec-b4c4-ed704ce20dfc|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/17] |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68575/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/6] |
+    | Checkpoint  | 17bb3d14-e34e-5416-44e4-1a7247652e5f |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/14] |
+    | Finalize Job  | [9bb66bd7-1285-4f01-86c4-70d464269277|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/17] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68892/logs/18] |
 # h3. (SRV40176-1-0) \release\CI-RELEASE-SRV40176-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40176-1-0]
     Last build  [20191217.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=68517&view=results] on SRV40176-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/12] |
-    | Finalize Job  | [6d850bc6-e7cb-40f1-a26b-6c100a84e0a0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/18] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/19] |
-    | Checkpoint  | dc833743-a2f4-52fb-a2be-7acef7784e59 |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/13] |
     | Post-job: Checkout  | [40e167fc-21e8-456e-b61d-ae9554478eec|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/17] |
@@ -5517,22 +5651,20 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Initialize job  | [af236c78-93be-4950-881d-eb6ecade7b64|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/3] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/7] |
+    | Finalize Job  | [6d850bc6-e7cb-40f1-a26b-6c100a84e0a0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/18] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/6] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/9] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/15] |
+    | Checkpoint  | dc833743-a2f4-52fb-a2be-7acef7784e59 |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/68517/logs/19] |
 # h3. (SRV40190-1-0) \release\CI-RELEASE-SRV40190-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40190-1-0]
     Last build  [20191212.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=67722&view=results] on SRV40190-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/10] |
-    | Post-job: Checkout  | [5a039640-ad8b-4e7a-a2c3-41090cf23c90|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/17] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/12] |
-    | Initialize job  | [e7fa97e2-f680-4f1d-8b25-56c6e69bb6cd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/3] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/19] |
-    | Checkpoint  | 79dcfe54-734c-5449-0530-6e48319bae4e |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/9] |
-    | Finalize Job  | [d9dc3e05-5a99-4418-8b3e-8651317bc78f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/18] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/13] |
     | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/5] |
@@ -5542,6 +5674,18 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/16] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/8] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/19] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/7] |
+    | Initialize job  | [e7fa97e2-f680-4f1d-8b25-56c6e69bb6cd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/12] |
+    | Post-job: Checkout  | [5a039640-ad8b-4e7a-a2c3-41090cf23c90|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/17] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/6] |
+    | Finalize Job  | [d9dc3e05-5a99-4418-8b3e-8651317bc78f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/18] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/9] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/67722/logs/15] |
+    | Checkpoint  | 79dcfe54-734c-5449-0530-6e48319bae4e |
 # h3. (SRV40132-1-0) \release\CI-RELEASE-SRV40132-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40132-1-0]
     Last build  [20191210.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=67301&view=results] on SRV40132-1-0 as completed
     Records :
@@ -5569,12 +5713,6 @@ Ejecutado el 22-11-15
     Last build  [20191204.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=66442&view=results] on SRV40077-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [1fd2bc61-de0b-4aac-8cc4-0f302f023f5e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/3] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/9] |
-    | Post-job: Checkout  | [a641bac7-e956-4aa9-9c75-464d221d0462|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/15] |
-    | Finalize Job  | [ea4ac5d9-5253-490c-8bf0-4f80620fc6f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/16] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/11] |
     | Checkpoint  | 9fb8a778-21a1-53b2-a933-5c665cc5ce4c |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/17] |
@@ -5588,16 +5726,16 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/11] |
+    | Finalize Job  | [ea4ac5d9-5253-490c-8bf0-4f80620fc6f9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/16] |
+    | Post-job: Checkout  | [a641bac7-e956-4aa9-9c75-464d221d0462|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/15] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/6] |
+    | Initialize job  | [1fd2bc61-de0b-4aac-8cc4-0f302f023f5e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66442/logs/3] |
 # h3. (SRV40216-1-0) \release\CI-RELEASE-SRV40216-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40216-1-0]
     Last build  [20191203.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=66219&view=results] on SRV40216-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/14] |
     | Initialize job  | [97fc2b2a-eb7d-4a20-a315-7e710e4bf03c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/3] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/9] |
     | Post-job: Checkout  | [413d7071-f8f6-466e-86a2-8ae68f417976|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/16] |
@@ -5612,6 +5750,12 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Checkpoint  | 18681e2e-0c07-558b-dbb2-e1663afd5fee |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/8] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66219/logs/6] |
 # h3. (SRV40064-2-0) \release\CI-RELEASE-SRV40064-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40064-2-0]
     Last build  [20191203.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=66183&view=results] on SRV40064-2-0 as completed
     Records :
@@ -5636,42 +5780,10 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66183/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/66183/logs/8] |
-# h3. (SRV40078-2-0) \release\CI-RELEASE-SRV40078-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40078-2-0]
-    Last build  [20191128.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=65524&view=results] on SRV40078-2-0 as completed
-    Records :
-    ||Record||link||
-    | Finalize Job  | [119a40fd-2a17-4448-bcad-207a55cbc95a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/16] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/9] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/11] |
-    | Checkpoint  | d52ed4ae-697b-5d25-bccc-6470002e2fb4 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/17] |
-    | Initialize job  | [1355dc65-aea8-4741-9ab9-6e5fa34158b3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/3] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/13] |
-    | Post-job: Checkout  | [7eb43883-8773-406c-ae02-7f85c5e44a39|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/15] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/12] |
-    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/10] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/18] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/4] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/14] |
-    | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
-    | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65524/logs/8] |
 # h3. (SRV40066-1-0) \release\CI-RELEASE-SRV40066-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40066-1-0]
     Last build  [20191127.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=65274&view=results] on SRV40066-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | de84201d-f7f1-5843-f7d4-0af83f1ae19b |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/12] |
-    | Initialize job  | [3a70d3eb-710d-4a83-904d-60ecb18ee88b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/3] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/13] |
     | Finalize Job  | [ce6d731e-bd84-4428-bf47-96a3db048ab2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/17] |
@@ -5683,13 +5795,19 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/8] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/6] |
+    | Checkpoint  | de84201d-f7f1-5843-f7d4-0af83f1ae19b |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/7] |
+    | Initialize job  | [3a70d3eb-710d-4a83-904d-60ecb18ee88b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65274/logs/12] |
 # h3. (SRV40065-2-0) \release\CI-RELEASE-SRV40065-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40065-2-0]
     Last build  [20191127.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=65264&view=results] on SRV40065-2-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/9] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/11] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/17] |
     | Initialize job  | [4ac728f8-1d4c-4846-a55c-6e1df9078092|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/3] |
@@ -5706,41 +5824,37 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/11] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/65264/logs/6] |
 # h3. (SRV40189-1-0) \release\CI-RELEASE-SRV40189-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40189-1-0]
     Last build  [20191122.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=64396&view=results] on SRV40189-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/10] |
-    | Post-job: Checkout  | [f15dabe5-cfaa-4ee7-9e10-2f3257175a99|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/16] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/18] |
-    | Checkpoint  | 24a4af4b-35aa-5a99-ddf1-7449836be5d8 |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/9] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/13] |
-    | Initialize job  | [f1760b3e-b3a7-4a1e-90b1-ad07d7d26cd3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/3] |
-    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/11] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/19] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/4] |
-    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Finalize Job  | [10dd0c13-2ce0-4a4b-a72b-f252e009f5a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/17] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/8] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/14] |
+    | Checkpoint  | 24a4af4b-35aa-5a99-ddf1-7449836be5d8 |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/12] |
+    | Post-job: Checkout  | [f15dabe5-cfaa-4ee7-9e10-2f3257175a99|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/6] |
+    | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/15] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/4] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/19] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/11] |
+    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/5] |
+    | Initialize job  | [f1760b3e-b3a7-4a1e-90b1-ad07d7d26cd3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/3] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/13] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/64396/logs/2] |
 # h3. (SRV40194-1-0) \release\CI-RELEASE-SRV40194-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40194-1-0]
     Last build  [20191120.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=63673&view=results] on SRV40194-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 89df69bc-3cd9-5565-6bb9-0403f62fe28c |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/9] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/11] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/17] |
-    | Post-job: Checkout  | [1f280b63-e859-40f1-b3a1-75eb09a19bcb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/15] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/2] |
     | Initialize job  | [2d50111b-9b4d-4577-9f4d-915eb65a14cd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/3] |
@@ -5753,42 +5867,40 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Finalize Job  | [0e5f47b8-9b93-445c-80ad-e694490d2a26|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/16] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/8] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/6] |
+    | Checkpoint  | 89df69bc-3cd9-5565-6bb9-0403f62fe28c |
+    | Post-job: Checkout  | [1f280b63-e859-40f1-b3a1-75eb09a19bcb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/15] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63673/logs/11] |
 # h3. (SRV40215-1-0) \release\CI-RELEASE-SRV40215-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40215-1-0]
     Last build  [20191119.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=63306&view=results] on SRV40215-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/13] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/9] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/12] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/2] |
-    | Post-job: Checkout  | [54ff0431-18e6-458d-99b9-9e97b7b1390e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/15] |
-    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/11] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/18] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Checkpoint  | 39207e30-e5e2-5168-65b2-dd7826eb995a |
     | Finalize Job  | [9827ccaf-1338-414f-a599-e7fe251b7cba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/16] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/8] |
     | Initialize job  | [f15ab714-4576-4653-93ed-f9024ed94d0b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/3] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/13] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/7] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/6] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/4] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/18] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/11] |
+    | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/5] |
+    | Post-job: Checkout  | [54ff0431-18e6-458d-99b9-9e97b7b1390e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/15] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/2] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/12] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/63306/logs/9] |
 # h3. (SRV40214-1-0) \release\CI-RELEASE-SRV40214-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40214-1-0]
     Last build  [20191107.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=60924&view=results] on SRV40214-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/10] |
-    | Finalize Job  | [c1573768-1191-4b7a-b7cf-475c875cf862|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/17] |
-    | Initialize job  | [fa724c66-0b76-4e2f-b7bb-4e0ea0f336ac|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/12] |
-    | Checkpoint  | 035abcc8-805b-56f7-bb6e-69b8c1a8ce85 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/13] |
@@ -5800,17 +5912,19 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [2d458bb9-52d8-40ae-b13f-e5823c8b9215|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/16] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/12] |
+    | Initialize job  | [fa724c66-0b76-4e2f-b7bb-4e0ea0f336ac|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/3] |
+    | Finalize Job  | [c1573768-1191-4b7a-b7cf-475c875cf862|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/17] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/6] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60924/logs/7] |
+    | Checkpoint  | 035abcc8-805b-56f7-bb6e-69b8c1a8ce85 |
 # h3. (SRV40188-1-0) \release\CI-RELEASE-SRV40188-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40188-1-0]
     Last build  [20191104.3|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=60197&view=results] on SRV40188-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/10] |
-    | Initialize job  | [d3d9e66f-24f0-448e-997e-284e022a0d37|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/3] |
-    | Post-job: Checkout  | [f7516812-29a7-49e1-8e20-33cc7586218e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/16] |
-    | Finalize Job  | [e362b1ee-7d68-463e-96e0-4cb9363b52e3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/17] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/18] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/9] |
@@ -5824,18 +5938,17 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/8] |
+    | Initialize job  | [d3d9e66f-24f0-448e-997e-284e022a0d37|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/6] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/12] |
+    | Finalize Job  | [e362b1ee-7d68-463e-96e0-4cb9363b52e3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/17] |
+    | Post-job: Checkout  | [f7516812-29a7-49e1-8e20-33cc7586218e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/60197/logs/16] |
 # h3. (SRV40211-1-0) \release\CI-RELEASE-SRV40211-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40211-1-0]
     Last build  [20191021.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=57913&view=results] on SRV40211-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/10] |
-    | Finalize Job  | [31690489-8056-4174-bf42-3211014cc0a4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/16] |
-    | Initialize job  | [4ed3a4be-82de-4fa6-95b4-3da10a59130d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/12] |
-    | Checkpoint  | 6d5b55c8-a663-462d-bb27-59c2da8b6b90 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/17] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/2] |
@@ -5847,19 +5960,18 @@ Ejecutado el 22-11-15
     | Post-job: Checkout  | [92fae06c-4e41-40e8-883f-dc027acbf576|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/8] |
+    | Initialize job  | [4ed3a4be-82de-4fa6-95b4-3da10a59130d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/3] |
+    | Finalize Job  | [31690489-8056-4174-bf42-3211014cc0a4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/10] |
+    | Copy Files to: Dockerfile  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/6] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/7] |
+    | Checkpoint  | 6d5b55c8-a663-462d-bb27-59c2da8b6b90 |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/57913/logs/12] |
 # h3. (SRV40212-1-0) \release\CI-RELEASE-SRV40212-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40212-1-0]
     Last build  [20191007.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=55078&view=results] on SRV40212-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/10] |
-    | Finalize Job  | [aa3981e7-a088-4d27-8449-4844d9431ccd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/17] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/9] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/13] |
     | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/5] |
     | Initialize job  | [9b07b8b3-f0d2-4cd4-a662-b827915d154d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/3] |
@@ -5871,6 +5983,15 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/12] |
+    | Finalize Job  | [aa3981e7-a088-4d27-8449-4844d9431ccd|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/17] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/6] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/55078/logs/18] |
 # h3. (SRV40209-1-0) \release\CI-RELEASE-SRV40209-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40209-1-0]
     Last build  [20191004.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=54651&view=results] on SRV40209-1-0 as completed
     Records :
@@ -5899,12 +6020,6 @@ Ejecutado el 22-11-15
     Last build  [20191004.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=54543&view=results] on JOB40170-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [ac966670-c5e2-47bf-94fe-037ddfe8df32|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/15] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/13] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/9] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/12] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/2] |
@@ -5917,13 +6032,16 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [57ce2d25-b278-4987-bbd3-e751fda9775d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/14] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/8] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/13] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/16] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/7] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/6] |
+    | Finalize Job  | [ac966670-c5e2-47bf-94fe-037ddfe8df32|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54543/logs/15] |
 # h3. (SRV40169-1-0) \release\CI-RELEASE-SRV40169-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40169-1-0]
     Last build  [20191003.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=54313&view=results] on SRV40169-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/13] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/15] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/22] |
     | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/12] |
@@ -5945,25 +6063,15 @@ Ejecutado el 22-11-15
     | Checkpoint  | 719d2152-8f2e-479b-b4e6-e430e3d18d1e |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/10] |
     | Initialize job  | [84c59a4e-25ce-4c69-aaa3-ede6e50550e7|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/15] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/13] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/54313/logs/6] |
 # h3. (SRV40201-1-0) \release\CI-RELEASE-SRV40201-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40201-1-0]
     Last build  [20191002.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=53797&view=results] on SRV40201-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/14] |
-    | Checkpoint  | 3d306ecb-6706-4b45-91ff-36f9a9967718 |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/16] |
-    | Finalize Job  | [d180bbfa-3db7-41a9-9882-6a4a38321f52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/22] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/23] |
     | Clean up docker environment  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/10] |
     | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/13] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/12] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/19] |
-    | Publicar artefacto: drop-soap-ui  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/18] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/2] |
-    | Publicar artefacto: drop-jmeter  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/17] |
-    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/8] |
     | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/5] |
     | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/9] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/15] |
@@ -5974,17 +6082,23 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/11] |
     | Post-job: Checkout  | [1ad8cff2-2a57-427f-94e6-eb00b63c753d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/21] |
+    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/8] |
+    | Publicar artefacto: drop-jmeter  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/2] |
+    | Publicar artefacto: drop-soap-ui  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/19] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/12] |
+    | Checkpoint  | 3d306ecb-6706-4b45-91ff-36f9a9967718 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/6] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/7] |
+    | Finalize Job  | [d180bbfa-3db7-41a9-9882-6a4a38321f52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/22] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53797/logs/16] |
 # h3. (JOB40169-1-0) \release\CI-RELEASE-JOB40169-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40169-1-0]
     Last build  [20191001.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=53431&view=results] on JOB40169-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/6] |
-    | Finalize Job  | [c7f8bd6c-28f1-4f35-bb39-273b130b7ef6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/16] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/13] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/9] |
     | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/12] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/2] |
     | Initialize job  | [cf937beb-aa23-4dff-9548-a81ccf1c9b8a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/3] |
@@ -5997,20 +6111,17 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [913cf9d8-1c8a-44d2-9ebd-ef9036fee73b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/15] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/8] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/13] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/7] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/10] |
+    | Finalize Job  | [c7f8bd6c-28f1-4f35-bb39-273b130b7ef6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/16] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53431/logs/6] |
 # h3. (SRV40078-1-0) \release\CI-RELEASE-SRV40078-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40078-1-0]
     Last build  [20190930.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=53067&view=results] on SRV40078-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/6] |
-    | Initialize job  | [0abf6962-64be-4882-9309-23c18a308185|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/3] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/12] |
-    | Finalize Job  | [c3cade36-d632-4bdd-8673-621e0e5d5c79|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/17] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/9] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/2] |
     | Post-job: Checkout  | [58eefce3-3098-4d36-8042-9534b04c9972|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/16] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/13] |
     | Copy Files to: Dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/5] |
@@ -6021,6 +6132,16 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Checkpoint  | aac4c395-ed65-4ff2-8c35-ecbab086b025 |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/8] |
+    | Finalize Job  | [c3cade36-d632-4bdd-8673-621e0e5d5c79|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/17] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/10] |
+    | Initialize job  | [0abf6962-64be-4882-9309-23c18a308185|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/3] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/6] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/53067/logs/7] |
 # h3. (JOB40213-1-0) \release\CI-RELEASE-JOB40213-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40213-1-0]
     Last build  [20190930.4|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=53007&view=results] on JOB40213-1-0 as completed
     Records :
@@ -6048,11 +6169,6 @@ Ejecutado el 22-11-15
     Last build  [20190927.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=52623&view=results] on SRV40210-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/9] |
-    | Initialize job  | [bce12a40-6454-4407-bc49-32b6af2e2f87|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/11] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/17] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/2] |
@@ -6067,17 +6183,15 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/11] |
+    | Initialize job  | [bce12a40-6454-4407-bc49-32b6af2e2f87|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/52623/logs/6] |
 # h3. (SRV40202-1-0) \release\CI-RELEASE-SRV40202-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40202-1-0]
     Last build  [20190910.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=48592&view=results] on SRV40202-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [b92e0eba-0088-4a7e-8ebc-0dbed30c1ed2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/22] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/14] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/23] |
-    | Clean up docker environment  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/10] |
     | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/13] |
     | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/12] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/19] |
@@ -6085,10 +6199,6 @@ Ejecutado el 22-11-15
     | Checkpoint  | 229a9790-22fd-490e-9943-892a2f5d042d |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/2] |
     | Initialize job  | [f113946f-e603-4d75-965c-9333b5614d58|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/3] |
-    | Publicar artefacto: drop-jmeter  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/17] |
-    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/8] |
-    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/5] |
-    | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/9] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/15] |
     | Post-job: Checkout  | [0eb31083-3523-42cc-88e8-bf09d4302a97|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/21] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/24] |
@@ -6096,21 +6206,21 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/11] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/6] |
+    | Finalize Job  | [b92e0eba-0088-4a7e-8ebc-0dbed30c1ed2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/22] |
+    | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/9] |
+    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/5] |
+    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/8] |
+    | Publicar artefacto: drop-jmeter  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/17] |
+    | Clean up docker environment  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/10] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48592/logs/7] |
 # h3. (SRV40198-1-0) \release\CI-RELEASE-SRV40198-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40198-1-0]
     Last build  [20190909.5|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=48352&view=results] on SRV40198-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/9] |
-    | Finalize Job  | [6d100dd2-f2a9-4118-a93d-3179aa1def01|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/17] |
-    | Checkpoint  | 75ed1126-38cb-42dd-a814-3bc379f9b9a7 |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/11] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/18] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/14] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/12] |
     | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/5] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/10] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/19] |
@@ -6120,29 +6230,40 @@ Ejecutado el 22-11-15
     | Post-job: Checkout  | [ed9b7784-1a37-473a-b272-dff57d10011c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/16] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/8] |
     | Initialize job  | [9acb7486-6d24-4586-91ae-fcd047fa7534|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/11] |
+    | Checkpoint  | 75ed1126-38cb-42dd-a814-3bc379f9b9a7 |
+    | Finalize Job  | [6d100dd2-f2a9-4118-a93d-3179aa1def01|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/17] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/6] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/12] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/2] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/13] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/14] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48352/logs/7] |
 # h3. (SRV40088-1-0) \release\CI-RELEASE-SRV40088-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40088-1-0]
     Last build  [20190909.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=48221&view=results] on SRV40088-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/9] |
-    | Finalize Job  | [1269466c-96d0-4230-bbb1-3bab7e4a40ef|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/16] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/11] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/13] |
-    | Checkpoint  | a74eb592-ab24-41e4-a738-8a4c087e65f7 |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/12] |
-    | Post-job: Checkout  | [dc4cb0be-8332-435b-b156-98ae8be0e566|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/15] |
-    | Initialize job  | [8e7100b0-a02d-4c85-a405-9da907cae1cb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/3] |
-    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/10] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/18] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/8] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/11] |
+    | Finalize Job  | [1269466c-96d0-4230-bbb1-3bab7e4a40ef|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/10] |
+    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/5] |
+    | Initialize job  | [8e7100b0-a02d-4c85-a405-9da907cae1cb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/3] |
+    | Post-job: Checkout  | [dc4cb0be-8332-435b-b156-98ae8be0e566|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/15] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/12] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/2] |
+    | Checkpoint  | a74eb592-ab24-41e4-a738-8a4c087e65f7 |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/48221/logs/13] |
 # h3. (SRV40203-1-0) \release\CI-RELEASE-SRV40203-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40203-1-0]
     Last build  [20190909.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=48207&view=results] on SRV40203-1-0 as completed
     Records :
@@ -6171,21 +6292,6 @@ Ejecutado el 22-11-15
     Last build  [20190906.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=47690&view=results] on SRV40143-1-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [13e06f62-fa41-4a4a-9e0f-144190826bff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/3] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/13] |
-    | Post-job: Checkout  | [acca2922-847b-495c-a72a-3da89a59b806|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/22] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/15] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/24] |
-    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/10] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/17] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/12] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/20] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/19] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/18] |
-    | Checkpoint  | 25440f9a-935a-4033-8e76-876552cd5c43 |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/16] |
     | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/8] |
     | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/5] |
@@ -6197,27 +6303,25 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/21] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/11] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/15] |
+    | Post-job: Checkout  | [acca2922-847b-495c-a72a-3da89a59b806|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/22] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/13] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/6] |
+    | Initialize job  | [13e06f62-fa41-4a4a-9e0f-144190826bff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/3] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/2] |
+    | Checkpoint  | 25440f9a-935a-4033-8e76-876552cd5c43 |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/18] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/19] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/20] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/12] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/17] |
+    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47690/logs/10] |
 # h3. (SRV40138-1-0) \release\CI-RELEASE-SRV40138-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40138-1-0]
     Last build  [20190905.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=47372&view=results] on SRV40138-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/15] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/17] |
-    | Post-job: Checkout  | [067f8bf2-0212-4383-b994-566ada629b6a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/22] |
-    | Initialize job  | [e56099f4-7243-44b4-9e6a-5a42c98b9087|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/3] |
-    | Checkpoint  | eebcff7d-aa73-4e99-8787-6452c3801806 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/24] |
-    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/10] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/13] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/12] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/20] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/19] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/14] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/18] |
-    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/8] |
     | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/5] |
     | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/9] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/16] |
@@ -6227,21 +6331,27 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/21] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/11] |
+    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/10] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/7] |
+    | Checkpoint  | eebcff7d-aa73-4e99-8787-6452c3801806 |
+    | Initialize job  | [e56099f4-7243-44b4-9e6a-5a42c98b9087|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/3] |
+    | Post-job: Checkout  | [067f8bf2-0212-4383-b994-566ada629b6a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/22] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/17] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/15] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/6] |
+    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/8] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/18] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/14] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/19] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/20] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/12] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47372/logs/13] |
 # h3. (SRV40079-1-0) \release\CI-RELEASE-SRV40079-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40079-1-0]
     Last build  [20190905.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=47273&view=results] on SRV40079-1-0 as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [72471016-0d5b-40a4-b133-0c932c0d7f35|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/21] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/14] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/23] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/12] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/11] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/13] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/17] |
     | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/8] |
@@ -6256,19 +6366,21 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/10] |
     | Finalize Job  | [91dfd5fc-ad6e-4dd0-bea3-fff45116d068|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/22] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/19] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/11] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/6] |
+    | Post-job: Checkout  | [72471016-0d5b-40a4-b133-0c932c0d7f35|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/21] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/47273/logs/7] |
 # h3. (SRV40170-1-0) \release\CI-RELEASE-SRV40170-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40170-1-0]
     Last build  [20190904.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=46908&view=results] on SRV40170-1-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [5107945f-7cb0-4f19-b3cc-06117ff33c86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/21] |
-    | Post-job: Checkout  | [c01cdd3b-531f-4bcb-910b-1e56c642f743|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/20] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/12] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/14] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/22] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/19] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/11] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/17] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/16] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/2] |
@@ -6284,14 +6396,19 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/18] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/10] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/14] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/12] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/6] |
+    | Post-job: Checkout  | [c01cdd3b-531f-4bcb-910b-1e56c642f743|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/20] |
+    | Finalize Job  | [5107945f-7cb0-4f19-b3cc-06117ff33c86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/21] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/11] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/19] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/22] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46908/logs/7] |
 # h3. (EnterpriseApplicationIntegration) \release\CI-RELEASE-JOB40139-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/EnterpriseApplicationIntegration]
     Last build  [20190903.10|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=46716&view=results] on EnterpriseApplicationIntegration as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/9] |
-    | Checkpoint  | 4670cb93-e944-4413-b954-5f7998e02f67 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/16] |
     | Finalize Job  | [671a1a8a-2743-4887-951b-754acbe7d972|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/15] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/12] |
@@ -6306,17 +6423,14 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/13] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/8] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/7] |
+    | Checkpoint  | 4670cb93-e944-4413-b954-5f7998e02f67 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/9] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/46716/logs/6] |
 # h3. (JOB40171-1-0) \release\CI-RELEASE-JOB40171-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40171-1-0]
     Last build  [20190826.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=44662&view=results] on JOB40171-1-0 as completed
     Records :
     ||Record||link||
-    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/10] |
-    | Finalize Job  | [7ac85a63-7efe-4950-ba75-15961179fbc8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/19] |
-    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/9] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/13] |
-    | Checkpoint  | 4272c309-c8d3-4b55-931e-4dd70558c344 |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/20] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/16] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/12] |
@@ -6332,24 +6446,17 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/17] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [edc9bfad-9734-5fe3-8583-e02cb23b2b30|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/11] |
+    | Ejecutar pruebas unitarias  | [ecaefaf4-7a4f-591e-c625-17940e32dfb4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/9] |
+    | Finalize Job  | [7ac85a63-7efe-4950-ba75-15961179fbc8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/19] |
+    | Clean up docker environment  | [7cc137c2-61f2-5d65-b5f8-0e03d1af3170|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/10] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/7] |
+    | Checkpoint  | 4272c309-c8d3-4b55-931e-4dd70558c344 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/13] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/44662/logs/6] |
 # h3. (SRV40148-1-0) \release\CI-RELEASE-SRV40148-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40148-1-0]
     Last build  [20190819.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=42980&view=results] on SRV40148-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 10c9bc7b-9e9b-47f8-858e-018611adcc9b |
-    | Finalize Job  | [4ece5211-49c1-47dc-ac8f-0e4774e3fb52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/22] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/14] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/23] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/12] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/11] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/13] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/17] |
     | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/8] |
     | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/5] |
     | Initialize job  | [281866b3-87b2-4639-b0c4-b6fa2b9142fa|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/3] |
@@ -6361,19 +6468,24 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/10] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/16] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/6] |
+    | Finalize Job  | [4ece5211-49c1-47dc-ac8f-0e4774e3fb52|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/22] |
+    | Checkpoint  | 10c9bc7b-9e9b-47f8-858e-018611adcc9b |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/17] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/13] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/19] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/42980/logs/11] |
 # h3. (SRV40174-1-0) \release\CI-RELEASE-SRV40174-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40174-1-0]
     Last build  [20190812.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=41775&view=results] on SRV40174-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/18] |
-    | Checkpoint  | 1098b6d8-9629-4b3d-847b-7b1a1dd5096e |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/13] |
     | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/5] |
@@ -6385,17 +6497,19 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Initialize job  | [c3361889-28d8-4ba8-b99d-e05cfec68d79|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/3] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/6] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/9] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/15] |
+    | Checkpoint  | 1098b6d8-9629-4b3d-847b-7b1a1dd5096e |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/41775/logs/7] |
 # h3. (SRV40098-2-0) \release\CI-RELEASE-SRV40098-2-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40098-2-0]
     Last build  [20190805.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=40259&view=results] on SRV40098-2-0 as completed
     Records :
     ||Record||link||
-    | Initialize job  | [003aad5d-5313-473e-8206-1ae4ab845111|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/3] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/15] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/17] |
-    | Post-job: Checkout  | [3035edb7-498e-48ae-8ec0-5f2ccf240372|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/22] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/24] |
     | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/10] |
     | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/13] |
     | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/12] |
@@ -6415,18 +6529,17 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/21] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/11] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/15] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/6] |
+    | Initialize job  | [003aad5d-5313-473e-8206-1ae4ab845111|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/3] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/7] |
+    | Post-job: Checkout  | [3035edb7-498e-48ae-8ec0-5f2ccf240372|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/22] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/40259/logs/17] |
 # h3. (SRV40135-2-0) \release\CI-RELEASE-SRV40135-2.0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40135-2-0]
     Last build  [20190802.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=39929&view=results] on SRV40135-2-0 as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [6204e58c-d682-473c-866d-06842a52720a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/22] |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/14] |
-    | Checkpoint  | 81ca8ec2-d9c6-4c03-a538-4628bae315e1 |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/23] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/12] |
     | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/11] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/19] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/18] |
@@ -6444,22 +6557,18 @@ Ejecutado el 22-11-15
     | Initialize job  | [800df93a-95b6-4bc1-be76-de61ece770ff|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/3] |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/10] |
     | Post-job: Checkout  | [0df4a603-e598-46a6-9f3d-ff591c46756a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/21] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/6] |
+    | Finalize Job  | [6204e58c-d682-473c-866d-06842a52720a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/22] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/39929/logs/16] |
+    | Checkpoint  | 81ca8ec2-d9c6-4c03-a538-4628bae315e1 |
 # h3. (SRV40450-1-0) \release\CI-RELEASE-SRV40450-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40450-1-0]
     Last build  [20190726.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=38899&view=results] on SRV40450-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/13] |
-    | Initialize job  | [b63ce4fb-50c8-4efa-ac56-2a29593ad184|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/15] |
-    | Post-job: Checkout  | [a055ab45-b3ae-4e38-b0ec-66a1fc5a6933|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/22] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/24] |
-    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/10] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/17] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/12] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/20] |
-    | Finalize Job  | [13e01cc5-920c-4c13-9f5b-81c17a96ef67|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/23] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/19] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/18] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/2] |
@@ -6474,6 +6583,18 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/21] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/11] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/15] |
+    | Initialize job  | [b63ce4fb-50c8-4efa-ac56-2a29593ad184|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/13] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/6] |
+    | Finalize Job  | [13e01cc5-920c-4c13-9f5b-81c17a96ef67|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/23] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/20] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/12] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/17] |
+    | clean docker: mongodb-local  | [00933dce-c782-5c03-4a85-76379ccfa50a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/10] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/24] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/7] |
+    | Post-job: Checkout  | [a055ab45-b3ae-4e38-b0ec-66a1fc5a6933|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38899/logs/22] |
 # h3. (SRV40187-1-0) \release\CI-RELEASE-SRV40187-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40187-1-0]
     Last build  [20190726.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=38883&view=results] on SRV40187-1-0 as completed
     Records :
@@ -6501,14 +6622,6 @@ Ejecutado el 22-11-15
     Last build  [20190722.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=38047&view=results] on SRV40140-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/19] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/14] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/13] |
     | Checkpoint  | 331c4e2b-8e33-42bb-a0d2-b15de87935cd |
@@ -6522,17 +6635,18 @@ Ejecutado el 22-11-15
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/8] |
     | Finalize Job  | [f43587f6-423a-4a97-84eb-f5257983885d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/18] |
     | Post-job: Checkout  | [a93247c4-1b87-4e06-94bb-f77ae9f4dc30|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/17] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/6] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/9] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/15] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/19] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/38047/logs/7] |
 # h3. (SRV40186-1-0) \release\CI-RELEASE-SRV40186-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40186-1-0]
     Last build  [20190719.4|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=37769&view=results] on SRV40186-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/6] |
-    | Initialize job  | [f8334aa4-64fb-4df7-a3c4-260f71b23f7f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/3] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/10] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/12] |
-    | Post-job: Checkout  | [7f75b42b-b571-40b2-93c7-5c2d96391d2e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/18] |
     | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/2] |
@@ -6546,20 +6660,17 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/15] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/12] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/10] |
+    | Initialize job  | [f8334aa4-64fb-4df7-a3c4-260f71b23f7f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/3] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/6] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/18] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/7] |
+    | Post-job: Checkout  | [7f75b42b-b571-40b2-93c7-5c2d96391d2e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/37769/logs/16] |
 # h3. (SRV40173-1-0) \release\CI-RELEASE-SRV40173-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40173-1-0]
     Last build  [20190708.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=36092&view=results] on SRV40173-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/10] |
-    | Checkpoint  | 143bc40d-d7d8-4aab-aa0f-31bfd86ec110 |
-    | Finalize Job  | [d972fded-7447-4330-a757-4fb7eb90cc22|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/18] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/12] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/19] |
-    | Post-job: Checkout  | [8f49e825-964d-4a19-989f-7064898dd6f6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/15] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/14] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/9] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/13] |
@@ -6571,65 +6682,72 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/16] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/12] |
+    | Finalize Job  | [d972fded-7447-4330-a757-4fb7eb90cc22|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/18] |
+    | Checkpoint  | 143bc40d-d7d8-4aab-aa0f-31bfd86ec110 |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/6] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/14] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/15] |
+    | Post-job: Checkout  | [8f49e825-964d-4a19-989f-7064898dd6f6|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/17] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/19] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/36092/logs/7] |
 # h3. (JOB40168-1-0) \release\CI-RELEASE-JOB40168-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/JOB40168-1-0]
     Last build  [20190624.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=33407&view=results] on JOB40168-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/17] |
-    | Finalize Job  | [fc820356-f168-4c2b-accf-7b7b5da5a6fb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/13] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/9] |
-    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/12] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/2] |
-    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/5] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/11] |
-    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/18] |
-    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [e4533a08-927f-46db-b6fa-e83331e93957|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/15] |
     | Checkpoint  | 1e9634b4-34c9-4b0f-804b-ea02609a32bf |
     | Initialize job  | [d03e91f5-5800-4039-91ae-f333b1752470|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/3] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/8] |
+    | Publicar artefacto: drop-ocp-deploy  | [cb89b927-9286-503e-4ba6-8e8de18269c8|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/12] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/9] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/13] |
+    | Finalize Job  | [fc820356-f168-4c2b-accf-7b7b5da5a6fb|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/16] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/7] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/6] |
+    | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/4] |
+    | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/18] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/11] |
+    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/5] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33407/logs/2] |
 # h3. (SRV40131-1-0) \release\CI-RELEASE-SRV40131-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40131-1-0]
     Last build  [20190621.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=33226&view=results] on SRV40131-1-0 as completed
     Records :
     ||Record||link||
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/14] |
-    | Finalize Job  | [0b7b3a7f-b70e-40c0-8efb-44e23f11fc18|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/22] |
-    | Checkpoint  | c65f6268-b936-4076-bab0-4ccc9116d799 |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/7] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/23] |
-    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/12] |
-    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/11] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/19] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/18] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/13] |
     | Initialize job  | [697f422c-2f09-4b48-b89b-8bbcab1e3183|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/3] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/17] |
-    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/8] |
-    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/5] |
-    | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/9] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/15] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/13] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/24] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/20] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Ejecutar pruebas unitarias  | [3efd9125-3161-57ee-e30c-e647b481d948|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/10] |
     | Post-job: Checkout  | [788eba5d-95c5-4892-9a22-e8bfba32d56f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/21] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/23] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/7] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/16] |
+    | Checkpoint  | c65f6268-b936-4076-bab0-4ccc9116d799 |
+    | Finalize Job  | [0b7b3a7f-b70e-40c0-8efb-44e23f11fc18|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/22] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/14] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/6] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/18] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/19] |
+    | Publish Test Results report.xml  | [1f06056c-1ae7-54e3-0278-7970ab3d0383|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/11] |
+    | Run Code Analysis  | [02480dbe-2227-5f4d-f0c0-783cc8a59792|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/12] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/15] |
+    | Ejecutar análisis de código - JsLint  | [295ef4c3-3a46-5f11-020b-b8098f9465c0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/9] |
+    | Copy Files to: dockerfile  | [cfc2a714-e8c6-5f4c-5a88-b613716ea84e|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/5] |
+    | Descargar dependencias  | [97334ad4-08b3-57ff-e787-a873e7324dc2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/33226/logs/8] |
 # h3. (SRV40162-1-0) \release\CI-RELEASE-SRV40162-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/SRV40162-1-0]
     Last build  [20190619.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=32626&view=results] on SRV40162-1-0 as completed
     Records :
     ||Record||link||
-    | Checkpoint  | 7a4bc10a-5e5a-49e6-9c12-1a16280ce9d0 |
-    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/6] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/10] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/12] |
     | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/7] |
     | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/19] |
@@ -6648,39 +6766,34 @@ Ejecutado el 22-11-15
     | Post-job: Checkout  | [78171b97-2a94-41a7-a7c7-f1d1dd87431b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/17] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/8] |
     | Finalize Job  | [a295cb96-f00c-469e-897e-fd883f37deb0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/18] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/10] |
+    | Copy Files to: Deployment  | [2ab26444-cd93-5ac0-1a0c-2213cc958b86|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/32626/logs/6] |
+    | Checkpoint  | 7a4bc10a-5e5a-49e6-9c12-1a16280ce9d0 |
 # h3. (CustomerInformationManagement) \release\CI-RELEASE-SRV40098-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/CustomerInformationManagement]
     Last build  [20190603.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=29871&view=results] on CustomerInformationManagement as completed
     Records :
     ||Record||link||
-    | Initialize job  | [ac7f9bd1-ee09-467a-b1e9-25bc8d9fad1a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/3] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/8] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/5] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/13] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/12] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/7] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/11] |
-    | Post-job: Checkout  | [5be99028-68c4-4133-b0c9-b6e74a101e8d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/15] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/9] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/17] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/6] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/5] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/8] |
+    | Initialize job  | [ac7f9bd1-ee09-467a-b1e9-25bc8d9fad1a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/3] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/9] |
+    | Post-job: Checkout  | [5be99028-68c4-4133-b0c9-b6e74a101e8d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/15] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/11] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/7] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/12] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/13] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/29871/logs/16] |
 # h3. (BillingAccountManagement) \release\CI-RELEASE-SRV40137-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/BillingAccountManagement]
     Last build  [20190513.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=26791&view=results] on BillingAccountManagement as completed
     Records :
     ||Record||link||
-    | Finalize Job  | [2c93e14c-ed8a-471d-a97f-0218a5286c4d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/15] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/8] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/10] |
-    | Initialize job  | [15cf0240-ce36-4c48-8eb5-642b50d93413|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/3] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/5] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/12] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/7] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/11] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/9] |
@@ -6690,21 +6803,18 @@ Ejecutado el 22-11-15
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [0a2ca095-b7f2-4214-ad79-e23245abcc01|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/14] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/6] |
+    | Initialize job  | [15cf0240-ce36-4c48-8eb5-642b50d93413|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/3] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/8] |
+    | Finalize Job  | [2c93e14c-ed8a-471d-a97f-0218a5286c4d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/15] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/12] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/16] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26791/logs/5] |
 # h3. (BillingAccountManagement) \release\CI-RELEASE-SRV40134-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/BillingAccountManagement]
     Last build  [20190509.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=26530&view=results] on BillingAccountManagement as completed
     Records :
     ||Record||link||
-    | Post-job: Checkout  | [cf356108-2f7e-464b-b841-0df40ddf49ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/15] |
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/8] |
-    | Initialize job  | [7d7b913d-382f-40f9-8473-39339a3b0a5b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/10] |
-    | Finalize Job  | [7829ea04-544f-45b1-8ceb-59117501e302|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/5] |
-    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/13] |
-    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/12] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/7] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/2] |
     | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/11] |
     | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/9] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/18] |
@@ -6712,38 +6822,42 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/6] |
+    | Proceso de compilación  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/5] |
+    | Finalize Job  | [7829ea04-544f-45b1-8ceb-59117501e302|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/16] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/10] |
+    | Initialize job  | [7d7b913d-382f-40f9-8473-39339a3b0a5b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/8] |
+    | Post-job: Checkout  | [cf356108-2f7e-464b-b841-0df40ddf49ba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/15] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/7] |
+    | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/12] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/26530/logs/13] |
 # h3. (ServiceOrderManagement) \release\CI-RELEASE-SRV40063-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ServiceOrderManagement]
     Last build  [20190425.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=25002&view=results] on ServiceOrderManagement as completed
     Records :
     ||Record||link||
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/8] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/10] |
-    | Finalize Job  | [522d3f12-9e2a-429a-a0a8-5fd52e068da9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/15] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/5] |
-    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/12] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/7] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/2] |
-    | Initialize job  | [17725dde-e145-4f82-a8d6-9299b67ab394|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/3] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/11] |
-    | Post-job: Checkout  | [b955e7a8-d962-43bc-a2c0-9963c6f1cf6f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/14] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/9] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/17] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/13] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/6] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/5] |
+    | Finalize Job  | [522d3f12-9e2a-429a-a0a8-5fd52e068da9|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/15] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/10] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/8] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/9] |
+    | Post-job: Checkout  | [b955e7a8-d962-43bc-a2c0-9963c6f1cf6f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/14] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/11] |
+    | Initialize job  | [17725dde-e145-4f82-a8d6-9299b67ab394|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/3] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/12] |
+    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/25002/logs/16] |
 # h3. (BillingAccountManagement) \release\CI-RELEASE-SRV40065-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/BillingAccountManagement]
     Last build  [20190412.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=24020&view=results] on BillingAccountManagement as completed
     Records :
     ||Record||link||
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/8] |
-    | Post-job: Checkout  | [dcf116e3-16d2-4508-8d8a-355c77fee38d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/15] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/10] |
-    | Finalize Job  | [d82dc9b0-932d-41ce-9476-59ceb4d81812|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/16] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/5] |
-    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/17] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/13] |
     | Publicar artefacto: drop-jmeter  | [5f54e2f5-4187-57d6-9c08-82a8a3d411d2|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/12] |
     | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/7] |
     | Initialize job  | [8688806e-509d-48f4-ac0b-8f34e056b13c|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/3] |
@@ -6755,27 +6869,34 @@ Ejecutado el 22-11-15
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/14] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/6] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/10] |
+    | Post-job: Checkout  | [dcf116e3-16d2-4508-8d8a-355c77fee38d|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/15] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/8] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/13] |
+    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/17] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/5] |
+    | Finalize Job  | [d82dc9b0-932d-41ce-9476-59ceb4d81812|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/24020/logs/16] |
 # h3. (CustomerInformationManagement) \release\CI-RELEASE-SRV40163-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/CustomerInformationManagement]
     Last build  [20190403.2|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=23193&view=results] on CustomerInformationManagement as completed
     Records :
     ||Record||link||
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/8] |
-    | Initialize job  | [cd69b6fa-a199-4475-9cd9-2cec0e71bc4a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/3] |
-    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/10] |
-    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/5] |
-    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/16] |
-    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/12] |
-    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/7] |
-    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/2] |
-    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/11] |
-    | Finalize Job  | [f77ac869-1678-402f-b498-b7be166378d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/15] |
-    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/9] |
     | Report build status  | [78db2542-c627-4140-8a7a-d06178fff4e4|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/17] |
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/4] |
     | Limpiar imágenes de contenedor generadas latest  | [2be3e60b-baa6-572b-b3a0-dd269294821a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/13] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Post-job: Checkout  | [29dccd0b-46ad-4de2-9750-eb2fd5b9ca82|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/14] |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/6] |
+    | Subir imágen a registry centralizado  | [667e7fae-ff8f-5b60-580e-b97fbfb661a5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/9] |
+    | Finalize Job  | [f77ac869-1678-402f-b498-b7be166378d0|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/15] |
+    | Publicar artefacto: drop-soap-ui  | [0195f942-9778-55d8-81e1-968e59836f7a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/11] |
+    | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/2] |
+    | Publish Quality Gate Result  | [bb8eda65-667d-581d-edb4-84687019bff3|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/7] |
+    | Limpiar imágenes de contenedor generadas  | [d387e78d-ff7d-5c15-ca27-7d9582a24753|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/12] |
+    | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/10] |
+    | Prepare analysis on SonarQube  | [88cad227-c762-5712-e58e-6ca7de6fa956|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/5] |
+    | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/16] |
+    | Initialize job  | [cd69b6fa-a199-4475-9cd9-2cec0e71bc4a|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/23193/logs/8] |
 # h3. (ServiceOrderManagement) \release\CI-RELEASE-SRV40049-1-0  [git|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_git/ServiceOrderManagement]
     Last build  [20190403.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=23159&view=results] on ServiceOrderManagement as completed
     Records :
@@ -6821,9 +6942,6 @@ Ejecutado el 22-11-15
     Last build  [20190328.1|https://womchile.visualstudio.com/SERVICIOS-OPENSHIFT/_build/results?buildId=22749&view=results] on ServiceOrderManagement as completed
     Records :
     ||Record||link||
-    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/6] |
-    | Initialize job  | [cd27a260-cea4-444b-b9d1-37746aafe567|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/3] |
-    | Finalize Job  | [e2e61aee-4096-43d4-a0c5-52de1edd034f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/11] |
     | Publicar artefacto: drop-ocp-deploy  | [7f2915c2-c599-545f-479d-55f858cc2762|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/8] |
     | Job  | [fd490c07-0b22-5182-fac9-6d67fe1e939b|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/12] |
     | Proceso de compilación  | [d46bdafb-39a9-561e-f56f-8f45577d0334|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/2] |
@@ -6834,3 +6952,6 @@ Ejecutado el 22-11-15
     | Checkout  | [f03d4b0b-5c7f-5a3c-32ca-d79e6a87d689|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/4] |
     | __default  | 96ac2280-8cb4-5df5-99de-dd2da759617d |
     | Compilación Java  | [c1e8bad8-a3ba-56bc-9621-f3bdd9d7a6f5|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/5] |
+    | Finalize Job  | [e2e61aee-4096-43d4-a0c5-52de1edd034f|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/11] |
+    | Initialize job  | [cd27a260-cea4-444b-b9d1-37746aafe567|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/3] |
+    | Generar imágen de contenedor  | [457762fb-7913-5721-db09-27cc274cbeba|https://womchile.visualstudio.com/5fb0f76e-5ad7-456f-9344-24d9ccc619ca/_apis/build/builds/22749/logs/6] |
