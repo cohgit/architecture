@@ -1,3 +1,8 @@
+
+db pull '/storage/emulated/0/Download/Sesiones de Trabajo. IBS a la Nube-20230118_080858-Grabación de la reunión.zip.002'
+
+
+
 adb devices
 adb logcat
 
