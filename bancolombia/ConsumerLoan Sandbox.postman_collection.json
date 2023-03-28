@@ -1,0 +1,5093 @@
+{
+	"info": {
+		"_postman_id": "ee23917d-eb0f-40bc-a1ca-6225718e3caf",
+		"name": "ConsumerLoan Sandbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "validate",
+					"item": [
+						{
+							"name": "OK",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDJOh8Elkml84_PzWE5a5hYQduFSPZn33Gy7UoP_yUJF7g_UqyIBWg2MrwGmaaxnj6v17lPCIxOD-LgpTPfX6wkCT9C_ry8VdIfXS1Qbfl4daKmsld7uZLw02F3XwYJhO18Y8xSOvO-vV7J8wrw9Tt3qbZwv9XaKBLAp6V8NsAttuw",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"customer\": {\r\n      \"identification\": {\r\n        \"type\": \"CC\",\r\n        \"number\": \"1053828303\"\r\n      }\r\n    },\r\n    \"totalPurchaseAmount\": {\r\n      \"purchaseamount\": 1000000.00\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-error-parametrizacion",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDKIrEwh0aKg8nsDyXr8SHDQxCthFxhSzr7XkCIHPHlOPGIDm4dpunigpE_6U8LeYpaZQAscCRdQlYTqapKu8daXd4wS3nKRv2Msh_oHmtmQvy2qlffNygM5VkyVyLECC6YhOz5dfF8RLHVAlBREv7UC4yUtdCiq7UcxqSrT1xUmuA",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n      \"customer\": {\r\n        \"identification\": {\r\n          \"type\": \"CC\",\r\n          \"number\": \"7684226833\"\r\n        }\r\n      },\r\n      \"totalPurchaseAmount\": {\r\n        \"purchaseamount\": 890000000.00\r\n      }\r\n    }\r\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-error-reglas",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDKIrEwh0aKg8nsDyXr8SHDQxCthFxhSzr7XkCIHPHlOPGIDm4dpunigpE_6U8LeYpaZQAscCRdQlYTqapKu8daXd4wS3nKRv2Msh_oHmtmQvy2qlffNygM5VkyVyLECC6YhOz5dfF8RLHVAlBREv7UC4yUtdCiq7UcxqSrT1xUmuA",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n      \"customer\": {\r\n        \"identification\": {\r\n          \"type\": \"CC\",\r\n          \"number\": \"398651277733\"\r\n        }\r\n      },\r\n      \"totalPurchaseAmount\": {\r\n        \"purchaseamount\": 9998880001.00\r\n      }\r\n    }\r\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-persona-no-habilitada",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDKIrEwh0aKg8nsDyXr8SHDQxCthFxhSzr7XkCIHPHlOPGIDm4dpunigpE_6U8LeYpaZQAscCRdQlYTqapKu8daXd4wS3nKRv2Msh_oHmtmQvy2qlffNygM5VkyVyLECC6YhOz5dfF8RLHVAlBREv7UC4yUtdCiq7UcxqSrT1xUmuA",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n      \"customer\": {\r\n        \"identification\": {\r\n          \"type\": \"CC\",\r\n          \"number\": \"999977778888\"\r\n        }\r\n      },\r\n      \"totalPurchaseAmount\": {\r\n        \"purchaseamount\": 99999999.00\r\n      }\r\n    }\r\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Internal-Server",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDKIrEwh0aKg8nsDyXr8SHDQxCthFxhSzr7XkCIHPHlOPGIDm4dpunigpE_6U8LeYpaZQAscCRdQlYTqapKu8daXd4wS3nKRv2Msh_oHmtmQvy2qlffNygM5VkyVyLECC6YhOz5dfF8RLHVAlBREv7UC4yUtdCiq7UcxqSrT1xUmuA",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"customer\": {\r\n      \"identification\": {\r\n        \"type\": \"CC\",\r\n        \"number\": \"10613828303\"\r\n      }\r\n    },\r\n    \"totalPurchaseAmount\": {\r\n      \"purchaseamount\": 1000000.00\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Unavailable",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Consumer:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDKIrEwh0aKg8nsDyXr8SHDQxCthFxhSzr7XkCIHPHlOPGIDm4dpunigpE_6U8LeYpaZQAscCRdQlYTqapKu8daXd4wS3nKRv2Msh_oHmtmQvy2qlffNygM5VkyVyLECC6YhOz5dfF8RLHVAlBREv7UC4yUtdCiq7UcxqSrT1xUmuA",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"customer\": {\r\n      \"identification\": {\r\n        \"type\": \"CC\",\r\n        \"number\": \"1053000303\"\r\n      }\r\n    },\r\n    \"totalPurchaseAmount\": {\r\n      \"purchaseamount\": 1000000.00\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/validate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"validate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "oauth2",
+						"oauth2": [
+							{
+								"key": "scope",
+								"value": "ConsumerLoan-Consumer:read:user",
+								"type": "string"
+							},
+							{
+								"key": "clientSecret",
+								"value": "1b279fb8460416f5d6d788305811fddc",
+								"type": "string"
+							},
+							{
+								"key": "clientId",
+								"value": "d776f6b57705d7fe9fddfff5ade63402",
+								"type": "string"
+							},
+							{
+								"key": "accessTokenUrl",
+								"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+								"type": "string"
+							},
+							{
+								"key": "tokenName",
+								"value": "oAuth",
+								"type": "string"
+							},
+							{
+								"key": "challengeAlgorithm",
+								"value": "S256",
+								"type": "string"
+							},
+							{
+								"key": "grant_type",
+								"value": "client_credentials",
+								"type": "string"
+							},
+							{
+								"key": "authUrl",
+								"value": "https://api-sdx.apps.bancolombia.com/ext/sandbox/v1/business-support/it-management/oauth2/token",
+								"type": "string"
+							},
+							{
+								"key": "addTokenTo",
+								"value": "header",
+								"type": "string"
+							},
+							{
+								"key": "client_authentication",
+								"value": "header",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Authenticate",
+					"item": [
+						{
+							"name": "OK",
+							"item": [
+								{
+									"name": "200",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-authorization:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\",\r\n      \"code\": \"MeJjna\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/authenticate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"authenticate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "Datos Invalidos",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-authorization:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+												"key": "authorization",
+												"value": "Bearer AAIkMDU3YzYwOTgtMzQ2NS00OGU3LWJlMjYtMjA5NTNkNjI2ZDRi4ShSgNOZy1xKznoCmj0wslXdLvZLZ7MxT5dFnGk2r31WPUGSyMz6o_H6m_6TvJl-WCYVWnBvGDWYORC2prax6s30Le2Uc8rYdOIyu9PwEScmcb3wLIa2soUmNU6V3JZgOBpbXA4p0aSruI3sHap39Q",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n      \"security\": {\r\n        \"customerValidateKey\": \"&hyauPHCH/6ZG3iLIRFQRNgMZKJ8/eat3SDoN8vnIfCiQcodPNV+4tsc5XheD2KK+cbN4+a5eTiY2qNLc3Bg6ibjWitWUz1d6/c48t++khEmRSqn19DJB7aTnUb7ydECCki3YQkoO43t/2ujQWvTbkTIAopJzTjOOpqEbUdmLEoIEC0oVei8jtLhibiBaDJpSEcdvTGVd/bdsI9bpolBqHXD\",\r\n        \"code\": \"FGa87s\"\r\n      }\r\n    }\r\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/authenticate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"authenticate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Internal-Server",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-authorization:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIkMDU3YzYwOTgtMzQ2NS00OGU3LWJlMjYtMjA5NTNkNjI2ZDRi4ShSgNOZy1xKznoCmj0wslXdLvZLZ7MxT5dFnGk2r31WPUGSyMz6o_H6m_6TvJl-WCYVWnBvGDWYORC2prax6s30Le2Uc8rYdOIyu9PwEScmcb3wLIa2soUmNU6V3JZgOBpbXA4p0aSruI3sHap39Q",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3wWVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZm==\",\r\n            \"code\": \"Kvujew\"\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/authenticate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"authenticate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Unauthorized",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-authorization:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "Bearer AAIkMDU3YzYwOTgtMzQ2NS00OGU3LWJlMjYtMjA5NTNkNjI2ZDRi4ShSgNOZy1xKznoCmj0wslXdLvZLZ7MxT5dFnGk2r31WPUGSyMz6o_H6m_6TvJl-WCYVWnBvGDWYORC2prax6s30Le2Uc8rYdOIyu9PwEScmcb3wLIa2soUmNU6V3JZgOBpbXA4p0aSruI3sHap39Q",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"LULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\",\r\n            \"code\": \"Meñ2na\"\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/customers/authenticate",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"customers",
+												"authenticate"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "oauth2",
+						"oauth2": [
+							{
+								"key": "accessTokenUrl",
+								"value": "https://api-sdx.apps.ambientesbc.com/ext/sandbox/v1/business-support/it-management/oauth2/token",
+								"type": "string"
+							},
+							{
+								"key": "scope",
+								"value": "Customer-token:write:user",
+								"type": "string"
+							},
+							{
+								"key": "clientSecret",
+								"value": "Y2cU7nH0kR3oN6xR7tU5eX5vY2fL3gL2qO2eA3bW7qR5uW8gS7",
+								"type": "string"
+							},
+							{
+								"key": "clientId",
+								"value": "057c6098-3465-48e7-be26-20953d626d4b",
+								"type": "string"
+							},
+							{
+								"key": "tokenName",
+								"value": "oAuth",
+								"type": "string"
+							},
+							{
+								"key": "challengeAlgorithm",
+								"value": "S256",
+								"type": "string"
+							},
+							{
+								"key": "grant_type",
+								"value": "client_credentials",
+								"type": "string"
+							},
+							{
+								"key": "authUrl",
+								"value": "https://api-sdx.apps.bancolombia.com/ext/sandbox/v1/business-support/it-management/oauth2/token",
+								"type": "string"
+							},
+							{
+								"key": "addTokenTo",
+								"value": "header",
+								"type": "string"
+							},
+							{
+								"key": "client_authentication",
+								"value": "header",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "accessTokenUrl",
+						"value": "https://api-sdx.apps.ambientesbc.com/ext/sandbox/v1/business-support/it-management/oauth2/token",
+						"type": "string"
+					},
+					{
+						"key": "clientSecret",
+						"value": "Y2cU7nH0kR3oN6xR7tU5eX5vY2fL3gL2qO2eA3bW7qR5uW8gS7",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "057c6098-3465-48e7-be26-20953d626d4b",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "Customer-viability:read:app",
+						"type": "string"
+					},
+					{
+						"key": "tokenName",
+						"value": "",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "client_credentials",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://api-sdx.apps.bancolombia.com/ext/sandbox/v1/business-support/it-management/oauth2/token",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "header",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Terms",
+			"item": [
+				{
+					"name": "registerTerms",
+					"item": [
+						{
+							"name": "Success",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"1\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-error-invalido",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"ZXN0ZSBlbBoYSBzaWRvIG1hm5vIGV4aXRlIDpudvbG1lcm8V4aXRlIDpudW1lcm8gaW52YWxpdG8gbyBudWxsb9uIG90cm9ghdG9zIIENDOm5vyBwb3IgZmF2b3IgdmVyaWZpYxxhZnJ0IEtleSG8gY2IGzIGRXN0ZSBlbnJvbGxtZW5W2FybG9z\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"2\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-invalido-version",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"8t++khEmRSqn19DJJpkHigEt79Kw080B1EdsX0fVCywHPGRA1QwcrDo020PtLUx1OD33wCFzNYCCKsQ+OwX3nuFqU+dmPfTqndJpkHigEt79Kw080B1EdsX0xECC0UaMTeB7aTnUb7ydzuGkKjltBjkjd6/c4laB7aTnUNs0oYx9l8zU3o6GkKjltBjkjd6/c48t++khEmRSqn19DJb7ydzud\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"5\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-terminos-no-aceptados",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"8ZFTgn19DJJpkHigEt79Kw080B1EdsX0fVCywHPGRA1QwcrDo020PtLUx1OD33wCFzNYCCKsQ+OwX3nuFqU+dmPfTqndJpkHigEt79Kw080B1EdsX0xECC0UaMTeB7aTnUb7ydzuGkKjltBjkjd6/c4laB7aTnUNs0oYx9l8zU3o6GkKjltBjkjd6/c48t++khEmRSqn19DJb7ydzud\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"2\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Internal-Server",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"1\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Not-Found",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "d776f6b57705d7fe9fddfff5ade63402",
+													"type": "string"
+												},
+												{
+													"key": "clientSecret",
+													"value": "1b279fb8460416f5d6d788305811fddc",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"VEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"terms\": {\r\n      \"version\": \"2\",\r\n      \"acceptance\": true\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/register",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"register"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "retrieveTerms",
+					"item": [
+						{
+							"name": "Success",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "accessToken",
+													"value": "AAIgMGY0Y2Q3NjE1OTM5OTk5NmQ4OGVmZmE3YzU4MmQwYWE0RjI9wfHtBNT-lUNehPLXoTTnp70Ry_9NKTmytCXxHDSVOOg1h4cujh14lYaV4R7Gs_uCuIbxjC-LuClynWVGbYJsyHSfPgP-xdtQ7V3oDA1JkCR29EVdjMhIN4AOWGk9Dm1bZyPsmgPUklnoD1A0",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-parametrizacion-incompleta",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"AFRE1aVToelcK9EKH/OMzOx2L6ZG3iLIRFQRNgMZKJ8/eat3SDoN8vnIfCiQcodPNV+4tsc5XheD2KK+cbN4+a5eTiY2qNLc3Bg6ibjWitWUz1d6/c48t++khEmRSqn19DJB7aTnUb7ydECCki3YQkoO43t/2ujQWvTbkTIAopJzTjOOpqEbUdmLEoIEC0oVei8jtLhibiBaDJpSEcdvTGVd/bdsI9bpolBqHXD+mjjK9RBAkhhhr0UaMTB7305+vMsVyy\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Internal",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-Terms:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"c7gZmJbG2pGbFkOAbw7WHwQWGzWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/terms/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"terms",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Enableoffers",
+			"item": [
+				{
+					"name": "preapproved",
+					"item": [
+						{
+							"name": "Success",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "accessToken",
+													"value": "AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDJ_Yw10MYwC_xXeVx0SUUdPQO4_JgsynfdiDnJRnzVZJPV8GcV6G73q6MIL8uJt6k6UJbyFokaKknzxlTO9UwXevTENNPlPjkBopFEW_CflpvIVCiMfQUaozlOAWFPc_UvvBiARPmfVCxGGbuZ4Kt35",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-offers:read:user",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    }\r\n  }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/enable-offers/preapproved",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"enable-offers",
+												"preapproved"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-invalido-customerValidateKey",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-offers:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"ZXN0ZSBlbBoYSBzaWRvIG1hm5vIGV4aXRlIDpudvbG1lcm8V4aXRlIDpudW1lcm8gaW52YWxpdG8gbyBudWxsb9uIG90cm9ghdG9zIIENDOm5vyBwb3IgZmF2b3IgdmVyaWZpYxxhZnJ0IEtleSG8gY2IGzIGRXN0ZSBlbnJvbGxtZW5W2FybG9z\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/enable-offers/preapproved",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"enable-offers",
+												"preapproved"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Unauthorized",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-offers:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"l9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==l9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfF\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/enable-offers/preapproved",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"enable-offers",
+												"preapproved"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Internal-Server-Error",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientId",
+													"value": "d776f6b57705d7fe9fddfff5ade63402",
+													"type": "string"
+												},
+												{
+													"key": "clientSecret",
+													"value": "1b279fb8460416f5d6d788305811fddc",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-offers:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "authorization",
+												"value": "123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.0.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/enable-offers/preapproved",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"enable-offers",
+												"preapproved"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Simulations",
+			"item": [
+				{
+					"name": "Success",
+					"item": [
+						{
+							"name": "Exitoso",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 5000000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"insurances\": [\r\n                {\r\n                    \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n                },\r\n                {\r\n                    \"type\": \"SEGURO_DE_VIDA\"\r\n                }\r\n            ]\r\n        },\r\n        \"amortizationSchedule\": true\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BP",
+					"item": [
+						{
+							"name": "request-error-parametrizacion",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDJy_GSagX2Zea5VIdjX-9rJAplEQGaJNkuwQG1w9IKY1gQi3T9wXczfa2X3WwPW6lGYB5Vhwtjtxg9S14nNoFxxd4LmXDWAWMUI3OBjott6LJ7PzK0dI3r1wW_EiTMaldz-Z2wOrx4LY69f4rbZl4YbyLXZrtk-tdNDpxPIsEl8FA",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"25\",\r\n            \"amount\": 5000000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"insurances\": [\r\n                {\r\n                    \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n                },\r\n                {\r\n                    \"type\": \"SEGURO_DE_VIDA\"\r\n                }\r\n            ]\r\n        },\r\n        \"amortizationSchedule\": true\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-invalid-amount",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 5000000000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"insurances\": [\r\n                {\r\n                    \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n                },\r\n                {\r\n                    \"type\": \"SEGURO_DE_VIDA\"\r\n                }\r\n            ]\r\n        },\r\n        \"amortizationSchedule\": true\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-invalid-insurances",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "SessionToken123",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 5000000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"insurances\": [\r\n                {\r\n                    \"type\": \"SEGURO_DE_VIDA\"\r\n                }\r\n            ]\r\n        },\r\n        \"amortizationSchedule\": true\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-invalid-interestRate",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"offer\": {\r\n      \"productId\": \"14\",\r\n      \"amount\": 5000000.00,\r\n      \"term\": 24,\r\n      \"interestRate\": {\r\n        \"type\": \"TASA_VARIABLE\"\r\n      },\r\n      \"insurances\": [\r\n        {\r\n          \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n        },\r\n        {\r\n          \"type\": \"SEGURO_DE_VIDA\"\r\n        }\r\n      ]\r\n    },\r\n    \"amortizationSchedule\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-invalid-product",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"offer\": {\r\n      \"productId\": \"140\",\r\n      \"amount\": 5000000.00,\r\n      \"term\": 24,\r\n      \"interestRate\": {\r\n        \"type\": \"TASA_FIJA\"\r\n      },\r\n      \"insurances\": [\r\n        {\r\n          \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n        },\r\n        {\r\n          \"type\": \"SEGURO_DE_VIDA\"\r\n        }\r\n      ]\r\n    },\r\n    \"amortizationSchedule\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-invalid-term-amount",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    },\r\n    \"offer\": {\r\n      \"productId\": \"14\",\r\n      \"amount\": 5000000.00,\r\n      \"term\": 1,\r\n      \"interestRate\": {\r\n        \"type\": \"TASA_FIJA\"\r\n      },\r\n      \"insurances\": [\r\n        {\r\n          \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n        },\r\n        {\r\n          \"type\": \"SEGURO_DE_VIDA\"\r\n        }\r\n      ]\r\n    },\r\n    \"amortizationSchedule\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-persona-inhabilitada",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQW\"\r\n    },\r\n    \"offer\": {\r\n      \"productId\": \"14\",\r\n      \"amount\": 5000000.00,\r\n      \"term\": 24,\r\n      \"interestRate\": {\r\n        \"type\": \"TASA_FIJA\"\r\n      },\r\n      \"insurances\": [\r\n        {\r\n          \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n        },\r\n        {\r\n          \"type\": \"SEGURO_DE_VIDA\"\r\n        }\r\n      ]\r\n    },\r\n    \"amortizationSchedule\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SP",
+					"item": [
+						{
+							"name": "request-Service-Unavailable",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDJy_GSagX2Zea5VIdjX-9rJAplEQGaJNkuwQG1w9IKY1gQi3T9wXczfa2X3WwPW6lGYB5Vhwtjtxg9S14nNoFxxd4LmXDWAWMUI3OBjott6LJ7PzK0dI3r1wW_EiTMaldz-Z2wOrx4LY69f4rbZl4YbyLXZrtk-tdNDpxPIsEl8FA",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "SessionToken123",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"+DfFbEBNERqmRdi4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPd\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 74500000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"insurances\": [\r\n                {\r\n                    \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n                },\r\n                {\r\n                    \"type\": \"SEGURO_DE_VIDA\"\r\n                }\r\n            ]\r\n        },\r\n        \"amortizationSchedule\": true\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request-Unauthorized",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+											"type": "string"
+										},
+										{
+											"key": "scope",
+											"value": "ConsumerLoan-Simulation:read:user",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "message-Id",
+										"value": "messageid-123",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+										"type": "text"
+									},
+									{
+										"key": "sessionToken",
+										"value": "SessionToken123",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "application/vnd.bancolombia.v4+json",
+										"type": "text"
+									},
+									{
+										"key": "client-ip-address",
+										"value": "192.168.1.1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"EBNERqmRdi4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPd\"\r\n    },\r\n    \"offer\": {\r\n      \"productId\": \"23\",\r\n      \"amount\": 800000.00,\r\n      \"term\": 26,\r\n      \"interestRate\": {\r\n        \"type\": \"TASA_VARIABLE\"\r\n      },\r\n      \"insurances\": [\r\n        {\r\n          \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n        },\r\n        {\r\n          \"type\": \"SEGURO_DE_VIDA\"\r\n        }\r\n      ]\r\n    },\r\n    \"amortizationSchedule\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/simulations",
+									"protocol": "https",
+									"host": [
+										"gw-sandbox-qa",
+										"apps",
+										"ambientesbc",
+										"com"
+									],
+									"path": [
+										"public-partner",
+										"sb",
+										"v1",
+										"operations",
+										"product-specific",
+										"loans",
+										"consumer-loan",
+										"simulations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Deposit Accounts",
+			"item": [
+				{
+					"name": "retriveAccounts",
+					"item": [
+						{
+							"name": "Success",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "accessToken",
+													"value": "AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDIRbIxRH-QKzak7WhjKfssCDSPjqzRadyYxoEX8SK2PbtlvVx_vKV1byhs8T11wDNYhpIO82COzOFN-34i7xnScsNf0WRlw3gogle64VY6qlI7V4JlKiMPnt_J1EFsrgxxGDatr0_xtpQ22GobbBsYk_Hmi-_KbgEn7XyeqGQcBQg",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-error-parametrizacion",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"AHysYTbBoYSBzaWRvIG1hm5vIGV4aXRlIDpudvbG1lcm8V4aXRlIDpudW1lcm8gaW52YWxpdG8gbyBudWxsb9uIG90cm9ghdG9zIIENDOm5vyBwb3IgZmF2b3IgdmVyaWZpYxxhZnJ0IEtleSG8gY2IGzIGRXN0ZSBlbnJvbGxtZW5W2FybGz1\"\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-persona-inhabilitada",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "clientSecret",
+													"value": "1b279fb8460416f5d6d788305811fddc",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "d776f6b57705d7fe9fddfff5ade63402",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"ZXN0ZSBlbBoYSBzaWRvIG1hm5vIGV4aXRlIDpudvbG1lcm8V4aXRlIDpudW1lcm8gaW52YWxpdG8gbyBudWxsb9uIG90cm9ghdG9zIIENDOm5vyBwb3IgZmF2b3IgdmVyaWZpYxxhZnJ0IEtleSG8gY2IGzIGRXN0ZSBlbnJvbGxtZW5W2FybGz1\"\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SP",
+							"item": [
+								{
+									"name": "request-Internal-Server",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Unauthorized",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"data\": {\r\n    \"security\": {\r\n      \"customerValidateKey\": \"l9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==l9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfF\"\r\n    }\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-Service-Unavailable",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-account:read:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n      \"security\": {\r\n        \"customerValidateKey\": \"ISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==l9WPc7gOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==l9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfF\"\r\n      }\r\n    }\r\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/accounts/retrieve",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"accounts",
+												"retrieve"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disbursement",
+			"item": [
+				{
+					"name": "confirm",
+					"item": [
+						{
+							"name": "Success",
+							"item": [
+								{
+									"name": "Exitoso",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursementDocuments:write:user",
+													"type": "string"
+												},
+												{
+													"key": "tokenType",
+													"value": "Bearer",
+													"type": "string"
+												},
+												{
+													"key": "accessToken",
+													"value": "AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDJ_Yw10MYwC_xXeVx0SUUdPQO4_JgsynfdiDnJRnzVZJPV8GcV6G73q6MIL8uJt6k6UJbyFokaKknzxlTO9UwXevTENNPlPjkBopFEW_CflpvIVCiMfQUaozlOAWFPc_UvvBiARPmfVCxGGbuZ4Kt35",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "useBrowser",
+													"value": true,
+													"type": "boolean"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 5000000.00,\r\n            \"term\": 24,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"paymentDay\": 30,\r\n            \"disbursementsDestinations\": [\r\n                {\r\n                    \"amount\": 100000,\r\n                    \"destinationType\": \"CUENTA_CORRIENTE\",\r\n                    \"destinationId\": \"37400035678\",\r\n                    \"beneficiary\": {\r\n                        \"fullName\": \"Eshop\",\r\n                        \"identification\": {\r\n                            \"type\": \"NIT\",\r\n                            \"number\": \"900876450\"\r\n                        }\r\n                    }\r\n                },\r\n                {\r\n                    \"amount\": 4000000,\r\n                    \"destinationType\": \"CUENTA_DE_AHORROS\",\r\n                    \"destinationId\": \"37400036749\",\r\n                    \"beneficiary\": {\r\n                        \"fullName\": \"Ernesto Perez\",\r\n                        \"identification\": {\r\n                            \"type\": \"CC\",\r\n                            \"number\": \"1053828303\"\r\n                        }\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        \"directDebit\": {\r\n            \"allowDirectDebit\": true,\r\n            \"depositAccount\": {\r\n                \"type\": \"CUENTA_DE_AHORROS\",\r\n                \"number\": \"37400036749\"\r\n            }\r\n        },\r\n        \"insurances\": [\r\n            {\r\n                \"type\": \"SEGURO_DE_DESEMPLEO\"\r\n            }\r\n        ]\r\n    }\r\n}"
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/disbursements/confirm",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements",
+												"confirm"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-businessException",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursementDocuments:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "message-Id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgZDc3NmY2YjU3NzA1ZDdmZTlmZGRmZmY1YWRlNjM0MDLhGfs45t2I1LgcIaBLNYdZNDPZF5afWXGJVjRBU2icZU3ZVOi1e1qYKDKY4N7Nw0dopMe1O1j1yzw7sTiu6DUcowM-37z1e3erJ7BeTjMQgfyL9W6ySX6wE9RKYeKzpLOxoUJ-ECKIogzEnwwk4OHM",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"QWERTYUIOKJNBGWERTYUIKJGTREW12345678GJHUIGYftrdseXFCHGjLBHItgulFCDsetRXDCYIguy7hiukbvcgukj\"\r\n        },\r\n        \"offer\": {\r\n            \"productId\": \"14\",\r\n            \"amount\": 300000.45,\r\n            \"term\": 2,\r\n            \"interestRate\": {\r\n                \"type\": \"TASA_FIJA\"\r\n            },\r\n            \"paymentDay\": 30,\r\n            \"disbursementsDestinations\": [\r\n                {\r\n                    \"amount\": 300000.45,\r\n                    \"destinationType\": \"AHO\",\r\n                    \"destinationId\": \"1234567890123456\",\r\n                    \"beneficiary\": {\r\n                        \"fullName\": \"Andres Arias Perez\",\r\n                        \"identification\": {\r\n                            \"type\": \"CC\",\r\n                            \"number\": \"1053829303\"\r\n                        }\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        \"directDebit\": {\r\n            \"allowDirectDebit\": true,\r\n            \"depositAccount\": {\r\n                \"type\": \"AHO\",\r\n                \"number\": \"78909877723\"\r\n            }\r\n        },\r\n        \"insurances\": [\r\n            {\r\n                \"type\": \"SD\"\r\n            }\r\n        ]\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8085/v1/operations/product-specific/loans/consumer-loan/disbursements/confirm",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8085",
+											"path": [
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements",
+												"confirm"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "disbursements",
+					"item": [
+						{
+							"name": "success",
+							"item": [
+								{
+									"name": "disbursements",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursement:write:user",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+												"key": "Authorization",
+												"value": "Bearer AAIgMGY0Y2Q3NjE1OTM5OTk5NmQ4OGVmZmE3YzU4MmQwYWEpoXbR9yoSX09-LzTgFWTNhRfIWXUSP8r6qtWm99Kbjaw1Ws7tDGYBIxCK5u9-PzMiCjwHoDi1sh-USRjatmCcZfBUCK8idpOuDfihaB9vh3-0ZB4xgsJbwkEd8T7F5HBY40wEKRwy4D07HP-oEc2U",
+												"type": "text"
+											},
+											{
+												"key": "content-type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "a9-9_FgcUwkr9ciY0mwJ7KBz7U6xJv3KIumG",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"i4TX8ZVEpX0NLNj4Clbu0/M3WVLULqTX2zWVwb7sxsJmL325LAdy4jxl9WPc7gZmJbG2pGbFkOAbw7WHwQWGY77IePcM2kO6gVB/UCekyk+y5w+fAaFLUyqA1LFISbL+DfFbEBNERqmRdK5P3YGPbOAzedEqISbyvJf3NGTYf5f5iPdnoq5c6WSF3w==\"\r\n        },\r\n        \"loans\": [\r\n            {\r\n                \"trackingId\": \"3mlGuokji\",\r\n                \"paymentDay\": 30,\r\n                \"directDebit\": {\r\n                    \"allowDirectDebit\": true,\r\n                    \"depositAccount\": {\r\n                        \"type\": \"CUENTA_DE_AHORROS\",\r\n                        \"number\": \"37400036749\"\r\n                    }\r\n                },\r\n                \"disbursementDestinations\": [\r\n                    {\r\n                        \"transactionTaxes\": false,\r\n                        \"amount\": 1000000,\r\n                        \"destinationType\": \"CUENTA_CORRIENTE\",\r\n                        \"destinationId\": \"37400035678\",\r\n                        \"beneficiary\": {\r\n                            \"fullName\": \"Eshop\",\r\n                            \"identification\": {\r\n                                \"type\": \"NIT\",\r\n                                \"number\": \"900876450\"\r\n                            }\r\n                        }\r\n                    },\r\n                    {\r\n                        \"transactionTaxes\": false,\r\n                        \"amount\": 4000000,\r\n                        \"destinationType\": \"CUENTA_DE_AHORROS\",\r\n                        \"destinationId\": \"37400036749\",\r\n                        \"beneficiary\": {\r\n                            \"fullName\": \"Ernesto Perez\",\r\n                            \"identification\": {\r\n                                \"type\": \"CC\",\r\n                                \"number\": \"1053828303\"\r\n                            }\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"alternativeEmail\": \"ejemplo@hotmail.com\",\r\n        \"alternativeCellPhoneNumber\": \"3196913456\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/disbursements",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BP",
+							"item": [
+								{
+									"name": "request-businessExceptionAccountCliente",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursement:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgMGY0Y2Q3NjE1OTM5OTk5NmQ4OGVmZmE3YzU4MmQwYWEpoXbR9yoSX09-LzTgFWTNhRfIWXUSP8r6qtWm99Kbjaw1Ws7tDGYBIxCK5u9-PzMiCjwHoDi1sh-USRjatmCcZfBUCK8idpOuDfihaB9vh3-0ZB4xgsJbwkEd8T7F5HBY40wEKRwy4D07HP-oEc2U",
+												"type": "text"
+											},
+											{
+												"key": "content-type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"QWERTYUIOKJNBGWERTYUIKJGTREW12345678GJHUIGYftrdseXFCHGjLBHItgulFCDsetRXDCYIguy7hiukbvcgukj\"\r\n        },\r\n        \"loans\": [\r\n            {\r\n                \"trackingId\": \"3mlGuokji\",\r\n                \"paymentDay\": 15,\r\n                \"referralOfficer\": \"79865\",\r\n                \"advisoryCode\": \"123\",\r\n                \"branchOffice\": \"987\",\r\n                \"directDebit\": {\r\n                    \"allowDirectDebit\": true,\r\n                    \"depositAccount\": {\r\n                        \"type\": \"AHO\",\r\n                        \"number\": \"12349046788\"\r\n                    }\r\n                },\r\n                \"disbursementDestinations\": [\r\n                    {\r\n                        \"transactionTaxes\": true,\r\n                        \"amount\": 300000.45,\r\n                        \"destinationType\": \"AHO\",\r\n                        \"destinationId\": \"1234567890123456\",\r\n                        \"beneficiary\": {\r\n                            \"fullName\": \"Andres Arias Perez\",\r\n                            \"identification\": {\r\n                                \"type\": \"CC\",\r\n                                \"number\": \"1053829303\"\r\n                            }\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"alternativeEmail\": \"ejemplo@hotmail.com \",\r\n        \"alternativeCellPhoneNumber\": \"3196913456\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/disbursements",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-businessExceptionAccountTercero",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursement:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgMGY0Y2Q3NjE1OTM5OTk5NmQ4OGVmZmE3YzU4MmQwYWEpoXbR9yoSX09-LzTgFWTNhRfIWXUSP8r6qtWm99Kbjaw1Ws7tDGYBIxCK5u9-PzMiCjwHoDi1sh-USRjatmCcZfBUCK8idpOuDfihaB9vh3-0ZB4xgsJbwkEd8T7F5HBY40wEKRwy4D07HP-oEc2U",
+												"type": "text"
+											},
+											{
+												"key": "content-type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"QWERTYUIOKJNBGWERTYUIKJGTREW12345678GJHUIGYftrdseXFCHGjLBHItgulFCDsetRXDCYIguy7hiukbvcgukj\"\r\n        },\r\n        \"loans\": [\r\n            {\r\n                \"trackingId\": \"ABCt456\",\r\n                \"paymentDay\": 15,\r\n                \"referralOfficer\": \"79865\",\r\n                \"advisoryCode\": \"123\",\r\n                \"branchOffice\": \"987\",\r\n                \"directDebit\": {\r\n                    \"allowDirectDebit\": true,\r\n                    \"depositAccount\": {\r\n                        \"type\": \"AHO\",\r\n                        \"number\": \"78909877723\"\r\n                    }\r\n                },\r\n                \"disbursementDestinations\": [\r\n                    {\r\n                        \"transactionTaxes\": true,\r\n                        \"amount\": 300000.45,\r\n                        \"destinationType\": \"AHO\",\r\n                        \"destinationId\": \"6789654666666\",\r\n                        \"beneficiary\": {\r\n                            \"fullName\": \"Andres Arias Perez\",\r\n                            \"identification\": {\r\n                                \"type\": \"CC\",\r\n                                \"number\": \"1053829303\"\r\n                            }\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"alternativeEmail\": \"ejemplo@hotmail.com \",\r\n        \"alternativeCellPhoneNumber\": \"3196913456\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/disbursements",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "request-businessExceptionWhitOutSignature",
+									"request": {
+										"auth": {
+											"type": "oauth2",
+											"oauth2": [
+												{
+													"key": "clientSecret",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "clientId",
+													"value": "",
+													"type": "string"
+												},
+												{
+													"key": "scope",
+													"value": "ConsumerLoan-disbursement:write:user",
+													"type": "string"
+												},
+												{
+													"key": "accessTokenUrl",
+													"value": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/security/oauth-provider/oauth2/token",
+													"type": "string"
+												},
+												{
+													"key": "grant_type",
+													"value": "client_credentials",
+													"type": "string"
+												},
+												{
+													"key": "addTokenTo",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer AAIgMGY0Y2Q3NjE1OTM5OTk5NmQ4OGVmZmE3YzU4MmQwYWEpoXbR9yoSX09-LzTgFWTNhRfIWXUSP8r6qtWm99Kbjaw1Ws7tDGYBIxCK5u9-PzMiCjwHoDi1sh-USRjatmCcZfBUCK8idpOuDfihaB9vh3-0ZB4xgsJbwkEd8T7F5HBY40wEKRwy4D07HP-oEc2U",
+												"type": "text"
+											},
+											{
+												"key": "content-type",
+												"value": "application/vnd.bancolombia.v4+json",
+												"type": "text"
+											},
+											{
+												"key": "message-id",
+												"value": "messageid-123",
+												"type": "text"
+											},
+											{
+												"key": "sessionToken",
+												"value": "NMsvfvzpzn4JVRTMeMfNcJmnb2CfxJOjUvWe",
+												"type": "text"
+											},
+											{
+												"key": "client-ip-address",
+												"value": "192.168.1.1",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"security\": {\r\n            \"customerValidateKey\": \"QWERTYUIOKJNBGWERTYUIKJGTREW12345678GJHUIGYftrdseXFCHGjLBHItgulFCDsetRXDCYIguy7hiukbvcgukj\"\r\n        },\r\n        \"loans\": [\r\n            {\r\n                \"trackingId\": \"ABCt456\",\r\n                \"paymentDay\": 15,\r\n                \"referralOfficer\": \"79865\",\r\n                \"advisoryCode\": \"123\",\r\n                \"branchOffice\": \"987\",\r\n                \"directDebit\": {\r\n                    \"allowDirectDebit\": true,\r\n                    \"depositAccount\": {\r\n                        \"type\": \"AHO\",\r\n                        \"number\": \"78909877723\"\r\n                    }\r\n                },\r\n                \"disbursementDestinations\": [\r\n                    {\r\n                        \"transactionTaxes\": true,\r\n                        \"amount\": 300000.45,\r\n                        \"destinationType\": \"AHO\",\r\n                        \"destinationId\": \"1234567890123456\",\r\n                        \"beneficiary\": {\r\n                            \"fullName\": \"Andres Arias Perez\",\r\n                            \"identification\": {\r\n                                \"type\": \"CC\",\r\n                                \"number\": \"1053829303\"\r\n                            }\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"alternativeEmail\": \"ejemplo@hotmail.com \",\r\n        \"alternativeCellPhoneNumber\": \"3196913456\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://gw-sandbox-qa.apps.ambientesbc.com/public-partner/sb/v1/operations/product-specific/loans/consumer-loan/disbursements",
+											"protocol": "https",
+											"host": [
+												"gw-sandbox-qa",
+												"apps",
+												"ambientesbc",
+												"com"
+											],
+											"path": [
+												"public-partner",
+												"sb",
+												"v1",
+												"operations",
+												"product-specific",
+												"loans",
+												"consumer-loan",
+												"disbursements"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
