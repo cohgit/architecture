@@ -55,7 +55,7 @@ adb shell am start -t image/* -a android.intent.action.VIEW
 ## list users
 adb shell pm list users
 
-## Connect to device by scrcpy
+## Connect to device by scrcpy USB
 >adb devices
 List of devices attached
 5200ccfae28a442f        device
@@ -63,3 +63,21 @@ List of devices attached
 https://github.com/Genymobile/scrcpy
 >scrcpy -s 5200ccfae28a442f
 
+
+## Connect to device by scrcpy Wifi
+>adb devices
+List of devices attached
+5200ccfae28a442f	device
+R5CR50X9ZSK	device
+
+### activate port 5555 for service adb
+>adb -s 5200ccfae28a442f tcpip 5555
+
+### view ip wlan
+>adb -s 5200ccfae28a442f shell ip addr show wlan0
+
+### connect to ip and port
+>adb connect 192.168.1.87:5555
+
+### view phone
+>scrcpy -s 192.168.1.87:5555

@@ -113,3 +113,7 @@ az webapp log tail --resource-group rg-hugga-dev-v2.0 -n hugga-ms-survey
 
 docker run -d --expose=8080 --name hugga-ms-survey_0_b5cc7b36 -e PORT=8080 -e WEBSITES_PORT=8080 -e WEBSITE_SITE_NAME=hugga-ms-survey -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=localhost -e WEBSITE_INSTANCE_ID=3a2fd09a8218955a9d75f0d5754a43057c1c3d98af105301a8c54f762259ba11 -e WEBSITE_USE_DIAGNOSTIC_SERVER=False mcr.microsoft.com/azure-app-service/java:17-java17_220406005815
 
+
+docker run -d --expose=8080 --name huggalnxwebappqa_0_6b463a11 -e WEBSITE_SITE_NAME=huggalnxwebappqa -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=huggalnxwebappqa.azurewebsites.net -e WEBSITE_INSTANCE_ID=9b591136678f6fad255b090d443330d34ff88e64677fd4d53ffcdfcc5def44b4 -e WEBSITE_USE_DIAGNOSTIC_SERVER=True mcr.microsoft.com/appsvc/node:18-lts_20230228.2.tuxprod /home/site/wwwroot/node_modules/next/dist/bin/next start
+
+az webapp log tail --resource-group rg-hugga-qa-v2.0 -n huggalnxwebappqa

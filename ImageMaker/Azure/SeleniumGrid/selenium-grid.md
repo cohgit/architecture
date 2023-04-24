@@ -1,4 +1,4 @@
-uscripción  Imagemaker
+Suscripción  Imagemaker
 Grupo de recursos arq-dev-cicd-test
 Región East US 2
 Location eastus2

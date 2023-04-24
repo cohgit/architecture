@@ -1,0 +1,65 @@
+[
+    {
+        "log_time": "2023-04-21T23:54:33.4841201Z",
+        "id": "eebabe1d-372e-4375-9a7b-1ce51ab9e05a",
+        "message": "Updating submodules.",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:34.655847Z",
+        "id": "227f9c9a-c7c3-49a5-8c5f-c20b1c12ce8e",
+        "message": "Preparing deployment for commit id 'c534ef0c-a'.",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:34.9946478Z",
+        "id": "6a0eb132-b9d8-4dd2-ba1c-f08eeeab9948",
+        "message": "PreDeployment: context.CleanOutputPath False",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:35.1156268Z",
+        "id": "41e98f53-3a88-4eed-a3d2-60cd6b83d526",
+        "message": "PreDeployment: context.OutputPath /home/site/wwwroot",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:35.239179Z",
+        "id": "5ddec70d-9115-44e4-9765-d6610749c410",
+        "message": "Generating deployment script.",
+        "type": 0,
+        "details_url": "https://huggalnxwebappqa.scm.azurewebsites.net/api/deployments/c534ef0c-a208-4ba9-92ab-0e1357666119/log/5ddec70d-9115-44e4-9765-d6610749c410"
+    },
+    {
+        "log_time": "2023-04-21T23:54:35.4189644Z",
+        "id": "f24eeb0c-3863-4c2b-b446-704b05628136",
+        "message": "Running deployment command...",
+        "type": 0,
+        "details_url": "https://huggalnxwebappqa.scm.azurewebsites.net/api/deployments/c534ef0c-a208-4ba9-92ab-0e1357666119/log/f24eeb0c-3863-4c2b-b446-704b05628136"
+    },
+    {
+        "log_time": "2023-04-21T23:54:53.7782565Z",
+        "id": "9a93d447-a628-41f0-bf17-8403f744953b",
+        "message": "Running post deployment command(s)...",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:53.9560968Z",
+        "id": "41b9bedd-e3cf-485a-911f-42bf1df88601",
+        "message": "Triggering recycle (preview mode disabled).",
+        "type": 0,
+        "details_url": null
+    },
+    {
+        "log_time": "2023-04-21T23:54:54.2507706Z",
+        "id": "b1ec190d-c735-429d-86db-6d74fe2348fd",
+        "message": "Deployment successful. deployer = VSTS_ZIP_DEPLOY deploymentPath = ZipDeploy. Extract zip.",
+        "type": 0,
+        "details_url": null
+    }
+]
