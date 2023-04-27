@@ -5,7 +5,7 @@ from selenium.webdriver.common.log import Log
 async def printConsoleLogs():
   chrome_options = webdriver.ChromeOptions()
   driver = webdriver.Remote(
-        command_executor='http://20.1.130.61:4444/wd/hub',
+        command_executor='http://20.230.106.158:4444/wd/hub',
         options=chrome_options
     )
   #driver = webdriver.Chrome()
