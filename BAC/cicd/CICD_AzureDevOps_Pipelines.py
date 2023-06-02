@@ -11,14 +11,14 @@ logging.info("init get projects from Azure DevOps")
 def callAzureDevOps(url,pagination=True):
   logging.debug("calling {}".format(url))
   ## with proxy wom
-  conn = http.client.HTTPSConnection("10.120.136.40",8080)
-  conn.set_tunnel("womchile.visualstudio.com")
+  #conn = http.client.HTTPSConnection("10.120.136.40",8080)
+  #conn.set_tunnel("womchile.visualstudio.com")
 
   ## without proxy wom
   #conn = http.client.HTTPSConnection("gitlab.com")
   payload = ''
   headers = {
-    'Authorization': 'Basic bG5idmhyemJjZzJramU2bGpxeGljcWV4dmxua21mMnpraWk1N3l3bTN6N2M0ZHd3Y3g2YTo='
+    'Authorization': 'Basic '
   }
   conn.request("GET", url, payload, headers)
   response = conn.getresponse()
