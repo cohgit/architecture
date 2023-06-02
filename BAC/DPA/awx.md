@@ -1,5 +1,26 @@
-Ejemplos
+### Instalación de AWXKit (OpenSource)
+```console
+$sudo dnf install python3-pip -y
+$sudo pip3 install awxkit
+```
 
+### Desinstalación de AWXKIT
+```console
+$sudo pip3 uninstall -y awxkit
+$sudo dnf remove python3-pip -y
+```
+## Instalación Awx Ansioble Tower CLI
+https://docs.ansible.com/ansible-tower/latest/html/towercli/usage.html#installation
+
+```console
+dnf config-manager --add-repo https://releases.ansible.com/ansible-tower/cli/ansible-tower-cli-el8.repo
+dnf install ansible-tower-cli
+```
+
+
+
+
+Ejemplos
 ```console
 awx 
     --conf.host '$(server_ansible_desarrollo)' 
@@ -32,10 +53,10 @@ awx
 Export Ansible Project
 
 ```console
-awx --conf.host 'https://vmcridesaansap01.bacnet.corp.redbac.com/' --conf.username 'cogaldeh' --conf.password 'cogaldeh' --conf.insecure job_templates launch 'ExportarProyecto' --monitor --wait --extra_vars "{\"name_project\":\"Administracion_ansible\",\"user\": \"cogaldeh\",\"password\": \"cogaldeh\",\"host\": \"https://vmcridesaansap01.bacnet.corp.redbac.com/\",\"list_workflow_jobs_templates\": [\"\"]}" > 
+awx --conf.host 'https://vmcridesaansap01.bacnet.corp.redbac.com/' --conf.username 'cogaldeh' --conf.password 'cogaldeh' --conf.insecure job_templates launch 'ExportarProyecto' --monitor --wait --extra_vars "{\"name_project\":\"Administracion_ansible\",\"user\": \"cogaldeh\",\"password\": \"cogaldeh\",\"host\": \"https://vmcridesaansap01.bacnet.corp.redbac.com/\",\"list_workflow_jobs_templates\": [\"\"]}"
 
 ```
-Import Ansible Project
+Import Ansible Project STG
 ```console
-awx -v --conf.host '$(server_ansible_staging)' --conf.username '$(user_ansible_tower)' --conf.password '$(password_ansible_tower)' --conf.insecure import < cnfg${{ parameters.stgAnsibleProjectName }}.json
+awx -v --conf.host 'https://vmcridesaansst01.bacnet.corp.redbac.com/' --conf.username 'cogaldeh' --conf.password 'cogaldeh' --conf.insecure import < cnfgAdministracion_ansible.json
 ```
