@@ -60,3 +60,9 @@ Import Ansible Project STG
 ```console
 awx -v --conf.host 'https://vmcridesaansst01.bacnet.corp.redbac.com/' --conf.username 'cogaldeh' --conf.password 'cogaldeh' --conf.insecure import < cnfgAdministracion_ansible.json
 ```
+
+
+
+awx --conf.host 'https://vmcridesaansst01.bacnet.corp.redbac.com/' --conf.username 'devopsdes' --conf.password 'tf$an$1bl3' --conf.insecure job_templates launch "Ejecuta Healthcheck autorizaciones" --extra_vars "{\"select\":\"Banco\",\"def_ambiente\": \"Producción\"}" --monitor --verbosity 1
+
+
