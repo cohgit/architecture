@@ -8,7 +8,7 @@ Staging
 https://vmcridesaansst01.bacnet.corp.redbac.com/#/login
 vmcridesaansst01
 10.128.64.84
-ssh azbacadmin@vmcridesaansap01
+ssh azbacadmin@vmcridesaansst01
 
 Producción
 https://vmcriprodansap01.bacnet.corp.redbac.com/#/login
@@ -18,9 +18,17 @@ ssh azbacadmin@vmcriprodansap01
 
 
 Qa7A6bAlsNUZ
+tf$an$1bl3
+tf$$an$$1bl3
+tf\$an\$1bl3
+
 
 AgentPool LNX Desa
 
 10.128.64.113
 ssh azbacadmin@10.128.64.113
  
+
+
+ https://dev.azure.com/ORG-CRI-GTI/DEVOPS/_git/AZURE-DEVOPS-TEMPLATES
+ https://dev.azure.com/ORG-CRI-GTI/DEVOPS/_git/AZURE-DEVOPS-TEMPLATES/
