@@ -66,3 +66,6 @@ awx -v --conf.host 'https://vmcridesaansst01.bacnet.corp.redbac.com/' --conf.use
 awx --conf.host 'https://vmcridesaansst01.bacnet.corp.redbac.com/' --conf.username 'devopsdes' --conf.password 'tf$an$1bl3' --conf.insecure job_templates launch "Ejecuta Healthcheck autorizaciones" --extra_vars "{\"select\":\"Banco\",\"def_ambiente\": \"Producción\"}" --monitor --verbosity 1
 
 
+
+
+sshpass -p 'Qa7A6bAlsNUZ' scp /shareDpat/cnfgHealthcheck_autorizaciones.json azbacadmin@10.128.64.113:/home/azbacadmin/myagent/_work/1/a
