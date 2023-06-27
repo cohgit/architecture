@@ -83,3 +83,11 @@ El dispositivo se bloqueó. Comuníquese con su proveedor de servicios de Intern
 |  devopspoc01                     |  064499744217 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/064499744217  |  ACTIVE |
 |  emam.uddin@portonics.com        |  975484536998 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/975484536998  |  ACTIVE |
 |  mahabub@portonics.com           |  238355964919 |  arn:aws:organizations::822332566469:account/o-0f74ana7q8/238355964919  |  ACTIVE |
+
+
+
+
+aws ec2 describe-instances --query 'Reservations[].Instances[].{Name: Tags[?Key==`Name`].Value | [0], IP: PublicIpAddress, ID: InstanceId}' --output table
+
+
+aws iam simulate-principal-policy --policy-source-arn arn:aws:iam::023608284248:policy/<policy-name> --action-names "ec2:StopInstances" --context-entries "ContextKeyName=ec2:ResourceTag/Key,ContextKeyType=string,ContextKeyValues=string-value" --resource-arns "arn:aws:ec2:us-east-1:023608284248:instance/i-08cba483dd154c30e"
