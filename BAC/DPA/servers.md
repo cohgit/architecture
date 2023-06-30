@@ -31,6 +31,8 @@ AgentPool LNX Prod
 10.128.0.26
 ssh azbacadmin@10.128.0.26
  
+Rehat Subscription
+joconitrilloc / Credomatic..01
 
 
  https://dev.azure.com/ORG-CRI-GTI/DEVOPS/_git/AZURE-DEVOPS-TEMPLATES
