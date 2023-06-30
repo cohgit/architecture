@@ -24,9 +24,12 @@ tf\$an\$1bl3
 
 
 AgentPool LNX Desa
-
 10.128.64.113
 ssh azbacadmin@10.128.64.113
+ 
+AgentPool LNX Prod
+10.128.0.26
+ssh azbacadmin@10.128.0.26
  
 
 
