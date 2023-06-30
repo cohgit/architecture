@@ -31,6 +31,9 @@ OK 4.2.- Diagrama Levantamiento de políticas (Ambientes, Ramas, Aprobadores).
 5.1.- (1sem) Documentación pipeline de creación Proyectos Ansibles según buenas prácticas.
 5.2.- (1sem) Definición y estructuras de documentación (MarkDown) y Validación en pipeline.
 5.3.- (1sem) Incorporar Tarea de Validación de código en template pipeline.
+             - el uso de ansible-lint (On RHEL, ansible-lint package is part of "Red Hat Ansible Automation Platform" subscription, which needs to be activated.)
+             - la otra alternativa es usar pip y librería abierta pero da error en gcc (pip3 install ansible-lint)
+             Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-bppb8vl1/ruamel.yaml.clib/
 5.4.- (1sem) Agregar Environment's con restricción de ramas, templates.
 5.5.- (1sem) Agregar pruebas unitarias de desarrollo al pipeline
 5.6.- (1sem) Complementar requerimientos generales heredados con los específicos de Ansible, sobre todo en autorizaciones
