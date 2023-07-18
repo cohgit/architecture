@@ -1,3 +1,14 @@
+## Instalación de Ansible
+$sudo subscription-manager list --all --available
+$sudo subscription-manager attach --pool=2c94fe2582fed29001830e755e8d68ae
+$sudo subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms
+$sudo dnf install ansible-core
+$sudo dnf install ansible-lint
+$ansible-playbook --version
+$ansible-lint --version
+$ansible --version
+
+
 ### Instalación de AWXKit (OpenSource)
 ```console
 $sudo dnf install python3-pip -y
