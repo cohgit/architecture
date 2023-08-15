@@ -1,5 +1,6 @@
 # Creación y Modificación de API's
 Stack Tecnologico : NetCore / IIS
+Modalidad: Termino
 
 ## Requerimientos
 Cada requerimiento debe contar con 
