@@ -1,0 +1,134 @@
+<div class="row paddingTop15" id="toExport">
+
+  <div class="row content-card ">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-2 col-sm-6">
+              <h2>
+                <a (click)="goClient()">
+               <i class="las la-low-vision colorPrincipal  espDer5"></i> {{"title.deindexing" | translate}} </a></h2>
+            </div>
+            <div class="col-md-8 col-sm-6 paddingTop5 float-left" *ngIf="table?.urlsAvailables > 0 && !this.isAdmin">
+              <a class="glow-on-hover reduceFont " [routerLink]="['form', '']">
+                <i class="las la-plus-circle espDer5"></i>{{'button.add' | translate}} </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 top20m" *ngIf="table?.list?.length > 0">
+          <div class="row ">
+            <div class="col-md-4 col-sm-6"></div>
+            <div class="col-md-4 col-sm-6">
+              <a (click)="utilService.downloadExcel('title.deindexing')" class="third after reduceFont ">
+                <i class="las la-file-excel colorPrincipal espDer5"></i>{{'label.excel' | translate}}</a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a (click)="utilService.donwloadPDF('title.deindexing')" class="third after reduceFont ">
+                <i class="las la-file-pdf colorPrincipal espDer5"></i>{{'label.pdf' | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--filters-->
+    <div class="col-md-12" *ngIf="table?.list?.length > 0">
+      <div class="row border-filter">
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="filter.personal" name="personal" matInput (ngModelChange)="searchResult(filter)"
+                   placeholder="{{'label.personal_info' | translate}}">
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <mat-select
+              placeholder="{{ 'status.deindex' | translate }}"
+              [(ngModel)]="filter.status" (ngModelChange)="searchResult(filter)"
+            >
+              <mat-option *ngFor="let item of allStates" [value]="item.tag">
+                <i class="{{ ICONS[item?.tag] ? ICONS[item?.tag] : ICONS.ESTADO_DEFAULT }}
+                la-2x colorGris espDer5"></i> -
+                {{'status.deindex.' + item?.tag | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <!--<div class="col-md-2 centrado col-sm-12">
+          <button (click)="searchResult(filter)" class="secondLevelButton reduceFont"
+          ><i class="las la-search espDer5"></i>{{'button.search' | translate}}</button>
+        </div>-->
+        <div class="col-md-2  col-sm-12 paddingTop15 float-left">
+          <a (click)="clean()" class="third after reduceFont ">
+            <i class="las la-broom colorPrincipal espDer5"></i>{{'button.clear_filters' |
+            translate}}</a>
+        </div>
+
+      </div>
+    </div>
+    <!--principal table-->
+    <div class="col-md-12" *ngIf="table?.list?.length > 0">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless">
+          <thead class="thead-light">
+          <tr>
+            <th
+              (click)="sortFunction('person_name')"><i
+              class="las la-sort colorPrincipal espDer5"></i>{{'label.personal_info' | translate}} </th>
+            <th
+              (click)="sortFunction('creation_date')"><i
+              class="las la-sort colorPrincipal espDer5"></i>{{'label.impulse.creation_date' | translate}} </th>
+            <th class="maxWidth400">{{'label.keywords' | translate}} </th>
+            <th
+              (click)="sortFunction('status')"><i
+              class="las la-sort colorPrincipal espDer5"></i>{{'status.deindex' | translate}} </th>
+            <th>{{'label.actions' | translate}} </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let data of copyArray ">
+            <td>{{ data?.person_name }} {{ data?.person_lastname }}</td>
+            <td>{{ utilService.formatDate(data?.creation_date) | date:'short'}}</td>
+            <td class="maxWidth400">
+              <mat-chip-list aria-label="Fish selection espDer15">
+                <mat-chip *ngFor="let key of splitKeywords(data?.url_to_deindex_keywords)">
+                    <span class="colorPrincipal"
+                    >{{key}}
+                    </span></mat-chip
+                >
+              </mat-chip-list>
+
+              <!--{{splitKeywords(data?.url_to_deindex_keywords)}}-->
+
+            </td>
+            <td><i
+              class="{{ ICONS[data?.status] ? ICONS[data?.status] : ICONS.ESTADO_DEFAULT }} la-2x colorGris espDer5"></i>
+              {{'status.deindex.' + data?.status | translate }}</td>
+            <td>
+              <a [routerLink]="['form', data.uuid]" class="espDer15" *ngIf="!isAdmin">
+                <i class="las la-edit colorPrincipal  la-2x" title="{{'title.edit_deindexing' | translate}}"></i>
+              </a>
+              <a [routerLink]="['view', data.uuid]" class="espDer15" *ngIf="isAdmin">
+                <i class="las la-eye colorPrincipal la-2x" title="{{'button.preview' | translate}}"></i>
+              </a>
+              <a (click)="checkTracking(data.uuid)" class="espDer15">
+                <i class="las la-check-circle colorPrincipal la-2x" title="{{'status.deindex' | translate}}"></i>
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado paddingBottom50 paddingTop25">
+          <jw-pagination [items]="table?.list" (changePage)="onChangePage($event)"
+                         [maxPages]="5" [pageSize]="15" class="{{paginatorClass}}"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12" *ngIf="table?.list?.length === 0">
+      <h5 class="centrado colorGris">{{'error.not_found_results' | translate}}</h5>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3565 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >DashboardBuilderService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/helpers/dashboard-builder.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#MAX_POSITIONS_IN_URL_TIME_LINEAL" >MAX_POSITIONS_IN_URL_TIME_LINEAL</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#MIN_POSITIONS_IN_URL_TIME_LINEAL" >MIN_POSITIONS_IN_URL_TIME_LINEAL</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate" >translate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildBasicV2" >buildBasicV2</a>
+                            </li>
+                            <li>
+                                <a href="#buildFeelingGraphsV2" >buildFeelingGraphsV2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildForOneShotV2" >buildForOneShotV2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildForRecurrentV2" >buildForRecurrentV2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildForTransformV2" >buildForTransformV2</a>
+                            </li>
+                            <li>
+                                <a href="#buildLineDescription" >buildLineDescription</a>
+                            </li>
+                            <li>
+                                <a href="#buildNewContentTableV2" >buildNewContentTableV2</a>
+                            </li>
+                            <li>
+                                <a href="#buildPrincipalData" >buildPrincipalData</a>
+                            </li>
+                            <li>
+                                <a href="#buildTableKeywordsByImpulses" >buildTableKeywordsByImpulses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#buildV2" >buildV2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#checkAndPushResultsByTrackingWordsV2" >checkAndPushResultsByTrackingWordsV2</a>
+                            </li>
+                            <li>
+                                <a href="#checkDays" >checkDays</a>
+                            </li>
+                            <li>
+                                <a href="#countByFeelingV2" >countByFeelingV2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createUrlTimeLinealData" >createUrlTimeLinealData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#hasTrackingWordOrUrl" >hasTrackingWordOrUrl</a>
+                            </li>
+                            <li>
+                                <a href="#isNewContent" >isNewContent</a>
+                            </li>
+                            <li>
+                                <a href="#pushAlertContent" >pushAlertContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#pushElementUrlTimeLineal" >pushElementUrlTimeLineal</a>
+                            </li>
+                            <li>
+                                <a href="#pushResult" >pushResult</a>
+                            </li>
+                            <li>
+                                <a href="#sortTimelineGraph" >sortTimelineGraph</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(translate: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>It allows to build the dashboard of the scanners in the frontend of the project.</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildBasicV2"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildBasicV2</b></span>
+                        <a href="#buildBasicV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildBasicV2(filteredResults: any[], filters?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="367"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Descripción</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Build basic info for dashboard (Keywords por tema de rastreo, Keywords por URL)</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildFeelingGraphsV2"></a>
+                    <span class="name">
+                        <span ><b>buildFeelingGraphsV2</b></span>
+                        <a href="#buildFeelingGraphsV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildFeelingGraphsV2(data: <a href="../classes/ScannerDashboardV2.html" target="_self">ScannerDashboardV2</a>, totals: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="595"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:595</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build Donut graph &quot;Sentimientos asignados&quot;</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>totals</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildForOneShotV2"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildForOneShotV2</b></span>
+                        <a href="#buildForOneShotV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildForOneShotV2(filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="203"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Basic Dashboard for OneShots</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildForRecurrentV2"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildForRecurrentV2</b></span>
+                        <a href="#buildForRecurrentV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildForRecurrentV2(filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="222"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build Dashboard for Recurrents</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildForTransformV2"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildForTransformV2</b></span>
+                        <a href="#buildForTransformV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildForTransformV2(filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="243"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build Dashboard for Transform</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildLineDescription"></a>
+                    <span class="name">
+                        <span ><b>buildLineDescription</b></span>
+                        <a href="#buildLineDescription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildLineDescription(snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, keyword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, countryTag: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="64"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build the description of a snippet with all its components</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>keyword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>countryTag</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildNewContentTableV2"></a>
+                    <span class="name">
+                        <span ><b>buildNewContentTableV2</b></span>
+                        <a href="#buildNewContentTableV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildNewContentTableV2(data: <a href="../classes/ScannerDashboardV2.html" target="_self">ScannerDashboardV2</a>, filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="269"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:269</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create the new found news listing array</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildPrincipalData"></a>
+                    <span class="name">
+                        <span ><b>buildPrincipalData</b></span>
+                        <a href="#buildPrincipalData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildPrincipalData(data: <a href="../classes/ScannerDashboardV2.html" target="_self">ScannerDashboardV2</a>, filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, minPosition?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="862"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:862</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build principal data for Transform dashboard (&quot;Contenido a anular&quot;, &quot;URL a impulsar&quot;)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>minPosition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildTableKeywordsByImpulses"></a>
+                    <span class="name">
+                        <span ><b>buildTableKeywordsByImpulses</b></span>
+                        <a href="#buildTableKeywordsByImpulses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildTableKeywordsByImpulses(data: <a href="../classes/ScannerDashboardV2.html" target="_self">ScannerDashboardV2</a>, filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="721"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:721</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build part of transform info (Keyword por impulsos)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildV2"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>buildV2</b></span>
+                        <a href="#buildV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildV2(scannerType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, filteredResults: any[], scanner: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="181"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build new dashboard V2.0</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannerType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filteredResults</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scanner</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkAndPushResultsByTrackingWordsV2"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>checkAndPushResultsByTrackingWordsV2</b></span>
+                        <a href="#checkAndPushResultsByTrackingWordsV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkAndPushResultsByTrackingWordsV2(data: <a href="../classes/ScannerDashboardV2.html" target="_self">ScannerDashboardV2</a>, snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, listKey: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, searchType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, keyword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, query_date: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, country: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="666"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:666</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create the object that conforms the content array for trackingword table sections</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/ScannerDashboardV2.html" target="_self" >ScannerDashboardV2</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>listKey</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>searchType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>keyword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query_date</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>country</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkDays"></a>
+                    <span class="name">
+                        <span ><b>checkDays</b></span>
+                        <a href="#checkDays"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkDays(first, second)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="501"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:501</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>first</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>second</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countByFeelingV2"></a>
+                    <span class="name">
+                        <span ><b>countByFeelingV2</b></span>
+                        <a href="#countByFeelingV2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>countByFeelingV2(keyword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, feeling: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, totals: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="569"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:569</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>keyword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>feeling</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>totals</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createUrlTimeLinealData"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createUrlTimeLinealData</b></span>
+                        <a href="#createUrlTimeLinealData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createUrlTimeLinealData(snippetsData: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, snippetsList: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="89"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build the data displayed on the timeline chart</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snippetsData</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>snippetsList</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasTrackingWordOrUrl"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>hasTrackingWordOrUrl</b></span>
+                        <a href="#hasTrackingWordOrUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>hasTrackingWordOrUrl(snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="45"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Obtain list of tracking words from a snippet (just the word)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Descripción</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Snippet to inspect</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Tracking Word type (Possible values: &#39;WORD&#39; or &#39;URL&#39;)</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>string[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An array of tracking words or URLs.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNewContent"></a>
+                    <span class="name">
+                        <span ><b>isNewContent</b></span>
+                        <a href="#isNewContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNewContent(snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, firstReferenceQueryDate: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="349"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the content is new or not</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>firstReferenceQueryDate</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pushAlertContent"></a>
+                    <span class="name">
+                        <span ><b>pushAlertContent</b></span>
+                        <a href="#pushAlertContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pushAlertContent(result: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, dataList: any[], lastDate: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="513"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:513</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Creates the object that makes up the content array for table sections</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>result</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dataList</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>lastDate</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pushElementUrlTimeLineal"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>pushElementUrlTimeLineal</b></span>
+                        <a href="#pushElementUrlTimeLineal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>pushElementUrlTimeLineal(urlTimeLineal: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, keyword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, countryTag: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="109"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build the object to be inserted into the array for the timeline</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>urlTimeLineal</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>keyword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>countryTag</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pushResult"></a>
+                    <span class="name">
+                        <span ><b>pushResult</b></span>
+                        <a href="#pushResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pushResult(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, snippet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, listKey: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, searchType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, keyword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, lastCompareDate: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, country: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, targetReached?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="802"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:802</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add the snippet object to display to an array</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>snippet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>listKey</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>searchType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>keyword</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>lastCompareDate</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>country</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>targetReached</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortTimelineGraph"></a>
+                    <span class="name">
+                        <span ><b>sortTimelineGraph</b></span>
+                        <a href="#sortTimelineGraph"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortTimelineGraph(a: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, b: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="1077"
+                            class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:1077</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>a</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MAX_POSITIONS_IN_URL_TIME_LINEAL"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>MAX_POSITIONS_IN_URL_TIME_LINEAL</b></span>
+                        <a href="#MAX_POSITIONS_IN_URL_TIME_LINEAL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MIN_POSITIONS_IN_URL_TIME_LINEAL"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>MIN_POSITIONS_IN_URL_TIME_LINEAL</b></span>
+                        <a href="#MIN_POSITIONS_IN_URL_TIME_LINEAL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>20</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translate</b></span>
+                        <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/helpers/dashboard-builder.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { LAST_MEDIA } from &#x27;@angular/cdk/keycodes&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import * as moment from &#x27;moment&#x27;;
+
+import {
+  IScannerGraph,
+  ScannerDashboardV2,
+} from &#x27;src/app/interfaces/IScannerDashboardV2&#x27;;
+import { TranslateHelperService } from &#x27;./translate-helper.service&#x27;;
+import { UtilService } from &#x27;./util.service&#x27;;
+
+const GREEN &#x3D; &#x27;#54E887&#x27;;
+const RED &#x3D; &#x27;#FF504A&#x27;;
+const YELLOW &#x3D; &#x27;#E3D042&#x27;;
+const BLUE &#x3D; &#x27;#3C9BE8&#x27;;
+const GRAY &#x3D; &#x27;#bcd3df&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+/**
+ * Dashboard builder helper.
+ */
+export class DashboardBuilderService {
+  private MIN_POSITIONS_IN_URL_TIME_LINEAL &#x3D; 20;
+  private MAX_POSITIONS_IN_URL_TIME_LINEAL &#x3D; 1;
+
+  /**
+   *
+   * It allows to build the dashboard of the scanners in the frontend of the project.
+   * @param translate
+   * @param utilService
+   */
+  constructor(
+    public translate: TranslateHelperService,
+    private utilService: UtilService
+  ) {}
+
+  /**
+   * Obtain list of tracking words from a snippet (just the word)
+   * @param snippet Snippet to inspect
+   * @param type Tracking Word type (Possible values: &#x27;WORD&#x27; or &#x27;URL&#x27;)
+   * @returns An array of tracking words or URLs.
+   */
+  private hasTrackingWordOrUrl(snippet: any, type: string): string[] {
+    const found &#x3D; [];
+    if (snippet.trackingWords &amp;&amp; snippet.trackingWords.length &gt; 0) {
+      snippet.trackingWords.forEach((tw) &#x3D;&gt; {
+        if (tw.type &#x3D;&#x3D;&#x3D; type) {
+          found.push(tw);
+        }
+      });
+    }
+
+    return found;
+  }
+
+  /**
+   * Build the description of a snippet with all its components
+   * @param snippet
+   * @param keyword
+   * @param countryTag
+   */
+  buildLineDescription(
+    snippet: any,
+    keyword: string,
+    countryTag: string
+  ): string {
+    return (
+      this.utilService.onlyDomain(snippet.snippet.link) +
+      &#x27; * &#x27; +
+      keyword +
+      &#x27; * &#x27; +
+      this.translate.translate.instant(&#x27;list.country.&#x27; + countryTag) +
+      &#x27; * &#x27; +
+      this.translate.translate.instant(
+        &#x27;list.scanner.type.&#x27; + snippet.snippet.searchType
+      ) +
+      &#x27; * &#x27; +
+      this.translate.translate.instant(&#x27;label.ranking&#x27;)
+    );
+  }
+
+  /**
+   * Build the data displayed on the timeline chart
+   * @param snippetsData
+   * @param snippetsList
+   */
+  public createUrlTimeLinealData(snippetsData: any, snippetsList: any[]): void {
+    snippetsData.timeline.graph &#x3D; [];
+
+    if (snippetsList?.length &gt; 0) {
+      snippetsList.forEach((snippet) &#x3D;&gt; {
+        this.pushElementUrlTimeLineal(
+          snippetsData.timeline,
+          snippet,
+          snippet.keyword,
+          snippet.country
+        );
+      });
+    }
+  }
+
+  /**
+   * Build the object to be inserted into the array for the timeline
+   * @param urlTimeLineal
+   * @param snippet
+   */
+  private pushElementUrlTimeLineal(
+    urlTimeLineal: any,
+    snippet: any,
+    keyword: string,
+    countryTag: string
+  ): void {
+    const lineDescription &#x3D; this.buildLineDescription(
+      snippet,
+      keyword,
+      countryTag
+    );
+    if (snippet) {
+      let element &#x3D; {
+        name: lineDescription,
+        extra: { feeling: snippet.feeling, link: snippet.link },
+        series: [],
+      };
+      // Date format &#x27;2022-05-05T16:32:48.62&#x27;
+      snippet.tracking.forEach((track) &#x3D;&gt; {
+        const tooltipTrack &#x3D;
+          this.buildLineDescription(snippet, keyword, countryTag) +
+          &#x27;: &#x27; +
+          track.position +
+          &#x27; (&#x27; +
+          this.translate.translate.instant(&#x27;label.pag&#x27;) +
+          &#x27;: &#x27; +
+          track.page +
+          &#x27; / &#x27; +
+          this.translate.translate.instant(&#x27;label.pos&#x27;) +
+          &#x27;: &#x27; +
+          track.position_in_page +
+          &#x27;)  &#x27; +
+          moment(track.date_scan).format(&#x27;DD/MM/YYYY HH:mm:ss&#x27;);
+
+        element.series.push({
+          name: new Date(track.date_scan),
+          value: track.position,
+          extra: {
+            code: track.id,
+            page: track.page,
+            link: snippet.snippet.link,
+          },
+          tooltipText: tooltipTrack,
+        });
+      });
+
+      switch (snippet.feeling) {
+        case &#x27;good&#x27;:
+          urlTimeLineal.schemaColors.domain.push(GREEN);
+          break;
+        case &#x27;bad&#x27;:
+          urlTimeLineal.schemaColors.domain.push(RED);
+          break;
+        case &#x27;neutral&#x27;:
+          urlTimeLineal.schemaColors.domain.push(BLUE);
+          break;
+        case &#x27;not_applied&#x27;:
+          urlTimeLineal.schemaColors.domain.push(GRAY);
+          break;
+      }
+
+      urlTimeLineal.graph.push(element);
+    }
+  }
+
+  /**
+   * Build new dashboard V2.0
+   * @param scannerType
+   * @param filteredResults
+   * @param scanner
+   * @returns
+   */
+  public buildV2(
+    scannerType: string,
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ): ScannerDashboardV2 {
+    if (scannerType &#x3D;&#x3D;&#x3D; &#x27;one_shot&#x27;) {
+      return this.buildForOneShotV2(filteredResults, scanner, filters);
+    } else if (scannerType &#x3D;&#x3D;&#x3D; &#x27;monitor&#x27;) {
+      return this.buildForRecurrentV2(filteredResults, scanner, filters);
+    } else if (scannerType &#x3D;&#x3D;&#x3D; &#x27;transform&#x27;) {
+      return this.buildForTransformV2(filteredResults, scanner, filters);
+    }
+
+    return null;
+  }
+
+  /**
+   * Basic Dashboard for OneShots
+   * @param filteredResults
+   * @returns
+   */
+  private buildForOneShotV2(
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ): ScannerDashboardV2 {
+    const data &#x3D; this.buildBasicV2(filteredResults, filters);
+
+    if (data) {
+      this.buildPrincipalData(data, filteredResults, scanner, filters);
+    }
+
+    return data;
+  }
+
+  /**
+   * Build Dashboard for Recurrents
+   * @param filteredResults
+   * @returns
+   */
+  private buildForRecurrentV2(
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ): ScannerDashboardV2 {
+    const data &#x3D; this.buildForOneShotV2(filteredResults, scanner, filters);
+
+    if (data) {
+      this.buildNewContentTableV2(data, filteredResults, scanner, filters);
+    }
+
+    return data;
+  }
+
+  /**
+   * Build Dashboard for Transform
+   * @param filteredResults
+   * @param scanner
+   * @param filters
+   * @private
+   */
+  private buildForTransformV2(
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ): ScannerDashboardV2 {
+    const data &#x3D; this.buildForRecurrentV2(filteredResults, scanner, filters);
+
+    if (data) {
+      this.buildTableKeywordsByImpulses(
+        data,
+        filteredResults,
+        scanner,
+        filters
+      );
+    }
+
+    return data;
+  }
+
+  /**
+   * Create the new found news listing array
+   * @param data
+   * @param filteredResults
+   * @param scanner
+   * @param filters
+   */
+  buildNewContentTableV2(
+    data: ScannerDashboardV2,
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ) {
+    if (filteredResults) {
+      const firstQueryDate &#x3D; moment(scanner.creation_date).clone();
+
+      filteredResults.forEach((res) &#x3D;&gt; {
+        const lastQueryDate &#x3D; moment(res.query_date).clone();
+
+        let firstReferenceQueryDate &#x3D; lastQueryDate
+          .clone()
+          .subtract(1, &#x27;months&#x27;);
+
+        firstReferenceQueryDate &#x3D; filters?.init_date
+          ? filters.init_date
+          : firstQueryDate.isBefore(firstReferenceQueryDate, &#x27;day&#x27;)
+          ? firstReferenceQueryDate
+          : firstQueryDate;
+
+        const lastCompareDate &#x3D; filters?.end_date
+          ? moment(filters.end_date)
+          : moment(res.query_date);
+
+        res.snippetsImages.forEach((imgSnippet) &#x3D;&gt; {
+          if (
+            !imgSnippet.feelingObj.NOT_APPLIED &amp;&amp;
+            this.isNewContent(imgSnippet, firstReferenceQueryDate)
+          ) {
+            this.pushAlertContent(
+              res,
+              imgSnippet,
+              data.alerts.new,
+              lastCompareDate
+            );
+          }
+        });
+
+        res.snippetsNews.forEach((newsSnippet) &#x3D;&gt; {
+          if (
+            !newsSnippet.feelingObj.NOT_APPLIED &amp;&amp;
+            this.isNewContent(newsSnippet, firstReferenceQueryDate)
+          ) {
+            this.pushAlertContent(
+              res,
+              newsSnippet,
+              data.alerts.new,
+              lastCompareDate
+            );
+          }
+        });
+
+        res.snippetsWebs.forEach((webSnippet) &#x3D;&gt; {
+          if (
+            !webSnippet.feelingObj.NOT_APPLIED &amp;&amp;
+            this.isNewContent(webSnippet, firstReferenceQueryDate)
+          ) {
+            this.pushAlertContent(
+              res,
+              webSnippet,
+              data.alerts.new,
+              lastCompareDate
+            );
+          }
+        });
+      });
+
+      return data;
+    }
+
+    return null;
+  }
+
+  /**
+   * Check if the content is new or not
+   * @param snippet
+   * @param firstReferenceQueryDate
+   */
+  isNewContent(snippet: any, firstReferenceQueryDate: any): boolean {
+    if (snippet?.tracking?.length &gt; 0) {
+      // Check if there is a tracking in the array
+      const firstTimeFound &#x3D; moment(snippet.tracking[0].date_scan).clone();
+
+      if (firstTimeFound.isAfter(firstReferenceQueryDate, &#x27;day&#x27;)) {
+        // Check if snippet is found after first date reference
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   *
+   * @param filteredResults Build basic info for dashboard (Keywords por tema de rastreo, Keywords por URL)
+   * @returns
+   */
+  private buildBasicV2(
+    filteredResults: any[],
+    filters?: any
+  ): ScannerDashboardV2 {
+    if (filteredResults) {
+      const data &#x3D; new ScannerDashboardV2();
+      data.alerts &#x3D; {
+        negative: [],
+        new: [],
+      };
+
+      const totals &#x3D; {};
+
+      filteredResults.forEach((res) &#x3D;&gt; {
+        res.snippetsImages.forEach((imgSnippet) &#x3D;&gt; {
+          const lastCompareDate &#x3D; filters?.end_date
+            ? moment(filters.end_date)
+            : moment(res.query_date);
+
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            imgSnippet,
+            &#x27;keywordsByTW&#x27;,
+            &#x27;WORD&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            imgSnippet,
+            &#x27;keywordsByURL&#x27;,
+            &#x27;URL&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+
+          this.countByFeelingV2(res.keyword.word, imgSnippet.feeling, totals);
+          if (imgSnippet.feeling &#x3D;&#x3D;&#x3D; &#x27;bad&#x27;) {
+            this.pushAlertContent(
+              res,
+              imgSnippet,
+              data.alerts.negative,
+              lastCompareDate
+            );
+          }
+        });
+
+        res.snippetsNews.forEach((newsSnippet) &#x3D;&gt; {
+          const lastCompareDate &#x3D; filters?.end_date
+            ? moment(filters.end_date)
+            : moment(res.query_date);
+
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            newsSnippet,
+            &#x27;keywordsByTW&#x27;,
+            &#x27;WORD&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            newsSnippet,
+            &#x27;keywordsByURL&#x27;,
+            &#x27;URL&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+
+          this.countByFeelingV2(res.keyword.word, newsSnippet.feeling, totals);
+          if (newsSnippet.feeling &#x3D;&#x3D;&#x3D; &#x27;bad&#x27;) {
+            this.pushAlertContent(
+              res,
+              newsSnippet,
+              data.alerts.negative,
+              lastCompareDate
+            );
+          }
+        });
+
+        res.snippetsWebs.forEach((webSnippet) &#x3D;&gt; {
+          const lastCompareDate &#x3D; filters?.end_date
+            ? moment(filters.end_date)
+            : moment(res.query_date);
+
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            webSnippet,
+            &#x27;keywordsByTW&#x27;,
+            &#x27;WORD&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+          this.checkAndPushResultsByTrackingWordsV2(
+            data,
+            webSnippet,
+            &#x27;keywordsByURL&#x27;,
+            &#x27;URL&#x27;,
+            res.search_type,
+            res.keyword.word,
+            lastCompareDate,
+            res.country
+          );
+
+          this.countByFeelingV2(res.keyword.word, webSnippet.feeling, totals);
+          if (webSnippet.feeling &#x3D;&#x3D;&#x3D; &#x27;bad&#x27;) {
+            this.pushAlertContent(
+              res,
+              webSnippet,
+              data.alerts.negative,
+              lastCompareDate
+            );
+          }
+        });
+      });
+
+      this.buildFeelingGraphsV2(data, totals);
+
+      return data;
+    }
+
+    return null;
+  }
+
+  checkDays(first, second) {
+    return (
+      moment(first).format(&#x27;DD/MM/YYYY&#x27;) &#x3D;&#x3D;&#x3D; moment(second).format(&#x27;DD/MM/YYYY&#x27;)
+    );
+  }
+  /**
+   * Creates the object that makes up the content array for table sections
+   * @param result
+   * @param snippet
+   * @param dataList
+   * @param lastDate
+   */
+  pushAlertContent(result: any, snippet: any, dataList: any[], lastDate: any) {
+    dataList.push({
+      keyword: result.keyword,
+      trackingWords: snippet.trackingWords,
+      typeSearch: result.search_type,
+      rating_visualization: null,
+      rating_reputation: null,
+      country: result.country,
+      snippet: snippet.snippet,
+      link: snippet.link,
+      display_link: snippet.displayed_link,
+      domain: snippet.domain,
+      tittle: snippet.title,
+      trend:
+        snippet.tracking[0].position &#x3D;&#x3D;
+        snippet.tracking[snippet.tracking.length - 1].position
+          ? &#x27;SAME&#x27;
+          : snippet.tracking[0].position &lt;
+            snippet.tracking[snippet.tracking.length - 1].position
+          ? &#x27;DOWN&#x27;
+          : &#x27;UP&#x27;,
+      page:
+        snippet?.tracking?.length &gt; 0
+          ? snippet.tracking[snippet.tracking.length - 1].page
+          : null,
+      position:
+        snippet?.tracking?.length &gt; 0
+          ? snippet.tracking[snippet.tracking.length - 1].position
+          : null,
+      position_in_page:
+        snippet?.tracking?.length &gt; 0
+          ? snippet.tracking[snippet.tracking.length - 1].position_in_page
+          : null,
+      firstTimeDate:
+        snippet?.tracking?.length &gt; 0 ? snippet.tracking[0].date_scan : null,
+      lastTimeDate:
+        snippet?.tracking?.length &gt; 0
+          ? snippet.tracking[snippet.tracking.length - 1].date_scan
+          : null,
+      firstScan: snippet.tracking[0],
+      stillInResults: this.checkDays(
+        lastDate,
+        snippet.tracking[snippet.tracking.length - 1].date_scan
+      ),
+      /*lastDate.isSame(
+        moment(snippet.tracking[snippet.tracking.length - 1].date_scan)
+      ),*/
+    });
+  }
+
+  /**
+   *
+   * @param keyword
+   * @param feeling
+   * @param totals
+   */
+  countByFeelingV2(keyword: string, feeling: string, totals: any) {
+    if (!totals[keyword]) {
+      totals[keyword] &#x3D; {
+        snippetGood: 0,
+        snippetBad: 0,
+        snippetNeutral: 0,
+        snippetNotApplied: 0,
+      };
+    }
+
+    if (feeling &#x3D;&#x3D;&#x3D; &#x27;good&#x27;) {
+      totals[keyword].snippetGood++;
+    } else if (feeling &#x3D;&#x3D;&#x3D; &#x27;bad&#x27;) {
+      totals[keyword].snippetBad++;
+    } else if (feeling &#x3D;&#x3D;&#x3D; &#x27;neutral&#x27;) {
+      totals[keyword].snippetNeutral++;
+    } else if (feeling &#x3D;&#x3D;&#x3D; &#x27;not_applied&#x27;) {
+      totals[keyword].snippetNotApplied++;
+    }
+  }
+
+  /**
+   * Build Donut graph &quot;Sentimientos asignados&quot;
+   * @param data
+   * @param totals
+   */
+  buildFeelingGraphsV2(data: ScannerDashboardV2, totals: any) {
+    if (totals) {
+      const label_good &#x3D; this.translate.translate.instant(&#x27;feeling.&#x27; + &#x27;good&#x27;);
+      const label_bad &#x3D; this.translate.translate.instant(&#x27;feeling.&#x27; + &#x27;bad&#x27;);
+      const label_neutral &#x3D; this.translate.translate.instant(
+        &#x27;feeling.&#x27; + &#x27;neutral&#x27;
+      );
+
+      data.graphs &#x3D; {
+        feelingPie: [
+          {
+            name: label_good,
+            value: 0,
+            extra: { code: &#x27;good&#x27; },
+          },
+          {
+            name: label_bad,
+            value: 0,
+            extra: { code: &#x27;bad&#x27; },
+          },
+          {
+            name: label_neutral,
+            value: 0,
+            extra: { code: &#x27;neutral&#x27; },
+          },
+        ],
+        keywordBar: [],
+      };
+
+      for (const key of Object.keys(totals)) {
+        const item: IScannerGraph &#x3D; {
+          name: key,
+          series: [
+            {
+              name: label_good,
+              value: totals[key].snippetGood,
+              extra: { code: &#x27;&#x27; },
+            },
+            {
+              name: label_bad,
+              value: totals[key].snippetBad,
+              extra: { code: &#x27;&#x27; },
+            },
+            {
+              name: label_neutral,
+              value: totals[key].snippetNeutral,
+              extra: { code: &#x27;&#x27; },
+            },
+          ],
+        };
+        data.graphs.keywordBar.push(item);
+
+        data.graphs.feelingPie[0].value +&#x3D; totals[key].snippetGood;
+        data.graphs.feelingPie[1].value +&#x3D; totals[key].snippetBad;
+        data.graphs.feelingPie[2].value +&#x3D; totals[key].snippetNeutral;
+      }
+    }
+  }
+
+  /**
+   * Create the object that conforms the content array for trackingword table sections
+   * @param data
+   * @param snippet
+   * @param listKey
+   * @param type
+   * @param searchType
+   * @param keyword
+   * @param query_date
+   * @param country
+   * @private
+   */
+  private checkAndPushResultsByTrackingWordsV2(
+    data: ScannerDashboardV2,
+    snippet: any,
+    listKey: string,
+    type: string,
+    searchType: string,
+    keyword: string,
+    query_date: any,
+    country: any
+  ) {
+    if (!data[listKey]) {
+      data[listKey] &#x3D; [];
+    }
+
+    const found &#x3D; this.hasTrackingWordOrUrl(snippet, type);
+
+    if (found &amp;&amp; found.length &gt; 0) {
+      const firstScan &#x3D; snippet.tracking[0];
+      const lastScan &#x3D; snippet.tracking[snippet.tracking.length - 1];
+      data[listKey].push({
+        snippet: {
+          title: snippet.title,
+          link: snippet.link,
+          position:
+            snippet.tracking &amp;&amp; snippet.tracking.length &gt; 0
+              ? snippet.tracking[snippet.tracking.length - 1]
+              : null,
+          words: found,
+          searchType,
+          keyword,
+          firstScan,
+          lastScan,
+          trend:
+            firstScan.position &#x3D;&#x3D; lastScan.position
+              ? &#x27;SAME&#x27;
+              : firstScan.position &lt; lastScan.position
+              ? &#x27;DOWN&#x27;
+              : &#x27;UP&#x27;,
+          stillInResults: this.checkDays(query_date, lastScan.date_scan),
+          /*query_date.isSame(moment(lastScan.date_scan), &#x27;day&#x27;),*/
+          snippet: snippet.snippet,
+          domain: snippet.domain,
+        },
+        country: country.tag,
+        keyword,
+      });
+    }
+  }
+
+  /**
+   * Build part of transform info (Keyword por impulsos)
+   * @param data
+   * @param filteredResults
+   * @param scanner
+   */
+  buildTableKeywordsByImpulses(
+    data: ScannerDashboardV2,
+    filteredResults: any[],
+    scanner: any,
+    filters: any
+  ) {
+    if (scanner?.impulses) {
+      data.keywordsByImpulse &#x3D; [];
+
+      scanner.impulses.forEach((impulse) &#x3D;&gt; {
+        filteredResults.forEach((res) &#x3D;&gt; {
+          res.snippetsImages.forEach((imgSnippet) &#x3D;&gt; {
+            if (imgSnippet.link &#x3D;&#x3D;&#x3D; impulse.real_publish_link) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data,
+                imgSnippet,
+                &#x27;keywordsByImpulse&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag
+              );
+            }
+          });
+
+          res.snippetsNews.forEach((newsSnippet) &#x3D;&gt; {
+            if (newsSnippet.link &#x3D;&#x3D;&#x3D; impulse.real_publish_link) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data,
+                newsSnippet,
+                &#x27;keywordsByImpulse&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag
+              );
+            }
+          });
+
+          res.snippetsWebs.forEach((webSnippet) &#x3D;&gt; {
+            if (webSnippet.link &#x3D;&#x3D;&#x3D; impulse.real_publish_link) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data,
+                webSnippet,
+                &#x27;keywordsByImpulse&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag
+              );
+            }
+          });
+        });
+      });
+    }
+  }
+
+  /**
+   * Add the snippet object to display to an array
+   * @param data
+   * @param snippet
+   * @param listKey
+   * @param type
+   * @param searchType
+   * @param keyword
+   * @param query_date
+   * @param country
+   * @param targetReached
+   */
+  pushResult(
+    data: any,
+    snippet: any,
+    listKey: string,
+    type: string,
+    searchType: string,
+    keyword: string,
+    lastCompareDate: any,
+    country: string,
+    targetReached?: boolean
+  ) {
+    if (!data[listKey]) {
+      data[listKey] &#x3D; [];
+    }
+
+    const found &#x3D; this.hasTrackingWordOrUrl(snippet, type);
+    const firstScan &#x3D; snippet.tracking[0];
+    const lastScan &#x3D; snippet.tracking[snippet.tracking.length - 1];
+    data[listKey].push({
+      snippet: {
+        title: snippet.title,
+        link: snippet.link,
+        position:
+          snippet.tracking &amp;&amp; snippet.tracking.length &gt; 0
+            ? snippet.tracking[snippet.tracking.length - 1]
+            : null,
+        words: found,
+        searchType,
+        keyword,
+        firstScan,
+        lastScan,
+        trend:
+          firstScan.position &#x3D;&#x3D; lastScan.position
+            ? &#x27;SAME&#x27;
+            : firstScan.position &lt; lastScan.position
+            ? &#x27;DOWN&#x27;
+            : &#x27;UP&#x27;,
+        stillInResults: this.checkDays(lastCompareDate, lastScan.date_scan),
+
+        /*lastCompareDate.isSame(
+          moment(lastScan.date_scan),
+          &#x27;day&#x27;
+        ),*/
+        snippet: snippet.snippet,
+        domain: snippet.domain,
+      },
+      tracking: snippet.tracking,
+      keyword,
+      country,
+      targetReached,
+    });
+  }
+
+  /**
+   * Build principal data for Transform dashboard (&quot;Contenido a anular&quot;, &quot;URL a impulsar&quot;)
+   * @param data
+   * @param filteredResults
+   * @param scanner
+   * @param minPosition
+   */
+  buildPrincipalData(
+    data: ScannerDashboardV2,
+    filteredResults: any[],
+    scanner: any,
+    filters: any,
+    minPosition?: number
+  ) {
+    // Build remove data
+    if (scanner?.justTrackingURLs?.length &gt; 0) {
+      data.removeData &#x3D; {};
+
+      data.removeData.target &#x3D; scanner.progress;
+      data.removeData.results &#x3D; [];
+      data.removeData.timeline &#x3D; {
+        minYAxis: minPosition
+          ? minPosition
+          : this.MIN_POSITIONS_IN_URL_TIME_LINEAL,
+        maxYAxis: this.MAX_POSITIONS_IN_URL_TIME_LINEAL,
+        schemaColors: { domain: [] },
+        graph: [],
+      };
+      // Build Content to remove (Results and Timeline)
+      // SYMR-16: Se solicita cambiar la comparación sin protocolos  https, www. http en impulso y anulación
+      scanner.justTrackingURLs.forEach((url) &#x3D;&gt; {
+        filteredResults.forEach((res) &#x3D;&gt; {
+          res.snippetsImages.forEach((imgSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(imgSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(url.word)
+            ) {
+              const lastScan &#x3D;
+                imgSnippet.tracking[imgSnippet.tracking.length - 1];
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              const targetReached &#x3D; !lastCompareDate.isSame(
+                moment(lastScan.date_scan),
+                &#x27;day&#x27;
+              )
+                ? true
+                : lastScan?.page &gt; scanner?.restrictions?.detail?.target_page;
+
+              this.pushResult(
+                data.removeData,
+                imgSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                targetReached
+              );
+            }
+          });
+
+          res.snippetsNews.forEach((newsSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(newsSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(url.word)
+            ) {
+              const lastScan &#x3D;
+                newsSnippet.tracking[newsSnippet.tracking.length - 1];
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              const targetReached &#x3D; lastCompareDate.isSame(
+                moment(lastScan.date_scan),
+                &#x27;day&#x27;
+              )
+                ? lastScan?.page &gt; scanner?.restrictions?.detail?.target_page
+                : true;
+
+              this.pushResult(
+                data.removeData,
+                newsSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                targetReached
+              );
+            }
+          });
+
+          res.snippetsWebs.forEach((webSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(webSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(url.word)
+            ) {
+              const lastScan &#x3D;
+                webSnippet.tracking[webSnippet.tracking.length - 1];
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              const targetReached &#x3D; lastCompareDate.isSame(
+                moment(lastScan.date_scan),
+                &#x27;day&#x27;
+              )
+                ? lastScan?.page &gt; scanner?.restrictions?.detail?.target_page
+                : true;
+
+              this.pushResult(
+                data.removeData,
+                webSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                targetReached
+              );
+            }
+          });
+        });
+      });
+
+      data.removeData.timeline.graph.sort(this.sortTimelineGraph);
+    }
+
+    // Build URL to Impulse (Result and Timeline)
+    if (scanner?.impulses?.length &gt; 0) {
+      data.impulseData &#x3D; {};
+      data.impulseData.target &#x3D; 0;
+      data.impulseData.results &#x3D; [];
+      data.impulseData.timeline &#x3D; {
+        minYAxis: minPosition
+          ? minPosition
+          : this.MIN_POSITIONS_IN_URL_TIME_LINEAL,
+        maxYAxis: this.MAX_POSITIONS_IN_URL_TIME_LINEAL,
+        schemaColors: { domain: [] },
+        graph: [],
+      };
+
+      // Build Results
+      // SYMR-16: Se solicita cambiar la comparación sin protocolos  https, www. http en impulso y anulación
+      scanner.impulses.forEach((impulse) &#x3D;&gt; {
+        filteredResults.forEach((res) &#x3D;&gt; {
+          res.snippetsImages.forEach((imgSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(imgSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(impulse.real_publish_link)
+            ) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data.impulseData,
+                imgSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                impulse.target_reached
+              );
+            }
+          });
+
+          res.snippetsNews.forEach((newsSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(newsSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(impulse.real_publish_link)
+            ) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data.impulseData,
+                newsSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                impulse.target_reached
+              );
+            }
+          });
+
+          res.snippetsWebs.forEach((webSnippet) &#x3D;&gt; {
+            if (
+              this.utilService.removeProtocolComplete(webSnippet.link) &#x3D;&#x3D;&#x3D;
+              this.utilService.removeProtocolComplete(impulse.real_publish_link)
+            ) {
+              const lastCompareDate &#x3D; filters?.end_date
+                ? moment(filters.end_date)
+                : moment(res.query_date);
+              this.pushResult(
+                data.impulseData,
+                webSnippet,
+                &#x27;results&#x27;,
+                &#x27;WORD&#x27;,
+                res.search_type,
+                res.keyword.word,
+                lastCompareDate,
+                res.country.tag,
+                impulse.target_reached
+              );
+            }
+          });
+        });
+
+        if (impulse.target_reached) {
+          data.impulseData.target++;
+        }
+      });
+    }
+  }
+
+  sortTimelineGraph(a: any, b: any): number {
+    try {
+      return (
+        a.series[a.series.length - 1].value -
+        b.series[b.series.length - 1].value
+      );
+    } catch (exception) {}
+
+    return 0;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'DashboardBuilderService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

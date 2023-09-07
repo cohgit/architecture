@@ -1,0 +1,14 @@
+<h2 mat-dialog-title><i class="las la-scroll colorGris espDer5"></i>{{'label.privacy_politics' | translate}}</h2>
+<div mat-dialog-content>
+  <div class="container-fluid padding20">
+    <p [innerHTML]="'politycs.privacy' | translate "></p>
+    <a class="colorPrincipal third after"
+       (click)="goUnsuscribe()"><i
+      class="las la-file-alt espDer5"></i>{{'button.withdrawal_form' |
+      translate}}</a>
+  </div>
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+  </mat-dialog-actions>
+</div>
+

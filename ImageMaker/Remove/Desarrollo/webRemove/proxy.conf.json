@@ -1,0 +1,7 @@
+{
+    "/complete/*": {
+        "target": "http://suggestqueries.google.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

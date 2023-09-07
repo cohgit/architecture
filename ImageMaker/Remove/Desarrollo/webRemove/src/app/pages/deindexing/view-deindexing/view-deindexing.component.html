@@ -1,0 +1,192 @@
+<div class="row paddingTop15" id="toExport">
+  <div class="row content-card">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <h2>
+              <button (click)="utilService.back()" class="noBacknoBorder">
+                <i class="las la-low-vision colorPrincipal espDer5"></i>
+                {{ "title.deindex_detail" | translate }}
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <!-- PERSON INFORMATION -->
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <strong>{{ "label.personal_info" | translate }}</strong
+            ><br />
+          </p>
+        </div>
+        <div class="col-md-6 colorPrincipal">
+          <h4>{{ "label.name" | translate }}: {{ info?.person_name }}</h4>
+          <h4>
+            {{ "label.lastname" | translate }}: {{ info?.person_lastname }}
+          </h4>
+          <h4>
+            {{ "label.company_position" | translate }}:
+            {{ info?.person_charge }}
+          </h4>
+          <h4>
+            {{ "label.company" | translate }}: {{ info?.person_institution }}
+          </h4>
+        </div>
+      </div>
+      <hr />
+      <!-- Keywords -->
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <strong>{{ "label.filter.keywords" | translate }}</strong
+            ><br />
+          </p>
+        </div>
+        <div class="col-md-6 colorPrincipal">
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip *ngFor="let key of keywords">
+              {{ key }}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+      </div>
+      <hr />
+      <!-- COMMENTS -->
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <strong>{{ "title.comments" | translate }}</strong
+            ><br />
+          </p>
+        </div>
+        <div class="col-md-6 colorPrincipal">
+          <h4>{{ info?.comments }}</h4>
+        </div>
+      </div>
+      <hr />
+      <!-- URL TO REMOVE INFORMATION -->
+      <div class="row">
+        <!-- ESTA SECCION NO DEBERIA ESTAR EN ESTA PANTALLA, SOLO EN EDITAR
+          <div class="col-md-12">
+            <p>
+              <strong>{{ "label.url_to_remove" | translate }}</strong
+              ><br />
+              {{ "label.links_toremove" | translate }}
+            </p>
+          </div>
+        -->
+        <div class="col-md-12">
+          <div class="row slide-in-blurred-bottom horizontal-scroll">
+            <table class="table table-hover table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th>{{ "label.url_to_deindexing" | translate }}</th>
+                  <th>{{ "label.impulse.publish_date" | translate }}</th>
+                  <th>{{ "label.sent" | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of info?.urls">
+                  <td [ngClass]="{ red: data.markForDelete }">
+                    {{ data?.url }}
+                  </td>
+                  <td [ngClass]="{ red: data.markForDelete }">
+                    {{ utilService.formatDate(data?.publish_date) | date }}
+                  </td>
+                  <td>
+                    <mat-checkbox
+                      *ngIf="data.ask_google"
+                      disabled="{{ disabled || data.sent_to_google }}"
+                      class="example-margin espDer15 noCkeck"
+                      [(ngModel)]="data.sent_to_google"
+                      (change)="markSentUrl(data)"
+                      >{{ "label.google" | translate }}</mat-checkbox
+                    >
+                    <mat-checkbox
+                      *ngIf="data.ask_media"
+                      disabled="{{ disabled || data.sent_to_media }}"
+                      class="example-margin noCkeck"
+                      (change)="markSentUrl(data)"
+                      [(ngModel)]="data.sent_to_media"
+                      >{{ "label.media" | translate }}</mat-checkbox
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="row" *ngFor="let conclusion of conclusionsParsed">
+        <div class="col-md-12">
+          <p>
+            <strong>{{ "label.result." + conclusion.type | translate }}</strong>
+          </p>
+        </div>
+        <div class="col-md-12 colorPrincipal">
+          <p [innerHtml]="conclusion.text"></p>
+        </div>
+        <hr />
+      </div>
+
+      <!-- DYNAMIC DISPLAY -->
+      <div class="row paddingTop15">
+        <div class="col-md-12">
+          <app-dynamic-display
+            [dynamicForm]="info?.dynamicForm"
+          ></app-dynamic-display>
+        </div>
+      </div>
+      <hr />
+      <div class="row paddingTop15 centrado">
+        <!-- BUTTONS -->
+        <div class="col-md-2">
+          <button (click)="back()" class="secondLevelButton espDer15">
+            <i class="las fa-backward espDer5"></i
+            >{{ "button.back" | translate }}
+          </button>
+        </div>
+        <div class="col-md-3" *ngIf="info?.statusDef?.PROCESSING">
+          <a (click)="markAsApproved()" class="glow-on-hover espIz15">
+            <i class="las la-thumbs-up espDer5"></i>
+            {{ "button.mark.approved" | translate }}</a
+          >
+        </div>
+        <div class="col-md-3" *ngIf="info?.statusDef?.PROCESSING">
+          <a (click)="markAsRejected()" class="glow-on-hover espIz15">
+            <i class="las la-thumbs-down espDer5"></i>
+            {{ "button.mark.rejected" | translate }}</a
+          >
+        </div>
+        <div class="col-md-3" *ngIf="info?.statusDef?.PROCESSING">
+          <a (click)="markAsDeleted()" class="glow-on-hover espIz15">
+            <i class="las la-trash espDer5"></i>
+            {{ "button.mark.deleted" | translate }}</a
+          >
+        </div>
+        <div class="col-md-1"></div>
+
+        <!--
+      <div class="col-md-1">
+        <a (click)="markAsSentToGoogle()" class="glow-on-hover espIz15"> {{'button.mark.sent.to.google' | translate}}</a>
+      </div>
+      <div class="col-md-1">
+        <a (click)="markAsRespondedGoogle()" class="glow-on-hover espIz15"> {{'button.mark.responded.by.google' | translate}}</a>
+      </div>
+      <div class="col-md-1">
+        <a (click)="markAsSentMedia()" class="glow-on-hover espIz15"> {{'button.mark.sent.to.media' | translate}}</a>
+      </div>
+      <div class="col-md-1">
+        <a (click)="markAsRespondedMedia()" class="glow-on-hover espIz15"> {{'button.mark.responded.by.media' | translate}}</a>
+      </div>
+      --></div>
+    </div>
+  </div>
+</div>

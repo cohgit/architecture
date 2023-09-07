@@ -1,0 +1,5 @@
+1- Copiar el archivo 'remove-sr-0.1-jar-with-dependencies.jar' dentro del directorio.
+2- Via terminal posicionarse en esta carpeta.
+3- Ejecutar el siguiente comando para construir y ejecutar el Contenedor:
+
+docker-compose up --build

@@ -1,0 +1,88 @@
+<!-- Section: Header -->
+
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-light bg-light">
+  <div class="col-md-2 ">
+    <a routerLink="{{profile}}/module/home">
+      <img alt="Remove Group" [src]="logoUrl" class="logoInicial" routerLink="{{profile}}/module/home" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="col-md-8">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  margin10 zIndex99999" *ngFor="let item of mainMenu">
+        <li class="nav-item dropdown ">
+          <a class="{{item.class}}" id="{{item.id}}" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="reroute(item)">
+            <i class="{{item.icon}} colorPrincipal"></i>
+            {{item.description | translate}}
+          </a>
+          <div class="dropdown-menu " aria-labelledby="{{item.id}}" *ngIf="item.child.length !== 0">
+            <div *ngFor="let submenu of item.child">
+              <a class="dropdown-item third after paddingTop15" routerLink="{{submenu.link}}"> <i
+                class="{{submenu.icon}} colorPrincipal"></i>
+                {{submenu.description | translate}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-2 centrado">
+    <!-- notificaciones -->
+    <a mat-icon-button routerLink="{{profile}}/module/home" title="{{'tooltip.notifications' | translate}}"
+       class="espDer15" [ngClass]="{'heartbeat': notificationNotReaded.length !== 0}">
+      <i class="las la-bell espDer15 colorPrincipal la-2x" matBadge="{{notificationNotReaded.length}}"
+         [matBadgeHidden]="notificationNotReaded.length === 0"
+         matBadgeColor="warn"></i>
+      <!--  <mat-icon matBadge="{{notificationNotReaded.length}}" matBadgeColor="warn"
+                   [matBadgeHidden]="notificationNotReaded.length === 0"
+                  matBadgeColor="warn" class="espDer15 colorTerciario">notifications_active
+        </mat-icon>-->
+    </a>
+    <mat-menu #menu1="matMenu" yPosition="above" xPosition="after">
+      <button mat-menu-item *ngFor="let item of notificationNotReaded">
+        <i class="las la-exclamation-circle colorSecundario"
+           *ngIf="item.urgent"></i> {{'notification.tittle.' + item.title | translate}}
+      </button>
+      <button mat-menu-item>
+        <a routerLink="{{profile}}/module/home"><h5 class="centrado"><strong>{{"label.see.all" | translate}}
+        </strong></h5></a>
+      </button>
+    </mat-menu>
+    <!-- menu de usuario -->
+    <a [matMenuTriggerFor]="menuUser" title="{{'tooltip.account' | translate}}" class="espIz15"
+       #menuTrigger="matMenuTrigger">
+         <span
+           class="circle-link espIz15 colorSecundario">{{firstLetter?.toUpperCase()}}</span>
+    </a>
+    <!-- menu de usuario -->
+
+    <mat-menu #menuUser="matMenu" yPosition="above" xPosition="after">
+
+        <span
+          class="centrado colorPrincipal"><i class="las la-user  espDer5"></i>{{'label.hi' | translate}},
+          {{userInfo?.name}}
+        </span>
+      <hr>
+      <button mat-menu-item *ngFor="let user of accountMenu" disableRipple="true">
+        <a class="{{user.class}}" (click)="this[user.link](menuUser) " id="{{user.id}}" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          <i class="{{user.icon}} colorPrincipal"></i>
+          {{user.description | translate}}
+        </a>
+      </button>
+      <hr>
+      <a (click)="logout()"><h5 class="centrado"><i
+        class="fas fa-power-off colorSecundario espDer5"></i>{{"menu.logout" |
+        translate}}
+      </h5></a>
+    </mat-menu>
+  </div>
+
+</nav>
+
+
+

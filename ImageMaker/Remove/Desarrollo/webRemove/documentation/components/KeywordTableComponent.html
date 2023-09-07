@@ -1,0 +1,1060 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  KeywordTableComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-keyword-table</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./keyword-table.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./keyword-table.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#copyArray" >copyArray</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorClass" >paginatorClass</a>
+                            </li>
+                            <li>
+                                <a href="#s" >s</a>
+                            </li>
+                            <li>
+                                <a href="#sortDirection" >sortDirection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangePage" >onChangePage</a>
+                            </li>
+                            <li>
+                                <a href="#sortFunction" >sortFunction</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#content" >content</a>
+                            </li>
+                            <li>
+                                <a href="#isOneShot" >isOneShot</a>
+                            </li>
+                            <li>
+                                <a href="#scannerInfo" >scannerInfo</a>
+                            </li>
+                            <li>
+                                <a href="#tittle" >tittle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Manage information about visibilty tables</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="content"></a>
+                        <b>content</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="10" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:10</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOneShot"></a>
+                        <b>isOneShot</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scannerInfo"></a>
+                        <b>scannerInfo</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tittle"></a>
+                        <b>tittle</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="11" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="27"
+                            class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangePage"></a>
+                    <span class="name">
+                        <span ><b>onChangePage</b></span>
+                        <a href="#onChangePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangePage(pageOfItems: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="34"
+                            class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>for paginator</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOfItems</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortFunction"></a>
+                    <span class="name">
+                        <span ><b>sortFunction</b></span>
+                        <a href="#sortFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortFunction(colName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="41"
+                            class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Order table Items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyArray"></a>
+                    <span class="name">
+                        <span ><b>copyArray</b></span>
+                        <a href="#copyArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginatorClass"></a>
+                    <span class="name">
+                        <span ><b>paginatorClass</b></span>
+                        <a href="#paginatorClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;paginator_&#x27; + Math.floor(Math.random() * 1000000)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="s"></a>
+                    <span class="name">
+                        <span ><b>s</b></span>
+                        <a href="#s"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDirection"></a>
+                    <span class="name">
+                        <span ><b>sortDirection</b></span>
+                        <a href="#sortDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/pages/scanner/dashboard-scanner/gadgets/keyword-table/keyword-table.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import {UtilService} from &#x27;src/app/helpers/util.service&#x27;;
+
+@Component({
+  selector: &#x27;app-keyword-table&#x27;,
+  templateUrl: &#x27;./keyword-table.component.html&#x27;,
+  styleUrls: [&#x27;./keyword-table.component.css&#x27;]
+})
+export class KeywordTableComponent implements OnInit {
+  @Input() content;
+  @Input() tittle;
+  @Input()  isOneShot;
+  @Input() scannerInfo;s
+
+  paginatorClass &#x3D; &#x27;paginator_&#x27; + Math.floor(Math.random() * 1000000);
+
+  copyArray: Array&lt;any&gt;;
+  sortDirection &#x3D; false;
+
+  /**
+   * Manage information about visibilty tables
+   * @param utilService
+   */
+  constructor(public utilService: UtilService) {
+  }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * for paginator
+   * @param pageOfItems
+   */
+  onChangePage(pageOfItems: Array&lt;any&gt;) {
+    this.copyArray &#x3D; pageOfItems;
+  }
+  /**
+   * Order table Items
+   * @param colName
+   */
+  sortFunction(colName: string): void {
+    const result &#x3D; this.utilService.sortTable(colName, true, this.content, this.sortDirection);
+    this.content &#x3D; result.array;
+    this.sortDirection &#x3D; result.direction;
+    this.utilService.changeSelectedPageToFirst(this.paginatorClass);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-12 &quot;&gt;
+    &lt;a popoverTitle&#x3D;&quot; {{&#x27;tittle.historic.trackingword&#x27; | translate}}&quot; container&#x3D;&quot;body&quot;
+       [autoClose]&#x3D;&quot;true&quot; ngbPopover&#x3D;&quot;{{&#x27;help.scanner_key&#x27; | translate}}&quot;
+    &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul espDer5&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;strong&gt;{{tittle | translate}}&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;--&gt;
+&lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;content &amp;&amp; content.length !&#x3D;&#x3D; 0&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-11&quot;&gt;
+    &lt;table
+      class&#x3D;&quot;table table-hover table-borderless table-responsive example-full-width&quot;
+    &gt;
+      &lt;thead class&#x3D;&quot;thead-light&quot;&gt;
+        &lt;tr&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;keyword&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.filter.keywords&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.title&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.results&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th&gt;{{ tittle | translate }}&lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.position.position&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.pag_pos&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.position.position&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.ranking&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.trend&#x27;)&quot; *ngIf&#x3D;&quot;!isOneShot&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.position_evolution&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.position.position&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.visibility&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;country&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.scanner.country&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.searchType&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.scanner.advance.section&quot; | translate }}
+          &lt;/th&gt;
+          &lt;th (click)&#x3D;&quot;sortFunction(&#x27;snippet.position.date_scan&#x27;)&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;label.scanner_date&quot; | translate }}
+          &lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr *ngFor&#x3D;&quot;let data of copyArray&quot;&gt;
+          &lt;td&gt;
+            &lt;!--Término de búsqueda--&gt;
+            &lt;mat-chip
+              color&#x3D;&quot;accent&quot;
+              class&#x3D;&quot;backgorundPrincipal colorBlanco heightAuto&quot;
+            &gt;
+              {{ data?.keyword }}&lt;/mat-chip
+            &gt;
+          &lt;/td&gt;
+
+          &lt;td&gt;
+            &lt;!--Ressultados--&gt;
+            &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+              &lt;a target&#x3D;&quot;_blank&quot; href&#x3D;&quot;{{ data?.snippet?.link }}&quot;
+                &gt;{{ data?.snippet?.title }} -
+                &lt;cite class&#x3D;&quot;gs-url reduceFont colorGris&quot;&gt;{{
+                  utilService.onlyDomain(data?.snippet?.link)
+                }}&lt;/cite&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;span class&#x3D;&quot;gs-content reduceFont&quot;&gt;
+              {{
+                data.snippet?.snippet?.length &gt; 60
+                  ? (data?.snippet?.snippet | slice : 0 : 60) + &quot;..&quot;
+                  : data?.snippet?.snippet
+              }}&lt;/span
+            &gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;!--Temas de rastreo--&gt;
+            &lt;mat-chip-list&gt;
+              &lt;mat-chip color&#x3D;&quot;accent&quot; *ngFor&#x3D;&quot;let tw of data?.snippet?.words&quot;
+                &gt;&lt;span [innerHTML]&#x3D;&quot;tw.feelingObj | feelingColors&quot;&gt;&lt;/span&gt;
+                &lt;span title&#x3D;&quot;{{ tw.word }}&quot;&gt;
+                  {{ utilService.onlyDomain(tw.word) }}&lt;/span
+                &gt;&lt;/mat-chip
+              &gt;
+            &lt;/mat-chip-list&gt;
+          &lt;/td&gt;
+          &lt;!--Pag y Posición--&gt;
+          &lt;td *ngIf&#x3D;&quot;!data.snippet.stillInResults&quot;&gt;
+            {{ &quot;label.pag&quot; | translate }} &gt;
+            {{ scannerInfo?.configuration?.pages }}
+          &lt;/td&gt;
+          &lt;td *ngIf&#x3D;&quot;data.snippet.stillInResults&quot; s&gt;
+            {{ data?.snippet?.position?.page }} /
+            {{ data?.snippet?.position?.position_in_page }}
+          &lt;/td&gt;
+
+          &lt;td *ngIf&#x3D;&quot;!data.snippet.stillInResults&quot;&gt;
+            &lt;!--posición--&gt;
+            &lt;ng-template #offside&gt;
+              &lt;h5&gt;
+                {{ &quot;message.url.offside&quot; | translate }}&lt;br /&gt;
+                {{ &quot;label.page_tomonitor&quot; | translate }}:
+                {{ scannerInfo?.configuration?.pages }}&lt;br /&gt;
+              &lt;/h5&gt;
+            &lt;/ng-template&gt;
+            &lt;a
+              popoverTitle&#x3D;&quot;{{ &#x27;label.result.left.results&#x27; | translate }}&quot;
+              container&#x3D;&quot;body&quot;
+              [autoClose]&#x3D;&quot;true&quot;
+              [ngbPopover]&#x3D;&quot;offside&quot;
+              &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul espIz15 reduceFont&quot;&gt;&lt;/i
+            &gt;&lt;/a&gt;
+          &lt;/td&gt;
+          &lt;td *ngIf&#x3D;&quot;data.snippet.stillInResults&quot;&gt;
+            {{ data?.snippet?.position?.position }}
+          &lt;/td&gt;
+          &lt;td *ngIf&#x3D;&quot;!isOneShot&quot;&gt;&lt;!--evolución--&gt;
+            &lt;span
+              [innerHTML]&#x3D;&quot;data?.snippet.trend | tracking&quot;
+              *ngIf&#x3D;&quot;data?.snippet.stillInResults&quot;
+            &gt;
+            &lt;/span&gt;
+            &lt;div *ngIf&#x3D;&quot;!data.snippet.stillInResults&quot; class&#x3D;&quot;reduceFont&quot;&gt;
+              {{ &quot;label.result.left.results&quot; | translate }}
+            &lt;/div&gt;
+            &lt;ng-template #initial_position&gt;
+              {{ &quot;label.pag_pos_complete&quot; | translate }}:
+              {{ data?.snippet?.firstScan.page }} /
+              {{ data?.snippet?.firstScan.position_in_page }}&lt;br /&gt;
+              {{ &quot;label.impulse.publish_date&quot; | translate }}
+              :
+              {{
+                utilService.formatDate(data?.snippet?.firstScan?.date_scan)
+                  | date : &quot;shortDate&quot;
+              }}&lt;br /&gt;
+            &lt;/ng-template&gt;
+            &lt;a
+              popoverTitle&#x3D;&quot;{{ &#x27;label.impulse.initial_position&#x27; | translate }}&quot;
+              container&#x3D;&quot;body&quot;
+              [autoClose]&#x3D;&quot;true&quot;
+              [ngbPopover]&#x3D;&quot;initial_position&quot;
+              &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul espIz15 reduceFont&quot;&gt;&lt;/i
+            &gt;&lt;/a&gt;
+          &lt;/td&gt;
+
+          &lt;td&gt;
+            &lt;!--visibilidad--&gt;
+            {{ data?.snippet?.position?.position | visibility | translate }}
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;!--País--&gt;
+            &lt;img
+              [src]&#x3D;&quot;utilService.checkFlag(data.country)&quot;
+              [width]&#x3D;&quot;utilService.flagWith&quot;
+              [height]&#x3D;&quot;utilService.flagHeight&quot;
+              alt&#x3D;&quot;&quot;
+              class&#x3D;&quot;margin3&quot;
+              onerror&#x3D;&quot;this.src&#x3D;&#x27;../../../../assets/img/broken.jpg&#x27;&quot;
+            /&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;!--Sección--&gt;
+            &lt;i
+              class&#x3D;&quot;las la-image espDer15 colorPrincipal&quot;
+              *ngIf&#x3D;&quot;data?.snippet?.searchType &#x3D;&#x3D;&#x3D; &#x27;images&#x27;&quot;
+              title&#x3D;&quot;{{
+                &#x27;list.scanner.type.&#x27; + data?.snippet?.searchType | translate
+              }}&quot;
+            &gt;&lt;/i&gt;
+            &lt;i
+              class&#x3D;&quot;las la-search espDer15 colorPrincipal&quot;
+              *ngIf&#x3D;&quot;data?.snippet?.searchType &#x3D;&#x3D;&#x3D; &#x27;web&#x27;&quot;
+              title&#x3D;&quot;{{
+                &#x27;list.scanner.type.&#x27; + data?.snippet?.searchType | translate
+              }}&quot;
+            &gt;&lt;/i&gt;
+            &lt;i
+              class&#x3D;&quot;las la-newspaper espDer15 colorPrincipal&quot;
+              *ngIf&#x3D;&quot;data?.snippet?.searchType &#x3D;&#x3D;&#x3D; &#x27;news&#x27;&quot;
+              title&#x3D;&quot;{{
+                &#x27;list.scanner.type.&#x27; + data?.snippet?.searchType | translate
+              }}&quot;
+            &gt;&lt;/i&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;!--Fecha--&gt;
+            {{
+              utilService.formatDate(data?.snippet?.position?.date_scan)
+                | date : &quot;medium&quot;
+            }}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;div class&#x3D;&quot;row centrado&quot;&gt;
+      &lt;jw-pagination
+        class&#x3D;&quot;{{ paginatorClass }}&quot;
+        [items]&#x3D;&quot;content&quot;
+        (changePage)&#x3D;&quot;onChangePage($event)&quot;
+        [maxPages]&#x3D;&quot;5&quot;
+        [pageSize]&#x3D;&quot;10&quot;
+        *ngIf&#x3D;&quot;content.length !&#x3D;&#x3D; 0&quot;
+      &gt;&lt;/jw-pagination&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-md-1&quot;&gt;
+    &lt;div class&#x3D;&quot;row paddingTop40 centrado&quot;&gt;
+      &lt;div class&#x3D;&quot;circle&quot;&gt;
+        &lt;p&gt;{{ content.length }}&lt;/p&gt;
+        &lt;h5 class&#x3D;&quot;colorGrisOscuro textali-center&quot;&gt;
+          {{ &quot;label.total&quot; | translate }}
+        &lt;/h5&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;content &amp;&amp; content.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+    &lt;p class&#x3D;&quot;paddingTop5&quot;&gt;{{ &quot;error.not_found_results&quot; | translate }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./keyword-table.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--<div class="row">  <div class="col-md-12 ">    <a popoverTitle=" {{\'tittle.historic.trackingword\' | translate}}" container="body"       [autoClose]="true" ngbPopover="{{\'help.scanner_key\' | translate}}"    ><i class="las la-info-circle colorAzul espDer5"></i></a>    <strong>{{tittle | translate}}</strong>  </div></div>--><div class="row" *ngIf="content && content.length !== 0">  <div class="col-md-11">    <table      class="table table-hover table-borderless table-responsive example-full-width"    >      <thead class="thead-light">        <tr>          <th (click)="sortFunction(\'keyword\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.filter.keywords" | translate }}          </th>          <th (click)="sortFunction(\'snippet.title\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.results" | translate }}          </th>          <th>{{ tittle | translate }}</th>          <th (click)="sortFunction(\'snippet.position.position\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.pag_pos" | translate }}          </th>          <th (click)="sortFunction(\'snippet.position.position\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.ranking" | translate }}          </th>          <th (click)="sortFunction(\'snippet.trend\')" *ngIf="!isOneShot">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.position_evolution" | translate }}          </th>          <th (click)="sortFunction(\'snippet.position.position\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.visibility" | translate }}          </th>          <th (click)="sortFunction(\'country\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.scanner.country" | translate }}          </th>          <th (click)="sortFunction(\'snippet.searchType\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.scanner.advance.section" | translate }}          </th>          <th (click)="sortFunction(\'snippet.position.date_scan\')">            <i class="las la-sort colorPrincipal espDer5"></i            >{{ "label.scanner_date" | translate }}          </th>        </tr>      </thead>      <tbody>        <tr *ngFor="let data of copyArray">          <td>            <!--Término de búsqueda-->            <mat-chip              color="accent"              class="backgorundPrincipal colorBlanco heightAuto"            >              {{ data?.keyword }}</mat-chip            >          </td>          <td>            <!--Ressultados-->            <div class="col-md-12">              <a target="_blank" href="{{ data?.snippet?.link }}"                >{{ data?.snippet?.title }} -                <cite class="gs-url reduceFont colorGris">{{                  utilService.onlyDomain(data?.snippet?.link)                }}</cite>              </a>            </div>            <span class="gs-content reduceFont">              {{                data.snippet?.snippet?.length > 60                  ? (data?.snippet?.snippet | slice : 0 : 60) + ".."                  : data?.snippet?.snippet              }}</span            >          </td>          <td>            <!--Temas de rastreo-->            <mat-chip-list>              <mat-chip color="accent" *ngFor="let tw of data?.snippet?.words"                ><span [innerHTML]="tw.feelingObj | feelingColors"></span>                <span title="{{ tw.word }}">                  {{ utilService.onlyDomain(tw.word) }}</span                ></mat-chip              >            </mat-chip-list>          </td>          <!--Pag y Posición-->          <td *ngIf="!data.snippet.stillInResults">            {{ "label.pag" | translate }} >            {{ scannerInfo?.configuration?.pages }}          </td>          <td *ngIf="data.snippet.stillInResults" s>            {{ data?.snippet?.position?.page }} /            {{ data?.snippet?.position?.position_in_page }}          </td>          <td *ngIf="!data.snippet.stillInResults">            <!--posición-->            <ng-template #offside>              <h5>                {{ "message.url.offside" | translate }}<br />                {{ "label.page_tomonitor" | translate }}:                {{ scannerInfo?.configuration?.pages }}<br />              </h5>            </ng-template>            <a              popoverTitle="{{ \'label.result.left.results\' | translate }}"              container="body"              [autoClose]="true"              [ngbPopover]="offside"              ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i            ></a>          </td>          <td *ngIf="data.snippet.stillInResults">            {{ data?.snippet?.position?.position }}          </td>          <td *ngIf="!isOneShot"><!--evolución-->            <span              [innerHTML]="data?.snippet.trend | tracking"              *ngIf="data?.snippet.stillInResults"            >            </span>            <div *ngIf="!data.snippet.stillInResults" class="reduceFont">              {{ "label.result.left.results" | translate }}            </div>            <ng-template #initial_position>              {{ "label.pag_pos_complete" | translate }}:              {{ data?.snippet?.firstScan.page }} /              {{ data?.snippet?.firstScan.position_in_page }}<br />              {{ "label.impulse.publish_date" | translate }}              :              {{                utilService.formatDate(data?.snippet?.firstScan?.date_scan)                  | date : "shortDate"              }}<br />            </ng-template>            <a              popoverTitle="{{ \'label.impulse.initial_position\' | translate }}"              container="body"              [autoClose]="true"              [ngbPopover]="initial_position"              ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i            ></a>          </td>          <td>            <!--visibilidad-->            {{ data?.snippet?.position?.position | visibility | translate }}          </td>          <td>            <!--País-->            <img              [src]="utilService.checkFlag(data.country)"              [width]="utilService.flagWith"              [height]="utilService.flagHeight"              alt=""              class="margin3"              onerror="this.src=\'../../../../assets/img/broken.jpg\'"            />          </td>          <td>            <!--Sección-->            <i              class="las la-image espDer15 colorPrincipal"              *ngIf="data?.snippet?.searchType === \'images\'"              title="{{                \'list.scanner.type.\' + data?.snippet?.searchType | translate              }}"            ></i>            <i              class="las la-search espDer15 colorPrincipal"              *ngIf="data?.snippet?.searchType === \'web\'"              title="{{                \'list.scanner.type.\' + data?.snippet?.searchType | translate              }}"            ></i>            <i              class="las la-newspaper espDer15 colorPrincipal"              *ngIf="data?.snippet?.searchType === \'news\'"              title="{{                \'list.scanner.type.\' + data?.snippet?.searchType | translate              }}"            ></i>          </td>          <td>            <!--Fecha-->            {{              utilService.formatDate(data?.snippet?.position?.date_scan)                | date : "medium"            }}          </td>        </tr>      </tbody>    </table>    <div class="row centrado">      <jw-pagination        class="{{ paginatorClass }}"        [items]="content"        (changePage)="onChangePage($event)"        [maxPages]="5"        [pageSize]="10"        *ngIf="content.length !== 0"      ></jw-pagination>    </div>  </div>  <div class="col-md-1">    <div class="row paddingTop40 centrado">      <div class="circle">        <p>{{ content.length }}</p>        <h5 class="colorGrisOscuro textali-center">          {{ "label.total" | translate }}        </h5>      </div>    </div>  </div></div><div class="row">  <div class="col-md-12" *ngIf="content && content.length === 0">    <p class="paddingTop5">{{ "error.not_found_results" | translate }}</p>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'KeywordTableComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'KeywordTableComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

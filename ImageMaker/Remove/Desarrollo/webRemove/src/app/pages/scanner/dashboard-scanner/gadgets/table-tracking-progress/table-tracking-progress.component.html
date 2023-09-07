@@ -1,0 +1,113 @@
+<div *ngIf="listResultsTracks?.length > 0">
+  <!--<p>{{title_code | translate}}</p>-->
+  <div class="row ">
+    <div class="col-md-12 col-sm-12 slide-in-blurred-bottom " *ngFor="let result of listResultsTracks">
+
+
+      <table class="table table-hover table-borderless table-responsive">
+        <thead class="thead-light">
+        <tr>
+          <th>{{'label.results' | translate}}</th>
+          <th>{{'label.position' | translate}}</th>
+          <th >{{'label.position_evolution' | translate}}</th>
+          <th>{{'label.keywords' | translate}}</th>
+          <th>{{'label.scanner.country' | translate}}</th>
+          <th>{{'label.scanner.advance.section' | translate}}</th>
+          <th>{{'label.scanner_date' | translate}}</th>
+          <th>{{'label.goal' | translate}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let snippet of result.snippets">
+          <td>
+            <div class="col-md-12">
+              <a class=" reduceFont" target="_blank" routerLink="{{snippet.link}}"> {{snippet.title}} - <cite
+                class="gs-url colorGris">{{snippet.domain}}</cite> </a>
+            </div>
+            <span class="gs-content reduceFont">  {{ (snippet?.snippet?.length > 60) ?
+              (snippet.snippet | slice:0:60) + '..' : (snippet.snippet) }}</span>
+          </td>
+          <!-- <td>  <span [innerHTML]='snippet.trend | tracking'> </span>{{snippet.lastScan.position}}</td>-->
+          <td *ngIf="snippet.stillInResults">
+            revisar validación
+            <span [innerHTML]='snippet.trend | tracking'
+                  *ngIf="snippet.stillInResults"> </span>{{
+            snippet.stillInResults ?
+              snippet.lastScan.position : ('label.result.left.results' | translate) + ': ' + utilService.formatDate(snippet.lastScan.date_scan) | date:'shortDate'}}
+            <ng-template #initial_position>
+              {{'label.position' | translate}}: {{snippet.firstScan.position}}<br>
+              {{'label.impulse.publish_date' | translate}}: {{utilService.formatDate(snippet.firstScan.date_scan) | date:'shortDate'}}<br>
+            </ng-template>
+            <a popoverTitle="{{'label.impulse.initial_position' | translate}}" container="body"
+               [autoClose]="true" [ngbPopover]="initial_position"
+            ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i></a>
+          </td>
+          <td *ngIf="!snippet.stillInResults">{{'label.result.left.results' | translate}}: {{
+            utilService.formatDate(snippet.lastScan.date_scan) | date:'shortDate'}}
+            <ng-template #initial_position>
+              {{'label.position' | translate}}: {{snippet.firstScan.position}}<br>
+              {{'label.impulse.publish_date' | translate}}: {{utilService.formatDate(snippet.firstScan.date_scan) | date:'shortDate'}}<br>
+            </ng-template>
+            <a popoverTitle="{{'label.impulse.initial_position' | translate}}" container="body"
+               [autoClose]="true" [ngbPopover]="initial_position"
+            ><i class="las la-info-circle colorAzul espIz15"></i></a>
+          </td>
+          <td *ngIf="snippet.stillInResults"><span [innerHTML]='snippet.trend | tracking'
+                                                   *ngIf="snippet.stillInResults"> </span>{{
+            snippet.stillInResults ?
+              snippet.lastScan.position : ('label.result.left.results' | translate) + ': ' + utilService.formatDate(snippet.lastScan.date_scan) | date:'shortDate'}}
+            <ng-template #initial_position>
+              {{'label.position' | translate}}: {{snippet.firstScan.position}}<br>
+              {{'label.impulse.publish_date' | translate}}: {{utilService.formatDate(snippet.firstScan.date_scan) | date:'shortDate'}}<br>
+            </ng-template>
+            <a popoverTitle="{{'label.impulse.initial_position' | translate}}" container="body"
+               [autoClose]="true" [ngbPopover]="initial_position"
+            ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i></a>
+          </td>
+          <td *ngIf="!snippet.stillInResults">{{'label.result.left.results' | translate}}: {{
+            utilService.formatDate(snippet.lastScan.date_scan) | date:'shortDate'}}
+            <ng-template #initial_position>
+              {{'label.position' | translate}}: {{snippet.firstScan.position}}<br>
+              {{'label.impulse.publish_date' | translate}}: {{utilService.formatDate(snippet.firstScan.date_scan) | date:'shortDate'}}<br>
+            </ng-template>
+            <a popoverTitle="{{'label.impulse.initial_position' | translate}}" container="body"
+               [autoClose]="true" [ngbPopover]="initial_position"
+            ><i class="las la-info-circle colorAzul espIz15"></i></a>
+          </td>
+          <!--<td>  {{snippet.lastScan.date_scan | date:'shortDate'}}</td>-->
+
+          <td>
+            <mat-chip-list aria-label="Fish selection espDer15">
+              <mat-chip class="backgorundPrincipal colorBlanco heightAuto">
+                {{result.keyword}}
+              </mat-chip
+              >
+            </mat-chip-list>
+          </td>
+          <td>
+            <img [src]="utilService.checkFlag(result.country)" [width]="utilService.flagWith"
+                 [height]="utilService.flagHeight" alt="" class="margin3"
+                 onerror="this.src='../../../../assets/img/broken.jpg'">
+          </td>
+          <td>
+            <i class="las la-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"
+               title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
+            <i class="las la-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'"
+               title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
+            <i class="las la-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'"
+               title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
+          </td>
+          <td>
+            {{ utilService.formatDate(snippet.lastScan.date_scan ) | date:'medium'}}
+          </td>
+          <td>
+            <i class="las la-check-circle la-2x colorVerde"></i> <!--TODO validación del objetivo -->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</div>

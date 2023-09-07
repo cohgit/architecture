@@ -1,0 +1,28 @@
+<h2 mat-dialog-title><i class="las la-scroll colorGris espDer5"></i>{{'title.terms' | translate}}</h2>
+
+
+<div mat-dialog-content>
+  <div class="container-fluid padding20">
+    <mat-tab-group>
+      <mat-tab label="{{'title.terms.buy' | translate}}">
+        <p class="paddingTop25" [innerHTML]="'politycs.terms.buy' | translate "></p>
+      </mat-tab>
+      <mat-tab label="{{'title.terms.notice' | translate}}">
+        <p class="paddingTop25" [innerHTML]="'politycs.terms.notice' | translate "></p>
+      </mat-tab>
+      <mat-tab label="{{'title.terms.deindex' | translate}}">
+        <p class="paddingTop25" [innerHTML]="'politycs.terms.deindex' | translate "></p>
+      </mat-tab>
+      <mat-tab label="{{'title.terms.scanner' | translate}}">
+        <p class="paddingTop25" [innerHTML]="'politycs.terms.scanner' | translate "></p>
+      </mat-tab>
+      <mat-tab label="{{'title.terms.transform' | translate}}">
+        <p class="paddingTop25" [innerHTML]="'politycs.terms.transform' | translate "></p>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+  </mat-dialog-actions>
+</div>
+

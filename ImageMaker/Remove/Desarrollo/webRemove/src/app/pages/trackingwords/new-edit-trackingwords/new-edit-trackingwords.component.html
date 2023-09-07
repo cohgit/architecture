@@ -1,0 +1,73 @@
+<h2 mat-dialog-title
+    *ngIf="isNuevo"><i class="las la-list colorGris espDer5"></i>{{'title.new_trackigword' | translate}}</h2>
+<h2 mat-dialog-title
+    *ngIf="!isNuevo"><i class="las la-list colorGris espDer5"></i>{{'title.edit_trackingword' | translate}}</h2>
+
+<div mat-dialog-content>
+  <div class="row container-fluid padding20">
+    <div class="col-md-12 centrado" *ngIf="isNuevo">
+      <mat-slide-toggle [(ngModel)]="massive" class="noCkeck" *ngIf="isEditable && trackingwordService.permissions.file"
+      >{{'label.massive_upload' | translate}}</mat-slide-toggle>
+    </div>
+    <form #trackingwordForm="ngForm" (ngSubmit)="trackingwordForm.form.valid">
+      <div class="row paddingTop15" *ngIf="!massive || !isNuevo">
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="info.word" name="word" matInput disabled="{{!isEditable}}"
+                   placeholder="{{'title.scanner.terms' | translate}} ">
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field>
+            <mat-label>{{'label.scanner.suggestedfeel' | translate}} </mat-label>
+            <mat-select [(ngModel)]="info.feelingObj" name="feelingObj" required disabled="{{!isEditable}}"
+                        [compareWith]="utilService.compareTag">
+              <mat-option *ngFor="let feel of allFeelings" [value]="feel">
+                <span [innerHTML]="feel | feelingColors"></span>{{'feeling.' + feel.tag | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+    <div class="row paddingTop15" *ngIf="massive">
+      <div class="col-md-12">
+        <input type="file" (change)="onFileChange($event)" class="form-control" accept=".xlsx, .xls, .csv"/>
+        <a href="../../../assets/files/template.xlsx"
+           class="paddingTop15"><h5>{{'label.template_excel' | translate}}</h5></a>
+      </div>
+      <div class="col-md-12 margin10" *ngIf="showTable">
+        <div class="row slide-in-blurred-bottom horizontal-scroll">
+          <table class="table table-hover table-borderless ">
+            <thead class="thead-light">
+            <tr>
+              <th>{{'label.name' | translate}} </th>
+              <th>{{'label.tracking.feelings' | translate}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let data of allTracking">
+              <td>{{ data?.word | uppercase }}</td>
+              <td><span
+                [innerHTML]="data.feelingObj | feelingColors"></span>{{'feeling.' + data.feelingObj.tag | translate}}
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="col-md-12 centrado">
+            <jw-pagination [items]="allTracking" (changePage)="onChangePage($event)"
+                           [maxPages]="5" [pageSize]="10"
+            ></jw-pagination>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.cancel' | translate}}</a>
+  <button class="glow-on-hover espIz15" type="submit" (click)="onConfirmClick(trackingwordForm)"
+          tabindex="1" *ngIf="isNuevo && isEditable">{{'button.add' | translate}}</button>
+  <button (click)="onConfirmClick(trackingwordForm)" class="glow-on-hover espIz15" type="submit"
+          tabindex="1" *ngIf="!isNuevo && isEditable">{{'button.edit' | translate}}</button>
+</mat-dialog-actions>

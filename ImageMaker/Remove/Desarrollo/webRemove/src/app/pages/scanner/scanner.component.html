@@ -1,0 +1,198 @@
+<div name="div_main_scanner" class="row paddingTop15" style="min-height: 800px">
+  <!-- FIXME: Patch for Production (style="min-height: 800px;")-->
+  <ngx-ui-loader
+    [loaderId]="'loader-02'"
+    [text]="executingScanner"
+    [hasProgressBar]="isFalse"
+    fgsType="ball-spin-clockwise"
+  ></ngx-ui-loader>
+  <div class="row content-card">
+    <!--tittle-->
+    <div name="div_tittle" class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12 col-sm-6" *ngIf="initialData">
+              <div class="row">
+                <h2>
+                  <button (click)="utils.back()" class="noBacknoBorder">
+                    <i
+                      class="las la-layer-group colorPrincipal"
+                      title="{{ tittle | translate }}"
+                      *ngIf="initialData.type === 'monitor'"
+                    ></i>
+                    <i
+                      class="las la-sync colorPrincipal"
+                      title="{{ tittle | translate }}"
+                      *ngIf="initialData.type === 'transform'"
+                    ></i>
+                    <i
+                      class="las la-camera colorPrincipal"
+                      title="{{ tittle | translate }}"
+                      *ngIf="initialData.type === 'one_shot'"
+                    ></i>
+
+                    {{ tittle }}:</button
+                  >{{ initialData.name }}
+                </h2>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                  <button
+                    mat-button
+                    (click)="sidenav.toggle()"
+                    *ngIf="tabIndex !== 0"
+                  >
+                    <i class="las la-filter fa-2x colorPrincipal"></i>
+                    {{ "label.filter.filter" | translate }} |
+                  </button>
+                </div>
+                <div class="col-md-11" *ngIf="tabIndex !== 0">
+                  <mat-chip-list
+                    #chipKey
+                    name="listFiltersApplieds"
+                    *ngIf="listFiltersApplieds?.length > 0"
+                  >
+                    <mat-chip
+                      *ngFor="let applied of listFiltersApplieds"
+                      (click)="sidenav.toggle()"
+                    >
+                      {{ applied }}
+                    </mat-chip>
+                  </mat-chip-list>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 top20m">
+          <div class="row right">
+            <div *ngIf="dashboardData && filteredLastResults && initialData">
+              <h5>
+                <a
+                  class="third after"
+                  (click)="download()"
+                  *ngIf="showReportsButton"
+                >
+                  <span class="">{{ "label.report" | translate }}</span
+                  ><i
+                    class="las la-file-pdf colorPrincipal la-2x"
+                    title="{{ 'button.download' | translate }}"
+                  ></i>
+                </a>
+              </h5>
+            </div>
+            <!--<div class="col-md-6 col-sm-12 ">
+              <div class="  " *ngIf="tabIndex === 0">
+                <a class="third after  " (click)="clean()">
+                  <i class="las la-eraser colorPrincipal espDer5"></i>{{'button.clear' | translate}}</a>
+              </div>
+            </div>--
+          </div>-->
+          </div>
+        </div>
+      </div>
+      <div
+        name="div_content"
+        class="col-12 paddingTop15"
+        style="min-height: 850px"
+      >
+        <!-- FIXME: Patch for Production (style="min-height: 800px;")-->
+        <mat-sidenav-container class="example-container">
+          <mat-sidenav
+            #sidenav
+            mode="side"
+            (opened)="events.push('open!')"
+            (closed)="events.push('close!')"
+          >
+            <div class="content">
+              <app-filters
+                (applyFilter)="filterResults($event)"
+                (clearFilter)="clearFilters()"
+                [scannerInfo]="initialData"
+                [filtersLists]="filterLists"
+                [filterModel]="filterModel"
+                [col]="12"
+                #filterComp
+              ></app-filters>
+            </div>
+          </mat-sidenav>
+
+          <mat-sidenav-content>
+            <mat-tab-group
+              [selectedIndex]="tabIndex"
+              (selectedIndexChange)="tabIndex = $event"
+              class="filterHeight"
+            >
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  <i class="las la-cog espDer15"></i>
+                  {{ "label.config" | translate }}
+                </ng-template>
+                <app-config-scanner
+                  [scannerInfo]="initialData"
+                  (generate)="generateResults($event)"
+                  (updateConfiguration)="updateConfiguration($event)"
+                  #configComp
+                ></app-config-scanner>
+              </mat-tab>
+              <mat-tab
+                *ngIf="filteredLastResults && filteredResults?.length !== 0"
+              >
+                <ng-template mat-tab-label>
+                  <i class="fab fa-google espDer15"></i
+                  ><i
+                    class="las la-exclamation-circle coloAmarillo espDer5 la-2x"
+                    *ngIf="hasErrorInDate && isAdmin"
+                    title="{{ 'message.error_date' | translate }}"
+                  ></i>
+                  {{ "label.results" | translate }}:
+                  {{ endFilterDate | date : "shortDate" }}
+                </ng-template>
+                <app-result-scanner
+                  [filteredResults]="filteredLastResults"
+                  [expandBox]="expandBox"
+                  [isAdmin]="isAdmin"
+                  (updateSnippetFeeling)="changeSnippetFeeling($event)"
+                  (checkError)="checkError($event)"
+                  *ngIf="filteredLastResults"
+                ></app-result-scanner>
+              </mat-tab>
+              <mat-tab *ngIf="dashboardData">
+                <ng-template mat-tab-label>
+                  <i class="las la-chart-bar espDer15"></i>
+                  {{ "label.dash" | translate }}:
+                  {{ initFilterDate | date : "shortDate" }}
+                  -
+                  {{ endFilterDate | date : "shortDate" }}
+                </ng-template>
+                <app-dashboard-scanner
+                  [dashboardData]="dashboardData"
+                  [scannerInfo]="initialData"
+                  [expandBox]="expandBox"
+                ></app-dashboard-scanner>
+              </mat-tab>
+
+              <mat-tab
+                *ngIf="
+                  comments.length !== 0 &&
+                  initialData.type === 'transform' &&
+                  !utils.onlySpaces(comments[0].comment)
+                "
+              >
+                <ng-template mat-tab-label>
+                  <i class="las la-comment espDer15"></i>
+                  {{ "title.comment" | translate }}
+                  {{ comments[0]?.comment_date | date : "shortDate" }}
+                </ng-template>
+                <app-comment-history
+                  [allComments]="comments"
+                ></app-comment-history>
+              </mat-tab>
+            </mat-tab-group>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+      </div>
+    </div>
+  </div>
+</div>

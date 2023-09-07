@@ -1,0 +1,569 @@
+<div class="row paddingTop15" id="toExport">
+  <!--filters-->
+  <div class="col-md-12" *ngIf="allNotification.length !== 0">
+    <div class="row border-filter">
+      <div class="col-md-2 col-sm-12">
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ "label.date_range" | translate }}</mat-label>
+          <mat-date-range-input [rangePicker]="picker" [max]="today">
+            <input
+              matStartDate
+              [(ngModel)]="filter.recive_date_init"
+              name="start"
+              placeholder="Start date"
+            />
+            <input
+              matEndDate
+              [(ngModel)]="filter.recive_date_end"
+              name="end"
+              placeholder="End date"
+            />
+          </mat-date-range-input>
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </div>
+      <div class="col-md-2 centrado col-sm-12">
+        <button
+          (click)="searchResult(filter)"
+          class="secondLevelButton reduceFont"
+        >
+          <i class="las la-search espDer5"></i>{{ "button.search" | translate }}
+        </button>
+      </div>
+      <div class="col-md-2 col-sm-12 paddingTop15 float-left">
+        <a (click)="clean()" class="third after reduceFont">
+          <i class="las la-broom colorPrincipal espDer5"></i
+          >{{ "button.clear_filters" | translate }}</a
+        >
+      </div>
+      <div class="col-md-1 paddingTop15">
+        <a (click)="hideChecked()" class="third after reduceFont"
+          ><i
+            class="las la-eye-slash colorPrincipal espDer5"
+            title="{{ 'button.hide' | translate }}"
+          ></i
+          >{{ "button.hide" | translate }}</a
+        >
+      </div>
+      <div class="col-md-2 paddingTop15">
+        <a (click)="markReaded()" class="third after reduceFont"
+          ><i
+            class="las la-envelope-open colorPrincipal espDer5"
+            title="{{ 'button.markasReaded' | translate }}"
+          ></i
+          >{{ "button.markasReaded" | translate }}</a
+        >
+      </div>
+      <div class="col-md-2 paddingTop15">
+        <mat-slide-toggle class="noCkeck" (change)="showHidden($event)">
+          <span class="reduceFont">{{
+            "message.show_hidden" | translate
+          }}</span>
+        </mat-slide-toggle>
+      </div>
+      <!-- <div class="col-md-1 ">
+         <mat-form-field class="example-full-width">
+           <mat-select
+             placeholder="{{ 'label.items' | translate }}"
+             [(ngModel)]="pag"
+           >
+             <mat-option *ngFor="let item of utilService.pagination" [value]="item">
+               {{ item }}
+             </mat-option>
+           </mat-select>
+         </mat-form-field>
+       </div>-->
+    </div>
+  </div>
+  <!--principal table-->
+  <div
+    class="col-md-12"
+    *ngIf="filteredNotification && filteredNotification.length !== 0"
+  >
+    <div
+      class="row paddingTop25 paddingBottom20 colorPrincipal boldFont hideMobile"
+    >
+      <div class="col-md-2"></div>
+
+      <div class="col-md-2">
+        <span *ngIf="!isAdmin">{{
+          "label.notification_type" | translate
+        }}</span>
+        <span *ngIf="isAdmin">{{ "label.user" | translate }}</span>
+      </div>
+
+      <div class="col-md-6">
+        {{ "label.notification_subject" | translate }}
+      </div>
+      <div class="col-md-1">
+        <a
+          (click)="sortFunction('creation_date', sortDirection)"
+          class="espDer50"
+          >{{ "label.date" | translate }}</a
+        >
+      </div>
+    </div>
+    <div class="row" *ngFor="let detail of copyArray">
+      <div
+        class="col-md-1 col-sm-12 centrado"
+        *ngIf="!detail.hidden || showHiddenNot"
+      >
+        <mat-checkbox
+          class="paddingTop5 noCkeck"
+          (change)="addItems(detail, $event)"
+        ></mat-checkbox>
+      </div>
+      <div
+        class="col-md-11 col-sm-12 paddingTop5"
+        *ngIf="!detail.hidden || showHiddenNot"
+      >
+        <mat-expansion-panel
+          hideToggle
+          class="gn-box padding5 borderRadius10 example-full-width minHei80m"
+          (opened)="checkOpen(detail)"
+        >
+          <mat-expansion-panel-header class="height150Mobile">
+            <div class="row container-fluid">
+              <div class="col-md-2">
+                <mat-chip-list aria-label="Fish selection espDer15">
+                  <mat-chip class="espDer15">
+                    <span class="colorPrincipal"
+                      >{{
+                        "notification.type." + detail?.typeObj?.tag | translate
+                      }}
+                    </span></mat-chip
+                  >
+                </mat-chip-list>
+              </div>
+              <div class="col-md-1">
+                <i
+                  class="las la-envelope-open reduceFontMobile colorGris la-2x"
+                  *ngIf="detail.readed"
+                ></i>
+                <i
+                  class="las la-envelope reduceFontMobile colorPrincipal la-2x"
+                  *ngIf="!detail.readed"
+                ></i>
+                <i
+                  class="las la-exclamation-circle colorSecundario reduceFontMobile la-2x"
+                  *ngIf="detail.urgent"
+                  title="{{ 'placeholder.urgent' | translate }}"
+                ></i>
+              </div>
+              <div class="col-md-7">
+                {{ "notification.tittle." + detail.title | translate }}
+                {{ detail.parameters?.name ? detail.parameters.name : "" }}
+                {{
+                  detail.parameters?.info?.name
+                    ? detail.parameters.info.name
+                    : ""
+                }}
+              </div>
+              <div class="col-md-1">
+                <h6 class="colorGris right">
+                  {{
+                    utilService.formatDate(detail.creation_date)
+                      | date : "short"
+                  }}
+                </h6>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="col-md-12">
+            <mat-tab-group
+              *ngIf="
+                detail?.parameters?.info?.lstInSnippets ||
+                detail?.parameters?.info?.lstOutSnippets
+              "
+            >
+              <mat-tab
+                label="{{ 'label.new_content' | translate }}: {{
+                  detail?.parameters?.info?.lstInSnippets.length
+                }}"
+                *ngIf="detail?.parameters?.info?.lstInSnippets"
+              >
+                <div class="margin10"></div>
+                <div
+                  class="row container-fluid"
+                  *ngFor="
+                    let snip of detail.parameters.info.lstInSnippets;
+                    let i = index
+                  "
+                >
+                  <div class="col-md-12 colorGris">
+                    <!-- <flag-icon country="{{snip?.country?.tag}}" squared class="espDer5"
+                                title="{{snip?.country?.name}}"></flag-icon>-->
+                    <img
+                      [src]="utilService.checkFlag(snip?.country?.tag)"
+                      [width]="utilService.flagWith"
+                      [height]="utilService.flagHeight"
+                      alt="{{ snip?.country?.name }}"
+                      class="margin3"
+                      onerror="this.src='../../../../assets/img/broken.jpg'"
+                    />
+                    <i
+                      class="las la-image espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'images'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+                    <i
+                      class="las la-search espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'web'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+                    <i
+                      class="las la-newspaper espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'news'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+
+                    <mat-chip
+                      color="accent"
+                      class="backgorundPrincipal colorBlanco heightAuto"
+                    >
+                      KW: {{ snip?.keyword?.word }}</mat-chip
+                    >
+
+                    {{ "label.page" | translate }}: {{ snip?.page }} -
+                    {{ "label.position" | translate }}: {{ snip?.position }} -
+                    <cite class="gs-url">{{ snip?.domain }}</cite>
+                  </div>
+                  <div class="col-md-12">
+                    <a
+                      class="gs-title"
+                      target="_blank"
+                      href="{{ snip?.link }}"
+                      >{{ snip?.tittle }}</a
+                    >
+                  </div>
+
+                  <div class="col-md-12">
+                    <span class="gs-content">{{ snip?.snippet }}</span>
+                  </div>
+                  <div class="col-md-12">
+                    <mat-chip
+                      color="accent"
+                      *ngFor="let url of snip.trackingWords"
+                    >
+                      <span [innerHTML]="url.feelingObj | feelingColors"></span>
+                      {{ url.word }}
+                    </mat-chip>
+                  </div>
+
+                  <div class="margin10"></div>
+                </div>
+              </mat-tab>
+
+              <mat-tab
+                label="{{ 'label.out_content' | translate }}: {{
+                  detail?.parameters?.info?.lstOutSnippets.length
+                }}"
+                *ngIf="detail?.parameters?.info?.lstOutSnippets"
+              >
+                <div class="margin10"></div>
+                <div
+                  class="row container-fluid"
+                  *ngFor="
+                    let snip of detail.parameters.info.lstOutSnippets;
+                    let i = index
+                  "
+                >
+                  <div class="col-md-12 colorGris">
+                    <!--<flag-icon country="{{snip?.country?.tag}}" squared class="espDer5"
+                               title="{{snip?.country?.name}}"></flag-icon>-->
+                    <img
+                      [src]="utilService.checkFlag(snip?.country?.tag)"
+                      [width]="utilService.flagWith"
+                      [height]="utilService.flagHeight"
+                      alt="{{ snip?.country?.name }}"
+                      class="margin3"
+                      onerror="this.src='../../../../assets/img/broken.jpg'"
+                    />
+                    <i
+                      class="las la-image espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'images'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+                    <i
+                      class="las la-search espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'web'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+                    <i
+                      class="las la-newspaper espDer15 colorPrincipal"
+                      *ngIf="snip?.typeSearch === 'news'"
+                      title="{{
+                        'list.scanner.type.' + snip?.typeSearch | translate
+                      }}"
+                    ></i>
+                    <mat-chip
+                      color="accent"
+                      class="backgorundPrincipal colorBlanco heightAuto"
+                    >
+                      KW: {{ snip?.keyword?.word }}</mat-chip
+                    >
+                    {{ "label.page" | translate }}: {{ snip?.page }} -
+                    {{ "label.position" | translate }}: {{ snip?.position }} -
+                    <cite class="gs-url">{{ snip?.domain }}</cite>
+                  </div>
+                  <div class="col-md-12">
+                    <a
+                      class="gs-title"
+                      target="_blank"
+                      href="{{ snip?.link }}"
+                      >{{ snip?.tittle }}</a
+                    >
+                  </div>
+
+                  <div class="col-md-12">
+                    <span class="gs-content">{{ snip?.snippet }}</span>
+                  </div>
+                  <div class="col-md-12">
+                    <mat-chip
+                      color="accent"
+                      *ngFor="let url of snip.trackingWords"
+                    >
+                      <span [innerHTML]="url.feelingObj | feelingColors"></span>
+                      {{ url.word }}
+                    </mat-chip>
+                  </div>
+
+                  <div class="margin10"></div>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+
+          <div
+            class="col-md-12"
+            *ngIf="
+              detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED
+            "
+          >
+            <div class="row">
+              <div class="col-md-2" *ngIf="isAdmin">
+                <p>
+                  <strong>{{ "profile.client" | translate }}: </strong>
+                  {{ detail?.parameters?.client_name }}
+                </p>
+              </div>
+              <div class="col-md-10">
+                <strong
+                  >{{ "label.impulse.keywords_selected" | translate }}
+                </strong>
+                <mat-chip-list
+                  aria-label="Fish selection"
+                  placeholder="{{
+                    'label.impulse.keywords_selected' | translate
+                  }}"
+                >
+                  <mat-chip
+                    title="{{ 'label.impulse.keywords_selected' | translate }}"
+                  >
+                    <span class="colorPrincipal">{{
+                      detail?.parameters?.keyword?.word
+                    }}</span></mat-chip
+                  >
+                </mat-chip-list>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-md-4"
+                *ngIf="detail?.parameters?.estimated_publish"
+              >
+                <p>
+                  <strong
+                    >{{ "label.impulse.start_month" | translate }}:
+                  </strong>
+
+                  {{  utilService.formatDate(detail?.parameters?.estimated_publish)  | date : "MM/yyyy"  }}
+                </p>
+              </div>
+              <div class="col-md-4" *ngIf="detail?.parameters?.publish_date">
+                <p>
+                  <strong
+                    >{{ "label.impulse.publish_date" | translate }}:
+                  </strong>
+                  {{  utilService.formatDate(detail?.parameters?.publish_date)  | date  }}
+        
+                </p>
+              </div>
+
+              <div class="col-md-4" *ngIf="detail?.parameters?.publish_link">
+                <p>
+                  <strong
+                    >{{ "label.impulse.tittle_url" | translate }}:
+                  </strong>
+                  <a
+                    href="{{ detail?.parameters?.publish_link }}"
+                    target="_blank"
+                    >{{
+                      utilService.onlyDomain(detail?.parameters?.publish_link)
+                    }}
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12" *ngIf="detail?.typeObj.NEW_CLIENT_SUSCRIPTION">
+            <div class="row">
+              <div class="col-md-5 centrado">
+                <i class="las la-user-circle colorPrincipal la-5x"></i>
+              </div>
+              <div class="col-md-7">
+                <p>
+                  <strong>{{ "profile.client" | translate }}: </strong
+                  >{{ detail.parameters.client_name }}
+                </p>
+                <p>
+                  <strong>{{ "label.email" | translate }}: </strong
+                  >{{ detail.parameters.client_email }}
+                </p>
+                <p>
+                  <strong>{{ "title.user_payment" | translate }}: </strong>
+                  <span
+                    class=""
+                    [innerHTML]="
+                      detail.parameters?.payment_method | paymentsMethods
+                    "
+                  ></span>
+                  {{
+                    "label.payment_" + detail.parameters?.payment_method
+                      | translate
+                  }}
+                </p>
+                <p>
+                  <strong>{{ "label.plan" | translate }}: </strong
+                  >{{ detail.parameters.plan }}
+                </p>
+
+                <a (click)="goClients()" class="third after reduceFont"
+                  ><i
+                    class="las la-id-card la-2x colorPrincipal espDer15"
+                    title="{{ 'message.go_clients' | translate }}"
+                  ></i
+                  >{{ "message.go_clients" | translate }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row centrado margin10">
+            <!-- go to one shot scanner-->
+            <a
+              (click)="checkScanner('one_shot', detail.parameters.uuidScanner)"
+              class="third after reduceFont"
+              *ngIf="
+                detail?.typeObj?.ONE_SHOT_STARTING_SCANNER ||
+                detail?.typeObj?.ONE_SHOT_FINISHED_SCANNER
+              "
+              ><i
+                class="las la-camera colorPrincipal la-2x espDer15"
+                title="{{ 'title.scanner_one' | translate }}"
+              ></i>
+              {{ "message.go_scan" | translate }}
+            </a>
+            <!-- go to monitor scanner-->
+            <a
+              (click)="
+                checkScanner('monitor', detail.parameters.info.uuidScanner)
+              "
+              class="third after reduceFont"
+              *ngIf="
+                detail?.typeObj?.RECURRENT_STARTING_SCANNER ||
+                detail?.typeObj?.RECURRENT_NEW_AND_LEAVING_CONTENT ||
+                detail?.typeObj?.RECURRENT_CONFIGURATION_UPDATED
+              "
+              ><i
+                class="las la-layer-group colorPrincipal la-2x espDer15"
+                title="{{ 'title.monitor' | translate }}"
+              ></i>
+              {{ "message.go_scan" | translate }}
+            </a>
+
+            <!-- go to transform scanner-->
+            <a
+              (click)="checkScanner('transform', detail.parameters.uuidScanner)"
+              class="third after reduceFont"
+              *ngIf="
+                detail?.typeObj?.TRANSFORM_STARTING_SCANNER ||
+                detail?.typeObj?.TRANSFORM_CONFIGURATION_UPDATED
+              "
+              ><i
+                class="las la-sync colorPrincipal la-2x espDer15"
+                title="{{ 'title.transform' | translate }}"
+              ></i
+              >{{ "message.go_scan" | translate }}
+            </a>
+            <!-- go to transform scanner 2-->
+            <a
+              (click)="
+                checkScanner('transform', detail.parameters.info.uuidScanner)
+              "
+              class="third after reduceFont"
+              *ngIf="detail?.typeObj?.TRANSFORM_NEW_AND_LEAVING_CONTENT"
+              ><i
+                class="las la-sync colorPrincipal la-2x espDer15"
+                title="{{ 'title.transform' | translate }}"
+              ></i
+              >{{ "message.go_scan" | translate }}
+            </a>
+
+            <!-- go to impulse-->
+            <a
+              (click)="goImpulse(detail.parameters.uuidScanner)"
+              class="third after reduceFont"
+              *ngIf="
+                detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED
+              "
+              ><i
+                class="las la-sort-amount-up-alt colorPrincipal la-2x espDer15"
+                title="{{ 'menu.impulse' | translate }}"
+              ></i
+              >{{ "message.go_impulse" | translate }}:
+              {{ detail.parameters.client_name }}
+            </a>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 centrado paddingBottom50 paddingTop25">
+    <jw-pagination
+      [items]="filteredNotification"
+      (changePage)="onChangePage($event)"
+      [maxPages]="5"
+      [pageSize]="15"
+    ></jw-pagination>
+  </div>
+  <div
+    class="col-md-12 paddingBottom50 paddingTop25"
+    *ngIf="
+      (allNotification && allNotification.length === 0) ||
+      filteredNotification.length === 0
+    "
+  >
+    {{ "message.no_notification" | translate }}
+  </div>
+</div>

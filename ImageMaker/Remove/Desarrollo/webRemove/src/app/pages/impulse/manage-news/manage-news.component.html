@@ -1,0 +1,419 @@
+<h2 mat-dialog-title>
+  <i class="las la-flask colorGris espDer5"></i
+  >{{ "tooltip.impulse.news_management" | translate }}
+</h2>
+<form #urlForm="ngForm" (ngSubmit)="(urlForm.form.valid)">
+  <div mat-dialog-content>
+    <div class="container-fluid padding20">
+      <mat-accordion multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ "title.impulse.transform_configuration" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row paddingTop15">
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <mat-label
+                  >{{ "label.scanner.keywords" | translate }}
+                </mat-label>
+                <mat-select
+                  [(ngModel)]="data.info.id_keyword"
+                  name="id_keyword"
+                  disabled
+                >
+                  <mat-option value="">{{
+                    "label.none" | translate
+                  }}</mat-option>
+                  <mat-option
+                    *ngFor="let keyword of data.scanner.keywords"
+                    [value]="keyword.id"
+                  >
+                    {{ keyword.word }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.real_publish_link"
+                  name="real_publish_link"
+                  matInput
+                  disabled
+                  placeholder="{{ 'label.impulse.final_url' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.initial_position"
+                  name="initial_position"
+                  matInput
+                  disabled
+                  placeholder="{{
+                    'label.impulse.initial_position' | translate
+                  }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.real_publish_date"
+                  name="estimated_publish"
+                  matInput
+                  disabled
+                  placeholder="{{ 'label.impulse.start_month' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ "title.impulse.algorithm_variables" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row paddingTop15">
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.traffic_site"
+                  name="traffic_site"
+                  matInput
+                  placeholder="{{ 'label.impulse.traffic_site' | translate }} "
+                  required
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.da"
+                  name="da"
+                  matInput
+                  placeholder="{{ 'label.impulse.da' | translate }} "
+                  required
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.dr"
+                  name="dr"
+                  matInput
+                  placeholder="{{ 'label.impulse.dr' | translate }} "
+                  required
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.pa"
+                  name="pa"
+                  matInput
+                  placeholder="{{ 'label.impulse.pa' | translate }} "
+                  required
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.total_links"
+                  name="total_links"
+                  matInput
+                  type="number"
+                  min="0"
+                  placeholder="{{
+                    'label.impulse.number_of_links' | translate
+                  }}  "
+                  numbersOnly
+                  required
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.category_content"
+                  name="category_content"
+                  matInput
+                  placeholder="{{
+                    'label.impulse.content_category' | translate
+                  }} "
+                  required
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <mat-select
+                  placeholder="{{ 'label.impulse.ip_country' | translate }}"
+                  #select
+                  required
+                  [(ngModel)]="variable.country"
+                  name="country"
+                  [compareWith]="utilService.compareTag"
+                >
+                  <mat-select-filter
+                    [displayMember]="'name'"
+                    [array]="allCountries"
+                    *ngIf="select.focused"
+                    (filteredReturn)="fltCountries = $event"
+                  ></mat-select-filter>
+                  <mat-option *ngFor="let item of fltCountries" [value]="item">
+                    <img
+                      [src]="utilService.checkFlag(item.tag)"
+                      [width]="utilService.flagWith"
+                      [height]="utilService.flagHeight"
+                      alt=""
+                      class="margin3"
+                      onerror="this.src='../../../../assets/img/broken.jpg'"
+                    />{{ item?.name }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="variable.total_keywords"
+                  name="total_keywords"
+                  matInput
+                  numbersOnly
+                  required
+                  placeholder="{{
+                    'label.impulse.number.keyword.position' | translate
+                  }} "
+                  type="number"
+                  min="0"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ "label.actions" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row paddingTop15">
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <mat-select
+                  placeholder="{{ 'label.impulse.concept' | translate }}"
+                  #select
+                  [(ngModel)]="newAction.conceptType"
+                  name="conceptType"
+                >
+                  <mat-option
+                    *ngFor="let concept of allConcepts"
+                    [value]="concept"
+                  >
+                    {{
+                      "list.impulse.concept." + concept.concept.tag | translate
+                    }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-3" *ngIf="newAction?.conceptType?.categories">
+              <mat-form-field class="example-full-width">
+                <mat-select
+                  placeholder="{{ 'label.impulse.category' | translate }}"
+                  #select
+                  [(ngModel)]="newAction.categoryType"
+                  name="categoryType"
+                >
+                  <mat-option
+                    *ngFor="let category of newAction?.conceptType?.categories"
+                    [value]="category"
+                  >
+                    {{ "list.impulse.category." + category.tag | translate }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div
+              class="col-md-3"
+              *ngIf="
+                newAction?.categoryType?.MEDIA || newAction?.categoryType?.OTHER
+              "
+            >
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="newAction.exact_url"
+                  name="exact_url"
+                  matInput
+                  placeholder="{{ 'label.impulse.exact_anchor' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3" *ngIf="newAction?.categoryType?.BLOG">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="newAction.exact_url"
+                  name="exact_url"
+                  matInput
+                  placeholder="{{ 'label.impulse.url_anchor' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3" *ngIf="newAction?.categoryType?.SOCIAL">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="newAction.exact_url"
+                  name="exact_url"
+                  matInput
+                  placeholder="{{ 'label.impulse.mark_anchor' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{
+                  "label.scanner.advance.sections" | translate
+                }}</mat-label>
+                <mat-select
+                  [(ngModel)]="newAction.sectionType"
+                  name="sectionType"
+                >
+                  <mat-option *ngFor="let s of allSections" [value]="s">
+                    {{ "list.scanner.type." + s.code | translate }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row paddingTop15">
+            <div class="col-md-5">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="newAction.action_url"
+                  name="action_url"
+                  matInput
+                  placeholder="{{ 'label.impulse.action_url' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="newAction.quantity"
+                  name="quantity"
+                  matInput
+                  numbersOnly
+                  type="number"
+                  placeholder="{{ 'label.impulse.quantity' | translate }} "
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-3">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{
+                  "label.impulse.action_date" | translate
+                }}</mat-label>
+                <mat-date-range-input [rangePicker]="picker" [required]="true">
+                  <input
+                    matStartDate
+                    [(ngModel)]="newAction.init_date"
+                    name="init_date"
+                    placeholder="{{ 'label.init_date' | translate }}"
+                  />
+                  <input
+                    matEndDate
+                    [(ngModel)]="newAction.end_date"
+                    name="end_date"
+                    placeholder="{{ 'label.end_date' | translate }}"
+                  />
+                </mat-date-range-input>
+                <mat-datepicker-toggle
+                  matSuffix
+                  [for]="picker"
+                ></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field>
+            </div>
+            <div class="col-md-1">
+              <a (click)="addAction(urlForm)"
+                ><i class="fa fa-plus-circle colorVerde fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="row paddingTop15">
+            <table class="table table-hover table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th>{{ "label.impulse.concept" | translate }}</th>
+                  <th>{{ "label.impulse.category" | translate }}</th>
+                  <th>{{ "label.impulse.anchor" | translate }}</th>
+                  <th>{{ "label.scanner.advance.sections" | translate }}</th>
+                  <th>{{ "label.impulse.action_url" | translate }}</th>
+                  <th>{{ "label.impulse.quantity" | translate }}</th>
+                  <th>{{ "label.init_date" | translate }}</th>
+                  <th>{{ "label.end_date" | translate }}</th>
+                  <th class="centrado">{{ "label.actions" | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let action of variable.interactions">
+                  <td>
+                    {{
+                      "list.impulse.concept." + action.conceptType.tag
+                        | translate
+                    }}
+                  </td>
+                  <td>
+                    {{
+                      "list.impulse.category." + action.categoryType.tag
+                        | translate
+                    }}
+                  </td>
+                  <td>{{ action?.exact_url }}</td>
+                  <td>{{ action?.sectionType.tag | translate }}</td>
+                  <td>{{ action?.action_url }}</td>
+                  <td>{{ action?.quantity }}</td>
+                  <td>{{ utilService.formatDate(action?.init_date) | date }}</td>
+                  <td>{{ utilService.formatDate(action?.end_date) | date }}</td>
+                  <td class="centrado">
+                    <a (click)="removeItem(action)">
+                      <i
+                        class="las la-times colorRojo la-2x"
+                        title="{{ 'tooltip.remove' | translate }}"
+                      ></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <mat-dialog-actions class="centrado">
+      <a mat-dialog-close tabindex="-1" class="third after colorGris">
+        {{ "button.cancel" | translate }}</a
+      >
+      <button
+        class="glow-on-hover espIz15"
+        type="submit"
+        (click)="onConfirmClick(urlForm)"
+        tabindex="1"
+      >
+        {{ "button.save" | translate }}
+      </button>
+    </mat-dialog-actions>
+  </div>
+</form>

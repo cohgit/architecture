@@ -1,0 +1,5 @@
+1- Copiar el archivo 'remove-engine-0.1-jar-with-dependencies.jar' dentro del directorio.
+2- Via terminal posicionarse en esta carpeta.
+3- Ejecutar los siguientes comandos para construir y desplegar el contenedor.
+
+docker-compose up --build

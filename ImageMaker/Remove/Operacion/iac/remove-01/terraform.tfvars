@@ -1,0 +1,6 @@
+dev_access_key="AKIATV2KEPWAAKHQDIIX"
+dev_secret_key="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"
+dev_region="us-east-1"
+dev_pivot_keyname="kp-remove-01-pivot"
+dev_vpc_id="vpc-0ba0c20d6f262d95e"
+dev_subnet_id="subnet-0c52ec97d0c632f4d"

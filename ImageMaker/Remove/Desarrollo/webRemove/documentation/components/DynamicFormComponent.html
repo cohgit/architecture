@@ -1,0 +1,1090 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  DynamicFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/dynamic-form/dynamic-form.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dynamic-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dynamic-form.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dynamic-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dfh" >dfh</a>
+                            </li>
+                            <li>
+                                <a href="#isComplete" >isComplete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#evaluateCheckConditions" >evaluateCheckConditions</a>
+                            </li>
+                            <li>
+                                <a href="#evaluateConditions" >evaluateConditions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isValid" >isValid</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#disabled" >disabled</a>
+                            </li>
+                            <li>
+                                <a href="#dynamicForm" >dynamicForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dfh: <a href="../injectables/DynamicFormHelperService.html" target="_self">DynamicFormHelperService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dfh</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DynamicFormHelperService.html" target="_self" >DynamicFormHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="disabled"></a>
+                        <b>disabled</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dynamicForm"></a>
+                        <b>dynamicForm</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateCheckConditions"></a>
+                    <span class="name">
+                        <span ><b>evaluateCheckConditions</b></span>
+                        <a href="#evaluateCheckConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>evaluateCheckConditions(input: <a href="../interfaces/IDynamicFormInput.html" target="_self">IDynamicFormInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="35"
+                            class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Assing check input values and Check conditions.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicFormInput.html" target="_self" >IDynamicFormInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateConditions"></a>
+                    <span class="name">
+                        <span ><b>evaluateConditions</b></span>
+                        <a href="#evaluateConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>evaluateConditions(inputName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="27"
+                            class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check conditions when a field changed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>inputName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValid"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isValid</b></span>
+                        <a href="#isValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="39"
+                            class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="20"
+                            class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dfh"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dfh</b></span>
+                        <a href="#dfh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/DynamicFormHelperService.html" target="_self" >DynamicFormHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isComplete"></a>
+                    <span class="name">
+                        <span ><b>isComplete</b></span>
+                        <a href="#isComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/shared/dynamic-form/dynamic-form.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import {IDynamicForm, IDynamicFormInput} from &#x27;../../interfaces/IDynamicForm&#x27;;
+import {DynamicFormHelperService} from &#x27;../../helpers/dynamic-form-helper.service&#x27;;
+import {TranslateHelperService} from &#x27;src/app/helpers/translate-helper.service&#x27;;
+
+@Component({
+  selector: &#x27;app-dynamic-form&#x27;,
+  templateUrl: &#x27;./dynamic-form.component.html&#x27;,
+  styleUrls: [&#x27;./dynamic-form.component.css&#x27;]
+})
+
+export class DynamicFormComponent implements OnInit {
+  @Input() dynamicForm: IDynamicForm;
+  @Input() disabled: boolean &#x3D; false;
+  isComplete &#x3D; true;
+
+  constructor(public dfh: DynamicFormHelperService, public translateHelper: TranslateHelperService) {
+  }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Check conditions when a field changed.
+   * @param inputName
+   */
+  evaluateConditions(inputName: string): void {
+    this.dfh.evaluateConditions(this.dynamicForm, inputName);
+  }
+
+  /**
+   * Assing check input values and Check conditions.
+   * @param input
+   */
+  evaluateCheckConditions(input: IDynamicFormInput): void {
+    this.dfh.evaluateCheckConditions(this.dynamicForm, input);
+  }
+
+  public isValid(): boolean {
+    return this.dfh.isValidForm(this.dynamicForm);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;dynamicForm&quot;&gt;
+  &lt;mat-vertical-stepper [linear]&#x3D;&quot;false&quot;&gt;
+    &lt;mat-step *ngFor&#x3D;&quot;let section of dynamicForm.sections; let is &#x3D; index&quot; [completed]&#x3D;&quot;isComplete&quot;&gt;
+      &lt;ng-template matStepLabel&gt;{{ section.label }} &lt;/ng-template&gt;
+      &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+        &lt;div
+          style&#x3D;&quot;display: contents&quot;
+          *ngFor&#x3D;&quot;let in of section.inputs; let ii &#x3D; index&quot;
+        &gt;
+          &lt;div [ngSwitch]&#x3D;&quot;in.type&quot; class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;in.visible&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-{{ in.width - 1 }} col-xs-{{ in.width - 1 }} col-sm-{{ in.width - 1 }}&quot;
+                   [ngClass]&#x3D;&quot;{&#x27;dynamicErrorBorder&#x27;: in.errorMessage}&quot;&gt;
+                &lt;!-- TEXT FIELD --&gt;
+
+                &lt;mat-form-field
+                  class&#x3D;&quot;example-full-width&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.TEXT_TYPE&quot;
+                &gt;
+                  &lt;!--&lt;mat-label&gt;{{in.label}}&lt;/mat-label&gt;--&gt;
+                  &lt;input
+                    matInput
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (focusout)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                    placeholder&#x3D;&quot;{{ in.label }}&quot;
+                  /&gt;
+
+                  &lt;!--&lt;h5 *ngIf&#x3D;&quot;in.description&quot;&gt;{{in.description}} hola&lt;/h5&gt;--&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;!-- TEXT AREA FIELD --&gt;
+                &lt;mat-form-field
+                  class&#x3D;&quot;example-full-width paddingTop5&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.TEXT_AREA_TYPE&quot;
+                &gt;
+                  &lt;!--&lt;mat-label&gt;{{ in.label }}&lt;/mat-label&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;in.description&quot; class&#x3D;&quot;paddingTop10 colorGris&quot;&gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;textarea
+                    matInput
+                    type&#x3D;&quot;text&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    placeholder&#x3D;&quot;{{ in.label }}&quot;
+                    class&#x3D;&quot;example-full-width&quot;
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (focusout)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                  &gt;&lt;/textarea&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;!-- NUMBER FIELD --&gt;
+                &lt;mat-form-field
+                  class&#x3D;&quot;example-full-width paddingTop5&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.NUMBER_TYPE&quot;
+                &gt;
+                  &lt;!-- &lt;mat-label&gt;{{ in.label }}&lt;/mat-label&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;in.description&quot; class&#x3D;&quot;paddingTop10 colorGris&quot;&gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;input
+                    matInput
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    type&#x3D;&quot;number&quot;
+                    placeholder&#x3D;&quot;{{ in.label }}&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (focusout)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                  /&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;!-- DATEPICKER FIELD --&gt;
+                &lt;mat-form-field
+                  class&#x3D;&quot;example-full-width paddingTop5&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.DATE_TYPE&quot;
+                &gt;
+                  &lt;!--&lt;mat-label&gt;{{ in.label }}&lt;/mat-label&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;in.description&quot; class&#x3D;&quot;paddingTop10 colorGris&quot;&gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;input
+                    matInput
+                    placeholder&#x3D;&quot;{{ in.label }}&quot;
+                    [matDatepicker]&#x3D;&quot;dynamicPicker&quot;
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    [attr.id]&#x3D;&quot;dtPicker + is + ii&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (dateChange)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                  /&gt;
+                  &lt;mat-datepicker-toggle
+                    matSuffix
+                    [for]&#x3D;&quot;dynamicPicker&quot;
+                  &gt;&lt;/mat-datepicker-toggle&gt;
+                  &lt;mat-datepicker #dynamicPicker&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;!-- RADIO GROUP FIELD --&gt;
+                &lt;mat-label *ngSwitchCase&#x3D;&quot;dfh.RADIO_TYPE&quot; class&#x3D;&quot;espDer15 paddingTop10&quot;&gt;{{ in.label }}&lt;/mat-label&gt;
+                &lt;mat-radio-group
+                  [(ngModel)]&#x3D;&quot;in.value&quot;
+                  required&#x3D;&quot;{{ in.required }}&quot;
+                  name&#x3D;&quot;{{ in.name }}&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.RADIO_TYPE&quot;
+                  (change)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                &gt;
+                  &lt;!--   &lt;mat-label class&#x3D;&quot;espDer5&quot;&gt;{{ in.label }}&lt;/mat-label&gt;
+                 &lt;h5
+                    *ngIf&#x3D;&quot;in.description&quot;
+                    class&#x3D;&quot;paddingTop10 colorGris espDer5&quot;
+                  &gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;mat-radio-button
+                    class&#x3D;&quot;espDer10&quot;
+                    *ngFor&#x3D;&quot;let inOption of in.options&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    [value]&#x3D;&quot;inOption.name&quot;
+                  &gt;{{ inOption.label }}&lt;/mat-radio-button
+                  &gt;
+                &lt;/mat-radio-group&gt;
+
+                &lt;!-- SELECT FIELD --&gt;
+                &lt;mat-form-field
+                  class&#x3D;&quot;example-full-width paddingTop5&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.SELECT_TYPE&quot;
+                &gt;
+                  &lt;mat-label&gt;{{ in.label }}&lt;/mat-label&gt;
+                  &lt;!-- &lt;h5 *ngIf&#x3D;&quot;in.description&quot; class&#x3D;&quot;paddingTop10 colorGris&quot;&gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;mat-select
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (selectionChange)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                  &gt;
+                    &lt;mat-option
+                      *ngFor&#x3D;&quot;let inOption of in.options&quot;
+                      [value]&#x3D;&quot;inOption.name&quot;
+                    &gt;
+                      {{ inOption.label }}
+                    &lt;/mat-option&gt;
+                  &lt;/mat-select&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;!-- CHECKBOX FIELD --&gt;
+                &lt;section
+                  class&#x3D;&quot;example-full-width paddingTop5&quot;
+                  *ngSwitchCase&#x3D;&quot;dfh.CHECKBOX_TYPE&quot;
+                &gt;
+                  &lt;!--&lt;mat-label class&#x3D;&quot;espDer5&quot;&gt;{{ in.label }}&lt;/mat-label&gt;
+                  &lt;h5
+                    *ngIf&#x3D;&quot;in.description&quot;
+                    class&#x3D;&quot;paddingTop10 colorGris espDer5&quot;
+                  &gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                  &lt;mat-checkbox
+                    class&#x3D;&quot;example-margin noCkeck espDer10&quot;
+                    *ngFor&#x3D;&quot;let inOption of in.options&quot;
+                    [(ngModel)]&#x3D;&quot;inOption.checked&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    (change)&#x3D;&quot;evaluateCheckConditions(in)&quot;
+                  &gt;{{ inOption.label }}&lt;/mat-checkbox
+                  &gt;
+                &lt;/section&gt;
+
+                &lt;!-- SWITCH FIELD --&gt;
+                &lt;div *ngSwitchCase&#x3D;&quot;dfh.SWITCH_TYPE&quot;&gt;
+                  &lt;mat-slide-toggle
+                    [(ngModel)]&#x3D;&quot;in.value&quot;
+                    required&#x3D;&quot;{{ in.required }}&quot;
+                    name&#x3D;&quot;{{ in.name }}&quot;
+                    disabled&#x3D;&quot;{{ disabled || !in.enabled }}&quot;
+                    class&#x3D;&quot;noCkeck&quot;
+                    (change)&#x3D;&quot;evaluateConditions(in.name)&quot;
+                  &gt;{{ in.label }}&lt;/mat-slide-toggle
+                  &gt;
+                  &lt;!-- &lt;h5 *ngIf&#x3D;&quot;in.description&quot; class&#x3D;&quot;paddingTop10 colorGris&quot;&gt;
+                    {{ in.description }}
+                  &lt;/h5&gt;--&gt;
+                &lt;/div&gt;
+
+                &lt;!-- DEFAULT FIELD --&gt;
+                &lt;div *ngSwitchDefault&gt;
+                  {{ &quot;label.typeNotsuported&quot; | translate }}: Input:
+                  {{ in.type }} | Name: {{ in.name }}
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;!-- TEXT FIELD HELP--&gt;
+              &lt;div class&#x3D;&quot;col-md-1col-xs-1 col-sm-1 paddingTop15&quot; *ngSwitchCase&#x3D;&quot;dfh.TEXT_TYPE&quot;&gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- TEXT AREA HELP--&gt;
+              &lt;div
+                class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1 paddingTop15&quot;
+                *ngSwitchCase&#x3D;&quot;dfh.TEXT_AREA_TYPE&quot;
+              &gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- NUMBER HELP--&gt;
+              &lt;div
+                class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1 paddingTop15&quot;
+                *ngSwitchCase&#x3D;&quot;dfh.NUMBER_TYPE&quot;
+              &gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- DATE HELP--&gt;
+              &lt;div class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1 paddingTop15&quot; *ngSwitchCase&#x3D;&quot;dfh.DATE_TYPE&quot;&gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- RADIO HELP--&gt;
+              &lt;div class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1&quot; *ngSwitchCase&#x3D;&quot;dfh.RADIO_TYPE&quot;&gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- SELECT HELP--&gt;
+              &lt;div class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1&quot; *ngSwitchCase&#x3D;&quot;dfh.CHECKBOX_TYPE&quot;&gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- CHECKBOX HELP--&gt;
+              &lt;div
+                class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1 paddingTop15&quot;
+                *ngSwitchCase&#x3D;&quot;dfh.SELECT_TYPE&quot;
+              &gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;!-- SWITCH HELP--&gt;
+              &lt;div class&#x3D;&quot;col-md-1 col-xs-1 col-sm-1&quot; *ngSwitchCase&#x3D;&quot;dfh.SWITCH_TYPE&quot;&gt;
+                &lt;a
+                  *ngIf&#x3D;&quot;in.description !&#x3D;&#x3D; &#x27;&#x27;&quot;
+                  popoverTitle&#x3D;&quot;{{ in.label }}&quot;
+                  container&#x3D;&quot;body&quot;
+                  [autoClose]&#x3D;&quot;true&quot;
+                  ngbPopover&#x3D;&quot;{{ in.description }}&quot;
+                &gt;&lt;i class&#x3D;&quot;las la-info-circle colorAzul&quot;&gt;&lt;/i
+                &gt;&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;h5 *ngIf&#x3D;&quot;in.errorMessage&quot; class&#x3D;&quot;colorRojo&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-exclamation-circle  espDer5&quot;&gt;&lt;/i&gt;{{in.errorMessage | translate}}&lt;/h5&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/mat-step&gt;
+  &lt;/mat-vertical-stepper&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dynamic-form.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="dynamicForm">  <mat-vertical-stepper [linear]="false">    <mat-step *ngFor="let section of dynamicForm.sections; let is = index" [completed]="isComplete">      <ng-template matStepLabel>{{ section.label }} </ng-template>      <div class="row paddingTop15">        <div          style="display: contents"          *ngFor="let in of section.inputs; let ii = index"        >          <div [ngSwitch]="in.type" class="col-md-12" *ngIf="in.visible">            <div class="row">              <div class="col-md-{{ in.width - 1 }} col-xs-{{ in.width - 1 }} col-sm-{{ in.width - 1 }}"                   [ngClass]="{\'dynamicErrorBorder\': in.errorMessage}">                <!-- TEXT FIELD -->                <mat-form-field                  class="example-full-width"                  *ngSwitchCase="dfh.TEXT_TYPE"                >                  <!--<mat-label>{{in.label}}</mat-label>-->                  <input                    matInput                    [(ngModel)]="in.value"                    name="{{ in.name }}"                    required="{{ in.required }}"                    disabled="{{ disabled || !in.enabled }}"                    (focusout)="evaluateConditions(in.name)"                    placeholder="{{ in.label }}"                  />                  <!--<h5 *ngIf="in.description">{{in.description}} hola</h5>-->                </mat-form-field>                <!-- TEXT AREA FIELD -->                <mat-form-field                  class="example-full-width paddingTop5"                  *ngSwitchCase="dfh.TEXT_AREA_TYPE"                >                  <!--<mat-label>{{ in.label }}</mat-label>                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">                    {{ in.description }}                  </h5>-->                  <textarea                    matInput                    type="text"                    required="{{ in.required }}"                    placeholder="{{ in.label }}"                    class="example-full-width"                    [(ngModel)]="in.value"                    name="{{ in.name }}"                    disabled="{{ disabled || !in.enabled }}"                    (focusout)="evaluateConditions(in.name)"                  ></textarea>                </mat-form-field>                <!-- NUMBER FIELD -->                <mat-form-field                  class="example-full-width paddingTop5"                  *ngSwitchCase="dfh.NUMBER_TYPE"                >                  <!-- <mat-label>{{ in.label }}</mat-label>                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">                    {{ in.description }}                  </h5>-->                  <input                    matInput                    [(ngModel)]="in.value"                    required="{{ in.required }}"                    type="number"                    placeholder="{{ in.label }}"                    name="{{ in.name }}"                    disabled="{{ disabled || !in.enabled }}"                    (focusout)="evaluateConditions(in.name)"                  />                </mat-form-field>                <!-- DATEPICKER FIELD -->                <mat-form-field                  class="example-full-width paddingTop5"                  *ngSwitchCase="dfh.DATE_TYPE"                >                  <!--<mat-label>{{ in.label }}</mat-label>                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">                    {{ in.description }}                  </h5>-->                  <input                    matInput                    placeholder="{{ in.label }}"                    [matDatepicker]="dynamicPicker"                    [(ngModel)]="in.value"                    required="{{ in.required }}"                    [attr.id]="dtPicker + is + ii"                    name="{{ in.name }}"                    disabled="{{ disabled || !in.enabled }}"                    (dateChange)="evaluateConditions(in.name)"                  />                  <mat-datepicker-toggle                    matSuffix                    [for]="dynamicPicker"                  ></mat-datepicker-toggle>                  <mat-datepicker #dynamicPicker></mat-datepicker>                </mat-form-field>                <!-- RADIO GROUP FIELD -->                <mat-label *ngSwitchCase="dfh.RADIO_TYPE" class="espDer15 paddingTop10">{{ in.label }}</mat-label>                <mat-radio-group                  [(ngModel)]="in.value"                  required="{{ in.required }}"                  name="{{ in.name }}"                  *ngSwitchCase="dfh.RADIO_TYPE"                  (change)="evaluateConditions(in.name)"                >                  <!--   <mat-label class="espDer5">{{ in.label }}</mat-label>                 <h5                    *ngIf="in.description"                    class="paddingTop10 colorGris espDer5"                  >                    {{ in.description }}                  </h5>-->                  <mat-radio-button                    class="espDer10"                    *ngFor="let inOption of in.options"                    disabled="{{ disabled || !in.enabled }}"                    [value]="inOption.name"                  >{{ inOption.label }}</mat-radio-button                  >                </mat-radio-group>                <!-- SELECT FIELD -->                <mat-form-field                  class="example-full-width paddingTop5"                  *ngSwitchCase="dfh.SELECT_TYPE"                >                  <mat-label>{{ in.label }}</mat-label>                  <!-- <h5 *ngIf="in.description" class="paddingTop10 colorGris">                    {{ in.description }}                  </h5>-->                  <mat-select                    [(ngModel)]="in.value"                    required="{{ in.required }}"                    name="{{ in.name }}"                    disabled="{{ disabled || !in.enabled }}"                    (selectionChange)="evaluateConditions(in.name)"                  >                    <mat-option                      *ngFor="let inOption of in.options"                      [value]="inOption.name"                    >                      {{ inOption.label }}                    </mat-option>                  </mat-select>                </mat-form-field>                <!-- CHECKBOX FIELD -->                <section                  class="example-full-width paddingTop5"                  *ngSwitchCase="dfh.CHECKBOX_TYPE"                >                  <!--<mat-label class="espDer5">{{ in.label }}</mat-label>                  <h5                    *ngIf="in.description"                    class="paddingTop10 colorGris espDer5"                  >                    {{ in.description }}                  </h5>-->                  <mat-checkbox                    class="example-margin noCkeck espDer10"                    *ngFor="let inOption of in.options"                    [(ngModel)]="inOption.checked"                    required="{{ in.required }}"                    disabled="{{ disabled || !in.enabled }}"                    (change)="evaluateCheckConditions(in)"                  >{{ inOption.label }}</mat-checkbox                  >                </section>                <!-- SWITCH FIELD -->                <div *ngSwitchCase="dfh.SWITCH_TYPE">                  <mat-slide-toggle                    [(ngModel)]="in.value"                    required="{{ in.required }}"                    name="{{ in.name }}"                    disabled="{{ disabled || !in.enabled }}"                    class="noCkeck"                    (change)="evaluateConditions(in.name)"                  >{{ in.label }}</mat-slide-toggle                  >                  <!-- <h5 *ngIf="in.description" class="paddingTop10 colorGris">                    {{ in.description }}                  </h5>-->                </div>                <!-- DEFAULT FIELD -->                <div *ngSwitchDefault>                  {{ "label.typeNotsuported" | translate }}: Input:                  {{ in.type }} | Name: {{ in.name }}                </div>              </div>              <!-- TEXT FIELD HELP-->              <div class="col-md-1col-xs-1 col-sm-1 paddingTop15" *ngSwitchCase="dfh.TEXT_TYPE">                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- TEXT AREA HELP-->              <div                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"                *ngSwitchCase="dfh.TEXT_AREA_TYPE"              >                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- NUMBER HELP-->              <div                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"                *ngSwitchCase="dfh.NUMBER_TYPE"              >                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- DATE HELP-->              <div class="col-md-1 col-xs-1 col-sm-1 paddingTop15" *ngSwitchCase="dfh.DATE_TYPE">                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- RADIO HELP-->              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.RADIO_TYPE">                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- SELECT HELP-->              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.CHECKBOX_TYPE">                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- CHECKBOX HELP-->              <div                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"                *ngSwitchCase="dfh.SELECT_TYPE"              >                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>              <!-- SWITCH HELP-->              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.SWITCH_TYPE">                <a                  *ngIf="in.description !== \'\'"                  popoverTitle="{{ in.label }}"                  container="body"                  [autoClose]="true"                  ngbPopover="{{ in.description }}"                ><i class="las la-info-circle colorAzul"></i                ></a>              </div>            </div>          </div>          <h5 *ngIf="in.errorMessage" class="colorRojo">            <i class="las la-exclamation-circle  espDer5"></i>{{in.errorMessage | translate}}</h5>        </div>      </div>    </mat-step>  </mat-vertical-stepper></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'DynamicFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DynamicFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

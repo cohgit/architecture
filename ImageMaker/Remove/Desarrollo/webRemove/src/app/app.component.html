@@ -1,0 +1,35 @@
+<div class="px-0" role="main">
+  <mat-sidenav-container
+    class="example-sidenav-container"
+    (backdropClick)="close(sidenav)"
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
+    hasBackdrop
+  >
+    <mat-sidenav
+      #sidenav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [position]="'end'"
+      (keydown.escape)="close(sidenav)"
+      disableClose
+      [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <div  *ngIf="!isOutside">
+        <div class="sidebar sidebar-custom"
+             data-color="white"
+             data-active-color="danger">
+          <app-sidebar [sidenav]="sidenav"></app-sidebar>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="fullHeight">
+        <app-navbar [sidenav]="sidenav" *ngIf="!isOutside"></app-navbar>
+        <div role="main" [ngClass]="!isOutside ? 'container-fluid' : 'px-0'">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<ngx-ui-loader [loaderId]="'external-loader'"></ngx-ui-loader>

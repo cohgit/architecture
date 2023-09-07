@@ -1,0 +1,260 @@
+<div class="container-fluid paddingTop15">
+  <mat-expansion-panel expanded>
+    <div class="container-fluid paddingTop15">
+      <mat-accordion multi>
+        <mat-expansion-panel [expanded]="expandBox">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="las la-sort-amount-down colorSecundario espDer5"></i>
+              <span *ngIf="isTransform">{{
+                "title.dashboard.remove" | translate
+              }}</span>
+              <span *ngIf="!isTransform">{{
+                "title.dashboard.url" | translate
+              }}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <app-transform-section
+            *ngIf="dashboardData?.v2?.removeData && scannerInfo"
+            [data]="dashboardData?.v2?.removeData"
+            [scannerInfo]="scannerInfo"
+            [totalSnipGoal]="totalSnipGoal"
+            [isImpulse]="isFalse"
+            [plansGoal]="plansGoal"
+          ></app-transform-section>
+
+          <div class="col-md-12" *ngIf="!dashboardData?.v2?.removeData">
+            <p class="paddingTop5">
+              {{ "error.not_found_results" | translate }}
+            </p>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          *ngIf="dashboardData?.v2?.impulseData"
+          [expanded]="expandBox"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="las la-sort-amount-up-alt colorSecundario espDer5"></i>
+              {{ "title.dashboard.impulse" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <app-transform-section
+            *ngIf="dashboardData?.v2?.impulseData && scannerInfo"
+            [data]="dashboardData?.v2?.impulseData"
+            [scannerInfo]="scannerInfo"
+            [totalSnipGoal]="totalSnipGoal"
+            [isImpulse]="istrue"
+            [plansGoal]="plansGoal"
+          ></app-transform-section>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="expandBox">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="las la-binoculars colorSecundario espDer5"></i>
+              {{ "title.dashboard.visbility_keywords" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <!-- Historic tracking words results widget-->
+          <div class="row">
+            <div class="col-md-12">
+              <a
+                popoverTitle=" {{ 'tittle.historic.trackingword' | translate }}"
+                container="body"
+                [autoClose]="true"
+                ngbPopover="{{ 'message.historic.trackingword' | translate }}"
+                ><i class="las la-info-circle colorAzul espDer5"></i
+              ></a>
+              <strong>{{ "tittle.historic.trackingword" | translate }}</strong>
+            </div>
+          </div>
+
+          <app-keyword-table
+            [content]="dashboardData?.v2?.keywordsByTW"
+            [isOneShot]="isOneShot"
+            [scannerInfo]="scannerInfo"
+            [tittle]="'label.scanner.tracking'"
+          ></app-keyword-table>
+          <hr />
+          <div class="row">
+            <div class="col-md-12">
+              <a
+                popoverTitle=" {{ 'tittle.historic.url' | translate }}"
+                container="body"
+                [autoClose]="true"
+                ngbPopover="{{ 'message.historic.url' | translate }}"
+                ><i class="las la-info-circle colorAzul espDer5"></i
+              ></a>
+              <strong>{{ "tittle.historic.url" | translate }}</strong>
+            </div>
+          </div>
+          <!-- Historic Results URL results widget-->
+          <app-keyword-table
+            [content]="dashboardData?.v2?.keywordsByURL"
+            [scannerInfo]="scannerInfo"
+            [isOneShot]="isOneShot"
+            [tittle]="'label.shorten_url'"
+          ></app-keyword-table>
+
+          <div class="row" *ngIf="isTransform">
+            <div class="col-md-12">
+              <a
+                popoverTitle=" {{ 'tittle.keywords_impulse' | translate }}"
+                container="body"
+                [autoClose]="true"
+                ngbPopover="{{ 'message.keywords_impulse' | translate }}"
+                ><i class="las la-info-circle colorAzul espDer5"></i
+              ></a>
+              <strong>{{ "tittle.keywords_impulse" | translate }}</strong>
+            </div>
+          </div>
+          <!-- Historic Results Impulse-->
+          <app-keyword-table
+            [content]="dashboardData?.v2?.keywordsByImpulse"
+            *ngIf="isTransform"
+            [scannerInfo]="scannerInfo"
+            [tittle]="'label.scanner.tracking'"
+          ></app-keyword-table>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="expandBox">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="las la-chart-pie colorSecundario espDer5"></i>
+              {{ "title.dashboard.graps" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <!-- Pie graphs feelings widget-->
+            <div class="col-md-4 col-sm-12">
+              <!-- Pie graphs feelings widget help-->
+              <a
+                popoverTitle=" {{ 'label.scanner.dash.feelings' | translate }}"
+                container="body"
+                [autoClose]="true"
+                ngbPopover="{{ 'help.feeling' | translate }}"
+                ><i class="las la-info-circle colorAzul"></i
+              ></a>
+              {{ "label.scanner.dash.feelings" | translate }}
+
+              <div
+                #containerPie
+                class="centrado row height400 margin8 paddingBottom20"
+                *ngIf="
+                  dashboardData?.v2?.graphs?.feelingPie &&
+                  dashboardData?.v2?.graphs?.feelingPie.length !== 0
+                "
+              >
+                <ngx-charts-pie-chart
+                  [view]="[containerPie.offsetWidth, 360]"
+                  [scheme]="colorSchemeFeelings"
+                  [results]="dashboardData.v2.graphs.feelingPie"
+                  [gradient]="istrue"
+                  [doughnut]="istrue"
+                  [legend]="istrue"
+                  [legendPosition]="legendBelow"
+                  [legendTitle]="legendLabel"
+                >
+                </ngx-charts-pie-chart>
+              </div>
+              <div
+                class="col-md-12"
+                *ngIf="
+                  !dashboardData?.v2?.graphs?.feelingPie ||
+                  dashboardData?.v2?.graphs?.feelingPie.length === 0
+                "
+              >
+                <p class="paddingTop5">
+                  {{ "error.not_found_results" | translate }}
+                </p>
+              </div>
+            </div>
+            <!-- Bars graphs feelings widget-->
+            <div class="col-md-8 col-sm-12">
+              <a
+                popoverTitle=" {{ 'tittle.feelin_by_keywords' | translate }}"
+                container="body"
+                [autoClose]="true"
+                ngbPopover="{{ 'message.feelin_by_keywords' | translate }}"
+                ><i class="las la-info-circle colorAzul"></i
+              ></a>
+              {{ "tittle.feelin_by_keywords" | translate }}
+              <div
+                #containerBar
+                class="centrado row height400 margin8 paddingBottom20"
+                *ngIf="
+                  dashboardData?.v2?.graphs?.keywordBar &&
+                  dashboardData?.v2?.graphs?.keywordBar.length !== 0
+                "
+              >
+                <ngx-charts-bar-vertical-stacked
+                  [view]="[containerBar.offsetWidth, 360]"
+                  [scheme]="colorSchemeFeelings"
+                  [results]="dashboardData.v2.graphs.keywordBar"
+                  [gradient]="isFalse"
+                  [yAxis]="isFalse"
+                  [xAxis]="istrue"
+                  [legend]="isFalse"
+                  [showXAxisLabel]="istrue"
+                >
+                </ngx-charts-bar-vertical-stacked>
+              </div>
+              <div
+                class="col-md-12"
+                *ngIf="
+                  !dashboardData?.v2?.graphs?.keywordBar ||
+                  dashboardData?.v2?.graphs?.keywordBar === 0
+                "
+              >
+                <p class="paddingTop5">
+                  {{ "error.not_found_results" | translate }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="expandBox" *ngIf="!isOneShot">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="las la-comment-medical colorSecundario espDer5"></i>
+              {{ "tittle.new_content" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <app-alert-sections
+            [content]="dashboardData?.v2?.alerts?.new"
+            [scannerInfo]="scannerInfo"
+          ></app-alert-sections>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="expandBox">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i
+                class="las la-exclamation-triangle colorSecundario espDer5"
+              ></i>
+              {{ "tittle.negative_content" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <app-alert-sections
+            [content]="dashboardData?.v2?.alerts?.negative"
+            [scannerInfo]="scannerInfo"
+            [isOneShot]="isOneShot"
+          ></app-alert-sections>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </mat-expansion-panel>
+</div>
+<div class="container-fluid">
+  <div class="col-12 paddingBottom50 paddingTop25 centrado">
+    <button (click)="utilService.back()" class="secondLevelButton espDer15">
+      <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}
+    </button>
+  </div>
+</div>

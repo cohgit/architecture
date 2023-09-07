@@ -1,0 +1,60 @@
+<div class="row">
+
+  <div class="col-md-12 col-sm-12 filterHeight">
+    <div class="user_card  scale-in-bottom marginTop150 padding20">
+      <div class="d-flex justify-content-center">
+        <div class="brand_logo_container centrado">
+          <!--<i class="las la-users brand_logo fa-3x colorBlanco"></i>-->
+          <i class="las la-envelope fa-5x colorSecundario"> </i>
+        </div>
+      </div>
+
+
+      <div class="row ">
+        <div class="alinearDerecha paddingTop15">
+          <div class="col-md-6 ">
+            <mat-form-field class="ng-autocomplete">
+              <mat-label><i class="las la-language fa-2x"></i></mat-label>
+              <mat-select [(ngModel)]="language" (selectionChange)="changeLanguage()">
+                <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+                  {{'lang.' + l | translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+      </div>
+      <div class="row centrado padding20">
+        <div class="col-md-12" *ngIf="!success && !error">
+          <h3>{{'message.verified_email' | translate}}</h3>
+        </div>
+        <div class="col-md-12">
+
+          <h1 class="colorPrincipal">{{ message | translate}}</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row centrado padding20">
+        <a routerLink="/client/login">{{'message.go_login' | translate}}</a>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+<div class="area">
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

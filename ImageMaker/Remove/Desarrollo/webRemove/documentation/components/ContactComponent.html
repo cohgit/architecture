@@ -1,0 +1,1127 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ContactComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/site/contact/contact.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-contact</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./contact.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./contact.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkParams" >checkParams</a>
+                            </li>
+                            <li>
+                                <a href="#contact" >contact</a>
+                            </li>
+                            <li>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                <a href="#sendContact" >sendContact</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, dialog: MatDialog, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, worpressService: <a href="../injectables/WordpressApiService.html" target="_self">WordpressApiService</a>, externalServices: <a href="../injectables/XternalCommonService.html" target="_self">XternalCommonService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>contact in landing page</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>worpressService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WordpressApiService.html" target="_self" >WordpressApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>externalServices</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/XternalCommonService.html" target="_self" >XternalCommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="50"
+                            class="link-to-prism">src/app/pages/site/contact/contact.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, componente: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="62"
+                            class="link-to-prism">src/app/pages/site/contact/contact.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> function to open modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>componente</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendContact"></a>
+                    <span class="name">
+                        <span ><b>sendContact</b></span>
+                        <a href="#sendContact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendContact(form: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>, tittle: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="78"
+                            class="link-to-prism">src/app/pages/site/contact/contact.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>send email</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tittle</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkParams"></a>
+                    <span class="name">
+                        <span ><b>checkParams</b></span>
+                        <a href="#checkParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contact"></a>
+                    <span class="name">
+                        <span ><b>contact</b></span>
+                        <a href="#contact"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/pages/site/contact/contact.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit, Renderer2} from &#x27;@angular/core&#x27;;
+import {NgForm} from &#x27;@angular/forms&#x27;;
+import {MatDialog} from &#x27;@angular/material/dialog&#x27;;
+import {ActivatedRoute, Router} from &#x27;@angular/router&#x27;;
+import {TranslateHelperService} from &#x27;src/app/helpers/translate-helper.service&#x27;;
+import {UtilService} from &#x27;src/app/helpers/util.service&#x27;;
+import {WordpressApiService} from &#x27;src/app/services/wordpress-api.service&#x27;;
+import {XternalCommonService} from &#x27;src/app/services/xternal-common.service&#x27;;
+
+@Component({
+  selector: &#x27;app-contact&#x27;,
+  templateUrl: &#x27;./contact.component.html&#x27;,
+  styleUrls: [&#x27;./contact.component.css&#x27;]
+})
+export class ContactComponent implements OnInit {
+
+  language: string;
+  checkParams: any &#x3D; {};
+  contact: any &#x3D; {};
+
+  /**
+   * contact in landing page
+   * @param translateHelper
+   * @param renderer
+   * @param activatedRoute
+   * @param router
+   * @param dialog
+   * @param utilService
+   * @param worpressService
+   * @param externalServices
+   */
+  constructor(
+    public translateHelper: TranslateHelperService,
+    private renderer: Renderer2,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private dialog: MatDialog,
+    public utilService: UtilService,
+    private worpressService: WordpressApiService,
+    private externalServices: XternalCommonService
+  ) {
+    this.language &#x3D; translateHelper.getTransLanguage();
+    this.activatedRoute.data.subscribe((data) &#x3D;&gt; {
+      this.checkParams &#x3D; data;
+    });
+
+    this.renderer.addClass(document.body, this.checkParams.class);
+  }
+
+  ngOnInit(): void {
+
+  }
+
+
+  /**
+   *  function to open modal
+   * @param isNuevo
+   * @param isEditable
+   * @param plan
+   * @param componente
+   */
+  openModal(data: any, componente: any): void {
+    const dialogRef &#x3D; this.dialog.open(componente, {
+      closeOnNavigation: true,
+      disableClose: true,
+      width: &#x27;90%&#x27;,
+      data: {
+        info: data,
+      },
+    });
+  }
+
+  /**
+   * send email
+   * @param form
+   * @param tittle
+   */
+  sendContact(form: NgForm, tittle: string): void {
+    let sendForm: any;
+    if (form.valid) {
+      sendForm &#x3D; {
+        &quot;title&quot;: tittle,
+        &quot;atts&quot;: [
+          {&quot;key&quot;: &quot;Nombre del Contacto&quot;, &quot;value&quot;: form.value.name},
+          {&quot;key&quot;: &quot;Email&quot;, &quot;value&quot;: form.value.email},
+          {&quot;key&quot;: &quot;Teléfono&quot;, &quot;value&quot;: form.value.phone},
+          {&quot;key&quot;: &quot;Mensaje&quot;, &quot;value&quot;: form.value.message}
+        ]
+      };
+      this.externalServices.contact(sendForm);
+    }
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid px-0&quot;&gt;
+  &lt;app-header&gt;&lt;/app-header&gt;
+
+  &lt;!--datos de contacto--&gt;
+  &lt;div class&#x3D;&quot;row paddingTop80 backgroundLightGray&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 &quot;&gt;
+      &lt;div class&#x3D;&quot;row &quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-5 padding20&quot;&gt;
+
+          &lt;strong&gt;&lt;p class&#x3D;&quot;fontLanding colorPrincipal&quot;&gt;{{ &quot;label.contact&quot; | translate }}&lt;/p&gt;&lt;/strong&gt;
+
+          &lt;h3&gt;{{ &quot;label.contact_description&quot; | translate }}&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+          &lt;div class&#x3D;&quot;row  centrado&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4 &quot;&gt;
+              &lt;i class&#x3D;&quot;las la-map-marked-alt la-5x colorSecundario&quot;&gt;&lt;/i&gt;
+
+              &lt;h2 class&#x3D;&quot;colorPrincipal boldFont&quot;&gt;
+                {{ &quot;label.user.addres&quot; | translate }}
+              &lt;/h2&gt;
+
+              &lt;p&gt;Calle Pensamiento, 27, Madrid.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 &quot;&gt;
+              &lt;i class&#x3D;&quot;las la-phone-volume la-5x colorSecundario&quot;&gt;&lt;/i&gt;
+              &lt;h2 class&#x3D;&quot;colorPrincipal boldFont&quot;&gt;
+                {{ &quot;label.call_us&quot; | translate }}
+              &lt;/h2&gt;
+              &lt;a class&#x3D;&quot;nav-link third after&quot; href&#x3D;&quot;tel:+34910442346&quot;&gt;
+                +34 910 442 346
+              &lt;/a&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 &quot;&gt;
+              &lt;i class&#x3D;&quot;las la-envelope-open-text la-5x colorSecundario&quot;&gt;&lt;/i&gt;
+              &lt;h2 class&#x3D;&quot;colorPrincipal boldFont &quot;&gt;
+                {{ &quot;label.email&quot; | translate }}
+              &lt;/h2&gt;
+
+              &lt;a class&#x3D;&quot;nav-link third after&quot; href&#x3D;&quot;mailto:contacto@removegroup.com&quot;&gt;
+                contacto@removegroup.com
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;paddingTop80&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;!-- te llamamos--&gt;
+  &lt;div class&#x3D;&quot;row mar  marginTop150&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-4 paddingTop15&quot;&gt;
+      &lt;a href&#x3D;&quot;tel:+34910442346&quot;
+         class&#x3D;&quot;
+          glow-on-hover
+          backgroundSecundary
+          padding15
+          fullWidth
+          centrado
+          boldFont
+        &quot;
+      &gt;
+        {{ &quot;label.call_us&quot; | translate }}&lt;/a
+      &gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-6 &quot;&gt;
+      &lt;div class&#x3D;&quot;row &quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;h4 class&#x3D;&quot;colorSecundario centrado&quot;&gt;&lt;strong&gt;{{&#x27;label.contact_call_us&#x27; | translate}}&lt;/strong&gt;&lt;/h4&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row &quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;h1 class&#x3D;&quot;colorPrincipal centrado&quot;&gt;{{ &quot;label.contact_call_us_description&quot; | translate }}&lt;/h1&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;marginTop150&quot;&gt;&lt;/div&gt;
+  &lt;!--mapas y formulario--&gt;
+  &lt;div class&#x3D;&quot;row backgroundLightGray paddingTop40&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 &quot;&gt;
+      &lt;div class&#x3D;&quot;row padding30&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-5 padding15 centrado&quot;&gt;
+          &lt;iframe
+            src&#x3D;&quot;https://www.google.com/maps/embed?pb&#x3D;!1m14!1m8!1m3!1d24285.81127184559!2d-3.6954029999999998!3d40.459192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b97529364ee6e2!2sRemove%20Group!5e0!3m2!1ses!2ses!4v1638474352370!5m2!1ses!2ses&quot;
+            width&#x3D;&quot;600&quot; height&#x3D;&quot;450&quot; style&#x3D;&quot;border:0;&quot; allowfullscreen&#x3D;&quot;&quot; loading&#x3D;&quot;lazy&quot;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-5 padding15&quot;&gt;
+          &lt;form #contactForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;(contactForm.form.valid)&quot;&gt;
+            &lt;div class&#x3D;&quot;row padding10&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                  &lt;input
+                    [(ngModel)]&#x3D;&quot;contact.name&quot;
+                    name&#x3D;&quot;name&quot;
+                    #nameFirst&#x3D;&quot;ngModel&quot;
+                    matInput
+                    required
+                    placeholder&#x3D;&quot;{{ &#x27;label.name&#x27; | translate }} &quot;
+                    type&#x3D;&quot;text&quot;
+                  /&gt;
+                &lt;/mat-form-field&gt;
+                &lt;div *ngIf&#x3D;&quot;nameFirst.errors?.required &amp;&amp; contactForm.submitted&quot;&gt;
+                  &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;error.required&quot; | translate }}
+                  &lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12 paddingTop15&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                  &lt;input
+                    [(ngModel)]&#x3D;&quot;contact.email&quot;
+                    name&#x3D;&quot;email&quot;
+                    matInput
+                    #emailFirst&#x3D;&quot;ngModel&quot;
+                    pattern&#x3D;&quot;[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$&quot;
+                    required
+                    placeholder&#x3D;&quot;{{ &#x27;label.email&#x27; | translate }} &quot;
+                    type&#x3D;&quot;email&quot;
+                  /&gt;
+                &lt;/mat-form-field&gt;
+                &lt;div *ngIf&#x3D;&quot;emailFirst.errors?.pattern &amp;&amp; contactForm.submitted&quot;&gt;
+                  &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;error.invalid.email&quot; | translate }}
+                  &lt;/h5&gt;
+                &lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;emailFirst.errors?.required &amp;&amp; contactForm.submitted&quot;&gt;
+                  &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;error.required&quot; | translate }}
+                  &lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12 paddingTop15&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                  &lt;input
+                    [(ngModel)]&#x3D;&quot;contact.phone&quot;
+                    name&#x3D;&quot;phone&quot;
+                    matInput
+                    #phoneFirst&#x3D;&quot;ngModel&quot;
+                    required
+                    placeholder&#x3D;&quot;{{ &#x27;label.phone&#x27; | translate }} &quot;
+                    type&#x3D;&quot;text&quot;
+                  /&gt;
+                &lt;/mat-form-field&gt;
+                &lt;div *ngIf&#x3D;&quot;phoneFirst.errors?.required &amp;&amp; contactForm.submitted&quot;&gt;
+                  &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;error.required&quot; | translate }}
+                  &lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12 paddingTop15&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                  &lt;textarea
+                    matInput
+                    placeholder&#x3D;&quot;{{ &#x27;label.message&#x27; | translate }}&quot;
+                    [(ngModel)]&#x3D;&quot;contact.message&quot;
+                    name&#x3D;&quot;message&quot;
+                  &gt;&lt;/textarea&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row padding10&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-12 paddingTop15&quot;&gt;
+                &lt;mat-checkbox
+                  class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+                  [(ngModel)]&#x3D;&quot;contact.confirm&quot;
+                  required #confirmFirst&#x3D;&quot;ngModel&quot;
+                  name&#x3D;&quot;confirm&quot;
+                &gt;{{ &quot;label.confirm_privacy&quot; | translate }}:
+                &lt;/mat-checkbox&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12 colorSecundario&quot;&gt;
+                &lt;a class&#x3D;&quot;third after&quot; (click)&#x3D;&quot;utilService.openPolitics()&quot;
+                &gt;&lt;strong&gt;{{ &quot;label.privacy_politics&quot; | translate }}&lt;/strong&gt;&lt;/a
+                &gt;
+              &lt;/div&gt;
+              &lt;div *ngIf&#x3D;&quot;confirmFirst.errors?.required &amp;&amp; contactForm.submitted&quot;&gt;
+                &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                  &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                  &gt;{{ &quot;message.error.privacy&quot; | translate }}
+                &lt;/h5&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12 &quot;&gt;
+                &lt;button
+                  (click)&#x3D;&quot;sendContact(contactForm, &#x27;Formulario de Página de Contacto&#x27;)&quot;
+                  type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;
+                    glow-on-hover
+                    backgroundSecundary
+                    padding15
+                    fullWidth
+                    centrado
+                    boldFont
+                  &quot;
+                &gt;
+                  {{ &quot;button.send&quot; | translate }}
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-1&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;row paddingBottom20&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!--footer--&gt;
+  &lt;app-footer&gt;&lt;/app-footer&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./contact.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid px-0">  <app-header></app-header>  <!--datos de contacto-->  <div class="row paddingTop80 backgroundLightGray">    <div class="col-md-12 ">      <div class="row ">        <div class="col-md-1"></div>        <div class="col-md-5 padding20">          <strong><p class="fontLanding colorPrincipal">{{ "label.contact" | translate }}</p></strong>          <h3>{{ "label.contact_description" | translate }}</h3>        </div>        <div class="col-md-5">          <div class="row  centrado">            <div class="col-md-4 ">              <i class="las la-map-marked-alt la-5x colorSecundario"></i>              <h2 class="colorPrincipal boldFont">                {{ "label.user.addres" | translate }}              </h2>              <p>Calle Pensamiento, 27, Madrid.</p>            </div>            <div class="col-md-4 ">              <i class="las la-phone-volume la-5x colorSecundario"></i>              <h2 class="colorPrincipal boldFont">                {{ "label.call_us" | translate }}              </h2>              <a class="nav-link third after" href="tel:+34910442346">                +34 910 442 346              </a>            </div>            <div class="col-md-4 ">              <i class="las la-envelope-open-text la-5x colorSecundario"></i>              <h2 class="colorPrincipal boldFont ">                {{ "label.email" | translate }}              </h2>              <a class="nav-link third after" href="mailto:contacto@removegroup.com">                contacto@removegroup.com              </a>            </div>          </div>        </div>        <div class="col-md-1"></div>      </div>      <div class="paddingTop80"></div>    </div>  </div>  <!-- te llamamos-->  <div class="row mar  marginTop150">    <div class="col-md-1"></div>    <div class="col-md-4 paddingTop15">      <a href="tel:+34910442346"         class="          glow-on-hover          backgroundSecundary          padding15          fullWidth          centrado          boldFont        "      >        {{ "label.call_us" | translate }}</a      >    </div>    <div class="col-md-6 ">      <div class="row ">        <div class="col-md-12">          <h4 class="colorSecundario centrado"><strong>{{\'label.contact_call_us\' | translate}}</strong></h4>        </div>      </div>      <div class="row ">        <div class="col-md-12">          <h1 class="colorPrincipal centrado">{{ "label.contact_call_us_description" | translate }}</h1>        </div>      </div>    </div>    <div class="col-md-1"></div>  </div>  <div class="marginTop150"></div>  <!--mapas y formulario-->  <div class="row backgroundLightGray paddingTop40">    <div class="col-md-12 ">      <div class="row padding30">        <div class="col-md-1"></div>        <div class="col-md-5 padding15 centrado">          <iframe            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24285.81127184559!2d-3.6954029999999998!3d40.459192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b97529364ee6e2!2sRemove%20Group!5e0!3m2!1ses!2ses!4v1638474352370!5m2!1ses!2ses"            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>        <div class="col-md-5 padding15">          <form #contactForm="ngForm" (ngSubmit)="(contactForm.form.valid)">            <div class="row padding10">              <div class="col-md-12">                <mat-form-field class="example-full-width">                  <input                    [(ngModel)]="contact.name"                    name="name"                    #nameFirst="ngModel"                    matInput                    required                    placeholder="{{ \'label.name\' | translate }} "                    type="text"                  />                </mat-form-field>                <div *ngIf="nameFirst.errors?.required && contactForm.submitted">                  <h5 class="colorRojo">                    <i class="las la-exclamation-circle espDer5"></i                    >{{ "error.required" | translate }}                  </h5>                </div>              </div>              <div class="col-md-12 paddingTop15">                <mat-form-field class="example-full-width">                  <input                    [(ngModel)]="contact.email"                    name="email"                    matInput                    #emailFirst="ngModel"                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"                    required                    placeholder="{{ \'label.email\' | translate }} "                    type="email"                  />                </mat-form-field>                <div *ngIf="emailFirst.errors?.pattern && contactForm.submitted">                  <h5 class="colorRojo">                    <i class="las la-exclamation-circle espDer5"></i                    >{{ "error.invalid.email" | translate }}                  </h5>                </div>                <div *ngIf="emailFirst.errors?.required && contactForm.submitted">                  <h5 class="colorRojo">                    <i class="las la-exclamation-circle espDer5"></i                    >{{ "error.required" | translate }}                  </h5>                </div>              </div>              <div class="col-md-12 paddingTop15">                <mat-form-field class="example-full-width">                  <input                    [(ngModel)]="contact.phone"                    name="phone"                    matInput                    #phoneFirst="ngModel"                    required                    placeholder="{{ \'label.phone\' | translate }} "                    type="text"                  />                </mat-form-field>                <div *ngIf="phoneFirst.errors?.required && contactForm.submitted">                  <h5 class="colorRojo">                    <i class="las la-exclamation-circle espDer5"></i                    >{{ "error.required" | translate }}                  </h5>                </div>              </div>              <div class="col-md-12 paddingTop15">                <mat-form-field class="example-full-width">                  <textarea                    matInput                    placeholder="{{ \'label.message\' | translate }}"                    [(ngModel)]="contact.message"                    name="message"                  ></textarea>                </mat-form-field>              </div>            </div>            <div class="row padding10">              <div class="col-md-12 paddingTop15">                <mat-checkbox                  class="example-margin espDer15 noCkeck"                  [(ngModel)]="contact.confirm"                  required #confirmFirst="ngModel"                  name="confirm"                >{{ "label.confirm_privacy" | translate }}:                </mat-checkbox>              </div>              <div class="col-md-12 colorSecundario">                <a class="third after" (click)="utilService.openPolitics()"                ><strong>{{ "label.privacy_politics" | translate }}</strong></a                >              </div>              <div *ngIf="confirmFirst.errors?.required && contactForm.submitted">                <h5 class="colorRojo">                  <i class="las la-exclamation-circle espDer5"></i                  >{{ "message.error.privacy" | translate }}                </h5>              </div>              <div class="col-md-12 ">                <button                  (click)="sendContact(contactForm, \'Formulario de Página de Contacto\')"                  type="submit"                  class="                    glow-on-hover                    backgroundSecundary                    padding15                    fullWidth                    centrado                    boldFont                  "                >                  {{ "button.send" | translate }}                </button>              </div>            </div>          </form>        </div>        <div class="col-md-1"></div>      </div>      <div class="row paddingBottom20"></div>    </div>  </div>  <!--footer-->  <app-footer></app-footer></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ContactComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ContactComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

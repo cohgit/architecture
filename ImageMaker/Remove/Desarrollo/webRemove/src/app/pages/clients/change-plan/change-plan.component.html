@@ -1,0 +1,110 @@
+<form #planForm="ngForm" (ngSubmit)="planForm.form.valid" >
+  <div class="container-fluid padding20">
+    <mat-accordion multi>
+      <mat-expansion-panel *ngFor="let plan of infoPlan">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{'title.plan_info' | translate }}: {{plan.detail.name}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.name" name="name" matInput
+                     placeholder="{{'label.name' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.name" name="name" matInput
+                     placeholder="{{'label.init_date' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.name" name="name" matInput
+                     placeholder="{{'label.expired_date' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.max_countries" name="max_countries" matInput
+                     placeholder="{{'label.plan.countries' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.max_search_page" name="max_search_page" matInput
+                     placeholder="{{'label.plan.pages' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.max_keywords" name="max_keywords" matInput
+                     placeholder="{{'label.plan.keywords' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+              <mat-label>{{'label.scanner.advance.sections' | translate}}</mat-label>
+              <mat-select multiple [(ngModel)]="plan.detail.sectionsToSearch" name="search_type"
+                          [compareWith]="utilService.compareByCode" disabled>
+                <mat-option *ngFor="let s of allTypes" [value]="s.code">
+                  {{"list.scanner.type." + s.code | translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      
+      <mat-expansion-panel expanded *ngFor="let plan of infoPlan">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{'title.new_plan' | translate }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-3">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="plan.detail.name" name="name" matInput
+                     placeholder="{{'label.name' | translate}} " disabled>
+            </mat-form-field>
+          </div>
+          <div class="col-md-5">
+            <mat-form-field class="example-full-width">
+              <mat-label>{{'label.plan.suggested' | translate}} </mat-label>
+              <mat-select [(ngModel)]="suggestedPlan" name="suggestedPlan" (selectionChange)="planDetail(suggestedPlan)">
+                <mat-option *ngFor="let plan of allPlans" [value]="plan" >
+                  {{plan.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4 backgorundPrincipal darksShadow padding15 borderRadius10 colorBlanco tracking-in-expand"
+               *ngIf="showDetail">
+            <i class="fa fa-info-circle fa-4x colorAzul floatRight margin10 hideMobile heartbeat"></i>
+            <div class="col-md-9">
+              {{'label.licence.one_shot'| translate}}: {{plan?.limit_credits}}<br>
+              {{'label.licence.monitor'| translate}}:  {{plan?.total_monitor_licenses}}<br>
+              {{'label.licence.transform'| translate}}:  {{plan?.total_transforma_licenses}}<br>
+              {{'label.licence.deindexing'| translate}}:  {{plan?.max_url_to_deindexate}}<br>
+              {{'label.plan.countries' | translate}}: {{detailPlan?.max_countries}}<br>
+              {{'label.plan.keywords' | translate}}: {{detailPlan?.max_keywords}}​<br>
+              {{'label.plan.pages' | translate}}: {{detailPlan?.max_search_page}}<br>
+              {{'label.sections' | translate}}: {{detailPlan?.sections_to_search}}
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</form>
+<div class="row centrado">
+  <button (click)="onConfirmClick(planForm)" class="glow-on-hover espIz15" type="submit"
+          tabindex="1">{{'button.edit' | translate}}</button>
+</div>
+

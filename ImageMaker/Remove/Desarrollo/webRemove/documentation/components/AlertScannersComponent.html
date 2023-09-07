@@ -1,0 +1,1397 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  AlertScannersComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/scanner/alert-scanners/alert-scanners.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-alert-scanners</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./alert-scanners.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./alert-scanners.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#alert" >alert</a>
+                            </li>
+                            <li>
+                                <a href="#all_Keyword" >all_Keyword</a>
+                            </li>
+                            <li>
+                                <a href="#all_Tracking" >all_Tracking</a>
+                            </li>
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#isNew" >isNew</a>
+                            </li>
+                            <li>
+                                <a href="#objectGo" >objectGo</a>
+                            </li>
+                            <li>
+                                <a href="#periot" >periot</a>
+                            </li>
+                            <li>
+                                <a href="#plan" >plan</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate" >translate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#defaultAlert" >defaultAlert</a>
+                            </li>
+                            <li>
+                                <a href="#loadAlarm" >loadAlarm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onConfirmClick" >onConfirmClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, dialogRef: <a href="../classes/Scanner.html" target="_self">MatDialogRef&lt;AlertScannersComponent&gt;</a>, translate: TranslateService, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, alertService: <a href="../injectables/AlertService.html" target="_self">AlertService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Scanner.html" target="_self" >MatDialogRef&lt;AlertScannersComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultAlert"></a>
+                    <span class="name">
+                        <span ><b>defaultAlert</b></span>
+                        <a href="#defaultAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>defaultAlert()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="65"
+                            class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>set default alert value</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadAlarm"></a>
+                    <span class="name">
+                        <span ><b>loadAlarm</b></span>
+                        <a href="#loadAlarm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadAlarm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="85"
+                            class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>load alarm info and load selects</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="55"
+                            class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onConfirmClick"></a>
+                    <span class="name">
+                        <span ><b>onConfirmClick</b></span>
+                        <a href="#onConfirmClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onConfirmClick(al: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="124"
+                            class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>validate form and save / update data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>al</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="alert"></a>
+                    <span class="name">
+                        <span ><b>alert</b></span>
+                        <a href="#alert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    id_scanner: &#x27;&#x27;,
+    periocity: &#x27;daily&#x27;,
+    page_object: &#x27;monitor&#x27;,
+    new_content_detected: false,
+    negative_content_detected: false,
+    displaced_url: false,
+    matching_tracking_word: false,
+    matching_keyword: false,
+    id_tracking: &#x27;&#x27;,
+    tracking_word: &#x27;&#x27;,
+    id_keyword: &#x27;&#x27;,
+    keyword: &#x27;&#x27;,
+    status: true,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="all_Keyword"></a>
+                    <span class="name">
+                        <span ><b>all_Keyword</b></span>
+                        <a href="#all_Keyword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="all_Tracking"></a>
+                    <span class="name">
+                        <span ><b>all_Tracking</b></span>
+                        <a href="#all_Tracking"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNew"></a>
+                    <span class="name">
+                        <span ><b>isNew</b></span>
+                        <a href="#isNew"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objectGo"></a>
+                    <span class="name">
+                        <span ><b>objectGo</b></span>
+                        <a href="#objectGo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="periot"></a>
+                    <span class="name">
+                        <span ><b>periot</b></span>
+                        <a href="#periot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="plan"></a>
+                    <span class="name">
+                        <span ><b>plan</b></span>
+                        <a href="#plan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="39" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translate</b></span>
+                        <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>TranslateService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="46" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="47" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="48" class="link-to-prism">src/app/pages/scanner/alert-scanners/alert-scanners.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, NgForm } from &#x27;@angular/forms&#x27;;
+import { MAT_DIALOG_DATA, MatDialogRef } from &#x27;@angular/material/dialog&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { SessionService } from &#x27;src/app/helpers/session.service&#x27;;
+import { TranslateHelperService } from &#x27;src/app/helpers/translate-helper.service&#x27;;
+import { UtilService } from &#x27;src/app/helpers/util.service&#x27;;
+import { CommonService } from &#x27;src/app/services/common.service&#x27;;
+import { ScannerCommentsService } from &#x27;src/app/services/scanner-comments.service&#x27;;
+import { ScannerService } from &#x27;src/app/services/scanner.service&#x27;;
+import { AlertService } from &#x27;src/app/services/alert.service&#x27;;
+
+@Component({
+  selector: &#x27;app-alert-scanners&#x27;,
+  templateUrl: &#x27;./alert-scanners.component.html&#x27;,
+  styleUrls: [&#x27;./alert-scanners.component.css&#x27;],
+})
+export class AlertScannersComponent implements OnInit {
+  alert &#x3D; {
+    id_scanner: &#x27;&#x27;,
+    periocity: &#x27;daily&#x27;,
+    page_object: &#x27;monitor&#x27;,
+    new_content_detected: false,
+    negative_content_detected: false,
+    displaced_url: false,
+    matching_tracking_word: false,
+    matching_keyword: false,
+    id_tracking: &#x27;&#x27;,
+    tracking_word: &#x27;&#x27;,
+    id_keyword: &#x27;&#x27;,
+    keyword: &#x27;&#x27;,
+    status: true,
+  };
+  all_Keyword &#x3D; [];
+  all_Tracking &#x3D; [];
+  periot &#x3D; [];
+  objectGo &#x3D; [];
+  info: any;
+  plan: any;
+  isNew &#x3D; false;
+  constructor(
+    private formBuilder: FormBuilder,
+    private commonService: CommonService,
+    @Inject(MAT_DIALOG_DATA) private data: any,
+    private dialogRef: MatDialogRef&lt;AlertScannersComponent&gt;,
+    public translate: TranslateService,
+    public translateHelper: TranslateHelperService,
+    public utilService: UtilService,
+    private alertService: AlertService
+  ) {
+    this.info &#x3D; data.info;
+    this.plan &#x3D; data.plan;
+  }
+
+  ngOnInit(): void {
+    // console.log(&#x27;this.info&#x27;, this.info);
+    this.periot &#x3D; [&#x27;daily&#x27;, &#x27;weekly&#x27;];
+    this.objectGo &#x3D; [&#x27;monitor&#x27;, &#x27;target&#x27;];
+    this.loadAlarm();
+  }
+
+  /**
+   * set default alert value
+   */
+  defaultAlert() {
+    this.alert &#x3D; {
+      id_scanner: &#x27;&#x27;,
+      periocity: &#x27;daily&#x27;,
+      page_object: &#x27;monitor&#x27;,
+      new_content_detected: false,
+      negative_content_detected: false,
+      displaced_url: false,
+      matching_tracking_word: false,
+      matching_keyword: false,
+      id_tracking: &#x27;&#x27;,
+      tracking_word: &#x27;&#x27;,
+      id_keyword: &#x27;&#x27;,
+      keyword: &#x27;&#x27;,
+      status: true,
+    };
+  }
+  /**
+   * load alarm info and load selects
+   */
+  loadAlarm() {
+    let temp_kw &#x3D; [];
+    let temp_tw &#x3D; [];
+    this.alertService.get(this.info.id, (response) &#x3D;&gt; {
+      console.log(&#x27;response&#x27;, response);
+
+      if (response.id) {
+        this.alert &#x3D; response;
+        if (response.id_keyword) {
+          temp_kw &#x3D; this.utilService.splitArray(response.id_keyword);
+          this.info.keywords.forEach((kw) &#x3D;&gt; {
+            temp_kw.forEach((idKW) &#x3D;&gt; {
+              if (+idKW &#x3D;&#x3D;&#x3D; kw.id) {
+                this.all_Keyword.push(kw);
+              }
+            });
+          });
+        }
+        if (response.id_tracking) {
+          temp_tw &#x3D; this.utilService.splitArray(response.id_tracking);
+          this.info.justTrackingWords.forEach((tw) &#x3D;&gt; {
+            temp_tw.forEach((idTW) &#x3D;&gt; {
+              if (+idTW &#x3D;&#x3D;&#x3D; tw.id) {
+                this.all_Tracking.push(tw);
+              }
+            });
+          });
+        }
+      } else {
+        this.isNew &#x3D; true;
+        this.defaultAlert();
+      }
+    });
+  }
+
+  /**
+   * validate form and save / update data
+   * @param al
+   */
+  onConfirmClick(al: NgForm) {
+    console.log(&#x27;alert&#x27;, al);
+    let id_alert_tracking_word &#x3D; [];
+    let alert_tw &#x3D; [];
+    let id_keyword &#x3D; [];
+    let alert_kw &#x3D; [];
+    this.alert.id_scanner &#x3D; this.info.id;
+    // It usses to assig de value in id or word of the tacking word, if not checked cleans element
+    if (this.alert.matching_tracking_word) {
+      if (this.all_Tracking.length !&#x3D;&#x3D; 0) {
+        this.all_Tracking.forEach((element) &#x3D;&gt; {
+          id_alert_tracking_word.push(element.id);
+          alert_tw.push(element.word);
+        });
+        this.alert.id_tracking &#x3D; id_alert_tracking_word.toString();
+        this.alert.tracking_word &#x3D; alert_tw.toString();
+      }
+    } else {
+      this.alert.id_tracking &#x3D; &#x27;&#x27;;
+      this.alert.tracking_word &#x3D; &#x27;&#x27;;
+    }
+
+    if (this.alert.matching_keyword) {
+      if (this.all_Keyword.length !&#x3D;&#x3D; 0) {
+        this.all_Keyword.forEach((element) &#x3D;&gt; {
+          id_keyword.push(element.id);
+          alert_kw.push(element.word);
+        });
+      }
+      this.alert.keyword &#x3D; alert_kw.toString();
+      this.alert.id_keyword &#x3D; id_keyword.toString();
+    } else {
+      this.alert.keyword &#x3D; &#x27;&#x27;;
+      this.alert.id_keyword &#x3D; &#x27;&#x27;;
+    }
+
+    // Check if nothing is checked
+    if (
+      !this.alert.new_content_detected &amp;&amp;
+      !this.alert.negative_content_detected &amp;&amp;
+      !this.alert.displaced_url &amp;&amp;
+      !this.alert.matching_tracking_word &amp;&amp;
+      !this.alert.matching_keyword
+    ) {
+      this.utilService.showNotification(&#x27;error.alert_empty&#x27;, &#x27;danger&#x27;);
+    } else {
+      if (
+        (this.alert.matching_tracking_word &amp;&amp;
+          this.alert.tracking_word &#x3D;&#x3D;&#x3D; &#x27;&#x27;) ||
+        (this.alert.matching_keyword &amp;&amp; this.alert.keyword &#x3D;&#x3D;&#x3D; &#x27;&#x27;)
+      ) {
+        this.utilService.showNotification(&#x27;error.alert_empty_check&#x27;, &#x27;danger&#x27;);
+      } else {
+        const data &#x3D; Object.assign(this.alert, al.value);
+        delete data[&#x27;all_Keyword&#x27;];
+        delete data[&#x27;all_Tracking&#x27;];
+        console.log(&#x27;data&#x27;, data);
+        if (this.isNew) {
+          this.alertService.save(data, (response) &#x3D;&gt; {
+            this.dialogRef.close(true);
+          });
+        } else {
+          this.alertService.update(data, (response) &#x3D;&gt; {
+            // this.dialogRef.close(true);
+          });
+        }
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h2 mat-dialog-title&gt;
+  &lt;i class&#x3D;&quot;las la-bell colorGris espDer5&quot;&gt;&lt;/i
+  &gt;{{ &quot;label.alerts-title&quot; | translate }}: {{ info.name }}
+&lt;/h2&gt;
+&lt;div mat-dialog-content&gt;
+  &lt;form #alertForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;(alertForm.form.valid)&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;h3&gt;
+          &lt;strong&gt;{{ &quot;label.alert-period&quot; | translate }}&lt;/strong&gt;
+        &lt;/h3&gt;
+
+        &lt;mat-radio-group
+          aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+          class&#x3D;&quot;example-radio-group&quot;
+          [(ngModel)]&#x3D;&quot;alert.periocity&quot;
+          [ngModelOptions]&#x3D;&quot;{ standalone: true }&quot;
+          name&#x3D;&quot;periocity&quot;
+        &gt;
+          &lt;mat-radio-button
+            class&#x3D;&quot;example-radio-button&quot;
+            *ngFor&#x3D;&quot;let item of periot&quot;
+            [value]&#x3D;&quot;item&quot;
+          &gt;
+            &lt;span class&#x3D;&quot;espDer15&quot;&gt;{{ &quot;label.&quot; + item | translate }} &lt;/span&gt;
+          &lt;/mat-radio-button&gt;
+        &lt;/mat-radio-group&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot; *ngIf&#x3D;&quot;!isNew&quot;&gt;
+        &lt;h3&gt;
+          &lt;strong
+            &gt;{{ &quot;label.alert.status&quot; | translate }}:
+            &lt;i
+              class&#x3D;&quot;las la-calendar-check colorVerde la-2x&quot;
+              title&#x3D;&quot;{{ &#x27;label.alert.active&#x27; | translate }}&quot;
+              *ngIf&#x3D;&quot;alert.status&quot;
+            &gt;&lt;/i&gt;
+            &lt;i
+              class&#x3D;&quot;las la-calendar-times colorRojo la-2x&quot;
+              title&#x3D;&quot;{{ &#x27;label.alert.deactive&#x27; | translate }}&quot;
+              *ngIf&#x3D;&quot;!alert.status&quot;
+            &gt;&lt;/i
+          &gt;&lt;/strong&gt;
+        &lt;/h3&gt;
+
+        &lt;mat-slide-toggle
+          [(ngModel)]&#x3D;&quot;alert.status&quot;
+          name&#x3D;&quot;status&quot;
+          class&#x3D;&quot;noCkeck&quot;
+          &gt;{{ &quot;label.active_deactive&quot; | translate }}&lt;/mat-slide-toggle
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;h3&gt;
+          &lt;strong&gt;{{ &quot;label.alert-goal-title&quot; | translate }}&lt;/strong&gt;
+        &lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-radio-group
+          aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+          class&#x3D;&quot;example-radio-group&quot;
+          [(ngModel)]&#x3D;&quot;alert.page_object&quot;
+          [ngModelOptions]&#x3D;&quot;{ standalone: true }&quot;
+          name&#x3D;&quot;page_object&quot;
+        &gt;
+          &lt;mat-radio-button class&#x3D;&quot;vertical-radio&quot; value&#x3D;&quot;monitor&quot;&gt;
+            &lt;span class&#x3D;&quot;espDer15&quot;&gt;
+              {{ &quot;label.alert-goal-monitor&quot; | translate }} ({{
+                info.configuration.pages
+              }})
+            &lt;/span&gt;
+          &lt;/mat-radio-button&gt;
+          &lt;mat-radio-button
+            *ngIf&#x3D;&quot;info.type &#x3D;&#x3D;&#x3D; &#x27;transform&#x27;&quot;
+            class&#x3D;&quot;vertical-radio&quot;
+            value&#x3D;&quot;target&quot;
+          &gt;
+            &lt;span class&#x3D;&quot;espDer15&quot;&gt;
+              {{ &quot;label.alert-goal-target&quot; | translate }} ({{
+                plan.target_page
+              }})
+            &lt;/span&gt;
+          &lt;/mat-radio-button&gt;
+        &lt;/mat-radio-group&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;h3&gt;
+          &lt;strong&gt;{{ &quot;label.alert-email&quot; | translate }}&lt;/strong&gt;
+        &lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+          [(ngModel)]&#x3D;&quot;alert.new_content_detected&quot;
+          name&#x3D;&quot;new_content_detected&quot;
+          &gt;{{ &quot;label.alert-new&quot; | translate }}
+        &lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+          [(ngModel)]&#x3D;&quot;alert.negative_content_detected&quot;
+          name&#x3D;&quot;negative_content_detected&quot;
+          &gt;{{ &quot;label.alert-negative&quot; | translate }}
+        &lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+          [(ngModel)]&#x3D;&quot;alert.displaced_url&quot;
+          name&#x3D;&quot;displaced_url&quot;
+          &gt;{{ &quot;label.alert-reached&quot; | translate }}
+        &lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+          [(ngModel)]&#x3D;&quot;alert.matching_tracking_word&quot;
+          name&#x3D;&quot;matching_tracking_word&quot;
+          [disabled]&#x3D;&quot;info.justTrackingWords.length &#x3D;&#x3D;&#x3D; 0&quot;
+          &gt;{{ &quot;label.alert-tracking_word&quot; | translate }}
+          &lt;h5 class&#x3D;&quot;colorGris&quot; *ngIf&#x3D;&quot;info.justTrackingWords.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+            {{ &quot;label.no-tracking-word&quot; | translate }}
+          &lt;/h5&gt;
+        &lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field
+          class&#x3D;&quot;example-full-width&quot;
+          *ngIf&#x3D;&quot;
+            info.justTrackingWords.length !&#x3D;&#x3D; 0 &amp;&amp; alert.matching_tracking_word
+          &quot;
+        &gt;
+          &lt;mat-label&gt;{{ &quot;label.scanner.tracking&quot; | translate }} &lt;/mat-label&gt;
+          &lt;mat-select
+            [(ngModel)]&#x3D;&quot;all_Tracking&quot;
+            name&#x3D;&quot;all_Tracking&quot;
+            multiple
+            [compareWith]&#x3D;&quot;utilService.compareValue&quot;
+            #alert_tracking_word&#x3D;&quot;ngModel&quot;
+          &gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let tw of info.justTrackingWords&quot; [value]&#x3D;&quot;tw&quot;&gt;
+              {{ tw.word }}
+            &lt;/mat-option&gt;
+          &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;example-margin espDer15 noCkeck&quot;
+          [(ngModel)]&#x3D;&quot;alert.matching_keyword&quot;
+          name&#x3D;&quot;matching_keyword&quot;
+          [disabled]&#x3D;&quot;info.keywords.length &#x3D;&#x3D;&#x3D; 0&quot;
+          &gt;{{ &quot;label.alert-keywords&quot; | translate }}
+          &lt;h5 class&#x3D;&quot;colorGris&quot; *ngIf&#x3D;&quot;info.keywords.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+            {{ &quot;label.no-tracking-word&quot; | translate }}
+          &lt;/h5&gt;
+        &lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field
+          class&#x3D;&quot;example-full-width&quot;
+          *ngIf&#x3D;&quot;info.keywords.length !&#x3D;&#x3D; 0 &amp;&amp; alert.matching_keyword&quot;
+        &gt;
+          &lt;mat-label
+            &gt;{{ &quot;label.filter.keywords_modal&quot; | translate }}
+          &lt;/mat-label&gt;
+          &lt;mat-select
+            [(ngModel)]&#x3D;&quot;all_Keyword&quot;
+            name&#x3D;&quot;all_Keyword&quot;
+            multiple
+            [compareWith]&#x3D;&quot;utilService.compareValue&quot;
+            #alert_keyword&#x3D;&quot;ngModel&quot;
+          &gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let kw of info.keywords&quot; [value]&#x3D;&quot;kw&quot;&gt;
+              {{ kw.word }}
+            &lt;/mat-option&gt;
+          &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+&lt;mat-dialog-actions class&#x3D;&quot;centrado&quot;&gt;
+  &lt;a mat-dialog-close tabindex&#x3D;&quot;-1&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+    {{ &quot;button.cancel&quot; | translate }}&lt;/a
+  &gt;
+  &lt;button
+    *ngIf&#x3D;&quot;isNew&quot;
+    (click)&#x3D;&quot;onConfirmClick(alertForm)&quot;
+    class&#x3D;&quot;glow-on-hover espIz15&quot;
+    type&#x3D;&quot;submit&quot;
+    tabindex&#x3D;&quot;1&quot;
+  &gt;
+    {{ &quot;button.add&quot; | translate }}
+  &lt;/button&gt;
+  &lt;button
+    *ngIf&#x3D;&quot;!isNew&quot;
+    (click)&#x3D;&quot;onConfirmClick(alertForm)&quot;
+    class&#x3D;&quot;glow-on-hover espIz15&quot;
+    type&#x3D;&quot;submit&quot;
+    tabindex&#x3D;&quot;1&quot;
+  &gt;
+    {{ &quot;button.save&quot; | translate }}
+  &lt;/button&gt;
+&lt;/mat-dialog-actions&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./alert-scanners.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h2 mat-dialog-title>  <i class="las la-bell colorGris espDer5"></i  >{{ "label.alerts-title" | translate }}: {{ info.name }}</h2><div mat-dialog-content>  <form #alertForm="ngForm" (ngSubmit)="(alertForm.form.valid)">    <div class="row">      <div class="col-md-6">        <h3>          <strong>{{ "label.alert-period" | translate }}</strong>        </h3>        <mat-radio-group          aria-labelledby="example-radio-group-label"          class="example-radio-group"          [(ngModel)]="alert.periocity"          [ngModelOptions]="{ standalone: true }"          name="periocity"        >          <mat-radio-button            class="example-radio-button"            *ngFor="let item of periot"            [value]="item"          >            <span class="espDer15">{{ "label." + item | translate }} </span>          </mat-radio-button>        </mat-radio-group>      </div>      <div class="col-md-6" *ngIf="!isNew">        <h3>          <strong            >{{ "label.alert.status" | translate }}:            <i              class="las la-calendar-check colorVerde la-2x"              title="{{ \'label.alert.active\' | translate }}"              *ngIf="alert.status"            ></i>            <i              class="las la-calendar-times colorRojo la-2x"              title="{{ \'label.alert.deactive\' | translate }}"              *ngIf="!alert.status"            ></i          ></strong>        </h3>        <mat-slide-toggle          [(ngModel)]="alert.status"          name="status"          class="noCkeck"          >{{ "label.active_deactive" | translate }}</mat-slide-toggle        >      </div>    </div>    <div class="row">      <div class="col-md-12">        <h3>          <strong>{{ "label.alert-goal-title" | translate }}</strong>        </h3>      </div>      <div class="col-md-12">        <mat-radio-group          aria-labelledby="example-radio-group-label"          class="example-radio-group"          [(ngModel)]="alert.page_object"          [ngModelOptions]="{ standalone: true }"          name="page_object"        >          <mat-radio-button class="vertical-radio" value="monitor">            <span class="espDer15">              {{ "label.alert-goal-monitor" | translate }} ({{                info.configuration.pages              }})            </span>          </mat-radio-button>          <mat-radio-button            *ngIf="info.type === \'transform\'"            class="vertical-radio"            value="target"          >            <span class="espDer15">              {{ "label.alert-goal-target" | translate }} ({{                plan.target_page              }})            </span>          </mat-radio-button>        </mat-radio-group>      </div>    </div>    <div class="row">      <div class="col-md-12">        <h3>          <strong>{{ "label.alert-email" | translate }}</strong>        </h3>      </div>      <div class="col-md-12">        <mat-checkbox          class="example-margin espDer15 noCkeck"          [(ngModel)]="alert.new_content_detected"          name="new_content_detected"          >{{ "label.alert-new" | translate }}        </mat-checkbox>      </div>      <div class="col-md-12">        <mat-checkbox          class="example-margin espDer15 noCkeck"          [(ngModel)]="alert.negative_content_detected"          name="negative_content_detected"          >{{ "label.alert-negative" | translate }}        </mat-checkbox>      </div>      <div class="col-md-12">        <mat-checkbox          class="example-margin espDer15 noCkeck"          [(ngModel)]="alert.displaced_url"          name="displaced_url"          >{{ "label.alert-reached" | translate }}        </mat-checkbox>      </div>      <div class="col-md-6">        <mat-checkbox          class="example-margin espDer15 noCkeck"          [(ngModel)]="alert.matching_tracking_word"          name="matching_tracking_word"          [disabled]="info.justTrackingWords.length === 0"          >{{ "label.alert-tracking_word" | translate }}          <h5 class="colorGris" *ngIf="info.justTrackingWords.length === 0">            {{ "label.no-tracking-word" | translate }}          </h5>        </mat-checkbox>      </div>      <div class="col-md-6">        <mat-form-field          class="example-full-width"          *ngIf="            info.justTrackingWords.length !== 0 && alert.matching_tracking_word          "        >          <mat-label>{{ "label.scanner.tracking" | translate }} </mat-label>          <mat-select            [(ngModel)]="all_Tracking"            name="all_Tracking"            multiple            [compareWith]="utilService.compareValue"            #alert_tracking_word="ngModel"          >            <mat-option *ngFor="let tw of info.justTrackingWords" [value]="tw">              {{ tw.word }}            </mat-option>          </mat-select>        </mat-form-field>      </div>      <div class="col-md-6">        <mat-checkbox          class="example-margin espDer15 noCkeck"          [(ngModel)]="alert.matching_keyword"          name="matching_keyword"          [disabled]="info.keywords.length === 0"          >{{ "label.alert-keywords" | translate }}          <h5 class="colorGris" *ngIf="info.keywords.length === 0">            {{ "label.no-tracking-word" | translate }}          </h5>        </mat-checkbox>      </div>      <div class="col-md-6">        <mat-form-field          class="example-full-width"          *ngIf="info.keywords.length !== 0 && alert.matching_keyword"        >          <mat-label            >{{ "label.filter.keywords_modal" | translate }}          </mat-label>          <mat-select            [(ngModel)]="all_Keyword"            name="all_Keyword"            multiple            [compareWith]="utilService.compareValue"            #alert_keyword="ngModel"          >            <mat-option *ngFor="let kw of info.keywords" [value]="kw">              {{ kw.word }}            </mat-option>          </mat-select>        </mat-form-field>      </div>    </div>  </form></div><mat-dialog-actions class="centrado">  <a mat-dialog-close tabindex="-1" class="third after colorGris">    {{ "button.cancel" | translate }}</a  >  <button    *ngIf="isNew"    (click)="onConfirmClick(alertForm)"    class="glow-on-hover espIz15"    type="submit"    tabindex="1"  >    {{ "button.add" | translate }}  </button>  <button    *ngIf="!isNew"    (click)="onConfirmClick(alertForm)"    class="glow-on-hover espIz15"    type="submit"    tabindex="1"  >    {{ "button.save" | translate }}  </button></mat-dialog-actions></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'AlertScannersComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AlertScannersComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1898 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  NewEditClientComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/clients/new-edit-client/new-edit-client.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-new-edit-client</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./new-edit-client.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./new-edit-client.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fileType" >fileType</a>
+                            </li>
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#isBig" >isBig</a>
+                            </li>
+                            <li>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                <a href="#logoRemove" >logoRemove</a>
+                            </li>
+                            <li>
+                                <a href="#model" >model</a>
+                            </li>
+                            <li>
+                                <a href="#newName" >newName</a>
+                            </li>
+                            <li>
+                                <a href="#selectedFiles" >selectedFiles</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#session" >session</a>
+                            </li>
+                            <li>
+                                <a href="#showPeriocity" >showPeriocity</a>
+                            </li>
+                            <li>
+                                <a href="#thumbnailPreview" >thumbnailPreview</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate" >translate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ufs" >ufs</a>
+                            </li>
+                            <li>
+                                <a href="#userInfo" >userInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLanguage" >changeLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#checkUser" >checkUser</a>
+                            </li>
+                            <li>
+                                <a href="#getImagen" >getImagen</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onConfirmClick" >onConfirmClick</a>
+                            </li>
+                            <li>
+                                <a href="#restoreLogo" >restoreLogo</a>
+                            </li>
+                            <li>
+                                <a href="#selectFile" >selectFile</a>
+                            </li>
+                            <li>
+                                <a href="#uploadandSave" >uploadandSave</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#infoClient" >infoClient</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Salidas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#close" >close</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, translate: TranslateService, clientService: <a href="../injectables/ClientService.html" target="_self">ClientService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, ufs: <a href="../injectables/UploaderFileService.html" target="_self">UploaderFileService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ufs</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UploaderFileService.html" target="_self" >UploaderFileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="infoClient"></a>
+                        <b>infoClient</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Salidas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="close"></a>
+                        <b>close</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:21</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLanguage"></a>
+                    <span class="name">
+                        <span ><b>changeLanguage</b></span>
+                        <a href="#changeLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLanguage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="92"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>function to change language</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkUser"></a>
+                    <span class="name">
+                        <span ><b>checkUser</b></span>
+                        <a href="#checkUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkUser(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="63"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImagen"></a>
+                    <span class="name">
+                        <span ><b>getImagen</b></span>
+                        <a href="#getImagen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImagen(route)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="74"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>image preview</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>route</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="50"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onConfirmClick"></a>
+                    <span class="name">
+                        <span ><b>onConfirmClick</b></span>
+                        <a href="#onConfirmClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onConfirmClick(form: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="83"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Receives the data of the main form, allows to update a new client</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="restoreLogo"></a>
+                    <span class="name">
+                        <span ><b>restoreLogo</b></span>
+                        <a href="#restoreLogo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>restoreLogo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="155"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>restore Remove logo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectFile"></a>
+                    <span class="name">
+                        <span ><b>selectFile</b></span>
+                        <a href="#selectFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectFile(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="100"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>select a file</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadandSave"></a>
+                    <span class="name">
+                        <span ><b>uploadandSave</b></span>
+                        <a href="#uploadandSave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>uploadandSave(form)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="113"
+                            class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Upload a file and save the client</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fileType"></a>
+                    <span class="name">
+                        <span ><b>fileType</b></span>
+                        <a href="#fileType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;.jpg,.jpeg,.png&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>update a client information</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parámetros :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Nombre</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>formBuilder</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>commonService</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>translate</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>clientService</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>translateHelper</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isBig"></a>
+                    <span class="name">
+                        <span ><b>isBig</b></span>
+                        <a href="#isBig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logoRemove"></a>
+                    <span class="name">
+                        <span ><b>logoRemove</b></span>
+                        <a href="#logoRemove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="model"></a>
+                    <span class="name">
+                        <span ><b>model</b></span>
+                        <a href="#model"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newName"></a>
+                    <span class="name">
+                        <span ><b>newName</b></span>
+                        <a href="#newName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedFiles"></a>
+                    <span class="name">
+                        <span ><b>selectedFiles</b></span>
+                        <a href="#selectedFiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>FileList</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="session"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>session</b></span>
+                        <a href="#session"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="47" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPeriocity"></a>
+                    <span class="name">
+                        <span ><b>showPeriocity</b></span>
+                        <a href="#showPeriocity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="thumbnailPreview"></a>
+                    <span class="name">
+                        <span ><b>thumbnailPreview</b></span>
+                        <a href="#thumbnailPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translate</b></span>
+                        <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>TranslateService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="42" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="44" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ufs"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ufs</b></span>
+                        <a href="#ufs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UploaderFileService.html" target="_self" >UploaderFileService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="45" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userInfo"></a>
+                    <span class="name">
+                        <span ><b>userInfo</b></span>
+                        <a href="#userInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/pages/clients/new-edit-client/new-edit-client.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { FormBuilder, NgForm } from &#x27;@angular/forms&#x27;;
+import { CommonService } from &#x27;../../../services/common.service&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { TranslateHelperService } from &#x27;../../../helpers/translate-helper.service&#x27;;
+import { ClientService } from &#x27;../../../services/client.service&#x27;;
+import { UploaderFileService } from &#x27;../../../helpers/uploader-file.service&#x27;;
+import { FileUploadComponent } from &#x27;../../../shared/file-upload/file-upload.component&#x27;;
+import { UtilService } from &#x27;../../../helpers/util.service&#x27;;
+import { SessionService } from &#x27;src/app/helpers/session.service&#x27;;
+
+@Component({
+  selector: &#x27;app-new-edit-client&#x27;,
+  templateUrl: &#x27;./new-edit-client.component.html&#x27;,
+  styleUrls: [&#x27;./new-edit-client.component.css&#x27;],
+})
+export class NewEditClientComponent implements OnInit {
+  info: any &#x3D; {};
+  language: string;
+  @Input() infoClient: any &#x3D; {};
+  @Output() close &#x3D; new EventEmitter&lt;any&gt;();
+  /**
+   * update a client information
+   * @param formBuilder
+   * @param commonService
+   * @param translate
+   * @param clientService
+   * @param translateHelper
+   */
+  fileType &#x3D; &#x27;.jpg,.jpeg,.png&#x27;;
+  thumbnailPreview &#x3D; &#x27;&#x27;;
+  selectedFiles: FileList;
+  isBig &#x3D; false;
+  model: any;
+  logoRemove &#x3D; false;
+  newName &#x3D; &#x27;&#x27;;
+  showPeriocity &#x3D; false;
+  userInfo &#x3D; {};
+  constructor(
+    private formBuilder: FormBuilder,
+    private commonService: CommonService,
+    public translate: TranslateService,
+    private clientService: ClientService,
+    public translateHelper: TranslateHelperService,
+    public ufs: UploaderFileService,
+    private utilService: UtilService,
+    public session: SessionService
+  ) {}
+
+  ngOnInit(): void {
+    if (
+      this.infoClient.reference_link_logo &amp;&amp;
+      this.infoClient.reference_link_logo !&#x3D;&#x3D; &#x27;&#x27;
+    ) {
+      this.getImagen(this.infoClient.reference_link_logo);
+    } else {
+      this.thumbnailPreview &#x3D; &#x27;../../../assets/img/logo.png&#x27;;
+    }
+    this.userInfo &#x3D; this.session?.getUser();
+    this.checkUser(this.userInfo);
+  }
+
+  checkUser(user) {
+    console.log(user.permissions.profile);
+    if (user.permissions?.profile?.ADMIN || user.permissions?.profile?.EDITOR) {
+      this.showPeriocity &#x3D; true;
+    }
+  }
+  /**
+   *
+   * image preview
+   * @param route
+   */
+  getImagen(route) {
+    this.ufs.getData(route, (data) &#x3D;&gt; {
+      this.thumbnailPreview &#x3D; data;
+    });
+  }
+  /**
+   * Receives the data of the main form, allows to update a new client
+   * @param form
+   */
+  onConfirmClick(form: NgForm) {
+    if (form.valid) {
+      this.uploadandSave(form.value);
+    }
+  }
+  /**
+   * function to change language
+   *
+   */
+  changeLanguage(): void {
+    this.translateHelper.translate.use(this.language);
+  }
+
+  /**
+   * select a file
+   * @param event
+   */
+  selectFile(event) {
+    this.isBig &#x3D; false;
+    if (event.target.files[0].size &gt; 2097152) {
+      this.isBig &#x3D; true;
+      this.utilService.showNotification(&#x27;error.file_size&#x27;, &#x27;danger&#x27;);
+    } else {
+      this.selectedFiles &#x3D; event.target.files;
+    }
+  }
+
+  /**
+   * Upload a file and save the client
+   */
+  uploadandSave(form) {
+    const data &#x3D; Object.assign(this.infoClient, form);
+
+    console.log(&#x27;data&#x27;, data);
+    // check if logo size is too big
+    if (!this.isBig) {
+      // check if the client upload a new logo or restore remove logo
+      if (!this.logoRemove) {
+        //if there is no logo call update service
+        if (!this.selectedFiles) {
+          this.clientService.update(data, (response) &#x3D;&gt; {
+            this.info &#x3D; response;
+            this.close.emit();
+          });
+        } else {
+          //if there is a logo call update service and upload service, to AWS bucket
+          const file &#x3D; this.selectedFiles.item(0);
+          this.ufs.upload(file, (keyFile) &#x3D;&gt; {
+            this.model &#x3D; keyFile;
+            this.getImagen(this.model);
+            data.reference_link_logo &#x3D; this.model;
+            this.clientService.update(data, (response) &#x3D;&gt; {
+              this.info &#x3D; response;
+              this.close.emit();
+            });
+          });
+        }
+      } else {
+        data.reference_link_logo &#x3D; null;
+        this.clientService.update(data, (response) &#x3D;&gt; {
+          this.info &#x3D; response;
+          this.close.emit();
+        });
+      }
+    } else {
+      this.utilService.showNotification(&#x27;error.file_size&#x27;, &#x27;danger&#x27;);
+    }
+  }
+
+  /**
+   * restore Remove logo
+   */
+  restoreLogo() {
+    this.thumbnailPreview &#x3D; &#x27;../../../assets/img/logo.png&#x27;;
+    this.logoRemove &#x3D; true;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid padding20&quot;&gt;
+  &lt;form #clientForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;(clientForm.form.valid)&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;input
+            [(ngModel)]&#x3D;&quot;infoClient.name&quot;
+            name&#x3D;&quot;name&quot;
+            matInput
+            placeholder&#x3D;&quot;{{ &#x27;label.name&#x27; | translate }}&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;input
+            [(ngModel)]&#x3D;&quot;infoClient.lastname&quot;
+            name&#x3D;&quot;lastname&quot;
+            matInput
+            placeholder&#x3D;&quot;{{ &#x27;label.lastname&#x27; | translate }}&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;input
+            [(ngModel)]&#x3D;&quot;infoClient.email&quot;
+            name&#x3D;&quot;email&quot;
+            matInput
+            placeholder&#x3D;&quot;{{ &#x27;label.email&#x27; | translate }}&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;input
+            [(ngModel)]&#x3D;&quot;infoClient.phone&quot;
+            name&#x3D;&quot;phone&quot;
+            matInput
+            placeholder&#x3D;&quot;{{ &#x27;label.phone&#x27; | translate }}&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;mat-label&gt;&lt;i class&#x3D;&quot;las la-language fa-2x&quot;&gt;&lt;/i&gt;&lt;/mat-label&gt;
+          &lt;mat-select
+            [(ngModel)]&#x3D;&quot;infoClient.language&quot;
+            (selectionChange)&#x3D;&quot;changeLanguage()&quot;
+            name&#x3D;&quot;language&quot;
+          &gt;
+            &lt;mat-option *ngFor&#x3D;&quot;let l of translateHelper.languages&quot; [value]&#x3D;&quot;l&quot;&gt;
+              {{ &quot;lang.&quot; + l | translate }}
+            &lt;/mat-option&gt;
+          &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot; *ngIf&#x3D;&quot;showPeriocity&quot;&gt;
+        &lt;mat-label class&#x3D;&quot;espDer10 reduceFont colorGris&quot;
+          &gt;{{ &quot;label.periocity_inform&quot; | translate }}:
+        &lt;/mat-label&gt;
+        &lt;mat-radio-group
+          [(ngModel)]&#x3D;&quot;infoClient.periocity&quot;
+          name&#x3D;&quot;periocity&quot;
+          aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+          class&#x3D;&quot;example-radio-group&quot;
+        &gt;
+          &lt;mat-radio-button [value]&#x3D;&quot;1&quot; class&#x3D;&quot;espDer5&quot;&gt;
+            {{ &quot;label.day&quot; | translate }}: 1
+          &lt;/mat-radio-button&gt;
+
+          &lt;!-- &lt;mat-radio-button value&#x3D;&quot;transfer&quot; class&#x3D;&quot;espDer5&quot; *ngIf&#x3D;&quot;params?.TRANSFER_MIN_VALUE &lt; plan?.cost&quot;
+     &gt;&lt;i class&#x3D;&quot;las la-money-bill-wave colorSecundario espDer5&quot;&gt;&lt;/i
+     &gt;{{ &quot;label.payment_transfer&quot; | translate }}&lt;/mat-radio-button
+     &gt;--&gt;
+
+          &lt;mat-radio-button [value]&#x3D;&quot;15&quot; class&#x3D;&quot;espDer5&quot;&gt;
+            {{ &quot;label.day&quot; | translate }}: 15
+          &lt;/mat-radio-button&gt;
+        &lt;/mat-radio-group&gt;
+      &lt;/div&gt;
+      &lt;!--  &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;infoClient.project_name&quot; name&#x3D;&quot;project_name&quot; matInput
+                   placeholder&#x3D;&quot;{{&#x27;label.project_name&#x27; | translate}}&quot; &gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;--&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;mat-slide-toggle
+          [(ngModel)]&#x3D;&quot;infoClient.view_payments&quot;
+          class&#x3D;&quot;noCkeck&quot;
+          name&#x3D;&quot;view_payments&quot;
+        &gt;
+          {{ &quot;label.view_payments&quot; | translate }}
+        &lt;/mat-slide-toggle&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;label class&#x3D;&quot;noBacknoBorder paddingTop15&quot;&gt;
+          &lt;input
+            type&#x3D;&quot;file&quot;
+            (change)&#x3D;&quot;selectFile($event)&quot;
+            [accept]&#x3D;&quot;fileType&quot;
+            class&#x3D;&quot;noBacknoBorder&quot;
+          /&gt;
+        &lt;/label&gt;
+
+        &lt;h5&gt;
+          &lt;i class&#x3D;&quot;las la-info-circle colorAzul espDer5&quot;&gt;&lt;/i
+          &gt;{{ &quot;message.file_size&quot; | translate }}
+        &lt;/h5&gt;
+        &lt;h5&gt;
+          &lt;i class&#x3D;&quot;las la-info-circle colorAzul espDer5&quot;&gt;&lt;/i
+          &gt;{{ &quot;message.file_type&quot; | translate }}
+        &lt;/h5&gt;
+        &lt;h5&gt;
+          &lt;i class&#x3D;&quot;las la-info-circle colorAzul espDer5&quot;&gt;&lt;/i
+          &gt;{{ &quot;info.logo_upload&quot; | translate }}
+        &lt;/h5&gt;
+        &lt;h5&gt;
+          &lt;i class&#x3D;&quot;las la-info-circle colorAzul espDer5&quot;&gt;&lt;/i
+          &gt;{{ &quot;info.logo_refresh_admin&quot; | translate }}
+        &lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+        &lt;img
+          style&#x3D;&quot;max-height: 150px; max-width: 200px&quot;
+          src&#x3D;&quot;{{ thumbnailPreview }}&quot;
+          alt&#x3D;&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+        &lt;a (click)&#x3D;&quot;restoreLogo()&quot; class&#x3D;&quot;third after reduceFont&quot;&gt;
+          {{ &quot;button.restore_logo&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- &lt;mat-accordion multi&gt;
+      &lt;mat-expansion-panel expanded&gt;
+        &lt;mat-expansion-panel-header&gt;
+          &lt;mat-panel-title&gt;
+            {{&#x27;title.client.personal&#x27; | translate }}
+          &lt;/mat-panel-title&gt;
+        &lt;/mat-expansion-panel-header&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;infoClient.name&quot; name&#x3D;&quot;name&quot; matInput placeholder&#x3D;&quot;{{&#x27;label.name&#x27; | translate}}&quot;&gt;
+            &lt;/mat-form-field&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;infoClient.lastname&quot; name&#x3D;&quot;lastname&quot; matInput
+                     placeholder&#x3D;&quot;{{&#x27;label.lastname&#x27; | translate}}&quot;&gt;
+            &lt;/mat-form-field&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;infoClient.email&quot; name&#x3D;&quot;email&quot; matInput placeholder&#x3D;&quot;{{&#x27;label.email&#x27; | translate}}&quot;&gt;
+            &lt;/mat-form-field&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+              &lt;input [(ngModel)]&#x3D;&quot;infoClient.phone&quot; name&#x3D;&quot;phone&quot; matInput placeholder&#x3D;&quot;{{&#x27;label.phone&#x27; | translate}}&quot;&gt;
+            &lt;/mat-form-field&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+              &lt;mat-label&gt;&lt;i class&#x3D;&quot;las la-language fa-2x&quot;&gt;&lt;/i&gt;&lt;/mat-label&gt;
+              &lt;mat-select [(ngModel)]&#x3D;&quot;infoClient.language&quot; (selectionChange)&#x3D;&quot;changeLanguage()&quot; name&#x3D;&quot;language&quot;&gt;
+                &lt;mat-option *ngFor&#x3D;&quot;let l of translateHelper.languages&quot; [value]&#x3D;&quot;l&quot;&gt;
+                  {{&#x27;lang.&#x27; + l | translate}}
+                &lt;/mat-option&gt;
+              &lt;/mat-select&gt;
+            &lt;/mat-form-field&gt;
+          &lt;/div&gt;
+          !--  &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+              &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                &lt;input [(ngModel)]&#x3D;&quot;infoClient.project_name&quot; name&#x3D;&quot;project_name&quot; matInput
+                       placeholder&#x3D;&quot;{{&#x27;label.project_name&#x27; | translate}}&quot; &gt;
+              &lt;/mat-form-field&gt;
+            &lt;/div&gt;--
+        &lt;/div&gt;
+      &lt;/mat-expansion-panel&gt;--&gt;
+    &lt;!--&lt;mat-expansion-panel &gt;
+      &lt;mat-expansion-panel-header&gt;
+        &lt;mat-panel-title&gt;
+          {{&#x27;title.client.billing&#x27; | translate }}
+        &lt;/mat-panel-title&gt;
+      &lt;/mat-expansion-panel-header&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+          &lt;mat-slide-toggle [(ngModel)]&#x3D;&quot;infoClient.corporative&quot; class&#x3D;&quot;noCkeck&quot; name&#x3D;&quot;bussiness&quot; &gt;
+          &lt;/mat-slide-toggle&gt;{{&#x27;label.client.bussines&#x27; | translate}}
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;infoClient.bussiness_name&quot; name&#x3D;&quot;bussiness_name&quot; matInput
+                   placeholder&#x3D;&quot;{{&#x27;label.client.bussines_name&#x27; | translate}} &quot;&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;infoClient.dni&quot; name&#x3D;&quot;dni&quot; matInput placeholder&#x3D;&quot;{{&#x27;label.client.dni&#x27; | translate}}&quot;
+                &gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;infoClient.fiscal_address&quot; name&#x3D;&quot;fiscal_address&quot; matInput
+                   placeholder&#x3D;&quot;{{&#x27;label.client.fiscal_address&#x27; | translate}}&quot; &gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;infoClient.postal&quot; name&#x3D;&quot;postal&quot; matInput
+                   placeholder&#x3D;&quot;{{&#x27;label.client.postal_code&#x27; | translate}}&quot; &gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/mat-expansion-panel&gt;
+    &lt;/mat-accordion&gt;--&gt;
+  &lt;/form&gt;
+  &lt;div class&#x3D;&quot;centrado row&quot;&gt;
+    &lt;a mat-dialog-close tabindex&#x3D;&quot;-1&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+      {{ &quot;button.cancel&quot; | translate }}&lt;/a
+    &gt;
+    &lt;button
+      (click)&#x3D;&quot;onConfirmClick(clientForm)&quot;
+      class&#x3D;&quot;glow-on-hover espIz15&quot;
+      type&#x3D;&quot;submit&quot;
+      tabindex&#x3D;&quot;1&quot;
+    &gt;
+      {{ &quot;button.edit&quot; | translate }}
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./new-edit-client.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid padding20">  <form #clientForm="ngForm" (ngSubmit)="(clientForm.form.valid)">    <div class="row">      <div class="col-md-6">        <mat-form-field class="example-full-width">          <input            [(ngModel)]="infoClient.name"            name="name"            matInput            placeholder="{{ \'label.name\' | translate }}"          />        </mat-form-field>      </div>      <div class="col-md-6">        <mat-form-field class="example-full-width">          <input            [(ngModel)]="infoClient.lastname"            name="lastname"            matInput            placeholder="{{ \'label.lastname\' | translate }}"          />        </mat-form-field>      </div>    </div>    <div class="row">      <div class="col-md-6">        <mat-form-field class="example-full-width">          <input            [(ngModel)]="infoClient.email"            name="email"            matInput            placeholder="{{ \'label.email\' | translate }}"          />        </mat-form-field>      </div>      <div class="col-md-6">        <mat-form-field class="example-full-width">          <input            [(ngModel)]="infoClient.phone"            name="phone"            matInput            placeholder="{{ \'label.phone\' | translate }}"          />        </mat-form-field>      </div>    </div>    <div class="row">      <div class="col-md-6">        <mat-form-field class="example-full-width">          <mat-label><i class="las la-language fa-2x"></i></mat-label>          <mat-select            [(ngModel)]="infoClient.language"            (selectionChange)="changeLanguage()"            name="language"          >            <mat-option *ngFor="let l of translateHelper.languages" [value]="l">              {{ "lang." + l | translate }}            </mat-option>          </mat-select>        </mat-form-field>      </div>      <div class="col-md-6" *ngIf="showPeriocity">        <mat-label class="espDer10 reduceFont colorGris"          >{{ "label.periocity_inform" | translate }}:        </mat-label>        <mat-radio-group          [(ngModel)]="infoClient.periocity"          name="periocity"          aria-labelledby="example-radio-group-label"          class="example-radio-group"        >          <mat-radio-button [value]="1" class="espDer5">            {{ "label.day" | translate }}: 1          </mat-radio-button>          <!-- <mat-radio-button value="transfer" class="espDer5" *ngIf="params?.TRANSFER_MIN_VALUE < plan?.cost"     ><i class="las la-money-bill-wave colorSecundario espDer5"></i     >{{ "label.payment_transfer" | translate }}</mat-radio-button     >-->          <mat-radio-button [value]="15" class="espDer5">            {{ "label.day" | translate }}: 15          </mat-radio-button>        </mat-radio-group>      </div>      <!--  <div class="col-md-6">          <mat-form-field class="example-full-width">            <input [(ngModel)]="infoClient.project_name" name="project_name" matInput                   placeholder="{{\'label.project_name\' | translate}}" >          </mat-form-field>        </div>-->    </div>    <div class="row">      <div class="col-md-6">        <mat-slide-toggle          [(ngModel)]="infoClient.view_payments"          class="noCkeck"          name="view_payments"        >          {{ "label.view_payments" | translate }}        </mat-slide-toggle>      </div>      <div class="col-md-6"></div>    </div>    <div class="row">      <div class="col-md-6">        <label class="noBacknoBorder paddingTop15">          <input            type="file"            (change)="selectFile($event)"            [accept]="fileType"            class="noBacknoBorder"          />        </label>        <h5>          <i class="las la-info-circle colorAzul espDer5"></i          >{{ "message.file_size" | translate }}        </h5>        <h5>          <i class="las la-info-circle colorAzul espDer5"></i          >{{ "message.file_type" | translate }}        </h5>        <h5>          <i class="las la-info-circle colorAzul espDer5"></i          >{{ "info.logo_upload" | translate }}        </h5>        <h5>          <i class="las la-info-circle colorAzul espDer5"></i          >{{ "info.logo_refresh_admin" | translate }}        </h5>      </div>      <div class="col-md-3">        <img          style="max-height: 150px; max-width: 200px"          src="{{ thumbnailPreview }}"          alt=""        />      </div>      <div class="col-md-3">        <a (click)="restoreLogo()" class="third after reduceFont">          {{ "button.restore_logo" | translate }}</a        >      </div>    </div>    <!-- <mat-accordion multi>      <mat-expansion-panel expanded>        <mat-expansion-panel-header>          <mat-panel-title>            {{\'title.client.personal\' | translate }}          </mat-panel-title>        </mat-expansion-panel-header>        <div class="row">          <div class="col-md-6">            <mat-form-field class="example-full-width">              <input [(ngModel)]="infoClient.name" name="name" matInput placeholder="{{\'label.name\' | translate}}">            </mat-form-field>          </div>          <div class="col-md-6">            <mat-form-field class="example-full-width">              <input [(ngModel)]="infoClient.lastname" name="lastname" matInput                     placeholder="{{\'label.lastname\' | translate}}">            </mat-form-field>          </div>        </div>        <div class="row">          <div class="col-md-6">            <mat-form-field class="example-full-width">              <input [(ngModel)]="infoClient.email" name="email" matInput placeholder="{{\'label.email\' | translate}}">            </mat-form-field>          </div>          <div class="col-md-6">            <mat-form-field class="example-full-width">              <input [(ngModel)]="infoClient.phone" name="phone" matInput placeholder="{{\'label.phone\' | translate}}">            </mat-form-field>          </div>        </div>        <div class="row">          <div class="col-md-6">            <mat-form-field class="example-full-width">              <mat-label><i class="las la-language fa-2x"></i></mat-label>              <mat-select [(ngModel)]="infoClient.language" (selectionChange)="changeLanguage()" name="language">                <mat-option *ngFor="let l of translateHelper.languages" [value]="l">                  {{\'lang.\' + l | translate}}                </mat-option>              </mat-select>            </mat-form-field>          </div>          !--  <div class="col-md-6">              <mat-form-field class="example-full-width">                <input [(ngModel)]="infoClient.project_name" name="project_name" matInput                       placeholder="{{\'label.project_name\' | translate}}" >              </mat-form-field>            </div>--        </div>      </mat-expansion-panel>-->    <!--<mat-expansion-panel >      <mat-expansion-panel-header>        <mat-panel-title>          {{\'title.client.billing\' | translate }}        </mat-panel-title>      </mat-expansion-panel-header>      <div class="row">        <div class="col-md-4">          <mat-slide-toggle [(ngModel)]="infoClient.corporative" class="noCkeck" name="bussiness" >          </mat-slide-toggle>{{\'label.client.bussines\' | translate}}        </div>        <div class="col-md-4">          <mat-form-field class="example-full-width">            <input [(ngModel)]="infoClient.bussiness_name" name="bussiness_name" matInput                   placeholder="{{\'label.client.bussines_name\' | translate}} ">          </mat-form-field>        </div>        <div class="col-md-4">          <mat-form-field class="example-full-width">            <input [(ngModel)]="infoClient.dni" name="dni" matInput placeholder="{{\'label.client.dni\' | translate}}"                >          </mat-form-field>        </div>      </div>      <div class="row">        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input [(ngModel)]="infoClient.fiscal_address" name="fiscal_address" matInput                   placeholder="{{\'label.client.fiscal_address\' | translate}}" >          </mat-form-field>        </div>        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input [(ngModel)]="infoClient.postal" name="postal" matInput                   placeholder="{{\'label.client.postal_code\' | translate}}" >          </mat-form-field>        </div>      </div>    </mat-expansion-panel>    </mat-accordion>-->  </form>  <div class="centrado row">    <a mat-dialog-close tabindex="-1" class="third after colorGris">      {{ "button.cancel" | translate }}</a    >    <button      (click)="onConfirmClick(clientForm)"      class="glow-on-hover espIz15"      type="submit"      tabindex="1"    >      {{ "button.edit" | translate }}    </button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'NewEditClientComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NewEditClientComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

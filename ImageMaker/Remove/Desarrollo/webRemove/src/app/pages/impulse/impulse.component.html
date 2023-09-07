@@ -1,0 +1,275 @@
+<div class="row paddingTop15" id="toExport">
+  <div class="row content-card">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h2>
+                <i class="las la-sort-amount-up-alt colorPrincipal espDer5"></i>
+                {{ "title.impulse" | translate }}
+              </h2>
+            </div>
+            <div class="col-md-8 col-sm-6 paddingTop5 float-left">
+              <a class="glow-on-hover reduceFont" (click)="newItem()">
+                <i class="las la-plus-circle espDer5"></i
+                >{{ "button.add" | translate }}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 top20m">
+          <div class="row">
+            <div class="col-md-4 col-sm-6"></div>
+            <div class="col-md-4 col-sm-6">
+              <a
+                (click)="utilService.downloadExcel('title.impulse')"
+                class="third after reduceFont"
+              >
+                <i class="las la-file-excel colorPrincipal espDer5"></i
+                >{{ "label.excel" | translate }}</a
+              >
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a
+                (click)="utilService.donwloadPDF('title.impulse')"
+                class="third after reduceFont"
+              >
+                <i class="las la-file-pdf colorPrincipal espDer5"></i
+                >{{ "label.pdf" | translate }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--filters-->
+    <div class="col-md-12" *ngIf="info?.impulses.length > 0">
+      <div class="row border-filter">
+        <div class="col-md-2">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="filter.title"
+              name="title"
+              matInput
+              (ngModelChange)="searchResult(filter)"
+              placeholder="{{ 'label.impulse.tittle' | translate }} "
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-md-2">
+          <mat-form-field class="example-full-width">
+            <mat-select
+              placeholder="{{ 'label.impulse.state' | translate }}"
+              [(ngModel)]="filter.state"
+              (ngModelChange)="searchResult(filter)"
+            >
+              <mat-option *ngFor="let item of allStates" [value]="item.tag">
+                {{ "list.impulse.state." + item.tag | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-2">
+          <mat-form-field class="example-full-width">
+            <mat-label
+              >{{ "label.scanner.advance.image.type" | translate }}
+            </mat-label>
+            <mat-select
+              [(ngModel)]="filter.type"
+              name="type"
+              (ngModelChange)="searchResult(filter)"
+            >
+              <mat-option *ngFor="let type of allTypes" [value]="type.tag">
+                {{ "list.impulse.type." + type.tag | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-2">
+          <mat-form-field class="example-full-width">
+            <mat-label
+              >{{ "label.impulse.start_month" | translate }}
+            </mat-label>
+            <input
+              matInput
+              [matDatepicker]="pickerMonthYear"
+              [(ngModel)]="filter.month"
+              (ngModelChange)="searchResult(filter)"
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="pickerMonthYear"
+            ></mat-datepicker-toggle>
+            <mat-datepicker
+              #pickerMonthYear
+              startView="multi-year"
+              (yearSelected)="chosenYearHandler($event)"
+              (monthSelected)="chosenMonthHandler($event, pickerMonthYear)"
+              panelClass="example-month-picker"
+            ></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <!-- <div class="col-md-2 centrado col-sm-12">
+          <button (click)="searchResult(filter)" class="secondLevelButton reduceFont"
+          ><i class="las la-search espDer5"></i>{{'button.search' | translate}}</button>
+        </div>-->
+        <div class="col-md-2 col-sm-12 paddingTop15 float-left">
+          <a (click)="clean()" class="third after reduceFont">
+            <i class="las la-broom colorPrincipal espDer5"></i
+            >{{ "button.clear_filters" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--principal table-->
+    <div class="col-md-12" *ngIf="info?.impulses.length > 0">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th (click)="sortFunction('type')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.scanner.advance.image.type" | translate }}
+              </th>
+              <th>{{ "label.impulse.tittle_url" | translate }}</th>
+              <th (click)="sortFunction('keyword.word')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse.keywords_selected" | translate }}
+              </th>
+              <th (click)="sortFunction('status')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse.state" | translate }}
+              </th>
+              <th (click)="sortFunction('creation_date')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse-date" | translate }}
+              </th>
+              <th (click)="sortFunction('estimated_publish')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse.start_month" | translate }}
+              </th>
+              <th (click)="sortFunction('month')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse.publish_date" | translate }}
+              </th>
+              <th (click)="sortFunction('content.author_name')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.impulse.author" | translate }}
+              </th>
+              <th>{{ "label.actions" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let impulse of impulsesFiltered">
+              <td>{{ "list.impulse.type." + impulse.type | translate }}</td>
+              <td *ngIf="impulse.real_publish_link">
+                <a href="{{ impulse.real_publish_link }}" target="_blank">{{
+                  impulse?.content?.title
+                }}</a>
+              </td>
+              <td *ngIf="!impulse.real_publish_link">
+                {{ impulse?.content?.title }}
+              </td>
+              <td>{{ impulse?.keyword?.word }}</td>
+              <td>
+                {{
+                  "list.impulse.state." + impulse?.statusObj?.tag | translate
+                }}
+              </td>
+              <td>
+                {{ utilService.formatDate(impulse?.creation_date) | date }}
+              </td>
+              <td>
+                {{ impulse?.estimated_publish | date : "MM/yyyy" }}
+              </td>
+              <td>
+                {{ utilService.formatDate(impulse?.real_publish_date) | date }}
+              </td>
+              <td>{{ impulse?.content?.author_name }}</td>
+              <td>
+                <a (click)="editItem(impulse)" class="espDer15">
+                  <i
+                    class="las la-edit colorPrincipal la-2x"
+                    title="{{ 'tooltip.edit_impulse' | translate }}"
+                  ></i>
+                </a>
+                <a
+                  (click)="setEstimatedDate(impulse)"
+                  class="espDer15"
+                  *ngIf="
+                    impulse?.statusObj?.APPROVED &&
+                    accessConfig.ADMIN &&
+                    impulseService.permissions_publish.save
+                  "
+                >
+                  <i
+                    class="las la-calendar-alt colorPrincipal la-2x"
+                    title="{{ 'tooltip.impulse.set_date' | translate }}"
+                  ></i>
+                </a>
+                <a
+                  (click)="setURL(impulse)"
+                  class="espDer15"
+                  *ngIf="
+                    impulse?.statusObj?.APPROVED &&
+                    accessConfig.ADMIN &&
+                    impulseService.permissions_publish.update
+                  "
+                >
+                  <i
+                    class="las la-link colorPrincipal la-2x"
+                    title="{{ 'tooltip.impulse.news_link' | translate }}"
+                  ></i>
+                </a>
+                <a
+                  (click)="newsDetail(impulse)"
+                  *ngIf="
+                    impulse?.statusObj?.PUBLISHED &&
+                    accessConfig.ADMIN &&
+                    variableService?.permissions?.read
+                  "
+                  class="espDer15"
+                >
+                  <i
+                    class="las la-flask colorPrincipal la-2x"
+                    title="{{ 'tooltip.impulse.news_management' | translate }}"
+                  ></i>
+                </a>
+                <a
+                  (click)="evaluateImpulse(impulse)"
+                  *ngIf="impulse?.aprovableRejectable"
+                  class="espDer15"
+                >
+                  <i
+                    class="las la-clipboard-check colorPrincipal la-2x"
+                    title="{{ 'tittle.approve_reject' | translate }}"
+                  ></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado">
+          <jw-pagination
+            [items]="info?.impulses"
+            (changePage)="onChangePage($event)"
+            [maxPages]="5"
+            [pageSize]="10"
+            class="{{ paginatorClass }}"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12" *ngIf="info?.impulses.length === 0">
+      <h5 class="colorGris">{{ "error.not_found_results" | translate }}</h5>
+    </div>
+    <div class="col-md-12 centrado paddingBottom50">
+      <button (click)="utilService.back()" class="secondLevelButton espDer15">
+        <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,218 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>remove-sr-group</groupId>
+  <artifactId>remove-sr-commons</artifactId>
+  <version>0.1</version>
+  <name>remove-commons</name>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
+	<dependency>
+	    <groupId>com.sparkjava</groupId>
+	    <artifactId>spark-core</artifactId>
+	    <version>2.9.1</version>
+	</dependency>
+	<dependency>
+        <groupId>com.sparkjava</groupId>
+        <artifactId>spark-debug-tools</artifactId>
+        <version>0.5</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.12.4</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.12.4</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.datatype</groupId>
+	    <artifactId>jackson-datatype-jsr310</artifactId>
+	    <version>2.12.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>42.3.1</version>
+	</dependency>
+
+	
+	<!-- Old driver -->
+<!-- 	<dependency>  -->
+<!-- 	    <groupId>org.postgresql</groupId> -->
+<!-- 	    <artifactId>postgresql</artifactId>  -->
+<!-- 	    <version>9.4-1201-jdbc41</version>  -->
+<!-- 	</dependency> -->
+	
+	<!-- https://mvnrepository.com/artifact/org.sql2o/sql2o -->
+	<dependency> 
+	    <groupId>org.sql2o</groupId> 
+	    <artifactId>sql2o</artifactId> 
+	    <version>1.5.4</version> 
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+	<dependency>
+	    <groupId>commons-beanutils</groupId>
+	    <artifactId>commons-beanutils</artifactId>
+	    <version>1.9.4</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>org.apache.logging.log4j</groupId>
+	  <artifactId>log4j-api</artifactId>
+	  <version>2.13.1</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.apache.logging.log4j</groupId>
+	  <artifactId>log4j-core</artifactId>
+	  <version>2.13.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+	<dependency>
+	    <groupId>org.yaml</groupId>
+	    <artifactId>snakeyaml</artifactId>
+	    <version>1.26</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.axis2/axis2-kernel -->
+	<dependency>
+	    <groupId>org.apache.axis2</groupId>
+	    <artifactId>axis2-kernel</artifactId>
+	    <version>1.7.9</version>
+	</dependency>
+	
+    <dependency>
+        <groupId>org.apache.axis</groupId>
+        <artifactId>axis</artifactId>
+        <version>1.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.xml.rpc/javax.xml.rpc-api -->
+    <dependency>
+        <groupId>javax.xml.rpc</groupId>
+        <artifactId>javax.xml.rpc-api</artifactId>
+        <version>1.1.1</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
+    <dependency>
+		<groupId>org.quartz-scheduler</groupId>
+		<artifactId>quartz</artifactId>
+		<version>2.3.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+	<dependency>
+	  <groupId>com.zaxxer</groupId>
+	  <artifactId>HikariCP</artifactId>
+	  <version>3.4.5</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+	<dependency>
+	    <groupId>commons-validator</groupId>
+	    <artifactId>commons-validator</artifactId>
+	    <version>1.7</version>
+	</dependency>
+	
+	<dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>1.6.2</version>
+    </dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.github.mlaccetti/javapns -->
+	<dependency>
+	    <groupId>com.eatthepath</groupId>
+	    <artifactId>pushy</artifactId>
+	    <version>0.14.1</version>
+	</dependency>
+	
+	 <!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20190722</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+	<dependency>
+		<groupId>org.elasticsearch</groupId>
+		<artifactId>elasticsearch</artifactId>
+		<version>7.10.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
+	<dependency>
+	    <groupId>org.elasticsearch.client</groupId>
+	    <artifactId>elasticsearch-rest-high-level-client</artifactId>
+	    <version>7.10.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+	<dependency>
+	    <groupId>org.jsoup</groupId>
+	    <artifactId>jsoup</artifactId>
+	    <version>1.13.1</version>
+	</dependency>
+		
+	<dependency>
+	  <groupId>com.stripe</groupId>
+	  <artifactId>stripe-java</artifactId>
+	  <version>20.72.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+	<dependency>
+	    <groupId>net.sf.jasperreports</groupId>
+	    <artifactId>jasperreports</artifactId>
+	    <version>6.19.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-chart-customizers -->
+	<dependency>
+	    <groupId>net.sf.jasperreports</groupId>
+	    <artifactId>jasperreports-chart-customizers</artifactId>
+	    <version>6.19.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts -->
+	<dependency>
+	    <groupId>net.sf.jasperreports</groupId>
+	    <artifactId>jasperreports-fonts</artifactId>
+	    <version>6.19.1</version>
+	</dependency>
+	
+	<dependency>
+		    <groupId>org.owasp.esapi</groupId>
+		    <artifactId>esapi</artifactId>
+		    <version>2.1.0.1</version>
+	</dependency>
+  </dependencies>
+  
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>8</source>
+				<target>8</target>
+			</configuration>
+		</plugin>
+	</plugins>
+  </build>
+</project>

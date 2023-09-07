@@ -1,0 +1,98 @@
+
+<div class="container-fluid" *ngIf="infoScan">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.impulse.keywords_selected' | translate}}</div>
+      <ul class="cleanList">
+        <li  *ngFor="let key of infoScan?.keywords">
+          {{key.word}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.countries' | translate}}</div>
+      <ul class="cleanList">
+        <li *ngFor="let item of infoScan.configuration.countries"> {{item.name}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.tracking' | translate}}</div>
+      <ul class="cleanList">
+        <li *ngFor="let tm of infoScan?.justTrackingWords">
+          <span [innerHTML]="tm.feelingObj | feelingColors"></span> {{tm.word}}</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont" *ngIf="infoScan?.type !== 'transform'">{{'label.shorten_url' | translate}}</div>
+      <div class="colorGris reduceFont" *ngIf="infoScan?.type === 'transform'">{{'label.url_to_remove' | translate}}</div>
+      <ul class="cleanList">
+        <li *ngFor="let url of infoScan?.justTrackingURLs">   <span
+          [innerHTML]="url.feelingObj | feelingColors"></span> <h6>{{url.word}}</h6></li>
+      </ul>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 colorGris">
+      <h6> {{'title.scanner.advanced' | translate}}</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.max_pages' | translate}}:</div> {{infoScan.configuration.pages}}
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.language' | translate}}: </div> {{infoScan.configuration.language}}
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.device' | translate}}: </div>
+      {{'list.device.' + infoScan.configuration.device}}
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.sections' | translate}}: </div>
+      <ul class="cleanList">
+        <li *ngFor="let s of  infoScan?.restrictions?.detail.sectionsToSearch">   {{"list.scanner.type." + s |
+            translate}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row" *ngIf="infoScan.configuration.lstSearchTypes.includes('images')">
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.image.colors' | translate}}:</div>
+      {{infoScan.configuration.images_color | translate}}
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.image.size' | translate}}:</div>
+      {{infoScan.configuration.images_size | translate}}
+
+    </div>
+    <div class="col-md-3">
+      <div class="colorGris reduceFont">{{'label.scanner.advance.image.type' | translate}}:</div>
+      {{infoScan.configuration.images_type | translate}}
+    </div>
+    <div class="col-md-3">
+      <mat-slide-toggle [(ngModel)]="infoScan.configuration.images_use_rights" name="images_use_rights" disabled
+                        title="{{'label.scanner.advance.image.images_user_rights' | translate}} ">{{'label.scanner.advance.image.images_user_rights' | translate}} </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row" *ngIf="areSuggest">
+    <div class="col-md-12">
+      {{'title.scanner.suggested' | translate}}
+    </div>
+  </div>
+  <div class="row" *ngIf="areSuggest">
+    <div class="col-md-12" >
+      <div *ngFor="let key of infoScan?.keywords">
+        <div class="row" *ngFor="let country of infoScan.configuration.countries">
+          <strong class="paddingTop5">{{key.word}} - {{country.name}}</strong>
+          <div *ngFor="let sug of key.listSuggested">
+            <button mat-button disabled> {{sug.word}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

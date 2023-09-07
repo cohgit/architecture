@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>{{config.title | translate}}</h2>
+<div mat-dialog-content>
+  <div class="container">
+    <div class="row">
+      <p [innerHTML]="config.message | translate "></p>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions *ngIf="config.isConfirm" class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{ config.cancelButtonText | translate }}</a>
+  <button (click)="onConfirmClick(config.data)" class="glow-on-hover espIz15" type="button"
+          tabindex="1">{{config.confirmButtonText | translate}}</button>
+
+
+</mat-dialog-actions>
+<mat-dialog-actions *ngIf="config.isNotification" class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris">{{config.closeButtonText | translate}}</a>
+</mat-dialog-actions>

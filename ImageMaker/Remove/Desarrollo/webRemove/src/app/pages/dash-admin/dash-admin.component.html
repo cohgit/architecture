@@ -1,0 +1,686 @@
+<div class="row paddingTop15">
+  <div class="col-12">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>
+          <div class="row">
+            <i class="las la-tachometer-alt colorGris espIz15 espDer5"></i>
+            {{ "label.statistics" | translate }}
+          </div>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- tabla principal--->
+        <mat-accordion multi>
+          <mat-expansion-panel expanded>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="las la-money-bill-wave colorSecundario espDer5"></i
+                >{{ "title.dashboard.economic_indicators" | translate }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-2">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.current_month' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.current_month' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.current_month" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.economics?.currentMonth
+                              | currency
+                                : dashData?.economics?.currency?.toUpperCase()
+                                : "symbol-narrow"
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.current_year' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.current_year' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.current_year" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.economics?.currentYear
+                              | currency
+                                : dashData?.economics?.currency?.toUpperCase()
+                                : "symbol-narrow"
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.total_amount' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.total_amount' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.total_amount" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.economics?.totalAmount
+                              | currency
+                                : dashData?.economics?.currency?.toUpperCase()
+                                : "symbol-narrow"
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-2">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{ 'label.dashboard.mrr' | translate }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{ 'message.dashboard.mrr' | translate }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.mrr" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.economics?.mrr
+                              | currency
+                                : dashData?.economics?.currency?.toUpperCase()
+                                : "symbol-narrow"
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-2">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{ 'label.dashboard.clv' | translate }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{ 'message.dashboard.clv' | translate }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.clv" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.economics?.clv
+                              | currency
+                                : dashData?.economics?.currency?.toUpperCase()
+                                : "symbol-narrow"
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="las la-file-invoice colorSecundario espDer5"></i
+                >{{ "title.dashboard.plan_indicator" | translate }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Visibility widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.serp_credits' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'label.scanner.dash.next.date.expired.serp'
+                            | translate
+                        }} {{
+                          utilService.formatDate(
+                            dashData?.serps?.renovationDate
+                          ) | date : 'short' : 'UTC' + utilService.offset
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.serp_credits" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height120 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.serps?.percentage | number : "1.2-2" }}%
+                        </h2>
+                        <progress
+                          color="#8ccc62"
+                          max="100"
+                          [value]="
+                            dashData?.serps?.percentage
+                              ? dashData?.serps?.percentage
+                              : 0
+                          "
+                          aria-valuemax="100"
+                          aria-valuemin="0"
+                          aria-valuenow="75"
+                          tabindex="-1"
+                        ></progress>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="col-md-2 left">
+                          <div class="left">
+                            {{ dashData?.serps?.consumed }}
+                          </div>
+                        </div>
+                        <div class="col-md-2 floatRight">
+                          <div class="right">{{ dashData?.serps?.total }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.transform_active' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.transform_active' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.transform_active" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.plansIndicators?.transform?.scanActive }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.url_active' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.url_active' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.url_active" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.plansIndicators?.transform?.totalUrl }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.success' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.success' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.success" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.plansIndicators?.transform?.success }} %
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.one_shot' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.one_shot' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.one_shot" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.plansIndicators?.one_shot?.scanActive }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.monitor' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.monitor' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.monitor" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{ dashData?.plansIndicators?.monitor?.scanActive }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.deindexing' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.deindexing' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.deindexing" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.plansIndicators?.desindexation?.scanActive
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-3">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.deindexing_url' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.deindexing_url' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.deindexing_url" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="centrado row height100 margin8">
+                      <div class="col-md-12">
+                        <h2>
+                          {{
+                            dashData?.plansIndicators?.desindexation?.totalUrl
+                          }}
+                        </h2>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="las la-history colorSecundario espDer5"></i
+                >{{ "title.dashboard.historics" | translate }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.year_amount' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.year_amount' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.year_amount" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div
+                      #containerBar
+                      class="centrado row height400 margin8 paddingBottom20"
+                    >
+                      <ngx-charts-bar-vertical
+                        [view]="[containerBar.offsetWidth, 360]"
+                        [scheme]="colorScheme"
+                        [results]="dashData?.incomesBars"
+                        [xAxis]="istrue"
+                        [yAxis]="istrue"
+                        [legend]="isFalse"
+                        [legendPosition]="legendBelow"
+                        [legendTitle]="legendLabel"
+                        [showXAxisLabel]="istrue"
+                        [showYAxisLabel]="istrue"
+                        [animations]="istrue"
+                      >
+                      </ngx-charts-bar-vertical>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-6">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.year_registers' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.year_registers' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.year_registers" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div
+                      #containerBar
+                      class="centrado row height400 margin8 paddingBottom20"
+                    >
+                      <ngx-charts-bar-vertical
+                        [view]="[containerBar.offsetWidth, 360]"
+                        [scheme]="colorScheme"
+                        [results]="dashData?.clients?.newRegisters"
+                        [xAxis]="istrue"
+                        [yAxis]="istrue"
+                        [legend]="isFalse"
+                        [legendPosition]="legendBelow"
+                        [legendTitle]="legendLabel"
+                        [showXAxisLabel]="istrue"
+                        [showYAxisLabel]="istrue"
+                        [animations]="istrue"
+                      >
+                      </ngx-charts-bar-vertical>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="las la-users colorSecundario espDer5"></i
+                >{{ "title.dashboard.suscriptions" | translate }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.plan_subscripcion' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.plan_subscripcion' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.plan_subscripcion" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div
+                      #containerPie
+                      class="centrado row height400 margin8 paddingBottom20"
+                    >
+                      <ngx-charts-pie-chart
+                        [view]="[containerPie.offsetWidth, 360]"
+                        [scheme]="colorScheme"
+                        [results]="dashData?.piePlan"
+                        [gradient]="istrue"
+                        [doughnut]="istrue"
+                        [legend]="isFalse"
+                        [legendPosition]="legendBelow"
+                        [legendTitle]="legendLabel"
+                      >
+                      </ngx-charts-pie-chart>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-6">
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-subtitle>
+                      <!-- Results widget help-->
+                      <a
+                        popoverTitle=" {{
+                          'label.dashboard.next_due' | translate
+                        }}"
+                        container="body"
+                        [autoClose]="true"
+                        ngbPopover="{{
+                          'message.dashboard.next_due' | translate
+                        }}"
+                        ><i class="las la-info-circle colorAzul"></i
+                      ></a>
+                      {{ "label.dashboard.next_due" | translate }}
+                    </mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="row centrado">
+                      <div class="col-md-12">
+                        <table
+                          class="table table-hover table-borderless table-responsive"
+                          *ngIf="dashData?.clients?.nextDue !== 0"
+                        >
+                          <thead class="thead-light">
+                            <tr>
+                              <th>{{ "label.clients" | translate }}</th>
+                              <th>{{ "label.plan" | translate }}</th>
+                              <th>{{ "label.expired_date" | translate }}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let data of copyArray">
+                              <td>{{ data?.clientName }}</td>
+                              <td>{{ data?.plan }}</td>
+                              <td>
+                                {{
+                                  utilService.formatDate(data?.expirationDate)
+                                    | date : "shortDate"
+                                }}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="col-md-12 centrado">
+                          <jw-pagination
+                            [items]="dashData?.clients?.nextDue"
+                            (changePage)="onChangePage($event)"
+                            [maxPages]="5"
+                            [pageSize]="6"
+                            *ngIf="dashData?.clients?.nextDue?.length > 6"
+                          ></jw-pagination>
+                        </div>
+                        <p *ngIf="dashData?.clients?.nextDue?.length === 0">
+                          {{ "error.not_found_results" | translate }}
+                        </p>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

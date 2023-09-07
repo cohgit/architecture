@@ -1,0 +1,53 @@
+<div class="container-fluid paddingTop15 backgroundWhite">
+  <div class="row">
+    <div class="col-md-8">
+      <strong>{{'message.last_comment' | translate}}</strong>
+    </div>
+    <div class="col-md-4">
+      {{utilService.formatDate(comment?.comment_date) | date: 'shortDate'}}
+    </div>
+
+  </div>
+  <div class="row paddingTop15">
+    <div class="col-md-12">
+      <p>{{comment?.comment}}</p>
+    </div>
+
+  </div>
+  <!--<mat-accordion class="example-full-width" multi>
+    <mat-expansion-panel hideToggle expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{'message.last_comment' | translate}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{comment?.comment_date | date: 'shortDate'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="row">
+        <div class="col-md-12">
+
+          <p>{{comment?.comment}}</p>
+        </div>
+      </div>
+
+      <! --<div class="row">
+        <div class="col-md-4">
+          <h5>{{'label.name' | translate}}: {{comment?.author_name | translate}} </h5>
+        </div>
+        <div class="col-md-4">
+          <h5>{{'label.profile' | translate}}: {{'profile.' + comment?.profile  | lowercase  | translate}} </h5>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>-- >
+    </mat-expansion-panel>
+
+  </mat-accordion>-->
+  <div class="container-fluid">
+    <div class="col-12 paddingBottom50 paddingTop25 centrado">
+      <button (click)="utilService.back()" class="secondLevelButton espDer15"
+      ><i class="las fa-backward espDer5"></i>{{'button.back' | translate}}</button>
+    </div>
+  </div>

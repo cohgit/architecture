@@ -1,0 +1,918 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ApproveImpulseComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/impulse/approve-impulse/approve-impulse.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-approve-impulse</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./approve-impulse.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./approve-impulse.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aprove" >aprove</a>
+                            </li>
+                            <li>
+                                <a href="#comment" >comment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#isFalse" >isFalse</a>
+                            </li>
+                            <li>
+                                <a href="#isTrue" >isTrue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#approve" >approve</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#reject" >reject</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, impulseService: <a href="../injectables/ImpulseService.html" target="_self">ImpulseService</a>, modal: <a href="../injectables/ModalService.html" target="_self">ModalService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, dialogRef: MatDialogRef<ApproveImpulseComponent>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>modal to approve a impulse</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>impulseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ImpulseService.html" target="_self" >ImpulseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ModalService.html" target="_self" >ModalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialogRef&lt;ApproveImpulseComponent&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="approve"></a>
+                    <span class="name">
+                        <span ><b>approve</b></span>
+                        <a href="#approve"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>approve(form: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="41"
+                            class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>call to approve  or  reject an impulse</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="35"
+                            class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reject"></a>
+                    <span class="name">
+                        <span ><b>reject</b></span>
+                        <a href="#reject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reject(form: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="58"
+                            class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>call a service to  reject an impulse</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aprove"></a>
+                    <span class="name">
+                        <span ><b>aprove</b></span>
+                        <a href="#aprove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comment"></a>
+                    <span class="name">
+                        <span ><b>comment</b></span>
+                        <a href="#comment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="data"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>data</b></span>
+                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decoradores : </b>
+                        <br />
+                        <code>
+                            @Inject(MAT_DIALOG_DATA)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFalse"></a>
+                    <span class="name">
+                        <span ><b>isFalse</b></span>
+                        <a href="#isFalse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTrue"></a>
+                    <span class="name">
+                        <span ><b>isTrue</b></span>
+                        <a href="#isTrue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/pages/impulse/approve-impulse/approve-impulse.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Inject, OnInit} from &#x27;@angular/core&#x27;;
+import {MAT_DIALOG_DATA, MatDialogRef} from &quot;@angular/material/dialog&quot;;
+import {ImpulseService} from &quot;../../../services/impulse.service&quot;;
+import {ModalService} from &quot;../../../helpers/modal.service&quot;;
+import {SessionService} from &quot;../../../helpers/session.service&quot;;
+import {UtilService} from &quot;../../../helpers/util.service&quot;;
+
+@Component({
+  selector: &#x27;app-approve-impulse&#x27;,
+  templateUrl: &#x27;./approve-impulse.component.html&#x27;,
+  styleUrls: [&#x27;./approve-impulse.component.css&#x27;]
+})
+export class ApproveImpulseComponent implements OnInit {
+  aprove: any &#x3D; null;
+  isTrue &#x3D; true;
+  isFalse &#x3D; false;
+  comment &#x3D; &#x27;&#x27;;
+  info: any;
+
+  /**
+   * modal to approve a impulse
+   * @param data
+   * @param session
+   * @param impulseService
+   * @param modal
+   * @param utilService
+   * @param dialogRef
+   */
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private session: SessionService,
+              private impulseService: ImpulseService, private modal: ModalService, private utilService: UtilService,
+              private dialogRef: MatDialogRef&lt;ApproveImpulseComponent&gt;) {
+    this.info &#x3D; data.info;
+  }
+
+  ngOnInit(): void {
+  }
+
+  /** call to approve  or  reject an impulse
+   * @param form
+   */
+  approve(form: any) {
+    this.modal.openConfirmation({
+      message: &#x27;message.confirmation.impulse.approved&#x27;,
+      onConfirm: () &#x3D;&gt; {
+        this.impulseService.approve(this.data.info.content.id, this.comment, response &#x3D;&gt; {
+          response.user &#x3D; this.session.getUser().name;
+          response.profile &#x3D; &#x27;falta el nombre completo de quien agregó este comentario y su perfil&#x27;;
+          this.dialogRef.close(true);
+        });
+      },
+    });
+  }
+
+  /**
+   * call a service to  reject an impulse
+   * @param form
+   */
+  reject(form: any) {
+    if (this.comment !&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; this.aprove !&#x3D;&#x3D; null) {
+      this.modal.openConfirmation({
+        message: &#x27;message.confirmation.impulse.reject&#x27;,
+        onConfirm: () &#x3D;&gt; {
+          this.impulseService.reject(this.data.info.content.id, this.comment, response &#x3D;&gt; {
+            response.user &#x3D; this.session.getUser().name;
+            response.profile &#x3D; &#x27;falta el nombre completo de quien agregó este comentario y su perfil&#x27;;
+            this.dialogRef.close(true);
+          });
+        },
+      });
+
+    } else {
+      this.utilService.showNotification(&#x27;error.impulse.comment&#x27;, &#x27;danger&#x27;);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h2 mat-dialog-title&gt;&lt;i class&#x3D;&quot;las la-clipboard-check colorGris espDer5&quot;&gt;&lt;/i&gt;{{&#x27;tittle.approve_reject&#x27; | translate}}
+&lt;/h2&gt;
+&lt;form #approveRejectForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;approveRejectForm.form.valid&quot;&gt;
+  &lt;div mat-dialog-content&gt;
+    &lt;div class&#x3D;&quot;row example-full-width&quot;&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+        &lt;h5&gt;{{&#x27;label.impulse.decision&#x27; | translate}}:&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4 paddingTop15&quot;&gt;
+        &lt;mat-button-toggle-group [(ngModel)]&#x3D;&quot;aprove&quot; name&#x3D;&quot;aprove&quot; required #aproveNg&#x3D;&quot;ngModel&quot;&gt;
+          &lt;mat-button-toggle [value]&#x3D;&quot;isTrue&quot;&gt; {{&#x27;button.approve&#x27; | translate}}&lt;/mat-button-toggle&gt;
+          &lt;mat-button-toggle [value]&#x3D;&quot;isFalse&quot;&gt; {{&#x27;button.reject&#x27; | translate}}&lt;/mat-button-toggle&gt;
+
+        &lt;/mat-button-toggle-group&gt;
+        &lt;!--   &lt;mat-radio-group
+             aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+             class&#x3D;&quot;example-radio-group&quot; required #aproveNg&#x3D;&quot;ngModel&quot;
+             [(ngModel)]&#x3D;&quot;aprove&quot; name&#x3D;&quot;aprove&quot;&gt;
+             &lt;mat-radio-button class&#x3D;&quot;example-radio-button espDer15&quot; [value]&#x3D;&quot;isTrue&quot;&gt;
+               {{&#x27;button.approve&#x27; | translate}}
+             &lt;/mat-radio-button&gt;
+             &lt;mat-radio-button class&#x3D;&quot;example-radio-button&quot; [value]&#x3D;&quot;isFalse&quot;&gt;
+               {{&#x27;button.reject&#x27; | translate}}
+             &lt;/mat-radio-button&gt;
+           &lt;/mat-radio-group&gt;--&gt;
+        &lt;div *ngIf&#x3D;&quot;aproveNg.errors?.required &amp;&amp; approveRejectForm.submitted&quot;&gt;
+          &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;&lt;i class&#x3D;&quot;las la-exclamation-circle  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;error.required&#x27; | translate}}
+          &lt;/h5&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-8 paddingTop15&quot; *ngIf&#x3D;&quot;!aprove &amp;&amp; aprove !&#x3D;&#x3D; null&quot;&gt;
+             &lt;textarea type&#x3D;&quot;text&quot; class&#x3D;&quot;example-full-width form-control&quot; [(ngModel)]&#x3D;&quot;comment&quot; name&#x3D;&quot;comment&quot;
+                       placeholder&#x3D;&quot;{{&#x27;title.comments&#x27; | translate}}&quot;&gt;&lt;/textarea&gt;
+        &lt;div *ngIf&#x3D;&quot;comment &#x3D;&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; approveRejectForm.submitted&quot;&gt;
+          &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;&lt;i class&#x3D;&quot;las la-exclamation-circle  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;error.required&#x27; | translate}}
+          &lt;/h5&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+    &lt;/div&gt;
+    &lt;mat-dialog-actions class&#x3D;&quot;centrado&quot;&gt;
+      &lt;a mat-dialog-close tabindex&#x3D;&quot;-1&quot; class&#x3D;&quot;third after colorGris&quot;&gt; {{&#x27;button.cancel&#x27; | translate}}&lt;/a&gt;
+      &lt;div *ngIf&#x3D;&quot;aprove !&#x3D;&#x3D; null&quot;&gt;
+        &lt;button *ngIf&#x3D;&quot;aprove&quot; class&#x3D;&quot;glow-on-hover espIz15&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;approve(approveRejectForm)&quot;
+                tabindex&#x3D;&quot;1&quot;&gt;{{&#x27;button.confirm_approve&#x27; | translate}}&lt;/button&gt;
+        &lt;button *ngIf&#x3D;&quot;!aprove&quot; class&#x3D;&quot;glow-on-hover espIz15&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;reject(approveRejectForm)&quot;
+                tabindex&#x3D;&quot;1&quot;&gt;{{&#x27;button.confirm_reject&#x27; | translate}}&lt;/button&gt;
+
+      &lt;/div&gt;
+    &lt;/mat-dialog-actions&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./approve-impulse.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h2 mat-dialog-title><i class="las la-clipboard-check colorGris espDer5"></i>{{\'tittle.approve_reject\' | translate}}</h2><form #approveRejectForm="ngForm" (ngSubmit)="approveRejectForm.form.valid">  <div mat-dialog-content>    <div class="row example-full-width">      <div class="col-md-12 centrado">        <h5>{{\'label.impulse.decision\' | translate}}:</h5>      </div>      <div class="col-md-4 paddingTop15">        <mat-button-toggle-group [(ngModel)]="aprove" name="aprove" required #aproveNg="ngModel">          <mat-button-toggle [value]="isTrue"> {{\'button.approve\' | translate}}</mat-button-toggle>          <mat-button-toggle [value]="isFalse"> {{\'button.reject\' | translate}}</mat-button-toggle>        </mat-button-toggle-group>        <!--   <mat-radio-group             aria-labelledby="example-radio-group-label"             class="example-radio-group" required #aproveNg="ngModel"             [(ngModel)]="aprove" name="aprove">             <mat-radio-button class="example-radio-button espDer15" [value]="isTrue">               {{\'button.approve\' | translate}}             </mat-radio-button>             <mat-radio-button class="example-radio-button" [value]="isFalse">               {{\'button.reject\' | translate}}             </mat-radio-button>           </mat-radio-group>-->        <div *ngIf="aproveNg.errors?.required && approveRejectForm.submitted">          <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{\'error.required\' | translate}}          </h5>        </div>      </div>      <div class="col-md-8 paddingTop15" *ngIf="!aprove && aprove !== null">             <textarea type="text" class="example-full-width form-control" [(ngModel)]="comment" name="comment"                       placeholder="{{\'title.comments\' | translate}}"></textarea>        <div *ngIf="comment === \'\' && approveRejectForm.submitted">          <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{\'error.required\' | translate}}          </h5>        </div>      </div>    </div>    <mat-dialog-actions class="centrado">      <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{\'button.cancel\' | translate}}</a>      <div *ngIf="aprove !== null">        <button *ngIf="aprove" class="glow-on-hover espIz15" type="submit" (click)="approve(approveRejectForm)"                tabindex="1">{{\'button.confirm_approve\' | translate}}</button>        <button *ngIf="!aprove" class="glow-on-hover espIz15" type="submit" (click)="reject(approveRejectForm)"                tabindex="1">{{\'button.confirm_reject\' | translate}}</button>      </div>    </mat-dialog-actions>  </div></form></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ApproveImpulseComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ApproveImpulseComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

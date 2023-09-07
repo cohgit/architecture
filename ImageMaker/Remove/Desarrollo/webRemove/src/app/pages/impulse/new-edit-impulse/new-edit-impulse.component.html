@@ -1,0 +1,668 @@
+<h2 mat-dialog-title *ngIf="data.nuevo">
+  <i class="las la-sort-amount-up-alt colorGris espDer5"></i
+  >{{ "title.new_impulse" | translate }}
+</h2>
+<h2 mat-dialog-title *ngIf="!data.nuevo">
+  <i class="las la-sort-amount-up-alt colorGris espDer5"></i
+  >{{ "title.edit_impulse" | translate }}: {{ data?.info?.keyword?.word }}
+</h2>
+
+<div mat-dialog-content>
+  <div class="row container-fluid">
+    <div class="row padding15" *ngIf="data.nuevo">
+      <div class="col-md-3">
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ "label.impulse.keywords" | translate }} </mat-label>
+          <mat-select
+            [(ngModel)]="data.info.id_keyword"
+            name="id_keyword"
+            required
+            #key="ngModel"
+          >
+            <mat-option
+              *ngFor="let keyword of data.scanner.keywords"
+              [value]="keyword.id"
+            >
+              {{ keyword.word }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div *ngIf="key.errors?.required && impulseForm.submitted">
+          <h5 class="colorRojo">
+            <i class="las la-exclamation-circle espDer5"></i
+            >{{ "error.required" | translate }}
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-1 paddingTop15">
+        {{ "label.scanner.advance.image.type" | translate }} * :
+      </div>
+      <div class="col-md-8">
+        <mat-button-toggle-group
+          aria-label="Font Style"
+          [(ngModel)]="data.info.typeObj"
+          required
+        >
+          <mat-button-toggle *ngFor="let type of allTypes" [value]="type">
+            {{
+              "title.impulse.type." + type.tag | translate
+            }}</mat-button-toggle
+          >
+        </mat-button-toggle-group>
+      </div>
+    </div>
+    <form
+      #impulseForm="ngForm"
+      (ngSubmit)="(impulseForm.form.valid)"
+      class="example-full-width"
+    >
+      <mat-tab-group class="example-full-width" *ngIf="data.info.typeObj">
+        <!-- REDACTION REQUEST -->
+        <mat-tab
+          label="{{ 'list.impulse.type.WORDING_REQUESTED' | translate }}"
+          *ngIf="data.info.typeObj?.WORDING_REQUESTED"
+          class=""
+        >
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-12">
+              <mat-form-field
+                class="example-full-width"
+                *ngIf="data.info.editableSolitude"
+              >
+                <input
+                  [(ngModel)]="data.info.reference_link"
+                  name="reference_link"
+                  matInput
+                  placeholder="{{ 'label.impulse.url' | translate }} "
+                  required
+                  (ngModelChange)="checkValidURL(data.info.reference_link)"
+                />
+              </mat-form-field>
+              <div *ngIf="!validAndProtocol">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i>
+                  {{ "error.invalidNotprocol" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="!impulseForm.valid && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+              <a
+                target="_blank"
+                routerLink="{{ data.info.reference_link }}"
+                *ngIf="!data.info.editableSolitude"
+                ><i
+                  class="las la-external-link-alt espDer5 colorPrincipal la-2x"
+                ></i>
+                {{ "label.scanner.url" | translate }}:
+                {{ utilService.onlyDomain(data.info.reference_link) }}
+              </a>
+            </div>
+
+            <div class="col-md-12 paddingTop15">
+              <angular-editor
+                [(ngModel)]="data.info.comments"
+                [config]="editorConfig"
+                name="comments"
+                (keyup)="onkeyup(data.info.comments, isFalse)"
+              >
+              </angular-editor>
+            </div>
+            <div class="col-md-12">
+              <h6 class="right">
+                <span
+                  ><i
+                    class="las la-exclamation-circle colorRojo la-2x"
+                    title="{{ 'error.exceedes_words' | translate }}"
+                    *ngIf="numberOfCharacters > maxNumberOfCharacters"
+                  ></i
+                ></span>
+                {{ numberOfCharacters }} / {{ maxNumberOfCharacters }}
+              </h6>
+            </div>
+          </div>
+          <hr />
+          <!-- Decision -->
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-3" *ngIf="data.info.aprovableRejectable">
+              <h5>{{ "label.impulse.decision" | translate }}:</h5>
+              <mat-button-toggle-group
+                [(ngModel)]="aprove"
+                name="aprove"
+                required
+                #aproveNg="ngModel"
+              >
+                <mat-button-toggle [value]="isTrue">
+                  {{ "button.approve" | translate }}</mat-button-toggle
+                >
+                <mat-button-toggle [value]="isFalse">
+                  {{ "button.reject" | translate }}</mat-button-toggle
+                >
+              </mat-button-toggle-group>
+              <!--   <mat-radio-group
+                   aria-labelledby="example-radio-group-label"
+                   class="example-radio-group" required #aproveNg="ngModel"
+                   [(ngModel)]="aprove" name="aprove">
+                   <mat-radio-button class="example-radio-button espDer15" [value]="isTrue">
+                     {{'button.approve' | translate}}
+                   </mat-radio-button>
+                   <mat-radio-button class="example-radio-button" [value]="isFalse">
+                     {{'button.reject' | translate}}
+                   </mat-radio-button>
+                 </mat-radio-group>-->
+              <div *ngIf="aproveNg.errors?.required && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-5"
+              *ngIf="
+                data.info.aprovableRejectable && !aprove && aprove !== null
+              "
+            >
+              <textarea
+                type="text"
+                class="example-full-width form-control"
+                [(ngModel)]="comment"
+                name="comment"
+                placeholder="{{ 'title.comments' | translate }}"
+              ></textarea>
+              <div *ngIf="comment === '' && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4"
+              *ngIf="data.info.aprovableRejectable && aprove !== null"
+            >
+              <button
+                *ngIf="aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="approve(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_approve" | translate }}
+              </button>
+              <button
+                *ngIf="!aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="reject(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_reject" | translate }}
+              </button>
+            </div>
+          </div>
+        </mat-tab>
+
+        <!-- REDACTION SECTION -->
+        <mat-tab
+          label="{{ 'label.impulse' | translate }}: {{
+            'list.impulse.type.OWN_WRITING' | translate
+          }}"
+          *ngIf="
+            data.info.typeObj?.OWN_WRITING ||
+            (data.info.typeObj?.WORDING_REQUESTED && data.info.id)
+          "
+        >
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-12">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.content.title"
+                  name="content.title"
+                  matInput
+                  required
+                  placeholder="{{ 'label.impulse.tittle' | translate }} "
+                  disabled="{{ !data.info.editableContent }}"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <app-file-upload
+                [fileType]="fileType"
+                [(model)]="data.info.content.image_link"
+                [showThumbnail]="true"
+                (onUpload)="checkFile($event)"
+              ></app-file-upload>
+              <h5>
+                <i class="las la-info-circle colorAzul espDer5"></i
+                >{{ "tooltip.impulse_upload_file" | translate }}
+              </h5>
+            </div>
+            <div class="col-md-3">
+              <img
+                *ngIf="data.info.content.image_link"
+                style="max-height: 150px; max-width: 200px"
+                src="{{ thumbnailPreview }}"
+              />
+            </div>
+            <div class="col-md-3" *ngIf="data.info.content.image_link">
+              <a (click)="ufs.download(data.info.content.image_link)">
+                <i class="las la-cloud-download-alt la-2x colorGris espDer5"></i
+                >{{ "label.download_imagen" | translate }}</a
+              >
+            </div>
+            <!-- <div class="col-md-8">
+               <h5 class="colorGris ">{{'label.upload_media' | translate}}</h5>
+               <mat-form-field class="example-full-width">
+                 <input [(ngModel)]="data.info.content.image_link" name="content.image_link" matInput
+                        placeholder="{{'label.impulse.image_link' | translate}} "
+                        disabled="{{!data.info.editableContent}}">
+               </mat-form-field>
+             </div>
+             <div class="col-md-4 centrado" *ngIf="data.info.content.image_link">
+               <img src="{{data.info.content.image_link}}" onerror="this.src='../../../../assets/img/broken.jpg'"
+                    class="gi-img">
+             </div>-->
+            <div class="col-md-12 paddingTop15">
+              <angular-editor
+                [(ngModel)]="data.info.content.content"
+                [config]="editorContentConfig"
+                name="content.content"
+                (keyup)="onkeyup(data.info.content.content, isTrue)"
+                (load)="onkeyup(data.info.content.content, isTrue)"
+              ></angular-editor>
+            </div>
+            <div class="col-md-12">
+              <h6 class="right">
+                <span
+                  ><i
+                    class="las la-exclamation-circle colorRojo la-2x"
+                    title="{{ 'error.exceedes_words' | translate }}"
+                    *ngIf="numberOfWordsRedaction > maxNumberOfCharacters"
+                  ></i
+                ></span>
+                {{ numberOfWordsRedaction }} / {{ maxNumberOfCharacters }}
+              </h6>
+            </div>
+          </div>
+          <hr />
+          <!-- Decision -->
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-3" *ngIf="data.info.aprovableRejectable">
+              <h5>{{ "label.impulse.decision" | translate }}:</h5>
+              <mat-button-toggle-group
+                [(ngModel)]="aprove"
+                name="aprove"
+                required
+                #aproveNg="ngModel"
+              >
+                <mat-button-toggle [value]="isTrue">
+                  {{ "button.approve" | translate }}</mat-button-toggle
+                >
+                <mat-button-toggle [value]="isFalse">
+                  {{ "button.reject" | translate }}</mat-button-toggle
+                >
+              </mat-button-toggle-group>
+              <!--   <mat-radio-group
+                   aria-labelledby="example-radio-group-label"
+                   class="example-radio-group" required #aproveNg="ngModel"
+                   [(ngModel)]="aprove" name="aprove">
+                   <mat-radio-button class="example-radio-button espDer15" [value]="isTrue">
+                     {{'button.approve' | translate}}
+                   </mat-radio-button>
+                   <mat-radio-button class="example-radio-button" [value]="isFalse">
+                     {{'button.reject' | translate}}
+                   </mat-radio-button>
+                 </mat-radio-group>-->
+              <div *ngIf="aproveNg.errors?.required && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-5"
+              *ngIf="
+                data.info.aprovableRejectable && !aprove && aprove !== null
+              "
+            >
+              <textarea
+                type="text"
+                class="example-full-width form-control"
+                [(ngModel)]="comment"
+                name="comment"
+                placeholder="{{ 'title.comments' | translate }}"
+              ></textarea>
+              <div *ngIf="comment === '' && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4"
+              *ngIf="data.info.aprovableRejectable && aprove !== null"
+            >
+              <button
+                *ngIf="aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="approve(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_approve" | translate }}
+              </button>
+              <button
+                *ngIf="!aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="reject(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_reject" | translate }}
+              </button>
+            </div>
+          </div>
+        </mat-tab>
+
+        <!-- URL ALREADY PUBLISHED -->
+        <mat-tab
+          label="{{ 'label.impulse' | translate }}: {{
+            'list.impulse.type.PUBLISHED_URL' | translate
+          }}"
+          *ngIf="data.info.typeObj?.PUBLISHED_URL"
+        >
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.content.title"
+                  name="content.title"
+                  matInput
+                  required
+                  placeholder="{{ 'label.impulse.tittle' | translate }} "
+                  disabled="{{ !data.info.editableContent }}"
+                />
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{
+                  "label.impulse.publish_date" | translate
+                }}</mat-label>
+                <input
+                  matInput
+                  [matDatepicker]="real_publish_date"
+                  [(ngModel)]="data.info.real_publish_date"
+                  name="real_publish_date"
+                  disabled="{{ !data.info.editableContent }}"
+                  required
+                />
+                <mat-datepicker-toggle
+                  matSuffix
+                  [for]="real_publish_date"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #real_publish_date></mat-datepicker>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-12">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="data.info.real_publish_link"
+                  name="real_publish_link"
+                  matInput
+                  required
+                  placeholder="{{ 'label.scanner.url' | translate }} "
+                  disabled="{{ !data.info.editableContent }}"
+                  (ngModelChange)="checkURL(data.info.real_publish_link)"
+                />
+              </mat-form-field>
+              <div *ngIf="!urlOK">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i>
+                  {{ "error.urlDuplicatedInvalid" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="!validAndProtocol">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i>
+                  {{ "error.invalidNotprocol" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div class="col-md-12 paddingTop15">
+              <textarea
+                type="text"
+                class="example-full-width form-control"
+                [(ngModel)]="data.info.comments"
+                name="comments"
+                placeholder="{{ 'title.comments' | translate }}"
+                disabled="{{ !data.info.editableContent }}"
+                (ngModelChange)="onkeyup(data.info.comments, isFalse)"
+              ></textarea>
+            </div>
+            <div class="col-md-12">
+              <h6 class="right">
+                <span
+                  ><i
+                    class="las la-exclamation-circle colorRojo la-2x"
+                    title="{{ 'error.exceedes_words' | translate }}"
+                    *ngIf="numberOfCharacters > maxNumberOfCharacters"
+                  ></i
+                ></span>
+                {{ numberOfCharacters }} / {{ maxNumberOfCharacters }}
+              </h6>
+            </div>
+          </div>
+          <hr />
+          <!-- Decision -->
+          <div class="row example-full-width paddingTop15">
+            <div class="col-md-3" *ngIf="data.info.aprovableRejectable">
+              <h5>{{ "label.impulse.decision" | translate }}:</h5>
+              <mat-button-toggle-group
+                [(ngModel)]="aprove"
+                name="aprove"
+                required
+                #aproveNg="ngModel"
+              >
+                <mat-button-toggle [value]="isTrue">
+                  {{ "button.approve" | translate }}</mat-button-toggle
+                >
+                <mat-button-toggle [value]="isFalse">
+                  {{ "button.reject" | translate }}</mat-button-toggle
+                >
+              </mat-button-toggle-group>
+              <!--   <mat-radio-group
+                   aria-labelledby="example-radio-group-label"
+                   class="example-radio-group" required #aproveNg="ngModel"
+                   [(ngModel)]="aprove" name="aprove">
+                   <mat-radio-button class="example-radio-button espDer15" [value]="isTrue">
+                     {{'button.approve' | translate}}
+                   </mat-radio-button>
+                   <mat-radio-button class="example-radio-button" [value]="isFalse">
+                     {{'button.reject' | translate}}
+                   </mat-radio-button>
+                 </mat-radio-group>-->
+              <div *ngIf="aproveNg.errors?.required && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-5"
+              *ngIf="
+                data.info.aprovableRejectable && !aprove && aprove !== null
+              "
+            >
+              <textarea
+                type="text"
+                class="example-full-width form-control"
+                [(ngModel)]="comment"
+                name="comment"
+                placeholder="{{ 'title.comments' | translate }}"
+              ></textarea>
+              <div *ngIf="comment === '' && impulseForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4"
+              *ngIf="data.info.aprovableRejectable && aprove !== null"
+            >
+              <button
+                *ngIf="aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="approve(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_approve" | translate }}
+              </button>
+              <button
+                *ngIf="!aprove"
+                class="glow-on-hover espIz15"
+                type="submit"
+                (click)="reject(impulseForm)"
+                tabindex="1"
+              >
+                {{ "button.confirm_reject" | translate }}
+              </button>
+            </div>
+          </div>
+        </mat-tab>
+
+        <!-- OBSERVATIONS -->
+        <mat-tab
+          label="{{ 'title.history' | translate }}"
+          *ngIf="!data.nuevo && !data.info.typeObj?.PUBLISHED_URL"
+          class="example-full-width"
+        >
+          <div
+            class="row container-fluid"
+            *ngIf="allComments && allComments.length !== 0"
+          >
+            <div class="col-md-12 paddingTop15">
+              <table class="table table-hover table-borderless">
+                <thead class="thead-light">
+                  <tr>
+                    <th>{{ "title.comments" | translate }}</th>
+                    <th>{{ "label.impulse.author" | translate }}</th>
+                    <th>{{ "label.impulse.creation_date" | translate }}</th>
+                    <th>{{ "label.profile" | translate }}</th>
+                    <th>{{ "label.impulse.state" | translate }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let comment of allComments">
+                    <td>{{ comment?.commentary }}</td>
+                    <td>{{ comment?.owner_name }}</td>
+                    <td>{{ utilService.formatDate(comment?.creation_date) | date }}</td>
+                    <td>
+                      {{
+                        "profile." + comment?.owner_profile
+                          | lowercase
+                          | translate
+                      }}
+                    </td>
+                    <td>
+                      {{ "list.impulse.state." + comment?.status | translate }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row centrado">
+                <jw-pagination
+                  [items]="allComments"
+                  (changePage)="onChangePage($event)"
+                  [maxPages]="5"
+                  [pageSize]="5"
+                ></jw-pagination>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row container-fluid paddingTop15"
+            *ngIf="allComments && allComments.length === 0"
+          >
+            <p class="colorGris centrado">
+              {{ "error.not_found_results" | translate }}
+            </p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </form>
+    <div class="row paddingTop25">
+      <div class="col-md-12" *ngIf="data.info.editableContent">
+        <p>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "tooltip.impulse_help_editable" | translate }}
+        </p>
+      </div>
+      <div class="col-md-12" *ngIf="data.info.askAprovable">
+        <p>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "tooltip.impulse_help_aprovable" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris espDer15">
+    {{ "button.cancel" | translate }}</a
+  >
+
+  <button
+    class="espIz15"
+    type="submit"
+    (click)="save(impulseForm)"
+    [ngClass]="!data.info.askAprovable ? 'glow-on-hover' : 'secondLevelButton'"
+    *ngIf="
+      (data.info.editableSolitude || data.info.editableContent) &&
+      data.info.typeObj
+    "
+    tabindex="1"
+  >
+    <span *ngIf="data.info.typeObj?.WORDING_REQUESTED && !data.info.id">{{
+      "button.ask_writing" | translate
+    }}</span>
+    <span *ngIf="data.info.typeObj?.WORDING_REQUESTED && data.info.id">{{
+      "button.save_draft" | translate
+    }}</span>
+    <span *ngIf="data.info.typeObj?.PUBLISHED_URL">{{
+      "button.edit" | translate
+    }}</span>
+    <span *ngIf="data.info.typeObj?.OWN_WRITING">{{
+      "button.save_draft" | translate
+    }}</span>
+  </button>
+  <button
+    class="glow-on-hover espIz15"
+    type="submit"
+    (click)="askApproval(impulseForm)"
+    *ngIf="data.info.askAprovable"
+    tabindex="1"
+  >
+    {{ "button.request_approval" | translate }}
+  </button>
+</mat-dialog-actions>

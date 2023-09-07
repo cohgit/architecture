@@ -1,0 +1,149 @@
+<div
+  class="row paddingTop15"
+  *ngIf="forbiddenWordServices.permissions.list"
+  id="toExport"
+>
+  <div class="row content-card">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <h2>
+                <i class="las la-skull-crossbones colorPrincipal espDer5"></i>
+                {{ "title.forbiddenword" | translate }}
+              </h2>
+            </div>
+            <div class="col-md-8 col-sm-6 paddingTop5 float-left">
+              <a class="glow-on-hover reduceFont" (click)="newItem()">
+                <i class="las la-plus-circle espDer5"></i
+                >{{ "button.add" | translate }}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-2 top20m"
+          *ngIf="allForbbiden && allForbbiden?.length !== 0"
+        >
+          <div class="row">
+            <div class="col-md-4 col-sm-6"></div>
+            <div class="col-md-4 col-sm-6">
+              <a
+                (click)="utilService.downloadExcel('title.trackingword')"
+                class="third after reduceFont"
+              >
+                <i class="las la-file-excel colorPrincipal espDer5"></i
+                >{{ "label.excel" | translate }}</a
+              >
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a
+                (click)="utilService.donwloadPDF('title.trackingword')"
+                class="third after reduceFont"
+              >
+                <i class="las la-file-pdf colorPrincipal espDer5"></i
+                >{{ "label.pdf" | translate }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--filters-->
+    <div class="col-md-12" *ngIf="allForbbiden && allForbbiden?.length !== 0">
+      <div class="row border-filter">
+        <div class="col-md-4 col-sm-12">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="filter.word"
+              (ngModelChange)="searchResult()"
+              name="word"
+              matInput
+              placeholder="{{ 'label.forbiddenwords' | translate }} "
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="col-md-2 centrado col-sm-12">
+          <!--button (click)="searchResult()" class="secondLevelButton reduceFont"
+          ><i class="las la-search espDer5"></i>{{'button.search' | translate}}</button-->
+        </div>
+        <div class="col-md-2 col-sm-12 paddingTop15 float-left">
+          <a (click)="clean()" class="third after reduceFont">
+            <i class="las la-broom colorPrincipal espDer5"></i
+            >{{ "button.clear_filters" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--principal table-->
+    <div
+      class="col-md-12"
+      *ngIf="filteredForbbiden && filteredForbbiden?.length !== 0"
+    >
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th (click)="sortFunction('word')">
+                <i class="las la-sort colorPrincipal espDer5"></i
+                >{{ "label.name" | translate }}
+              </th>
+
+              <th>{{ "label.actions" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of copyArray">
+              <td>{{ data?.word }}</td>
+
+              <td>
+                <a
+                  (click)="editItem(data)"
+                  class="espDer15"
+                  *ngIf="forbiddenWordServices.permissions.update"
+                >
+                  <i
+                    class="las la-edit colorPrincipal la-2x"
+                    title="{{ 'tooltip.edit_user' | translate }}"
+                  ></i>
+                </a>
+                <a
+                  (click)="deleteItem(data)"
+                  class="espDer15"
+                  *ngIf="forbiddenWordServices.permissions.delete"
+                >
+                  <i
+                    class="las la-times la-2x colorRojo padding15"
+                    title="{{ 'tooltip.remove' | translate }}"
+                  >
+                  </i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado paddingBottom50 paddingTop25">
+          <jw-pagination
+            [items]="filteredForbbiden"
+            (changePage)="onChangePage($event)"
+            [maxPages]="5"
+            [pageSize]="15"
+            class="{{ paginatorClass }}"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-md-12 centrado paddingBottom50 paddingTop25"
+      *ngIf="
+        (allForbbiden && allForbbiden?.length === 0) ||
+        filteredForbbiden.length === 0
+      "
+    >
+      <h5 class="colorGris">{{ "error.not_found_results" | translate }}</h5>
+    </div>
+  </div>
+</div>

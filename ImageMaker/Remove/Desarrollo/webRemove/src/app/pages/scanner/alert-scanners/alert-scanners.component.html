@@ -1,0 +1,214 @@
+<h2 mat-dialog-title>
+  <i class="las la-bell colorGris espDer5"></i
+  >{{ "label.alerts-title" | translate }}: {{ info.name }}
+</h2>
+<div mat-dialog-content>
+  <form #alertForm="ngForm" (ngSubmit)="(alertForm.form.valid)">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>
+          <strong>{{ "label.alert-period" | translate }}</strong>
+        </h3>
+
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="alert.periocity"
+          [ngModelOptions]="{ standalone: true }"
+          name="periocity"
+        >
+          <mat-radio-button
+            class="example-radio-button"
+            *ngFor="let item of periot"
+            [value]="item"
+          >
+            <span class="espDer15">{{ "label." + item | translate }} </span>
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="col-md-6" *ngIf="!isNew">
+        <h3>
+          <strong
+            >{{ "label.alert.status" | translate }}:
+            <i
+              class="las la-calendar-check colorVerde la-2x"
+              title="{{ 'label.alert.active' | translate }}"
+              *ngIf="alert.status"
+            ></i>
+            <i
+              class="las la-calendar-times colorRojo la-2x"
+              title="{{ 'label.alert.deactive' | translate }}"
+              *ngIf="!alert.status"
+            ></i
+          ></strong>
+        </h3>
+
+        <mat-slide-toggle
+          [(ngModel)]="alert.status"
+          name="status"
+          class="noCkeck"
+          >{{ "label.active_deactive" | translate }}</mat-slide-toggle
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          <strong>{{ "label.alert-goal-title" | translate }}</strong>
+        </h3>
+      </div>
+      <div class="col-md-12">
+        <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="alert.page_object"
+          [ngModelOptions]="{ standalone: true }"
+          name="page_object"
+        >
+          <mat-radio-button class="vertical-radio" value="monitor">
+            <span class="espDer15">
+              {{ "label.alert-goal-monitor" | translate }} ({{
+                info.configuration.pages
+              }})
+            </span>
+          </mat-radio-button>
+          <mat-radio-button
+            *ngIf="info.type === 'transform'"
+            class="vertical-radio"
+            value="target"
+          >
+            <span class="espDer15">
+              {{ "label.alert-goal-target" | translate }} ({{
+                plan.target_page
+              }})
+            </span>
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          <strong>{{ "label.alert-email" | translate }}</strong>
+        </h3>
+      </div>
+      <div class="col-md-12">
+        <mat-checkbox
+          class="example-margin espDer15 noCkeck"
+          [(ngModel)]="alert.new_content_detected"
+          name="new_content_detected"
+          >{{ "label.alert-new" | translate }}
+        </mat-checkbox>
+      </div>
+      <div class="col-md-12">
+        <mat-checkbox
+          class="example-margin espDer15 noCkeck"
+          [(ngModel)]="alert.negative_content_detected"
+          name="negative_content_detected"
+          >{{ "label.alert-negative" | translate }}
+        </mat-checkbox>
+      </div>
+      <div class="col-md-12">
+        <mat-checkbox
+          class="example-margin espDer15 noCkeck"
+          [(ngModel)]="alert.displaced_url"
+          name="displaced_url"
+          >{{ "label.alert-reached" | translate }}
+        </mat-checkbox>
+      </div>
+
+      <div class="col-md-6">
+        <mat-checkbox
+          class="example-margin espDer15 noCkeck"
+          [(ngModel)]="alert.matching_tracking_word"
+          name="matching_tracking_word"
+          [disabled]="info.justTrackingWords.length === 0"
+          >{{ "label.alert-tracking_word" | translate }}
+          <h5 class="colorGris" *ngIf="info.justTrackingWords.length === 0">
+            {{ "label.no-tracking-word" | translate }}
+          </h5>
+        </mat-checkbox>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field
+          class="example-full-width"
+          *ngIf="
+            info.justTrackingWords.length !== 0 && alert.matching_tracking_word
+          "
+        >
+          <mat-label>{{ "label.scanner.tracking" | translate }} </mat-label>
+          <mat-select
+            [(ngModel)]="all_Tracking"
+            name="all_Tracking"
+            multiple
+            [compareWith]="utilService.compareValue"
+            #alert_tracking_word="ngModel"
+          >
+            <mat-option *ngFor="let tw of info.justTrackingWords" [value]="tw">
+              {{ tw.word }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-checkbox
+          class="example-margin espDer15 noCkeck"
+          [(ngModel)]="alert.matching_keyword"
+          name="matching_keyword"
+          [disabled]="info.keywords.length === 0"
+          >{{ "label.alert-keywords" | translate }}
+          <h5 class="colorGris" *ngIf="info.keywords.length === 0">
+            {{ "label.no-tracking-word" | translate }}
+          </h5>
+        </mat-checkbox>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field
+          class="example-full-width"
+          *ngIf="info.keywords.length !== 0 && alert.matching_keyword"
+        >
+          <mat-label
+            >{{ "label.filter.keywords_modal" | translate }}
+          </mat-label>
+          <mat-select
+            [(ngModel)]="all_Keyword"
+            name="all_Keyword"
+            multiple
+            [compareWith]="utilService.compareValue"
+            #alert_keyword="ngModel"
+          >
+            <mat-option *ngFor="let kw of info.keywords" [value]="kw">
+              {{ kw.word }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris">
+    {{ "button.cancel" | translate }}</a
+  >
+  <button
+    *ngIf="isNew"
+    (click)="onConfirmClick(alertForm)"
+    class="glow-on-hover espIz15"
+    type="submit"
+    tabindex="1"
+  >
+    {{ "button.add" | translate }}
+  </button>
+  <button
+    *ngIf="!isNew"
+    (click)="onConfirmClick(alertForm)"
+    class="glow-on-hover espIz15"
+    type="submit"
+    tabindex="1"
+  >
+    {{ "button.save" | translate }}
+  </button>
+</mat-dialog-actions>

@@ -1,0 +1,74 @@
+<div *ngIf="dynamicForm">
+  <div class="row " *ngFor="let section of dynamicForm.sections">
+    <div class="col-md-12 paddingTop10">
+      <h3 class="colorPrincipal"><strong>{{section.label}}</strong></h3>
+      <hr>
+    </div>
+
+    <div style="display: contents;" *ngFor="let in of section.inputs" >
+      <div class="col-md-{{in.width}}" [ngSwitch]="in.type" *ngIf="in.visible">
+        <!-- TEXT FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.TEXT_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in.value}}</p>
+        </div>
+
+        <!-- TEXT AREA FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.TEXT_AREA_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in.value}}</p>
+        </div>
+
+        <!-- NUMBER FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.NUMBER_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in.value}}</p>
+        </div>
+
+        <!-- DATEPICKER FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.DATE_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in.value | date}}</p>
+        </div>
+
+        <!-- RADIO GROUP FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.RADIO_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in?.selectedOption?.label}}</p>
+        </div>
+
+        <!-- SELECT FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.SELECT_TYPE">
+          <strong >{{in.label}}</strong>
+          <p class="colorPrincipal">{{in?.selectedOption?.label}}</p>
+        </div>
+
+        <!-- CHECKBOX FIELD -->
+        <div class="example-section paddingTop10" *ngSwitchCase="dfh.CHECKBOX_TYPE">
+          <strong class="espDer5">{{in.label}}</strong>
+          <div class="row paddingTop10">
+            <p *ngFor="let opt of in?.selectedOptions" style="padding-left: 20px;">
+              <i class="las la-check colorVerde espDer5"></i> 
+              <span class="colorPrincipal">{{opt?.label}}</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- SWITCH FIELD -->
+        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.SWITCH_TYPE">
+          <mat-slide-toggle [(ngModel)]="in.value" name="{{in.name}}" disabled="true"
+              class="noCkeck"><span class="colorNegro boldFont">{{in.label}}</span></mat-slide-toggle>
+        </div>
+
+        <div *ngSwitchDefault>
+          Type Not Supported: Input: {{in.type}} | Name: {{in.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row centrado paddingTop10" *ngIf="showResult">
+    <h2>{{'tittle.dynamic.display.result' | translate}}: </h2>
+    <p>{{result?.label}}</p>
+  </div>
+</div>

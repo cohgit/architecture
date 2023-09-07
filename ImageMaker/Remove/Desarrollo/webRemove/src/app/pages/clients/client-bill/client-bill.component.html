@@ -1,0 +1,74 @@
+<div class="container-fluid padding20">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <!--
+        <div class="col-md-12 centrado">
+          <i
+            class="fab fa-stripe colorMorado fa-4x"
+            *ngIf="data.platform.STRIPE"
+          ></i>
+        </div>
+        -->
+        <div class="col-md-12 centrado" *ngIf="infoBills.length === 0">
+          <h5 class="colorGris">{{ "messages.no_payments" | translate }}</h5>
+        </div>
+        <div class="col-md-12 centrado" *ngIf="infoBills.length !== 0">
+          <table class="table table-hover table-borderless">
+            <thead class="thead-light">
+              <tr>
+                <th>{{ "label.amount" | translate }}</th>
+                <th>{{ "label.plan" | translate }}</th>
+                <th>{{ "label.payment_type" | translate }}</th>
+                <th>{{ "label.date" | translate }}</th>
+                <th>{{ "label.approved.by" | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let pay of infoBills">
+                <td>
+                  {{
+                    pay?.amount | currency : utilService.curr : "symbol-narrow"
+                  }}
+                </td>
+                <td>
+                  {{ pay?.planName }}
+                </td>
+                <!--
+              <td *ngIf="pay?.billing_reason === 'subscription_create'">
+                {{ "label.subscription" | translate }}
+              </td>
+              <td *ngIf="pay?.billing_reason !== 'subscription_create'">
+                {{ "label.payment" | translate }}
+              </td>
+              -->
+                <td>
+                  <span
+                    class="espDer5"
+                    [innerHTML]="pay.method | paymentsMethods"
+                  ></span
+                  >{{ "label.payment_" + pay.method | translate }}
+                </td>
+                <td>{{ utilService.formatDate(pay?.payment_date) | date }}</td>
+                <td>{{ pay.approvedBy | translate }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-12 centrado" *ngIf="infoBills.length !== 0">
+          <jw-pagination
+            [items]="infoBills"
+            (changePage)="onChangePage($event)"
+            [maxPages]="5"
+            [pageSize]="15"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="centrado row">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris">
+      {{ "button.close" | translate }}</a
+    >
+  </div>
+</div>

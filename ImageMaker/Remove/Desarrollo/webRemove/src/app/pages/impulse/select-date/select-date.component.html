@@ -1,0 +1,56 @@
+<h2 mat-dialog-title>
+  <i class="las la-calendar-alt colorGris espDer5"></i
+  >{{ "tooltip.impulse.set_date" | translate }}
+</h2>
+<form #dateForm="ngForm" (ngSubmit)="(dateForm.form.valid)">
+  <div mat-dialog-content>
+    <div class="container-fluid padding20">
+      <div class="col-md-12">
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ "label.impulse.start_month" | translate }} </mat-label>
+          <input
+            matInput
+            [matDatepicker]="pickerMonthYear"
+            [(ngModel)]="monthYear"
+            name="monthYear"
+            required
+            [min]="today"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="pickerMonthYear"
+          ></mat-datepicker-toggle>
+          <mat-datepicker
+            #pickerMonthYear
+            startView="multi-year"
+            (yearSelected)="chosenYearHandler($event)"
+            (monthSelected)="chosenMonthHandler($event, pickerMonthYear)"
+            panelClass="example-month-picker"
+          ></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+    <p
+      [ngClass]="{
+        colorAzul: this.available > 0,
+        colorRojo: this.available <= 0
+      }"
+    >
+      {{ message | translate : { available: this.available } }}
+    </p>
+
+    <mat-dialog-actions class="centrado">
+      <a mat-dialog-close tabindex="-1" class="third after colorGris">
+        {{ "button.cancel" | translate }}</a
+      >
+      <button
+        class="glow-on-hover espIz15"
+        type="submit"
+        (click)="onConfirmClick(dateForm)"
+        tabindex="1"
+      >
+        {{ "button.add" | translate }}
+      </button>
+    </mat-dialog-actions>
+  </div>
+</form>

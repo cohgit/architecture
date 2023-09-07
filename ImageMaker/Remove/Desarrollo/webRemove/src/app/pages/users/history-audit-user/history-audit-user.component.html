@@ -1,0 +1,36 @@
+<h2 mat-dialog-title><i class="las la-history colorGris espDer5"></i>{{'title.history' | translate}}</h2>
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless ">
+          <thead class="thead-light">
+          <tr>
+            <th>{{'label.register' | translate}} </th>
+            <th>{{'label.date' | translate}}</th>
+            <th>{{'label.profile' | translate}} </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let data of copyArray">
+            <td>{{ data?.description | translate }}</td>
+            <td>{{ utilService.formatDate(data?.action_date) | date:'short'}}</td>
+            <td>{{ 'profile.' + (data?.profile).toLowerCase()  | translate }}</td>
+
+          </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado">
+          <jw-pagination [items]="info" (changePage)="onChangePage($event)"
+                         [maxPages]="5" [pageSize]="15"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+
+  </mat-dialog-actions>
+</div>
+

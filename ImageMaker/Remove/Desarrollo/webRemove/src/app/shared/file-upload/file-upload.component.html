@@ -1,0 +1,6 @@
+<label class="noBacknoBorder paddingTop15">
+  <input type="file" (change)="selectFile($event)" [accept]="fileType" class="noBacknoBorder">
+</label>
+
+<button [disabled]="!selectedFiles" class="noBacknoBorder paddingTop15" (click)="upload()"><i
+  class="las la-paperclip espIz15  la-2x colorPrincipal"></i></button>

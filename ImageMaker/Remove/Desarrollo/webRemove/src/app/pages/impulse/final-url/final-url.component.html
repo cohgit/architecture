@@ -1,0 +1,43 @@
+<h2 mat-dialog-title><i class="las la-link colorGris espDer5"></i>{{'tooltip.impulse.news_link' | translate}}</h2>
+<form #urlForm="ngForm" (ngSubmit)="urlForm.form.valid">
+  <div mat-dialog-content>
+    <div class="container-fluid padding20">
+      <div class="row">
+        <div class="col-md-7">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="urltoAssigned" name="title" matInput placeholder="{{'label.impulse.final_url'
+          | translate}} " required (ngModelChange)="checkURL(urltoAssigned)">
+          </mat-form-field>
+          <div *ngIf="!urlOK">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >
+              {{ "error.urlDuplicatedInvalid" | translate }}
+            </h5>
+          </div>
+          <div *ngIf="!validAndProtocol">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i>
+              {{ "error.invalidNotprocol" | translate }}
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <mat-form-field class="example-full-width">
+            <mat-label>{{'label.impulse.publish_date' | translate}}</mat-label>
+            <input matInput [matDatepicker]="publish_date" [(ngModel)]="info.real_publish_date" name="publish_date"
+                   [max]="today">
+            <mat-datepicker-toggle matSuffix [for]="publish_date"></mat-datepicker-toggle>
+            <mat-datepicker #publish_date></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+
+    </div>
+    <mat-dialog-actions class="centrado">
+      <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.cancel' | translate}}</a>
+      <button class="glow-on-hover espIz15" type="submit" (click)="onConfirmClick(urlForm)"
+              tabindex="1">{{'button.add' | translate}}</button>
+    </mat-dialog-actions>
+  </div>
+</form>

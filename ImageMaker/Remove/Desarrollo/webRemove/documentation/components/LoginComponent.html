@@ -1,0 +1,1040 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  LoginComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/login/login.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-login</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./login.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./login.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkParams" >checkParams</a>
+                            </li>
+                            <li>
+                                <a href="#hide" >hide</a>
+                            </li>
+                            <li>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                <a href="#loginForm" >loginForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#recaptchaMode" >recaptchaMode</a>
+                            </li>
+                            <li>
+                                <a href="#tokenGenerated" >tokenGenerated</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLanguage" >changeLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#login" >login</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(loginService: <a href="../injectables/SessionLogService.html" target="_self">SessionLogService</a>, recaptchaV3Service: ReCaptchaV3Service, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/login/login.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Manage customer or admin login</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>loginService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionLogService.html" target="_self" >SessionLogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>recaptchaV3Service</td>
+                                                  
+                                                        <td>
+                                                                    <code>ReCaptchaV3Service</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLanguage"></a>
+                    <span class="name">
+                        <span ><b>changeLanguage</b></span>
+                        <a href="#changeLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLanguage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="99"
+                            class="link-to-prism">src/app/login/login.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>function to change language</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <span ><b>login</b></span>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>login(loginForm: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="57"
+                            class="link-to-prism">src/app/login/login.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Receives the data of the main form, allows the entry to the system for admin and for client</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loginForm</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="38"
+                            class="link-to-prism">src/app/login/login.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkParams"></a>
+                    <span class="name">
+                        <span ><b>checkParams</b></span>
+                        <a href="#checkParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/login/login.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hide"></a>
+                    <span class="name">
+                        <span ><b>hide</b></span>
+                        <a href="#hide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/login/login.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/login/login.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loginForm"></a>
+                    <span class="name">
+                        <span ><b>loginForm</b></span>
+                        <a href="#loginForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/login/login.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recaptchaMode"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>recaptchaMode</b></span>
+                        <a href="#recaptchaMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;v3&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/login/login.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tokenGenerated"></a>
+                    <span class="name">
+                        <span ><b>tokenGenerated</b></span>
+                        <a href="#tokenGenerated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/login/login.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/login/login.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit, Renderer2} from &#x27;@angular/core&#x27;;
+import {SessionLogService} from &#x27;src/app/services/session-log.service&#x27;;
+import {ActivatedRoute} from &#x27;@angular/router&#x27;;
+import {UtilService} from &quot;../helpers/util.service&quot;;
+import {TranslateHelperService} from &quot;../helpers/translate-helper.service&quot;;
+import {SessionService} from &#x27;../helpers/session.service&#x27;;
+import {ReCaptchaV3Service} from &quot;ng-recaptcha&quot;;
+
+@Component({
+  selector: &#x27;app-login&#x27;,
+  templateUrl: &#x27;./login.component.html&#x27;,
+  styleUrls: [&#x27;./login.component.css&#x27;]
+})
+export class LoginComponent implements OnInit {
+  loginForm: any &#x3D; {};
+  language: string;
+  checkParams: any &#x3D; {};
+  hide &#x3D; true;
+  tokenGenerated &#x3D; &#x27;&#x27;;
+  public recaptchaMode &#x3D; &#x27;v3&#x27;;
+
+  /**
+   * Manage customer or admin login
+   * @param loginService
+   * @param recaptchaV3Service
+   * @param renderer
+   * @param session
+   * @param utilService
+   * @param translateHelper
+   * @param activatedRoute
+   */
+  constructor(private loginService: SessionLogService, private recaptchaV3Service: ReCaptchaV3Service,
+              private renderer: Renderer2, private session: SessionService,
+              private utilService: UtilService, public translateHelper: TranslateHelperService,
+              private activatedRoute: ActivatedRoute) {
+  }
+
+  ngOnInit(): void {
+    this.language &#x3D; this.translateHelper.getTransLanguage();
+
+    this.activatedRoute.data.subscribe(data &#x3D;&gt; {
+      this.checkParams &#x3D; data;
+      this.renderer.addClass(document.body, this.checkParams.class);
+
+      if (this.checkParams.service_key &#x3D;&#x3D;&#x3D; &#x27;client&#x27; &amp;&amp; this.session.getClientUser()) {
+        this.session.goClientInitPage();
+      } else if (this.checkParams.service_key &#x3D;&#x3D;&#x3D; &#x27;admin&#x27; &amp;&amp; this.session.getAdminUser()) {
+        this.session.goAdminInitPage();
+      }
+    });
+  }
+
+  /**
+   * Receives the data of the main form, allows the entry to the system for admin and for client
+   * @param loginForm
+   */
+  login(loginForm: any) {
+    //this.executeRecaptchaV3();
+    this.recaptchaV3Service.execute(&#x27;myAction&#x27;).subscribe(
+      (token) &#x3D;&gt; {
+        this.tokenGenerated &#x3D; token;
+        if (this.loginForm.mail &amp;&amp; this.loginForm.password) {
+          if (this.utilService.validateEmail(loginForm.mail)) {
+            if (this.checkParams.ADMIN) {
+              this.loginService.loginForAdministrator(this.loginForm.mail, this.loginForm.password, null, {
+                errorFunction: () &#x3D;&gt; {
+                  this.loginForm &#x3D; {};
+                }
+              });
+            } else if (this.checkParams.CLIENT) {
+              this.loginService.loginForClient(this.loginForm.mail, this.loginForm.password, response &#x3D;&gt; {
+                if (response.message &#x3D;&#x3D;&#x3D; &#x27;warning.client.must.verify.email&#x27;) {
+                  this.utilService.showNotification(&#x27;error.verify_email&#x27;, &#x27;danger&#x27;);
+                  // show send verify email again
+                }
+              }, {
+                errorFunction: () &#x3D;&gt; {
+                  this.loginForm &#x3D; {};
+                }
+              });
+            }
+          } else {
+            this.utilService.showNotification(&#x27;error.invalid.email&#x27;, &#x27;danger&#x27;);
+          }
+        } else {
+          this.utilService.showNotification(&#x27;error.incomplete.form&#x27;, &#x27;danger&#x27;);
+        }
+      },
+      (error) &#x3D;&gt; {
+        console.error(&#x60;Recaptcha v3 error:&#x60;, error);
+      }
+    );
+
+  }
+  /**
+   * function to change language
+   *
+   */
+  changeLanguage(): void {
+    this.translateHelper.translate.use(this.language);
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid ps-md-0&quot; [ngClass]&#x3D;&quot;this.checkParams.class&quot;&gt;
+  &lt;div class&#x3D;&quot;row g-0&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-8 col-lg-6 user_card&quot;&gt;
+      &lt;div class&#x3D;&quot;row espDer15&quot;&gt;
+        &lt;div class&#x3D;&quot;alinearDerecha paddingTop40&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;ng-autocomplete&quot;&gt;
+            &lt;mat-label&gt;&lt;i class&#x3D;&quot;las la-language fa-2x&quot;&gt;&lt;/i&gt;&lt;/mat-label&gt;
+            &lt;mat-select
+              [(ngModel)]&#x3D;&quot;language&quot;
+              (selectionChange)&#x3D;&quot;changeLanguage()&quot;
+            &gt;
+              &lt;mat-option
+                *ngFor&#x3D;&quot;let l of translateHelper.languages&quot;
+                [value]&#x3D;&quot;l&quot;
+              &gt;
+                {{ &quot;lang.&quot; + l | translate }}
+              &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;login d-flex align-items-center&quot;&gt;
+        &lt;div class&#x3D;&quot;container&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-9 col-lg-8 mx-auto&quot;&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-9 col-lg-8 mx-auto&quot;&gt;
+                  &lt;h1&gt;{{ &quot;title.welcome&quot; | translate }}&lt;/h1&gt;
+                  &lt;h5 class&#x3D;&quot;colorGris&quot;&gt;{{ &quot;message.login&quot; | translate }}&lt;/h5&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-md-3 col-lg-4 mx-auto&quot;&gt;
+                  &lt;img src&#x3D;&quot;../../assets/img/isotipo2.png&quot; /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;!-- Sign In Form --&gt;
+              &lt;form&gt;
+                &lt;div class&#x3D;&quot;form-floating mb-3&quot;&gt;
+                  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                    &lt;input
+                      [(ngModel)]&#x3D;&quot;loginForm.mail&quot;
+                      type&#x3D;&quot;email&quot;
+                      name&#x3D;&quot;email&quot;
+                      matInput
+                      placeholder&#x3D;&quot;{{ &#x27;label.email&#x27; | translate }} &quot;
+                      required
+                    /&gt;
+                    &lt;i class&#x3D;&quot;las la-at colorGris&quot; matSuffix&gt;&lt;/i&gt;
+                  &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-floating mb-3&quot;&gt;
+                  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                    &lt;input
+                      [(ngModel)]&#x3D;&quot;loginForm.password&quot;
+                      [type]&#x3D;&quot;hide ? &#x27;password&#x27; : &#x27;text&#x27;&quot;
+                      name&#x3D;&quot;password&quot;
+                      matInput
+                      placeholder&#x3D;&quot;{{ &#x27;label.password&#x27; | translate }} &quot;
+                      required
+                    /&gt;
+
+                    &lt;i
+                      class&#x3D;&quot;las la-eye colorGris&quot;
+                      matSuffix
+                      (click)&#x3D;&quot;hide &#x3D; !hide&quot;
+                    &gt;&lt;/i&gt;
+                  &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-floating mb-3&quot;&gt;&lt;/div&gt;
+              &lt;/form&gt;
+
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                  &lt;div class&#x3D;&quot;col-md-3 left&quot;&gt;
+                    &lt;div class&#x3D;&quot;left&quot;&gt;
+                      &lt;h5&gt;
+                        &lt;a
+                          routerLink&#x3D;&quot;/client/checkout&quot;
+                          class&#x3D;&quot;third after&quot;
+                          *ngIf&#x3D;&quot;this.checkParams.CLIENT&quot;
+                          &gt;{{ &quot;button.register&quot; | translate }}&lt;/a
+                        &gt;
+                      &lt;/h5&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-6 floatRight&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;right&quot;&gt;
+                      &lt;strong
+                        &gt;&lt;a
+                          routerLink&#x3D;&quot;/{{
+                            this.checkParams.service_key
+                          }}/forgotKey&quot;
+                          class&#x3D;&quot;third after espIz15&quot;
+                          &gt;{{ &quot;button.forgot.password&quot; | translate }}&lt;/a
+                        &gt;&lt;/strong
+                      &gt;
+                    &lt;/h5&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class&#x3D;&quot;row centrado paddingTop25&quot;&gt;
+                &lt;a
+                  (click)&#x3D;&quot;login(loginForm)&quot;
+                  class&#x3D;&quot;glow-on-hover padding15 backgorundPrincipal padding20&quot;
+                  &gt;&lt;i class&#x3D;&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+                  {{ &quot;button.login&quot; | translate }}&lt;/a
+                &gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;d-none d-md-flex col-md-4 col-lg-6 bg-image&quot;&gt;
+      &lt;div class&#x3D;&quot;alinearDerecha paddingTop40&quot; *ngIf&#x3D;&quot;!this.checkParams.CLIENT&quot;&gt;
+        &lt;h6&gt;v-2.0.2&lt;/h6&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--&lt;div class&#x3D;&quot;area&quot; &gt;
+  &lt;ul class&#x3D;&quot;circles&quot;&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div &gt;--&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./login.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid ps-md-0" [ngClass]="this.checkParams.class">  <div class="row g-0">    <div class="col-md-8 col-lg-6 user_card">      <div class="row espDer15">        <div class="alinearDerecha paddingTop40">          <mat-form-field class="ng-autocomplete">            <mat-label><i class="las la-language fa-2x"></i></mat-label>            <mat-select              [(ngModel)]="language"              (selectionChange)="changeLanguage()"            >              <mat-option                *ngFor="let l of translateHelper.languages"                [value]="l"              >                {{ "lang." + l | translate }}              </mat-option>            </mat-select>          </mat-form-field>        </div>      </div>      <div class="login d-flex align-items-center">        <div class="container">          <div class="row">            <div class="col-md-9 col-lg-8 mx-auto">              <div class="row">                <div class="col-md-9 col-lg-8 mx-auto">                  <h1>{{ "title.welcome" | translate }}</h1>                  <h5 class="colorGris">{{ "message.login" | translate }}</h5>                </div>                <div class="col-md-3 col-lg-4 mx-auto">                  <img src="../../assets/img/isotipo2.png" />                </div>              </div>              <!-- Sign In Form -->              <form>                <div class="form-floating mb-3">                  <mat-form-field class="example-full-width">                    <input                      [(ngModel)]="loginForm.mail"                      type="email"                      name="email"                      matInput                      placeholder="{{ \'label.email\' | translate }} "                      required                    />                    <i class="las la-at colorGris" matSuffix></i>                  </mat-form-field>                </div>                <div class="form-floating mb-3">                  <mat-form-field class="example-full-width">                    <input                      [(ngModel)]="loginForm.password"                      [type]="hide ? \'password\' : \'text\'"                      name="password"                      matInput                      placeholder="{{ \'label.password\' | translate }} "                      required                    />                    <i                      class="las la-eye colorGris"                      matSuffix                      (click)="hide = !hide"                    ></i>                  </mat-form-field>                </div>                <div class="form-floating mb-3"></div>              </form>              <div class="row">                <div class="col-md-12">                  <div class="col-md-3 left">                    <div class="left">                      <h5>                        <a                          routerLink="/client/checkout"                          class="third after"                          *ngIf="this.checkParams.CLIENT"                          >{{ "button.register" | translate }}</a                        >                      </h5>                    </div>                  </div>                  <div class="col-md-6 floatRight">                    <h5 class="right">                      <strong                        ><a                          routerLink="/{{                            this.checkParams.service_key                          }}/forgotKey"                          class="third after espIz15"                          >{{ "button.forgot.password" | translate }}</a                        ></strong                      >                    </h5>                  </div>                </div>              </div>              <div class="row centrado paddingTop25">                <a                  (click)="login(loginForm)"                  class="glow-on-hover padding15 backgorundPrincipal padding20"                  ><i class="fas fa-sign-in-alt"></i>                  {{ "button.login" | translate }}</a                >              </div>            </div>          </div>        </div>      </div>    </div>    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">      <div class="alinearDerecha paddingTop40" *ngIf="!this.checkParams.CLIENT">        <h6>v-2.0.2</h6>      </div>    </div>  </div></div><!--<div class="area" >  <ul class="circles">    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>  </ul></div >--></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'LoginComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LoginComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

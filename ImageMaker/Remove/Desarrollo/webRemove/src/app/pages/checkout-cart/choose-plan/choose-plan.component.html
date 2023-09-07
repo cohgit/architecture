@@ -1,0 +1,143 @@
+<!--<div class="row">
+  <div class="col-md-12">
+    {{'message.landing.plans' | translate}}
+  </div>
+</div>-->
+<mat-accordion multi>
+  <!--Categorias-->
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="colorPrincipal boldFont"> {{'message.plan_type_question' | translate}}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row paddingTop15">
+      <div class="col-md-3" *ngFor="let type of category">
+        <div class="margin10"></div>
+        <mat-card class="example-card height280">
+          <mat-card-title-group>
+            <mat-card-title
+              class="colorPrincipal">{{'label.plan.landing.' + type.tittle | translate}}</mat-card-title>
+            <i mat-card-sm-image class="{{type.icon}} la-3x colorSecundario"></i>
+          </mat-card-title-group>
+          <mat-card-content>
+            <h5 class="colorGris"> {{'label.plan.landing.' + type.tittle + "_description" | translate}}</h5>
+          </mat-card-content>
+          <mat-card-actions class="centrado">
+            <button mat-button
+                    (click)="firstLevel(type)">{{'button.selection' | translate}}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-md-3">
+        <div class="margin10"></div>
+        <mat-card class="example-card height280">
+          <mat-card-title-group>
+            <mat-card-title class="colorPrincipal">{{'label.plan.customized' | translate}}</mat-card-title>
+            <i mat-card-sm-image class="las la-edit la-3x colorSecundario"></i>
+          </mat-card-title-group>
+          <mat-card-content>
+            <h5 class="colorGris"> {{'label.plan.landing.customized_description' | translate}}</h5>
+          </mat-card-content>
+          <mat-card-actions class="centrado">
+            <button mat-button (click)="openCustomized()">{{'button.selection' | translate}}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <!--subCategorias-->
+  <mat-expansion-panel expanded *ngIf="(selected | keyvalue)?.length">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="colorPrincipal boldFont"> {{'label.selected' | translate}}
+        : {{'label.plan.landing.' + selected.tittle | translate}} </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row paddingTop15">
+      <div class="col-md-6" *ngFor="let sltd of typeOfPlan">
+        <div class="margin10"></div>
+        <div *ngFor="let sltdAcc of selected.access">
+          <mat-card class="example-card" *ngIf="sltd === sltdAcc">
+            <mat-card-title-group>
+              <mat-card-title
+                class="colorPrincipal">{{'label.plan.landing.' + sltd | translate}}</mat-card-title>
+
+            </mat-card-title-group>
+            <mat-card-content>
+              <h5 class="colorGris"> {{'label.plan.landing.' + sltd + "_description" | translate}}</h5>
+            </mat-card-content>
+            <mat-card-actions class="centrado">
+              <button mat-button
+                      (click)="fillPlan(sltd)">{{'button.selection' | translate}}</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <!--Planes-->
+  <mat-expansion-panel *ngIf="(selected | keyvalue)?.length && filterPlan.length !== 0" expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="colorPrincipal boldFont">  {{'label.selected' | translate}}
+        : {{tittleSelected}}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="row paddingTop15 scale-in-bottom">
+      <div class="col-12 col-sm-4 col-md-4 col-lg-3 paddingTop15 " *ngFor="let plan of filterPlan">
+        <div class="generic_content height900 clearfix">
+          <div class="generic_head_price clearfix">
+            <div class="generic_head_content clearfix">
+              <div class="head_bg"></div>
+              <div class="head">
+                <span>{{plan.name}}</span>
+              </div>
+            </div>
+            <div class="generic_price_tag clearfix">
+                   <span class="price colorSecundario">
+                        <span class="currency ">{{plan?.cost | currency: utilService.curr :  'symbol-narrow' }} </span>
+                   </span>
+            </div>
+          </div>
+          <div class="generic_feature_list">
+            <ul>
+              <li class="durationPlan"><i class="las la-calendar-alt colorAzul espDer5"></i>
+                <strong>{{plan?.duration_months}}
+                </strong>
+                {{'label.months' | translate}} </li>
+              <li *ngIf="plan?.access_scanner"><i class="las la-check-circle colorVerde"></i>
+                {{'label.licence.one_shot'| translate}}: {{plan?.limit_credits}}</li>
+              <li *ngIf="plan?.access_monitor"><i class="las la-check-circle colorVerde"></i>
+                {{'label.licence.monitor'| translate}}:  {{plan?.total_monitor_licenses}}</li>
+              <li *ngIf="plan?.access_transforma"><i class="las la-check-circle colorVerde"></i>
+                {{'label.licence.transform'| translate}}:  {{plan?.total_transforma_licenses}}</li>
+              <li *ngIf="plan?.access_deindexation"><i class="las la-check-circle colorVerde"></i>
+                {{'label.licence.deindexing'| translate}}:  {{plan?.max_url_to_deindexate}}</li>
+              <li>
+                <i class="las la-globe-americas colorSecundario espDer5"></i>{{'label.plan.countries' | translate}}
+                : {{plan?.max_countries}}
+              </li>
+              <li><i
+                class="las la-search-plus colorSecundario espDer5"></i>{{'label.plan.keywords' |
+                translate}}: {{plan?.max_keywords}}
+              </li>
+              <li>
+                <i class="las la-file colorSecundario espDer5"></i>{{'label.plan.pages' | translate}}
+                : {{plan?.max_search_page}}
+              </li>
+              <li>
+                <i class="las la-camera colorSecundario espDer5"></i>{{'label.sections' | translate}}
+                : {{plan?.sections_to_search}}
+              </li>
+            </ul>
+          </div>
+          <div class=" hire_buttom ">
+            <button class="glow-on-hover espIz15"
+                    (click)="planSelected(plan)">{{'button.hire' | translate}}</button>
+          </div>
+          <div class="margin10"></div>
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+
+

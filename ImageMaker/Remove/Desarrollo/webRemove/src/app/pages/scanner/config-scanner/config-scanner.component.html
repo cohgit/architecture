@@ -1,0 +1,682 @@
+<form #configForm="ngForm" (ngSubmit)="(configForm.form.valid)">
+  <mat-accordion class="example-full-width" multi>
+    <mat-expansion-panel expanded="expandedPanel">
+      <mat-expansion-panel-header>
+        <mat-panel-title
+          >{{ "title.scanner.config" | translate }}
+          <a
+            popoverTitle="{{ 'title.scanner.config' | translate }}"
+            container="body"
+            [autoClose]="true"
+            ngbPopover="{{ 'help.scanner_config' | translate }}"
+          >
+            <i class="las la-info-circle colorAzul espIz15"></i>
+          </a>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="container-fluid" *ngIf="scannerInfo">
+        <!-- NAME -->
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <input
+                [(ngModel)]="scannerInfo.name"
+                name="name"
+                required
+                matInput
+                [disabled]="isDisabledForm && !isAdminAccess"
+                placeholder="{{ 'label.name' | translate }} "
+              />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- KEYWORDS -->
+          <div class="col-md-5">
+            <mat-form-field class="example-full-width">
+              <mat-chip-list
+                #chipKey
+                [(ngModel)]="scannerInfo.keywords.word"
+                name="keywords"
+              >
+                <mat-chip
+                  *ngFor="let key of scannerInfo?.keywords"
+                  [selectable]="selectable"
+                  [removable]="!isDisabledForm || !key.id"
+                  (removed)="removeKeywords(key, scannerInfo.keywords)"
+                >
+                  {{ key.word }}
+                  <mat-icon matChipRemove *ngIf="!isDisabledForm || !key.id"
+                    >cancel</mat-icon
+                  >
+                </mat-chip>
+                <input
+                  placeholder="{{
+                    'placeholder.scanner.config.keywords' | translate
+                  }}"
+                  disabled="{{ disableNewKeywordsInputs }}"
+                  [matChipInputFor]="chipKey"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  [matChipInputAddOnBlur]="onBlur"
+                  (matChipInputTokenEnd)="
+                    addKeyword($event, scannerInfo.keywords, '', configForm)
+                  "
+                />
+              </mat-chip-list>
+            </mat-form-field>
+            <div
+              *ngIf="
+                scannerInfo?.keywords?.length ===
+                scannerInfo?.restrictions?.detail.max_keywords
+              "
+            >
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.maxkeywors" | translate }} :
+                {{ scannerInfo.restrictions.detail.max_keywords }}
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-1">
+            <ng-template #popContentKeyword>
+              {{ "help.scanner_keyword" | translate }}<br />
+              <h5 class="colorSecundario">
+                <b>
+                  {{ "placeholder.max" | translate }}:
+                  {{ scannerInfo?.restrictions?.detail?.max_keywords }}</b
+                >
+              </h5>
+            </ng-template>
+            <a
+              popoverTitle="{{ 'label.scanner.keywords' | translate }}"
+              container="body"
+              [autoClose]="true"
+              [ngbPopover]="popContentKeyword"
+              ><i class="las la-info-circle colorAzul"></i
+            ></a>
+          </div>
+
+          <!-- COUNTRIES -->
+          <div class="col-md-5">
+            <mat-form-field class="example-full-width">
+              <mat-select
+                placeholder="{{ 'label.scanner.countries' | translate }}"
+                #select
+                multiple
+                [(ngModel)]="scannerInfo.configuration.countries"
+                name="countries"
+                [compareWith]="utilService.compareTag"
+                [disabled]="isDisabledForm"
+                (selectionChange)="countryChange(configForm)"
+                required
+              >
+                <!--  <mat-select-filter [placeholder]="placeholderBuscar" [displayMember]="'name'"
+                                     [array]="lstAllCountries" *ngIf="select.focused" [noResultsMessage]="noResults"
+                                     (filteredReturn)="fltCountries =$event"></mat-select-filter>-->
+                <mat-option
+                  *ngFor="let item of lstAllCountries"
+                  [value]="item"
+                  disabled="{{ !item.active }}"
+                >
+                  <img
+                    [src]="utilService.checkFlag(item?.tag)"
+                    [width]="utilService.flagWith"
+                    [height]="utilService.flagHeight"
+                    alt="{{ item?.name }}"
+                    class="margin3"
+                    onerror="this.src='../../../../assets/img/broken.jpg'"
+                  />{{ item?.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div
+              *ngIf="
+                scannerInfo?.configuration?.countries?.length ===
+                scannerInfo?.restrictions?.detail.max_countries
+              "
+            >
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.maxCountries" | translate }} :
+                {{ scannerInfo.restrictions.detail.max_countries }}
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <ng-template #max_countries>
+              {{ "help.scanner_country" | translate }}<br />
+              <h5 class="colorSecundario">
+                <b>
+                  {{ "placeholder.max" | translate }}:
+                  {{ scannerInfo?.restrictions?.detail?.max_countries }}</b
+                >
+              </h5>
+            </ng-template>
+            <a
+              popoverTitle="{{ 'label.scanner.countries' | translate }}"
+              container="body"
+              [autoClose]="true"
+              [ngbPopover]="max_countries"
+              ><i class="las la-info-circle colorAzul"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- TRACKING WORDS -->
+          <div class="col-md-5">
+            <mat-label>{{ "label.scanner.tracking" | translate }}</mat-label>
+            <mat-chip-list>
+              <mat-chip
+                color="accent"
+                *ngFor="let tm of scannerInfo?.justTrackingWords"
+                [ngClass]="{ removeItem: tm.markToDelete }"
+                [selectable]="selectable"
+                [removable]="!isDisabledForm || isAdminAccess"
+                (removed)="removeFromList(tm, scannerInfo.justTrackingWords)"
+              >
+                <span [innerHTML]="tm.feelingObj | feelingColors"></span>
+                {{ tm.word }}
+                <mat-icon matChipRemove *ngIf="!isDisabledForm || isAdminAccess"
+                  >cancel</mat-icon
+                >
+              </mat-chip>
+            </mat-chip-list>
+          </div>
+          <div class="col-md-1 paddingTop5">
+            <a
+              popoverTitle="{{ 'label.scanner.tracking' | translate }}"
+              container="body"
+              [autoClose]="true"
+              ngbPopover="{{ 'help.scanner_terms' | translate }}"
+              ><i class="las la-info-circle colorAzul"></i
+            ></a>
+            <a
+              (click)="manageTrackingWords(scannerInfo?.id)"
+              *ngIf="!isDisabledForm || isAdminAccess"
+              ><i
+                class="las la-plus-circle fa-2x colorVerde espIz15"
+                title="{{ 'button.add' | translate }}"
+              ></i
+            ></a>
+          </div>
+
+          <!-- TRACKING URLS -->
+          <div class="col-md-5">
+            <mat-label *ngIf="scannerInfo?.type !== 'transform'">{{
+              "label.shorten_url" | translate
+            }}</mat-label>
+            <mat-label *ngIf="scannerInfo?.type === 'transform'">{{
+              "label.url_to_remove" | translate
+            }}</mat-label>
+            <mat-chip-list>
+              <mat-chip
+                color="accent"
+                *ngFor="let url of scannerInfo?.justTrackingURLs"
+                [ngClass]="{ removeItem: url.markToDelete }"
+                [selectable]="selectable"
+                [removable]="!isDisabledForm || isAdminAccess"
+                (removed)="removeFromList(url, scannerInfo.justTrackingURLs)"
+              >
+                <span
+                  [innerHTML]="url.feelingObj | feelingColors"
+                  *ngIf="scannerInfo.type !== 'transform'"
+                ></span>
+                <span title="{{ url.word }}">
+                  {{ utilService.onlyDomain(url.word) }}</span
+                >
+                <mat-icon matChipRemove *ngIf="!isDisabledForm || isAdminAccess"
+                  >cancel</mat-icon
+                >
+              </mat-chip>
+            </mat-chip-list>
+          </div>
+          <div class="col-md-1 paddingTop5">
+            <a
+              popoverTitle="{{ 'label.shorten_url' | translate }}"
+              container="body"
+              *ngIf="scannerInfo?.type !== 'transform'"
+              [autoClose]="true"
+              ngbPopover="{{ 'help.scanner_url_one_shot' | translate }}"
+              ><i class="las la-info-circle colorAzul"></i
+            ></a>
+            <a
+              popoverTitle="{{ 'label.url_to_remove' | translate }}"
+              container="body"
+              *ngIf="scannerInfo?.type === 'transform'"
+              [autoClose]="true"
+              ngbPopover="{{ 'help.scanner_url' | translate }}"
+              ><i class="las la-info-circle colorAzul"></i
+            ></a>
+            <a
+              (click)="manageUrlWords(scannerInfo?.id)"
+              *ngIf="!isDisabledForm || isAdminAccess"
+              ><i
+                class="las la-plus-circle fa-2x colorVerde espIz15"
+                title="{{ 'button.add' | translate }}"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 right paddingTop15 colorPrincipal">
+            <strong
+              ><i class="las la-plus"></i>
+              <a (click)="showadvance()" class="third after reduceFont">
+                {{ "title.scanner.advanced" | translate }}</a
+              ></strong
+            >
+          </div>
+        </div>
+
+        <!-- ADVANCED CONFIGURATION -->
+        <div class="margin10 cyan" *ngIf="showConfigAdvance">
+          <div class="row paddingTop15">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-10">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.max_pages" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.pages"
+                      name="pages"
+                      [disabled]="isDisabledForm && !isAdminAccess"
+                    >
+                      <mat-option
+                        *ngFor="
+                          let num of counter(
+                            scannerInfo?.restrictions?.detail.max_search_page
+                          )
+                        "
+                        [value]="num"
+                      >
+                        {{ num }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-2">
+                  <ng-template #max_pages>
+                    {{ "help.scanner_pages" | translate }}<br />
+                    <h5 class="colorSecundario">
+                      <b>
+                        {{ "placeholder.max" | translate }}:
+                        {{
+                          scannerInfo?.restrictions?.detail?.max_search_page
+                        }}</b
+                      >
+                    </h5>
+                    <h5
+                      class="colorSecundario"
+                      *ngIf="scannerInfo?.type === 'transform'"
+                    >
+                      <b>
+                        {{
+                          "placeholder.scanner.config.target_page" | translate
+                        }}
+                        :
+                        {{ scannerInfo?.restrictions?.detail?.target_page }}</b
+                      >
+                    </h5>
+                  </ng-template>
+                  <a
+                    popoverTitle="{{
+                      'label.scanner.advance.max_pages' | translate
+                    }}"
+                    container="body"
+                    [autoClose]="true"
+                    [ngbPopover]="max_pages"
+                    ><i class="las la-info-circle colorAzul"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-10">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.language" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.language"
+                      name="language"
+                      (selectionChange)="getSuggested(configForm)"
+                      [disabled]="isDisabledForm"
+                    >
+                      <mat-option
+                        *ngFor="let l of allLanguages"
+                        [value]="l.code"
+                      >
+                        {{ "list.lang." + l.code | translate }} - {{ l.code }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-2">
+                  <ng-template #language_help>
+                    {{ "help.scanner_languaje" | translate }}
+                  </ng-template>
+                  <a
+                    popoverTitle="{{
+                      'label.scanner.advance.language' | translate
+                    }}"
+                    container="body"
+                    [autoClose]="true"
+                    [ngbPopover]="language_help"
+                    ><i class="las la-info-circle colorAzul"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-10">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.device" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.device"
+                      name="device"
+                      [disabled]="isDisabledForm"
+                      (selectionChange)="
+                        checkCondition(
+                          scannerInfo.configuration.lstSearchTypes,
+                          scannerInfo.configuration.device
+                        )
+                      "
+                    >
+                      <mat-option *ngFor="let d of allDevices" [value]="d.code">
+                        {{ "list.device." + d.tag | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <h5 *ngIf="!compatible" class="colorGrisOscuro">
+                    <i class="las la-exclamation-circle"></i>
+                    {{ "message.device_error" | translate }}
+                  </h5>
+                </div>
+                <div class="col-md-2">
+                  <ng-template #scanner_device>
+                    {{ "help.scanner_device" | translate }}<br />
+                  </ng-template>
+                  <a
+                    popoverTitle="{{
+                      'label.scanner.advance.device' | translate
+                    }}"
+                    container="body"
+                    [autoClose]="true"
+                    [ngbPopover]="scanner_device"
+                    ><i class="las la-info-circle colorAzul"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-10">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.sections" | translate
+                    }}</mat-label>
+                    <mat-select
+                      multiple
+                      [(ngModel)]="scannerInfo.configuration.lstSearchTypes"
+                      name="search_type"
+                      [compareWith]="utilService.compareValue"
+                      [disabled]="isDisabledForm"
+                      (selectionChange)="
+                        checkCondition(
+                          scannerInfo.configuration.lstSearchTypes,
+                          scannerInfo.configuration.device
+                        )
+                      "
+                      required
+                    >
+                      <mat-option
+                        *ngFor="
+                          let s of scannerInfo?.restrictions?.detail
+                            .sectionsToSearch
+                        "
+                        [value]="s"
+                      >
+                        {{ "list.scanner.type." + s | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <h5 *ngIf="!compatible" class="colorGrisOscuro">
+                    <i class="las la-exclamation-circle"></i>
+                    {{ "message.section_device" | translate }}
+                  </h5>
+                </div>
+                <div class="col-md-2">
+                  <ng-template #sections_to_search>
+                    {{ "help.scanner_sections" | translate }}<br />
+                    <h5 class="colorSecundario">
+                      <b>
+                        {{ "placeholder.max" | translate }}:
+                        {{
+                          scannerInfo?.restrictions?.detail?.sectionsToSearch
+                        }}</b
+                      >
+                    </h5>
+                  </ng-template>
+                  <a
+                    popoverTitle="{{
+                      'label.scanner.advance.sections' | translate
+                    }}"
+                    container="body"
+                    [autoClose]="true"
+                    [ngbPopover]="sections_to_search"
+                    ><i class="las la-info-circle colorAzul"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-12"
+              *ngIf="
+                scannerInfo.configuration.lstSearchTypes.includes('images')
+              "
+            >
+              <div class="row">
+                <div class="col-md-3">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.image.colors" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.images_color"
+                      name="images_color"
+                      [disabled]="isDisabledForm"
+                    >
+                      <mat-option *ngFor="let s of allColors" [value]="s.code">
+                        {{ "list.scanner.color." + s.tag | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.image.size" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.images_size"
+                      name="images_size"
+                      [disabled]="isDisabledForm"
+                    >
+                      <mat-option *ngFor="let s of allSizes" [value]="s.code">
+                        {{ "list.scanner.size." + s.tag | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{
+                      "label.scanner.advance.image.type" | translate
+                    }}</mat-label>
+                    <mat-select
+                      [(ngModel)]="scannerInfo.configuration.images_type"
+                      name="images_type"
+                      [disabled]="isDisabledForm"
+                    >
+                      <mat-option
+                        *ngFor="let s of allImgTypes"
+                        [value]="s.code"
+                      >
+                        {{ "list.scanner.image.type." + s.tag | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                  <mat-slide-toggle
+                    [(ngModel)]="scannerInfo.configuration.images_use_rights"
+                    name="images_use_rights"
+                    [disabled]="isDisabledForm"
+                    title="{{
+                      'label.scanner.advance.image.images_user_rights'
+                        | translate
+                    }} "
+                    >{{
+                      "label.scanner.advance.image.images_user_rights"
+                        | translate
+                    }}
+                  </mat-slide-toggle>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <!-- SUGGESTED SECTION -->
+    <mat-expansion-panel
+      *ngIf="areSuggest || !scannerInfo?.id"
+      expanded="expandedPanel"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title
+          >{{ "title.scanner.suggested" | translate }}
+          <a
+            popoverTitle="{{ 'title.scanner.suggested' | translate }}"
+            container="body"
+            [autoClose]="true"
+            ngbPopover="{{ 'help.scanner_suggest' | translate }}"
+          >
+            <i class="las la-info-circle colorAzul espIz15"></i>
+          </a>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-tab-group>
+        <mat-tab
+          *ngFor="let key of scannerInfo?.keywords; let index = index"
+          label=" {{ key.word }}"
+        >
+          <div class="container-fluid paddingTop15">
+            <div *ngFor="let country of scannerInfo?.configuration?.countries">
+              <div class="row">
+                <div class="col-md-1 centrado">
+                  <!--<flag-icon country="{{country.tag}}"
+                             squared
+                             class="espDer5"></flag-icon>-->
+                  <img
+                    [src]="utilService.checkFlag(country?.tag)"
+                    [width]="utilService.flagWith"
+                    [height]="utilService.flagHeight"
+                    alt="{{ country?.name }}"
+                    class="margin3"
+                    onerror="this.src='../../../../assets/img/broken.jpg'"
+                  />
+                  {{ "list.country." + country.tag | translate }}
+                </div>
+                <div class="col-md-11">
+                  <div class="row">
+                    <label
+                      *ngFor="let sug of key.listSuggested"
+                      class="centrado col-md-3"
+                    >
+                      <input
+                        type="checkbox"
+                        [(ngModel)]="sug.checked"
+                        class="ckeck"
+                        disabled="{{
+                          disableNewKeywordsInputs && !sug.checked
+                        }}"
+                        [ngModelOptions]="{ standalone: true }"
+                        (change)="addRemoveSuggestedKeyword(sug, configForm)"
+                      />
+                      <div
+                        class="btn btn-sık"
+                        *ngIf="country.id === sug.countryObj.id"
+                      >
+                        <span> {{ sug.word }} </span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-expansion-panel>
+  </mat-accordion>
+</form>
+
+<!-- BUTTONS -->
+<div class="container-fluid">
+  <div class="col-12 paddingBottom50 paddingTop25 centrado">
+    <button (click)="utilService.back()" class="secondLevelButton espDer15">
+      <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}
+    </button>
+
+    <div
+      *ngIf="
+        scannerInfo?.keywords?.length !== 0 &&
+        (scannerInfo?.id === null || operation === 'clone')
+      "
+    >
+      <button
+        (click)="generateResultsScanner(configForm)"
+        class="glow-on-hover espIz15"
+        type="submit"
+        tabindex="1"
+      >
+        {{ "button.results" | translate }}
+      </button>
+    </div>
+    <div
+      *ngIf="
+        scannerInfo?.id !== null &&
+        isAdminAccess &&
+        operation === 'view' &&
+        scannerInfo?.type !== 'one_shot'
+      "
+    >
+      <button
+        (click)="updateConfigForRecurrents(configForm)"
+        class="glow-on-hover espIz15"
+        type="submit"
+        tabindex="1"
+      >
+        {{ "button.update.configuration" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

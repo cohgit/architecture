@@ -1,0 +1,1742 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ConfirmChangeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/sidebar/confirm-change/confirm-change.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-confirm-change</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./confirm-change.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./confirm-change.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#alertLicences" >alertLicences</a>
+                            </li>
+                            <li>
+                                <a href="#confirmtoggle" >confirmtoggle</a>
+                            </li>
+                            <li>
+                                <a href="#displayWarningMonitor" >displayWarningMonitor</a>
+                            </li>
+                            <li>
+                                <a href="#displayWarningTransform" >displayWarningTransform</a>
+                            </li>
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#listMonitorDeactivate" >listMonitorDeactivate</a>
+                            </li>
+                            <li>
+                                <a href="#listTransformDeactivate" >listTransformDeactivate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#session" >session</a>
+                            </li>
+                            <li>
+                                <a href="#sidebar" >sidebar</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkListMonitor" >checkListMonitor</a>
+                            </li>
+                            <li>
+                                <a href="#checkListTransform" >checkListTransform</a>
+                            </li>
+                            <li>
+                                <a href="#checktoDelete" >checktoDelete</a>
+                            </li>
+                            <li>
+                                <a href="#checkWarningMonitor" >checkWarningMonitor</a>
+                            </li>
+                            <li>
+                                <a href="#checkWarningtransfrom" >checkWarningtransfrom</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onConfirmClick" >onConfirmClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, logoutService: <a href="../injectables/SessionLogService.html" target="_self">SessionLogService</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, dialogRef: <a href="../components/ConfirmChangeComponent.html" target="_self">MatDialogRef&lt;ConfirmChangeComponent&gt;</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, modal: <a href="../injectables/ModalService.html" target="_self">ModalService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionLogService.html" target="_self" >SessionLogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/ConfirmChangeComponent.html" target="_self" >MatDialogRef&lt;ConfirmChangeComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ModalService.html" target="_self" >ModalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkListMonitor"></a>
+                    <span class="name">
+                        <span ><b>checkListMonitor</b></span>
+                        <a href="#checkListMonitor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkListMonitor($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="91"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>obtiene la lista de scanners a desactivar a medida que se cambian los checks en el hijo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkListTransform"></a>
+                    <span class="name">
+                        <span ><b>checkListTransform</b></span>
+                        <a href="#checkListTransform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkListTransform($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="99"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>obtiene la lista de scanners a desactivar a medida que se cambian los checks en el hijo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checktoDelete"></a>
+                    <span class="name">
+                        <span ><b>checktoDelete</b></span>
+                        <a href="#checktoDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checktoDelete(listValue, defaultValue)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="70"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resta el total de licencias de lista (checks) vs la máxima que debe aceptar</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>listValue</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>defaultValue</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkWarningMonitor"></a>
+                    <span class="name">
+                        <span ><b>checkWarningMonitor</b></span>
+                        <a href="#checkWarningMonitor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkWarningMonitor($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="112"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkWarningtransfrom"></a>
+                    <span class="name">
+                        <span ><b>checkWarningtransfrom</b></span>
+                        <a href="#checkWarningtransfrom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkWarningtransfrom($event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="104"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="79"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logout service</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="31"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onConfirmClick"></a>
+                    <span class="name">
+                        <span ><b>onConfirmClick</b></span>
+                        <a href="#onConfirmClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onConfirmClick(form: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="40"
+                            class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Verifica que no existan más licencias de la que puede aceptar</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="alertLicences"></a>
+                    <span class="name">
+                        <span ><b>alertLicences</b></span>
+                        <a href="#alertLicences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmtoggle"></a>
+                    <span class="name">
+                        <span ><b>confirmtoggle</b></span>
+                        <a href="#confirmtoggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayWarningMonitor"></a>
+                    <span class="name">
+                        <span ><b>displayWarningMonitor</b></span>
+                        <a href="#displayWarningMonitor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayWarningTransform"></a>
+                    <span class="name">
+                        <span ><b>displayWarningTransform</b></span>
+                        <a href="#displayWarningTransform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listMonitorDeactivate"></a>
+                    <span class="name">
+                        <span ><b>listMonitorDeactivate</b></span>
+                        <a href="#listMonitorDeactivate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listTransformDeactivate"></a>
+                    <span class="name">
+                        <span ><b>listTransformDeactivate</b></span>
+                        <a href="#listTransformDeactivate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="session"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>session</b></span>
+                        <a href="#session"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sidebar"></a>
+                    <span class="name">
+                        <span ><b>sidebar</b></span>
+                        <a href="#sidebar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/shared/sidebar/confirm-change/confirm-change.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Inject, OnInit} from &#x27;@angular/core&#x27;;
+import {NgForm} from &quot;@angular/forms&quot;;
+import {MAT_DIALOG_DATA, MatDialogRef} from &quot;@angular/material/dialog&quot;;
+import {SessionLogService} from &quot;../../../services/session-log.service&quot;;
+import {SessionService} from &quot;../../../helpers/session.service&quot;;
+import {UtilService} from &quot;../../../helpers/util.service&quot;;
+import {ModalService} from &quot;../../../helpers/modal.service&quot;;
+
+@Component({
+  selector: &#x27;app-confirm-change&#x27;,
+  templateUrl: &#x27;./confirm-change.component.html&#x27;,
+  styleUrls: [&#x27;./confirm-change.component.css&#x27;]
+})
+export class ConfirmChangeComponent implements OnInit {
+  info: any &#x3D; {};
+  sidebar: any;
+  confirmtoggle &#x3D; false;
+  displayWarningTransform &#x3D; false;
+  displayWarningMonitor &#x3D; false;
+  listMonitorDeactivate &#x3D; 0;
+  listTransformDeactivate &#x3D; 0;
+  alertLicences &#x3D; false;
+
+  constructor(@Inject(MAT_DIALOG_DATA) private data: any, private logoutService: SessionLogService, public session: SessionService,
+              private dialogRef: MatDialogRef&lt;ConfirmChangeComponent&gt;, public utilService: UtilService, private modal: ModalService,
+  ) {
+    this.info &#x3D; data.info;
+    this.sidebar &#x3D; this.data.sidenav;
+  }
+
+  ngOnInit(): void {
+    this.listTransformDeactivate &#x3D; this.info.scannersToMigrateTransforma.length;
+    this.listMonitorDeactivate &#x3D; this.info.scannersToMigrateRecurrent.length;
+  }
+
+  /**
+   * Verifica que no existan más licencias de la que puede aceptar
+   * @param form
+   */
+  onConfirmClick(form: NgForm) {
+    this.alertLicences &#x3D; false;
+    let checkTransf &#x3D; 0;
+    let checkMoni &#x3D; 0;
+
+    if (form.valid) {
+      this.modal.openConfirmation({
+        message: &#x27;message.confirm_plan&#x27;,
+        onConfirm: () &#x3D;&gt; {
+          checkTransf &#x3D; this.checktoDelete(this.listTransformDeactivate, this.info?.newPlan?.total_transforma_licenses);
+          checkMoni &#x3D; this.checktoDelete(this.listMonitorDeactivate, this.info?.newPlan?.total_monitor_licenses);
+
+          if (checkTransf &lt;&#x3D; 0 &amp;&amp; checkMoni &lt;&#x3D; 0) {
+            this.dialogRef.close(true);
+          } else {
+            this.alertLicences &#x3D; true;
+            this.utilService.showNotification(&#x27;error.changingplans.licences&#x27;, &#x27;danger&#x27;);
+          }
+        },
+      });
+    }
+
+
+  }
+
+  /**
+   * Resta el total de licencias de lista (checks) vs la máxima que debe aceptar
+   * @param listValue
+   * @param defaultValue
+   */
+  checktoDelete(listValue, defaultValue) {
+    let total &#x3D; 0;
+    total &#x3D; listValue - defaultValue;
+    return total;
+  }
+
+  /**
+   * Logout service
+   */
+  logout(): void {
+    this.logoutService.logout(
+      () &#x3D;&gt; this.session.destroySession(),
+      {
+        errorFunction: () &#x3D;&gt; this.session.destroySession()
+      });
+  }
+
+  /**obtiene la lista de scanners a desactivar a medida que se cambian los checks en el hijo
+   *
+   * @param $event
+   */
+  checkListMonitor($event: any) {
+    this.listMonitorDeactivate &#x3D; $event;
+  }
+
+  /**
+   * obtiene la lista de scanners a desactivar a medida que se cambian los checks en el hijo
+   * @param $event
+   */
+  checkListTransform($event: any) {
+    this.listTransformDeactivate &#x3D; $event;
+
+  }
+
+  checkWarningtransfrom($event: any) {
+    this.displayWarningTransform &#x3D; false;
+    if ($event) {
+      this.displayWarningTransform &#x3D; true;
+    }
+
+  }
+
+  checkWarningMonitor($event: any) {
+    this.displayWarningMonitor &#x3D; false;
+    if ($event) {
+      this.displayWarningMonitor &#x3D; true;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h2 mat-dialog-title&gt;
+  &lt;i class&#x3D;&quot;las la-file-invoice colorGris espDer5&quot;&gt;&lt;/i
+  &gt;{{ &quot;tittle.confirm_plan&quot; | translate }}
+&lt;/h2&gt;
+&lt;div mat-dialog-content&gt;
+  &lt;div class&#x3D;&quot;container-fluid padding20&quot;&gt;
+    &lt;form #confirmForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;(confirmForm.form.valid)&quot;&gt;
+      &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;mat-accordion multi&gt;
+            &lt;mat-expansion-panel expanded&gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  {{ &quot;label.summary&quot; | translate }}
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+                  &lt;h2 class&#x3D;&quot;centrado colorGris&quot;&gt;
+                    {{ &quot;title.current_plan&quot; | translate }}
+                  &lt;/h2&gt;
+                  &lt;mat-expansion-panel
+                    class&#x3D;&quot;gn-box padding5 borderRadius10 tracking-in-expand example-full-width&quot;
+                  &gt;
+                    &lt;mat-expansion-panel-header&gt;
+                      &lt;mat-panel-title&gt;
+                        &lt;h3 class&#x3D;&quot;colorPrincipal centrado margin10&quot;&gt;
+                          {{ info?.actualPlan?.name }}
+                        &lt;/h3&gt;
+                      &lt;/mat-panel-title&gt;
+                    &lt;/mat-expansion-panel-header&gt;
+
+                    &lt;div class&#x3D;&quot;row centrado&quot;&gt;
+                      &lt;h2 class&#x3D;&quot;colorSecundario right&quot;&gt;
+                        {{
+                          info?.actualPlan?.cost
+                            | currency : utilService.curr : &quot;symbol-narrow&quot;
+                        }}
+                      &lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;hr /&gt;
+                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                      &lt;!--  &lt;h5&gt; &lt;i class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.countries&#x27; |
+                        translate}}:
+                          {{info?.actualPlan?.max_countries}}&lt;br&gt;
+                          &lt;i class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.keywords&#x27; | translate}}:
+                          {{info?.actualPlan?.max_keywords}}&lt;br&gt;
+                          &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.pages&#x27; | translate}}: {{info?.actualPlan?.max_search_page}}&lt;br&gt;
+                          &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.sections&#x27; | translate}}:
+                          {{info?.actualPlan?.sections_to_search}}&lt;/h5&gt;--&gt;
+                      &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+                          &gt;&lt;span&gt;{{ info?.actualPlan?.duration_months }}&lt;/span&gt;
+                          {{ &quot;label.months&quot; | translate }}
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_scanner&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.one_shot&quot; | translate }}:
+                          &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.limit_credits &gt; 0&quot;&gt;{{
+                            info?.actualPlan?.limit_credits
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.actualPlan?.limit_credits &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_monitor&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.monitor&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;info?.actualPlan?.total_monitor_licenses &gt; 0&quot;
+                            &gt;{{
+                              info?.actualPlan?.total_monitor_licenses
+                            }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;
+                              info?.actualPlan?.total_monitor_licenses &lt;&#x3D; 0
+                            &quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_transforma&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.transform&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;
+                              info?.actualPlan?.total_transforma_licenses &gt; 0
+                            &quot;
+                            &gt;{{
+                              info?.actualPlan?.total_transforma_licenses
+                            }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;
+                              info?.actualPlan?.total_transforma_licenses &lt;&#x3D; 0
+                            &quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_deindexation&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.deindexing&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;info?.actualPlan?.max_url_to_deindexate &gt; 0&quot;
+                            &gt;{{ info?.actualPlan?.max_url_to_deindexate }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;info?.actualPlan?.max_url_to_deindexate &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+
+                        &lt;h5&gt;
+                          &lt;i
+                            class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;
+                          &gt;&lt;/i
+                          &gt;{{ &quot;label.plan.countries&quot; | translate }}
+                          :
+                          &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_countries &gt; 0&quot;&gt;{{
+                            info?.actualPlan?.max_countries
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_countries &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i
+                            class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;
+                          &gt;&lt;/i
+                          &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+                          &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_keywords &gt; 0&quot;&gt;{{
+                            info?.actualPlan?.max_keywords
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_keywords &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+                          &gt;{{ &quot;label.plan.pages&quot; | translate }}
+                          :
+                          &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_search_page &gt; 0&quot;&gt;{{
+                            info?.actualPlan?.max_search_page
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_search_page &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+                          &gt;{{ &quot;label.sections&quot; | translate }} :
+                          {{ info?.actualPlan?.sections_to_search }}
+                        &lt;/h5&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/mat-expansion-panel&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-1&quot;&gt;
+                  &lt;i class&#x3D;&quot;las la-arrow-right colorSecundario fa-3x&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+                  &lt;h2 class&#x3D;&quot;centrado colorSecundario&quot;&gt;
+                    {{ &quot;title.new_plan&quot; | translate }}
+                  &lt;/h2&gt;
+                  &lt;mat-expansion-panel
+                    class&#x3D;&quot;gn-box padding5 borderRadius10 tracking-in-expand example-full-width&quot;
+                  &gt;
+                    &lt;mat-expansion-panel-header&gt;
+                      &lt;mat-panel-title&gt;
+                        &lt;h3 class&#x3D;&quot;colorPrincipal centrado margin10&quot;&gt;
+                          {{ info?.newPlan?.name }}
+                        &lt;/h3&gt;
+                      &lt;/mat-panel-title&gt;
+                    &lt;/mat-expansion-panel-header&gt;
+                    &lt;div class&#x3D;&quot;row centrado&quot;&gt;
+                      &lt;h2 class&#x3D;&quot;colorSecundario right&quot;&gt;
+                        {{
+                          info?.newPlan?.cost
+                            | currency : utilService.curr : &quot;symbol-narrow&quot;
+                        }}
+                      &lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;hr /&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                      &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+                          &gt;&lt;span&gt;{{ info?.newPlan?.duration_months }}&lt;/span&gt;
+                          {{ &quot;label.months&quot; | translate }}
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.newPlan?.access_scanner&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.one_shot&quot; | translate }}:
+                          &lt;span *ngIf&#x3D;&quot;info?.newPlan?.limit_credits &gt; 0&quot;&gt;{{
+                            info?.newPlan?.limit_credits
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.newPlan?.limit_credits &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.newPlan?.access_monitor&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.monitor&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;info?.newPlan?.total_monitor_licenses &gt; 0&quot;
+                            &gt;{{ info?.newPlan?.total_monitor_licenses }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;info?.newPlan?.total_monitor_licenses &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.newPlan?.access_transforma&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.transform&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;info?.newPlan?.total_transforma_licenses &gt; 0&quot;
+                            &gt;{{
+                              info?.newPlan?.total_transforma_licenses
+                            }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;
+                              info?.newPlan?.total_transforma_licenses &lt;&#x3D; 0
+                            &quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5 *ngIf&#x3D;&quot;info?.newPlan?.access_deindexation&quot;&gt;
+                          &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                          {{ &quot;label.licence.deindexing&quot; | translate }}:
+                          &lt;span
+                            *ngIf&#x3D;&quot;info?.newPlan?.max_url_to_deindexate &gt; 0&quot;
+                            &gt;{{ info?.newPlan?.max_url_to_deindexate }}&lt;/span
+                          &gt;&lt;span
+                            *ngIf&#x3D;&quot;info?.newPlan?.max_url_to_deindexate &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i
+                            class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;
+                          &gt;&lt;/i
+                          &gt;{{ &quot;label.plan.countries&quot; | translate }}
+                          :
+                          &lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_countries &gt; 0&quot;&gt;{{
+                            info?.newPlan?.max_countries
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_countries &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i
+                            class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;
+                          &gt;&lt;/i
+                          &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+                          &lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_keywords &gt; 0&quot;&gt;{{
+                            info?.newPlan?.max_keywords
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_keywords &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+                          &gt;{{ &quot;label.plan.pages&quot; | translate }}
+                          :
+                          &lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_search_page &gt; 0&quot;&gt;{{
+                            info?.newPlan?.max_search_page
+                          }}&lt;/span
+                          &gt;&lt;span *ngIf&#x3D;&quot;info?.newPlan?.max_search_page &lt;&#x3D; 0&quot;
+                            &gt;0&lt;/span
+                          &gt;
+                        &lt;/h5&gt;
+                        &lt;h5&gt;
+                          &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+                          &gt;{{ &quot;label.sections&quot; | translate }} :
+                          {{ info?.newPlan?.sections_to_search }}
+                        &lt;/h5&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/mat-expansion-panel&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+
+            &lt;mat-expansion-panel
+              *ngIf&#x3D;&quot;info?.paymentsMethodsAvailables?.length &gt; 0&quot;
+            &gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  {{ &quot;label.payments&quot; | translate }}
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+              &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                  &lt;mat-radio-group
+                    aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+                    class&#x3D;&quot;example-radio-group&quot;
+                    [(ngModel)]&#x3D;&quot;info.paymentMethod&quot;
+                    required
+                    [ngModelOptions]&#x3D;&quot;{ standalone: true }&quot;
+                  &gt;
+                    &lt;mat-radio-button
+                      class&#x3D;&quot;example-radio-button&quot;
+                      *ngFor&#x3D;&quot;let payment of info.payments&quot;
+                      [value]&#x3D;&quot;payment&quot;
+                    &gt;
+                      &lt;span
+                        class&#x3D;&quot;espDer15&quot;
+                        [innerHTML]&#x3D;&quot;payment.brand.toUpperCase() | cardBrands&quot;
+                      &gt;&lt;/span&gt;
+                      &lt;strong class&#x3D;&quot;espDer15&quot;&gt;
+                        ****{{ payment.last4 }}
+                      &lt;/strong&gt;
+                      {{ payment.exp_month }}/{{ payment.exp_year }}
+                    &lt;/mat-radio-button&gt;
+                  &lt;/mat-radio-group&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+
+            &lt;mat-expansion-panel
+              [expanded]&#x3D;&quot;displayWarningTransform || displayWarningMonitor&quot;
+            &gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-exclamation-triangle colorSecundario heartbeat la-2x espDer10&quot;
+                    *ngIf&#x3D;&quot;displayWarningTransform || displayWarningMonitor&quot;
+                  &gt;&lt;/i&gt;
+                  {{ &quot;label.message_services_active&quot; | translate }}
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+              &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+                &lt;app-active-licences
+                  [infoPlan]&#x3D;&quot;info&quot;
+                  (selectedMonitor)&#x3D;&quot;checkListMonitor($event)&quot;
+                  (selectedTransform)&#x3D;&quot;checkListTransform($event)&quot;
+                  (warningTransform)&#x3D;&quot;checkWarningtransfrom($event)&quot;
+                  (warningMonitor)&#x3D;&quot;checkWarningMonitor($event)&quot;
+                &gt;&lt;/app-active-licences&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+          &lt;/mat-accordion&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+    &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-slide-toggle
+          [(ngModel)]&#x3D;&quot;info.programmedToNextPayment&quot;
+          class&#x3D;&quot;noCkeck&quot;
+        &gt;
+          {{ &quot;label.change.plan.next.payment&quot; | translate }}
+        &lt;/mat-slide-toggle&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-slide-toggle
+          [(ngModel)]&#x3D;&quot;confirmtoggle&quot;
+          required
+          class&#x3D;&quot;noCkeck&quot;
+          &gt;{{ &quot;message.confirm_check_plan&quot; | translate }}&lt;/mat-slide-toggle
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;p&gt;{{ &quot;message.confirm_plan_info&quot; | translate }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;mat-dialog-actions class&#x3D;&quot;centrado&quot;&gt;
+    &lt;a mat-dialog-close tabindex&#x3D;&quot;-1&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+      {{ &quot;button.cancel&quot; | translate }}&lt;/a
+    &gt;
+    &lt;button
+      (click)&#x3D;&quot;onConfirmClick(confirmForm)&quot;
+      class&#x3D;&quot;glow-on-hover espIz15&quot;
+      type&#x3D;&quot;submit&quot;
+      *ngIf&#x3D;&quot;confirmtoggle&quot;
+      tabindex&#x3D;&quot;1&quot;
+    &gt;
+      {{ &quot;button.confirm&quot; | translate }}
+    &lt;/button&gt;
+  &lt;/mat-dialog-actions&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./confirm-change.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h2 mat-dialog-title>  <i class="las la-file-invoice colorGris espDer5"></i  >{{ "tittle.confirm_plan" | translate }}</h2><div mat-dialog-content>  <div class="container-fluid padding20">    <form #confirmForm="ngForm" (ngSubmit)="(confirmForm.form.valid)">      <div class="row paddingTop15">        <div class="col-md-12">          <mat-accordion multi>            <mat-expansion-panel expanded>              <mat-expansion-panel-header>                <mat-panel-title>                  {{ "label.summary" | translate }}                </mat-panel-title>              </mat-expansion-panel-header>              <div class="row">                <div class="col-md-5">                  <h2 class="centrado colorGris">                    {{ "title.current_plan" | translate }}                  </h2>                  <mat-expansion-panel                    class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"                  >                    <mat-expansion-panel-header>                      <mat-panel-title>                        <h3 class="colorPrincipal centrado margin10">                          {{ info?.actualPlan?.name }}                        </h3>                      </mat-panel-title>                    </mat-expansion-panel-header>                    <div class="row centrado">                      <h2 class="colorSecundario right">                        {{                          info?.actualPlan?.cost                            | currency : utilService.curr : "symbol-narrow"                        }}                      </h2>                    </div>                    <hr />                    <div class="col-md-12">                      <!--  <h5> <i class="las la-globe-americas colorSecundario espDer5"></i>{{\'label.plan.countries\' |                        translate}}:                          {{info?.actualPlan?.max_countries}}<br>                          <i class="las la-search-plus colorSecundario espDer5"></i>{{\'label.plan.keywords\' | translate}}:                          {{info?.actualPlan?.max_keywords}}<br>                          <i class="las la-file colorSecundario espDer5"></i>{{\'label.plan.pages\' | translate}}: {{info?.actualPlan?.max_search_page}}<br>                          <i class="fab fa-google colorSecundario espDer5"></i>{{\'label.sections\' | translate}}:                          {{info?.actualPlan?.sections_to_search}}</h5>-->                      <div class="generic_feature_list">                        <h5>                          <i class="las la-calendar-alt colorAzul espDer5"></i                          ><span>{{ info?.actualPlan?.duration_months }}</span>                          {{ "label.months" | translate }}                        </h5>                        <h5 *ngIf="info?.actualPlan?.access_scanner">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.one_shot" | translate }}:                          <span *ngIf="info?.actualPlan?.limit_credits > 0">{{                            info?.actualPlan?.limit_credits                          }}</span                          ><span *ngIf="info?.actualPlan?.limit_credits <= 0"                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.actualPlan?.access_monitor">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.monitor" | translate }}:                          <span                            *ngIf="info?.actualPlan?.total_monitor_licenses > 0"                            >{{                              info?.actualPlan?.total_monitor_licenses                            }}</span                          ><span                            *ngIf="                              info?.actualPlan?.total_monitor_licenses <= 0                            "                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.actualPlan?.access_transforma">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.transform" | translate }}:                          <span                            *ngIf="                              info?.actualPlan?.total_transforma_licenses > 0                            "                            >{{                              info?.actualPlan?.total_transforma_licenses                            }}</span                          ><span                            *ngIf="                              info?.actualPlan?.total_transforma_licenses <= 0                            "                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.actualPlan?.access_deindexation">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.deindexing" | translate }}:                          <span                            *ngIf="info?.actualPlan?.max_url_to_deindexate > 0"                            >{{ info?.actualPlan?.max_url_to_deindexate }}</span                          ><span                            *ngIf="info?.actualPlan?.max_url_to_deindexate <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i                            class="las la-globe-americas colorSecundario espDer5"                          ></i                          >{{ "label.plan.countries" | translate }}                          :                          <span *ngIf="info?.actualPlan?.max_countries > 0">{{                            info?.actualPlan?.max_countries                          }}</span                          ><span *ngIf="info?.actualPlan?.max_countries <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i                            class="las la-search-plus colorSecundario espDer5"                          ></i                          >{{ "label.plan.keywords" | translate }}:                          <span *ngIf="info?.actualPlan?.max_keywords > 0">{{                            info?.actualPlan?.max_keywords                          }}</span                          ><span *ngIf="info?.actualPlan?.max_keywords <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i class="las la-file colorSecundario espDer5"></i                          >{{ "label.plan.pages" | translate }}                          :                          <span *ngIf="info?.actualPlan?.max_search_page > 0">{{                            info?.actualPlan?.max_search_page                          }}</span                          ><span *ngIf="info?.actualPlan?.max_search_page <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i class="fab fa-google colorSecundario espDer5"></i                          >{{ "label.sections" | translate }} :                          {{ info?.actualPlan?.sections_to_search }}                        </h5>                      </div>                    </div>                  </mat-expansion-panel>                </div>                <div class="col-md-1">                  <i class="las la-arrow-right colorSecundario fa-3x"></i>                </div>                <div class="col-md-5">                  <h2 class="centrado colorSecundario">                    {{ "title.new_plan" | translate }}                  </h2>                  <mat-expansion-panel                    class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"                  >                    <mat-expansion-panel-header>                      <mat-panel-title>                        <h3 class="colorPrincipal centrado margin10">                          {{ info?.newPlan?.name }}                        </h3>                      </mat-panel-title>                    </mat-expansion-panel-header>                    <div class="row centrado">                      <h2 class="colorSecundario right">                        {{                          info?.newPlan?.cost                            | currency : utilService.curr : "symbol-narrow"                        }}                      </h2>                    </div>                    <hr />                    <div class="col-md-12">                      <div class="generic_feature_list">                        <h5>                          <i class="las la-calendar-alt colorAzul espDer5"></i                          ><span>{{ info?.newPlan?.duration_months }}</span>                          {{ "label.months" | translate }}                        </h5>                        <h5 *ngIf="info?.newPlan?.access_scanner">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.one_shot" | translate }}:                          <span *ngIf="info?.newPlan?.limit_credits > 0">{{                            info?.newPlan?.limit_credits                          }}</span                          ><span *ngIf="info?.newPlan?.limit_credits <= 0"                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.newPlan?.access_monitor">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.monitor" | translate }}:                          <span                            *ngIf="info?.newPlan?.total_monitor_licenses > 0"                            >{{ info?.newPlan?.total_monitor_licenses }}</span                          ><span                            *ngIf="info?.newPlan?.total_monitor_licenses <= 0"                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.newPlan?.access_transforma">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.transform" | translate }}:                          <span                            *ngIf="info?.newPlan?.total_transforma_licenses > 0"                            >{{                              info?.newPlan?.total_transforma_licenses                            }}</span                          ><span                            *ngIf="                              info?.newPlan?.total_transforma_licenses <= 0                            "                            >0</span                          >                        </h5>                        <h5 *ngIf="info?.newPlan?.access_deindexation">                          <i class="las la-check-circle colorVerde"></i>                          {{ "label.licence.deindexing" | translate }}:                          <span                            *ngIf="info?.newPlan?.max_url_to_deindexate > 0"                            >{{ info?.newPlan?.max_url_to_deindexate }}</span                          ><span                            *ngIf="info?.newPlan?.max_url_to_deindexate <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i                            class="las la-globe-americas colorSecundario espDer5"                          ></i                          >{{ "label.plan.countries" | translate }}                          :                          <span *ngIf="info?.newPlan?.max_countries > 0">{{                            info?.newPlan?.max_countries                          }}</span                          ><span *ngIf="info?.newPlan?.max_countries <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i                            class="las la-search-plus colorSecundario espDer5"                          ></i                          >{{ "label.plan.keywords" | translate }}:                          <span *ngIf="info?.newPlan?.max_keywords > 0">{{                            info?.newPlan?.max_keywords                          }}</span                          ><span *ngIf="info?.newPlan?.max_keywords <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i class="las la-file colorSecundario espDer5"></i                          >{{ "label.plan.pages" | translate }}                          :                          <span *ngIf="info?.newPlan?.max_search_page > 0">{{                            info?.newPlan?.max_search_page                          }}</span                          ><span *ngIf="info?.newPlan?.max_search_page <= 0"                            >0</span                          >                        </h5>                        <h5>                          <i class="fab fa-google colorSecundario espDer5"></i                          >{{ "label.sections" | translate }} :                          {{ info?.newPlan?.sections_to_search }}                        </h5>                      </div>                    </div>                  </mat-expansion-panel>                </div>              </div>            </mat-expansion-panel>            <mat-expansion-panel              *ngIf="info?.paymentsMethodsAvailables?.length > 0"            >              <mat-expansion-panel-header>                <mat-panel-title>                  {{ "label.payments" | translate }}                </mat-panel-title>              </mat-expansion-panel-header>              <div class="row paddingTop15">                <div class="col-md-12">                  <mat-radio-group                    aria-labelledby="example-radio-group-label"                    class="example-radio-group"                    [(ngModel)]="info.paymentMethod"                    required                    [ngModelOptions]="{ standalone: true }"                  >                    <mat-radio-button                      class="example-radio-button"                      *ngFor="let payment of info.payments"                      [value]="payment"                    >                      <span                        class="espDer15"                        [innerHTML]="payment.brand.toUpperCase() | cardBrands"                      ></span>                      <strong class="espDer15">                        ****{{ payment.last4 }}                      </strong>                      {{ payment.exp_month }}/{{ payment.exp_year }}                    </mat-radio-button>                  </mat-radio-group>                </div>              </div>            </mat-expansion-panel>            <mat-expansion-panel              [expanded]="displayWarningTransform || displayWarningMonitor"            >              <mat-expansion-panel-header>                <mat-panel-title>                  <i                    class="las la-exclamation-triangle colorSecundario heartbeat la-2x espDer10"                    *ngIf="displayWarningTransform || displayWarningMonitor"                  ></i>                  {{ "label.message_services_active" | translate }}                </mat-panel-title>              </mat-expansion-panel-header>              <div class="row paddingTop15">                <app-active-licences                  [infoPlan]="info"                  (selectedMonitor)="checkListMonitor($event)"                  (selectedTransform)="checkListTransform($event)"                  (warningTransform)="checkWarningtransfrom($event)"                  (warningMonitor)="checkWarningMonitor($event)"                ></app-active-licences>              </div>            </mat-expansion-panel>          </mat-accordion>        </div>      </div>    </form>    <div class="row paddingTop15">      <div class="col-md-12">        <mat-slide-toggle          [(ngModel)]="info.programmedToNextPayment"          class="noCkeck"        >          {{ "label.change.plan.next.payment" | translate }}        </mat-slide-toggle>      </div>      <div class="col-md-12">        <mat-slide-toggle          [(ngModel)]="confirmtoggle"          required          class="noCkeck"          >{{ "message.confirm_check_plan" | translate }}</mat-slide-toggle        >      </div>    </div>    <div class="row paddingTop15">      <div class="col-md-12">        <p>{{ "message.confirm_plan_info" | translate }}</p>      </div>    </div>  </div>  <mat-dialog-actions class="centrado">    <a mat-dialog-close tabindex="-1" class="third after colorGris">      {{ "button.cancel" | translate }}</a    >    <button      (click)="onConfirmClick(confirmForm)"      class="glow-on-hover espIz15"      type="submit"      *ngIf="confirmtoggle"      tabindex="1"    >      {{ "button.confirm" | translate }}    </button>  </mat-dialog-actions></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ConfirmChangeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ConfirmChangeComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

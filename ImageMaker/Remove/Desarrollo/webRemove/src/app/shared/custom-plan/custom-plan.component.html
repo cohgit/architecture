@@ -1,0 +1,94 @@
+<h2 mat-dialog-title ><i class="las la-file-invoice colorPrincipal espDer5"></i>{{'title.plan_three' | translate}}</h2>
+<div mat-dialog-content>
+  <h4 class="colorGris">{{'message.suggest_plan' | translate}}</h4>
+  <form #customForm="ngForm" (ngSubmit)="customForm.form.valid" >
+    <div class="container-fluid padding20">
+      <mat-accordion multi>
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{'title.plan_info' | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.limit_credits" name="limit_credits" matInput numbersOnly
+                       placeholder="{{'label.licence.one_shot' | translate}} " type="number"
+                       min="0">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.total_monitor_licenses" name="total_monitor_licenses" matInput numbersOnly
+                       placeholder="{{'label.licence.monitor' | translate}} " type="number"
+                       min="0">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.total_transforma_licenses" name="total_transforma_licenses" matInput numbersOnly
+                       placeholder="{{'label.licence.transform' | translate}} " type="number"
+                       min="0">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_url_to_deindexate" name="max_url_to_deindexate" matInput numbersOnly
+                       placeholder="{{'label.licence.deindexing' | translate}} " type="number"
+                       min="0">
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{'title.scanner_restriction' | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_keywords" name="max_keywords" matInput numbersOnly
+                       placeholder="{{'label.plan.keywords' | translate}} "  type="number" min="1">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_countries" name="max_countries" matInput numbersOnly
+                       placeholder="{{'label.plan.countries' | translate}} "  type="number" min="1">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_search_page" name="max_search_page" matInput numbersOnly
+                       placeholder="{{'label.plan.pages' | translate}} " type="number" min="2" max="10">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{'label.scanner.advance.sections' | translate}}</mat-label>
+                <mat-select multiple [(ngModel)]="info.sectionsToSearch" name="sectionsToSearch"
+                            [compareWith]="utilService.compareValue">
+                  <mat-option *ngFor="let s of allTypes" [value]="s.code">
+                    {{"list.scanner.type." + s.code | translate}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </form>
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.cancel' | translate}}</a>
+    <button class="glow-on-hover espIz15" type="submit"  (click)="onConfirmClick(customForm)"
+            tabindex="1" >{{'button.add' | translate}}</button>
+  </mat-dialog-actions>
+</div>

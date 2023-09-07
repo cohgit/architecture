@@ -1,0 +1,28 @@
+<div class="row paddingTop15">
+  <div class="col-md-12">
+    <div class="hr-sect"><h4 class="colorSecundario paddingTop5">{{'title.scanner.config' | translate}}</h4></div>
+    <div class="margin10"></div>
+  </div>
+  <div class="col-md-12">
+    <app-config-report [infoScan]="infoScan"></app-config-report>
+  </div>
+</div>
+<div class="row paddingTop15">
+  <div class="col-md-12">
+    <div class="hr-sect"><h4 class="colorSecundario paddingTop5">{{'label.results' | translate}}</h4></div>
+    <div class="margin10"></div>
+  </div>
+  <div class="col-md-12">
+    <app-result-report [infoResults]="infoResults"></app-result-report>
+  </div>
+</div>
+<div class="row paddingTop15">
+  <div class="col-md-12">
+    <div class="hr-sect"><h4 class="colorSecundario paddingTop5">{{'label.dash' | translate}}</h4></div>
+    <div class="margin10"></div>
+  </div>
+  <div class="col-md-12">
+    <app-dash-report [infoDash]="infoDash"></app-dash-report>
+  </div>
+</div>
+

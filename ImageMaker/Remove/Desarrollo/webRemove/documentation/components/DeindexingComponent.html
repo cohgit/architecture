@@ -1,0 +1,1799 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  DeindexingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/deindexing/deindexing.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-deindexing</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./deindexing.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./deindexing.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allStates" >allStates</a>
+                            </li>
+                            <li>
+                                <a href="#copyArray" >copyArray</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                <a href="#ICONS" >ICONS</a>
+                            </li>
+                            <li>
+                                <a href="#isAdmin" >isAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorClass" >paginatorClass</a>
+                            </li>
+                            <li>
+                                <a href="#separatorKeysCodes" >separatorKeysCodes</a>
+                            </li>
+                            <li>
+                                <a href="#sortDirection" >sortDirection</a>
+                            </li>
+                            <li>
+                                <a href="#table" >table</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#uuid_client" >uuid_client</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkTracking" >checkTracking</a>
+                            </li>
+                            <li>
+                                <a href="#clean" >clean</a>
+                            </li>
+                            <li>
+                                <a href="#goClient" >goClient</a>
+                            </li>
+                            <li>
+                                <a href="#loadCommons" >loadCommons</a>
+                            </li>
+                            <li>
+                                <a href="#loadTable" >loadTable</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangePage" >onChangePage</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                <a href="#searchResult" >searchResult</a>
+                            </li>
+                            <li>
+                                <a href="#sortFunction" >sortFunction</a>
+                            </li>
+                            <li>
+                                <a href="#splitKeywords" >splitKeywords</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, deindexationService: <a href="../injectables/DeindexationService.html" target="_self">DeindexationService</a>, commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, dialog: MatDialog, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>manage desindexing component</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deindexationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DeindexationService.html" target="_self" >DeindexationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkTracking"></a>
+                    <span class="name">
+                        <span ><b>checkTracking</b></span>
+                        <a href="#checkTracking"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkTracking(uuid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="166"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>check historic of the deindexation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uuid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clean"></a>
+                    <span class="name">
+                        <span ><b>clean</b></span>
+                        <a href="#clean"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clean()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="131"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Limpia el filtro de búsqueda</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goClient"></a>
+                    <span class="name">
+                        <span ><b>goClient</b></span>
+                        <a href="#goClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goClient()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="194"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Go to client view</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCommons"></a>
+                    <span class="name">
+                        <span ><b>loadCommons</b></span>
+                        <a href="#loadCommons"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadCommons()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="102"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>load commons services to fill select inputs</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadTable"></a>
+                    <span class="name">
+                        <span ><b>loadTable</b></span>
+                        <a href="#loadTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadTable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="76"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="65"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangePage"></a>
+                    <span class="name">
+                        <span ><b>onChangePage</b></span>
+                        <a href="#onChangePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangePage(pageOfItems: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="158"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOfItems</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, componente)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="179"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>  function to open modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>componente</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchResult"></a>
+                    <span class="name">
+                        <span ><b>searchResult</b></span>
+                        <a href="#searchResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchResult(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="111"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortFunction"></a>
+                    <span class="name">
+                        <span ><b>sortFunction</b></span>
+                        <a href="#sortFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortFunction(colName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="143"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Order table Items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="splitKeywords"></a>
+                    <span class="name">
+                        <span ><b>splitKeywords</b></span>
+                        <a href="#splitKeywords"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>splitKeywords(word)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="91"
+                            class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>split keywords by /</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>word</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allStates"></a>
+                    <span class="name">
+                        <span ><b>allStates</b></span>
+                        <a href="#allStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyArray"></a>
+                    <span class="name">
+                        <span ><b>copyArray</b></span>
+                        <a href="#copyArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <span ><b>filter</b></span>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    personal: &#x27;&#x27;,
+    status: &#x27;&#x27;,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ICONS"></a>
+                    <span class="name">
+                        <span ><b>ICONS</b></span>
+                        <a href="#ICONS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    created: &#x27;las la-user-edit&#x27;,
+    sent: &#x27;lab la-telegram-plane&#x27;,
+    processing: &#x27;las la-redo-alt&#x27;,
+    approved: &#x27;las la-thumbs-up&#x27;,
+    rejected: &#x27;las la-thumbs-down&#x27;,
+    deleted: &#x27;las la-trash&#x27;,
+    ESTADO_DEFAULT: &#x27;fa fa-info-circle&#x27;,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAdmin"></a>
+                    <span class="name">
+                        <span ><b>isAdmin</b></span>
+                        <a href="#isAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="39" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginatorClass"></a>
+                    <span class="name">
+                        <span ><b>paginatorClass</b></span>
+                        <a href="#paginatorClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;paginator&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="separatorKeysCodes"></a>
+                    <span class="name">
+                        <span ><b>separatorKeysCodes</b></span>
+                        <a href="#separatorKeysCodes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[ENTER, COMMA]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDirection"></a>
+                    <span class="name">
+                        <span ><b>sortDirection</b></span>
+                        <a href="#sortDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="table"></a>
+                    <span class="name">
+                        <span ><b>table</b></span>
+                        <a href="#table"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="53" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uuid_client"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>uuid_client</b></span>
+                        <a href="#uuid_client"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/deindexing/deindexing.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { UtilService } from &#x27;../../helpers/util.service&#x27;;
+
+import { TranslateHelperService } from &#x27;../../helpers/translate-helper.service&#x27;;
+import { DeindexationService } from &#x27;../../services/deindexation.service&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { TrackingDeindexingComponent } from &#x27;./tracking-deindexing/tracking-deindexing.component&#x27;;
+import { SessionService } from &#x27;src/app/helpers/session.service&#x27;;
+import { CommonService } from &#x27;../../services/common.service&#x27;;
+import { COMMA, ENTER } from &#x27;@angular/cdk/keycodes&#x27;;
+
+@Component({
+  selector: &#x27;app-deindexing&#x27;,
+  templateUrl: &#x27;./deindexing.component.html&#x27;,
+  styleUrls: [&#x27;./deindexing.component.css&#x27;],
+})
+export class DeindexingComponent implements OnInit {
+  private uuid_client;
+  allStates &#x3D; [];
+  separatorKeysCodes: number[] &#x3D; [ENTER, COMMA];
+  /* objeto a enviar al filtro */
+  filter &#x3D; {
+    personal: &#x27;&#x27;,
+    status: &#x27;&#x27;,
+  };
+  ICONS &#x3D; {
+    created: &#x27;las la-user-edit&#x27;,
+    sent: &#x27;lab la-telegram-plane&#x27;,
+    processing: &#x27;las la-redo-alt&#x27;,
+    approved: &#x27;las la-thumbs-up&#x27;,
+    rejected: &#x27;las la-thumbs-down&#x27;,
+    deleted: &#x27;las la-trash&#x27;,
+    ESTADO_DEFAULT: &#x27;fa fa-info-circle&#x27;,
+  };
+  copyArray: Array&lt;any&gt;;
+  table: any;
+  sortDirection &#x3D; false;
+  isAdmin &#x3D; false;
+  paginatorClass &#x3D; &#x27;paginator&#x27;;
+
+  /**
+   * manage desindexing component
+   * @param utilService
+   * @param translateHelper
+   * @param deindexationService
+   * @param commonService
+   * @param route
+   * @param dialog
+   * @param session
+   */
+  constructor(
+    public utilService: UtilService,
+    public translateHelper: TranslateHelperService,
+    private router: Router,
+    private deindexationService: DeindexationService,
+    private commonService: CommonService,
+    private route: ActivatedRoute,
+    private dialog: MatDialog,
+    private session: SessionService
+  ) {
+    this.uuid_client &#x3D; this.route.snapshot.paramMap.get(&#x27;uuid_client&#x27;);
+  }
+
+  ngOnInit(): void {
+    this.loadTable();
+    this.loadCommons();
+    if (this.session.getUser().permissions.profile.ADMIN) {
+      this.isAdmin &#x3D; true;
+    }
+  }
+
+  /*
+    Carga la tabla con los registros iniciales
+  **/
+  loadTable(): void {
+    this.deindexationService.list(this.uuid_client, (response) &#x3D;&gt; {
+      this.table &#x3D; response;
+      this.table.list.sort(
+        (a, b) &#x3D;&gt;
+          new Date(b.creation_date).getTime() -
+          new Date(a.creation_date).getTime()
+      );
+    });
+  }
+
+  /**
+   * split keywords by /
+   * @param word
+   */
+  splitKeywords(word) {
+    let usingSplit &#x3D; [];
+    if (word.length &gt; 0) {
+      usingSplit &#x3D; word.split(&#x27;/&#x27;);
+      return usingSplit;
+    }
+  }
+
+  /**
+   * load commons services to fill select inputs
+   */
+  loadCommons(): void {
+    this.commonService.listDeindexationStatus(
+      (response) &#x3D;&gt; (this.allStates &#x3D; response)
+    );
+  }
+
+  /*
+    Filtra el arreglo principal según la búsqueda
+  **/
+  searchResult(value: any) {
+    if (value.status !&#x3D;&#x3D; &#x27;&#x27;) {
+      this.copyArray &#x3D; this.table.list.filter(
+        (u) &#x3D;&gt;
+          (u.person_name.toLowerCase().includes(value.personal) ||
+            u.person_lastname.toLowerCase().includes(value.personal)) &amp;&amp;
+          u.status &#x3D;&#x3D;&#x3D; value.status
+      );
+    } else {
+      this.copyArray &#x3D; this.table.list.filter(
+        (u) &#x3D;&gt;
+          u.person_name.toLowerCase().includes(value.personal) ||
+          u.person_lastname.toLowerCase().includes(value.personal)
+      );
+    }
+  }
+
+  /**
+   * Limpia el filtro de búsqueda
+   */
+  clean() {
+    this.filter &#x3D; {
+      personal: &#x27;&#x27;,
+      status: &#x27;&#x27;,
+    };
+    this.copyArray &#x3D; this.table.list;
+  }
+
+  /**
+   * Order table Items
+   * @param colName
+   */
+  sortFunction(colName: string): void {
+    const result &#x3D; this.utilService.sortTable(
+      colName,
+      true,
+      this.table.list,
+      this.sortDirection
+    );
+    this.table.list &#x3D; result.array;
+    this.sortDirection &#x3D; result.direction;
+    this.utilService.changeSelectedPageToFirst(this.paginatorClass);
+  }
+
+  /*
+ función para controlar al pagindor
+ * */
+  onChangePage(pageOfItems: Array&lt;any&gt;): void {
+    this.copyArray &#x3D; pageOfItems;
+  }
+
+  /**
+   * check historic of the deindexation
+   * @param uuid
+   */
+  checkTracking(uuid: string) {
+    this.deindexationService.getHistoric(uuid, (response) &#x3D;&gt; {
+      this.openModal(response, TrackingDeindexingComponent);
+    });
+  }
+
+  /**
+   *   function to open modal
+   * @param isNuevo
+   * @param isEditable
+   * @param client
+   * @param componente
+   */
+  openModal(data: any, componente): void {
+    const dialogRef &#x3D; this.dialog.open(componente, {
+      closeOnNavigation: true,
+      disableClose: true,
+      data: {
+        info: data,
+      },
+    });
+    dialogRef.afterClosed().subscribe((result) &#x3D;&gt; {
+      this.loadTable();
+    });
+  }
+  /**
+   * Go to client view
+   */
+  goClient() {
+    if (this.session.getAccessConfig().ADMIN) {
+      this.router.navigate([&#x27;admin/module/clients&#x27;]);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row paddingTop15&quot; id&#x3D;&quot;toExport&quot;&gt;
+
+  &lt;div class&#x3D;&quot;row content-card &quot;&gt;
+    &lt;!--tittle--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-10&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-2 col-sm-6&quot;&gt;
+              &lt;h2&gt;
+                &lt;a (click)&#x3D;&quot;goClient()&quot;&gt;
+               &lt;i class&#x3D;&quot;las la-low-vision colorPrincipal  espDer5&quot;&gt;&lt;/i&gt; {{&quot;title.deindexing&quot; | translate}} &lt;/a&gt;&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-8 col-sm-6 paddingTop5 float-left&quot; *ngIf&#x3D;&quot;table?.urlsAvailables &gt; 0 &amp;&amp; !this.isAdmin&quot;&gt;
+              &lt;a class&#x3D;&quot;glow-on-hover reduceFont &quot; [routerLink]&#x3D;&quot;[&#x27;form&#x27;, &#x27;&#x27;]&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-plus-circle espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.add&#x27; | translate}} &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2 top20m&quot; *ngIf&#x3D;&quot;table?.list?.length &gt; 0&quot;&gt;
+          &lt;div class&#x3D;&quot;row &quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a (click)&#x3D;&quot;utilService.downloadExcel(&#x27;title.deindexing&#x27;)&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+                &lt;i class&#x3D;&quot;las la-file-excel colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.excel&#x27; | translate}}&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a (click)&#x3D;&quot;utilService.donwloadPDF(&#x27;title.deindexing&#x27;)&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+                &lt;i class&#x3D;&quot;las la-file-pdf colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.pdf&#x27; | translate}}&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--filters--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;table?.list?.length &gt; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row border-filter&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;filter.personal&quot; name&#x3D;&quot;personal&quot; matInput (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+                   placeholder&#x3D;&quot;{{&#x27;label.personal_info&#x27; | translate}}&quot;&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;mat-select
+              placeholder&#x3D;&quot;{{ &#x27;status.deindex&#x27; | translate }}&quot;
+              [(ngModel)]&#x3D;&quot;filter.status&quot; (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+            &gt;
+              &lt;mat-option *ngFor&#x3D;&quot;let item of allStates&quot; [value]&#x3D;&quot;item.tag&quot;&gt;
+                &lt;i class&#x3D;&quot;{{ ICONS[item?.tag] ? ICONS[item?.tag] : ICONS.ESTADO_DEFAULT }}
+                la-2x colorGris espDer5&quot;&gt;&lt;/i&gt; -
+                {{&#x27;status.deindex.&#x27; + item?.tag | translate }}
+              &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;!--&lt;div class&#x3D;&quot;col-md-2 centrado col-sm-12&quot;&gt;
+          &lt;button (click)&#x3D;&quot;searchResult(filter)&quot; class&#x3D;&quot;secondLevelButton reduceFont&quot;
+          &gt;&lt;i class&#x3D;&quot;las la-search espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.search&#x27; | translate}}&lt;/button&gt;
+        &lt;/div&gt;--&gt;
+        &lt;div class&#x3D;&quot;col-md-2  col-sm-12 paddingTop15 float-left&quot;&gt;
+          &lt;a (click)&#x3D;&quot;clean()&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+            &lt;i class&#x3D;&quot;las la-broom colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.clear_filters&#x27; |
+            translate}}&lt;/a&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--principal table--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;table?.list?.length &gt; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row slide-in-blurred-bottom horizontal-scroll&quot;&gt;
+        &lt;table class&#x3D;&quot;table table-hover table-borderless&quot;&gt;
+          &lt;thead class&#x3D;&quot;thead-light&quot;&gt;
+          &lt;tr&gt;
+            &lt;th
+              (click)&#x3D;&quot;sortFunction(&#x27;person_name&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.personal_info&#x27; | translate}} &lt;/th&gt;
+            &lt;th
+              (click)&#x3D;&quot;sortFunction(&#x27;creation_date&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.impulse.creation_date&#x27; | translate}} &lt;/th&gt;
+            &lt;th class&#x3D;&quot;maxWidth400&quot;&gt;{{&#x27;label.keywords&#x27; | translate}} &lt;/th&gt;
+            &lt;th
+              (click)&#x3D;&quot;sortFunction(&#x27;status&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;status.deindex&#x27; | translate}} &lt;/th&gt;
+            &lt;th&gt;{{&#x27;label.actions&#x27; | translate}} &lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+          &lt;tr *ngFor&#x3D;&quot;let data of copyArray &quot;&gt;
+            &lt;td&gt;{{ data?.person_name }} {{ data?.person_lastname }}&lt;/td&gt;
+            &lt;td&gt;{{ utilService.formatDate(data?.creation_date) | date:&#x27;short&#x27;}}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;maxWidth400&quot;&gt;
+              &lt;mat-chip-list aria-label&#x3D;&quot;Fish selection espDer15&quot;&gt;
+                &lt;mat-chip *ngFor&#x3D;&quot;let key of splitKeywords(data?.url_to_deindex_keywords)&quot;&gt;
+                    &lt;span class&#x3D;&quot;colorPrincipal&quot;
+                    &gt;{{key}}
+                    &lt;/span&gt;&lt;/mat-chip
+                &gt;
+              &lt;/mat-chip-list&gt;
+
+              &lt;!--{{splitKeywords(data?.url_to_deindex_keywords)}}--&gt;
+
+            &lt;/td&gt;
+            &lt;td&gt;&lt;i
+              class&#x3D;&quot;{{ ICONS[data?.status] ? ICONS[data?.status] : ICONS.ESTADO_DEFAULT }} la-2x colorGris espDer5&quot;&gt;&lt;/i&gt;
+              {{&#x27;status.deindex.&#x27; + data?.status | translate }}&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a [routerLink]&#x3D;&quot;[&#x27;form&#x27;, data.uuid]&quot; class&#x3D;&quot;espDer15&quot; *ngIf&#x3D;&quot;!isAdmin&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-edit colorPrincipal  la-2x&quot; title&#x3D;&quot;{{&#x27;title.edit_deindexing&#x27; | translate}}&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;a [routerLink]&#x3D;&quot;[&#x27;view&#x27;, data.uuid]&quot; class&#x3D;&quot;espDer15&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-eye colorPrincipal la-2x&quot; title&#x3D;&quot;{{&#x27;button.preview&#x27; | translate}}&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;a (click)&#x3D;&quot;checkTracking(data.uuid)&quot; class&#x3D;&quot;espDer15&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-check-circle colorPrincipal la-2x&quot; title&#x3D;&quot;{{&#x27;status.deindex&#x27; | translate}}&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;div class&#x3D;&quot;col-md-12 centrado paddingBottom50 paddingTop25&quot;&gt;
+          &lt;jw-pagination [items]&#x3D;&quot;table?.list&quot; (changePage)&#x3D;&quot;onChangePage($event)&quot;
+                         [maxPages]&#x3D;&quot;5&quot; [pageSize]&#x3D;&quot;15&quot; class&#x3D;&quot;{{paginatorClass}}&quot;
+          &gt;&lt;/jw-pagination&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;table?.list?.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+      &lt;h5 class&#x3D;&quot;centrado colorGris&quot;&gt;{{&#x27;error.not_found_results&#x27; | translate}}&lt;/h5&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./deindexing.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row paddingTop15" id="toExport">  <div class="row content-card ">    <!--tittle-->    <div class="col-md-12">      <div class="row">        <div class="col-md-10">          <div class="row">            <div class="col-md-2 col-sm-6">              <h2>                <a (click)="goClient()">               <i class="las la-low-vision colorPrincipal  espDer5"></i> {{"title.deindexing" | translate}} </a></h2>            </div>            <div class="col-md-8 col-sm-6 paddingTop5 float-left" *ngIf="table?.urlsAvailables > 0 && !this.isAdmin">              <a class="glow-on-hover reduceFont " [routerLink]="[\'form\', \'\']">                <i class="las la-plus-circle espDer5"></i>{{\'button.add\' | translate}} </a>            </div>          </div>        </div>        <div class="col-md-2 top20m" *ngIf="table?.list?.length > 0">          <div class="row ">            <div class="col-md-4 col-sm-6"></div>            <div class="col-md-4 col-sm-6">              <a (click)="utilService.downloadExcel(\'title.deindexing\')" class="third after reduceFont ">                <i class="las la-file-excel colorPrincipal espDer5"></i>{{\'label.excel\' | translate}}</a>            </div>            <div class="col-md-4 col-sm-6">              <a (click)="utilService.donwloadPDF(\'title.deindexing\')" class="third after reduceFont ">                <i class="las la-file-pdf colorPrincipal espDer5"></i>{{\'label.pdf\' | translate}}</a>            </div>          </div>        </div>      </div>    </div>    <!--filters-->    <div class="col-md-12" *ngIf="table?.list?.length > 0">      <div class="row border-filter">        <div class="col-md-4">          <mat-form-field class="example-full-width">            <input [(ngModel)]="filter.personal" name="personal" matInput (ngModelChange)="searchResult(filter)"                   placeholder="{{\'label.personal_info\' | translate}}">          </mat-form-field>        </div>        <div class="col-md-4">          <mat-form-field class="example-full-width">            <mat-select              placeholder="{{ \'status.deindex\' | translate }}"              [(ngModel)]="filter.status" (ngModelChange)="searchResult(filter)"            >              <mat-option *ngFor="let item of allStates" [value]="item.tag">                <i class="{{ ICONS[item?.tag] ? ICONS[item?.tag] : ICONS.ESTADO_DEFAULT }}                la-2x colorGris espDer5"></i> -                {{\'status.deindex.\' + item?.tag | translate }}              </mat-option>            </mat-select>          </mat-form-field>        </div>        <!--<div class="col-md-2 centrado col-sm-12">          <button (click)="searchResult(filter)" class="secondLevelButton reduceFont"          ><i class="las la-search espDer5"></i>{{\'button.search\' | translate}}</button>        </div>-->        <div class="col-md-2  col-sm-12 paddingTop15 float-left">          <a (click)="clean()" class="third after reduceFont ">            <i class="las la-broom colorPrincipal espDer5"></i>{{\'button.clear_filters\' |            translate}}</a>        </div>      </div>    </div>    <!--principal table-->    <div class="col-md-12" *ngIf="table?.list?.length > 0">      <div class="row slide-in-blurred-bottom horizontal-scroll">        <table class="table table-hover table-borderless">          <thead class="thead-light">          <tr>            <th              (click)="sortFunction(\'person_name\')"><i              class="las la-sort colorPrincipal espDer5"></i>{{\'label.personal_info\' | translate}} </th>            <th              (click)="sortFunction(\'creation_date\')"><i              class="las la-sort colorPrincipal espDer5"></i>{{\'label.impulse.creation_date\' | translate}} </th>            <th class="maxWidth400">{{\'label.keywords\' | translate}} </th>            <th              (click)="sortFunction(\'status\')"><i              class="las la-sort colorPrincipal espDer5"></i>{{\'status.deindex\' | translate}} </th>            <th>{{\'label.actions\' | translate}} </th>          </tr>          </thead>          <tbody>          <tr *ngFor="let data of copyArray ">            <td>{{ data?.person_name }} {{ data?.person_lastname }}</td>            <td>{{ utilService.formatDate(data?.creation_date) | date:\'short\'}}</td>            <td class="maxWidth400">              <mat-chip-list aria-label="Fish selection espDer15">                <mat-chip *ngFor="let key of splitKeywords(data?.url_to_deindex_keywords)">                    <span class="colorPrincipal"                    >{{key}}                    </span></mat-chip                >              </mat-chip-list>              <!--{{splitKeywords(data?.url_to_deindex_keywords)}}-->            </td>            <td><i              class="{{ ICONS[data?.status] ? ICONS[data?.status] : ICONS.ESTADO_DEFAULT }} la-2x colorGris espDer5"></i>              {{\'status.deindex.\' + data?.status | translate }}</td>            <td>              <a [routerLink]="[\'form\', data.uuid]" class="espDer15" *ngIf="!isAdmin">                <i class="las la-edit colorPrincipal  la-2x" title="{{\'title.edit_deindexing\' | translate}}"></i>              </a>              <a [routerLink]="[\'view\', data.uuid]" class="espDer15" *ngIf="isAdmin">                <i class="las la-eye colorPrincipal la-2x" title="{{\'button.preview\' | translate}}"></i>              </a>              <a (click)="checkTracking(data.uuid)" class="espDer15">                <i class="las la-check-circle colorPrincipal la-2x" title="{{\'status.deindex\' | translate}}"></i>              </a>            </td>          </tr>          </tbody>        </table>        <div class="col-md-12 centrado paddingBottom50 paddingTop25">          <jw-pagination [items]="table?.list" (changePage)="onChangePage($event)"                         [maxPages]="5" [pageSize]="15" class="{{paginatorClass}}"          ></jw-pagination>        </div>      </div>    </div>    <div class="col-md-12" *ngIf="table?.list?.length === 0">      <h5 class="centrado colorGris">{{\'error.not_found_results\' | translate}}</h5>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'DeindexingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DeindexingComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

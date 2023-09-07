@@ -1,0 +1,26 @@
+
+<h2 mat-dialog-title><i class="las la-newspaper colorGris espDer5"></i>{{info.title.rendered}}</h2>
+
+
+<div mat-dialog-content >
+  <div class="container-fluid padding20">
+<div class="row" *ngIf="info?._embedded['wp:featuredmedia']">
+  <div class="col-md-12">
+    <!--<img src="{{info?._embedded['wp:featuredmedia']['0']?.source_url}}" class="imagesNewContent">-->
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <img src="{{info?._embedded['wp:featuredmedia']['0']?.source_url}}" class="imagesNewContent"> <p class="paddingTop15" [innerHTML]="info.content.rendered"></p>
+
+   </div>
+
+</div>
+
+  </div>
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+  </mat-dialog-actions>
+</div>
+

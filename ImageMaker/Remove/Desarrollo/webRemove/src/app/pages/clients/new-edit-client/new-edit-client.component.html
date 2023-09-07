@@ -1,0 +1,253 @@
+<div class="container-fluid padding20">
+  <form #clientForm="ngForm" (ngSubmit)="(clientForm.form.valid)">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <input
+            [(ngModel)]="infoClient.name"
+            name="name"
+            matInput
+            placeholder="{{ 'label.name' | translate }}"
+          />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <input
+            [(ngModel)]="infoClient.lastname"
+            name="lastname"
+            matInput
+            placeholder="{{ 'label.lastname' | translate }}"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <input
+            [(ngModel)]="infoClient.email"
+            name="email"
+            matInput
+            placeholder="{{ 'label.email' | translate }}"
+          />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <input
+            [(ngModel)]="infoClient.phone"
+            name="phone"
+            matInput
+            placeholder="{{ 'label.phone' | translate }}"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label><i class="las la-language fa-2x"></i></mat-label>
+          <mat-select
+            [(ngModel)]="infoClient.language"
+            (selectionChange)="changeLanguage()"
+            name="language"
+          >
+            <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+              {{ "lang." + l | translate }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6" *ngIf="showPeriocity">
+        <mat-label class="espDer10 reduceFont colorGris"
+          >{{ "label.periocity_inform" | translate }}:
+        </mat-label>
+        <mat-radio-group
+          [(ngModel)]="infoClient.periocity"
+          name="periocity"
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+        >
+          <mat-radio-button [value]="1" class="espDer5">
+            {{ "label.day" | translate }}: 1
+          </mat-radio-button>
+
+          <!-- <mat-radio-button value="transfer" class="espDer5" *ngIf="params?.TRANSFER_MIN_VALUE < plan?.cost"
+     ><i class="las la-money-bill-wave colorSecundario espDer5"></i
+     >{{ "label.payment_transfer" | translate }}</mat-radio-button
+     >-->
+
+          <mat-radio-button [value]="15" class="espDer5">
+            {{ "label.day" | translate }}: 15
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <!--  <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="infoClient.project_name" name="project_name" matInput
+                   placeholder="{{'label.project_name' | translate}}" >
+          </mat-form-field>
+        </div>-->
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-slide-toggle
+          [(ngModel)]="infoClient.view_payments"
+          class="noCkeck"
+          name="view_payments"
+        >
+          {{ "label.view_payments" | translate }}
+        </mat-slide-toggle>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label class="noBacknoBorder paddingTop15">
+          <input
+            type="file"
+            (change)="selectFile($event)"
+            [accept]="fileType"
+            class="noBacknoBorder"
+          />
+        </label>
+
+        <h5>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "message.file_size" | translate }}
+        </h5>
+        <h5>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "message.file_type" | translate }}
+        </h5>
+        <h5>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "info.logo_upload" | translate }}
+        </h5>
+        <h5>
+          <i class="las la-info-circle colorAzul espDer5"></i
+          >{{ "info.logo_refresh_admin" | translate }}
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img
+          style="max-height: 150px; max-width: 200px"
+          src="{{ thumbnailPreview }}"
+          alt=""
+        />
+      </div>
+      <div class="col-md-3">
+        <a (click)="restoreLogo()" class="third after reduceFont">
+          {{ "button.restore_logo" | translate }}</a
+        >
+      </div>
+    </div>
+    <!-- <mat-accordion multi>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{'title.client.personal' | translate }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="infoClient.name" name="name" matInput placeholder="{{'label.name' | translate}}">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="infoClient.lastname" name="lastname" matInput
+                     placeholder="{{'label.lastname' | translate}}">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="infoClient.email" name="email" matInput placeholder="{{'label.email' | translate}}">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="infoClient.phone" name="phone" matInput placeholder="{{'label.phone' | translate}}">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+              <mat-label><i class="las la-language fa-2x"></i></mat-label>
+              <mat-select [(ngModel)]="infoClient.language" (selectionChange)="changeLanguage()" name="language">
+                <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+                  {{'lang.' + l | translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          !--  <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="infoClient.project_name" name="project_name" matInput
+                       placeholder="{{'label.project_name' | translate}}" >
+              </mat-form-field>
+            </div>--
+        </div>
+      </mat-expansion-panel>-->
+    <!--<mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{'title.client.billing' | translate }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="row">
+        <div class="col-md-4">
+          <mat-slide-toggle [(ngModel)]="infoClient.corporative" class="noCkeck" name="bussiness" >
+          </mat-slide-toggle>{{'label.client.bussines' | translate}}
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="infoClient.bussiness_name" name="bussiness_name" matInput
+                   placeholder="{{'label.client.bussines_name' | translate}} ">
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="infoClient.dni" name="dni" matInput placeholder="{{'label.client.dni' | translate}}"
+                >
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="infoClient.fiscal_address" name="fiscal_address" matInput
+                   placeholder="{{'label.client.fiscal_address' | translate}}" >
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input [(ngModel)]="infoClient.postal" name="postal" matInput
+                   placeholder="{{'label.client.postal_code' | translate}}" >
+          </mat-form-field>
+        </div>
+      </div>
+
+    </mat-expansion-panel>
+    </mat-accordion>-->
+  </form>
+  <div class="centrado row">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris">
+      {{ "button.cancel" | translate }}</a
+    >
+    <button
+      (click)="onConfirmClick(clientForm)"
+      class="glow-on-hover espIz15"
+      type="submit"
+      tabindex="1"
+    >
+      {{ "button.edit" | translate }}
+    </button>
+  </div>
+</div>
