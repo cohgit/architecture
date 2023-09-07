@@ -1,0 +1,129 @@
+<!--<div class="row">
+  <h4><strong> {{'label.filter.filter' | translate}}</strong></h4>
+</div>-->
+<div class="row">
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.keywords' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.keywords" multiple>
+        <mat-option *ngFor="let key of filtersLists?.keywords" [value]="key">
+          {{key.word}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+  <div class="col-md-{{col}}" *ngIf="filterModel?.keywords?.listSuggested?.length > 0">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.suggested_keywords' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.suggested_keywords" multiple>
+        <mat-option *ngFor="let key of filterModel?.keywords?.listSuggested" [value]="key">
+          {{key.word}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.countries' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.countries" multiple>
+        <mat-option *ngFor="let country of filtersLists?.countries" [value]="country">
+          <img [src]="utilService.checkFlag(country?.tag)" [width]="utilService.flagWith"
+               [height]="utilService.flagHeight"
+               alt="{{country?.name}}"
+               class="margin3" onerror="this.src='../../../../assets/img/broken.jpg'">
+          {{"list.country." + country.tag | translate}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.pages' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.pages" multiple>
+        <mat-option *ngFor="let page of filtersLists?.pages" [value]="page">
+          {{page}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.feelings' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.feelings" multiple>
+        <mat-option *ngFor="let feeling of filtersLists?.feelings" [value]="feeling">
+          {{"feeling." + feeling.tag | translate}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.tracking_words' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.tracking_words" multiple>
+        <mat-option *ngFor="let tw of filtersLists?.tracking_words" [value]="tw">
+          {{tw.word}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.url' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.urls" multiple>
+        <mat-option *ngFor="let url of filtersLists?.urls" [value]="url">
+          {{url.word}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.search_types' | translate}}</mat-label>
+      <mat-select [(ngModel)]="filterModel.search_types" multiple>
+        <mat-option *ngFor="let st of filtersLists?.search_types" [value]="st">
+          {{"list.scanner.type." + st | translate}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{'label.filter.scanner_date' | translate}}</mat-label>
+      <mat-date-range-input [rangePicker]="picker" [min]="scannerInfo?.creation_date" [max]="today">
+        <input matStartDate [(ngModel)]="filterModel.init_date" name="start" #dateRange="ngModel"
+               placeholder="{{'label.init_date' | translate}}">
+        <input matEndDate [(ngModel)]="filterModel.end_date" name="end"
+               placeholder="{{'label.end_date' | translate}}">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+      {{dateRange.errors}}
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-{{col}}">
+    <mat-slide-toggle [(ngModel)]="filterModel.isNew" class="noCkeck"> {{'label.new' | translate}}
+    </mat-slide-toggle>
+  </div>
+</div>
+<div class="row paddingTop15">
+  <div class="col-md-5 centrado paddingTop15">
+    <a (click)="callClearFiltersEvent()" class="secondLevelButton espIz15 reduceFont">
+      {{'button.clear' | translate}}</a>
+  </div>
+  <div class="col-md-7 centrado paddingTop15" *ngIf="applyFilter">
+    <button (click)="callFilterEvent()" class="glow-on-hover espIz15" type="submit"
+            tabindex="1"><i [ngClass]="applyButtonTitle ===  'button.generate_report' ? '' : 'las la-filter'"
+      ></i>
+      {{applyButtonTitle | translate}}</button>
+
+  </div>
+</div>

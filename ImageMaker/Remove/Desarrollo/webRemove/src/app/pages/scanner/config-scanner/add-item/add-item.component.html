@@ -1,0 +1,123 @@
+<h2 mat-dialog-title *ngIf="isURL">{{"title.dashboard.url" | translate}}</h2>
+<h2 mat-dialog-title *ngIf="!isURL">{{"title.scanner.terms" | translate}}</h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="container-fluid">
+    <form #adItem="ngForm" (ngSubmit)="adItem.form.valid">
+      <div class="row">
+        <div class="col-md-5" *ngIf="!isURL">
+          <mat-form-field class="example-full-width">
+            <mat-label>{{"title.scanner.terms" | translate}} </mat-label>
+            <input matInput [(ngModel)]="trackingword.word" spellcheck="true"
+                   (ngModelChange)="doFilter(trackingword.word)"
+                   [matAutocomplete]="auto" name="trackingword" #inputTrack="ngModel">
+            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"
+                              (optionSelected)="selectedWord($event)">
+              <mat-option *ngFor="let option of lstWords" [value]="option.word">
+                {{option.word}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+          <div *ngIf="!validWord">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+            </h5>
+          </div>
+          <div *ngIf="encontrado">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle espDer5"></i>{{trackingword.word}}
+              {{'error.duplicate' | translate}}</h5>
+          </div>
+        </div>
+        <div class="col-md-5" *ngIf="isURL">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="trackingword.word"
+              name="trackingword" #urlWord="ngModel"
+              matInput
+              placeholder="{{ 'title.dashboard.url' | translate }}"
+            />
+          </mat-form-field>
+          <div
+            *ngIf="!checkURL(trackingword.word) && trackingword.word !== undefined"
+          >
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ trackingword.word  }}
+              {{ "error.url_not_valid" | translate }}
+            </h5>
+          </div>
+
+          <div *ngIf="!validWord">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+            </h5>
+          </div>
+          <div *ngIf="encontrado">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle espDer5"></i>{{trackingword.word}}
+              {{'error.duplicate' | translate}}</h5>
+          </div>
+        </div>
+        <div class="col-md-4" *ngIf="!isTransform || !isURL">
+          <mat-form-field class="example-full-width">
+            <mat-label>{{'label.scanner.suggestedfeel' | translate}} </mat-label>
+            <mat-select [(ngModel)]="trackingword.feelingObj" name="feeling" #selectSuggest="ngModel"
+                        [compareWith]="utilService.compareTag">
+              <mat-option *ngFor="let feel of allFeelings" [value]="feel">
+                <span [innerHTML]="feel | feelingColors"></span>{{'feeling.' + feel.tag | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div *ngIf="!validFeeling">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <button (click)="addItem(trackingword, adItem)" class="secondLevelButton"
+                  type="submit"><i class="las la-plus-circle colorVerde espDer5"
+                                   title="{{'button.add' | translate}}"></i>{{'button.add' | translate}}</button>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <table class="table  table-borderless">
+          <thead class="thead-light">
+          <tr *ngIf="!isURL">
+            <th>#</th>
+            <th><strong>{{"title.scanner.terms" | translate}} </strong></th>
+            <th>{{'label.scanner.suggestedfeel' | translate}}</th>
+            <th class="centrado">{{'label.actions' | translate}}</th>
+          </tr>
+          <tr *ngIf="isURL">
+            <th>#</th>
+            <th><strong>{{"label.full_url" | translate}} </strong></th>
+            <th *ngIf="!isTransform">{{'label.scanner.suggestedfeel' | translate}}</th>
+            <th class="centrado">{{'label.actions' | translate}}</th>
+          </tr>
+
+          </thead>
+          <tbody>
+          <tr *ngFor="let it of lstItems; index as i" [class.removeItem]="it.markToDelete">
+            <td>{{ i + 1 }}</td>
+            <td>
+              {{ it.word }}
+            </td>
+            <td *ngIf="!isTransform || !isURL"><span [innerHTML]="it.feelingObj | feelingColors"></span>{{'feeling.' +
+            it.feelingObj.tag |
+              translate}}</td>
+            <td class="centrado">
+              <a (click)="removeItem(it)" *ngIf="!info.isDisabled || info.isAdmin">
+                <i class="las la-times colorRojo la-2x" title="{{'tooltip.remove' | translate}}"></i></a> <span
+              *ngIf="info.isDisabled && !info.isAdmin">-</span></td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </form>
+    <h5 class="centrado" *ngIf="!isURL">{{'warning.scanner.terms' | translate}}</h5>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris espDer15"> {{'button.close' | translate}}</a>
+  <button mat-button class="glow-on-hover espIz15" (click)="close()">{{'button.save_list' | translate}}</button>
+</mat-dialog-actions>

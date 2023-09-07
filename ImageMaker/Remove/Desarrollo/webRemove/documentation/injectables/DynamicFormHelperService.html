@@ -1,0 +1,2890 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >DynamicFormHelperService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/helpers/dynamic-form-helper.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#CHECKBOX_TYPE" >CHECKBOX_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#DATE_TYPE" >DATE_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#NUMBER_TYPE" >NUMBER_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#RADIO_TYPE" >RADIO_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#SELECT_TYPE" >SELECT_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#SWITCH_TYPE" >SWITCH_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#TEXT_AREA_TYPE" >TEXT_AREA_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#TEXT_TYPE" >TEXT_TYPE</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#calculate" >calculate</a>
+                            </li>
+                            <li>
+                                <a href="#checkSimpleValue" >checkSimpleValue</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareDifferent" >compareDifferent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareEquals" >compareEquals</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareGreater" >compareGreater</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareGreaterOrEquals" >compareGreaterOrEquals</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareLess" >compareLess</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#compareLessOrEqual" >compareLessOrEqual</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#evaluate" >evaluate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#evaluateCheckConditions" >evaluateCheckConditions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#evaluateConditions" >evaluateConditions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#evaluateFullForm" >evaluateFullForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#evaluateResult" >evaluateResult</a>
+                            </li>
+                            <li>
+                                <a href="#findSelectedOptions" >findSelectedOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getComparableValue" >getComparableValue</a>
+                            </li>
+                            <li>
+                                <a href="#initializeForm" >initializeForm</a>
+                            </li>
+                            <li>
+                                <a href="#isValidForm" >isValidForm</a>
+                            </li>
+                            <li>
+                                <a href="#mergeOptionsLabels" >mergeOptionsLabels</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#recurrentCalculate" >recurrentCalculate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#refreshMapValues" >refreshMapValues</a>
+                            </li>
+                            <li>
+                                <a href="#replaceTokens" >replaceTokens</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Service to build dynamic forms for deindexing</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>calculate</b></span>
+                        <a href="#calculate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>calculate(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>, elementToCalulate: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, attToUpdate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="143"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculate a condition and assign correct value to the attribute to refresh.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>elementToCalulate</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>attToUpdate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkSimpleValue"></a>
+                    <span class="name">
+                        <span ><b>checkSimpleValue</b></span>
+                        <a href="#checkSimpleValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkSimpleValue(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="228"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:228</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare brute value of an input (Usefull for switch cases)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareDifferent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareDifferent</b></span>
+                        <a href="#compareDifferent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareDifferent(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="245"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:245</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with DIFFERENT comparator (!=)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareEquals"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareEquals</b></span>
+                        <a href="#compareEquals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareEquals(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="432"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:432</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with EQUALS comparator (=)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareGreater"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareGreater</b></span>
+                        <a href="#compareGreater"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareGreater(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="318"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with GREATER comparator (&gt;)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareGreaterOrEquals"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareGreaterOrEquals</b></span>
+                        <a href="#compareGreaterOrEquals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareGreaterOrEquals(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="283"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with GREATER or EQUALS comparator (&gt;=)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareLess"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareLess</b></span>
+                        <a href="#compareLess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareLess(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="394"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:394</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with LESS comparator (&lt;)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareLessOrEqual"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>compareLessOrEqual</b></span>
+                        <a href="#compareLessOrEqual"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareLessOrEqual(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="356"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:356</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compare a simple condition with LESS or EQUAL comparator (&lt;=)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>evaluate</b></span>
+                        <a href="#evaluate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluate(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>, inputToEvaluate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="117"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Evaluate if the form needs to calculate any condition.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>inputToEvaluate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateCheckConditions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>evaluateCheckConditions</b></span>
+                        <a href="#evaluateCheckConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluateCheckConditions(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>, input: <a href="../interfaces/IDynamicFormInput.html" target="_self">IDynamicFormInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="86"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Assing check input values and Check conditions.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicFormInput.html" target="_self" >IDynamicFormInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateConditions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>evaluateConditions</b></span>
+                        <a href="#evaluateConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluateConditions(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>, inputName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="79"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check conditions when a field changed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>inputName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateFullForm"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>evaluateFullForm</b></span>
+                        <a href="#evaluateFullForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluateFullForm(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="54"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Evaluate all form conditions. Usefull in onload method.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateResult"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>evaluateResult</b></span>
+                        <a href="#evaluateResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluateResult(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="99"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Evaluate the result of the form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../interfaces/IDynamicFormConditionResult.html" target="_self" >IDynamicFormConditionResult</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findSelectedOptions"></a>
+                    <span class="name">
+                        <span ><b>findSelectedOptions</b></span>
+                        <a href="#findSelectedOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findSelectedOptions(dynamicForm: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="547"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:547</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check the selected option in the selects</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getComparableValue"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getComparableValue</b></span>
+                        <a href="#getComparableValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getComparableValue(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="469"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:469</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Extract a comparable value from formula.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeForm"></a>
+                    <span class="name">
+                        <span ><b>initializeForm</b></span>
+                        <a href="#initializeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeForm(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="27"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Allows you to initialize a base form.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValidForm"></a>
+                    <span class="name">
+                        <span ><b>isValidForm</b></span>
+                        <a href="#isValidForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isValidForm(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="578"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:578</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if a form is valid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mergeOptionsLabels"></a>
+                    <span class="name">
+                        <span ><b>mergeOptionsLabels</b></span>
+                        <a href="#mergeOptionsLabels"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mergeOptionsLabels(selectedOptions: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="531"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:531</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> Assign a label to the options of the selects</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedOptions</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recurrentCalculate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>recurrentCalculate</b></span>
+                        <a href="#recurrentCalculate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>recurrentCalculate(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="169"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Recurrent function that calculates a condition string from a json value objects.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshMapValues"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>refreshMapValues</b></span>
+                        <a href="#refreshMapValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>refreshMapValues(dynamicForm: <a href="../interfaces/IDynamicForm.html" target="_self">IDynamicForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="151"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a json object with all form inputs for easy validation.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dynamicForm</td>
+                                    <td>
+                                                <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="replaceTokens"></a>
+                    <span class="name">
+                        <span ><b>replaceTokens</b></span>
+                        <a href="#replaceTokens"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>replaceTokens(mapValues: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, conclusion: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="482"
+                            class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:482</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Replace tokens in deindex view</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mapValues</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>conclusion</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CHECKBOX_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>CHECKBOX_TYPE</b></span>
+                        <a href="#CHECKBOX_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;CHECKBOX&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DATE_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>DATE_TYPE</b></span>
+                        <a href="#DATE_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;DATE&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="NUMBER_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>NUMBER_TYPE</b></span>
+                        <a href="#NUMBER_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;NUMBER&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="11" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RADIO_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>RADIO_TYPE</b></span>
+                        <a href="#RADIO_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;RADIO&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SELECT_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>SELECT_TYPE</b></span>
+                        <a href="#SELECT_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;SELECT&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="14" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SWITCH_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>SWITCH_TYPE</b></span>
+                        <a href="#SWITCH_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;SWITCH&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TEXT_AREA_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>TEXT_AREA_TYPE</b></span>
+                        <a href="#TEXT_AREA_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;TEXT_AREA&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="10" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TEXT_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>TEXT_TYPE</b></span>
+                        <a href="#TEXT_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;TEXT&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="9" class="link-to-prism">src/app/helpers/dynamic-form-helper.service.ts:9</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { IDynamicForm, IDynamicFormConditionResult, IDynamicFormInput } from &#x27;../interfaces/IDynamicForm&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class DynamicFormHelperService {
+  public TEXT_TYPE &#x3D; &#x27;TEXT&#x27;;
+  public TEXT_AREA_TYPE &#x3D; &#x27;TEXT_AREA&#x27;;
+  public NUMBER_TYPE &#x3D; &#x27;NUMBER&#x27;;
+  public DATE_TYPE &#x3D; &#x27;DATE&#x27;;
+  public RADIO_TYPE &#x3D; &#x27;RADIO&#x27;;
+  public SELECT_TYPE &#x3D; &#x27;SELECT&#x27;;
+  public CHECKBOX_TYPE &#x3D; &#x27;CHECKBOX&#x27;;
+  public SWITCH_TYPE &#x3D; &#x27;SWITCH&#x27;;
+
+  /**
+   * Service to build dynamic forms for deindexing
+   */
+  constructor() { }
+
+  /**
+   * Allows you to initialize a base form.
+   * @param dynamicForm
+   */
+  initializeForm(dynamicForm: IDynamicForm) {
+    if (dynamicForm) {
+      dynamicForm?.sections?.forEach(section &#x3D;&gt; {
+        section?.inputs?.forEach(input &#x3D;&gt; {
+          if (input.type &#x3D;&#x3D;&#x3D; this.CHECKBOX_TYPE) {
+            let values &#x3D; input?.value?.split(&quot;,&quot;);
+            input?.options?.forEach(option &#x3D;&gt; {
+              option.checked &#x3D; values?.includes(option.name);
+            })
+          }
+          if (input.type &#x3D;&#x3D;&#x3D; this.SWITCH_TYPE) {
+            if (input.value !&#x3D; null) {
+              input.value &#x3D; input.value &#x3D;&#x3D;&#x3D; &#x27;true&#x27; ? true : input.value &#x3D;&#x3D;&#x3D; &#x27;false&#x27; ? false : null;
+            }
+          }
+        })
+      })
+
+      this.findSelectedOptions(dynamicForm);
+      this.evaluateFullForm(dynamicForm);
+    }
+  }
+
+  /**
+   * Evaluate all form conditions. Usefull in onload method.
+   * @param dynamicForm
+   */
+  public evaluateFullForm(dynamicForm: IDynamicForm): void {
+    dynamicForm.sections.forEach(section &#x3D;&gt; {
+      if (section.visible_condition) {
+        this.calculate(dynamicForm, section, section.visible_condition, &#x27;visible&#x27;);
+      }
+
+      section.inputs.forEach(input &#x3D;&gt; {
+        if (input.required_condition) {
+          this.calculate(dynamicForm, input, input.required_condition, &#x27;required&#x27;);
+        }
+        if (input.visible_condition) {
+          this.calculate(dynamicForm, input, input.visible_condition, &#x27;visible&#x27;);
+        }
+        if (input.value_condition) {
+          this.calculate(dynamicForm, input, input.value_condition, &#x27;value&#x27;);
+        }
+      })
+    })
+  }
+
+  /**
+   * Check conditions when a field changed.
+   * @param inputName
+   * @param inputValue
+   */
+  public evaluateConditions(dynamicForm: IDynamicForm, inputName: string): void {
+    this.evaluate(dynamicForm, inputName);
+  }
+  /**
+   * Assing check input values and Check conditions.
+   * @param input
+   */
+  public evaluateCheckConditions(dynamicForm: IDynamicForm, input: IDynamicFormInput): void {
+    input.value &#x3D; &quot;&quot;;
+    input.options.forEach(option &#x3D;&gt; {
+      input.value +&#x3D; option.checked ? option.name + &#x27;,&#x27; : &#x27;&#x27;;
+    });
+
+    this.evaluate(dynamicForm, input.name);
+  }
+
+  /**
+   * Evaluate the result of the form
+   * @param dynamicForm
+   */
+  public evaluateResult(dynamicForm: IDynamicForm): IDynamicFormConditionResult {
+    let resultFound &#x3D; null;
+
+    if (dynamicForm?.conditionResults?.length &gt; 0) {
+      dynamicForm.conditionResults.forEach(result &#x3D;&gt; {
+        if (resultFound &#x3D;&#x3D; null &amp;&amp; this.recurrentCalculate(result.condition, this.refreshMapValues(dynamicForm))) {
+          resultFound &#x3D; result;
+        }
+      })
+    }
+
+    return resultFound;
+  }
+
+  /**
+   * Evaluate if the form needs to calculate any condition.
+   * @param inputToEvaluate
+   */
+  private evaluate(dynamicForm: IDynamicForm, inputToEvaluate: string): void {
+    dynamicForm.sections.forEach(section &#x3D;&gt; {
+      if (section.visible_condition &amp;&amp; section.visible_condition.includes(inputToEvaluate)) {
+        this.calculate(dynamicForm, section, section.visible_condition, &#x27;visible&#x27;);
+      }
+
+      section.inputs.forEach(input &#x3D;&gt; {
+        if (input.required_condition &amp;&amp; input.required_condition.includes(inputToEvaluate)) {
+          this.calculate(dynamicForm, input, input.required_condition, &#x27;required&#x27;);
+        }
+        if (input.visible_condition &amp;&amp; input.visible_condition.includes(inputToEvaluate)) {
+          this.calculate(dynamicForm, input, input.visible_condition, &#x27;visible&#x27;);
+        }
+        if (input.value_condition &amp;&amp; input.value_condition.includes(inputToEvaluate)) {
+          this.calculate(dynamicForm, input, input.value_condition, &#x27;value&#x27;);
+        }
+      })
+    })
+  }
+
+  /**
+   * Calculate a condition and assign correct value to the attribute to refresh.
+   * @param elementToCalulate
+   * @param condition
+   * @param attToUpdate
+   */
+  private calculate(dynamicForm: IDynamicForm, elementToCalulate: any, condition: string, attToUpdate: string): void {
+    elementToCalulate[attToUpdate] &#x3D; this.recurrentCalculate(condition, this.refreshMapValues(dynamicForm));
+  }
+
+  /**
+   * Create a json object with all form inputs for easy validation.
+   * @returns
+   */
+  public refreshMapValues(dynamicForm: IDynamicForm): any {
+    let map: any &#x3D; {};
+
+    dynamicForm.sections.forEach(section &#x3D;&gt; {
+      section.inputs.forEach(input &#x3D;&gt; {
+        map[input.name] &#x3D; input;
+      })
+    })
+
+    return map;
+  }
+
+  /**
+   * Recurrent function that calculates a condition string from a json value objects.
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private recurrentCalculate(condition: string, mapValues: any): boolean {
+    if (condition.trim().toUpperCase() &#x3D;&#x3D;&#x3D; TRUE) {
+      return true;
+    }
+    if (condition.trim().toUpperCase() &#x3D;&#x3D;&#x3D; FALSE) {
+      return false;
+    }
+    if (condition.includes(&quot;(&quot;)) {          // substring first &#x27;(&#x27; and last &#x27;)&#x27; (Recurrence)
+      let indexOpen &#x3D; condition.lastIndexOf(&#x27;(&#x27;);
+      let indexClose &#x3D; condition.substring(indexOpen).indexOf(&#x27;)&#x27;) + 1;
+      let subcondition &#x3D; condition.substring(indexOpen, indexClose);
+      condition &#x3D; condition.replace(subcondition, this.recurrentCalculate(subcondition.replace(&quot;(&quot;,&quot;&quot;).replace(&quot;)&quot;,&quot;&quot;), mapValues)+&#x27;&#x27;);
+      return this.recurrentCalculate(condition, mapValues);
+    } else if (condition.includes(CONNECTOR_AND)) {
+      let split &#x3D; condition.split(CONNECTOR_AND);
+      let result &#x3D; true;
+
+      split.forEach(innerCondition &#x3D;&gt; {
+        if (result &amp;&amp; !this.recurrentCalculate(innerCondition, mapValues)) {
+          result &#x3D; false;
+        }
+      })
+
+      return result;
+    } else if (condition.includes(CONNECTOR_OR)) {
+      let split &#x3D; condition.split(CONNECTOR_OR);
+      let result &#x3D; false;
+
+      split.forEach(innerCondition &#x3D;&gt; {
+        if (!result &amp;&amp; this.recurrentCalculate(innerCondition, mapValues)) {
+          result &#x3D; true;
+        }
+      })
+
+      return result;
+    } else {                                                      // Conditions at minimal expresion
+      if (condition.includes(CONDITION_DF)) {                     // Evaluate Different
+        return this.compareDifferent(condition, mapValues);
+      } else if (condition.includes(CONDITION_GE)) {              // Evaluate Greater or Equals
+        return this.compareGreaterOrEquals(condition, mapValues);
+      } else if (condition.includes(CONDITION_G)) {               // Evaluate Greater
+        return this.compareGreater(condition, mapValues);
+      } else if (condition.includes(CONDITION_LE)) {              // Evaluate Less or Equals
+        return this.compareLessOrEqual(condition, mapValues);
+      } else if (condition.includes(CONDITION_L)) {               // Evaluate Less
+        return this.compareLess(condition, mapValues);
+      } else if (condition.includes(CONDITION_E)) {               // Evaluate Equals
+        return this.compareEquals(condition, mapValues);
+      }
+    }
+
+    return this.checkSimpleValue(condition, mapValues);
+  }
+
+  /**
+   * Compare brute value of an input (Usefull for switch cases)
+   * @param condition
+   * @param mapValues
+   */
+  checkSimpleValue(condition: string, mapValues: any): boolean {
+    let sign &#x3D; !condition.trim().startsWith(&quot;!&quot;);
+    let key &#x3D; condition.trim().replace(&quot;!&quot;,&quot;&quot;);
+
+    if (mapValues[key] !&#x3D; null) {
+      return sign ? mapValues[key].value : !mapValues[key].value;
+    }
+
+    return true;
+  }
+
+  /**
+   * Compare a simple condition with DIFFERENT comparator (!&#x3D;)
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private compareDifferent(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_DF);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected !&#x3D;&#x3D; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) !&#x3D;&#x3D; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return !fieldSelected.includes(compareValue);
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return !dateValue.isSame(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Compare a simple condition with GREATER or EQUALS comparator (&gt;&#x3D;)
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private compareGreaterOrEquals(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_GE);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected &gt;&#x3D; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) &gt;&#x3D; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          // N/A
+          break;
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return dateValue.isSameOrAfter(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Compare a simple condition with GREATER comparator (&gt;)
+   */
+  private compareGreater(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_G);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected &gt; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) &gt; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          // N/A
+          break;
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return dateValue.isAfter(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Compare a simple condition with LESS or EQUAL comparator (&lt;&#x3D;)
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private compareLessOrEqual(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_LE);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected &lt;&#x3D; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) &lt;&#x3D; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          // N/A
+          break;
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return dateValue.isSameOrBefore(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Compare a simple condition with LESS comparator (&lt;)
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private compareLess(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_L);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected &lt; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) &lt; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          // N/A
+          break;
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return dateValue.isBefore(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Compare a simple condition with EQUALS comparator (&#x3D;)
+   * @param condition
+   * @param mapValues
+   * @returns
+   */
+  private compareEquals(condition: string, mapValues: any): boolean {
+    let splited &#x3D; condition.split(CONDITION_E);
+    let fieldName &#x3D; splited[0].trim().toUpperCase();
+
+    if (mapValues[fieldName]?.value !&#x3D; null) {
+      let typeField &#x3D; mapValues[fieldName].type.trim();
+      let fieldSelected;
+      let compareValue &#x3D; this.getComparableValue(splited[1]);
+
+      switch (typeField) {
+        case this.TEXT_TYPE:
+        case this.TEXT_AREA_TYPE:
+        case this.SELECT_TYPE:
+        case this.RADIO_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected &#x3D;&#x3D;&#x3D; compareValue;
+        case this.NUMBER_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return Number(fieldSelected) &#x3D;&#x3D;&#x3D; Number(compareValue);
+        case this.CHECKBOX_TYPE:
+          fieldSelected &#x3D; mapValues[fieldName].value.trim().toUpperCase()
+          return fieldSelected.includes(compareValue);
+        case this.DATE_TYPE:
+          let dateToCompare &#x3D; moment(compareValue, FORMAT_DATE);
+          let dateValue &#x3D; moment(mapValues[splited[0]].value);
+          return dateValue.isSame(dateToCompare);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Extract a comparable value from formula.
+   * @param value
+   * @returns
+   */
+  private getComparableValue(value: string): string {
+    if (value.includes(&quot;&#x27;&quot;)) {
+      return value.replace(&quot;&#x27;&quot;,&quot;&quot;).trim().toUpperCase();
+    }
+
+    return value.trim().toUpperCase();
+  }
+
+  /**
+   * Replace tokens in deindex view
+   * @param mapValues
+   * @param conclusion
+   */
+  replaceTokens(mapValues: any, conclusion: any): any {
+    let replaced &#x3D; Object.assign({}, conclusion);
+
+    if (mapValues) {
+      Object.keys(mapValues).forEach(key &#x3D;&gt; {
+        switch (mapValues[key].type) {
+          case this.TEXT_TYPE:
+          case this.TEXT_AREA_TYPE:
+          case this.NUMBER_TYPE:
+            let textSimple &#x3D; &quot;&quot;;
+            if (mapValues[key].value !&#x3D; null) {
+              textSimple &#x3D; mapValues[key].value;
+            }
+            replaced.text &#x3D; replaced.text.replace(&quot;{{&quot;+key+&quot;}}&quot;, textSimple);
+            break;
+          case this.SELECT_TYPE:
+          case this.RADIO_TYPE:
+            let textOption &#x3D; &quot;&quot;;
+            if (mapValues[key].selectedOption !&#x3D; null) {
+              textOption &#x3D; mapValues[key].selectedOption.label;
+            }
+            replaced.text &#x3D; replaced.text.replace(&quot;{{&quot;+key+&quot;}}&quot;, textOption);
+            break;
+          case this.CHECKBOX_TYPE:
+            let textOptions &#x3D; &quot;&quot;;
+
+            if (mapValues[key].selectedOptions !&#x3D; null) {
+              textOptions &#x3D; this.mergeOptionsLabels(mapValues[key].selectedOptions);
+            }
+
+            replaced.text &#x3D; replaced.text.replace(&quot;{{&quot;+key+&quot;}}&quot;, textOptions);
+            break;
+          case this.DATE_TYPE:
+            if (mapValues[key]?.value) {
+              replaced.text &#x3D; replaced.text.replace(&quot;{{&quot;+key+&quot;}}&quot;,  moment(mapValues[key].value).format(&#x27;D/MM/yyyy&#x27;));
+            }
+
+            break;
+        }
+      })
+    }
+
+    return replaced;
+  }
+
+  /**
+   *  Assign a label to the options of the selects
+   * @param selectedOptions
+   */
+  mergeOptionsLabels(selectedOptions: any[]): string {
+    let text &#x3D; &quot;&quot;;
+
+    selectedOptions.forEach(option &#x3D;&gt; {
+      if (option !&#x3D; null) {
+        text +&#x3D; option.label + &quot;, &quot;;
+      }
+    });
+
+    return text.length &gt; 2 ? text.substring(0, text.length - 2) : &quot;&quot;;
+  }
+
+  /**
+   * Check the selected option in the selects
+   * @param dynamicForm
+   */
+  findSelectedOptions(dynamicForm: any): void {
+    if (dynamicForm) {
+      dynamicForm.sections.forEach(section &#x3D;&gt; {
+        section.inputs.forEach(input &#x3D;&gt; {
+          if (input.value !&#x3D; null) {
+            if (input.type &#x3D;&#x3D;&#x3D; this.SELECT_TYPE || input.type &#x3D;&#x3D;&#x3D; this.RADIO_TYPE) {
+              input.options.forEach(opt &#x3D;&gt; {
+                if (opt.name &#x3D;&#x3D;&#x3D; input.value) {
+                  input.selectedOption &#x3D; opt;
+                }
+              })
+            } else if (input.type &#x3D;&#x3D;&#x3D; this.CHECKBOX_TYPE) {
+              let values &#x3D; input.value.split(&quot;,&quot;);
+              input.selectedOptions &#x3D; [];
+
+              input.options.forEach(opt &#x3D;&gt; {
+                if (values.includes(opt.name)) {
+                  input.selectedOptions.push(opt);
+                }
+              })
+            }
+          }
+        })
+      })
+    }
+  }
+
+  /**
+   * Check if a form is valid
+   * @param dynamicForm
+   */
+  isValidForm(dynamicForm: IDynamicForm): boolean {
+    let isValid &#x3D; true;
+
+    dynamicForm.sections.forEach(section &#x3D;&gt; {
+      section.inputs.forEach(input &#x3D;&gt; {
+        // Add another validations as developing (email format, max or min values, etc)
+        if (input.required &amp;&amp; input.value &#x3D;&#x3D; null) {
+          isValid &#x3D; false;
+          input.errorMessage &#x3D; &#x27;error.required&#x27;;
+        } else {
+          input.errorMessage &#x3D; null;
+        }
+      })
+    })
+
+    return isValid;
+  }
+}
+
+const CONNECTOR_AND &#x3D; &quot; AND &quot;;
+const CONNECTOR_OR &#x3D; &quot; OR &quot;;
+const CONDITION_DF &#x3D; &quot;!&#x3D;&quot;;
+const CONDITION_GE &#x3D; &quot;&gt;&#x3D;&quot;;
+const CONDITION_G &#x3D; &quot;&gt;&quot;;
+const CONDITION_LE &#x3D; &quot;&lt;&#x3D;&quot;;
+const CONDITION_L &#x3D; &quot;&lt;&quot;;
+const CONDITION_E &#x3D; &quot;&#x3D;&quot;;
+const FORMAT_DATE &#x3D; &quot;DD-MM-YYYY&quot;;
+const TRUE &#x3D; &quot;TRUE&quot;;
+const FALSE &#x3D; &quot;FALSE&quot;;
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'DynamicFormHelperService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

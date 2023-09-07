@@ -1,0 +1,988 @@
+<div class="container-fluid px-0">
+  <app-header></app-header>
+  <!--Menu-->
+
+  <!--Banner Inicial con formulario-->
+  <div class="row backgroundLandingInicio marginBottom40 padding20">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 colorBlanco">
+      <div class="row paddingTop15">
+        <div class="col-md-12">
+          <p>
+            {{ "label.landing_deep" | translate }} /
+            {{ "label.landing_agency" | translate }}
+          </p>
+          <strong
+          ><p class="colorBlanco fontLanding scale-in-bottom">
+            {{ "label.landing_transform" | translate }}.
+          </p></strong
+          >
+          <p>
+            {{ "label.landing_transform_description" | translate }}
+          </p>
+          <p class="colorSecundario">
+            {{ "label.landing_reputation" | translate }}
+          </p>
+          <p>{{ "label.landing_privacy" | translate }}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 paddingTop15">
+          <a
+            (click)="utilService.goDemo()"
+            class="
+              glow-on-hover
+              backgroundSecundary
+              padding15
+              fullWidth
+              centrado
+              boldFont
+            "
+          >
+            {{ "buttom.ask_demo" | translate }}</a
+          >
+        </div>
+        <div class="col-md-6 paddingTop15">
+          <a
+            (click)="utilService.goPlans()"
+            class="
+              glow-on-hover
+              backgorundPrincipal
+              padding15
+              fullWidth
+              centrado
+              boldFont
+            "
+          >
+            {{ "buttom.see_plans" | translate }}</a
+          >
+        </div>
+      </div>
+      <div class="row paddingBottom40 paddingTop25">
+        <div class="col-md-12 centrado padding15">
+          <img src="../../../assets/img/responsive.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4 backgroundWhite">
+      <form #contactForm="ngForm" (ngSubmit)="(contactForm.form.valid)">
+        <div class="row margin10">
+          <div class="col-md-12 padding15">
+            <h1 class="colorSecundario">{{ "label.ask_form" | translate | uppercase }}</h1>
+            <h2>
+              {{ "label.confidential" | translate | uppercase }} <br/>{{
+              "label.landing_confidential" | translate | uppercase
+              }}
+            </h2>
+          </div>
+        </div>
+        <div class="row padding20">
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input
+                [(ngModel)]="contact.name"
+                name="name"
+                #nameFirst="ngModel"
+                matInput
+                required
+                placeholder="{{ 'label.name' | translate }} "
+                type="text"
+              />
+            </mat-form-field>
+            <div *ngIf="nameFirst.errors?.required && contactForm.submitted">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.required" | translate }}
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-12 paddingTop15">
+            <mat-form-field class="example-full-width">
+              <input
+                [(ngModel)]="contact.email"
+                name="email"
+                matInput
+                #emailFirst="ngModel"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required
+                placeholder="{{ 'label.email' | translate }} "
+                type="email"
+              />
+            </mat-form-field>
+            <div *ngIf="emailFirst.errors?.pattern && planForm.submitted">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.invalid.email" | translate }}
+              </h5>
+            </div>
+            <div *ngIf="emailFirst.errors?.required && contactForm.submitted">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.required" | translate }}
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-12 paddingTop15">
+            <mat-form-field class="example-full-width">
+              <input
+                [(ngModel)]="contact.phone"
+                name="phone"
+                matInput
+                #phoneFirst="ngModel"
+                required
+                placeholder="{{ 'label.phone' | translate }} "
+                type="text"
+              />
+            </mat-form-field>
+            <div *ngIf="phoneFirst.errors?.required && contactForm.submitted">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ "error.required" | translate }}
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-12 paddingTop10">
+            <mat-form-field class="example-full-width">
+              <textarea
+                matInput
+                placeholder="{{ 'label.message' | translate }}"
+                [(ngModel)]="contact.message"
+                name="message"
+              ></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row padding20">
+          <div class="col-md-12 ">
+            <mat-checkbox
+              class="example-margin espDer15 noCkeck"
+              [(ngModel)]="contact.confirm"
+              required #confirmFirst="ngModel"
+              name="confirm"
+            >{{ "label.confirm_privacy" | translate }}:
+            </mat-checkbox>
+          </div>
+          <div class="col-md-12 colorSecundario">
+            <a class="third after" (click)="utilService.openPolitics()"
+            ><strong>{{ "label.privacy_politics" | translate }}</strong></a
+            >
+          </div>
+          <div *ngIf="confirmFirst.errors?.required && contactForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "message.error.privacy" | translate }}
+            </h5>
+          </div>
+          <div class="col-md-12 paddingTop15">
+            <button
+              (click)="sendContact(contactForm, 'Formulario Inicial')"
+              type="submit"
+              class="
+                glow-on-hover
+                backgroundSecundary
+                padding15
+                fullWidth
+                centrado
+                boldFont
+              "
+            >
+              {{ "button.send" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <!--Pestaña de servicios-->
+
+  <div class="row marginBottom40 marginTop40 slide-in-blurred-bottom">
+    <div class="col-md-12 centrado">
+      <p class="colorPrincipal ">
+        {{ "tittle.services_landing" | translate }}
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-4">
+          <a
+            [ngClass]="{
+              backgroundSecundary: tabs.first,
+              colorBlanco: tabs.first
+            }"
+            (click)="changeTab('first')"
+            class="
+              glow-on-hover
+              backgroundLightGray
+              colorPrincipal
+              padding30
+              fullWidth
+              centrado
+              increaseFont
+              boldFont
+            "
+          >
+            {{ "label.plan.detect" | translate }}</a
+          >
+        </div>
+        <div class="margin5Mobile"></div>
+        <div class="col-md-4">
+          <a
+            [ngClass]="{
+              backgroundSecundary: tabs.second,
+              colorBlanco: tabs.second
+            }"
+            (click)="changeTab('second')"
+            class="
+              glow-on-hover
+              backgroundLightGray
+              colorPrincipal
+              padding30
+              fullWidth
+              centrado
+              increaseFont
+              boldFont
+            "
+          >
+            {{ "label.plan.delete" | translate }}</a
+          >
+        </div>
+        <div class="margin5Mobile"></div>
+        <div class="col-md-4">
+          <a
+            [ngClass]="{
+              backgroundSecundary: tabs.third,
+              colorBlanco: tabs.third
+            }"
+            (click)="changeTab('third')"
+            class="
+              glow-on-hover
+              backgroundLightGray
+              colorPrincipal
+              padding30
+              fullWidth
+              centrado
+              increaseFont
+              boldFont
+            "
+          >
+            {{ "label.transform" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row marginBottom40 marginTop40">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row paddingBottom20" *ngIf="tabs.first">
+        <div class="col-md-12">
+          <div class="row padding20">
+            <div class="col-md-7">
+              <h2>{{ "label.landing.detect" | translate }}</h2>
+              <p>{{ "label.landing.detect_description" | translate }}</p>
+            </div>
+            <div class="col-md-5">
+              <img src="../../assets/img/detecta.gif" class="img70 borderRadius10 sombra"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row paddingBottom20" *ngIf="tabs.second">
+        <div class="col-md-12">
+          <div class="row padding20">
+            <div class="col-md-7">
+              <h2>{{ "label.landing.delete" | translate }}</h2>
+              <p>{{ "label.landing.delete_description" | translate }}</p>
+            </div>
+            <div class="col-md-5">
+              <img src="../../assets/img/elimina.gif" class="img70 borderRadius10 sombra"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row paddingBottom20" *ngIf="tabs.third">
+        <div class="col-md-12">
+          <div class="row padding20">
+            <div class="col-md-7">
+              <h2>{{ "label.landing.transform" | translate }}</h2>
+              <p>{{ "label.landing.transform_description" | translate }}</p>
+            </div>
+            <div class="col-md-5">
+              <img src="../../assets/img/transform.gif" class="img70 borderRadius10 sombra"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!--Cualidades-->
+  <div class="row marginBottom40 marginTop40">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row centrado">
+        <div class="col-md-4">
+          <i class="las la-handshake la-5x colorSecundario"></i>
+
+          <h2 class="colorPrincipal boldFont">
+            {{ "label.landing.confidentiality" | translate }}
+          </h2>
+
+          <p>{{ "label.landing.confidentiality_description" | translate }}</p>
+        </div>
+        <div class="col-md-4">
+          <i class="las la-hand-holding-usd la-5x colorSecundario"></i>
+          <h2 class="colorPrincipal boldFont">
+            {{ "label.landing.warranty" | translate }}
+          </h2>
+
+          <p>{{ "label.landing.warranty_description" | translate }}</p>
+        </div>
+
+        <div class="col-md-4">
+          <i class="las la-globe la-5x colorSecundario"></i>
+          <h2 class="colorPrincipal boldFont">
+            {{ "label.landing.fastness" | translate }}
+          </h2>
+
+          <p>{{ "label.landing.fastness_description" | translate }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2"></div>
+  </div>
+  <!-- |Parthners-->
+  <div class="row marginBottom40 marginTop40 backgorundPrincipal height120">
+    <div class="col-md-12 centrado padding20 ">
+      <h1 class="colorBlanco">{{ "label.landing.tecnology" | translate }}</h1>
+    </div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8 backgroundWhite  ">
+      <div class="row">
+        <div class="col-md-3 centrado">
+          <img src="../../assets/img/aws.jpg" class="imgLanding"/>
+        </div>
+        <div class="col-md-3 centrado">
+          <img src="../../assets/img/iese.jpg" class="imgLanding"/>
+        </div>
+        <div class="col-md-3 centrado">
+          <img src="../../assets/img/day.jpg" class="imgLanding"/>
+        </div>
+        <div class="col-md-3 centrado">
+          <img src="../../assets/img/enisa.jpg" class="imgLanding"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!--Noticias-->
+  <div class="row marginBottom40 marginTop80">
+    <div class="col-md-12 centrado marginTop40">
+      <h1 class="colorPrincipal">{{ "label.landing.speak" | translate }}</h1>
+    </div>
+  </div>
+  <div class="row paddingSide15px">
+    <div class="col-md-3" *ngFor="let n of news">
+      <mat-card class="example-card noShadow">
+        <mat-card-header>
+          <mat-card-title class="colorPrincipal"
+          ><h2>
+            {{
+            n.title.rendered.length > 50
+              ? n.title.rendered.substring(0, 50) + "..."
+              : n.title.rendered
+            }}
+          </h2></mat-card-title
+          >
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="{{ n?._embedded['wp:featuredmedia']['0']?.source_url }}"
+          class="imagesNewsLanding"
+          *ngIf="n?._embedded['wp:featuredmedia']"
+        />
+        <mat-card-content>
+          <span
+            class="paddingTop15 colorGris reduceFont"
+            [innerHTML]="
+              n.excerpt.rendered.length > 200
+                ? n.excerpt.rendered.substring(0, 200) + '...'
+                : n.excerpt.rendered
+            "
+          ></span>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>
+            <a class="third after" (click)="utilService.openNews(n)"
+            ><strong class="colorSecundario">{{
+              "label.read_more" | translate
+              }}</strong></a
+            >
+          </button>
+        </mat-card-actions>
+      </mat-card>
+      <div class="margin5Mobile"></div>
+      <!--<div class="col-md-12 newsLanding padding15 height400">
+      <div class="centrado imagesNewsLanding" ><img src="{{n?._embedded['wp:featuredmedia']['0']?.source_url}}" class="imagesNewsLanding" *ngIf="n?._embedded['wp:featuredmedia']"></div>
+      <h2 class="colorPrincipal paddingTop15">{{ n.title.rendered | uppercase}}</h2>
+      <span class="paddingTop15 colorGris reduceFont" [innerHTML]="n.excerpt.rendered.length > 100 ? n.excerpt.rendered.substring(0,100)+'...' : n.excerpt.rendered">...</span>
+      <hr>
+      <a class="third after" (click)="openNews(n)"><strong class="colorSecundario">{{ "label.read_more" | translate }}</strong></a>
+    </div>-->
+    </div>
+  </div>
+  <!--Planes-->
+  <div class="row marginBottom40 marginTop80">
+    <div class="col-md-12 centrado">
+      <h1 class="colorPrincipal">
+        {{ "label.landing.our_plans" | translate }}
+      </h1>
+    </div>
+  </div>
+  <div class="row paddingTop40 paddingSide15px">
+    <div class="col-md-3 scale-in-bottom " *ngFor="let plan of allPlans">
+      <div id="generic_price_table">
+        <div class="generic_content height600">
+          <div class="generic_head_price">
+            <div class="generic_head_content">
+              <div class="head_bg"></div>
+              <div class="head">
+                <span>{{ plan.name }}</span>
+              </div>
+            </div>
+            <div class="generic_price_tag">
+              <span class="price colorSecundario">
+                <span class="currency">{{
+                  plan?.cost | currency: utilService.curr :  'symbol-narrow'}} </span>
+              </span>
+            </div>
+          </div>
+          <div class="generic_feature_list">
+            <ul>
+              <li class="durationPlan">
+                <i class="las la-calendar-alt colorAzul espDer5"></i>
+                <strong>{{ plan?.duration_months }} </strong>
+                {{ "label.months" | translate }}
+              </li>
+              <li *ngIf="plan?.access_scanner">
+                <i class="las la-check-circle colorVerde"></i>
+                {{ "label.licence.one_shot" | translate }}:
+                {{ plan?.limit_credits }}
+              </li>
+              <li *ngIf="plan?.access_monitor">
+                <i class="las la-check-circle colorVerde"></i>
+                {{ "label.licence.monitor" | translate }}:
+                {{ plan?.total_monitor_licenses }}
+              </li>
+              <li *ngIf="plan?.access_transform">
+                <i class="las la-check-circle colorVerde"></i>
+                {{ "label.licence.transform" | translate }}:
+                {{ plan?.total_transforma_licenses }}
+              </li>
+              <li *ngIf="plan?.access_deindexation">
+                <i class="las la-check-circle colorVerde"></i>
+                {{ "label.licence.deindexing" | translate }}:
+                {{ plan?.max_url_to_deindexate }}
+              </li>
+              <li>
+                <i class="las la-globe-americas colorSecundario espDer5"></i
+                >{{ "label.plan.countries" | translate }}:
+                {{ plan?.max_countries }}
+              </li>
+              <li>
+                <i class="las la-search-plus colorSecundario espDer5"></i
+                >{{ "label.plan.keywords" | translate }}:
+                {{ plan?.max_keywords }}
+              </li>
+              <li>
+                <i class="las la-file colorSecundario espDer5"></i
+                >{{ "label.plan.pages" | translate }}:
+                {{ plan?.max_search_page }}
+              </li>
+              <li>
+                <i class="las la-camera colorSecundario espDer5"></i
+                >{{ "label.sections" | translate }}:
+                {{ plan?.sections_to_search }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 scale-in-bottom">
+      <div id="generic_price_table">
+        <div class="generic_content height600">
+          <div class="generic_head_price">
+            <div class="generic_head_content">
+              <div class="head_bg"></div>
+              <div class="head">
+                <span>{{ "label.landing.find_plan" | translate }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="generic_feature_list padding20">
+            <h5>{{ "label.landing.find_plan_description" | translate }}</h5>
+            <form #planForm="ngForm" (ngSubmit)="(planForm.form.valid)">
+              <div class="row paddingTop10">
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input
+                      [(ngModel)]="contactPlan.name"
+                      name="name"
+                      #namePlans="ngModel"
+                      matInput
+                      required
+                      placeholder="{{ 'label.name' | translate }} "
+                      type="text"
+                    />
+                  </mat-form-field>
+                  <div *ngIf="namePlans.errors?.required && planForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.required" | translate }}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+
+                    <input
+                      [(ngModel)]="contactPlan.email"
+                      name="email"
+                      matInput
+                      #emailPlans="ngModel"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                      required
+                      placeholder="{{ 'label.email' | translate }} "
+                      type="email"
+                    />
+                  </mat-form-field>
+                  <div *ngIf="emailPlans.errors?.pattern && planForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.invalid.email" | translate }}
+                    </h5>
+                  </div>
+                  <div
+                    *ngIf="emailPlans.errors?.required && planForm.submitted"
+                  >
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.required" | translate }}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input
+                      [(ngModel)]="contactPlan.phone"
+                      name="phone"
+                      matInput
+                      #phonePlans="ngModel"
+                      required
+                      placeholder="{{ 'label.phone' | translate }} "
+                      type="text"
+                    />
+                  </mat-form-field>
+                  <div
+                    *ngIf="phonePlans.errors?.required && planForm.submitted"
+                  >
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.required" | translate }}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <textarea
+                      matInput
+                      placeholder="{{ 'label.message' | translate }}"
+                      [(ngModel)]="contactPlan.message"
+                      name="message"
+                    ></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row paddingTop10">
+                <div class="col-md-12 ">
+                  <mat-checkbox
+                    class="example-margin espDer15 noCkeck"
+                    [(ngModel)]="contactPlan.confirm"
+                    required #confirmPlan="ngModel"
+                    name="confirm"
+                  >{{ "label.confirm_privacy" | translate }}:
+                  </mat-checkbox>
+                </div>
+                <div class="col-md-12 colorSecundario">
+                  <a class="third after" (click)="utilService.openPolitics()"
+                  ><strong>{{ "label.privacy_politics" | translate }}</strong></a
+                  >
+                </div>
+                <div *ngIf="confirmPlan.errors?.required && planForm.submitted">
+                  <h5 class="colorRojo">
+                    <i class="las la-exclamation-circle espDer5"></i
+                    >{{ "message.error.privacy" | translate }}
+                  </h5>
+                </div>
+                <div class="col-md-12 paddingTop5">
+                  <button
+                    (click)="sendContact(planForm, 'Formulario de Planes')"
+                    type="submit"
+                    class="
+                      glow-on-hover
+                      backgroundSecundary
+                      padding15
+                      fullWidth
+                      centrado
+                      boldFont
+                    "
+                  >
+                    {{ "button.send" | translate }}
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row paddingTop40">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <a
+        (click)="utilService.goPlans()"
+        class="
+          glow-on-hover
+          backgroundSecundary
+          padding15
+          fullWidth
+          centrado
+          boldFont
+        "
+      >
+        {{ "buttom.see_plans" | translate }}</a
+      >
+    </div>
+    <div class="margin5Mobile"></div>
+    <div class="col-md-3">
+      <a (click)="openCallYou()"
+         class="
+          glow-on-hover
+          backgorundPrincipal
+          padding15
+          fullWidth
+          centrado
+          boldFont
+        "
+      >
+        {{ "button.call_you" | translate }}</a
+      >
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row paddingTop40"></div>
+  <!--Llamadas de acción-->
+  <div class="row paddingTop40 backgroundLightGray">
+    <div class="col-md-12 sombra">
+      <div class="row padding30">
+        <div class="col-md-12">
+          <div class="row paddingTop15">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-5 centrado">
+                  <img src="../../assets/img/dudas.gif" class="img70 borderRadius10 sombra"/>
+                </div>
+                <div class="col-md-7">
+                  <h1
+                    class="
+                      colorPrincipal
+                      fontLanding
+                      scale-in-bottom
+                      paddingTop25
+                    "
+                  >
+                    {{ "label.landing.doubts" | translate }}
+                  </h1>
+                  <h3 class="paddingTop25">
+                    {{ "label.landing.doubts_description" | translate }}
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row paddingBottom20">
+        <div class="col-md-12 paddingBottom20">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 padding30">
+                  <div class="row">
+                    <div class="col-md-4 centrado">
+                      <a
+                        (click)="utilService.goFaq()"
+                        class="
+                          glow-on-hover
+                          backgroundSecundary
+                          padding15
+                          fullWidth
+                          centrado
+                          boldFont
+                        "
+                      >
+                        {{ "button.faq" | translate }}</a
+                      >
+                    </div>
+                    <div class="margin5Mobile"></div>
+                    <div class="col-md-4 centrado">
+                      <a
+                        (click)="utilService.goDemo()"
+                        class="
+                          glow-on-hover
+                          backgorundPrincipal
+                          padding15
+                          fullWidth
+                          centrado
+                          boldFont
+                        "
+                      >
+                        {{ "button.demo" | translate }}</a
+                      >
+                    </div>
+                    <div class="margin5Mobile"></div>
+                    <div class="col-md-4 centrado">
+                      <a
+                        (click)="utilService.goContact()"
+                        class="
+                          glow-on-hover
+                          backgroundSecundary
+                          padding15
+                          fullWidth
+                          centrado
+                          boldFont
+                        "
+                      >
+                        {{ "button.landing.contact" | translate }}</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row paddingTop40"></div>
+        </div>
+      </div>
+      <div class="row paddingBottom20"></div>
+    </div>
+  </div>
+  <!--Footer-->
+
+
+  <div class="backgroundLandiongFooter row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-6 backgroundWhite paddingTop80 sombraBlanca">
+          <h1 class="padding10">{{ "label.landing.company" | translate | uppercase }}</h1>
+          <h2 class="padding10">
+            {{ "label.landing.company_description" | translate  }}
+          </h2>
+          <mat-horizontal-stepper class="demo-stepper" [linear]="isLineal" #stepperCompany>
+            <mat-step>
+              <form #stepForm="ngForm" (ngSubmit)="(stepForm.form.valid)">
+                <div class="row padding20">
+                  <div class="col-md-12 ">
+                    <mat-form-field class="example-full-width">
+                      <input
+                        [(ngModel)]="contactCompany.email"
+                        name="email"
+                        matInput
+                        #emailCompany="ngModel"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                        required
+                        placeholder="{{ 'label.email' | translate }} "
+                        type="email"
+                      />
+                    </mat-form-field>
+                    <div *ngIf="emailCompany.errors?.pattern && stepForm.submitted">
+                      <h5 class="colorRojo">
+                        <i class="las la-exclamation-circle espDer5"></i
+                        >{{ "error.invalid.email" | translate }}
+                      </h5>
+                    </div>
+                    <div *ngIf="emailCompany.errors?.required && stepForm.submitted">
+                      <h5 class="colorRojo">
+                        <i class="las la-exclamation-circle espDer5"></i
+                        >{{ "error.required" | translate }}
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-md-12 ">
+                    <mat-checkbox
+                      class="example-margin espDer15 noCkeck"
+                      [(ngModel)]="contactCompany.confirm"
+                      required #confirmCompany="ngModel"
+                      name="confirm"
+                    >{{ "label.confirm_privacy" | translate }}:
+                    </mat-checkbox>
+                  </div>
+                  <div class="col-md-12 colorSecundario">
+                    <a class="third after" (click)="utilService.openPolitics()"
+                    ><strong>{{ "label.privacy_politics" | translate }}</strong></a
+                    >
+                  </div>
+                  <div *ngIf="confirmCompany.errors?.required && stepForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "message.error.privacy" | translate }}
+                    </h5>
+                  </div>
+                  <div class="col-md-12 centrado paddingTop25">
+                    <button mat-button type="submit"
+                            (click)="sendContactCompanyEmail(stepForm, 'Email Contacto Empresa', stepperCompany)">
+                      {{ "button.next" | translate }}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <form #stepFormFull="ngForm" (ngSubmit)="(stepFormFull.form.valid)">
+                <div class="row">
+                  <div class="row padding20">
+                    <div class="col-md-12 ">
+                      <h2>{{'mesage.tell_us' | translate}}</h2>
+                    </div>
+                    <div class="col-md-6 ">
+                      <mat-form-field class="example-full-width">
+                        <input
+                          [(ngModel)]="contactCompany.name"
+                          name="name"
+                          #nameCompany="ngModel"
+                          matInput
+                          required
+                          placeholder="{{ 'label.name' | translate }} "
+                          type="text"
+                        />
+                      </mat-form-field>
+                      <div *ngIf="nameCompany.errors?.required && stepFormFull.submitted">
+                        <h5 class="colorRojo">
+                          <i class="las la-exclamation-circle espDer5"></i
+                          >{{ "error.required" | translate }}
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ">
+                      <mat-form-field class="example-full-width">
+                        <input
+                          [(ngModel)]="contactCompany.lastname"
+                          name="lastname"
+                          #lastnameCompany="ngModel"
+                          matInput
+                          required
+                          placeholder="{{ 'label.lastname' | translate }} "
+                          type="text"
+                        />
+                      </mat-form-field>
+                      <div *ngIf="lastnameCompany.errors?.required && stepFormFull.submitted">
+                        <h5 class="colorRojo">
+                          <i class="las la-exclamation-circle espDer5"></i
+                          >{{ "error.required" | translate }}
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-md-12 paddingTop15">
+                      <mat-form-field class="example-full-width">
+                        <input
+                          [(ngModel)]="contactCompany.company"
+                          name="company"
+                          matInput
+                          #companyCompany="ngModel"
+                          required
+                          placeholder="{{ 'label.company' | translate }} "
+                          type="text"
+                        />
+                      </mat-form-field>
+                      <div *ngIf="companyCompany.errors?.required && stepFormFull.submitted">
+                        <h5 class="colorRojo">
+                          <i class="las la-exclamation-circle espDer5"></i
+                          >{{ "error.required" | translate }}
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="col-md-12 paddingTop10">
+                      <mat-form-field class="example-full-width">
+                        <textarea
+                          matInput
+                          placeholder="{{ 'label.infringements' | translate }}"
+                          [(ngModel)]="contactCompany.message"
+                          name="message"
+                        ></textarea>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-md-12 centrado paddingTop25">
+                      <div class="col-md-12 paddingTop15">
+                        <button
+                          (click)="sendContactCompanyFull(stepFormFull, 'Contacto Empresa Completo', stepperCompany)"
+                          type="submit"
+                          class="glow-on-hover backgroundSecundary padding15 fullWidth centrado boldFont">
+                          {{ "button.send" | translate }}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step *ngIf="showThird">
+              <h3 class="centrado">{{'message.landing_thankyou' | translate}}</h3>
+            </mat-step>
+          </mat-horizontal-stepper>
+        </div>
+
+        <div class="col-md-6 centrado">
+          <div class="container paddingTop80">
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/3d5NqyNstXw"
+              title="Remove Group"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <div class="backgroundLandiongFooter row">
+    <div class="col-md-12 paddingTop25 centrado">
+      <h1 class="colorBlanco padding20">
+        {{ "label.landing.footer" | translate }}
+      </h1>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+<!---->

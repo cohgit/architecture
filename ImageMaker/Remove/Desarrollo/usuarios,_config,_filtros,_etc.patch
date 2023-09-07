@@ -1,0 +1,816 @@
+Index: webRemove/src/app/shared/filters/filters.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/shared/filters/filters.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/shared/filters/filters.component.html	(date 1630006944389)
+@@ -1,96 +1,117 @@
+ <div class="container-fluid">
+-    <div class="row">
+-      <h4><strong> {{'label.filter.filter' | translate}}</strong> </h4>
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.keywords' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.keywords" (selectionChange)="refreshSuggestedKeywords()">
+-                    <mat-option *ngFor="let key of keywords" [value]="key">
+-                        {{key.word}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.suggested_keywords' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.suggested_keywords">
+-                    <mat-option *ngFor="let key of filterModel?.keywords?.listSuggested" [value]="key">
+-                        {{key.word}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.pages' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.pages">
+-                    <mat-option *ngFor="let page of pages" [value]="page">
+-                        {{page}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.feelings' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.feelings" multiple>
+-                    <mat-option *ngFor="let feeling of feelings" [value]="feeling">
+-                        {{"feeling."+feeling.tag | translate}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.tracking_words' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.tracking_words" multiple>
+-                    <mat-option *ngFor="let tw of tracking_words" [value]="tw">
+-                        {{tw.word}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.url' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.urls" multiple>
+-                    <mat-option *ngFor="let url of urls" [value]="url">
+-                        {{url.word}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
+-    <div class="row">
+-        <div class="col-md-12">
+-            <mat-form-field class="example-full-width">
+-                <mat-label>{{'label.filter.search_types' | translate}}</mat-label>
+-                <mat-select [(ngModel)]="filterModel.search_types">
+-                    <mat-option *ngFor="let st of search_types" [value]="st">
+-                        {{"list.scanner.type."+st | translate}}
+-                    </mat-option>
+-                </mat-select>
+-            </mat-form-field>
+-        </div>
+-    </div>
++  <div class="row">
++    <h4><strong> {{'label.filter.filter' | translate}}</strong> </h4>
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.keywords' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.keywords" (selectionChange)="refreshSuggestedKeywords()">
++          <mat-option *ngFor="let key of keywords" [value]="key">
++            {{key.word}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.suggested_keywords' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.suggested_keywords">
++          <mat-option *ngFor="let key of filterModel?.keywords?.listSuggested" [value]="key">
++            {{key.word}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.pages' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.pages">
++          <mat-option *ngFor="let page of pages" [value]="page">
++            {{page}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.feelings' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.feelings" multiple>
++          <mat-option *ngFor="let feeling of feelings" [value]="feeling">
++            {{"feeling."+feeling.tag | translate}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.tracking_words' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.tracking_words" multiple>
++          <mat-option *ngFor="let tw of tracking_words" [value]="tw">
++            {{tw.word}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.url' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.urls" multiple>
++          <mat-option *ngFor="let url of urls" [value]="url">
++            {{url.word}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.filter.search_types' | translate}}</mat-label>
++        <mat-select [(ngModel)]="filterModel.search_types">
++          <mat-option *ngFor="let st of search_types" [value]="st">
++            {{"list.scanner.type."+st | translate}}
++          </mat-option>
++        </mat-select>
++      </mat-form-field>
++    </div>
++  </div>
+   <div class="row">
++    <div class="col-md-12">
++      <mat-form-field class="example-full-width">
++        <mat-label>{{'label.scanner_date' | translate}}</mat-label>
++        <mat-date-range-input [rangePicker]="picker" [min]="scannerInfo?.creation_date" [max]="today">
++          <input matStartDate [(ngModel)]="filterModel.init_date" name="start" #dateRange="ngModel"
++                 placeholder="{{'label.init_date' | translate}}" >
++          <input matEndDate [(ngModel)]="filterModel.end_date" name="end"
++                 placeholder="{{'label.end_date' | translate}}">
++        </mat-date-range-input>
++        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
++        <mat-date-range-picker #picker></mat-date-range-picker>
++        {{dateRange.errors}}
++      </mat-form-field>
++    </div>
++  </div>
++  <div class="row">
++    <div class="col-md-12">
++      <mat-slide-toggle [(ngModel)]="filterModel.isNew" class="noCkeck"> {{'label.new' | translate}} </mat-slide-toggle>
++    </div>
++  </div>
++  <div class="row">
+     <div class="col-md-3 centrado paddingTop15">
+-        <a (click)="clearFilters()" class="third after espIz15"> {{'button.clear' |
+-            translate}}</a>
++      <a (click)="clearFilters()" class="third after espIz15"> {{'button.clear' |
++          translate}}</a>
+     </div>
+     <div class="col-md-9 centrado paddingTop15">
+-        <a (click)="callFilterEvent()" class="glow-on-hover"><i class="fas fa-filter"></i> {{'button.filter' | translate}}</a>
++      <a (click)="callFilterEvent()" class="glow-on-hover"><i class="fas fa-filter"></i> {{'button.filter' | translate}}</a>
+     </div>
+-</div>
++  </div>
+ </div>
+Index: webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.ts	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.ts	(date 1630006944366)
+@@ -213,8 +213,8 @@
+   }
+ 
+ 
+-  checkRemovable(active: boolean | ServiceWorker) {
+-    return !active;
++  checkRemovable(id: any | ServiceWorker) {
++    return id === null;
+   }
+ 
+   getSuggested(configForm: NgForm) {
+Index: webRemove/src/app/shared/filters/filters.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/shared/filters/filters.component.ts	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/shared/filters/filters.component.ts	(date 1630006944416)
+@@ -10,20 +10,25 @@
+ })
+ export class FiltersComponent implements OnInit {
+   @Output() applyFilter = new EventEmitter<ScannerFilter>();
++  @Input() scannerInfo: any = {};
+   filterModel: ScannerFilter = new ScannerFilter();
+   private scanner: any;
+ 
+   keywords: any[] = [];
+-  suggested_keywords: any[] = []; 
++  suggested_keywords: any[] = [];
+   feelings: any[] = [];
+   tracking_words: any[] = [];
+   urls: any[] = [];
+   search_types: any[] = [];
+   pages: number[] = [];
++  today = new Date();
+ 
+   constructor(private commonService: CommonService, private util: UtilService) { }
+ 
+   ngOnInit(): void {
++    /*this.filterModel.init_date = this.scannerInfo.creation_date;
++    this.filterModel.end_date = this.scannerInfo.results[0].query_date;
++    console.log('this.filterModel', this.filterModel);*/
+     this.commonService.listFeelings(response => this.feelings = response);
+   }
+ 
+Index: webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/config-scanner/config-scanner.component.html	(date 1630006944357)
+@@ -98,7 +98,7 @@
+                       (removed)="removeFromList(url, scannerInfo.justTrackingURLs)">
+               <span [innerHTML]="url.feelingObj | feelingColors"></span> <!-- {{ (url.word.length>60)?
+                 (url.word | slice:0:60)+'..':(url.word) }}--> {{utilService.onlyDomain(url.word)}}
+-              <mat-icon matChipRemove *ngIf="checkRemovable(scannerInfo.active)">cancel</mat-icon>
++              <mat-icon matChipRemove *ngIf="checkRemovable(scannerInfo.id)">cancel</mat-icon>
+             </mat-chip>
+           </mat-chip-list>
+         </div>
+@@ -268,8 +268,9 @@
+ 
+     <button (click)="updateConfigForRecurrents(configForm)" class="glow-on-hover espDer15" type="submit"
+             tabindex="1"
+-            *ngIf="scannerInfo?.type !== 'one_shot'">{{'button.update.configuration' | translate}}</button>
+-    <button (click)="generateResults(configForm)" class="glow-on-hover" type="submit"
++            *ngIf="scannerInfo?.type !== 'one_shot' && scannerInfo?.id !== null">{{'button.update.configuration'
++        | translate}}</button>
++    <button (click)="generateResults(configForm)" class="glow-on-hover" type="submit" *ngIf="scannerInfo?.id === null"
+             tabindex="1" >{{'button.results' | translate}}</button>
+   </div>
+ </div>
+Index: webRemove/src/app/notifications/notifications.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/notifications/notifications.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/notifications/notifications.component.html	(date 1630007058607)
+@@ -1,4 +1,4 @@
+-<div class="row " *ngFor="let detail of allNotification">
++<div class="row " *ngFor="let detail of copyArray">
+     <div class="col-md-12 paddingTop5" >
+           <mat-expansion-panel hideToggle
+                                class="gn-box padding5 borderRadius10  tracking-in-expand example-full-width"
+@@ -6,27 +6,43 @@
+                                (closed)="checkOpen('close', detail)">
+             <mat-expansion-panel-header>
+               <mat-panel-title>
+-                <i class="fas fa-exclamation-circle colorSecundario padding5" *ngIf="detail.urgent"></i>
+-                <i class="far fa-envelope-open padding5" *ngIf="detail.readed"></i>
+-                <h4 class="colorPrincipal">{{'notification.type.'+detail.typeObj.tag | translate}} : {{'notification.tittle.'+detail.title | translate}}</h4>
++                  <div class="col-md-1">
++                    <mat-chip-list aria-label="Fish selection">
++                      <mat-chip class="backgorundPrincipal">
++                        <span class="colorBlanco">{{'notification.type.'+detail.typeObj.tag |
++                            translate}} </span></mat-chip>
++                    </mat-chip-list>
++                  </div>
++                  <div class="col-md-10">
++                    <i class="fas fa-exclamation-circle colorSecundario padding5" *ngIf="detail.urgent"></i>
++                    <i class="far fa-envelope-open padding5" *ngIf="detail.readed"></i>  {{'notification.tittle.'+detail.title | translate}}
++                  </div>
++
+               </mat-panel-title>
+               <mat-panel-description class="floatRight margin10">
+                 <h6 class="colorGris right">{{detail.creation_date | date: 'short'}}</h6>
+               </mat-panel-description>
+             </mat-expansion-panel-header>
+-            <div class="col-md-12 ">
+-              <p>{{'notification.description.'+detail.description | translate}}</p>
+-            </div>
+-            <!-- Aqui se pueden leer los parámetros de la notificacion y jugar con ellos para mostrarlos, este ejemplo es de snippet... -->
++            <!-- <div class="col-md-12 ">
++               <p>{{'notification.description.'+detail.description | translate}}</p>
++             </div>
++              Aqui se pueden leer los parámetros de la notificacion y jugar con ellos para mostrarlos, este ejemplo es de snippet... -->
+             <div class="col-md-12" *ngIf="detail.typeObj.RECURRENT_NEW_CONTENT">
++              <hr>
++              <div class="row" >
++                <div class="col-md-12 colorGris">
++                  {{'label.page' | translate}}: {{detail.parameters.page}} - {{'label.position' | translate}}: {{detail.parameters.position}} - <cite class="gs-url">{{detail.parameters.domain}}</cite>
++                </div>
+                 <div class="col-md-12">
+-                  <a target="_blank" href="{{detail.parameters.link}}">{{detail.parameters.tittle}}</a>
++                  <a class="gs-title" target="_blank" href="{{detail.parameters.link}}">{{detail.parameters.tittle}}</a>
+                 </div>
+-      
++
+                 <div class="col-md-12">
+-                  <span class="gs-content">{{detail.parameters.snippet}}</span>
++          <span class="gs-content">{{detail.parameters.snippet}}</span>
+                 </div>
++
+                 <div class="margin10"></div>
++              </div>
+             </div>
+           </mat-expansion-panel>
+     </div>
+Index: webRemove/src/app/interfaces/IScannerFilter.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/interfaces/IScannerFilter.ts	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/interfaces/IScannerFilter.ts	(date 1630006944345)
+@@ -5,7 +5,10 @@
+   tracking_words?: any[],
+   urls?: any[],
+   search_types?: string,
+-  pages?: number
++  pages?: number,
++  init_date?: any,
++  end_date?: any,
++  isNew: boolean
+ }
+ 
+ export class ScannerFilter implements IScannerFilter {
+@@ -16,6 +19,9 @@
+   urls?: any[];
+   search_types?: string;
+   pages?: number;
++  init_date?: any;
++  end_date?: any;
++  isNew: boolean;
+ 
+   constructor () { }
+-}
+\ No newline at end of file
++}
+Index: webRemove/src/assets/i18n/en.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/assets/i18n/en.json	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/assets/i18n/en.json	(date 1630006944417)
+@@ -55,9 +55,10 @@
+   "list.impulse.state.awaiting_drafting": "Awaiting Drafting",
+   "list.impulse.state.rejected": "Rejected",
+   "list.impulse.state.published": "Published",
+-"list.impulse.state.to_be_approved": "To be Approved",
++  "list.impulse.state.to_be_approved": "To be Approved",
+   "label.actions": "Actions",
+   "label.active": "Active",
++  "label.new": "New",
+   "label.assignments": "Assignments",
+   "label.client.bussines": "Bussines",
+   "label.client.bussines_name": "Bussiness Name",
+@@ -84,10 +85,10 @@
+   "label.filter.suggested_keywords": "Suggested Keywords",
+   "label.filter.tracking_words": "Tracking Words",
+   "label.filter.url": "URL",
+- "label.shorten_url": "Shorten URL",
++  "label.shorten_url": "Shorten URL",
+   "label.full_url": "Full URL",
+   "label.goal": "Goal",
+-"label.impulse.concept": "Concept",
++  "label.impulse.concept": "Concept",
+   "label.impulse": "Impulse",
+   "label.impulse.keywords": "Avalible Keywords",
+   "label.impulse.author": "Author",
+@@ -213,7 +214,7 @@
+   "list.image.teal": "Teal",
+   "list.image.white": "White",
+   "list.image.yellow": "Yellow",
+-"list.impulse.concept.traffic": "Traffic",
++  "list.impulse.concept.traffic": "Traffic",
+   "list.impulse.concept.link": "Link",
+   "list.impulse.concept.ctr": "CTR",
+   "list.impulse.category.social": "Social",
+@@ -287,7 +288,7 @@
+   "profile.profile_formule": "Formula",
+   "profile.profile_manager": "Manager",
+   "profile.publisher": "Publisher",
+-"title.notifications": "Inbox Notifications",
++  "title.notifications": "Inbox Notifications",
+   "title.account": "Account",
+   "title.active_confirm": "Activate",
+   "title.client.billing": "Billing Information",
+@@ -336,11 +337,11 @@
+   "title.scanner.terms": "Tracking Topics",
+   "title.scanner.url": "URL",
+   "title.scanner_one": "One Shot Scanner",
+- "title.monitor": "Monitor Scanner",
++  "title.monitor": "Monitor Scanner",
+   "title.transform": "Transform Configuration",
+   "title.scanner_restriction": "Scanner restrictions",
+   "title.trackingwords": "Trackingwords Management",
+-"tittle.historic.trackingword": "Historical Results by Trackingwords",
++  "tittle.historic.trackingword": "Historical Results by Trackingwords",
+   "tittle.historic.url": "Historical Results by URL",
+   "title.user_billing": "Billing Info",
+   "title.user_info": "User Account",
+@@ -351,6 +352,16 @@
+   "title.welcome": "Welcome to Remove Group!",
+   "tittle.list.url.to.remove.tracking": "URL to Remove",
+   "tittle.list.url.to.impulse.tracking": "URL to Impulse",
++  "notification.tittle.recurrent.new.content": "New Content",
++  "notification.tittle.recurrent.leave.content": "Leave Content",
++  "notification.tittle.transform.impulse.progres": "Impulse Progress",
++  "notification.tittle.impulse.published": "Impulse Published",
++  "notification.tittle.report.monthly": "Monthly Report",
++  "notification.type.recurrent.new.content": "Monitor",
++  "notification.type.recurrent.leave.content": "Monitor",
++  "notification.type.transform.impulse.progress": "Impulse",
++  "notification.type.impulse.published": "Impulse",
++  "notification.type.report.monthly": "Report",
+   "tooltip.account": "Account",
+   "tooltip.edit_client": "Edit Clients",
+   "tooltip.edit_user": "Edit User",
+@@ -358,7 +369,7 @@
+   "tooltip.notifications": "Notifications",
+   "tooltip.plans": "Plans",
+   "tooltip.scanner": "Scanners",
+-  "tooltip.impulse.set_date": "Month / year of publication", 
++  "tooltip.impulse.set_date": "Month / year of publication",
+   "tooltip.impulse.news_link": "News link",
+   "tooltip.impulse.news_management": "News Management",
+   "tooltip.scanner.config.countries": "Countries",
+Index: webRemove/src/app/shared/sidebar/sidebar.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/shared/sidebar/sidebar.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/shared/sidebar/sidebar.component.html	(date 1630007144815)
+@@ -5,14 +5,12 @@
+           translate}}</h2>
+     </div>
+   </div>
+-
+-
+   <div class="row padding15">
+     <div class="col-md-12 " >
+       <mat-horizontal-stepper>
+         <mat-step label="{{'label.suggested' | translate}}" state="suggested" >
+           <div  class="gn-box padding5 borderRadius10  tracking-in-expand">
+-            <div class="row">
++            <div class="row padding5">
+               <div class="col-md-12 centrado colorGris">
+                 <h5>{{'title.current_plan' | translate}}</h5>
+               </div>
+Index: webRemove/src/assets/i18n/es.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/assets/i18n/es.json	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/assets/i18n/es.json	(date 1630006944420)
+@@ -58,6 +58,7 @@
+   "list.impulse.state.to_be_approved": "Por Aprobar",
+   "label.actions": "Acciones",
+   "label.active": "Activo",
++  "label.new": "Nuevo",
+   "label.assignments": "Asignaciones",
+   "label.client.bussines": "Empresa",
+   "label.client.bussines_name": "Razón Social",
+@@ -93,7 +94,7 @@
+   "label.impulse.author": "Autor",
+   "label.impulse.anchor": "Anchor",
+   "label.impulse.creation_date": "Fecha de Creación",
+-  "label.impulse.start_month": "Mes de Publicación",
++  "label.impulse.start_month": "Mes de Programación",
+   "label.impulse.state": "Estado",
+   "label.impulse.tittle_url": "Título / Link",
+   "label.impulse.final_url": "URL a Publicar",
+@@ -351,6 +352,16 @@
+   "title.welcome": "¡Bienvenido a Remove Group!",
+   "tittle.list.url.to.remove.tracking": "URL a Remover",
+   "tittle.list.url.to.impulse.tracking": "URL a Impulsar",
++  "notification.tittle.recurrent.new.content": "Nuevo Contenido",
++  "notification.tittle.recurrent.leave.content": "Contenido Excluido",
++  "notification.tittle.transform.impulse.progres": "Progreso del Impulso",
++  "notification.tittle.impulse.published": "Impulso Publicado",
++  "notification.tittle.report.monthly": "Reporte Mensual",
++  "notification.type.recurrent.new.content": "Recurrente",
++  "notification.type.recurrent.leave.content": "Recurrente",
++  "notification.type.transform.impulse.progress": "Impulso",
++  "notification.type.impulse.published": "Impulso",
++  "notification.type.report.monthly": "Reporte",
+   "tooltip.account": "Cuenta",
+   "tooltip.edit_client": "Editar Cliente",
+   "tooltip.edit_user": "Editar Usuario",
+@@ -358,7 +369,7 @@
+   "tooltip.notifications": "Notificaciones",
+   "tooltip.plans": "Planes",
+   "tooltip.scanner": "Scanners",
+-  "tooltip.impulse.set_date": "Mes / año de publicación", 
++  "tooltip.impulse.set_date": "Mes / año de publicación",
+   "tooltip.impulse.news_link": "Link de la noticia",
+   "tooltip.impulse.news_management": "Gestión de la noticia",
+   "tooltip.scanner.config.countries": "Países",
+Index: webRemove/src/app/pages/impulse/impulse.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/impulse/impulse.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/impulse/impulse.component.html	(date 1630006944352)
+@@ -77,6 +77,8 @@
+                   <th
+                     (click)="sortFunction('month', sortDirection)"><i class="fas fa-sort colorGris espDer5"></i>{{'label.impulse.start_month' | translate}}</th>
+                   <th
++                    (click)="sortFunction('month', sortDirection)"><i class="fas fa-sort colorGris espDer5"></i>{{'label.impulse.publish_date' | translate}}</th>
++                  <th
+                     (click)="sortFunction('author', sortDirection)"><i class="fas fa-sort colorGris espDer5"></i>{{'label.impulse.author' | translate}}</th>
+                   <th>{{'label.actions' | translate}} </th>
+                 </tr>
+@@ -88,9 +90,10 @@
+                   <td *ngIf="!impulse.real_publish_link">{{ impulse?.content?.title}}</td>
+                   <td>{{'list.impulse.state.' + impulse?.statusObj?.tag | translate}}</td>
+                   <td>{{ impulse?.creation_date | date}}</td>
+-                  <td>{{ impulse?.estimated_publish }}</td>
++                  <td>{{ impulse?.estimated_publish  | date: 'MM/yyyy'}}</td>
++                  <td>{{ impulse?.real_publish_date | date }}</td>
+                   <td>{{ impulse?.content?.author_name }}</td>
+-                  <td> 
++                  <td>
+                     <a (click)="editItem(impulse)" class="espDer15">
+                       <i class="fas fa-edit colorPrincipal " title="{{'tooltip.edit_impulse' | translate}}"></i>
+                     </a>
+Index: webRemove/src/app/pages/users/new-edit-user/new-edit-user.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/users/new-edit-user/new-edit-user.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/users/new-edit-user/new-edit-user.component.html	(date 1630008218590)
+@@ -14,13 +14,21 @@
+           <div class="row">
+             <div class="col-md-6">
+               <mat-form-field class="example-full-width">
+-                <input [(ngModel)]="user.name" name="name" matInput placeholder="{{'label.name' | translate}} *">
++                <input [(ngModel)]="user.name" name="name" matInput placeholder="{{'label.name' | translate}} "
++                       required #userName="ngModel">
+               </mat-form-field>
++              <div *ngIf="userName.errors?.required && userForm.submitted" >
++                <h5 class="colorRojo"> <i class="fas fa-exclamation-circle  espDer5"></i>{{'error.required' | translate}}</h5>
++              </div>
+             </div>
+             <div class="col-md-6">
+               <mat-form-field class="example-full-width">
+-                <input [(ngModel)]="user.lastname" name="lastname" matInput placeholder="{{'label.lastname' | translate}} *">
++                <input [(ngModel)]="user.lastname" name="lastname" matInput placeholder="{{'label.lastname' |
++                translate}} " #lastname="ngModel" required>
+               </mat-form-field>
++              <div *ngIf="lastname.errors?.required && userForm.submitted" >
++                <h5 class="colorRojo"> <i class="fas fa-exclamation-circle  espDer5"></i>{{'error.required' | translate}}</h5>
++              </div>
+             </div>
+ 
+             <div class="col-md-6"> <!--TODO traducir profiles cuando se tengan el nombre defitnitivo-->
+@@ -39,7 +47,7 @@
+            <div class="col-md-6">
+             <mat-form-field class="example-full-width">
+               <input  [(ngModel)]="user.phone" name="phone"  matInput
+-                      placeholder="{{'label.phone' | translate}} *">
++                      placeholder="{{'label.phone' | translate}} ">
+             </mat-form-field>
+           </div>
+             <div class="col-md-6">
+@@ -71,7 +79,7 @@
+                 <h5 class="colorRojo"> <i class="fas fa-exclamation-circle  espDer5"></i>{{'error.email_match' | translate}}</h5>
+               </div>
+             </div>
+-            
++
+           </div>
+ 
+         </mat-expansion-panel>
+Index: webRemove/src/app/pages/scanner/scanner.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/scanner.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/scanner.component.html	(date 1630006944388)
+@@ -24,7 +24,7 @@
+                            (closed)="events.push('close!')"  >
+                 <div class="content">
+                   <div class="box">
+-                    <app-filters (applyFilter) = "filterResults($event)" #filterComp></app-filters>
++                    <app-filters (applyFilter) = "filterResults($event)" [scannerInfo]="initialData" #filterComp></app-filters>
+                   </div>
+                 </div>
+               </mat-sidenav>
+Index: webRemove/src/app/pages/scanner/dashboard-scanner/dashboard-scanner.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/dashboard-scanner/dashboard-scanner.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/dashboard-scanner/dashboard-scanner.component.html	(date 1630006944367)
+@@ -224,12 +224,13 @@
+                      [autoClose]="true"  ngbPopover="{{'label.scanner.dash.help_temporal' | translate}}"
+                   ><i class="fas fa-info-circle colorAzul"></i></a>
+                   {{'label.scanner.dash.url' | translate}}
+-                  <flag-icon country="{{urlTimeDashboard?.country}}" squared class="espDer5"></flag-icon>
++                  <flag-icon country="{urlTimeDashboard?.country}}}" squared class="espDer5"
++                             title="{{urlTimeDashboard?.name}}"></flag-icon>
+                   <a popoverTitle="{{'label.scanner.advance.sections' | translate}}: {{urlTimeDashboard.type}}" container="body"
+                      [autoclose] = "true" ngbPopover=" {{'label.scanner.keywords' | translate}}: {{urlTimeDashboard.keyword}}"
+-                  >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='images'"></i>
+-                    <i class="fas fa-search espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='web'" ></i>
+-                    <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='news'"></i></a>
++                  >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='images'"  title="{{'list.scanner.type.' + urlTimeDashboard.type | translate }}"></i>
++                    <i class="fas fa-search espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='web'"  title="{{'list.scanner.type.' + urlTimeDashboard.type | translate }}"></i>
++                    <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="urlTimeDashboard.type ==='news'"  title="{{'list.scanner.type.' + urlTimeDashboard.type | translate }}"></i></a>
+                   {{'label.scanner.keywords' | translate}}: {{urlTimeDashboard.keyword}}
+                 </mat-card-subtitle>
+               </mat-card-header>
+Index: webRemove/src/app/pages/scanner/dashboard-scanner/gadgets/table-tracking-progress/table-tracking-progress.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/dashboard-scanner/gadgets/table-tracking-progress/table-tracking-progress.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/dashboard-scanner/gadgets/table-tracking-progress/table-tracking-progress.component.html	(date 1630006944369)
+@@ -1,17 +1,18 @@
+ <div *ngIf="listResultsTracks?.length > 0">
+   <!--<p>{{title_code | translate}}</p>-->
+-  <div class="row paddingTop15">
+-    <div class="col-md-6 col-sm-12 slide-in-blurred-bottom paddingTop15"  *ngFor="let result of listResultsTracks">
++  <div class="row ">
++    <div class="col-md-6 col-sm-12 slide-in-blurred-bottom "  *ngFor="let result of listResultsTracks">
++      <div class="margin10"></div>
+       <mat-card >
+         <mat-card-header>
+-          <mat-card-title>{{title_code | translate}}</mat-card-title>
++
+           <mat-card-subtitle>
+-            <flag-icon country="{{result.country}}" squared class="espDer5"></flag-icon>
++            <flag-icon country="{{result.country}}" squared class="espDer5"  title="{{result?.country}}"></flag-icon>
+             <a popoverTitle="{{'label.scanner.advance.sections' | translate}}: {{result.search_type}}" container="body"
+                [autoclose] = "true" ngbPopover=" {{'label.scanner.keywords' | translate}}: {{result.keyword}}"
+-            >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"></i>
+-              <i class="fas fa-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'" ></i>
+-              <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'"></i></a>
++            >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"  title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
++              <i class="fas fa-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'" title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
++              <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'" title="{{'list.scanner.type.' + result.search_type | translate }}"></i></a>
+             {{'label.scanner.keywords' | translate}}: {{result.keyword}}
+           </mat-card-subtitle>
+         </mat-card-header>
+@@ -20,9 +21,9 @@
+           <table class="table table-hover table-borderless table-responsive">
+             <thead class="thead-light">
+             <tr>
+-              <th width="50%">{{'label.results' | translate}}</th>
++              <th width="40%">{{'label.results' | translate}}</th>
+               <th>{{'label.position' | translate}}</th>
+-              <th>{{'label.impulse.publish_date' | translate}}</th>
++              <!--<th>{{'label.impulse.publish_date' | translate}}</th>-->
+               <th>{{'label.scanner.tracking' | translate}}</th>
+               <th>{{'label.scanner.dash.feelings' | translate}}</th>
+             </tr>
+@@ -47,7 +48,7 @@
+                 </ng-template>
+                 <a popoverTitle="{{'label.impulse.initial_position' | translate}}" container="body"
+                    [autoClose]="true"  [ngbPopover]="initial_position"
+-                ><i class="fas fa-info-circle colorAzul espIz15"></i></a>
++                ><i class="fas fa-info-circle colorAzul espIz15 reduceFont"></i></a>
+               </td>
+               <td *ngIf="!snippet.stillInResults">{{'label.result.left.results' | translate}}: {{
+                   snippet.lastScan.date_scan | date:'shortDate'}}
+@@ -59,7 +60,7 @@
+                    [autoClose]="true"  [ngbPopover]="initial_position"
+                 ><i class="fas fa-info-circle colorAzul espIz15"></i></a>
+               </td>
+-              <td>  {{snippet.lastScan.date_scan | date:'shortDate'}}</td>
++              <!--<td>  {{snippet.lastScan.date_scan | date:'shortDate'}}</td>-->
+               <td>
+                 <mat-chip-list>
+                   <mat-chip color="accent"
+@@ -75,5 +76,6 @@
+         </mat-card-content>
+       </mat-card>
+     </div>
++
+   </div>
+ </div>
+Index: webRemove/src/app/shared/navbar/user-config/user-config.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/shared/navbar/user-config/user-config.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/shared/navbar/user-config/user-config.component.html	(date 1630008044198)
+@@ -37,9 +37,9 @@
+                           placeholder="{{'label.email' | translate}}" type="email" required>
+                   </mat-form-field>
+                 </div>
+-                <div class="col-md-6">
++                <div class="col-md-6" *ngIf="user.profileDef.CLIENT">
+                   <mat-form-field class="example-full-width">
+-                    <mat-select placeholder="{{'label.scanner.countries' | translate}}" #select 
++                    <mat-select placeholder="{{'label.scanner.countries' | translate}}" #select
+                                 [ngModel]="user?.country" name="country" [compareWith]="compareTag">
+                       <mat-select-filter [placeholder]="placeholderBuscar" [displayMember]="'name'"
+                                         [array]="allCountries" *ngIf="select.focused" [noResultsMessage]="noResults"
+@@ -52,7 +52,7 @@
+                 </div>
+               </div>
+             </mat-expansion-panel>
+-            <mat-expansion-panel >
++            <mat-expansion-panel *ngIf="user.payment">
+               <mat-expansion-panel-header>
+                 <mat-panel-title>
+                   {{'title.user_billing' | translate}}
+@@ -81,7 +81,7 @@
+                 </div>
+                 <div class="col-md-8">
+                   <mat-form-field class="example-full-width">
+-                    <mat-select placeholder="{{'label.scanner.countries' | translate}}" #select 
++                    <mat-select placeholder="{{'label.scanner.countries' | translate}}" #select
+                                 [ngModel]="user?.payment?.country" name="countryPay" [compareWith]="compareTag">
+                       <mat-select-filter [placeholder]="placeholderBuscar" [displayMember]="'name'"
+                                         [array]="allCountries" *ngIf="select.focused" [noResultsMessage]="noResults"
+@@ -220,7 +220,7 @@
+           </div>
+           <div class="row centrado padding20">
+             <button  class="glow-on-hover espIz15" type="submit" (click) = "updatePassword()"
+-                    tabindex="1" >{{'button.user.password' | translate}}</button>
++                    tabindex="1" >{{'button.save' | translate}}</button>
+           </div>
+         </form>
+       </mat-tab>
+Index: webRemove/src/app/pages/scanner/result-scanner/result-scanner.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- webRemove/src/app/pages/scanner/result-scanner/result-scanner.component.html	(revision 5df749f011e605a635e6f5bb7b3193d3bcb54038)
++++ webRemove/src/app/pages/scanner/result-scanner/result-scanner.component.html	(date 1630006944384)
+@@ -4,12 +4,14 @@
+     <mat-expansion-panel-header *ngIf="result.snippetsWebs.length > 0 || result.snippetsNews.length > 0 || result.snippetsImages.length > 0"
+         (click) = "result.show = !result.show">
+       <mat-panel-title>
+-        <flag-icon country="{{result?.country?.tag}}" squared class="espDer5"></flag-icon>
++        <flag-icon country="{{result?.country?.tag}}" squared class="espDer5"
++                   title="{{result?.country?.name}}"></flag-icon>
+         <a popoverTitle="{{'label.scanner.advance.sections' | translate}}: {{result.search_type}}" container="body"
+            [autoclose] = "true" ngbPopover=" {{'label.scanner.keywords' | translate}}: {{result.keyword?.word}}"
+-        >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"></i>
+-          <i class="fas fa-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'" ></i>
+-          <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'"></i></a>
++        >  <i class="far fa-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"
++              title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
++          <i class="fas fa-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'"  title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
++          <i class="far fa-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'"  title="{{'list.scanner.type.' + result.search_type | translate }}"></i></a>
+         {{'label.scanner.keywords' | translate}}: {{result.keyword?.word}}
+       </mat-panel-title>
+       <mat-panel-description>

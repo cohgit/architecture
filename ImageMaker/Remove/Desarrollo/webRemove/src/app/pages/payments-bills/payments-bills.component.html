@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>
+  <i class="las la-money-bill-wave-alt colorGris espDer5"></i
+  >{{ "menu.bills" | translate }}
+</h2>
+
+<div mat-dialog-content>
+  <div class="row container-fluid padding20">
+    <div class="col-md-12">
+      <p>{{ "message.payment_description" | translate }}</p>
+    </div>
+    <div class="col-md-12" *ngIf="clientData?.paybills?.length > 0">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless">
+          <thead class="thead-light">
+          <tr>
+            <th>{{ "label.plan" | translate }}</th>
+            <th>{{ "label.payment_date" | translate }}</th>
+            <th>{{ "label.payment_methods" | translate }}</th>
+            <th>{{ "label.amount" | translate }}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let data of copyArray">
+            <td>{{ data?.planName }}</td>
+            <td>{{ utilService.formatDate(data?.payment_date) | date }}</td>
+            <td><span [innerHTML]="data?.method | paymentsMethods"></span></td>
+            <td>{{ data?.amount | currency: utilService.curr :  'symbol-narrow'}} </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado">
+          <jw-pagination
+            [items]="clientData?.paybills"
+            (changePage)="onChangePage($event)"
+            [maxPages]="5"
+            [pageSize]="10"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 centrado" *ngIf="clientData?.paybills?.length === 0">
+
+      <h5 class="colorGris"> {{ "messages.no_payments" | translate }}</h5>
+    </div>
+    <div class="col-md-12 " *ngIf="clientData?.paymentPortal">
+      <a (click)="openStripe()" class="third after colorGris"><strong>{{ "message.payment_stripe" | translate }}
+        : </strong><i class="fab fa-stripe colorMorado fa-2x paddingTop15 espIz15"></i></a>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris">
+    {{ "button.close" | translate }}</a
+  >
+</mat-dialog-actions>

@@ -1,0 +1,198 @@
+<mat-accordion class="example-full-width" multi>
+  <mat-expansion-panel *ngFor="let result of filteredResults" [expanded]="expandedResult"
+                       (opened)="result.isPanelOpen = true" (closed)="result.isPanelOpen = false">
+    <mat-expansion-panel-header
+      *ngIf="result?.snippetsWebs?.length > 0 || result?.snippetsNews?.length > 0 || result?.snippetsImages?.length > 0">
+      <mat-panel-title>
+        <h6 class="colorGris reduceFont" *ngIf="isAdmin && errorInResult"> {{'label.updated'
+          | translate}}: {{utilService.formatDate(result?.query_date) | date: 'shortDate'}}
+         </h6>
+        <!-- <flag-icon country="{{result?.country?.tag}}"  class="espDer5"
+                    title="{{result?.country?.name}}"></flag-icon>-->
+        <img [src]="utilService.checkFlag(result?.country?.tag)" [width]="utilService.flagWith"
+             [height]="utilService.flagHeight"
+             alt="{{result?.country?.name}}"
+             class="margin3" onerror="this.src='../../../../assets/img/broken.jpg'">
+        <a popoverTitle="{{'label.scanner.advance.sections' | translate}}: {{result.search_type}}" container="body"
+           [autoclose]="true" ngbPopover=" {{'label.scanner.keywords' | translate}}: {{result.keyword?.word}}"
+        > <i class="las la-image espDer15 colorPrincipal" *ngIf="result.search_type ==='images'"
+             title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
+          <i class="las la-search espDer15 colorPrincipal" *ngIf="result.search_type ==='web'"
+             title="{{'list.scanner.type.' + result.search_type | translate }}"></i>
+          <i class="las la-newspaper espDer15 colorPrincipal" *ngIf="result.search_type ==='news'"
+             title="{{'list.scanner.type.' + result.search_type | translate }}"></i></a>
+        {{'label.scanner.keywords' | translate}}: {{result.keyword?.word}}
+      </mat-panel-title>
+      <mat-panel-description class="hideMobile">
+        <h5 class="floatRight colorGris reduceFont amountOfResults"
+            *ngIf="result.search_type ==='web'">{{result?.snippetsWebs?.length}}
+          {{'label.results'
+            | translate}}</h5>
+        <h5 class="floatRight colorGris reduceFont amountOfResults"
+            *ngIf="result.search_type ==='images'">{{result?.snippetsImages?.length}}
+          {{'label.results' | translate}}</h5>
+        <h5 class="floatRight colorGris reduceFont amountOfResults"
+            *ngIf="result.search_type ==='news'">{{result?.snippetsNews?.length}}
+          {{'label.results' | translate}}</h5>
+      </mat-panel-description>
+      <mat-panel-description>
+        <!--uudi: {{result.uuid}} | device: {{result.device}} | type: {{result.search_type}}-->
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-expansion-panel-body class="expansionResult">
+
+      <!--  <div *ngIf="result.show" class="">-->
+      <!-- Resultados web -->
+
+      <div class="row" *ngFor="let snippet of result.snippetsWebs;  let index = index">
+        <div class="col-md-9" *ngIf="result.isPanelOpen">
+          <div class="col-md-12">
+            {{'label.page' | translate}}: {{snippet.tracking[snippet.tracking.length - 1].page}}
+            - {{'label.position' | translate}}: {{snippet.tracking[snippet.tracking.length - 1].position_in_page}} -
+            <cite
+              class="gs-url">{{snippet.domain}}</cite>
+          </div>
+          <div class="col-md-12">
+            <a class="gs-title" target="_blank"
+               href="{{snippet.link}}">
+              <div innerHTML="{{ utilService.cleanHTML(snippet.title)  | highlight : snippet.trackingWords}}"></div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <span class="gs-date" *ngIf="snippet.date">{{snippet.date}} </span> <span
+            class="gs-content"><div innerHTML="{{  utilService.cleanHTML(snippet.snippet)  | highlight :
+            snippet.trackingWords}}"></div></span>
+          </div>
+          <div class="col-md-12">
+            <mat-chip-list>
+              <mat-chip color="accent"
+                        *ngFor="let url of snippet.trackingWords">
+                <span [innerHTML]="url.feelingObj | feelingColors"></span> <span title="{{url.word}}"> {{utilService.onlyDomain(url.word)}}</span>
+              </mat-chip>
+            </mat-chip-list>
+          </div>
+          <div class="margin10"></div>
+        </div>
+        <div class="col-md-3 centrado" *ngIf="result.isPanelOpen">
+          <mat-form-field>
+            <mat-label>{{'label.scanner.suggestedfeel' | translate}} </mat-label>
+            <mat-select [(ngModel)]="snippet.feeling" (selectionChange)="onChangeFeeling(snippet)">
+              <mat-option *ngFor="let feel of allFeelings" [value]="feel.tag">
+                <span [innerHTML]="feel | feelingColors"></span>{{'feeling.' + feel.tag | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="margin10" *ngIf="result.isPanelOpen"></div>
+      </div>
+      <div class="row " *ngFor="let snippet of result.snippetsNews;  let index = index">
+        <div class="col-md-9 gn-box padding5" *ngIf="result.isPanelOpen">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="col-md-9">
+                Pág: {{snippet.tracking[snippet.tracking.length - 1].page}} -
+                Pos: {{snippet.tracking[snippet.tracking.length - 1].position_in_page}} - <cite
+                class="gn-url">{{snippet.domain}}</cite>
+              </div>
+              <div class="col-md-9">
+                <a class="gn-title" target="_blank"
+                   href="{{snippet.link}}">
+                  <div
+                    innerHTML="{{  utilService.cleanHTML(snippet.title)  | highlight : snippet.trackingWords}}"></div>
+                </a>
+              </div>
+
+              <div class="col-md-9">
+
+                <span class="gs-content">
+                  <div
+                    innerHTML="{{  utilService.cleanHTML(snippet.snippet)  | highlight : snippet.trackingWords}}"></div></span>
+              </div>
+              <div class="col-md-9">
+                <span class="gn-date" *ngIf="snippet.date">{{snippet.date}} </span>
+              </div>
+              <div class="col-md-9">
+                <mat-chip-list>
+                  <mat-chip color="accent"
+                            *ngFor="let url of snippet.trackingWords">
+                    <span [innerHTML]="url.feelingObj | feelingColors"></span> <span title="{{url.word}}"> {{utilService.onlyDomain(url.word)}}</span>
+                  </mat-chip>
+                </mat-chip-list>
+              </div>
+            </div>
+            <div class="col-md-3 centrado">
+              <img class="gn-img" [src]="domSanitizer.bypassSecurityTrustResourceUrl(snippet.thumbnail)"
+                   onerror="this.src='../../../../assets/img/broken.jpg'" loading="lazy">
+            </div>
+          </div>
+          <div class="margin10"></div>
+        </div>
+        <div class="col-md-3 centrado" *ngIf="result.isPanelOpen">
+          <mat-form-field>
+            <mat-label>{{'label.scanner.suggestedfeel' | translate}} </mat-label>
+            <mat-select [(ngModel)]="snippet.feeling" (selectionChange)="onChangeFeeling(snippet)">
+              <mat-option *ngFor="let feel of allFeelings" [value]="feel.tag">
+                <span [innerHTML]="feel | feelingColors"></span>{{'feeling.' + feel.tag | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="row  margin10"></div>
+      </div>
+      <div class="col-md-3" *ngFor="let snippet of result.snippetsImages;  let index = index">
+        <mat-card *ngIf="result.isPanelOpen">
+          <mat-card-header>
+            <mat-card-subtitle><a target="_blank" href="{{snippet.link}}">{{snippet.domain}}</a>
+            </mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{snippet.image}}" onerror="this.src='../../../../assets/img/broken.jpg'"
+               class="gi-img imagen_res" loading="lazy">
+
+          <mat-card-content>
+            <span class="gn-date">{{snippet.title}}</span>
+            <hr>
+            <mat-chip-list>
+              <mat-chip color="accent"
+                        *ngFor="let url of snippet.trackingWords">
+                <span [innerHTML]="url.feelingObj | feelingColors"></span> {{url?.word}}
+              </mat-chip>
+            </mat-chip-list>
+          </mat-card-content>
+          <mat-card-actions>
+            <mat-form-field>
+              <mat-label>{{'label.scanner.suggestedfeel' | translate}} </mat-label>
+              <mat-select [(ngModel)]="snippet.feeling" (selectionChange)="onChangeFeeling(snippet)">
+                <mat-option *ngFor="let feel of allFeelings" [value]="feel.tag">
+                  <span [innerHTML]="feel | feelingColors"></span>{{'feeling.' + feel.tag | translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="margin10"></div>
+      <!-- </div>-->
+    </mat-expansion-panel-body>
+
+  </mat-expansion-panel>
+
+</mat-accordion>
+<div class="row paddingBottom20 espIz15 paddingTop15" *ngIf="checkResult(filteredResults)">
+
+  <div class="col-md-12 ">
+    <p class="paddingTop5 ">{{'error.not_found_results' | translate}}</p>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="col-12 paddingBottom50 paddingTop25 centrado">
+    <button (click)="utilService.back()" class="secondLevelButton espDer15"
+    ><i class="las fa-backward espDer5"></i>{{'button.back' | translate}}</button>
+
+    <button (click)="sendFeelings()" class="glow-on-hover espIz15" type="submit" *ngIf="!checkResult(filteredResults)"
+            tabindex="1">{{'button.update_feelings' | translate}}</button>
+
+
+  </div>
+</div>
+

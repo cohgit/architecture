@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>
+  <i class="las la-comment colorGris espDer5"></i
+  >{{ "tooltip.comment" | translate }}: {{ info.name }}
+</h2>
+<div mat-dialog-content>
+  <div
+    class="row"
+    *ngIf="lastComment && !utilService.onlySpaces(lastComment.comment)"
+  >
+    <div class="col-md-8">
+      {{ "message.last_comment" | translate }}
+    </div>
+    <div class="col-md-4">
+      {{ "label.date" | translate }}:
+      {{ utilService.formatDate(lastComment?.comment_date) | date : "shortDate" }}
+    </div>
+    <div class="col-md-12 paddingTop15">
+      <p>{{ lastComment?.comment }}</p>
+    </div>
+  </div>
+
+  <!--<div class="row" *ngIf="lastComment">
+  <div class="col-md-4">
+
+  </div>
+<div class="col-md-4">
+    <h5>{{'label.name' | translate}}: {{lastComment?.author_name| translate}} </h5>
+  </div>
+  <div class="col-md-4">
+    <h5>{{'label.profile' | translate}}: {{'profile.' + lastComment?.profile | lowercase  | translate}} </h5>
+  </div>-->
+
+  <div class="row">
+    <div class="col-md-12">
+      <hr />
+      <textarea
+        type="text"
+        class="example-full-width form-control"
+        [(ngModel)]="comment"
+        name="others"
+        placeholder="{{ 'label.new_comment' | translate }}*"
+      ></textarea>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris">
+    {{ "button.cancel" | translate }}</a
+  >
+  <button
+    (click)="onConfirmClick(comment)"
+    class="glow-on-hover espIz15"
+    type="submit"
+    tabindex="1"
+  >
+    {{ "button.save" | translate }}
+  </button>
+</mat-dialog-actions>

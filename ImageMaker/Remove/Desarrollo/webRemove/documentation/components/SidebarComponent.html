@@ -1,0 +1,1401 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  SidebarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/sidebar/sidebar.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false }
+}</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sidebar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sidebar.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sidebar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#nearestValue" >nearestValue</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changePlan" >changePlan</a>
+                            </li>
+                            <li>
+                                <a href="#checkCrossedSuggested" >checkCrossedSuggested</a>
+                            </li>
+                            <li>
+                                <a href="#closeSidebar" >closeSidebar</a>
+                            </li>
+                            <li>
+                                <a href="#customPlan" >customPlan</a>
+                            </li>
+                            <li>
+                                <a href="#loadInfo" >loadInfo</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#sidenav" >sidenav</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, configService: <a href="../injectables/AccountConfigService.html" target="_self">AccountConfigService</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, dialog: MatDialog, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, logoutService: <a href="../injectables/SessionLogService.html" target="_self">SessionLogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AccountConfigService.html" target="_self" >AccountConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionLogService.html" target="_self" >SessionLogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sidenav"></a>
+                        <b>sidenav</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>MatSidenav</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePlan"></a>
+                    <span class="name">
+                        <span ><b>changePlan</b></span>
+                        <a href="#changePlan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePlan(detailPlan: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="102"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>detailPlan</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkCrossedSuggested"></a>
+                    <span class="name">
+                        <span ><b>checkCrossedSuggested</b></span>
+                        <a href="#checkCrossedSuggested"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkCrossedSuggested()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="91"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Suggest next in cost value.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSidebar"></a>
+                    <span class="name">
+                        <span ><b>closeSidebar</b></span>
+                        <a href="#closeSidebar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeSidebar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="65"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>close sidebar</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customPlan"></a>
+                    <span class="name">
+                        <span ><b>customPlan</b></span>
+                        <a href="#customPlan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>customPlan()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="134"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadInfo"></a>
+                    <span class="name">
+                        <span ><b>loadInfo</b></span>
+                        <a href="#loadInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="52"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="126"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logout service</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="43"
+                            class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nearestValue"></a>
+                    <span class="name">
+                        <span ><b>nearestValue</b></span>
+                        <a href="#nearestValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/shared/sidebar/sidebar.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import {STEPPER_GLOBAL_OPTIONS} from &#x27;@angular/cdk/stepper&#x27;;
+import {MatSidenav} from &quot;@angular/material/sidenav&quot;;
+import {CommonService} from &quot;../../services/common.service&quot;;
+import {AccountConfigService} from &#x27;src/app/services/account-config.service&#x27;;
+import {SessionService} from &#x27;src/app/helpers/session.service&#x27;;
+import {ConfirmChangeComponent} from &quot;./confirm-change/confirm-change.component&quot;;
+import {MatDialog} from &quot;@angular/material/dialog&quot;;
+import {CustomPlanComponent} from &quot;../custom-plan/custom-plan.component&quot;;
+import {UtilService} from &#x27;src/app/helpers/util.service&#x27;;
+import {SessionLogService} from &quot;../../services/session-log.service&quot;;
+
+@Component({
+  selector: &#x27;app-sidebar&#x27;,
+  templateUrl: &#x27;./sidebar.component.html&#x27;,
+  styleUrls: [&#x27;./sidebar.component.css&#x27;],
+  providers: [{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: {displayDefaultIndicatorType: false}
+  }]
+})
+
+export class SidebarComponent implements OnInit {
+  @Input() sidenav: MatSidenav;
+
+  info: any;
+  //suggested &#x3D; [];
+  //allsuggested &#x3D; [];
+  nearestValue &#x3D; (arr, val) &#x3D;&gt; arr.reduce((p, n) &#x3D;&gt; (Math.abs(p) &gt; Math.abs(n - val) ? n - val : p), Infinity) + val
+
+  /**
+   *
+   * @param commonService
+   * @param configService
+   * @param session
+   * @param dialog
+   * @param utilService
+   * @param logoutService
+   */
+  constructor(private commonService: CommonService, private configService: AccountConfigService, private session: SessionService,
+              private dialog: MatDialog, public utilService: UtilService, private logoutService: SessionLogService) {
+  }
+
+  ngOnInit(): void {
+    // FIX ME: Bootstrap no es compatible con &quot;@popperjs/core&quot;: &quot;^2.4.4&quot;, Downgrade en package.json a 1.11.0
+    this.sidenav.openedChange.subscribe(() &#x3D;&gt; {
+      if (this.sidenav.opened &amp;&amp; !this.info) {
+        this.loadInfo();
+      }
+    });
+  }
+
+  loadInfo(): void {
+    this.commonService.listClientsPlans(response &#x3D;&gt; {
+      this.info &#x3D; response;
+      this.info.plansAvailables &#x3D; this.utilService.sortArrayValue(this.info.plansAvailables, &#x27;cost&#x27;);
+      //  this.info.plansCustomized &#x3D; this.utilService.sortArrayValue(this.info.plansCustomized, &#x27;cost&#x27;);
+      this.info.plansCustomized.reverse();
+      this.checkCrossedSuggested();
+    });
+  }
+
+  /**
+   * close sidebar
+   */
+  closeSidebar(): void {
+    this.sidenav.close();
+  }
+
+  /**
+   * check if a item is repeat in all in suggest
+   * @param suggest
+   * @param all
+   */
+
+  /*removeItem(suggest: any, all: any): void {
+    if (this.suggested.length !&#x3D;&#x3D; 0 &amp;&amp; this.allsuggested.length !&#x3D;&#x3D; 0){
+      all.forEach(item &#x3D;&gt; {
+        suggest.forEach(only &#x3D;&gt; {
+          if (item.id &#x3D;&#x3D;&#x3D; only.id){
+            const index &#x3D; this.allsuggested.findIndex(i &#x3D;&gt; i &#x3D;&#x3D;&#x3D; item);
+            this.allsuggested.splice(index, 1);
+          }
+        });
+      });
+    }
+  }*/
+
+  /**
+   * Suggest next in cost value.
+   */
+  checkCrossedSuggested(): void {
+    let filtred &#x3D; [];
+    if (this.info.plansCustomized.length &#x3D;&#x3D;&#x3D; 0) {
+      filtred &#x3D; this.info.plansAvailables.filter(u &#x3D;&gt; u.cost &gt; this.info.actualPlan.cost);
+
+      if (filtred.length &gt; 0) {
+        this.info.plansCustomized.push(filtred[0]);
+      }
+    }
+  }
+
+  changePlan(detailPlan: any): void {
+    this.info.newPlan &#x3D; detailPlan;
+
+    const dialogRef &#x3D; this.dialog.open(ConfirmChangeComponent, {
+      closeOnNavigation: true,
+      disableClose: true,
+      data: {
+        info: this.info,
+        sidenav: this.sidenav
+      }
+    });
+    dialogRef.afterClosed().subscribe(confirmed &#x3D;&gt; {
+      if (confirmed) {
+        this.configService.updatePlan(this.info, () &#x3D;&gt; {
+          this.closeSidebar();
+          this.logout();
+        });
+      }
+    });
+  }
+
+  /**
+   * Logout service
+   */
+  logout(): void {
+    this.logoutService.logout(
+      () &#x3D;&gt; this.session.destroySession(),
+      {
+        errorFunction: () &#x3D;&gt; this.session.destroySession()
+      });
+  }
+
+  customPlan() {
+    this.dialog.open(CustomPlanComponent, {
+      width: &#x27;70%&#x27;,
+      closeOnNavigation: true,
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;sidebar-wrapper&quot; id&#x3D;&quot;sidebar&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 centrado padding30 backgorundPrincipal&quot;&gt;
+      &lt;h2 class&#x3D;&quot;colorBlanco&quot;&gt;
+        &lt;i class&#x3D;&quot;las la-file-invoice colorGris espIz15 espDer5&quot;&gt;&lt;/i&gt;
+        {{ &quot;title.plans&quot; | translate }}
+      &lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;row padding15&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;mat-horizontal-stepper&gt;
+        &lt;!--Step to show current plan and suggested in all plan and in actual category--&gt;
+        &lt;mat-step label&#x3D;&quot;{{ &#x27;label.suggested&#x27; | translate }}&quot; state&#x3D;&quot;suggested&quot;&gt;
+          &lt;!--current plan--&gt;
+          &lt;div class&#x3D;&quot;col-md-12 centrado colorGris&quot;&gt;
+            &lt;h5&gt;{{ &quot;title.current_plan&quot; | translate }}&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;mat-expansion-panel hideToggle
+                                 class&#x3D;&quot;
+              gn-box
+              paddingTop15
+              borderRadius10
+              tracking-in-expand
+              example-full-width
+            &quot;
+                                 expanded&gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+                    &lt;strong&gt;{{ info?.actualPlan?.name }}&lt;/strong&gt;
+                  &lt;/h4&gt;
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+              &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                &lt;h2 class&#x3D;&quot;colorSecundario&quot;&gt;
+                  {{ info?.actualPlan?.cost  | currency: utilService.curr :  &#x27;symbol-narrow&#x27;}}
+                &lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;!--Actual Plan--&gt;
+                &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+                  &lt;h5&gt;
+                    &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+                    &gt;&lt;span&gt;{{ info?.actualPlan?.duration_months }}&lt;/span&gt;
+                    {{ &quot;label.months&quot; | translate }}
+                  &lt;/h5&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_scanner&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                    {{ &quot;label.licence.one_shot&quot; | translate }}:
+                    &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.limit_credits  &gt; 0&quot;&gt;{{info?.actualPlan?.limit_credits }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.limit_credits  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_monitor&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                    {{ &quot;label.licence.monitor&quot; | translate }}:
+                    &lt;span
+                      *ngIf&#x3D;&quot;info?.actualPlan?.total_monitor_licenses  &gt; 0&quot;&gt;{{info?.actualPlan?.total_monitor_licenses }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.total_monitor_licenses  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_transforma&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                    {{ &quot;label.licence.transform&quot; | translate }}:
+                    &lt;span
+                      *ngIf&#x3D;&quot;info?.actualPlan?.total_transforma_licenses  &gt; 0&quot;&gt;{{info?.actualPlan?.total_transforma_licenses }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.total_transforma_licenses  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+
+                  &lt;/h5&gt;
+                  &lt;h5 *ngIf&#x3D;&quot;info?.actualPlan?.access_deindexation&quot;&gt;
+                    &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                    {{ &quot;label.licence.deindexing&quot; | translate }}:
+                    &lt;span
+                      *ngIf&#x3D;&quot;info?.actualPlan?.max_url_to_deindexate  &gt; 0&quot;&gt;{{info?.actualPlan?.max_url_to_deindexate }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.max_url_to_deindexate  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5&gt;
+                    &lt;i class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;label.plan.countries&quot; | translate }}:
+                    &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_countries  &gt; 0&quot;&gt;{{info?.actualPlan?.max_countries }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.max_countries  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5&gt;
+                    &lt;i class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+                    &lt;span *ngIf&#x3D;&quot;info?.actualPlan?.max_keywords  &gt; 0&quot;&gt;{{info?.actualPlan?.max_keywords }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.max_keywords  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5&gt;
+                    &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;label.plan.pages&quot; | translate }}:
+                    &lt;span
+                      *ngIf&#x3D;&quot;info?.actualPlan?.max_search_page  &gt; 0&quot;&gt;{{info?.actualPlan?.max_search_page }}&lt;/span&gt;&lt;span
+                    *ngIf&#x3D;&quot;info?.actualPlan?.max_search_page  &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                  &lt;/h5&gt;
+                  &lt;h5&gt;
+                    &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+                    &gt;{{ &quot;label.sections&quot; | translate }}:
+                    {{info?.actualPlan?.sections_to_search }}
+                  &lt;/h5&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+
+          &lt;/div&gt;
+
+          &lt;div *ngIf&#x3D;&quot;!info?.programmedToNextPayment&quot;&gt;
+            &lt;!--suggested--&gt;
+            &lt;div class&#x3D;&quot;col-md-12 centrado colorGris&quot;&gt;
+              &lt;h5&gt;{{ &quot;title.we_suggest&quot; | translate }}&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-hand-point-down colorSecundario fa-3x&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+
+            &lt;!--suggested in all plans--&gt;
+            &lt;div class&#x3D;&quot;row paddingTop15&quot; *ngFor&#x3D;&quot;let suggestedPlan of info?.plansCustomized&quot;&gt;
+              &lt;mat-expansion-panel hideToggle
+                                   class&#x3D;&quot;
+                  gn-box
+                  paddingTop15
+                  borderRadius10
+                  tracking-in-expand
+                  example-full-width
+                &quot;&gt;
+                &lt;mat-expansion-panel-header&gt;
+                  &lt;mat-panel-title&gt;
+                    &lt;h4 class&#x3D;&quot;colorPrincipal &quot;&gt;
+                      &lt;strong&gt;{{ suggestedPlan?.name }}&lt;/strong&gt;
+                    &lt;/h4&gt;
+                  &lt;/mat-panel-title&gt;
+                &lt;/mat-expansion-panel-header&gt;
+                &lt;div class&#x3D;&quot;col-md-12 centrado &quot;&gt;
+                  &lt;h2 class&#x3D;&quot;colorSecundario&quot;&gt;
+                    {{
+                    suggestedPlan?.cost | currency: utilService.curr :  &#x27;symbol-narrow&#x27;
+                    }}
+                  &lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                  &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+                    &lt;h5&gt;
+                      &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+                      &gt;&lt;span&gt;{{ suggestedPlan?.duration_months }}&lt;/span&gt;
+                      {{ &quot;label.months&quot; | translate }}
+                    &lt;/h5&gt;
+                    &lt;h5 *ngIf&#x3D;&quot;suggestedPlan?.access_scanner&quot;&gt;
+                      &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                      {{ &quot;label.licence.one_shot&quot; | translate }}:
+                      &lt;span *ngIf&#x3D;&quot;suggestedPlan?.limit_credits &gt; 0&quot;&gt;{{suggestedPlan?.limit_credits}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.limit_credits &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                    &lt;/h5&gt;
+                    &lt;h5 *ngIf&#x3D;&quot;suggestedPlan?.access_monitor&quot;&gt;
+                      &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                      {{ &quot;label.licence.monitor&quot; | translate }}:
+                      &lt;span
+                        *ngIf&#x3D;&quot;suggestedPlan?.total_monitor_licenses &gt; 0&quot;&gt;{{suggestedPlan?.total_monitor_licenses}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.total_monitor_licenses &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+
+                    &lt;/h5&gt;
+                    &lt;h5 *ngIf&#x3D;&quot;suggestedPlan?.access_transforma&quot;&gt;
+                      &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                      {{ &quot;label.licence.transform&quot; | translate }}:
+                      &lt;span
+                        *ngIf&#x3D;&quot;suggestedPlan?.total_transforma_licenses &gt; 0&quot;&gt;{{suggestedPlan?.total_transforma_licenses}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.total_transforma_licenses &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                    &lt;/h5&gt;
+                    &lt;h5 *ngIf&#x3D;&quot;suggestedPlan?.access_deindexation&quot;&gt;
+                      &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                      {{ &quot;label.licence.deindexing&quot; | translate }}:
+                      &lt;span
+                        *ngIf&#x3D;&quot;suggestedPlan?.max_url_to_deindexate &gt; 0&quot;&gt;{{suggestedPlan?.max_url_to_deindexate}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.max_url_to_deindexate &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                    &lt;/h5&gt;
+
+                    &lt;h5&gt;
+                      &lt;i
+                        class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;
+                      &gt;&lt;/i
+                      &gt;{{ &quot;label.plan.countries&quot; | translate }}:
+                      {{ suggestedPlan?.max_countries }}
+                    &lt;/h5&gt;
+                    &lt;h5&gt;
+                      &lt;i class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;&gt;&lt;/i
+                      &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+                      &lt;span *ngIf&#x3D;&quot;suggestedPlan?.max_keywords &gt; 0&quot;&gt;{{suggestedPlan?.max_keywords}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.max_keywords &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+
+                    &lt;/h5&gt;
+                    &lt;h5&gt;
+                      &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+                      &gt;{{ &quot;label.plan.pages&quot; | translate }}:
+                      &lt;span *ngIf&#x3D;&quot;suggestedPlan?.max_search_page &gt; 0&quot;&gt;{{suggestedPlan?.max_search_page}}&lt;/span&gt;&lt;span
+                      *ngIf&#x3D;&quot;suggestedPlan?.max_search_page &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                    &lt;/h5&gt;
+                    &lt;h5&gt;
+                      &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+                      &gt;{{ &quot;label.sections&quot; | translate }}:
+                      {{suggestedPlan?.sections_to_search}}
+                    &lt;/h5&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                  &lt;button
+                    class&#x3D;&quot;glow-on-hover&quot;
+                    (click)&#x3D;&quot;changePlan(suggestedPlan)&quot;
+                  &gt;
+                    {{ &quot;button.hire&quot; | translate }}
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/mat-expansion-panel&gt;
+            &lt;/div&gt;
+
+            &lt;!--if there is not suggest--&gt;
+
+            &lt;div class&#x3D;&quot;row centrado paddingTop15&quot; *ngIf&#x3D;&quot;info?.plansCustomized.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+              &lt;mat-expansion-panel hideToggle
+                                   class&#x3D;&quot;
+                  gn-box
+                  paddingTop15
+                  borderRadius10
+                  tracking-in-expand
+                  example-full-width
+                &quot;
+                                   expanded
+              &gt;
+                &lt;mat-expansion-panel-header&gt;
+                  &lt;mat-panel-title&gt;
+                    &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+                      &lt;strong&gt;{{ &quot;title.plan_three&quot; | translate }}&lt;/strong&gt;
+                    &lt;/h4&gt;
+                  &lt;/mat-panel-title&gt;
+                &lt;/mat-expansion-panel-header&gt;
+
+                &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                  &lt;h5&gt;{{ &quot;label.custom&quot; | translate }}&lt;/h5&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                  &lt;button class&#x3D;&quot;glow-on-hover&quot; (click)&#x3D;&quot;customPlan()&quot;&gt;
+                    {{ &quot;button.ask_for&quot; | translate }}
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/mat-expansion-panel&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;info?.programmedToNextPayment&quot;&gt;
+            &lt;h3 class&#x3D;&quot;colorSecundario centrado&quot;&gt;{{&#x27;error.programmed_next_payment&#x27; | translate}}&lt;/h3&gt;
+          &lt;/div&gt;
+        &lt;/mat-step&gt;
+
+        &lt;!--all plans --&gt;
+        &lt;mat-step label&#x3D;&quot;{{ &#x27;label.all&#x27; | translate }}&quot; state&#x3D;&quot;all&quot; *ngIf&#x3D;&quot;!info?.programmedToNextPayment&quot;&gt;
+          &lt;div *ngFor&#x3D;&quot;let detailPlan of info?.plansAvailables&quot;&gt;
+            &lt;div *ngIf&#x3D;&quot;!detailPlan.customized&quot;&gt;
+              &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+                &lt;mat-expansion-panel
+                  hideToggle
+                  class&#x3D;&quot;
+                    gn-box
+                    paddingTop15
+                    borderRadius10
+                    tracking-in-expand
+                    example-full-width
+                  &quot;
+                  expanded
+                &gt;
+                  &lt;mat-expansion-panel-header&gt;
+                    &lt;mat-panel-title&gt;
+                      &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+                        &lt;strong&gt;{{ detailPlan.name }}&lt;/strong&gt;
+                      &lt;/h4&gt;
+                    &lt;/mat-panel-title&gt;
+                  &lt;/mat-expansion-panel-header&gt;
+                  &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                    &lt;h2 class&#x3D;&quot;colorSecundario&quot;&gt;
+                      {{ detailPlan?.cost
+                      | currency: utilService.curr :  &#x27;symbol-narrow&#x27;}}
+                    &lt;/h2&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+
+                    &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+                      &lt;h5&gt;
+                        &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+                        &gt;&lt;span&gt;{{ detailPlan?.duration_months }}&lt;/span&gt;
+                        {{ &quot;label.months&quot; | translate }}
+                      &lt;/h5&gt;
+                      &lt;h5 *ngIf&#x3D;&quot;detailPlan?.access_scanner&quot;&gt;
+                        &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                        {{ &quot;label.licence.one_shot&quot; | translate }}:
+                        &lt;span *ngIf&#x3D;&quot;detailPlan?.limit_credits &gt; 0&quot;&gt;{{detailPlan?.limit_credits}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.limit_credits &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5 *ngIf&#x3D;&quot;detailPlan?.access_monitor&quot;&gt;
+                        &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                        {{ &quot;label.licence.monitor&quot; | translate }}:
+                        &lt;span
+                          *ngIf&#x3D;&quot;detailPlan?.total_monitor_licenses &gt; 0&quot;&gt;{{detailPlan?.total_monitor_licenses}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.total_monitor_licenses &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5 *ngIf&#x3D;&quot;detailPlan?.access_transforma&quot;&gt;
+                        &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                        {{ &quot;label.licence.transform&quot; | translate }}:
+                        &lt;span
+                          *ngIf&#x3D;&quot;detailPlan?.total_transforma_licenses &gt; 0&quot;&gt;{{detailPlan?.total_transforma_licenses}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.total_transforma_licenses &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5 *ngIf&#x3D;&quot;detailPlan?.access_deindexation&quot;&gt;
+                        &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+                        {{ &quot;label.licence.deindexing&quot; | translate }}:
+                        &lt;span *ngIf&#x3D;&quot;detailPlan?.max_url_to_deindexate &gt; 0&quot;&gt;{{detailPlan?.max_url_to_deindexate}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.max_url_to_deindexate &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5&gt;
+                        &lt;i
+                          class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;
+                        &gt;&lt;/i
+                        &gt;{{ &quot;label.plan.countries&quot; | translate }}:
+                        &lt;span *ngIf&#x3D;&quot;detailPlan?.max_countries &gt; 0&quot;&gt;{{detailPlan?.max_countries}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.max_countries &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+
+                      &lt;/h5&gt;
+                      &lt;h5&gt;
+                        &lt;i
+                          class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;
+                        &gt;&lt;/i
+                        &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+                        &lt;span *ngIf&#x3D;&quot;detailPlan?.max_keywords &gt; 0&quot;&gt;{{detailPlan?.max_keywords}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.max_keywords &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5&gt;
+                        &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+                        &gt;{{ &quot;label.plan.pages&quot; | translate }}:
+                        &lt;span *ngIf&#x3D;&quot;detailPlan?.max_search_page &gt; 0&quot;&gt;{{detailPlan?.max_search_page}}&lt;/span&gt;&lt;span
+                        *ngIf&#x3D;&quot;detailPlan?.max_search_page &lt;&#x3D; 0&quot;&gt;0&lt;/span&gt;
+                      &lt;/h5&gt;
+                      &lt;h5&gt;
+                        &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+                        &gt;{{ &quot;label.sections&quot; | translate }}:
+                        {{detailPlan?.sections_to_search}}
+
+                      &lt;/h5&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                    &lt;button
+                      class&#x3D;&quot;glow-on-hover&quot;
+                      (click)&#x3D;&quot;changePlan(detailPlan)&quot;
+                    &gt;
+                      {{ &quot;button.hire&quot; | translate }}
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/mat-expansion-panel&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;row paddingTop15&quot;&gt;
+            &lt;mat-expansion-panel
+              hideToggle
+              class&#x3D;&quot;
+                gn-box
+                paddingTop15
+                borderRadius10
+                tracking-in-expand
+                example-full-width
+              &quot;
+            &gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+                    &lt;strong&gt;{{ &quot;title.plan_three&quot; | translate }}&lt;/strong&gt;
+                  &lt;/h4&gt;
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+
+              &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                &lt;h5&gt;{{ &quot;label.custom&quot; | translate }}&lt;/h5&gt;
+              &lt;/div&gt;
+
+              &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+                &lt;button class&#x3D;&quot;glow-on-hover&quot; (click)&#x3D;&quot;customPlan()&quot;&gt;
+                  {{ &quot;button.ask_for&quot; | translate }}
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+          &lt;/div&gt;
+        &lt;/mat-step&gt;
+
+        &lt;!-- Icon overrides. --&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;suggested&quot;&gt;
+          &lt;i class&#x3D;&quot;las la-smile-wink colorGris&quot;&gt;&lt;/i&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;all&quot;&gt;
+          &lt;i class&#x3D;&quot;las la-file-invoice colorGris&quot;&gt;&lt;/i&gt;
+        &lt;/ng-template&gt;
+      &lt;/mat-horizontal-stepper&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row centrado paddingBottom40&quot;&gt;
+    &lt;a (click)&#x3D;&quot;closeSidebar()&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+      {{ &quot;button.cancel&quot; | translate }}&lt;/a
+    &gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sidebar.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="sidebar-wrapper" id="sidebar">  <div class="row">    <div class="col-md-12 centrado padding30 backgorundPrincipal">      <h2 class="colorBlanco">        <i class="las la-file-invoice colorGris espIz15 espDer5"></i>        {{ "title.plans" | translate }}      </h2>    </div>  </div>  <div class="row padding15">    <div class="col-md-12">      <mat-horizontal-stepper>        <!--Step to show current plan and suggested in all plan and in actual category-->        <mat-step label="{{ \'label.suggested\' | translate }}" state="suggested">          <!--current plan-->          <div class="col-md-12 centrado colorGris">            <h5>{{ "title.current_plan" | translate }}</h5>          </div>          <div class="row">            <mat-expansion-panel hideToggle                                 class="              gn-box              paddingTop15              borderRadius10              tracking-in-expand              example-full-width            "                                 expanded>              <mat-expansion-panel-header>                <mat-panel-title>                  <h4 class="colorPrincipal">                    <strong>{{ info?.actualPlan?.name }}</strong>                  </h4>                </mat-panel-title>              </mat-expansion-panel-header>              <div class="col-md-12 centrado">                <h2 class="colorSecundario">                  {{ info?.actualPlan?.cost  | currency: utilService.curr :  \'symbol-narrow\'}}                </h2>              </div>              <div class="col-md-12">                <!--Actual Plan-->                <div class="generic_feature_list">                  <h5>                    <i class="las la-calendar-alt colorAzul espDer5"></i                    ><span>{{ info?.actualPlan?.duration_months }}</span>                    {{ "label.months" | translate }}                  </h5>                  <h5 *ngIf="info?.actualPlan?.access_scanner">                    <i class="las la-check-circle colorVerde"></i>                    {{ "label.licence.one_shot" | translate }}:                    <span *ngIf="info?.actualPlan?.limit_credits  > 0">{{info?.actualPlan?.limit_credits }}</span><span                    *ngIf="info?.actualPlan?.limit_credits  <= 0">0</span>                  </h5>                  <h5 *ngIf="info?.actualPlan?.access_monitor">                    <i class="las la-check-circle colorVerde"></i>                    {{ "label.licence.monitor" | translate }}:                    <span                      *ngIf="info?.actualPlan?.total_monitor_licenses  > 0">{{info?.actualPlan?.total_monitor_licenses }}</span><span                    *ngIf="info?.actualPlan?.total_monitor_licenses  <= 0">0</span>                  </h5>                  <h5 *ngIf="info?.actualPlan?.access_transforma">                    <i class="las la-check-circle colorVerde"></i>                    {{ "label.licence.transform" | translate }}:                    <span                      *ngIf="info?.actualPlan?.total_transforma_licenses  > 0">{{info?.actualPlan?.total_transforma_licenses }}</span><span                    *ngIf="info?.actualPlan?.total_transforma_licenses  <= 0">0</span>                  </h5>                  <h5 *ngIf="info?.actualPlan?.access_deindexation">                    <i class="las la-check-circle colorVerde"></i>                    {{ "label.licence.deindexing" | translate }}:                    <span                      *ngIf="info?.actualPlan?.max_url_to_deindexate  > 0">{{info?.actualPlan?.max_url_to_deindexate }}</span><span                    *ngIf="info?.actualPlan?.max_url_to_deindexate  <= 0">0</span>                  </h5>                  <h5>                    <i class="las la-globe-americas colorSecundario espDer5"></i                    >{{ "label.plan.countries" | translate }}:                    <span *ngIf="info?.actualPlan?.max_countries  > 0">{{info?.actualPlan?.max_countries }}</span><span                    *ngIf="info?.actualPlan?.max_countries  <= 0">0</span>                  </h5>                  <h5>                    <i class="las la-search-plus colorSecundario espDer5"></i                    >{{ "label.plan.keywords" | translate }}:                    <span *ngIf="info?.actualPlan?.max_keywords  > 0">{{info?.actualPlan?.max_keywords }}</span><span                    *ngIf="info?.actualPlan?.max_keywords  <= 0">0</span>                  </h5>                  <h5>                    <i class="las la-file colorSecundario espDer5"></i                    >{{ "label.plan.pages" | translate }}:                    <span                      *ngIf="info?.actualPlan?.max_search_page  > 0">{{info?.actualPlan?.max_search_page }}</span><span                    *ngIf="info?.actualPlan?.max_search_page  <= 0">0</span>                  </h5>                  <h5>                    <i class="fab fa-google colorSecundario espDer5"></i                    >{{ "label.sections" | translate }}:                    {{info?.actualPlan?.sections_to_search }}                  </h5>                </div>              </div>            </mat-expansion-panel>          </div>          <div *ngIf="!info?.programmedToNextPayment">            <!--suggested-->            <div class="col-md-12 centrado colorGris">              <h5>{{ "title.we_suggest" | translate }}</h5>            </div>            <div class="col-md-12 centrado">              <i class="las la-hand-point-down colorSecundario fa-3x"></i>            </div>            <!--suggested in all plans-->            <div class="row paddingTop15" *ngFor="let suggestedPlan of info?.plansCustomized">              <mat-expansion-panel hideToggle                                   class="                  gn-box                  paddingTop15                  borderRadius10                  tracking-in-expand                  example-full-width                ">                <mat-expansion-panel-header>                  <mat-panel-title>                    <h4 class="colorPrincipal ">                      <strong>{{ suggestedPlan?.name }}</strong>                    </h4>                  </mat-panel-title>                </mat-expansion-panel-header>                <div class="col-md-12 centrado ">                  <h2 class="colorSecundario">                    {{                    suggestedPlan?.cost | currency: utilService.curr :  \'symbol-narrow\'                    }}                  </h2>                </div>                <div class="col-md-12">                  <div class="generic_feature_list">                    <h5>                      <i class="las la-calendar-alt colorAzul espDer5"></i                      ><span>{{ suggestedPlan?.duration_months }}</span>                      {{ "label.months" | translate }}                    </h5>                    <h5 *ngIf="suggestedPlan?.access_scanner">                      <i class="las la-check-circle colorVerde"></i>                      {{ "label.licence.one_shot" | translate }}:                      <span *ngIf="suggestedPlan?.limit_credits > 0">{{suggestedPlan?.limit_credits}}</span><span                      *ngIf="suggestedPlan?.limit_credits <= 0">0</span>                    </h5>                    <h5 *ngIf="suggestedPlan?.access_monitor">                      <i class="las la-check-circle colorVerde"></i>                      {{ "label.licence.monitor" | translate }}:                      <span                        *ngIf="suggestedPlan?.total_monitor_licenses > 0">{{suggestedPlan?.total_monitor_licenses}}</span><span                      *ngIf="suggestedPlan?.total_monitor_licenses <= 0">0</span>                    </h5>                    <h5 *ngIf="suggestedPlan?.access_transforma">                      <i class="las la-check-circle colorVerde"></i>                      {{ "label.licence.transform" | translate }}:                      <span                        *ngIf="suggestedPlan?.total_transforma_licenses > 0">{{suggestedPlan?.total_transforma_licenses}}</span><span                      *ngIf="suggestedPlan?.total_transforma_licenses <= 0">0</span>                    </h5>                    <h5 *ngIf="suggestedPlan?.access_deindexation">                      <i class="las la-check-circle colorVerde"></i>                      {{ "label.licence.deindexing" | translate }}:                      <span                        *ngIf="suggestedPlan?.max_url_to_deindexate > 0">{{suggestedPlan?.max_url_to_deindexate}}</span><span                      *ngIf="suggestedPlan?.max_url_to_deindexate <= 0">0</span>                    </h5>                    <h5>                      <i                        class="las la-globe-americas colorSecundario espDer5"                      ></i                      >{{ "label.plan.countries" | translate }}:                      {{ suggestedPlan?.max_countries }}                    </h5>                    <h5>                      <i class="las la-search-plus colorSecundario espDer5"></i                      >{{ "label.plan.keywords" | translate }}:                      <span *ngIf="suggestedPlan?.max_keywords > 0">{{suggestedPlan?.max_keywords}}</span><span                      *ngIf="suggestedPlan?.max_keywords <= 0">0</span>                    </h5>                    <h5>                      <i class="las la-file colorSecundario espDer5"></i                      >{{ "label.plan.pages" | translate }}:                      <span *ngIf="suggestedPlan?.max_search_page > 0">{{suggestedPlan?.max_search_page}}</span><span                      *ngIf="suggestedPlan?.max_search_page <= 0">0</span>                    </h5>                    <h5>                      <i class="fab fa-google colorSecundario espDer5"></i                      >{{ "label.sections" | translate }}:                      {{suggestedPlan?.sections_to_search}}                    </h5>                  </div>                </div>                <div class="col-md-12 centrado">                  <button                    class="glow-on-hover"                    (click)="changePlan(suggestedPlan)"                  >                    {{ "button.hire" | translate }}                  </button>                </div>              </mat-expansion-panel>            </div>            <!--if there is not suggest-->            <div class="row centrado paddingTop15" *ngIf="info?.plansCustomized.length === 0">              <mat-expansion-panel hideToggle                                   class="                  gn-box                  paddingTop15                  borderRadius10                  tracking-in-expand                  example-full-width                "                                   expanded              >                <mat-expansion-panel-header>                  <mat-panel-title>                    <h4 class="colorPrincipal">                      <strong>{{ "title.plan_three" | translate }}</strong>                    </h4>                  </mat-panel-title>                </mat-expansion-panel-header>                <div class="col-md-12">                  <h5>{{ "label.custom" | translate }}</h5>                </div>                <div class="col-md-12 centrado">                  <button class="glow-on-hover" (click)="customPlan()">                    {{ "button.ask_for" | translate }}                  </button>                </div>              </mat-expansion-panel>            </div>          </div>          <div *ngIf="info?.programmedToNextPayment">            <h3 class="colorSecundario centrado">{{\'error.programmed_next_payment\' | translate}}</h3>          </div>        </mat-step>        <!--all plans -->        <mat-step label="{{ \'label.all\' | translate }}" state="all" *ngIf="!info?.programmedToNextPayment">          <div *ngFor="let detailPlan of info?.plansAvailables">            <div *ngIf="!detailPlan.customized">              <div class="row paddingTop15">                <mat-expansion-panel                  hideToggle                  class="                    gn-box                    paddingTop15                    borderRadius10                    tracking-in-expand                    example-full-width                  "                  expanded                >                  <mat-expansion-panel-header>                    <mat-panel-title>                      <h4 class="colorPrincipal">                        <strong>{{ detailPlan.name }}</strong>                      </h4>                    </mat-panel-title>                  </mat-expansion-panel-header>                  <div class="col-md-12 centrado">                    <h2 class="colorSecundario">                      {{ detailPlan?.cost                      | currency: utilService.curr :  \'symbol-narrow\'}}                    </h2>                  </div>                  <div class="col-md-12">                    <div class="generic_feature_list">                      <h5>                        <i class="las la-calendar-alt colorAzul espDer5"></i                        ><span>{{ detailPlan?.duration_months }}</span>                        {{ "label.months" | translate }}                      </h5>                      <h5 *ngIf="detailPlan?.access_scanner">                        <i class="las la-check-circle colorVerde"></i>                        {{ "label.licence.one_shot" | translate }}:                        <span *ngIf="detailPlan?.limit_credits > 0">{{detailPlan?.limit_credits}}</span><span                        *ngIf="detailPlan?.limit_credits <= 0">0</span>                      </h5>                      <h5 *ngIf="detailPlan?.access_monitor">                        <i class="las la-check-circle colorVerde"></i>                        {{ "label.licence.monitor" | translate }}:                        <span                          *ngIf="detailPlan?.total_monitor_licenses > 0">{{detailPlan?.total_monitor_licenses}}</span><span                        *ngIf="detailPlan?.total_monitor_licenses <= 0">0</span>                      </h5>                      <h5 *ngIf="detailPlan?.access_transforma">                        <i class="las la-check-circle colorVerde"></i>                        {{ "label.licence.transform" | translate }}:                        <span                          *ngIf="detailPlan?.total_transforma_licenses > 0">{{detailPlan?.total_transforma_licenses}}</span><span                        *ngIf="detailPlan?.total_transforma_licenses <= 0">0</span>                      </h5>                      <h5 *ngIf="detailPlan?.access_deindexation">                        <i class="las la-check-circle colorVerde"></i>                        {{ "label.licence.deindexing" | translate }}:                        <span *ngIf="detailPlan?.max_url_to_deindexate > 0">{{detailPlan?.max_url_to_deindexate}}</span><span                        *ngIf="detailPlan?.max_url_to_deindexate <= 0">0</span>                      </h5>                      <h5>                        <i                          class="las la-globe-americas colorSecundario espDer5"                        ></i                        >{{ "label.plan.countries" | translate }}:                        <span *ngIf="detailPlan?.max_countries > 0">{{detailPlan?.max_countries}}</span><span                        *ngIf="detailPlan?.max_countries <= 0">0</span>                      </h5>                      <h5>                        <i                          class="las la-search-plus colorSecundario espDer5"                        ></i                        >{{ "label.plan.keywords" | translate }}:                        <span *ngIf="detailPlan?.max_keywords > 0">{{detailPlan?.max_keywords}}</span><span                        *ngIf="detailPlan?.max_keywords <= 0">0</span>                      </h5>                      <h5>                        <i class="las la-file colorSecundario espDer5"></i                        >{{ "label.plan.pages" | translate }}:                        <span *ngIf="detailPlan?.max_search_page > 0">{{detailPlan?.max_search_page}}</span><span                        *ngIf="detailPlan?.max_search_page <= 0">0</span>                      </h5>                      <h5>                        <i class="fab fa-google colorSecundario espDer5"></i                        >{{ "label.sections" | translate }}:                        {{detailPlan?.sections_to_search}}                      </h5>                    </div>                  </div>                  <div class="col-md-12 centrado">                    <button                      class="glow-on-hover"                      (click)="changePlan(detailPlan)"                    >                      {{ "button.hire" | translate }}                    </button>                  </div>                </mat-expansion-panel>              </div>            </div>          </div>          <div class="row paddingTop15">            <mat-expansion-panel              hideToggle              class="                gn-box                paddingTop15                borderRadius10                tracking-in-expand                example-full-width              "            >              <mat-expansion-panel-header>                <mat-panel-title>                  <h4 class="colorPrincipal">                    <strong>{{ "title.plan_three" | translate }}</strong>                  </h4>                </mat-panel-title>              </mat-expansion-panel-header>              <div class="col-md-12">                <h5>{{ "label.custom" | translate }}</h5>              </div>              <div class="col-md-12 centrado">                <button class="glow-on-hover" (click)="customPlan()">                  {{ "button.ask_for" | translate }}                </button>              </div>            </mat-expansion-panel>          </div>        </mat-step>        <!-- Icon overrides. -->        <ng-template matStepperIcon="suggested">          <i class="las la-smile-wink colorGris"></i>        </ng-template>        <ng-template matStepperIcon="all">          <i class="las la-file-invoice colorGris"></i>        </ng-template>      </mat-horizontal-stepper>    </div>  </div>  <div class="row centrado paddingBottom40">    <a (click)="closeSidebar()" class="third after colorGris">      {{ "button.cancel" | translate }}</a    >  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'SidebarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SidebarComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

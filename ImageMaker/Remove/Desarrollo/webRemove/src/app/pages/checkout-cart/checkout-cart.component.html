@@ -1,0 +1,41 @@
+<div class="container-fluid px-0">
+  <app-header *ngIf="showHeaderFooter"></app-header>
+
+  <!-- Contenido -->
+  <div class="row paddingTop40 backgroundWhite slide-in-blurred-bottom">
+    <div *ngIf="!showHeaderFooter" class="col-md-12 centrado">
+      <a class="navbar-brand" (click)="utilService.goToLogin()">
+        <img src="../../../assets/img/logo.png" class="logoInicial">
+      </a>
+    </div>
+    <div class="col-md-12">
+      <mat-horizontal-stepper class="demo-stepper" id="stepperCheckout" [linear]="isLineal" #stepperCheckout>
+        <mat-step label="{{'label.step.plans' | translate}}" state="plan" class="increaseFont">
+          <div id="generic_price_table">
+            <section>
+              <app-choose-plan [allPlans]="allPlans"
+                               (selectedPlan)="checkPlan($event)"></app-choose-plan>
+            </section>
+          </div>
+        </mat-step>
+
+        <mat-step label="{{'label.step.account' | translate}}" state="account">
+          <div class="row">
+            <app-new-account [stepperCheckout]="stepperCheckout" [plan]="suggestion?.plan" [suggestion]="suggestion"
+                             [params]="configParams"
+                             class="example-full-width" (paymentResult)="checkPayment($event)"></app-new-account>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+
+    <ng-template matStepperIcon="plan">
+      <i class="las la-file-invoice colorGris"></i>
+    </ng-template>
+    <ng-template matStepperIcon="account">
+      <i class="las la-user-plus colorGris"></i>
+    </ng-template>
+  </div>
+  <!--footer-->
+  <app-footer *ngIf="showHeaderFooter"></app-footer>
+</div>

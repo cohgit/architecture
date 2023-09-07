@@ -1,0 +1,50 @@
+<h2 mat-dialog-title><i class="las la-history colorGris espDer5"></i>{{'status.deindex' | translate}}</h2>
+<div mat-dialog-content>
+
+  <div class="container">
+    <div class="row">
+      <mat-vertical-stepper [linear]="isFalse" [selectedIndex]="totalItems"
+                            (selectionChange)="stepChanged($event);">
+        <mat-step *ngFor="let track of tracks; let index = index; let last = last;"
+                  completed>
+          <ng-template matStepLabel>{{ track?.comments | translate }} </ng-template>
+          <div class="row">
+            <div class="col-md-3">
+              <i class="{{ ICONS[track.status] ? ICONS[track.status] : ICONS.ESTADO_DEFAULT }} la-5x colorGris"></i>
+              <!--<i class="las la-info la-5x colorGris"></i>-->
+            </div>
+            <!--  <div class="col-md-3" *ngIf="!estado.hasApplied">
+                <i
+                  class="{{ ICONS[estado.estado.codigo] ? ICONS[estado.estado.codigo] : ICONS.ESTADO_DEFAULT }} iconosTrackingDesactivado fa-5x"></i>
+              </div>-->
+            <div class="col-md-9">
+              <div class="col-md-12">
+                <p><strong>{{'label.date' | translate}}: </strong>
+                  {{utilService.formatDate(track?.creation_date) | date:'short'}}</p>
+              </div>
+              <div class="col-md-12">
+                <p><strong>{{'status.deindex' | translate}}: </strong>
+                  {{'status.deindex.' + track?.status | translate}}</p>
+              </div>
+              <!--<div class="col-md-12">
+                <p><strong>{{'label.description' | translate}}: </strong>
+                  {{track?.comments + '_description' | translate}}</p>
+              </div>-->
+            </div>
+          </div>
+        </mat-step>
+
+        <ng-template matStepperIcon="edit">
+          <i class="fa fa-circle"></i>
+        </ng-template>
+
+        <ng-template matStepperIcon="done">
+          <i class="fa fa-check-circle"></i>
+        </ng-template>
+      </mat-vertical-stepper>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions class="centrado">
+  <button mat-dialog-close mat-raised-button tabindex="-1">Cerrar</button>
+</mat-dialog-actions>

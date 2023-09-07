@@ -1,0 +1,135 @@
+<div class="container-fluid ps-md-0" [ngClass]="this.checkParams.class">
+  <div class="row g-0">
+    <div class="col-md-8 col-lg-6 user_card">
+      <div class="row espDer15">
+        <div class="alinearDerecha paddingTop40">
+          <mat-form-field class="ng-autocomplete">
+            <mat-label><i class="las la-language fa-2x"></i></mat-label>
+            <mat-select
+              [(ngModel)]="language"
+              (selectionChange)="changeLanguage()"
+            >
+              <mat-option
+                *ngFor="let l of translateHelper.languages"
+                [value]="l"
+              >
+                {{ "lang." + l | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="login d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h1>{{ "title.welcome" | translate }}</h1>
+                  <h5 class="colorGris">{{ "message.login" | translate }}</h5>
+                </div>
+                <div class="col-md-3 col-lg-4 mx-auto">
+                  <img src="../../assets/img/isotipo2.png" />
+                </div>
+              </div>
+              <!-- Sign In Form -->
+              <form>
+                <div class="form-floating mb-3">
+                  <mat-form-field class="example-full-width">
+                    <input
+                      [(ngModel)]="loginForm.mail"
+                      type="email"
+                      name="email"
+                      matInput
+                      placeholder="{{ 'label.email' | translate }} "
+                      required
+                    />
+                    <i class="las la-at colorGris" matSuffix></i>
+                  </mat-form-field>
+                </div>
+                <div class="form-floating mb-3">
+                  <mat-form-field class="example-full-width">
+                    <input
+                      [(ngModel)]="loginForm.password"
+                      [type]="hide ? 'password' : 'text'"
+                      name="password"
+                      matInput
+                      placeholder="{{ 'label.password' | translate }} "
+                      required
+                    />
+
+                    <i
+                      class="las la-eye colorGris"
+                      matSuffix
+                      (click)="hide = !hide"
+                    ></i>
+                  </mat-form-field>
+                </div>
+                <div class="form-floating mb-3"></div>
+              </form>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="col-md-3 left">
+                    <div class="left">
+                      <h5>
+                        <a
+                          routerLink="/client/checkout"
+                          class="third after"
+                          *ngIf="this.checkParams.CLIENT"
+                          >{{ "button.register" | translate }}</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6 floatRight">
+                    <h5 class="right">
+                      <strong
+                        ><a
+                          routerLink="/{{
+                            this.checkParams.service_key
+                          }}/forgotKey"
+                          class="third after espIz15"
+                          >{{ "button.forgot.password" | translate }}</a
+                        ></strong
+                      >
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row centrado paddingTop25">
+                <a
+                  (click)="login(loginForm)"
+                  class="glow-on-hover padding15 backgorundPrincipal padding20"
+                  ><i class="fas fa-sign-in-alt"></i>
+                  {{ "button.login" | translate }}</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+      <div class="alinearDerecha paddingTop40" *ngIf="!this.checkParams.CLIENT">
+        <h6>v-2.0.2</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="area" >
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div >-->

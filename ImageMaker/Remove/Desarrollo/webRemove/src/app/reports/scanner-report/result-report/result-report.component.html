@@ -1,0 +1,112 @@
+<div class="row ">
+  <div *ngFor="let result of infoResults" class="paddingTop15">
+    <mat-card
+      *ngIf="result.snippetsWebs.length > 0 || result.snippetsNews.length > 0 || result.snippetsImages.length > 0">
+      <mat-card-header>
+        <strong> {{result?.country?.name}} -  {{'label.scanner.keywords' | translate}}
+          : {{result.keyword?.word}}</strong>
+      </mat-card-header>
+      <h5 class="floatRight colorGris padding5" *ngIf="result.search_type ==='web'">{{result.total_last_scan}}
+        {{'label.results'
+          | translate}}</h5>
+      <h5 class="floatRight colorGris padding5" *ngIf="result.search_type ==='images'">{{result.total_last_scan}}
+        {{'label.results' | translate}}</h5>
+      <h5 class="floatRight colorGris padding5" *ngIf="result.search_type ==='news'">{{result.total_last_scan}}
+        {{'label.results' | translate}}</h5>
+      <mat-card-content>
+        <div class="row paddingTop15">
+          <div class="col-md-6" *ngFor="let snippet of result.snippetsWebs;  let index = index"
+               [ngClass]="checkLengthAll(result.snippetsWebs)">
+            <div class="col-md-12 reduceFont">
+              {{'label.page' | translate}}: {{snippet.tracking[snippet.tracking.length - 1].page}} -
+              {{'label.position' | translate}}: {{snippet.tracking[snippet.tracking.length - 1].position}} - <cite
+              class="gs-url reduceFont">{{snippet.domain}}</cite>
+            </div>
+            <div class="col-md-12 ">
+              <a class="gs-title reduceFont" target="_blank" routerLink="{{snippet.link}}">{{snippet.title}}</a>
+            </div>
+
+            <div class="col-md-12 ">
+              <span class="gs-date reduceFont" *ngIf="snippet.date">{{snippet.date}} </span> <span
+              class="gs-content reduceFont">{{snippet.snippet}}</span>
+            </div>
+            <div class="col-md-12 ">
+              <mat-chip-list>
+                <mat-chip color="accent"
+                          *ngFor="let url of snippet.trackingWords">
+                  <span [innerHTML]="url.feelingObj | feelingColors"></span> {{url.word}}
+                </mat-chip>
+              </mat-chip-list>
+            </div>
+            <div class="margin10"></div>
+          </div>
+        </div>
+        <div class="margin10"></div>
+        <div class="row paddingTop15">
+          <div class="col-md-4 gn-box padding5" *ngFor="let snippet of result.snippetsNews;  let index = index"
+               [ngClass]="checkLengthNews(result.snippetsNews)">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="col-md-9">
+                  Pág: {{snippet.tracking[snippet.tracking.length - 1].page}} -
+                  Pos: {{snippet.tracking[snippet.tracking.length - 1].position}} - <cite
+                  class="gn-url">{{snippet.domain}}</cite>
+                </div>
+                <div class="col-md-9">
+                  <a class="gn-title reduceFont" target="_blank" routerLink="{{snippet.link}}">{{snippet.title}}</a>
+                </div>
+
+                <div class="col-md-9">
+                  <span class="gs-content reduceFont">{{snippet.snippet}}</span>
+                </div>
+                <div class="col-md-9">
+                  <span class="gn-date" *ngIf="snippet.date">{{snippet.date}} </span>
+                </div>
+                <div class="col-md-9">
+                  <mat-chip-list>
+                    <mat-chip color="accent"
+                              *ngFor="let url of snippet.trackingWords">
+                      <span [innerHTML]="url.feelingObj | feelingColors"></span> {{url?.word}}
+                    </mat-chip>
+                  </mat-chip-list>
+                </div>
+              </div>
+              <div class="col-md-4 centrado">
+                <img class="gn-img" src="{{snippet.thumbnail}}" loading="lazy">
+              </div>
+            </div>
+            <div class="margin10"></div>
+          </div>
+
+        </div>
+        <div class="margin10"></div>
+        <div class="row paddingTop15" *ngIf="result.snippetsImages.length !==0">
+          <div class="col-md-12 centrado colorGris">
+            {{'message.report.no_images'| translate}}
+          </div>
+          <!-- <div class="col-md-3 paddingTop15" *ngFor="let snippet of result.snippetsImages;  let index = index">
+                 <mat-card >
+                   <mat-card-header>
+                     <mat-card-subtitle><a target="_blank" href="{{snippet.link}}">{{snippet.domain}}</a>
+                     </mat-card-subtitle>
+                   </mat-card-header>
+                   <img mat-card-image src="{{snippet.image}}"
+                        class="gi-img">
+                   <mat-card-content>
+                     <span class="gn-date">{{snippet.title}}</span>
+                     <hr>
+                     <mat-chip-list>
+                       <mat-chip color="accent"
+                                 *ngFor="let url of snippet.trackingWords">
+                         <span [innerHTML]="url.feelingObj | feelingColors"></span> {{url?.word}}
+                       </mat-chip>
+                     </mat-chip-list>
+                   </mat-card-content>
+                 </mat-card>
+           </div>-->
+          <div class="margin10"></div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

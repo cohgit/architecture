@@ -1,0 +1,274 @@
+<div class="row paddingTop15">
+  <div class="row content-card">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h2>{{ "title.help" | translate }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-tab-group animationDuration="1000ms">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <i class="las la-handshake la-2x colorSecundario espDer15"></i>
+          {{ "menu.welcome" | translate }}
+        </ng-template>
+
+        <div class="col-md-12 centrado">
+          <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" />
+              </div>
+              <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" />
+              </div>
+              <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <i class="las la-question-circle la-2x colorSecundario espDer15"></i>
+          {{ "tittle.faq_doubts" | translate }}
+        </ng-template>
+        <div class="col-12">
+          <h3 class="padding10">
+            {{ "tittle.faq_doubts_description" | translate }}
+          </h3>
+          <mat-accordion multi>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.services" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.services_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.elimination" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.elimination_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.deindex" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.deindex_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.request" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.request_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.european" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.european_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.services_company" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.services_company_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.services_person" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.services_person_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.google" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.google_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.warranty" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.warranty_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.content" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.content_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.duration" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.duration_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title> {{ "faq.type" | translate }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.type_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.sections" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.sections_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.alert" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.alert_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "faq.watch" | translate }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.watch_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title> {{ "faq.new" | translate }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-md-12">
+                  {{ "faq.new_description" | translate }}
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <i class="las la-video la-2x colorSecundario espDer15"></i>
+          {{ "label.tutorials" | translate }}
+        </ng-template>
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

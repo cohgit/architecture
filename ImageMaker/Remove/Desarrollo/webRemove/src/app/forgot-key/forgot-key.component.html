@@ -1,0 +1,83 @@
+<div class="container-fluid ps-md-0" [ngClass]="isClient ? 'login-body' : 'login-body-admin'">
+  <div class="row g-0">
+    <div class="col-md-8 col-lg-6 user_card">
+      <div class="row espDer15">
+        <div class="alinearDerecha paddingTop40 ">
+          <mat-form-field class="ng-autocomplete">
+            <mat-label><i class="las la-language fa-2x"></i></mat-label>
+            <mat-select [(ngModel)]="language" (selectionChange)="changeLanguage()">
+              <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+                {{'lang.' + l | translate}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="login d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto ">
+              <div class="row ">
+                <div class="col-md-9 col-lg-8 mx-auto ">
+                  <h1>{{"title.restore" | translate}}</h1>
+                  <h5 class="colorGris">{{'title.restore_instruction' | translate}}</h5>
+                </div>
+                <div class="col-md-3 col-lg-4 mx-auto ">
+                  <img src="../../assets/img/isotipo2.png"/>
+                </div>
+              </div>
+              <!-- Sign In Form -->
+              <form #forgotForm="ngForm" (ngSubmit)="forgotForm.form.valid">
+                <div class="form-floating mb-3">
+                  <mat-form-field class="example-full-width">
+                    <input [(ngModel)]="email" name="email" matInput #mail="ngModel"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                           placeholder="{{'label.email' | translate}}" type="email" required>
+                    <i class="las la-at colorGris" matSuffix></i>
+                  </mat-form-field>
+
+                  <div *ngIf="mail.errors?.required && forgotForm.submitted">
+                    <h5 class="colorRojo"><i
+                      class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}</h5>
+                  </div>
+                  <div *ngIf="mail.errors?.pattern && forgotForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle  espDer5"></i>{{'error.invalid.email' | translate}}</h5>
+                  </div>
+                </div>
+
+
+              </form>
+
+              <div class="row centrado paddingTop15" *ngIf="!showGoLogin">
+                <button (click)="restoreKey(forgotForm)" class="glow-on-hover backgroundSecundary espIz15 padding20"
+                        type="submit"
+                        tabindex="1">{{'button.restorepass' | translate}}</button>
+
+              </div>
+              <div class="row centrado padding20" *ngIf="showGoLogin">
+                <a (click)="goLogin()">{{ "message.go_login" | translate }}</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+  </div>
+</div>
+<div class="area">
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

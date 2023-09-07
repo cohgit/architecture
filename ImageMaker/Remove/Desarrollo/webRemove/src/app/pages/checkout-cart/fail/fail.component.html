@@ -1,0 +1,60 @@
+<div class="row paddingTop15">
+  <div class="row content-card minheight500 centrado">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <img src="../../assets/img/logo.png" alt="Remove Group" class="logoInicial">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2 top20m">
+          <div class="row ">
+            <div class="col-md-4 col-sm-6">
+              <mat-form-field class="ng-autocomplete">
+                <mat-label><i class="las la-language fa-2x"></i></mat-label>
+                <mat-select [(ngModel)]="language" (selectionChange)="changeLanguage()">
+                  <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+                    {{'lang.' + l | translate}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="row  padding20">
+        <div class="col-md-12">
+          <i class="las la-times-circle la-5x colorRojo padding15" title="{{'tooltip.remove' | translate}}"> </i>
+          <h1 class="colorRojo">{{'message.fail.payment' | translate}}</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row centrado padding20">
+        <a routerLink="/client/checkout">{{'message.go_checkout' | translate}}</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--<div class="area" >
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div >-->

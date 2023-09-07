@@ -1,0 +1,26 @@
+<div class="container-fluid px-0">
+  <app-header></app-header>
+
+  <!--datos de contacto-->
+  <div class="row paddingTop80 backgroundLightGray">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <h4 class="colorSecundario"><strong>se puede cambiar por otro texto </strong></h4>
+      <strong><p class="fontLanding colorPrincipal">{{ "label.cookies_politics" | translate }}</p></strong>
+
+      <h3>se puede cambiar por otro texto de descripción</h3>
+    </div>
+    <div class="col-md-6 ">
+      <p [innerHTML]="'politycs.cookies' | translate "></p>
+      <a class="colorPrincipal third after" (click)="deleteConsentCookie()">{{'politycs.cookies_disabled' |
+        translate}}</a>
+      <div class="row paddingBottom20"></div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+
+  <!--footer-->
+  <app-footer></app-footer>
+</div>
+

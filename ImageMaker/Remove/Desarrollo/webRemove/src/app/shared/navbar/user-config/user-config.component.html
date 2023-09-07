@@ -1,0 +1,369 @@
+<h2 mat-dialog-title>
+  <i class="las la-user colorGris espDer5"></i
+  >{{ "title.user_info" | translate }}
+</h2>
+
+<div mat-dialog-content>
+  <mat-tab-group>
+    <mat-tab label="  {{ 'title.user_info' | translate }}">
+      <form #userForm="ngForm" (ngSubmit)="(userForm.form.valid)">
+        <div class="container-fluid padding20">
+          <div class="row">
+            <div class="col-md-12">
+              <strong> {{ "title.user_personal" | translate }}</strong>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="user.name"
+                  name="name"
+                  matInput
+                  placeholder="{{ 'label.name' | translate }} "
+                  required
+                  #name="ngModel"
+                />
+              </mat-form-field>
+              <div *ngIf="name.errors?.required && userForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="user.lastname"
+                  name="lastname"
+                  matInput
+                  required
+                  placeholder="{{ 'label.lastname' | translate }} "
+                  #lastname="ngModel"
+                />
+              </mat-form-field>
+              <div *ngIf="lastname.errors?.required && userForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="user.phone"
+                  name="phone"
+                  matInput
+                  required
+                  placeholder="{{ 'label.phone' | translate }} "
+                  #phone="ngModel"
+                />
+              </mat-form-field>
+              <div *ngIf="phone.errors?.required && userForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="user.email"
+                  name="email"
+                  matInput
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                  placeholder="{{ 'label.email' | translate }}"
+                  type="email"
+                  required
+                  #email="ngModel"
+                />
+              </mat-form-field>
+              <div *ngIf="email.errors?.required && userForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="email.errors?.pattern && userForm.submitted">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.invalid.email" | translate }}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6" *ngIf="user.plan">
+              <mat-form-field class="example-full-width">
+                <mat-select
+                  placeholder="{{ 'label.scanner.countries' | translate }}"
+                  #select
+                  [ngModel]="user?.country"
+                  name="country"
+                  [compareWith]="compareTag"
+                >
+                  <mat-select-filter
+                    [placeholder]="placeholderBuscar"
+                    [displayMember]="'name'"
+                    [array]="allCountries"
+                    *ngIf="select.focused"
+                    [noResultsMessage]="noResults"
+                    (filteredReturn)="fltCountries = $event"
+                  ></mat-select-filter>
+                  <mat-option *ngFor="let item of fltCountries" [value]="item">
+                    <!--<flag-icon country="{{item.tag}}" squared class="espDer5"></flag-icon>-->
+                    <img
+                      [src]="utilService.checkFlag(item?.tag)"
+                      [width]="utilService.flagWith"
+                      [height]="utilService.flagHeight"
+                      alt="{{ item?.name }}"
+                      class="margin3"
+                      onerror="this.src='../../../../assets/img/broken.jpg'"
+                    />
+
+                    {{ item.name }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row" *ngIf="!isAdmin">
+            <div class="col-md-6">
+              <label class="noBacknoBorder paddingTop15">
+                <input
+                  type="file"
+                  (change)="selectFile($event)"
+                  [accept]="fileType"
+                  class="noBacknoBorder"
+                />
+              </label>
+
+              <h5>
+                <i class="las la-info-circle colorAzul espDer5"></i
+                >{{ "message.file_size" | translate }}
+              </h5>
+              <h5>
+                <i class="las la-info-circle colorAzul espDer5"></i
+                >{{ "message.file_type" | translate }}
+              </h5>
+              <h5>
+                <i class="las la-info-circle colorAzul espDer5"></i
+                >{{ "info.logo_upload" | translate }}
+              </h5>
+              <h5>
+                <i class="las la-info-circle colorAzul espDer5"></i
+                >{{ "info.logo_refresh" | translate }}
+              </h5>
+            </div>
+            <div class="col-md-3">
+              <img
+                style="max-height: 150px; max-width: 200px"
+                src="{{ thumbnailPreview }}"
+                alt=""
+              />
+            </div>
+            <div class="col-md-3">
+              <a (click)="restoreLogo()" class="third after reduceFont">
+                {{ "button.restore_logo" | translate }}</a
+              >
+            </div>
+          </div>
+          <div class="row centrado padding20">
+            <a mat-dialog-close tabindex="-1" class="third after colorGris">
+              {{ "button.cancel" | translate }}</a
+            >
+            <button
+              class="glow-on-hover espIz15"
+              type="submit"
+              (click)="updateConfig(userForm)"
+              tabindex="1"
+            >
+              {{ "button.user.account" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-tab>
+
+    <mat-tab label="{{ 'title.configuration' | translate }}">
+      <form #confForm="ngForm" (ngSubmit)="(confForm.form.valid)">
+        <div class="container-fluid padding20">
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field class="example-full-width">
+                <mat-label
+                  ><i class="las la-language fa-2x"></i>
+                  {{ "label.scanner.advance.language" | translate }}
+                </mat-label>
+                <mat-select
+                  [(ngModel)]="user.language"
+                  (selectionChange)="changeLanguage()"
+                  name="language"
+                >
+                  <mat-option
+                    *ngFor="let l of translateHelper.languages"
+                    [value]="l"
+                  >
+                    {{ "lang." + l | translate }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4" *ngIf="session.getAccessConfig().CLIENT">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{ "tittle.country" | translate }}</mat-label>
+
+                <mat-select
+                  placeholder="{{ 'label.scanner.countries' | translate }}"
+                  #select
+                  [(ngModel)]="user.country"
+                  name="country"
+                  [compareWith]="utilService.compareTag"
+                >
+                  <!--  <mat-select-filter [placeholder]="placeholderBuscar" [displayMember]="'name'"
+                           [array]="lstAllCountries" *ngIf="select.focused" [noResultsMessage]="noResults"
+                           (filteredReturn)="fltCountries =$event"></mat-select-filter>-->
+                  <mat-option
+                    *ngFor="let item of allCountries"
+                    [value]="item"
+                    disabled="{{ !item.active }}"
+                  >
+                    <img
+                      [src]="utilService.checkFlag(item?.tag)"
+                      [width]="utilService.flagWith"
+                      [height]="utilService.flagHeight"
+                      alt="{{ item?.name }}"
+                      class="margin3"
+                      onerror="this.src='../../../../assets/img/broken.jpg'"
+                    />{{ item?.name }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              {{ "label.scanner.advance.email" | translate }}
+              <mat-slide-toggle
+                [(ngModel)]="user.send_email"
+                class="noCkeck"
+                [ngModelOptions]="{ standalone: true }"
+                >{{
+                  "label.configuration.email.subscription" | translate
+                }}</mat-slide-toggle
+              >
+            </div>
+          </div>
+
+          <div class="row centrado paddingTop25">
+            <a mat-dialog-close tabindex="-1" class="third after colorGris">
+              {{ "button.cancel" | translate }}</a
+            >
+            <button
+              class="glow-on-hover espIz15"
+              type="submit"
+              (click)="updateConfig(confForm)"
+              tabindex="1"
+            >
+              {{ "button.user.config" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-tab>
+
+    <mat-tab label="{{ 'label.password' | translate }}">
+      <form
+        #passForm="ngForm"
+        (ngSubmit)="(passForm.form.valid)"
+        class="noScroll"
+      >
+        <div class="container-fluid padding20">
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="password.oldPassword"
+                  name="oldPassword"
+                  matInput
+                  type="password"
+                  required
+                  placeholder="{{ 'label.current_password' | translate }} "
+                  #pass="ngModel"
+                  [type]="hide ? 'password' : 'text'"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  (blur)="checkEquals(password)"
+                />
+                <i
+                  class="las la-eye colorGris"
+                  matSuffix
+                  (click)="hide = !hide"
+                ></i>
+              </mat-form-field>
+              <div *ngIf="pass.errors?.required && sendFormKey">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="pass.errors?.pattern">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.password" | translate }}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input
+                  [(ngModel)]="password.newPassword"
+                  name="newPassword"
+                  matInput
+                  type="password"
+                  required
+                  placeholder="{{ 'label.new_password' | translate }} "
+                  [type]="hide ? 'password' : 'text'"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  #newpassword="ngModel"
+                  (blur)="checkEquals(password)"
+                />
+              </mat-form-field>
+              <div *ngIf="newpassword.errors?.required && sendFormKey">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.required" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="newpassword.errors?.pattern">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.password" | translate }}
+                </h5>
+              </div>
+              <div *ngIf="samePass">
+                <h5 class="colorRojo">
+                  <i class="las la-exclamation-circle espDer5"></i
+                  >{{ "error.same_pass" | translate }}
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="row centrado paddingTop25">
+            <a mat-dialog-close tabindex="-1" class="third after colorGris">
+              {{ "button.cancel" | translate }}</a
+            >
+            <button
+              class="glow-on-hover espIz15"
+              type="submit"
+              (click)="updatePassword(passForm)"
+              tabindex="1"
+            >
+              {{ "button.save" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-tab>
+  </mat-tab-group>
+</div>

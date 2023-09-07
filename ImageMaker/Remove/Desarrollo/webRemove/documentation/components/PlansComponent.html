@@ -1,0 +1,1526 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  PlansComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/plans/plans.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-plans</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./plans.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./plans.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allPlans" >allPlans</a>
+                            </li>
+                            <li>
+                                <a href="#copyArray" >copyArray</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                <a href="#filteredPlans" >filteredPlans</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorClass" >paginatorClass</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#planService" >planService</a>
+                            </li>
+                            <li>
+                                <a href="#sortDirection" >sortDirection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clean" >clean</a>
+                            </li>
+                            <li>
+                                <a href="#editItem" >editItem</a>
+                            </li>
+                            <li>
+                                <a href="#loadTable" >loadTable</a>
+                            </li>
+                            <li>
+                                <a href="#newItem" >newItem</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangePage" >onChangePage</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                <a href="#searchResult" >searchResult</a>
+                            </li>
+                            <li>
+                                <a href="#sortFunction" >sortFunction</a>
+                            </li>
+                            <li>
+                                <a href="#toggleActive" >toggleActive</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, planService: <a href="../injectables/PlanService.html" target="_self">PlanService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/pages/plans/plans.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>manages information about plans</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>planService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlanService.html" target="_self" >PlanService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clean"></a>
+                    <span class="name">
+                        <span ><b>clean</b></span>
+                        <a href="#clean"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clean()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="145"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>clean Filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editItem"></a>
+                    <span class="name">
+                        <span ><b>editItem</b></span>
+                        <a href="#editItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editItem(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="80"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open a model to edit an Item</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadTable"></a>
+                    <span class="name">
+                        <span ><b>loadTable</b></span>
+                        <a href="#loadTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadTable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="45"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newItem"></a>
+                    <span class="name">
+                        <span ><b>newItem</b></span>
+                        <a href="#newItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newItem()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="89"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="38"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangePage"></a>
+                    <span class="name">
+                        <span ><b>onChangePage</b></span>
+                        <a href="#onChangePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangePage(pageOfItems: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="105"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> change paginator</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOfItems</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(isNuevo: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, isEditable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, plan: <a href="../interfaces/IPlans.html" target="_self">IPlans</a>, componente)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="60"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> function to open modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isNuevo</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isEditable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>plan</td>
+                                    <td>
+                                                <code><a href="../interfaces/IPlans.html" target="_self" >IPlans</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>componente</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchResult"></a>
+                    <span class="name">
+                        <span ><b>searchResult</b></span>
+                        <a href="#searchResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchResult()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="113"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>search items in table</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortFunction"></a>
+                    <span class="name">
+                        <span ><b>sortFunction</b></span>
+                        <a href="#sortFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortFunction(colName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="135"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Order table Items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleActive"></a>
+                    <span class="name">
+                        <span ><b>toggleActive</b></span>
+                        <a href="#toggleActive"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleActive(row: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="97"
+                            class="link-to-prism">src/app/pages/plans/plans.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>change item status (active or deactive)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allPlans"></a>
+                    <span class="name">
+                        <span ><b>allPlans</b></span>
+                        <a href="#allPlans"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IPlans.html" target="_self" >IPlans[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/pages/plans/plans.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyArray"></a>
+                    <span class="name">
+                        <span ><b>copyArray</b></span>
+                        <a href="#copyArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/pages/plans/plans.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <span ><b>filter</b></span>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    name: &#x27;&#x27;,
+    active: true,
+    customized: false
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/plans/plans.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredPlans"></a>
+                    <span class="name">
+                        <span ><b>filteredPlans</b></span>
+                        <a href="#filteredPlans"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IPlans.html" target="_self" >IPlans[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/pages/plans/plans.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginatorClass"></a>
+                    <span class="name">
+                        <span ><b>paginatorClass</b></span>
+                        <a href="#paginatorClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;paginator&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/pages/plans/plans.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="planService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>planService</b></span>
+                        <a href="#planService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/PlanService.html" target="_self" >PlanService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/pages/plans/plans.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDirection"></a>
+                    <span class="name">
+                        <span ><b>sortDirection</b></span>
+                        <a href="#sortDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/pages/plans/plans.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/pages/plans/plans.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {MatDialog} from &#x27;@angular/material/dialog&#x27;;
+import {UtilService} from &#x27;../../helpers/util.service&#x27;;
+import {TranslateHelperService} from &#x27;../../helpers/translate-helper.service&#x27;;
+import {PlanService} from &#x27;../../services/plan.service&#x27;;
+import {IPlans} from &#x27;../../interfaces/IPlans&#x27;;
+import {NewEditPlanComponent} from &#x27;./new-edit-plan/new-edit-plan.component&#x27;;
+
+@Component({
+  selector: &#x27;app-plans&#x27;,
+  templateUrl: &#x27;./plans.component.html&#x27;,
+  styleUrls: [&#x27;./plans.component.css&#x27;]
+})
+export class PlansComponent implements OnInit {
+  allPlans: IPlans[];
+  filteredPlans: IPlans[] &#x3D; [];
+  copyArray: Array&lt;any&gt;;
+  /* objeto a enviar al filtro */
+  filter &#x3D; {
+    name: &#x27;&#x27;,
+    active: true,
+    customized: false
+  };
+  sortDirection &#x3D; false;
+  paginatorClass &#x3D; &#x27;paginator&#x27;;
+
+  /**
+   * manages information about plans
+   * @param dialog
+   * @param utilService
+   * @param planService
+   * @param translateHelper
+   */
+  constructor(private dialog: MatDialog, private utilService: UtilService,
+              public planService: PlanService, public translateHelper: TranslateHelperService) {
+  }
+
+  ngOnInit(): void {
+    this.loadTable();
+  }
+
+  /*
+  load principal table
+   * */
+  loadTable(): void {
+    this.planService.list(response &#x3D;&gt; {
+      this.allPlans &#x3D; response;
+      this.allPlans.sort((a, b) &#x3D;&gt; a.name.localeCompare(b.name));
+      this.filteredPlans &#x3D; this.allPlans;
+    });
+  }
+
+  /**
+   *  function to open modal
+   * @param isNuevo
+   * @param isEditable
+   * @param plan
+   * @param componente
+   */
+  openModal(isNuevo: boolean, isEditable: boolean, plan: IPlans, componente): void {
+    const dialogRef &#x3D; this.dialog.open(componente, {
+      closeOnNavigation: true,
+      disableClose: true,
+      width: &#x27;90%&#x27;,
+      data: {
+        nuevo: isNuevo,
+        editable: isEditable,
+        info: plan
+      }
+    });
+    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+      this.loadTable();
+    });
+  }
+
+  /**
+   * Open a model to edit an Item
+   * @param id
+   */
+  editItem(id: number): void {
+    this.planService.get(id, response &#x3D;&gt; {
+      this.openModal(false, this.planService.permissions.update, response, NewEditPlanComponent);
+    });
+  }
+
+  /*
+Open a model to create a new Item
+ * */
+  newItem(): void {
+    this.openModal(true, this.planService.permissions.save, {clientSuggestions: []} &#x3D; &lt;IPlans&gt;{clientSuggestions: []}, NewEditPlanComponent);
+  }
+
+  /**
+   * change item status (active or deactive)
+   * @param row
+   */
+  toggleActive(row: any): void {
+    this.utilService.toggleActivo(row, &#x27;active&#x27;, &#x27;name&#x27;, this.planService);
+  }
+
+  /**
+   *  change paginator
+   * @param pageOfItems
+   */
+  onChangePage(pageOfItems: Array&lt;any&gt;): void {
+    this.copyArray &#x3D; pageOfItems;
+  }
+
+  /**
+   * search items in table
+   * @param value
+   */
+  searchResult(): void {
+
+   // console.log(&#x27;this.filter&#x27;, this.filter);
+    if (this.filter.name !&#x3D;&#x3D; &#x27;&#x27;){
+      this.filteredPlans &#x3D; this.allPlans.filter(plan &#x3D;&gt;
+        plan.name.toLowerCase().includes(this.filter.name.toLowerCase()) &amp;&amp;
+        plan.active &#x3D;&#x3D;&#x3D; this.filter.active &amp;&amp; plan.customized &#x3D;&#x3D;&#x3D; this.filter.customized
+      );
+    } else {
+      this.filteredPlans &#x3D; this.allPlans.filter(plan &#x3D;&gt;
+        plan.active &#x3D;&#x3D;&#x3D; this.filter.active &amp;&amp; plan.customized &#x3D;&#x3D;&#x3D; this.filter.customized
+      );
+    }
+
+  }
+
+
+
+  /**
+   * Order table Items
+   * @param colName
+   */
+  sortFunction(colName: string): void {
+    const result &#x3D; this.utilService.sortTable(colName, true, this.filteredPlans, this.sortDirection);
+    this.filteredPlans &#x3D; result.array;
+    this.sortDirection &#x3D; result.direction;
+    this.utilService.changeSelectedPageToFirst(this.paginatorClass);
+  }
+
+  /**
+   * clean Filters
+   */
+  clean(): void {
+    this.filter &#x3D; {
+      name: &#x27;&#x27;,
+      active: true,
+      customized: false
+    };
+    this.filteredPlans &#x3D; this.allPlans;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row paddingTop15&quot; *ngIf&#x3D;&quot;planService.permissions.list&quot; id&#x3D;&quot;toExport&quot;&gt;
+  &lt;div class&#x3D;&quot;row content-card &quot;&gt;
+    &lt;!--tittle--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-10&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-3 col-sm-6&quot;&gt;
+              &lt;h2&gt;&lt;i class&#x3D;&quot;las la-file-invoice colorPrincipal  espDer5&quot;&gt;&lt;/i&gt; {{&quot;title.plans&quot; | translate}}&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-8 col-sm-6 paddingTop5 float-left&quot;&gt;
+              &lt;a class&#x3D;&quot;glow-on-hover reduceFont &quot; (click)&#x3D;&quot;newItem()&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-plus-circle espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.add&#x27; | translate}} &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2 top20m&quot; *ngIf&#x3D;&quot;filteredPlans &amp;&amp; filteredPlans?.length !&#x3D;&#x3D; 0&quot;&gt;
+          &lt;div class&#x3D;&quot;row &quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a (click)&#x3D;&quot;utilService.downloadExcel(&#x27;title.plans&#x27;)&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+                &lt;i class&#x3D;&quot;las la-file-excel colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.excel&#x27; | translate}}&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a (click)&#x3D;&quot;utilService.donwloadPDF(&#x27;title.plans&#x27;)&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+                &lt;i class&#x3D;&quot;las la-file-pdf colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.pdf&#x27; | translate}}&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--filters--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;allPlans &amp;&amp; allPlans?.length !&#x3D;&#x3D; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row border-filter&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-3  col-sm-12&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input [(ngModel)]&#x3D;&quot;filter.name&quot; (ngModelChange)&#x3D;&quot;searchResult()&quot; name&#x3D;&quot;name&quot; matInput
+                   placeholder&#x3D;&quot;{{&#x27;label.name&#x27; | translate}}&quot;&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-md-2  col-sm-12 centrado col-sm-12&quot;&gt;
+          &lt;mat-slide-toggle [(ngModel)]&#x3D;&quot;filter.active&quot; (ngModelChange)&#x3D;&quot;searchResult()&quot;
+                            class&#x3D;&quot;noCkeck&quot;&gt; {{&#x27;label.active&#x27; | translate}}&lt;/mat-slide-toggle&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2  col-sm-12 centrado col-sm-12&quot;&gt;
+          &lt;mat-slide-toggle [(ngModel)]&#x3D;&quot;filter.customized&quot; class&#x3D;&quot;noCkeck&quot; (ngModelChange)&#x3D;&quot;searchResult()&quot;&gt;
+            {{&#x27;label.plan.customized&#x27; | translate}}&lt;/mat-slide-toggle&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2 centrado col-sm-12&quot;&gt;
+          &lt;!--button (click)&#x3D;&quot;searchResult()&quot; class&#x3D;&quot;secondLevelButton reduceFont&quot;
+          &gt;&lt;i class&#x3D;&quot;las la-search espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.search&#x27; | translate}}&lt;/button--&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-3  col-sm-12 paddingTop15 float-left&quot;&gt;
+          &lt;a (click)&#x3D;&quot;clean()&quot; class&#x3D;&quot;third after reduceFont &quot;&gt;
+            &lt;i class&#x3D;&quot;las la-broom colorPrincipal espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.clear_filters&#x27; |
+            translate}}&lt;/a&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--principal table--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;filteredPlans || filteredPlans?.length !&#x3D;&#x3D; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row slide-in-blurred-bottom horizontal-scroll&quot;&gt;
+        &lt;table class&#x3D;&quot;table table-hover table-borderless &quot;&gt;
+          &lt;thead class&#x3D;&quot;thead-light&quot;&gt;
+          &lt;tr&gt;
+            &lt;th
+              (click)&#x3D;&quot;sortFunction(&#x27;name&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.name&#x27; |
+              translate}} &lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;limit_credits&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.limits&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;total_monitor_licenses&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.access_monitor&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;total_transforma_licenses&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.access_transforma&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;max_url_to_deindexate&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.access_deindexation&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;totalActiveClients&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.user_plan&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;cost&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.costs&#x27; | translate}}&lt;/th&gt;
+            &lt;th class&#x3D;&quot;textali-center&quot; (click)&#x3D;&quot;sortFunction(&#x27;customized&#x27;)&quot;&gt;&lt;i
+              class&#x3D;&quot;las la-sort colorPrincipal  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;label.plan.customized&#x27; | translate}}&lt;/th&gt;
+            &lt;th&gt;{{&#x27;label.active&#x27; | translate}}&lt;/th&gt;
+            &lt;th&gt;{{&#x27;label.actions&#x27; | translate}} &lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+          &lt;tr *ngFor&#x3D;&quot;let data of copyArray&quot;&gt;
+            &lt;td&gt;{{ data?.name  }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.limit_credits }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.total_monitor_licenses }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.total_transforma_licenses }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.max_url_to_deindexate }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.totalActiveClients }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt;{{ data?.cost }}&lt;/td&gt;
+            &lt;td class&#x3D;&quot;textali-center&quot;&gt; &lt;span class&#x3D;&quot;&quot;
+                                              [innerHTML]&#x3D;&quot;data?.customized | customized                &quot;&gt;&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;
+              &lt;mat-slide-toggle [(ngModel)]&#x3D;&quot;data.active&quot; class&#x3D;&quot;noCkeck&quot;
+                                (change)&#x3D;&quot;toggleActive(data)&quot;
+                                disabled&#x3D;&quot;{{!planService.permissions.delete}}&quot;&gt;&lt;/mat-slide-toggle&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a (click)&#x3D;&quot;editItem(data.id)&quot; class&#x3D;&quot;espDer15&quot; *ngIf&#x3D;&quot;planService.permissions.read&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-edit colorPrincipal la-2x&quot; title&#x3D;&quot;{{&#x27;tooltip.edit_plan&#x27; | translate}}&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;div class&#x3D;&quot;col-md-12 centrado paddingBottom50 paddingTop25&quot;&gt;
+          &lt;jw-pagination [items]&#x3D;&quot;filteredPlans&quot; (changePage)&#x3D;&quot;onChangePage($event)&quot;
+                         [maxPages]&#x3D;&quot;5&quot; [pageSize]&#x3D;&quot;15&quot; class&#x3D;&quot;{{paginatorClass}}&quot;
+          &gt;&lt;/jw-pagination&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-12 centrado paddingBottom50 paddingTop25&quot; *ngIf&#x3D;&quot;(allPlans &amp;&amp; allPlans?.length &#x3D;&#x3D;&#x3D; 0) ||
+    filteredPlans.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+      &lt;h5 class&#x3D;&quot;centrado colorGris&quot;&gt;{{&#x27;error.not_found_results&#x27; | translate}}&lt;/h5&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./plans.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row paddingTop15" *ngIf="planService.permissions.list" id="toExport">  <div class="row content-card ">    <!--tittle-->    <div class="col-md-12">      <div class="row">        <div class="col-md-10">          <div class="row">            <div class="col-md-3 col-sm-6">              <h2><i class="las la-file-invoice colorPrincipal  espDer5"></i> {{"title.plans" | translate}}</h2>            </div>            <div class="col-md-8 col-sm-6 paddingTop5 float-left">              <a class="glow-on-hover reduceFont " (click)="newItem()">                <i class="las la-plus-circle espDer5"></i>{{\'button.add\' | translate}} </a>            </div>          </div>        </div>        <div class="col-md-2 top20m" *ngIf="filteredPlans && filteredPlans?.length !== 0">          <div class="row ">            <div class="col-md-4 col-sm-6"></div>            <div class="col-md-4 col-sm-6">              <a (click)="utilService.downloadExcel(\'title.plans\')" class="third after reduceFont ">                <i class="las la-file-excel colorPrincipal espDer5"></i>{{\'label.excel\' | translate}}</a>            </div>            <div class="col-md-4 col-sm-6">              <a (click)="utilService.donwloadPDF(\'title.plans\')" class="third after reduceFont ">                <i class="las la-file-pdf colorPrincipal espDer5"></i>{{\'label.pdf\' | translate}}</a>            </div>          </div>        </div>      </div>    </div>    <!--filters-->    <div class="col-md-12" *ngIf="allPlans && allPlans?.length !== 0">      <div class="row border-filter">        <div class="col-md-3  col-sm-12">          <mat-form-field class="example-full-width">            <input [(ngModel)]="filter.name" (ngModelChange)="searchResult()" name="name" matInput                   placeholder="{{\'label.name\' | translate}}">          </mat-form-field>        </div>        <div class="col-md-2  col-sm-12 centrado col-sm-12">          <mat-slide-toggle [(ngModel)]="filter.active" (ngModelChange)="searchResult()"                            class="noCkeck"> {{\'label.active\' | translate}}</mat-slide-toggle>        </div>        <div class="col-md-2  col-sm-12 centrado col-sm-12">          <mat-slide-toggle [(ngModel)]="filter.customized" class="noCkeck" (ngModelChange)="searchResult()">            {{\'label.plan.customized\' | translate}}</mat-slide-toggle>        </div>        <div class="col-md-2 centrado col-sm-12">          <!--button (click)="searchResult()" class="secondLevelButton reduceFont"          ><i class="las la-search espDer5"></i>{{\'button.search\' | translate}}</button-->        </div>        <div class="col-md-3  col-sm-12 paddingTop15 float-left">          <a (click)="clean()" class="third after reduceFont ">            <i class="las la-broom colorPrincipal espDer5"></i>{{\'button.clear_filters\' |            translate}}</a>        </div>      </div>    </div>    <!--principal table-->    <div class="col-md-12" *ngIf="filteredPlans || filteredPlans?.length !== 0">      <div class="row slide-in-blurred-bottom horizontal-scroll">        <table class="table table-hover table-borderless ">          <thead class="thead-light">          <tr>            <th              (click)="sortFunction(\'name\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.name\' |              translate}} </th>            <th class="textali-center" (click)="sortFunction(\'limit_credits\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.limits\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'total_monitor_licenses\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.access_monitor\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'total_transforma_licenses\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.access_transforma\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'max_url_to_deindexate\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.access_deindexation\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'totalActiveClients\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.user_plan\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'cost\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.costs\' | translate}}</th>            <th class="textali-center" (click)="sortFunction(\'customized\')"><i              class="las la-sort colorPrincipal  espDer5"></i>{{\'label.plan.customized\' | translate}}</th>            <th>{{\'label.active\' | translate}}</th>            <th>{{\'label.actions\' | translate}} </th>          </tr>          </thead>          <tbody>          <tr *ngFor="let data of copyArray">            <td>{{ data?.name  }}</td>            <td class="textali-center">{{ data?.limit_credits }}</td>            <td class="textali-center">{{ data?.total_monitor_licenses }}</td>            <td class="textali-center">{{ data?.total_transforma_licenses }}</td>            <td class="textali-center">{{ data?.max_url_to_deindexate }}</td>            <td class="textali-center">{{ data?.totalActiveClients }}</td>            <td class="textali-center">{{ data?.cost }}</td>            <td class="textali-center"> <span class=""                                              [innerHTML]="data?.customized | customized                "></span></td>            <td>              <mat-slide-toggle [(ngModel)]="data.active" class="noCkeck"                                (change)="toggleActive(data)"                                disabled="{{!planService.permissions.delete}}"></mat-slide-toggle>            </td>            <td>              <a (click)="editItem(data.id)" class="espDer15" *ngIf="planService.permissions.read">                <i class="las la-edit colorPrincipal la-2x" title="{{\'tooltip.edit_plan\' | translate}}"></i></a>            </td>          </tr>          </tbody>        </table>        <div class="col-md-12 centrado paddingBottom50 paddingTop25">          <jw-pagination [items]="filteredPlans" (changePage)="onChangePage($event)"                         [maxPages]="5" [pageSize]="15" class="{{paginatorClass}}"          ></jw-pagination>        </div>      </div>    </div>    <div class="col-md-12 centrado paddingBottom50 paddingTop25" *ngIf="(allPlans && allPlans?.length === 0) ||    filteredPlans.length === 0">      <h5 class="centrado colorGris">{{\'error.not_found_results\' | translate}}</h5>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'PlansComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlansComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

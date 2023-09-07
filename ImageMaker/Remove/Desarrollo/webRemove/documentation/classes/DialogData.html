@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Clases</li>
+  <li >DialogData</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/navbar/user-config/user-config.component.ts</code>
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
+import { MAT_DIALOG_DATA, MatDialogRef } from &#x27;@angular/material/dialog&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { CommonService } from &#x27;../../../services/common.service&#x27;;
+import { TranslateHelperService } from &#x27;../../../helpers/translate-helper.service&#x27;;
+import { AccountConfigService } from &#x27;src/app/services/account-config.service&#x27;;
+import { SessionService } from &#x27;src/app/helpers/session.service&#x27;;
+import { UtilService } from &#x27;../../../helpers/util.service&#x27;;
+import { UploaderFileService } from &#x27;../../../helpers/uploader-file.service&#x27;;
+
+class DialogData {}
+
+@Component({
+  selector: &#x27;app-user-config&#x27;,
+  templateUrl: &#x27;./user-config.component.html&#x27;,
+  styleUrls: [&#x27;./user-config.component.css&#x27;],
+})
+export class UserConfigComponent implements OnInit {
+  user: any;
+  placeholderBuscar &#x3D; &#x27;&#x27;;
+  noResults &#x3D; &#x27;&#x27;;
+
+  password &#x3D; {
+    oldPassword: &#x27;&#x27;,
+    newPassword: &#x27;&#x27;,
+  };
+  samePass &#x3D; false;
+  payment &#x3D; {
+    card: &#x27;&#x27;,
+    expired: &#x27;&#x27;,
+    cvv: &#x27;&#x27;,
+    cardholder: &#x27;&#x27;,
+  };
+  listPayment &#x3D; [];
+  language: string;
+  allCountries &#x3D; [];
+  fltCountries &#x3D; [];
+  allLanguages &#x3D; [];
+  hide &#x3D; true;
+  sendFormKey &#x3D; false;
+  fileType &#x3D; &#x27;.jpg,.jpeg,.png&#x27;;
+  thumbnailPreview &#x3D; &#x27;&#x27;;
+  selectedFiles: FileList;
+  isBig &#x3D; false;
+  model: any;
+  isAdmin &#x3D; false;
+  logoRemove &#x3D; false;
+  is15 &#x3D; 15;
+  is1 &#x3D; 1;
+  constructor(
+    public dialogRef: MatDialogRef&lt;UserConfigComponent&gt;,
+    public commonService: CommonService,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
+    public translate: TranslateService,
+    public session: SessionService,
+    public translateHelper: TranslateHelperService,
+    private configService: AccountConfigService,
+    public utilService: UtilService,
+    public ufs: UploaderFileService
+  ) {
+    this.user &#x3D; this.data;
+    console.log(&#x27;this.user&#x27;, this.user);
+  }
+
+  ngOnInit(): void {
+    this.checkProfile();
+    //  validación del previsualizar, si tiene algo muestra la imagen si no el reference_link_logo de remove
+    if (this.user.reference_link_logo &amp;&amp; this.user.reference_link_logo !&#x3D;&#x3D; &#x27;&#x27;) {
+      this.getImagen(this.user.reference_link_logo);
+    } else {
+      this.thumbnailPreview &#x3D; &#x27;../../../assets/img/logo.png&#x27;;
+    }
+    this.placeholderBuscar &#x3D; this.translate.instant(&#x27;placeholder.search&#x27;);
+    this.noResults &#x3D; this.translate.instant(&#x27;placeholder.no_result&#x27;);
+    this.loadCommons();
+  }
+
+  /**
+   * check if a user is admin
+   */
+  checkProfile() {
+    if (this.session.getAccessConfig().ADMIN) {
+      this.isAdmin &#x3D; true;
+    }
+  }
+  /**
+   *
+   * image preview
+   * @param route
+   */
+  getImagen(route) {
+    this.ufs.getData(route, (data) &#x3D;&gt; {
+      this.thumbnailPreview &#x3D; data;
+    });
+  }
+
+  /**
+   *
+   * @param c1
+   * @param c2
+   */
+  compareTag(c1: any, c2: any): boolean {
+    return c1 &amp;&amp; c2 &amp;&amp; c1.tag &#x3D;&#x3D;&#x3D; c2.tag;
+  }
+
+  /**
+   * Load commons services
+   */
+  loadCommons() {
+    this.commonService.listLanguages((response) &#x3D;&gt; {
+      this.allLanguages &#x3D; response;
+    });
+    this.commonService.listCountries((response) &#x3D;&gt; {
+      this.allCountries &#x3D; response;
+      this.fltCountries &#x3D; this.allCountries.slice();
+    });
+  }
+
+  /**
+   * change language of the user
+   */
+  changeLanguage(): void {
+    this.translateHelper.translate.use(this.language);
+  }
+
+  /**
+   * update configuration
+   * @param form
+   */
+  updateConfig(form: any): void {
+    if (form.valid &amp;&amp; !this.isAdmin) {
+      this.uploadandSave(form.value);
+    }
+    if (form.valid &amp;&amp; this.isAdmin) {
+      this.configService.update(this.user, () &#x3D;&gt; {
+        this.session.refreshClientSession(this.user);
+        this.translateHelper.setTransLanguage(this.user.language);
+        //  this.dialogRef.close(true);
+      });
+    }
+  }
+
+  /**
+   * update password
+   * @param form
+   */
+  updatePassword(form: any): void {
+    this.sendFormKey &#x3D; true;
+    if (form.valid) {
+      if (this.password.newPassword !&#x3D;&#x3D; this.password.oldPassword) {
+        this.configService.updatePassword(
+          this.password,
+          () &#x3D;&gt; {
+            this.password &#x3D; { newPassword: &#x27;&#x27;, oldPassword: &#x27;&#x27; };
+            this.sendFormKey &#x3D; false;
+            this.dialogRef.close(true);
+          },
+          {
+            errorFunction: () &#x3D;&gt; {
+              this.password &#x3D; { newPassword: &#x27;&#x27;, oldPassword: &#x27;&#x27; };
+              this.sendFormKey &#x3D; false;
+            },
+          }
+        );
+      } else {
+        this.utilService.showNotification(&#x27;error.same_pass&#x27;, &#x27;danger&#x27;);
+      }
+    }
+  }
+
+  /**
+   * select a file
+   * @param event
+   */
+  selectFile(event) {
+    this.isBig &#x3D; false;
+    //console.log(&#x27;event&#x27;, event.target.files[0].size);
+    if (event.target.files[0].size &gt; 2097152) {
+      this.isBig &#x3D; true;
+      this.utilService.showNotification(&#x27;error.file_size&#x27;, &#x27;danger&#x27;);
+    } else {
+      this.selectedFiles &#x3D; event.target.files;
+    }
+  }
+
+  /**
+   * Upload a file and save the user
+   */
+  uploadandSave(form) {
+    const data &#x3D; Object.assign(this.user, form);
+    // console.log(&#x27;this.isBig&#x27;, this.isBig);
+    if (!this.isBig) {
+      if (!this.logoRemove) {
+        if (!this.selectedFiles) {
+          data.reference_link_logo &#x3D; this.model;
+          this.configService.update(this.user, () &#x3D;&gt; {
+            this.session.refreshClientSession(this.user);
+            this.translateHelper.setTransLanguage(this.user.language);
+          });
+        } else {
+          const file &#x3D; this.selectedFiles.item(0);
+          this.ufs.upload(file, (keyFile) &#x3D;&gt; {
+            this.model &#x3D; keyFile;
+            this.getImagen(this.model);
+            data.reference_link_logo &#x3D; this.model;
+            //console.log(&#x27;data antes del update&#x27;, data);
+            this.configService.update(this.user, () &#x3D;&gt; {
+              this.session.refreshClientSession(this.user);
+              this.translateHelper.setTransLanguage(this.user.language);
+            });
+          });
+        }
+      } else {
+        data.reference_link_logo &#x3D; null;
+        this.configService.update(this.user, () &#x3D;&gt; {
+          this.session.refreshClientSession(this.user);
+          this.translateHelper.setTransLanguage(this.user.language);
+          //  this.dialogRef.close(true);
+        });
+      }
+    } else {
+      this.utilService.showNotification(&#x27;error.file_size&#x27;, &#x27;danger&#x27;);
+    }
+  }
+
+  /**
+   * restore Remove logo
+   */
+  restoreLogo() {
+    this.thumbnailPreview &#x3D; &#x27;../../../assets/img/logo.png&#x27;;
+    this.logoRemove &#x3D; true;
+  }
+
+  checkEquals(pass) {
+    this.samePass &#x3D; false;
+    if (pass.newPassword &#x3D;&#x3D;&#x3D; pass.oldPassword) {
+      this.samePass &#x3D; true;
+    }
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'DialogData.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

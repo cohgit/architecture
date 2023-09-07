@@ -1,0 +1,55 @@
+<h2 mat-dialog-title><i class="las la-clipboard-check colorGris espDer5"></i>{{'tittle.approve_reject' | translate}}
+</h2>
+<form #approveRejectForm="ngForm" (ngSubmit)="approveRejectForm.form.valid">
+  <div mat-dialog-content>
+    <div class="row example-full-width">
+
+      <div class="col-md-12 centrado">
+        <h5>{{'label.impulse.decision' | translate}}:</h5>
+      </div>
+      <div class="col-md-4 paddingTop15">
+        <mat-button-toggle-group [(ngModel)]="aprove" name="aprove" required #aproveNg="ngModel">
+          <mat-button-toggle [value]="isTrue"> {{'button.approve' | translate}}</mat-button-toggle>
+          <mat-button-toggle [value]="isFalse"> {{'button.reject' | translate}}</mat-button-toggle>
+
+        </mat-button-toggle-group>
+        <!--   <mat-radio-group
+             aria-labelledby="example-radio-group-label"
+             class="example-radio-group" required #aproveNg="ngModel"
+             [(ngModel)]="aprove" name="aprove">
+             <mat-radio-button class="example-radio-button espDer15" [value]="isTrue">
+               {{'button.approve' | translate}}
+             </mat-radio-button>
+             <mat-radio-button class="example-radio-button" [value]="isFalse">
+               {{'button.reject' | translate}}
+             </mat-radio-button>
+           </mat-radio-group>-->
+        <div *ngIf="aproveNg.errors?.required && approveRejectForm.submitted">
+          <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+          </h5>
+        </div>
+      </div>
+
+      <div class="col-md-8 paddingTop15" *ngIf="!aprove && aprove !== null">
+             <textarea type="text" class="example-full-width form-control" [(ngModel)]="comment" name="comment"
+                       placeholder="{{'title.comments' | translate}}"></textarea>
+        <div *ngIf="comment === '' && approveRejectForm.submitted">
+          <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+          </h5>
+        </div>
+      </div>
+
+
+    </div>
+    <mat-dialog-actions class="centrado">
+      <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.cancel' | translate}}</a>
+      <div *ngIf="aprove !== null">
+        <button *ngIf="aprove" class="glow-on-hover espIz15" type="submit" (click)="approve(approveRejectForm)"
+                tabindex="1">{{'button.confirm_approve' | translate}}</button>
+        <button *ngIf="!aprove" class="glow-on-hover espIz15" type="submit" (click)="reject(approveRejectForm)"
+                tabindex="1">{{'button.confirm_reject' | translate}}</button>
+
+      </div>
+    </mat-dialog-actions>
+  </div>
+</form>

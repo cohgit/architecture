@@ -1,0 +1,3115 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ImpulseComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/impulse/impulse.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{
+    provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS]
+}</code>
+                            <code>{ provide: MAT_DATE_FORMATS, useValue: MONTH_YEAR_FORMAT }</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-impulse</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./impulse.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./impulse.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#accessConfig" >accessConfig</a>
+                            </li>
+                            <li>
+                                <a href="#allStates" >allStates</a>
+                            </li>
+                            <li>
+                                <a href="#allTypes" >allTypes</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#impulseService" >impulseService</a>
+                            </li>
+                            <li>
+                                <a href="#impulsesFiltered" >impulsesFiltered</a>
+                            </li>
+                            <li>
+                                <a href="#info" >info</a>
+                            </li>
+                            <li>
+                                <a href="#minDate" >minDate</a>
+                            </li>
+                            <li>
+                                <a href="#noneValue" >noneValue</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorClass" >paginatorClass</a>
+                            </li>
+                            <li>
+                                <a href="#sortDirection" >sortDirection</a>
+                            </li>
+                            <li>
+                                <a href="#today" >today</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate" >translate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                            <li>
+                                <a href="#uuid_scanner" >uuid_scanner</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#variableService" >variableService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aproveImpulse" >aproveImpulse</a>
+                            </li>
+                            <li>
+                                <a href="#chosenMonthHandler" >chosenMonthHandler</a>
+                            </li>
+                            <li>
+                                <a href="#chosenYearHandler" >chosenYearHandler</a>
+                            </li>
+                            <li>
+                                <a href="#clean" >clean</a>
+                            </li>
+                            <li>
+                                <a href="#editItem" >editItem</a>
+                            </li>
+                            <li>
+                                <a href="#evaluateImpulse" >evaluateImpulse</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#filterEstimatedDate" >filterEstimatedDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#filterStatus" >filterStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#filterTittle" >filterTittle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#filterType" >filterType</a>
+                            </li>
+                            <li>
+                                <a href="#loadCommons" >loadCommons</a>
+                            </li>
+                            <li>
+                                <a href="#loadTable" >loadTable</a>
+                            </li>
+                            <li>
+                                <a href="#newItem" >newItem</a>
+                            </li>
+                            <li>
+                                <a href="#newsDetail" >newsDetail</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangePage" >onChangePage</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                <a href="#searchResult" >searchResult</a>
+                            </li>
+                            <li>
+                                <a href="#setEstimatedDate" >setEstimatedDate</a>
+                            </li>
+                            <li>
+                                <a href="#setURL" >setURL</a>
+                            </li>
+                            <li>
+                                <a href="#sortFunction" >sortFunction</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, impulseService: <a href="../injectables/ImpulseService.html" target="_self">ImpulseService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, translate: TranslateService, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, variableService: <a href="../injectables/ImpulseVariableService.html" target="_self">ImpulseVariableService</a>, modal: <a href="../injectables/ModalService.html" target="_self">ModalService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="70" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>manages all the impulse information</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>impulseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ImpulseService.html" target="_self" >ImpulseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>variableService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ImpulseVariableService.html" target="_self" >ImpulseVariableService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ModalService.html" target="_self" >ModalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aproveImpulse"></a>
+                    <span class="name">
+                        <span ><b>aproveImpulse</b></span>
+                        <a href="#aproveImpulse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aproveImpulse(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="301"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:301</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>change status to aprove</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chosenMonthHandler"></a>
+                    <span class="name">
+                        <span ><b>chosenMonthHandler</b></span>
+                        <a href="#chosenMonthHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>chosenMonthHandler(normalizedMonth: Moment, datepicker: MatDatepicker<Moment>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="249"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:249</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event change month in datepicker</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>normalizedMonth</td>
+                                    <td>
+                                            <code>Moment</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>datepicker</td>
+                                    <td>
+                                            <code>MatDatepicker&lt;Moment&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chosenYearHandler"></a>
+                    <span class="name">
+                        <span ><b>chosenYearHandler</b></span>
+                        <a href="#chosenYearHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>chosenYearHandler(normalizedYear: Moment)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="239"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event change year in datepicker</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>normalizedYear</td>
+                                    <td>
+                                            <code>Moment</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clean"></a>
+                    <span class="name">
+                        <span ><b>clean</b></span>
+                        <a href="#clean"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clean()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="286"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:286</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>clean Filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editItem"></a>
+                    <span class="name">
+                        <span ><b>editItem</b></span>
+                        <a href="#editItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editItem(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="147"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> Open a model to edit an Item</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluateImpulse"></a>
+                    <span class="name">
+                        <span ><b>evaluateImpulse</b></span>
+                        <a href="#evaluateImpulse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>evaluateImpulse(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="324"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>open a modal to approve or not an impulse</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterEstimatedDate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>filterEstimatedDate</b></span>
+                        <a href="#filterEstimatedDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>filterEstimatedDate(param: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="219"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:219</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>filter an array by estimated date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>filterStatus</b></span>
+                        <a href="#filterStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>filterStatus(param: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="199"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>filter an array by status</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterTittle"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>filterTittle</b></span>
+                        <a href="#filterTittle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>filterTittle(param: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="189"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:189</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>filter an array by tittle</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterType"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>filterType</b></span>
+                        <a href="#filterType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>filterType(param: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="209"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>filter an array by type</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCommons"></a>
+                    <span class="name">
+                        <span ><b>loadCommons</b></span>
+                        <a href="#loadCommons"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadCommons()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="103"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadTable"></a>
+                    <span class="name">
+                        <span ><b>loadTable</b></span>
+                        <a href="#loadTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadTable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="111"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newItem"></a>
+                    <span class="name">
+                        <span ><b>newItem</b></span>
+                        <a href="#newItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newItem()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="155"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open a model to create a new Item</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newsDetail"></a>
+                    <span class="name">
+                        <span ><b>newsDetail</b></span>
+                        <a href="#newsDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newsDetail(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="279"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:279</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open a modal to manage news</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="93"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangePage"></a>
+                    <span class="name">
+                        <span ><b>onChangePage</b></span>
+                        <a href="#onChangePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangePage(pageOfItems: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="168"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>  change paginator</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOfItems</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(isNuevo: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, isEditable: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, componente, large)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="125"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>  function to open modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isNuevo</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isEditable</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>componente</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>large</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchResult"></a>
+                    <span class="name">
+                        <span ><b>searchResult</b></span>
+                        <a href="#searchResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchResult(filters: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="176"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>  search items in table with the filters values</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setEstimatedDate"></a>
+                    <span class="name">
+                        <span ><b>setEstimatedDate</b></span>
+                        <a href="#setEstimatedDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setEstimatedDate(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="259"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:259</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>open a modal to set estimate date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setURL"></a>
+                    <span class="name">
+                        <span ><b>setURL</b></span>
+                        <a href="#setURL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setURL(impulse: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="271"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>open a modal to set final URL</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>impulse</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortFunction"></a>
+                    <span class="name">
+                        <span ><b>sortFunction</b></span>
+                        <a href="#sortFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortFunction(colName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="228"
+                            class="link-to-prism">src/app/pages/impulse/impulse.component.ts:228</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Order table Items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="accessConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>accessConfig</b></span>
+                        <a href="#accessConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="58" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allStates"></a>
+                    <span class="name">
+                        <span ><b>allStates</b></span>
+                        <a href="#allStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="54" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allTypes"></a>
+                    <span class="name">
+                        <span ><b>allTypes</b></span>
+                        <a href="#allTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="55" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <span ><b>filter</b></span>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    title: &#x27;&#x27;,
+    type: &#x27;&#x27;,
+    state: &#x27;&#x27;,
+    author: &#x27;&#x27;,
+    month: moment(),
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="61" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impulseService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>impulseService</b></span>
+                        <a href="#impulseService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/ImpulseService.html" target="_self" >ImpulseService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="86" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="impulsesFiltered"></a>
+                    <span class="name">
+                        <span ><b>impulsesFiltered</b></span>
+                        <a href="#impulsesFiltered"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="53" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="info"></a>
+                    <span class="name">
+                        <span ><b>info</b></span>
+                        <a href="#info"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{impulses: []}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="51" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="minDate"></a>
+                    <span class="name">
+                        <span ><b>minDate</b></span>
+                        <a href="#minDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Date(new Date().setFullYear(new Date().getFullYear() - 2))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="57" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noneValue"></a>
+                    <span class="name">
+                        <span ><b>noneValue</b></span>
+                        <a href="#noneValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="52" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginatorClass"></a>
+                    <span class="name">
+                        <span ><b>paginatorClass</b></span>
+                        <a href="#paginatorClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;paginator&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="59" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDirection"></a>
+                    <span class="name">
+                        <span ><b>sortDirection</b></span>
+                        <a href="#sortDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="70" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="today"></a>
+                    <span class="name">
+                        <span ><b>today</b></span>
+                        <a href="#today"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Date()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="56" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translate</b></span>
+                        <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>TranslateService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="87" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="86" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="85" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uuid_scanner"></a>
+                    <span class="name">
+                        <span ><b>uuid_scanner</b></span>
+                        <a href="#uuid_scanner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="49" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="variableService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>variableService</b></span>
+                        <a href="#variableService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/ImpulseVariableService.html" target="_self" >ImpulseVariableService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="89" class="link-to-prism">src/app/pages/impulse/impulse.component.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {MatDialog} from &#x27;@angular/material/dialog&#x27;;
+import {ModalService} from &#x27;../../helpers/modal.service&#x27;;
+import {UtilService} from &#x27;../../helpers/util.service&#x27;;
+import {TranslateHelperService} from &#x27;../../helpers/translate-helper.service&#x27;;
+import {CommonService} from &#x27;../../services/common.service&#x27;;
+import {ImpulseService} from &#x27;../../services/impulse.service&#x27;;
+import {NewEditImpulseComponent} from &#x27;./new-edit-impulse/new-edit-impulse.component&#x27;;
+import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from &#x27;@angular/material/core&#x27;;
+import {MAT_MOMENT_DATE_ADAPTER_OPTIONS, MomentDateAdapter} from &#x27;@angular/material-moment-adapter&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import {Moment} from &#x27;moment&#x27;;
+import {MatDatepicker} from &#x27;@angular/material/datepicker&#x27;;
+import {ActivatedRoute} from &#x27;@angular/router&#x27;;
+import {SelectDateComponent} from &#x27;./select-date/select-date.component&#x27;;
+import {FinalURLComponent} from &#x27;./final-url/final-url.component&#x27;;
+import {ManageNewsComponent} from &#x27;./manage-news/manage-news.component&#x27;;
+import {TranslateService} from &#x27;@ngx-translate/core&#x27;;
+import {SessionService} from &#x27;src/app/helpers/session.service&#x27;;
+import {ImpulseVariableService} from &#x27;src/app/services/impulse-variable.service&#x27;;
+import {ApproveImpulseComponent} from &quot;./approve-impulse/approve-impulse.component&quot;;
+
+export const MONTH_YEAR_FORMAT &#x3D; {
+  parse: {
+    dateInput: &#x27;MM/YYYY&#x27;,
+  },
+  display: {
+    dateInput: &#x27;MM/YYYY&#x27;,
+    monthYearLabel: &#x27;MMM YYYY&#x27;,
+    dateA11yLabel: &#x27;LL&#x27;,
+    monthYearA11yLabel: &#x27;MMMM YYYY&#x27;,
+  },
+};
+
+@Component({
+  selector: &#x27;app-impulse&#x27;,
+  templateUrl: &#x27;./impulse.component.html&#x27;,
+  styleUrls: [&#x27;./impulse.component.css&#x27;],
+  providers: [
+    {
+      provide: DateAdapter,
+      useClass: MomentDateAdapter,
+      deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS]
+    },
+    {provide: MAT_DATE_FORMATS, useValue: MONTH_YEAR_FORMAT}
+  ]
+})
+export class ImpulseComponent implements OnInit {
+  uuid_scanner: string;
+
+  info: any &#x3D; {impulses: []};
+  noneValue &#x3D; &#x27;&#x27;;
+  impulsesFiltered: Array&lt;any&gt;;
+  allStates &#x3D; [];
+  allTypes &#x3D; [];
+  today &#x3D; new Date();
+  minDate &#x3D; new Date(new Date().setFullYear(new Date().getFullYear() - 2));
+  private accessConfig &#x3D; null;
+  paginatorClass &#x3D; &#x27;paginator&#x27;;
+  /* objeto a enviar al filtro */
+  filter &#x3D; {
+    title: &#x27;&#x27;,
+    type: &#x27;&#x27;,
+    state: &#x27;&#x27;,
+    author: &#x27;&#x27;,
+    month: moment(),
+  };
+
+  /* dirección ascendente o descendente */
+  sortDirection &#x3D; false;
+
+  /**
+   * manages all the impulse information
+   * @param dialog
+   * @param utilService
+   * @param impulseService
+   * @param translateHelper
+   * @param translate
+   * @param session
+   * @param commonService
+   * @param activatedRoute
+   * @param variableService
+   * @param modal
+   */
+  constructor(private dialog: MatDialog, public utilService: UtilService,
+              public impulseService: ImpulseService, public translateHelper: TranslateHelperService,
+              public translate: TranslateService, private session: SessionService,
+              private commonService: CommonService, private activatedRoute: ActivatedRoute,
+              public variableService: ImpulseVariableService, private modal: ModalService) {
+    this.accessConfig &#x3D; this.session.getAccessConfig();
+  }
+
+  ngOnInit(): void {
+    this.loadTable();
+    this.loadCommons();
+    this.noneValue &#x3D; this.translate.instant(&#x27;label.none&#x27;);
+
+  }
+
+  /*
+load commons services to fill select inputs
+* */
+  loadCommons(): void {
+    this.commonService.listImpulseStatus(response &#x3D;&gt; this.allStates &#x3D; response);
+    this.commonService.listImpulseTypes(response &#x3D;&gt; this.allTypes &#x3D; response);
+  }
+
+  /*
+  load principal table
+   * */
+  loadTable(): void {
+    this.uuid_scanner &#x3D; this.activatedRoute.snapshot.paramMap.get(&#x27;uuid_scanner&#x27;);
+    this.impulseService.list(this.uuid_scanner, response &#x3D;&gt; this.info &#x3D; response);
+
+  }
+
+  /**
+   *   function to open modal
+   * @param isNuevo
+   * @param isEditable
+   * @param impulse
+   * @param componente
+   * @param large
+   */
+  openModal(isNuevo: boolean, isEditable: boolean, impulse: any, componente, large): void {
+    const dialogRef &#x3D; this.dialog.open(componente, {
+      closeOnNavigation: true,
+      disableClose: true,
+      width: large,
+      data: {
+        nuevo: isNuevo,
+        editable: isEditable,
+        info: impulse,
+        scanner: this.info.scanner,
+        impulses: this.info.impulses,
+      }
+    });
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.loadTable();
+    });
+  }
+
+  /**
+   *  Open a model to edit an Item
+   * @param impulse
+   */
+  editItem(impulse: any): void {
+    impulse.content &#x3D; impulse.content ? impulse.content : {};
+    this.openModal(false, true, impulse, NewEditImpulseComponent, &#x27;100%&#x27;);
+  }
+
+  /**
+   * Open a model to create a new Item
+   */
+  newItem(): void {
+    this.openModal(true, false, {
+      uuidScanner: this.uuid_scanner,
+      content: {},
+      editableSolitude: true,
+      editableContent: true
+    }, NewEditImpulseComponent, &#x27;80%&#x27;);
+  }
+
+  /**
+   *   change paginator
+   * @param pageOfItems
+   */
+  onChangePage(pageOfItems: Array&lt;any&gt;): void {
+    this.impulsesFiltered &#x3D; pageOfItems;
+  }
+
+  /**
+   *   search items in table with the filters values
+   * @param filters
+   */
+  searchResult(filters: any): void {
+    this.impulsesFiltered &#x3D; this.info.impulses.filter(impulse &#x3D;&gt; {
+      return this.filterTittle(filters.title, impulse) &amp;&amp; this.filterStatus(filters.state, impulse) &amp;&amp;
+        this.filterType(filters.type, impulse) &amp;&amp; this.filterEstimatedDate(filters.month, impulse)
+    });
+  }
+
+  /**
+   * filter an array by tittle
+   * @param param
+   * @param impulse
+   * @private
+   */
+  private filterTittle(param: string, impulse: any): boolean {
+    return param ? impulse?.content?.title?.toLowerCase().includes(param.toLowerCase()) : true;
+  }
+
+  /**
+   * filter an array by status
+   * @param param
+   * @param impulse
+   * @private
+   */
+  private filterStatus(param: string, impulse: any): boolean {
+    return param ? impulse?.statusObj?.tag &#x3D;&#x3D;&#x3D; param : true;
+  }
+
+  /**
+   * filter an array by type
+   * @param param
+   * @param impulse
+   * @private
+   */
+  private filterType(param: string, impulse: any): boolean {
+    return param ? impulse?.type &#x3D;&#x3D;&#x3D; param : true;
+  }
+
+  /**
+   * filter an array by estimated date
+   * @param param
+   * @param impulse
+   * @private
+   */
+  private filterEstimatedDate(param: any, impulse: any): boolean {
+   // console.log(param, impulse)
+    return param ? moment(impulse?.estimated_publish, &#x27;YYYY-MM-DD&#x27;).format(&quot;MM/YYYY&quot;) &#x3D;&#x3D;&#x3D; moment(new Date(param)).format(&quot;MM/YYYY&quot;) : true;
+  }
+
+  /**
+   * Order table Items
+   * @param colName
+   */
+  sortFunction(colName: string): void {
+    const result &#x3D; this.utilService.sortTable(colName, true, this.info?.impulses, this.sortDirection);
+    this.info.impulses &#x3D; result.array;
+    this.sortDirection &#x3D; result.direction;
+    this.utilService.changeSelectedPageToFirst(this.paginatorClass);
+  }
+
+  /**
+   * Event change year in datepicker
+   * @param normalizedYear
+   */
+  chosenYearHandler(normalizedYear: Moment): void {
+    normalizedYear.month(this.filter.month.month());
+    this.filter.month &#x3D; normalizedYear;
+  }
+
+  /**
+   * Event change month in datepicker
+   * @param normalizedMonth
+   * @param datepicker
+   */
+  chosenMonthHandler(normalizedMonth: Moment, datepicker: MatDatepicker&lt;Moment&gt;): void {
+    this.filter.month &#x3D; normalizedMonth;
+    datepicker.close();
+    this.searchResult(this.filter);
+  }
+
+  /**
+   * open a modal to set estimate date
+   * @param impulse
+   */
+  setEstimatedDate(impulse: any): void {
+    this.openModal(false, true, {
+      data: impulse,
+      plan: this.info.scanner.restrictions.detail,
+      list: this.info.impulses
+    }, SelectDateComponent, &#x27;&#x27;);
+  }
+
+  /**
+   * open a modal to set final URL
+   * @param impulse
+   */
+  setURL(impulse: any): void {
+    this.openModal(false, true, impulse, FinalURLComponent, &#x27;&#x27;);
+  }
+
+  /**
+   * Open a modal to manage news
+   * @param impulse
+   */
+  newsDetail(impulse: any): void {
+    this.openModal(false, true, impulse, ManageNewsComponent, &#x27;80%&#x27;);
+  }
+
+  /**
+   * clean Filters
+   */
+  clean(): void {
+    this.filter &#x3D; {
+      title: &#x27;&#x27;,
+      type: &#x27;&#x27;,
+      state: &#x27;&#x27;,
+      author: &#x27;&#x27;,
+      month: moment(),
+    };
+    this.impulsesFiltered &#x3D; this.info.impulses;
+  }
+
+  /**
+   * change status to aprove
+   * @param impulse
+   */
+  aproveImpulse(impulse: any) {
+    this.modal.openConfirmation({
+      message: &#x27;message.confirmation.impulse.approved&#x27;,
+      onConfirm: () &#x3D;&gt; {
+        if (impulse.content) {
+          this.impulseService.update(impulse.info, () &#x3D;&gt; {
+            this.impulseService.askApproval(impulse.content.id, impulse.comments, () &#x3D;&gt; {
+
+            });
+          });
+        } else {
+          this.utilService.showNotification(&#x27;error.required_fields&#x27;, &#x27;danger&#x27;);
+        }
+      },
+    });
+
+
+  }
+
+  /**
+   * open a modal to approve or not an impulse
+   * @param impulse
+   */
+  evaluateImpulse(impulse: any) {
+    this.openModal(false, true, impulse, ApproveImpulseComponent, &#x27;&#x27;);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row paddingTop15&quot; id&#x3D;&quot;toExport&quot;&gt;
+  &lt;div class&#x3D;&quot;row content-card&quot;&gt;
+    &lt;!--tittle--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-10&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-3 col-sm-6&quot;&gt;
+              &lt;h2&gt;
+                &lt;i class&#x3D;&quot;las la-sort-amount-up-alt colorPrincipal espDer5&quot;&gt;&lt;/i&gt;
+                {{ &quot;title.impulse&quot; | translate }}
+              &lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-8 col-sm-6 paddingTop5 float-left&quot;&gt;
+              &lt;a class&#x3D;&quot;glow-on-hover reduceFont&quot; (click)&#x3D;&quot;newItem()&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-plus-circle espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;button.add&quot; | translate }}
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2 top20m&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a
+                (click)&#x3D;&quot;utilService.downloadExcel(&#x27;title.impulse&#x27;)&quot;
+                class&#x3D;&quot;third after reduceFont&quot;
+              &gt;
+                &lt;i class&#x3D;&quot;las la-file-excel colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.excel&quot; | translate }}&lt;/a
+              &gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-4 col-sm-6&quot;&gt;
+              &lt;a
+                (click)&#x3D;&quot;utilService.donwloadPDF(&#x27;title.impulse&#x27;)&quot;
+                class&#x3D;&quot;third after reduceFont&quot;
+              &gt;
+                &lt;i class&#x3D;&quot;las la-file-pdf colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.pdf&quot; | translate }}&lt;/a
+              &gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--filters--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;info?.impulses.length &gt; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row border-filter&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;filter.title&quot;
+              name&#x3D;&quot;title&quot;
+              matInput
+              (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+              placeholder&#x3D;&quot;{{ &#x27;label.impulse.tittle&#x27; | translate }} &quot;
+            /&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;mat-select
+              placeholder&#x3D;&quot;{{ &#x27;label.impulse.state&#x27; | translate }}&quot;
+              [(ngModel)]&#x3D;&quot;filter.state&quot;
+              (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+            &gt;
+              &lt;mat-option *ngFor&#x3D;&quot;let item of allStates&quot; [value]&#x3D;&quot;item.tag&quot;&gt;
+                {{ &quot;list.impulse.state.&quot; + item.tag | translate }}
+              &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;mat-label
+              &gt;{{ &quot;label.scanner.advance.image.type&quot; | translate }}
+            &lt;/mat-label&gt;
+            &lt;mat-select
+              [(ngModel)]&#x3D;&quot;filter.type&quot;
+              name&#x3D;&quot;type&quot;
+              (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+            &gt;
+              &lt;mat-option *ngFor&#x3D;&quot;let type of allTypes&quot; [value]&#x3D;&quot;type.tag&quot;&gt;
+                {{ &quot;list.impulse.type.&quot; + type.tag | translate }}
+              &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;mat-label
+              &gt;{{ &quot;label.impulse.start_month&quot; | translate }}
+            &lt;/mat-label&gt;
+            &lt;input
+              matInput
+              [matDatepicker]&#x3D;&quot;pickerMonthYear&quot;
+              [(ngModel)]&#x3D;&quot;filter.month&quot;
+              (ngModelChange)&#x3D;&quot;searchResult(filter)&quot;
+            /&gt;
+            &lt;mat-datepicker-toggle
+              matSuffix
+              [for]&#x3D;&quot;pickerMonthYear&quot;
+            &gt;&lt;/mat-datepicker-toggle&gt;
+            &lt;mat-datepicker
+              #pickerMonthYear
+              startView&#x3D;&quot;multi-year&quot;
+              (yearSelected)&#x3D;&quot;chosenYearHandler($event)&quot;
+              (monthSelected)&#x3D;&quot;chosenMonthHandler($event, pickerMonthYear)&quot;
+              panelClass&#x3D;&quot;example-month-picker&quot;
+            &gt;&lt;/mat-datepicker&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;col-md-2 centrado col-sm-12&quot;&gt;
+          &lt;button (click)&#x3D;&quot;searchResult(filter)&quot; class&#x3D;&quot;secondLevelButton reduceFont&quot;
+          &gt;&lt;i class&#x3D;&quot;las la-search espDer5&quot;&gt;&lt;/i&gt;{{&#x27;button.search&#x27; | translate}}&lt;/button&gt;
+        &lt;/div&gt;--&gt;
+        &lt;div class&#x3D;&quot;col-md-2 col-sm-12 paddingTop15 float-left&quot;&gt;
+          &lt;a (click)&#x3D;&quot;clean()&quot; class&#x3D;&quot;third after reduceFont&quot;&gt;
+            &lt;i class&#x3D;&quot;las la-broom colorPrincipal espDer5&quot;&gt;&lt;/i
+            &gt;{{ &quot;button.clear_filters&quot; | translate }}&lt;/a
+          &gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--principal table--&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;info?.impulses.length &gt; 0&quot;&gt;
+      &lt;div class&#x3D;&quot;row slide-in-blurred-bottom horizontal-scroll&quot;&gt;
+        &lt;table class&#x3D;&quot;table table-hover table-borderless&quot;&gt;
+          &lt;thead class&#x3D;&quot;thead-light&quot;&gt;
+            &lt;tr&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;type&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.scanner.advance.image.type&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th&gt;{{ &quot;label.impulse.tittle_url&quot; | translate }}&lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;keyword.word&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse.keywords_selected&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;status&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse.state&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;creation_date&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse-date&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;estimated_publish&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse.start_month&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;month&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse.publish_date&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th (click)&#x3D;&quot;sortFunction(&#x27;content.author_name&#x27;)&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-sort colorPrincipal espDer5&quot;&gt;&lt;/i
+                &gt;{{ &quot;label.impulse.author&quot; | translate }}
+              &lt;/th&gt;
+              &lt;th&gt;{{ &quot;label.actions&quot; | translate }}&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr *ngFor&#x3D;&quot;let impulse of impulsesFiltered&quot;&gt;
+              &lt;td&gt;{{ &quot;list.impulse.type.&quot; + impulse.type | translate }}&lt;/td&gt;
+              &lt;td *ngIf&#x3D;&quot;impulse.real_publish_link&quot;&gt;
+                &lt;a href&#x3D;&quot;{{ impulse.real_publish_link }}&quot; target&#x3D;&quot;_blank&quot;&gt;{{
+                  impulse?.content?.title
+                }}&lt;/a&gt;
+              &lt;/td&gt;
+              &lt;td *ngIf&#x3D;&quot;!impulse.real_publish_link&quot;&gt;
+                {{ impulse?.content?.title }}
+              &lt;/td&gt;
+              &lt;td&gt;{{ impulse?.keyword?.word }}&lt;/td&gt;
+              &lt;td&gt;
+                {{
+                  &quot;list.impulse.state.&quot; + impulse?.statusObj?.tag | translate
+                }}
+              &lt;/td&gt;
+              &lt;td&gt;
+                {{ utilService.formatDate(impulse?.creation_date) | date }}
+              &lt;/td&gt;
+              &lt;td&gt;
+                {{ impulse?.estimated_publish | date : &quot;MM/yyyy&quot; }}
+              &lt;/td&gt;
+              &lt;td&gt;
+                {{ utilService.formatDate(impulse?.real_publish_date) | date }}
+              &lt;/td&gt;
+              &lt;td&gt;{{ impulse?.content?.author_name }}&lt;/td&gt;
+              &lt;td&gt;
+                &lt;a (click)&#x3D;&quot;editItem(impulse)&quot; class&#x3D;&quot;espDer15&quot;&gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-edit colorPrincipal la-2x&quot;
+                    title&#x3D;&quot;{{ &#x27;tooltip.edit_impulse&#x27; | translate }}&quot;
+                  &gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;a
+                  (click)&#x3D;&quot;setEstimatedDate(impulse)&quot;
+                  class&#x3D;&quot;espDer15&quot;
+                  *ngIf&#x3D;&quot;
+                    impulse?.statusObj?.APPROVED &amp;&amp;
+                    accessConfig.ADMIN &amp;&amp;
+                    impulseService.permissions_publish.save
+                  &quot;
+                &gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-calendar-alt colorPrincipal la-2x&quot;
+                    title&#x3D;&quot;{{ &#x27;tooltip.impulse.set_date&#x27; | translate }}&quot;
+                  &gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;a
+                  (click)&#x3D;&quot;setURL(impulse)&quot;
+                  class&#x3D;&quot;espDer15&quot;
+                  *ngIf&#x3D;&quot;
+                    impulse?.statusObj?.APPROVED &amp;&amp;
+                    accessConfig.ADMIN &amp;&amp;
+                    impulseService.permissions_publish.update
+                  &quot;
+                &gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-link colorPrincipal la-2x&quot;
+                    title&#x3D;&quot;{{ &#x27;tooltip.impulse.news_link&#x27; | translate }}&quot;
+                  &gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;a
+                  (click)&#x3D;&quot;newsDetail(impulse)&quot;
+                  *ngIf&#x3D;&quot;
+                    impulse?.statusObj?.PUBLISHED &amp;&amp;
+                    accessConfig.ADMIN &amp;&amp;
+                    variableService?.permissions?.read
+                  &quot;
+                  class&#x3D;&quot;espDer15&quot;
+                &gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-flask colorPrincipal la-2x&quot;
+                    title&#x3D;&quot;{{ &#x27;tooltip.impulse.news_management&#x27; | translate }}&quot;
+                  &gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;a
+                  (click)&#x3D;&quot;evaluateImpulse(impulse)&quot;
+                  *ngIf&#x3D;&quot;impulse?.aprovableRejectable&quot;
+                  class&#x3D;&quot;espDer15&quot;
+                &gt;
+                  &lt;i
+                    class&#x3D;&quot;las la-clipboard-check colorPrincipal la-2x&quot;
+                    title&#x3D;&quot;{{ &#x27;tittle.approve_reject&#x27; | translate }}&quot;
+                  &gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;div class&#x3D;&quot;col-md-12 centrado&quot;&gt;
+          &lt;jw-pagination
+            [items]&#x3D;&quot;info?.impulses&quot;
+            (changePage)&#x3D;&quot;onChangePage($event)&quot;
+            [maxPages]&#x3D;&quot;5&quot;
+            [pageSize]&#x3D;&quot;10&quot;
+            class&#x3D;&quot;{{ paginatorClass }}&quot;
+          &gt;&lt;/jw-pagination&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;info?.impulses.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+      &lt;h5 class&#x3D;&quot;colorGris&quot;&gt;{{ &quot;error.not_found_results&quot; | translate }}&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-12 centrado paddingBottom50&quot;&gt;
+      &lt;button (click)&#x3D;&quot;utilService.back()&quot; class&#x3D;&quot;secondLevelButton espDer15&quot;&gt;
+        &lt;i class&#x3D;&quot;las fa-backward espDer5&quot;&gt;&lt;/i&gt;{{ &quot;button.back&quot; | translate }}
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./impulse.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row paddingTop15" id="toExport">  <div class="row content-card">    <!--tittle-->    <div class="col-md-12">      <div class="row">        <div class="col-md-10">          <div class="row">            <div class="col-md-3 col-sm-6">              <h2>                <i class="las la-sort-amount-up-alt colorPrincipal espDer5"></i>                {{ "title.impulse" | translate }}              </h2>            </div>            <div class="col-md-8 col-sm-6 paddingTop5 float-left">              <a class="glow-on-hover reduceFont" (click)="newItem()">                <i class="las la-plus-circle espDer5"></i                >{{ "button.add" | translate }}              </a>            </div>          </div>        </div>        <div class="col-md-2 top20m">          <div class="row">            <div class="col-md-4 col-sm-6"></div>            <div class="col-md-4 col-sm-6">              <a                (click)="utilService.downloadExcel(\'title.impulse\')"                class="third after reduceFont"              >                <i class="las la-file-excel colorPrincipal espDer5"></i                >{{ "label.excel" | translate }}</a              >            </div>            <div class="col-md-4 col-sm-6">              <a                (click)="utilService.donwloadPDF(\'title.impulse\')"                class="third after reduceFont"              >                <i class="las la-file-pdf colorPrincipal espDer5"></i                >{{ "label.pdf" | translate }}</a              >            </div>          </div>        </div>      </div>    </div>    <!--filters-->    <div class="col-md-12" *ngIf="info?.impulses.length > 0">      <div class="row border-filter">        <div class="col-md-2">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="filter.title"              name="title"              matInput              (ngModelChange)="searchResult(filter)"              placeholder="{{ \'label.impulse.tittle\' | translate }} "            />          </mat-form-field>        </div>        <div class="col-md-2">          <mat-form-field class="example-full-width">            <mat-select              placeholder="{{ \'label.impulse.state\' | translate }}"              [(ngModel)]="filter.state"              (ngModelChange)="searchResult(filter)"            >              <mat-option *ngFor="let item of allStates" [value]="item.tag">                {{ "list.impulse.state." + item.tag | translate }}              </mat-option>            </mat-select>          </mat-form-field>        </div>        <div class="col-md-2">          <mat-form-field class="example-full-width">            <mat-label              >{{ "label.scanner.advance.image.type" | translate }}            </mat-label>            <mat-select              [(ngModel)]="filter.type"              name="type"              (ngModelChange)="searchResult(filter)"            >              <mat-option *ngFor="let type of allTypes" [value]="type.tag">                {{ "list.impulse.type." + type.tag | translate }}              </mat-option>            </mat-select>          </mat-form-field>        </div>        <div class="col-md-2">          <mat-form-field class="example-full-width">            <mat-label              >{{ "label.impulse.start_month" | translate }}            </mat-label>            <input              matInput              [matDatepicker]="pickerMonthYear"              [(ngModel)]="filter.month"              (ngModelChange)="searchResult(filter)"            />            <mat-datepicker-toggle              matSuffix              [for]="pickerMonthYear"            ></mat-datepicker-toggle>            <mat-datepicker              #pickerMonthYear              startView="multi-year"              (yearSelected)="chosenYearHandler($event)"              (monthSelected)="chosenMonthHandler($event, pickerMonthYear)"              panelClass="example-month-picker"            ></mat-datepicker>          </mat-form-field>        </div>        <!-- <div class="col-md-2 centrado col-sm-12">          <button (click)="searchResult(filter)" class="secondLevelButton reduceFont"          ><i class="las la-search espDer5"></i>{{\'button.search\' | translate}}</button>        </div>-->        <div class="col-md-2 col-sm-12 paddingTop15 float-left">          <a (click)="clean()" class="third after reduceFont">            <i class="las la-broom colorPrincipal espDer5"></i            >{{ "button.clear_filters" | translate }}</a          >        </div>      </div>    </div>    <!--principal table-->    <div class="col-md-12" *ngIf="info?.impulses.length > 0">      <div class="row slide-in-blurred-bottom horizontal-scroll">        <table class="table table-hover table-borderless">          <thead class="thead-light">            <tr>              <th (click)="sortFunction(\'type\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.scanner.advance.image.type" | translate }}              </th>              <th>{{ "label.impulse.tittle_url" | translate }}</th>              <th (click)="sortFunction(\'keyword.word\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse.keywords_selected" | translate }}              </th>              <th (click)="sortFunction(\'status\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse.state" | translate }}              </th>              <th (click)="sortFunction(\'creation_date\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse-date" | translate }}              </th>              <th (click)="sortFunction(\'estimated_publish\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse.start_month" | translate }}              </th>              <th (click)="sortFunction(\'month\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse.publish_date" | translate }}              </th>              <th (click)="sortFunction(\'content.author_name\')">                <i class="las la-sort colorPrincipal espDer5"></i                >{{ "label.impulse.author" | translate }}              </th>              <th>{{ "label.actions" | translate }}</th>            </tr>          </thead>          <tbody>            <tr *ngFor="let impulse of impulsesFiltered">              <td>{{ "list.impulse.type." + impulse.type | translate }}</td>              <td *ngIf="impulse.real_publish_link">                <a href="{{ impulse.real_publish_link }}" target="_blank">{{                  impulse?.content?.title                }}</a>              </td>              <td *ngIf="!impulse.real_publish_link">                {{ impulse?.content?.title }}              </td>              <td>{{ impulse?.keyword?.word }}</td>              <td>                {{                  "list.impulse.state." + impulse?.statusObj?.tag | translate                }}              </td>              <td>                {{ utilService.formatDate(impulse?.creation_date) | date }}              </td>              <td>                {{ impulse?.estimated_publish | date : "MM/yyyy" }}              </td>              <td>                {{ utilService.formatDate(impulse?.real_publish_date) | date }}              </td>              <td>{{ impulse?.content?.author_name }}</td>              <td>                <a (click)="editItem(impulse)" class="espDer15">                  <i                    class="las la-edit colorPrincipal la-2x"                    title="{{ \'tooltip.edit_impulse\' | translate }}"                  ></i>                </a>                <a                  (click)="setEstimatedDate(impulse)"                  class="espDer15"                  *ngIf="                    impulse?.statusObj?.APPROVED &&                    accessConfig.ADMIN &&                    impulseService.permissions_publish.save                  "                >                  <i                    class="las la-calendar-alt colorPrincipal la-2x"                    title="{{ \'tooltip.impulse.set_date\' | translate }}"                  ></i>                </a>                <a                  (click)="setURL(impulse)"                  class="espDer15"                  *ngIf="                    impulse?.statusObj?.APPROVED &&                    accessConfig.ADMIN &&                    impulseService.permissions_publish.update                  "                >                  <i                    class="las la-link colorPrincipal la-2x"                    title="{{ \'tooltip.impulse.news_link\' | translate }}"                  ></i>                </a>                <a                  (click)="newsDetail(impulse)"                  *ngIf="                    impulse?.statusObj?.PUBLISHED &&                    accessConfig.ADMIN &&                    variableService?.permissions?.read                  "                  class="espDer15"                >                  <i                    class="las la-flask colorPrincipal la-2x"                    title="{{ \'tooltip.impulse.news_management\' | translate }}"                  ></i>                </a>                <a                  (click)="evaluateImpulse(impulse)"                  *ngIf="impulse?.aprovableRejectable"                  class="espDer15"                >                  <i                    class="las la-clipboard-check colorPrincipal la-2x"                    title="{{ \'tittle.approve_reject\' | translate }}"                  ></i>                </a>              </td>            </tr>          </tbody>        </table>        <div class="col-md-12 centrado">          <jw-pagination            [items]="info?.impulses"            (changePage)="onChangePage($event)"            [maxPages]="5"            [pageSize]="10"            class="{{ paginatorClass }}"          ></jw-pagination>        </div>      </div>    </div>    <div class="col-md-12" *ngIf="info?.impulses.length === 0">      <h5 class="colorGris">{{ "error.not_found_results" | translate }}</h5>    </div>    <div class="col-md-12 centrado paddingBottom50">      <button (click)="utilService.back()" class="secondLevelButton espDer15">        <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}      </button>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ImpulseComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ImpulseComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

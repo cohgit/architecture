@@ -1,0 +1,47 @@
+<div class="col-md-12">
+    <div *ngIf="!errors && !model?.id_content" class="col-md-12">
+        <mat-form-field  class="example-full-width">
+            <ngx-mat-file-input placeholder="Cargar {{fileTitle}}" [accept]="accept"
+                    (change)="_upload($event)" disabled="{{disabled}}"
+            ></ngx-mat-file-input>
+            <mat-icon matSuffix>folder</mat-icon>
+        </mat-form-field>
+    </div>
+    <div *ngIf="!errors && model?.id_content" class="col-md-11 centrado">
+
+      <div class="col-md-7 text-justify">
+        <mat-label class="espDer10"><strong>{{ fileTitle }}:</strong></mat-label>
+        <br>
+        <a (click) = "_download()" class="link "> <i class="las la-download"></i>
+          {{ (model?.file_name.length > 30)? (model?.file_name | slice:0:30)+'..':(model?.file_name) }} </a>
+      </div>
+      <div class="col-md-4"  *ngIf="preview">
+        <a *ngIf="!disabled" (click)="_remove()" class="espDer15"
+           title="Reemplazar Archivo">  <img *ngIf="preview" [src]="base64Preview" class="previewImage espDer15 " [width]="previewWidth"
+                                             [height]="previewHeight"/>
+        </a>
+      </div>
+      <div class="col-md-6" *ngIf="postview">
+        <a *ngIf="!disabled" (click)="_remove()" class="espDer15"
+           title="Reemplazar Archivo"><img *ngIf="postview && !base64Preview" [src]="postview" class="previewImage  espDer15" [width]="previewWidth" [height]="previewHeight"/>
+        </a>
+      </div>
+      <div class="col-md-6"  *ngIf="!preview && !postview">
+        <a *ngIf="!disabled" (click)="_remove()" class="espDer15"
+           title="Reemplazar Archivo">  <i class="las la-edit colorPrincipal"></i>
+        </a>
+        <!-- <img *ngIf="preview" [src]="base64Preview" class="previewImage espDer15 " [width]="previewWidth"
+            [height]="previewHeight"/>
+     <img *ngIf="postview && !base64Preview" [src]="postview" class="previewImage  espDer15"
+            [width]="previewWidth" [height]="previewHeight"/>-->
+
+      </div>
+
+    </div>
+
+    <div *ngIf="errors" class="col-md-12">
+      {{ errors }}
+      <a (click)="_reset()" class="paddingTop5 right cursor-pointer" title="Recargar"><i
+        class="fa fa-times iconTransparent espIz15"></i></a>
+    </div>
+</div>

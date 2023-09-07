@@ -1,0 +1,154 @@
+<div class="row">
+  <div class="col-md-12">
+    <h5>{{ "label.total.license.consumed_description" | translate }}</h5>
+    <mat-tab-group>
+      <mat-tab
+        *ngIf="infoPlan.scannersToMigrateRecurrent.length > 0"
+        label="{{ 'label.licence.monitor_actives' | translate }} ({{
+          infoPlan?.scannersToMigrateRecurrent.length
+        }})"
+      >
+        <div class="col-md-12">
+          <div class="colorGrisOscuro paddingTop5">
+            <h5>
+              {{ "label.actual_licences" | translate }}:
+              <span *ngIf="monitorActualLicences > 0">{{
+                monitorActualLicences
+              }}</span
+              ><span *ngIf="monitorActualLicences <= 0">0</span> -
+              {{ "label.new_licences" | translate }}:
+              <span *ngIf="monitorNewLicence > 0">{{ monitorNewLicence }}</span
+              ><span *ngIf="monitorNewLicence <= 0">0</span>
+            </h5>
+            <!--<br>
+          <h5>
+            {{'label.actives_licences' |
+              translate}}: {{infoPlan.scannersToMigrateRecurrent.length}}
+            - {{'label.licences_noMigrate' | translate}}:
+            <span *ngIf="totalMonitor > 0">{{totalMonitor}}</span><span *ngIf="totalMonitor <= 0">0</span></h5>-->
+          </div>
+
+          <div class="row slide-in-blurred-bottom horizontal-scroll">
+            <table class="table table-hover table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th></th>
+                  <th>{{ "label.scanner_name" | translate }}</th>
+                  <th>{{ "label.keywords" | translate }}</th>
+                  <th>{{ "label.impulse.creation_date" | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of copyArrayMonitor">
+                  <td>
+                    <mat-checkbox
+                      class="example-margin noCkeck espDer10"
+                      [(ngModel)]="data.checked"
+                      checked
+                      (change)="validateLimitMonitor()"
+                      [disabled]="noMonitor && !migrateMonitor"
+                    ></mat-checkbox>
+                  </td>
+                  <td>{{ data?.name }}</td>
+                  <td>{{ data?.keywords }}</td>
+                  <td>
+                    {{ utilService.formatDate(data?.creationDate) | date }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col-md-12 centrado">
+              <jw-pagination
+                [items]="infoPlan.scannersToMigrateRecurrent"
+                (changePage)="onChangePageMonitor($event)"
+                [maxPages]="5"
+                [pageSize]="15"
+              ></jw-pagination>
+            </div>
+          </div>
+          <h5 *ngIf="noMonitor && !migrateMonitor" class="colorRojo">
+            <i
+              class="las la-exclamation-triangle colorSecundario heartbeat la-2x espDer10"
+            ></i
+            >{{ "error.noMonitor" | translate }}
+          </h5>
+        </div>
+      </mat-tab>
+      <mat-tab
+        *ngIf="infoPlan.scannersToMigrateTransforma.length > 0"
+        label="{{ 'label.licence.transform_actives' | translate }} ({{
+          infoPlan.scannersToMigrateTransforma.length
+        }})"
+      >
+        <div class="col-md-12">
+          <div class="colorGrisOscuro paddingTop5">
+            <h5>
+              {{ "label.actual_licences" | translate }}:
+              <span *ngIf="transformActualLicences > 0">{{
+                transformActualLicences
+              }}</span
+              ><span *ngIf="transformActualLicences <= 0">0</span> -
+              {{ "label.new_licences" | translate }}:
+              <span *ngIf="transformNewLicences > 0">{{
+                transformNewLicences
+              }}</span
+              ><span *ngIf="transformNewLicences <= 0">0</span>
+            </h5>
+
+            <!-- <br>
+            <h5> {{'label.actives_licences' |
+                translate}}: {{infoPlan.scannersToMigrateTransforma.length}}
+              - {{'label.licences_noMigrate' | translate}}:
+              {{totalTransform}}
+              <span *ngIf="totalTransform > 0">{{totalTransform}}</span><span *ngIf="totalTransform <= 0">0</span></h5>-->
+          </div>
+
+          <div class="row slide-in-blanurred-bottom horizontal-scroll">
+            <table class="table table-hover table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th></th>
+                  <th>{{ "label.scanner_name" | translate }}</th>
+                  <th>{{ "label.keywords" | translate }}</th>
+                  <th>{{ "label.impulse.creation_date" | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of copyArrayTransform">
+                  <td>
+                    <mat-checkbox
+                      class="example-margin noCkeck espDer10"
+                      [(ngModel)]="data.checked"
+                      checked
+                      (change)="validateLimitTransfrom()"
+                      [disabled]="noTransform && !migrateTransforma"
+                    ></mat-checkbox>
+                  </td>
+                  <td>{{ data?.name }}</td>
+                  <td>{{ data?.keywords }}</td>
+                  <td>
+                    {{ utilService.formatDate(data?.creationDate) | date }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col-md-12 centrado">
+              <jw-pagination
+                [items]="infoPlan.scannersToMigrateTransforma"
+                (changePage)="onChangePageTransform($event)"
+                [maxPages]="5"
+                [pageSize]="15"
+              ></jw-pagination>
+            </div>
+          </div>
+          <h5 *ngIf="noTransform && !migrateTransforma" class="colorRojo">
+            <i
+              class="las la-exclamation-triangle colorSecundario heartbeat la-2x espDer10"
+            ></i
+            >{{ "error.noTransform" | translate }}
+          </h5>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

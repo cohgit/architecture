@@ -1,0 +1,1877 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  NewAccountComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/checkout-cart/new-account/new-account.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-new-account</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./new-account.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./new-account.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#client" >client</a>
+                            </li>
+                            <li>
+                                <a href="#confirmPass" >confirmPass</a>
+                            </li>
+                            <li>
+                                <a href="#disabledEmail" >disabledEmail</a>
+                            </li>
+                            <li>
+                                <a href="#duplicatedEmail" >duplicatedEmail</a>
+                            </li>
+                            <li>
+                                <a href="#hide" >hide</a>
+                            </li>
+                            <li>
+                                <a href="#isFalse" >isFalse</a>
+                            </li>
+                            <li>
+                                <a href="#isTrue" >isTrue</a>
+                            </li>
+                            <li>
+                                <a href="#pass" >pass</a>
+                            </li>
+                            <li>
+                                <a href="#payment" >payment</a>
+                            </li>
+                            <li>
+                                <a href="#terms" >terms</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changePlan" >changePlan</a>
+                            </li>
+                            <li>
+                                <a href="#checkEmailDuplicated" >checkEmailDuplicated</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkout" >checkout</a>
+                            </li>
+                            <li>
+                                <a href="#createSessionReference" >createSessionReference</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openModal" >openModal</a>
+                            </li>
+                            <li>
+                                <a href="#pay" >pay</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#params" >params</a>
+                            </li>
+                            <li>
+                                <a href="#plan" >plan</a>
+                            </li>
+                            <li>
+                                <a href="#preSelected" >preSelected</a>
+                            </li>
+                            <li>
+                                <a href="#stepperCheckout" >stepperCheckout</a>
+                            </li>
+                            <li>
+                                <a href="#suggestion" >suggestion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Salidas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#paymentResult" >paymentResult</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, translate: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, suscriptionService: <a href="../injectables/SuscriptionService.html" target="_self">SuscriptionService</a>, paymentStripeService: <a href="../injectables/PaymentStripeService.html" target="_self">PaymentStripeService</a>, sessionService: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, modal: <a href="../injectables/ModalService.html" target="_self">ModalService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>create a new account for the client</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>suscriptionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SuscriptionService.html" target="_self" >SuscriptionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>paymentStripeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PaymentStripeService.html" target="_self" >PaymentStripeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sessionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ModalService.html" target="_self" >ModalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="params"></a>
+                        <b>params</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="22" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="plan"></a>
+                        <b>plan</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="preSelected"></a>
+                        <b>preSelected</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepperCheckout"></a>
+                        <b>stepperCheckout</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>MatHorizontalStepper</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="21" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:21</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="suggestion"></a>
+                        <b>suggestion</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Salidas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentResult"></a>
+                        <b>paymentResult</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePlan"></a>
+                    <span class="name">
+                        <span ><b>changePlan</b></span>
+                        <a href="#changePlan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePlan()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="71"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>allows to change plans
+DEPRECATED you can´t  change plan</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkEmailDuplicated"></a>
+                    <span class="name">
+                        <span ><b>checkEmailDuplicated</b></span>
+                        <a href="#checkEmailDuplicated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkEmailDuplicated(email)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="127"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the mail that the client is writing a new user has been registered in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkout"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkout</b></span>
+                        <a href="#checkout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkout(plan, email)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="99"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>used to pay a plan</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>plan</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSessionReference"></a>
+                    <span class="name">
+                        <span ><b>createSessionReference</b></span>
+                        <a href="#createSessionReference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createSessionReference(suscription: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="138"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>In case the payment is by stripe, create a session, before proceeding to the payment</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>suscription</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="59"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <span ><b>openModal</b></span>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="87"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>open a modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pay"></a>
+                    <span class="name">
+                        <span ><b>pay</b></span>
+                        <a href="#pay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pay(form: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, typePayment?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="146"
+                            class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>pays a plan</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>typePayment</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="client"></a>
+                    <span class="name">
+                        <span ><b>client</b></span>
+                        <a href="#client"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Clients()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmPass"></a>
+                    <span class="name">
+                        <span ><b>confirmPass</b></span>
+                        <a href="#confirmPass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disabledEmail"></a>
+                    <span class="name">
+                        <span ><b>disabledEmail</b></span>
+                        <a href="#disabledEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="duplicatedEmail"></a>
+                    <span class="name">
+                        <span ><b>duplicatedEmail</b></span>
+                        <a href="#duplicatedEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hide"></a>
+                    <span class="name">
+                        <span ><b>hide</b></span>
+                        <a href="#hide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFalse"></a>
+                    <span class="name">
+                        <span ><b>isFalse</b></span>
+                        <a href="#isFalse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTrue"></a>
+                    <span class="name">
+                        <span ><b>isTrue</b></span>
+                        <a href="#isTrue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pass"></a>
+                    <span class="name">
+                        <span ><b>pass</b></span>
+                        <a href="#pass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="payment"></a>
+                    <span class="name">
+                        <span ><b>payment</b></span>
+                        <a href="#payment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>&#x27;transfer&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="terms"></a>
+                    <span class="name">
+                        <span ><b>terms</b></span>
+                        <a href="#terms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="50" class="link-to-prism">src/app/pages/checkout-cart/new-account/new-account.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, EventEmitter, Input, OnInit, Output,} from &#x27;@angular/core&#x27;;
+import {Clients} from &#x27;../../../interfaces/IClients&#x27;;
+import {MatHorizontalStepper} from &#x27;@angular/material/stepper&#x27;;
+import {TermsComponent} from &#x27;./terms/terms.component&#x27;;
+import {MatDialog} from &#x27;@angular/material/dialog&#x27;;
+import {UtilService} from &#x27;../../../helpers/util.service&#x27;;
+import {TranslateHelperService} from &#x27;../../../helpers/translate-helper.service&#x27;;
+import {PaymentStripeService} from &#x27;../../../services/payment-stripe.service&#x27;;
+import {SuscriptionService} from &#x27;../../../services/suscription.service&#x27;;
+import {SessionService} from &#x27;src/app/helpers/session.service&#x27;;
+import {ModalService} from &quot;../../../helpers/modal.service&quot;;
+
+@Component({
+  selector: &#x27;app-new-account&#x27;,
+  templateUrl: &#x27;./new-account.component.html&#x27;,
+  styleUrls: [&#x27;./new-account.component.css&#x27;],
+})
+export class NewAccountComponent implements OnInit {
+  @Input() plan: any;
+  @Input() suggestion: any;
+  @Input() stepperCheckout: MatHorizontalStepper;
+  @Input() params: any;
+  @Input() preSelected: any;
+
+  @Output() paymentResult &#x3D; new EventEmitter&lt;any&gt;();
+
+  client &#x3D; new Clients();
+  terms &#x3D; false;
+  pass: any;
+  confirmPass: any;
+  duplicatedEmail: any;
+  payment &#x3D; &#x27;transfer&#x27;;
+  isTrue &#x3D; true;
+  isFalse &#x3D; false;
+  disabledEmail &#x3D; false;
+  hide &#x3D; true;
+
+  /**
+   * create a new account for the client
+   * @param dialog
+   * @param utilService
+   * @param translate
+   * @param suscriptionService
+   * @param paymentStripeService
+   * @param sessionService
+   * @param modal
+   */
+  constructor(
+    private dialog: MatDialog,
+    public utilService: UtilService,
+    private translate: TranslateHelperService,
+    private suscriptionService: SuscriptionService,
+    private paymentStripeService: PaymentStripeService,
+    private sessionService: SessionService,
+    private modal: ModalService
+  ) {
+  }
+
+  ngOnInit(): void {
+    if (this.suggestion?.plan?.customized) {
+      this.plan &#x3D; this.suggestion.plan;
+      this.client.email &#x3D; this.suggestion.client_email;
+      this.disabledEmail &#x3D; true;
+    }
+  }
+
+  /**
+   * allows to change plans
+   * DEPRECATED you can´t  change plan
+   */
+  changePlan() {
+    if (!this.preSelected) {
+      this.stepperCheckout.previous();
+    } else {
+      this.modal.openConfirmation({
+        message: &#x27;message.confirmation.change_plan&#x27;,
+        onConfirm: () &#x3D;&gt; {
+          this.sessionService.goTo(&#x27;/client/checkout&#x27;);
+        }
+      });
+    }
+  }
+
+  /**
+   * open a modal
+   */
+  openModal(): void {
+    this.dialog.open(TermsComponent, {
+      disableClose: true,
+      closeOnNavigation: true,
+    });
+  }
+
+  /**
+   *used to pay a plan
+   * @param plan
+   * @param email
+   */
+  async checkout(plan, email) {
+    if (plan.automatic_renewal) {
+      this.paymentStripeService
+        .checkoutSubscription(email, plan.stripeKey.key_payment)
+        .then(
+          (r) &#x3D;&gt; console.log(&#x27;success: &#x27;, r),
+          (err) &#x3D;&gt; {
+            this.utilService.showNotification(&#x27;error.stripe_payment&#x27;, &#x27;danger&#x27;);
+            console.error(&#x27;error: &#x27;, err)
+          }
+        );
+    } else {
+      this.paymentStripeService
+        .checkoutOneTime(email, plan.stripeKey.key_payment)
+        .then(
+          (r) &#x3D;&gt; console.log(&#x27;success: &#x27;, r),
+          (err) &#x3D;&gt; {
+            this.utilService.showNotification(&#x27;error.stripe_payment&#x27;, &#x27;danger&#x27;);
+            console.error(&#x27;error: &#x27;, err)
+          }
+        );
+    }
+  }
+
+  /**
+   * Check if the mail that the client is writing a new user has been registered in the database
+   * @param email
+   */
+  checkEmailDuplicated(email) {
+    this.suscriptionService.verifyNewEmailClient(
+      email,
+      (response) &#x3D;&gt; (this.duplicatedEmail &#x3D; response)
+    );
+  }
+
+  /**
+   * In case the payment is by stripe, create a session, before proceeding to the payment
+   * @param client
+   */
+  createSessionReference(suscription: any): void {
+    this.sessionService.saveTempSuscription(suscription);
+  }
+
+  /**
+   * pays a plan
+   * @param form
+   */
+  pay(form: any, typePayment?: any): void {
+    if (form.value.terms) {
+      if (this.payment || this.payment !&#x3D;&#x3D; &#x27;&#x27;) {
+        if (form.valid) {
+          const suscription &#x3D; {client: form.value, plan: this.plan};
+
+          if (typePayment &#x3D;&#x3D;&#x3D; &#x27;stripe&#x27;) {
+            this.createSessionReference(suscription);
+            // Stripe Methods
+            this.suscriptionService.attemptSuscribe(suscription, () &#x3D;&gt; {
+              &#x27;&#x27;;
+              this.checkout(this.plan, form.value.email).then(
+                (r) &#x3D;&gt; console.log(&#x27;success: &#x27;, r),
+                (err) &#x3D;&gt; console.error(&#x27;error: &#x27;, err)
+              );
+            });
+          }
+          if (typePayment &#x3D;&#x3D;&#x3D; &#x27;transfer&#x27;) {
+            this.suscriptionService.suscribeAsTransfer(suscription, () &#x3D;&gt; {
+              this.sessionService.goTo(&#x27;/client/check/finalTransfer&#x27;);
+            })
+          }
+          if (typePayment &#x3D;&#x3D;&#x3D; &#x27;demo&#x27;) {
+            // Transfer Methods
+            this.suscriptionService.suscribeAsDemo(suscription, () &#x3D;&gt; {
+              this.sessionService.goTo(&#x27;/client/check/successDemo&#x27;);
+            });
+          }
+        }
+
+      } else {
+        this.utilService.showNotification(
+          this.translate.instant(&#x27;error_payment&#x27;),
+          &#x27;danger&#x27;
+        );
+      }
+    } else {
+      this.utilService.showNotification(
+        this.translate.instant(&#x27;error.terms&#x27;),
+        &#x27;danger&#x27;
+      );
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row container-fluid&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+    &lt;h1&gt;{{ &quot;label.step.payment&quot; | translate }}&lt;/h1&gt;
+    &lt;hr /&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;mat-expansion-panel
+        hideToggle
+        class&#x3D;&quot;gn-box padding5 borderRadius10 tracking-in-expand example-full-width&quot;
+        expanded
+      &gt;
+        &lt;mat-expansion-panel-header&gt;
+          &lt;mat-panel-title&gt;
+            &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+              &lt;strong&gt;{{ plan?.name }}&lt;/strong&gt;
+            &lt;/h4&gt;
+          &lt;/mat-panel-title&gt;
+          &lt;mat-panel-description class&#x3D;&quot;floatRight margin10&quot;&gt;
+            &lt;h2 class&#x3D;&quot;colorSecundario right&quot;&gt;
+              {{ plan?.cost | currency : utilService.curr : &quot;symbol-narrow&quot; }}
+            &lt;/h2&gt;
+          &lt;/mat-panel-description&gt;
+        &lt;/mat-expansion-panel-header&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;div class&#x3D;&quot;generic_feature_list&quot;&gt;
+            &lt;p&gt;
+              &lt;i class&#x3D;&quot;las la-calendar-alt colorAzul espDer5&quot;&gt;&lt;/i
+              &gt;&lt;span&gt;{{ plan?.duration_months }}&lt;/span&gt;
+              {{ &quot;label.months&quot; | translate }}
+            &lt;/p&gt;
+            &lt;p *ngIf&#x3D;&quot;plan?.access_scanner&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+              {{ &quot;label.licence.one_shot&quot; | translate }}:
+              {{ plan?.limit_credits }}
+            &lt;/p&gt;
+            &lt;p *ngIf&#x3D;&quot;plan?.access_monitor&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+              {{ &quot;label.licence.monitor&quot; | translate }}:
+              {{ plan?.total_monitor_licenses }}
+            &lt;/p&gt;
+            &lt;p *ngIf&#x3D;&quot;plan?.access_transform&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+              {{ &quot;label.licence.transform&quot; | translate }}:
+              {{ plan?.total_transforma_licenses }}
+            &lt;/p&gt;
+            &lt;p *ngIf&#x3D;&quot;plan?.access_deindexation&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-check-circle colorVerde&quot;&gt;&lt;/i&gt;
+              {{ &quot;label.licence.deindexing&quot; | translate }}:
+              {{ plan?.max_url_to_deindexate }}
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              &lt;i class&#x3D;&quot;las la-globe-americas colorSecundario espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;label.plan.countries&quot; | translate }}:
+              {{ plan?.max_countries }}
+            &lt;/p&gt;
+            &lt;p&gt;
+              &lt;i class&#x3D;&quot;las la-search-plus colorSecundario espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;label.plan.keywords&quot; | translate }}:
+              {{ plan?.max_keywords }}
+            &lt;/p&gt;
+            &lt;p&gt;
+              &lt;i class&#x3D;&quot;las la-file colorSecundario espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;label.plan.pages&quot; | translate }}:
+              {{ plan?.max_search_page }}
+            &lt;/p&gt;
+            &lt;p&gt;
+              &lt;i class&#x3D;&quot;fab fa-google colorSecundario espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;label.sections&quot; | translate }}:
+              {{ plan?.sections_to_search }}
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- &lt;mat-action-row&gt;
+           &lt;a (click)&#x3D;&quot;changePlan()&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+             {{ &quot;button.change&quot; | translate }}&lt;/a
+           &gt;
+         &lt;/mat-action-row&gt;--&gt;
+      &lt;/mat-expansion-panel&gt;
+      &lt;mat-expansion-panel
+        hideToggle
+        class&#x3D;&quot;gn-box padding5 borderRadius10 tracking-in-expand example-full-width&quot;
+      &gt;
+        &lt;mat-expansion-panel-header&gt;
+          &lt;mat-panel-title&gt;
+            &lt;h4 class&#x3D;&quot;colorPrincipal&quot;&gt;
+              &lt;strong&gt;{{ &quot;label.description&quot; | translate }}&lt;/strong&gt;
+            &lt;/h4&gt;
+          &lt;/mat-panel-title&gt;
+        &lt;/mat-expansion-panel-header&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;span [innerHTML]&#x3D;&quot;plan?.description&quot;&gt; &lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;!-- &lt;mat-action-row&gt;
+           &lt;a (click)&#x3D;&quot;changePlan()&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+             {{ &quot;button.change&quot; | translate }}&lt;/a
+           &gt;
+         &lt;/mat-action-row&gt;--&gt;
+      &lt;/mat-expansion-panel&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+    &lt;form
+      #userForm&#x3D;&quot;ngForm&quot;
+      (ngSubmit)&#x3D;&quot;(userForm.form.valid)&quot;
+      class&#x3D;&quot;example-full-width&quot;
+    &gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+          &lt;h2 class&#x3D;&quot;colorPrincipal&quot;&gt;{{ &quot;label.register&quot; | translate }}&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;client.name&quot;
+              name&#x3D;&quot;name&quot;
+              matInput
+              placeholder&#x3D;&quot;{{ &#x27;label.name&#x27; | translate }} &quot;
+              required
+              #userName&#x3D;&quot;ngModel&quot;
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;userName.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;client.lastname&quot;
+              name&#x3D;&quot;lastname&quot;
+              matInput
+              placeholder&#x3D;&quot;{{ &#x27;label.lastname&#x27; | translate }} &quot;
+              #lastname&#x3D;&quot;ngModel&quot;
+              required
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;lastname.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;client.email&quot;
+              name&#x3D;&quot;email&quot;
+              matInput
+              #email&#x3D;&quot;ngModel&quot;
+              pattern&#x3D;&quot;[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$&quot;
+              (blur)&#x3D;&quot;checkEmailDuplicated(client.email)&quot;
+              placeholder&#x3D;&quot;{{ &#x27;label.email&#x27; | translate }}&quot;
+              type&#x3D;&quot;email&quot;
+              required
+              disabled&#x3D;&quot;{{ disabledEmail }}&quot;
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;email.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;email.errors?.pattern &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.invalid.email&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;duplicatedEmail&quot;&gt;
+            &lt;a routerLink&#x3D;&quot;/client/login&quot;&gt;
+              &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+                &gt;{{ client.email }}: {{ &quot;error.duplicate_email&quot; | translate }}
+              &lt;/h5&gt;&lt;/a
+            &gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;client.phone&quot;
+              name&#x3D;&quot;phone&quot;
+              matInput
+              placeholder&#x3D;&quot;{{ &#x27;label.phone&#x27; | translate }} &quot;
+              required
+              #phone&#x3D;&quot;ngModel&quot;
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;phone.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;pass&quot;
+              name&#x3D;&quot;pass&quot;
+              #password&#x3D;&quot;ngModel&quot;
+              matInput
+              placeholder&#x3D;&quot;{{ &#x27;label.new_password&#x27; | translate }} &quot;
+              required
+              [type]&#x3D;&quot;hide ? &#x27;password&#x27; : &#x27;text&#x27;&quot;
+              pattern&#x3D;&quot;(?&#x3D;.*\d)(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z]).{8,}&quot;
+            /&gt;
+            &lt;i
+              class&#x3D;&quot;las la-eye colorGris&quot;
+              matSuffix
+              (click)&#x3D;&quot;hide &#x3D; !hide&quot;
+            &gt;&lt;/i&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;password.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;password.errors?.pattern&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.password&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;confirmPass&quot;
+              name&#x3D;&quot;confirmPass&quot;
+              #confirmpassword&#x3D;&quot;ngModel&quot;
+              matInput
+              placeholder&#x3D;&quot;{{ &#x27;label.confirm_password&#x27; | translate }} &quot;
+              required
+              [type]&#x3D;&quot;hide ? &#x27;password&#x27; : &#x27;text&#x27;&quot;
+              pattern&#x3D;&quot;{{ password.value }}&quot;
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;div *ngIf&#x3D;&quot;confirmpassword.errors?.required &amp;&amp; userForm.submitted&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.required&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;confirmpassword?.errors?.pattern&quot;&gt;
+            &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-exclamation-circle espDer5&quot;&gt;&lt;/i
+              &gt;{{ &quot;error.password_match&quot; | translate }}
+            &lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;mat-slide-toggle
+          [(ngModel)]&#x3D;&quot;terms&quot;
+          name&#x3D;&quot;terms&quot;
+          class&#x3D;&quot;noCkeck&quot;
+        &gt;&lt;/mat-slide-toggle&gt;
+        &lt;a (click)&#x3D;&quot;openModal()&quot; class&#x3D;&quot;third after colorGris&quot;&gt;
+          {{ &quot;message.conditions&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;h5 class&#x3D;&quot;colorGrisOscuro&quot;&gt;{{ &quot;message.new_account&quot; | translate }}&lt;/h5&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+    &lt;div *ngIf&#x3D;&quot;plan?.cost !&#x3D;&#x3D; 0&quot; class&#x3D;&quot;paddingTop15&quot;&gt;
+      &lt;hr /&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;h2 class&#x3D;&quot;colorPrincipal&quot;&gt;
+          {{ &quot;label.payment_methods_checkout&quot; | translate }}
+        &lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-9 paddingTop15&quot;&gt;
+          &lt;mat-label class&#x3D;&quot;espDer10 reduceFont colorGris&quot;
+            &gt;{{ &quot;label.payment_methods_description&quot; | translate }}:
+          &lt;/mat-label&gt;
+          &lt;mat-radio-group
+            [(ngModel)]&#x3D;&quot;payment&quot;
+            name&#x3D;&quot;payment&quot;
+            required
+            aria-labelledby&#x3D;&quot;example-radio-group-label&quot;
+            class&#x3D;&quot;example-radio-group&quot;
+          &gt;
+            &lt;mat-radio-button
+              value&#x3D;&quot;transfer&quot;
+              class&#x3D;&quot;espDer5&quot;
+              *ngIf&#x3D;&quot;plan?.cost &gt; 1000&quot;
+            &gt;
+              &lt;i class&#x3D;&quot;las la-money-bill-wave colorSecundario espDer5&quot;&gt;&lt;/i&gt;
+              {{ &quot;label.payment_transfer&quot; | translate }}
+            &lt;/mat-radio-button&gt;
+
+            &lt;!-- &lt;mat-radio-button value&#x3D;&quot;transfer&quot; class&#x3D;&quot;espDer5&quot; *ngIf&#x3D;&quot;params?.TRANSFER_MIN_VALUE &lt; plan?.cost&quot;
+           &gt;&lt;i class&#x3D;&quot;las la-money-bill-wave colorSecundario espDer5&quot;&gt;&lt;/i
+           &gt;{{ &quot;label.payment_transfer&quot; | translate }}&lt;/mat-radio-button
+           &gt;--&gt;
+
+            &lt;mat-radio-button value&#x3D;&quot;stripe&quot; class&#x3D;&quot;espDer5&quot;
+              &gt;&lt;i class&#x3D;&quot;lab la-stripe-s colorSecundario espDer5&quot;&gt; &lt;/i
+              &gt;{{ &quot;label.payment_stripe&quot; | translate }}&lt;/mat-radio-button
+            &gt;
+          &lt;/mat-radio-group&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-md-3 centrado&quot; *ngIf&#x3D;&quot;!duplicatedEmail&quot;&gt;
+          &lt;button
+            class&#x3D;&quot;glow-on-hover example-full-width espIz15&quot;
+            (click)&#x3D;&quot;pay(userForm, payment)&quot;
+          &gt;
+            {{ &quot;button.pay&quot; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;plan?.cost &#x3D;&#x3D;&#x3D; 0&quot; class&#x3D;&quot;paddingTop15&quot;&gt;
+      &lt;hr /&gt;
+      &lt;div class&#x3D;&quot;col-md-12 centrado&quot; *ngIf&#x3D;&quot;!duplicatedEmail&quot;&gt;
+        &lt;button
+          class&#x3D;&quot;glow-on-hover example-full-width espIz15&quot;
+          (click)&#x3D;&quot;pay(userForm, &#x27;demo&#x27;)&quot;
+        &gt;
+          {{ &quot;label.payment_demo&quot; | translate }}
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./new-account.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row container-fluid">  <div class="col-md-6">    <h1>{{ "label.step.payment" | translate }}</h1>    <hr />    <div class="row">      <mat-expansion-panel        hideToggle        class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"        expanded      >        <mat-expansion-panel-header>          <mat-panel-title>            <h4 class="colorPrincipal">              <strong>{{ plan?.name }}</strong>            </h4>          </mat-panel-title>          <mat-panel-description class="floatRight margin10">            <h2 class="colorSecundario right">              {{ plan?.cost | currency : utilService.curr : "symbol-narrow" }}            </h2>          </mat-panel-description>        </mat-expansion-panel-header>        <div class="col-md-12">          <div class="generic_feature_list">            <p>              <i class="las la-calendar-alt colorAzul espDer5"></i              ><span>{{ plan?.duration_months }}</span>              {{ "label.months" | translate }}            </p>            <p *ngIf="plan?.access_scanner">              <i class="las la-check-circle colorVerde"></i>              {{ "label.licence.one_shot" | translate }}:              {{ plan?.limit_credits }}            </p>            <p *ngIf="plan?.access_monitor">              <i class="las la-check-circle colorVerde"></i>              {{ "label.licence.monitor" | translate }}:              {{ plan?.total_monitor_licenses }}            </p>            <p *ngIf="plan?.access_transform">              <i class="las la-check-circle colorVerde"></i>              {{ "label.licence.transform" | translate }}:              {{ plan?.total_transforma_licenses }}            </p>            <p *ngIf="plan?.access_deindexation">              <i class="las la-check-circle colorVerde"></i>              {{ "label.licence.deindexing" | translate }}:              {{ plan?.max_url_to_deindexate }}            </p>            <p>              <i class="las la-globe-americas colorSecundario espDer5"></i              >{{ "label.plan.countries" | translate }}:              {{ plan?.max_countries }}            </p>            <p>              <i class="las la-search-plus colorSecundario espDer5"></i              >{{ "label.plan.keywords" | translate }}:              {{ plan?.max_keywords }}            </p>            <p>              <i class="las la-file colorSecundario espDer5"></i              >{{ "label.plan.pages" | translate }}:              {{ plan?.max_search_page }}            </p>            <p>              <i class="fab fa-google colorSecundario espDer5"></i              >{{ "label.sections" | translate }}:              {{ plan?.sections_to_search }}            </p>          </div>        </div>        <!-- <mat-action-row>           <a (click)="changePlan()" class="third after colorGris">             {{ "button.change" | translate }}</a           >         </mat-action-row>-->      </mat-expansion-panel>      <mat-expansion-panel        hideToggle        class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"      >        <mat-expansion-panel-header>          <mat-panel-title>            <h4 class="colorPrincipal">              <strong>{{ "label.description" | translate }}</strong>            </h4>          </mat-panel-title>        </mat-expansion-panel-header>        <div class="col-md-12">          <span [innerHTML]="plan?.description"> </span>        </div>        <!-- <mat-action-row>           <a (click)="changePlan()" class="third after colorGris">             {{ "button.change" | translate }}</a           >         </mat-action-row>-->      </mat-expansion-panel>    </div>  </div>  <div class="col-md-6">    <form      #userForm="ngForm"      (ngSubmit)="(userForm.form.valid)"      class="example-full-width"    >      <div class="row">        <div class="col-md-12">          <h2 class="colorPrincipal">{{ "label.register" | translate }}</h2>        </div>        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="client.name"              name="name"              matInput              placeholder="{{ \'label.name\' | translate }} "              required              #userName="ngModel"            />          </mat-form-field>          <div *ngIf="userName.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>        </div>        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="client.lastname"              name="lastname"              matInput              placeholder="{{ \'label.lastname\' | translate }} "              #lastname="ngModel"              required            />          </mat-form-field>          <div *ngIf="lastname.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>        </div>      </div>      <div class="row">        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="client.email"              name="email"              matInput              #email="ngModel"              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"              (blur)="checkEmailDuplicated(client.email)"              placeholder="{{ \'label.email\' | translate }}"              type="email"              required              disabled="{{ disabledEmail }}"            />          </mat-form-field>          <div *ngIf="email.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>          <div *ngIf="email.errors?.pattern && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.invalid.email" | translate }}            </h5>          </div>          <div *ngIf="duplicatedEmail">            <a routerLink="/client/login">              <h5 class="colorRojo">                <i class="las la-exclamation-circle espDer5"></i                >{{ client.email }}: {{ "error.duplicate_email" | translate }}              </h5></a            >          </div>        </div>        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="client.phone"              name="phone"              matInput              placeholder="{{ \'label.phone\' | translate }} "              required              #phone="ngModel"            />          </mat-form-field>          <div *ngIf="phone.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>        </div>      </div>      <div class="row">        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="pass"              name="pass"              #password="ngModel"              matInput              placeholder="{{ \'label.new_password\' | translate }} "              required              [type]="hide ? \'password\' : \'text\'"              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"            />            <i              class="las la-eye colorGris"              matSuffix              (click)="hide = !hide"            ></i>          </mat-form-field>          <div *ngIf="password.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>          <div *ngIf="password.errors?.pattern">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.password" | translate }}            </h5>          </div>        </div>        <div class="col-md-6">          <mat-form-field class="example-full-width">            <input              [(ngModel)]="confirmPass"              name="confirmPass"              #confirmpassword="ngModel"              matInput              placeholder="{{ \'label.confirm_password\' | translate }} "              required              [type]="hide ? \'password\' : \'text\'"              pattern="{{ password.value }}"            />          </mat-form-field>          <div *ngIf="confirmpassword.errors?.required && userForm.submitted">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.required" | translate }}            </h5>          </div>          <div *ngIf="confirmpassword?.errors?.pattern">            <h5 class="colorRojo">              <i class="las la-exclamation-circle espDer5"></i              >{{ "error.password_match" | translate }}            </h5>          </div>        </div>      </div>      <div class="col-md-12">        <mat-slide-toggle          [(ngModel)]="terms"          name="terms"          class="noCkeck"        ></mat-slide-toggle>        <a (click)="openModal()" class="third after colorGris">          {{ "message.conditions" | translate }}</a        >      </div>      <div class="col-md-12">        <h5 class="colorGrisOscuro">{{ "message.new_account" | translate }}</h5>      </div>    </form>    <div *ngIf="plan?.cost !== 0" class="paddingTop15">      <hr />      <div class="col-md-12">        <h2 class="colorPrincipal">          {{ "label.payment_methods_checkout" | translate }}        </h2>      </div>      <div class="row">        <div class="col-md-9 paddingTop15">          <mat-label class="espDer10 reduceFont colorGris"            >{{ "label.payment_methods_description" | translate }}:          </mat-label>          <mat-radio-group            [(ngModel)]="payment"            name="payment"            required            aria-labelledby="example-radio-group-label"            class="example-radio-group"          >            <mat-radio-button              value="transfer"              class="espDer5"              *ngIf="plan?.cost > 1000"            >              <i class="las la-money-bill-wave colorSecundario espDer5"></i>              {{ "label.payment_transfer" | translate }}            </mat-radio-button>            <!-- <mat-radio-button value="transfer" class="espDer5" *ngIf="params?.TRANSFER_MIN_VALUE < plan?.cost"           ><i class="las la-money-bill-wave colorSecundario espDer5"></i           >{{ "label.payment_transfer" | translate }}</mat-radio-button           >-->            <mat-radio-button value="stripe" class="espDer5"              ><i class="lab la-stripe-s colorSecundario espDer5"> </i              >{{ "label.payment_stripe" | translate }}</mat-radio-button            >          </mat-radio-group>        </div>        <div class="col-md-3 centrado" *ngIf="!duplicatedEmail">          <button            class="glow-on-hover example-full-width espIz15"            (click)="pay(userForm, payment)"          >            {{ "button.pay" | translate }}          </button>        </div>      </div>    </div>    <div *ngIf="plan?.cost === 0" class="paddingTop15">      <hr />      <div class="col-md-12 centrado" *ngIf="!duplicatedEmail">        <button          class="glow-on-hover example-full-width espIz15"          (click)="pay(userForm, \'demo\')"        >          {{ "label.payment_demo" | translate }}        </button>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'NewAccountComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NewAccountComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,264 @@
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+  .card-container > *:not(.circle-link),
+  .hideMobile {
+    display: none;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  .top20m {
+    padding-top: 20px;
+  }
+
+  .mat-card-header .mat-card-title {
+    font-size: 16px;
+  }
+
+  .fontLanding {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+
+  .height150Mobile {
+    min-height: 150px
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .paddingTop10Mobile {
+    padding-top: 10px;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .fontLanding {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .stickyTop {
+    position: relative;
+
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+
+  .height150Mobile {
+    min-height: 150px
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    height: 200px;
+  }
+
+  .paddingTop10Mobile {
+    padding-top: 10px;
+  }
+
+  .hideMobile {
+    display: none !important;
+  }
+
+  .stickyTop {
+    position: relative;
+
+  }
+
+  .minHei80m {
+    min-height: 80px;
+  }
+
+  .marginTop30m {
+    margin-top: 30px;
+  }
+
+  .boxm {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .mat-vertical-content-container {
+    margin-left: 0px !important;
+
+  }
+
+  .mat-vertical-content {
+    padding: 15px !important;
+  }
+
+  #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+    font-size: 40px !important;
+  }
+
+  #generic_price_table .generic_content .generic_feature_list ul li {
+    font-size: 14px !important;
+  }
+
+  .fontLanding {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+
+  .height150Mobile {
+    min-height: 150px
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+    text-align: center;
+    height: 180px;
+  }
+
+  .mat-vertical-content-container {
+    margin-left: 0px !important;
+
+  }
+
+  .mat-vertical-content {
+    padding: 15px !important;
+  }
+
+  #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+    font-size: 40px !important;
+  }
+
+  #generic_price_table .generic_content .generic_feature_list ul li {
+    font-size: 14px !important;
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+
+  }
+
+  .header p {
+    width: 30%;
+  }
+
+
+}
+
+/* cards */
+@media (max-width: 576px) {
+  .xs {
+    color: red;
+    font-weight: bold;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .paddingTop10Mobile {
+    padding-top: 10px;
+  }
+
+  .height120 {
+    height: auto !important;
+  }
+
+  .newsLanding {
+    border: none !important;
+    border-radius: 8px;
+  }
+
+  .margin5Mobile {
+    margin: 5px
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+
+  .height150Mobile {
+    min-height: 150px
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .sm {
+    color: red;
+    font-weight: bold;
+  }
+
+  .reduceFontMobile {
+    font-size: small;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .md {
+    color: red;
+    font-weight: bold;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .lg {
+    color: red;
+    font-weight: bold;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .xl {
+    color: red;
+    font-weight: bold;
+  }
+
+}
+
+

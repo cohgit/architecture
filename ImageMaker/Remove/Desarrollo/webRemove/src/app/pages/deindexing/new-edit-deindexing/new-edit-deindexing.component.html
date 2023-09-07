@@ -1,0 +1,328 @@
+<div class="row paddingTop15" id="toExport">
+  <div class="row content-card">
+    <!--tittle-->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <h2 *ngIf="!deindexation.id">
+              <i class="las la-low-vision colorGris espDer5"></i>{{ "title.new_deindexing" | translate }}
+            </h2>
+            <h2 *ngIf="deindexation.id">
+              <i class="las la-low-vision colorGris espDer5"></i>{{ "title.edit_deindexing" | translate }}
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <form #deIndexForm="ngForm" (ngSubmit)="(deIndexForm.form.valid)">
+        <!--Static form-->
+        <div class="row paddingTop15">
+          <div class="col-md-6">
+            <h3 class="colorPrincipal">
+              <strong>{{ "label.personal_info" | translate }}</strong>
+            </h3>
+            <hr/>
+            <h5 class="colorGris">
+              {{ "label.complete_personal_info" | translate }}
+            </h5>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="deindexation.person_name" name="person_name" matInput #person_name="ngModel"
+                         required placeholder="{{ 'label.name' | translate }}" [disabled]="disabled"/>
+                </mat-form-field>
+              </div>
+              <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="deindexation.person_lastname" name="person_lastname" matInput required
+                         placeholder="{{ 'label.lastname' | translate }}" [disabled]="disabled"/>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="deindexation.person_institution" name="person_institution" matInput
+                         placeholder="{{ 'label.company' | translate }}" [disabled]="disabled"/>
+                </mat-form-field>
+              </div>
+              <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="deindexation.person_charge" name="person_charge" matInput
+                         placeholder="{{ 'label.company_position' | translate }}" [disabled]="disabled"/>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="colorPrincipal">
+              <strong>{{ "label.filter.keywords_modal" | translate }}</strong>
+            </h3>
+            <hr/>
+            <mat-form-field class="example-full-width">
+              <mat-chip-list #chipKey [(ngModel)]="keywords" name="keywords">
+                <mat-chip *ngFor="let key of keywords" [selectable]="selectable" [removable]="removable"
+                          (removed)="remove(key)">
+                  {{ key }}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input placeholder="{{
+                    'placeholder.scanner.config.keywords' | translate
+                  }}" [matChipInputFor]="chipKey" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                       [matChipInputAddOnBlur]="onBlur" (matChipInputTokenEnd)="add($event)" [disabled]="disabled"/>
+              </mat-chip-list>
+            </mat-form-field>
+            <h5 class="colorGris">
+              {{ "title.comments" | translate }}:
+              {{ "label.comments_description" | translate }}
+            </h5>
+            <textarea type="text" class="example-full-width form-control" [(ngModel)]="deindexation.comments"
+                      name="others" placeholder="{{ 'title.comments' | translate }}" [disabled]="disabled"></textarea>
+          </div>
+        </div>
+        <div class="row paddingTop15">
+          <div class="col-md-6">
+            <h3 class="colorPrincipal">
+              <strong>{{ "label.url_to_deindexing" | translate }}</strong>
+            </h3>
+            <hr/>
+            <h5 class="colorGris">
+              {{ "label.links_toremove" | translate }}
+            </h5>
+            <div class="row">
+              <div class="col-md-7">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="urlDeindexing.url" name="url_to_deindexing" matInput
+                         placeholder="{{ 'label.url_to_deindexing' | translate }}" [disabled]="disabled"/>
+                </mat-form-field>
+                <div *ngIf="!checkURL(urlDeindexing?.url) && urlDeindexing?.url !== undefined">
+                  <h5 class="colorRojo">
+                    <i class="las la-exclamation-circle espDer5"></i>
+                    {{ deindexation?.url }} {{ "error.url_not_valid" | translate }}
+                  </h5>
+                </div>
+                <div *ngIf="encontrado">
+                  <h5 class="colorRojo">
+                    <i class="las la-exclamation-circle espDer5"></i>
+                    {{ deindexation?.url }} {{ "error.duplicate" | translate }}
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field class="example-full-width">
+                  <mat-label>{{
+                    "label.impulse.publish_date" | translate
+                    }}</mat-label>
+                  <input matInput [matDatepicker]="publish_date" [(ngModel)]="urlDeindexing.publish_date"
+                         name="publish_date" [disabled]="disabled"/>
+                  <mat-datepicker-toggle matSuffix [for]="publish_date"></mat-datepicker-toggle>
+                  <mat-datepicker #publish_date></mat-datepicker>
+                </mat-form-field>
+              </div>
+              <div class="col-md-1" *ngIf="checkURL(urlDeindexing?.url) && urlDeindexing?.url !== undefined">
+                <button (click)="addItem()" class="noBacknoBorder" type="submit">
+                  <i class="las la-plus-circle fa-2x colorVerde"></i>
+                </button>
+              </div>
+            </div>
+            <div class="row" *ngIf="deindexation?.urls?.length !== 0">
+              <div class="col-md-12">
+                <div class="row slide-in-blurred-bottom horizontal-scroll">
+                  <table class="table table-hover table-borderless">
+                    <thead class="thead-light">
+                    <tr>
+                      <th>{{ "label.url_to_deindexing" | translate }}</th>
+                      <th>{{ "label.impulse.publish_date" | translate }}</th>
+                      <!--<th>{{ "label.send_to_google" | translate }}</th>
+                    <th>{{ "label.send_to_media" | translate }}</th>-->
+                      <th>{{ "label.actions" | translate }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let data of deindexation?.urls">
+                      <td [class.colorRojo]="data.markToDelete">
+                        {{ data?.url }}
+                      </td>
+                      <td [class.colorRojo]="data.markToDelete">
+                        {{ utilService.formatDate(data?.publish_date) | date }}
+                      </td>
+                      <!-- <td [class.colorRojo]="data.markToDelete">
+                        <span *ngIf="data?.ask_google"><i class="las la-check la-2x"></i></span>
+                        <span *ngIf="!data?.ask_google">{{'label.no' | translate}}</span>
+
+                      </td>
+                      <td [class.colorRojo]="data.markToDelete">
+
+                        <span *ngIf="data?.ask_media"><i class="las la-check la-2x"></i></span>
+                        <span *ngIf="!data?.ask_media">{{'label.no' | translate}}</span>
+                      </td>-->
+                      <td>
+                        <a (click)="removeItem(data)" *ngIf="!disabled">
+                          <i class="las la-times la-2x colorRojo" title="{{'tooltip.remove' | translate}}"></i></a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="colorPrincipal">
+              <strong>{{ "label.send_to" | translate }}</strong>
+            </h3>
+            <hr/>
+            <h5 class="colorGris">
+              {{ "label.send_to_description" | translate }}
+            </h5>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-slide-toggle [(ngModel)]="ask_google" class="noCkeck" name="ask_google" checked
+                                  [disabled]="disabled">
+                  {{'label.send_to_google' | translate}} </mat-slide-toggle>
+              </div>
+              <div class="col-md-6">
+                <mat-slide-toggle [(ngModel)]="ask_media" class="noCkeck" name="ask_media" [disabled]="disabled">
+                  {{'label.send_to_media' | translate}} </mat-slide-toggle>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!-- Files -->
+          <!--tables of proofs-->
+          <div class="row paddingTop15">
+            <div class="col-md-12">
+              <h3 class="colorPrincipal">
+                <strong>{{ "label.proof" | translate }}</strong>
+              </h3>
+              <hr/>
+              <h5 class="colorGris">
+                {{ "label.proof_description" | translate }}
+              </h5>
+              <div class="row" *ngIf="!disabled">
+                <div class="col-md-3">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>{{ "label.file_type" | translate }} </mat-label>
+                    <mat-select [(ngModel)]="proof.file_type" name="file_type">
+                      <mat-option *ngFor="let pro of file_types" [value]="pro.type">
+                        {{ "list.file_type." + pro.type | translate }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input [(ngModel)]="proof.file_description" name="position" matInput
+                           placeholder="{{ 'label.description' | translate }}" [disabled]="disabled"/>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <div *ngIf="proof?.file_type === 'URL'">
+                    <mat-form-field class="example-full-width">
+                      <input [(ngModel)]="proof.file_address" name="link" matInput
+                             placeholder="{{ 'label.link' | translate }}" [disabled]="disabled"/>
+                    </mat-form-field>
+                    <div *ngIf="encontradoRepo">
+                      <h5 class="colorRojo">
+                        <i class="las la-exclamation-circle espDer5"></i>{{ proof.file_address }}
+                        {{ "error.duplicate" | translate }}
+                      </h5>
+                    </div>
+                    <div *ngIf="
+                        !checkURL(proof.file_address) &&
+                        proof.file_address !== ''
+                      ">
+                      <h5 class="colorRojo">
+                        <i class="las la-exclamation-circle espDer5"></i>{{ proof.file_address }}
+                        {{ "error.url_not_valid" | translate }}
+                      </h5>
+                    </div>
+                  </div>
+                  <div *ngIf="proof?.file_type === 'FILE'">
+                    <app-file-upload [fileType]="fileType" [(model)]="proof.file_address"
+                                     (onUpload)="checkFile($event, proof)"></app-file-upload>
+                    <a popoverTitle="{{'label.proof' | translate}}" container="body" [autoClose]="true"
+                       ngbPopover="{{'message.only_pdf' | translate}}"><i
+                      class="las la-info-circle colorAzul espIz15"></i></a>
+                  </div>
+                </div>
+                <div class="col-md-1" *ngIf="proof?.file_type === 'URL'">
+                  <button (click)="addProof(proof)" class="noBacknoBorder" type="submit">
+                    <i class="las la-plus-circle la-2x colorVerde"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row" *ngIf="deindexation?.evidenceFiles?.length !== 0">
+                <div class="col-md-12">
+                  <div class="row horizontal-scroll">
+                    <table class="table table-hover table-borderless">
+                      <thead class="thead-light">
+                      <tr>
+                        <th>{{ "label.file_type" | translate }}</th>
+                        <th>{{ "label.name" | translate }}</th>
+                        <th>{{ "label.description" | translate }}</th>
+                        <th>{{ "label.actions" | translate }}</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr *ngFor="let data of deindexation?.evidenceFiles">
+                        <td [class.removeItem]="data.markForDelete">
+                          {{ "list.file_type." + data.file_type | translate }}
+                        </td>
+                        <td [class.removeItem]="data.markForDelete" *ngIf="data.file_type === 'URL'">{{
+                          data.file_address }}</td>
+                        <td [class.removeItem]="data.markForDelete" *ngIf="data.file_type === 'FILE'">{{
+                          ufs.getOriginalName(data.file_address) }}</td>
+                        <td [class.removeItem]="data.markForDelete">{{ data.file_description }}</td>
+                        <td class="">
+                          <a (click)="ufs.download(data.file_address)" *ngIf="data.file_type === 'FILE'">
+                            <i class="las la-cloud-download-alt la-2x colorGris espDer5"></i></a>
+                          <a href="{{ data.file_address }}" target="_blank" *ngIf="data.file_type === 'URL'"><i
+                            class="las la-link la-2x colorGris espDer5"></i></a>
+                          <a (click)="removeProof(data)" *ngIf="!disabled"><i class="las la-times la-2x colorRojo"
+                                                                              title="{{'tooltip.remove' | translate}}"></i></a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--dynamic form-->
+          <div class="row paddingTop15">
+            <app-dynamic-form [dynamicForm]="deindexation?.dynamicForm" [disabled]="disabled"></app-dynamic-form>
+          </div>
+        </div>
+
+        <!--buttons-->
+        <div class="row paddingBottom50 paddingTop25 centrado">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <button (click)="back()" class="secondLevelButton espDer15"><i
+              class="las fa-backward espDer5"></i>{{'button.back' | translate}}</button>
+          </div>
+          <div class="col-md-4" *ngIf="deindexation.status !== 'processing'">
+            <a (click)="onConfirmClick(deIndexForm)" class="glow-on-hover espDer15" type="submit">
+              {{ "button.save" | translate }}</a>
+          </div>
+          <div class="col-md-4">
+            <button (click)="send(deIndexForm)" class="glow-on-hover espIz15" type="submit" tabindex="1"
+                    *ngIf="deindexation.status === 'created'">
+              {{ "button.send.solicitude" | translate }}
+            </button>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

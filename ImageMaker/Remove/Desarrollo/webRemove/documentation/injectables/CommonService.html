@@ -1,0 +1,3249 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Inyectables</li>
+  <li >CommonService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/common.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#ROUTES" >ROUTES</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildMarkNotificationBody" >buildMarkNotificationBody</a>
+                            </li>
+                            <li>
+                                <a href="#email" >email</a>
+                            </li>
+                            <li>
+                                <a href="#googleSuggest" >googleSuggest</a>
+                            </li>
+                            <li>
+                                <a href="#listClients" >listClients</a>
+                            </li>
+                            <li>
+                                <a href="#listClientsPlans" >listClientsPlans</a>
+                            </li>
+                            <li>
+                                <a href="#listCountries" >listCountries</a>
+                            </li>
+                            <li>
+                                <a href="#listDeindexationStatus" >listDeindexationStatus</a>
+                            </li>
+                            <li>
+                                <a href="#listDevices" >listDevices</a>
+                            </li>
+                            <li>
+                                <a href="#listFeelings" >listFeelings</a>
+                            </li>
+                            <li>
+                                <a href="#listFeelingsIgnoreNotApply" >listFeelingsIgnoreNotApply</a>
+                            </li>
+                            <li>
+                                <a href="#listForbiddenWords" >listForbiddenWords</a>
+                            </li>
+                            <li>
+                                <a href="#listImagesColours" >listImagesColours</a>
+                            </li>
+                            <li>
+                                <a href="#listImagesSizes" >listImagesSizes</a>
+                            </li>
+                            <li>
+                                <a href="#listImagesTypes" >listImagesTypes</a>
+                            </li>
+                            <li>
+                                <a href="#listImagesUsageRights" >listImagesUsageRights</a>
+                            </li>
+                            <li>
+                                <a href="#listImpulseConcepts" >listImpulseConcepts</a>
+                            </li>
+                            <li>
+                                <a href="#listImpulseStatus" >listImpulseStatus</a>
+                            </li>
+                            <li>
+                                <a href="#listImpulseTypes" >listImpulseTypes</a>
+                            </li>
+                            <li>
+                                <a href="#listLanguages" >listLanguages</a>
+                            </li>
+                            <li>
+                                <a href="#listNewsTypes" >listNewsTypes</a>
+                            </li>
+                            <li>
+                                <a href="#listNotifications" >listNotifications</a>
+                            </li>
+                            <li>
+                                <a href="#listPlans" >listPlans</a>
+                            </li>
+                            <li>
+                                <a href="#listProfiles" >listProfiles</a>
+                            </li>
+                            <li>
+                                <a href="#listSearchTypes" >listSearchTypes</a>
+                            </li>
+                            <li>
+                                <a href="#listTrackingWords" >listTrackingWords</a>
+                            </li>
+                            <li>
+                                <a href="#markNotificationsAsHidden" >markNotificationsAsHidden</a>
+                            </li>
+                            <li>
+                                <a href="#markNotificationsAsReaded" >markNotificationsAsReaded</a>
+                            </li>
+                            <li>
+                                <a href="#verfyEmailClient" >verfyEmailClient</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apiRest: <a href="../injectables/ApiRestService.html" target="_self">ApiRestService</a>, util: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/services/common.service.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Common services for the entire system (they are invoked in various parts of the system,
+so they have a standardization in this document, they are mainly used to fill all the system filters):</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apiRest</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiRestService.html" target="_self" >ApiRestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>util</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildMarkNotificationBody"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildMarkNotificationBody</b></span>
+                        <a href="#buildMarkNotificationBody"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildMarkNotificationBody(notifications: any[], field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="233"
+                            class="link-to-prism">src/app/services/common.service.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Prepare body object for switch &#39;readed&#39; or &#39;hidden&#39; service.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notifications</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>field</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="email"></a>
+                    <span class="name">
+                        <span ><b>email</b></span>
+                        <a href="#email"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>email(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="41"
+                            class="link-to-prism">src/app/services/common.service.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get email from an account.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="googleSuggest"></a>
+                    <span class="name">
+                        <span ><b>googleSuggest</b></span>
+                        <a href="#googleSuggest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>googleSuggest(q: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, hl: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, gl: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="339"
+                            class="link-to-prism">src/app/services/common.service.ts:339</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Search Google suggestions and with a keyword, country and language, return a list of suggestions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>q</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>hl</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gl</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listClients"></a>
+                    <span class="name">
+                        <span ><b>listClients</b></span>
+                        <a href="#listClients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listClients(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="257"
+                            class="link-to-prism">src/app/services/common.service.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the clients to fill the plan suggestion select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listClientsPlans"></a>
+                    <span class="name">
+                        <span ><b>listClientsPlans</b></span>
+                        <a href="#listClientsPlans"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listClientsPlans(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="276"
+                            class="link-to-prism">src/app/services/common.service.ts:276</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the plans available for a client in the sidebar</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listCountries"></a>
+                    <span class="name">
+                        <span ><b>listCountries</b></span>
+                        <a href="#listCountries"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listCountries(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="59"
+                            class="link-to-prism">src/app/services/common.service.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all countries availables in the platform.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listDeindexationStatus"></a>
+                    <span class="name">
+                        <span ><b>listDeindexationStatus</b></span>
+                        <a href="#listDeindexationStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listDeindexationStatus(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="349"
+                            class="link-to-prism">src/app/services/common.service.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the types of deindexation states available in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listDevices"></a>
+                    <span class="name">
+                        <span ><b>listDevices</b></span>
+                        <a href="#listDevices"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listDevices(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="50"
+                            class="link-to-prism">src/app/services/common.service.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all devices for a scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listFeelings"></a>
+                    <span class="name">
+                        <span ><b>listFeelings</b></span>
+                        <a href="#listFeelings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listFeelings(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="110"
+                            class="link-to-prism">src/app/services/common.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all feelings for tracking words or snippets</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listFeelingsIgnoreNotApply"></a>
+                    <span class="name">
+                        <span ><b>listFeelingsIgnoreNotApply</b></span>
+                        <a href="#listFeelingsIgnoreNotApply"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listFeelingsIgnoreNotApply(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="119"
+                            class="link-to-prism">src/app/services/common.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all feelings for tracking words or snippets (But without NOT_APPLIED)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listForbiddenWords"></a>
+                    <span class="name">
+                        <span ><b>listForbiddenWords</b></span>
+                        <a href="#listForbiddenWords"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listForbiddenWords(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="101"
+                            class="link-to-prism">src/app/services/common.service.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List forbidden words for scanners.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImagesColours"></a>
+                    <span class="name">
+                        <span ><b>listImagesColours</b></span>
+                        <a href="#listImagesColours"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImagesColours(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="147"
+                            class="link-to-prism">src/app/services/common.service.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List image colours possible parameters for scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImagesSizes"></a>
+                    <span class="name">
+                        <span ><b>listImagesSizes</b></span>
+                        <a href="#listImagesSizes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImagesSizes(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="165"
+                            class="link-to-prism">src/app/services/common.service.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List images size possible parameters for scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImagesTypes"></a>
+                    <span class="name">
+                        <span ><b>listImagesTypes</b></span>
+                        <a href="#listImagesTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImagesTypes(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="156"
+                            class="link-to-prism">src/app/services/common.service.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List images types possible parameters for scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImagesUsageRights"></a>
+                    <span class="name">
+                        <span ><b>listImagesUsageRights</b></span>
+                        <a href="#listImagesUsageRights"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImagesUsageRights(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="174"
+                            class="link-to-prism">src/app/services/common.service.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List image usage rights possible parameters for scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImpulseConcepts"></a>
+                    <span class="name">
+                        <span ><b>listImpulseConcepts</b></span>
+                        <a href="#listImpulseConcepts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImpulseConcepts(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="326"
+                            class="link-to-prism">src/app/services/common.service.ts:326</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the types of impulse concepts available in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImpulseStatus"></a>
+                    <span class="name">
+                        <span ><b>listImpulseStatus</b></span>
+                        <a href="#listImpulseStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImpulseStatus(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="317"
+                            class="link-to-prism">src/app/services/common.service.ts:317</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the types of pulse states available in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listImpulseTypes"></a>
+                    <span class="name">
+                        <span ><b>listImpulseTypes</b></span>
+                        <a href="#listImpulseTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listImpulseTypes(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="308"
+                            class="link-to-prism">src/app/services/common.service.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the types of impulses available in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listLanguages"></a>
+                    <span class="name">
+                        <span ><b>listLanguages</b></span>
+                        <a href="#listLanguages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listLanguages(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="73"
+                            class="link-to-prism">src/app/services/common.service.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all languages availables in the platform.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listNewsTypes"></a>
+                    <span class="name">
+                        <span ><b>listNewsTypes</b></span>
+                        <a href="#listNewsTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listNewsTypes(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="138"
+                            class="link-to-prism">src/app/services/common.service.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List news types possible parameters for scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listNotifications"></a>
+                    <span class="name">
+                        <span ><b>listNotifications</b></span>
+                        <a href="#listNotifications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listNotifications(total?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="184"
+                            class="link-to-prism">src/app/services/common.service.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all notifications for user/client logged in.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>total</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listPlans"></a>
+                    <span class="name">
+                        <span ><b>listPlans</b></span>
+                        <a href="#listPlans"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listPlans(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, _config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="288"
+                            class="link-to-prism">src/app/services/common.service.ts:288</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the available plans in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>_config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listProfiles"></a>
+                    <span class="name">
+                        <span ><b>listProfiles</b></span>
+                        <a href="#listProfiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listProfiles(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="299"
+                            class="link-to-prism">src/app/services/common.service.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List the available profiles in a select</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listSearchTypes"></a>
+                    <span class="name">
+                        <span ><b>listSearchTypes</b></span>
+                        <a href="#listSearchTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listSearchTypes(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="32"
+                            class="link-to-prism">src/app/services/common.service.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List all search types for a scanner.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listTrackingWords"></a>
+                    <span class="name">
+                        <span ><b>listTrackingWords</b></span>
+                        <a href="#listTrackingWords"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listTrackingWords(successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="88"
+                            class="link-to-prism">src/app/services/common.service.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List active tracking words for scanners.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markNotificationsAsHidden"></a>
+                    <span class="name">
+                        <span ><b>markNotificationsAsHidden</b></span>
+                        <a href="#markNotificationsAsHidden"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>markNotificationsAsHidden(notifications: any[], hidden: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="214"
+                            class="link-to-prism">src/app/services/common.service.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switch &#39;hidden&#39; attribute from a list of notifications</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Descripción</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notifications</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hidden</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>true =&gt; &#39;hidden&#39; or false =&gt; &#39;not hidden&#39;</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markNotificationsAsReaded"></a>
+                    <span class="name">
+                        <span ><b>markNotificationsAsReaded</b></span>
+                        <a href="#markNotificationsAsReaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>markNotificationsAsReaded(notifications: any[], readed: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="195"
+                            class="link-to-prism">src/app/services/common.service.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switch &#39;readed&#39; attribute from a list of notifications</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Descripción</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notifications</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>readed</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>true =&gt; &#39;readed&#39; or false =&gt; &#39;not readed&#39;</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verfyEmailClient"></a>
+                    <span class="name">
+                        <span ><b>verfyEmailClient</b></span>
+                        <a href="#verfyEmailClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>verfyEmailClient(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, successFuncion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank">Function</a>, config?: <a href="../interfaces/ApiConfig.html" target="_self">ApiConfig</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="267"
+                            class="link-to-prism">src/app/services/common.service.ts:267</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Recives an email and send a email to verify cliente</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>successFuncion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiConfig.html" target="_self" >ApiConfig</a></code>
+                                    </td>
+
+                                    <td>
+                                        Si
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ROUTES"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>ROUTES</b></span>
+                        <a href="#ROUTES"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>API_ROUTES.COMMON</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/services/common.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/services/common.service.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {ApiConfig, ApiRestService} from &#x27;./api-rest.service&#x27;;
+import {API_ROUTES} from &#x27;../helpers/api.rest.routes&#x27;;
+import {UtilService} from &#x27;../helpers/util.service&#x27;;
+import {SessionService} from &#x27;../helpers/session.service&#x27;;
+import {TranslateHelperService} from &quot;../helpers/translate-helper.service&quot;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class CommonService {
+  private ROUTES &#x3D; API_ROUTES.COMMON;
+
+  /**
+   * Common services for the entire system (they are invoked in various parts of the system,
+   * so they have a standardization in this document, they are mainly used to fill all the system filters):
+   * @param apiRest
+   * @param util
+   * @param session
+   * @param translateHelper
+   */
+  constructor(private apiRest: ApiRestService, private util: UtilService,
+              private session: SessionService,
+              public translateHelper: TranslateHelperService) {
+  }
+
+  /**
+   * List all search types for a scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listSearchTypes(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.SEARCH_TYPES, {}, successFuncion, config);
+  }
+
+  /**
+   * Get email from an account.
+   * @param successFuncion
+   * @param config
+   */
+   email(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.EMAIL, {}, successFuncion, config);
+  }
+
+  /**
+   * List all devices for a scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listDevices(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.DEVICES, {}, successFuncion, config);
+  }
+
+  /**
+   * List all countries availables in the platform.
+   * @param successFuncion
+   * @param config
+   */
+  listCountries(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.COUNTRIES, {}, response &#x3D;&gt; {
+      if (successFuncion) {
+        response &#x3D; this.util.translateAndSort(response, &#x27;list.country.&#x27;, &#x27;tag&#x27;, &#x27;name&#x27;);
+        successFuncion(response);
+      }
+    }, config);
+  }
+
+  /**
+   * List all languages availables in the platform.
+   * @param successFuncion
+   * @param config
+   */
+  listLanguages(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.LANGUAGES, {}, response &#x3D;&gt; {
+      if (successFuncion) {
+        // Descomentar si se hace internacionalizacion de idiomas para los 145 lenguajes.
+        // response &#x3D; this.util.translateAndSort(response, &#x27;lang.&#x27;, &#x27;code&#x27;, &#x27;language&#x27;);
+        successFuncion(response);
+      }
+    }, config);
+  }
+
+  /**
+   * List active tracking words for scanners.
+   * @param successFuncion
+   * @param config
+   */
+  listTrackingWords(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.TRACKING_WORDS, {}, response &#x3D;&gt; {
+      this.util.toTitleCaseList(response, &#x27;word&#x27;);
+
+      if (successFuncion) successFuncion(response);
+    }, config);
+  }
+
+  /**
+   * List forbidden words for scanners.
+   * @param successFuncion
+   * @param config
+   */
+  listForbiddenWords(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.FORBIDDEN_WORDS, {}, successFuncion, config);
+  }
+
+  /**
+   * List all feelings for tracking words or snippets
+   * @param successFuncion
+   * @param config
+   */
+  listFeelings(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.FEELINGS, {}, successFuncion, config);
+  }
+
+  /**
+   * List all feelings for tracking words or snippets (But without NOT_APPLIED)
+   * @param successFuncion
+   * @param config
+   */
+  listFeelingsIgnoreNotApply(successFuncion?: Function, config?: ApiConfig) {
+    this.listFeelings(response &#x3D;&gt; {
+      if (response) {
+        response.forEach((value, index) &#x3D;&gt; {
+          if (value.NOT_APPLIED &#x3D;&#x3D;&#x3D; true) response.splice(index, 1);
+        })
+
+        if (successFuncion) {
+          successFuncion(response);
+        }
+      }
+    }, config);
+  }
+
+  /**
+   * List news types possible parameters for scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listNewsTypes(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.NEWS_TYPES, {}, successFuncion, config);
+  }
+
+  /**
+   * List image colours possible parameters for scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listImagesColours(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMAGES_COLOURS, {}, successFuncion, config);
+  }
+
+  /**
+   * List images types possible parameters for scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listImagesTypes(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMAGES_TYPES, {}, successFuncion, config);
+  }
+
+  /**
+   * List images size possible parameters for scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listImagesSizes(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMAGES_SIZES, {}, successFuncion, config);
+  }
+
+  /**
+   * List image usage rights possible parameters for scanner.
+   * @param successFuncion
+   * @param config
+   */
+  listImagesUsageRights(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMAGES_USAGE_RIGHTS, {}, successFuncion, config);
+  }
+
+  /**
+   * List all notifications for user/client logged in.
+   * @param total
+   * @param successFuncion
+   * @param config
+   */
+  listNotifications(total?: number, successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.NOTIFICATIONS, total ? {total: total} : {}, successFuncion, config);
+  }
+
+  /**
+   * Switch &#x27;readed&#x27; attribute from a list of notifications
+   * @param notifications
+   * @param readed true &#x3D;&gt; &#x27;readed&#x27; or false &#x3D;&gt; &#x27;not readed&#x27;
+   * @param successFuncion
+   * @param config
+   */
+  markNotificationsAsReaded(notifications: any[], readed: boolean, successFuncion?: Function, config?: ApiConfig) {
+    const body &#x3D; this.buildMarkNotificationBody(notifications, &#x27;readed&#x27;, readed);
+    config &#x3D; config ? config : {};
+    config.ignoreSuccessMessage &#x3D; true;
+
+    if (body !&#x3D; null) {
+      this.apiRest.update(this.ROUTES.NOTIFICATIONS, body, successFuncion, config);
+    } else {
+      console.error(&#x27;Error: access config invalid...&#x27;);
+    }
+  }
+
+  /**
+   * Switch &#x27;hidden&#x27; attribute from a list of notifications
+   * @param notifications
+   * @param hidden true &#x3D;&gt; &#x27;hidden&#x27; or false &#x3D;&gt; &#x27;not hidden&#x27;
+   * @param successFuncion
+   * @param config
+   */
+  markNotificationsAsHidden(notifications: any[], hidden: boolean, successFuncion?: Function, config?: ApiConfig) {
+    const body &#x3D; this.buildMarkNotificationBody(notifications, &#x27;hidden&#x27;, hidden);
+    config &#x3D; config ? config : {};
+    config.ignoreSuccessMessage &#x3D; true;
+
+    if (body !&#x3D; null) {
+      this.apiRest.update(this.ROUTES.NOTIFICATIONS, body, successFuncion, config);
+    } else {
+      console.error(&#x27;Error: access config invalid...&#x27;);
+    }
+  }
+
+  /**
+   * Prepare body object for switch &#x27;readed&#x27; or &#x27;hidden&#x27; service.
+   * @param notifications
+   * @param field
+   * @param value
+   * @returns
+   */
+  private buildMarkNotificationBody(notifications: any[], field: string, value: boolean): any {
+    const accessConfig &#x3D; this.session.getAccessConfig();
+
+    if (accessConfig.CLIENT) {
+      return {
+        field: field,
+        value: value,
+        clientsAlerts: notifications
+      };
+    } else if (accessConfig.ADMIN) {
+      return {
+        field: field,
+        value: value,
+        userAlerts: notifications
+      }
+    }
+    return null;
+  }
+
+  /**
+   * List the clients to fill the plan suggestion select
+   * @param successFuncion
+   * @param config
+   */
+  listClients(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.CLIENTS, {}, successFuncion, config);
+  }
+
+  /**
+   * Recives an email and send a email to verify cliente
+   * @param email
+   * @param successFuncion
+   * @param config
+   */
+  verfyEmailClient(email: string, successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.CLIENTS_EMAIL, {email: email}, successFuncion, config);
+  }
+
+  /**
+   * List the plans available for a client in the sidebar
+   * @param successFuncion
+   * @param config
+   */
+  listClientsPlans(successFuncion?: Function, config?: ApiConfig) {
+    const accessConfig &#x3D; this.session.getAccessConfig();
+    if (accessConfig.CLIENT) {
+      this.apiRest.get(this.ROUTES.CLIENTS_PLANS, {}, successFuncion, config);
+    }
+  }
+
+  /**
+   * List the available plans in a select
+   * @param successFuncion
+   * @param _config
+   */
+  listPlans(successFuncion?: Function, _config?: ApiConfig) {
+    let config &#x3D; _config ? _config : {};
+    config.ignoraToken &#x3D; true;
+    this.apiRest.get(this.ROUTES.PLANS, {}, successFuncion, config);
+  }
+
+  /**
+   * List the available profiles in a select
+   * @param successFuncion
+   * @param config
+   */
+  listProfiles(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.PROFILES, {}, successFuncion, config);
+  }
+
+  /**
+   * List the types of impulses available in a select
+   * @param successFuncion
+   * @param config
+   */
+  listImpulseTypes(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMPULSE_TYPES, {}, successFuncion, config);
+  }
+
+  /**
+   * List the types of pulse states available in a select
+   * @param successFuncion
+   * @param config
+   */
+  listImpulseStatus(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMPULSE_STATUS, {}, successFuncion, config);
+  }
+
+  /**
+   * List the types of impulse concepts available in a select
+   * @param successFuncion
+   * @param config
+   */
+  listImpulseConcepts(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.IMPULSE_CONCEPTS, {}, successFuncion, config);
+  }
+
+  /**
+   *
+   * Search Google suggestions and with a keyword, country and language, return a list of suggestions
+   * @param q
+   * @param hl
+   * @param gl
+   * @param successFuncion
+   * @param config
+   */
+  googleSuggest(q: string, hl: string, gl: string, successFuncion?: Function, config?: ApiConfig) {
+    const noSpaces &#x3D; q.replace(/ /g, &#x27;%20&#x27;);
+    this.apiRest.get(this.ROUTES.GOOGLE_SUGGEST, {q: noSpaces, hl: hl, gl: gl}, successFuncion, config);
+  }
+
+  /**
+   * List the types of deindexation states available in a select
+   * @param successFuncion
+   * @param config
+   */
+  listDeindexationStatus(successFuncion?: Function, config?: ApiConfig) {
+    this.apiRest.get(this.ROUTES.DEINDEXATION_STATUS, {}, successFuncion, config);
+  }
+
+  /*validateCertificate(errorFunction: Function) {
+    this.apiRest.validateCertificate(errorFunction);
+  }*/
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CommonService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

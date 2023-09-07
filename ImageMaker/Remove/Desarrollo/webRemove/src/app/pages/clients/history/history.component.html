@@ -1,0 +1,36 @@
+<div class="container-fluid padding20">
+  <div class="row padding20">
+    <div class="col-md-12">
+      <div class="row slide-in-blurred-bottom horizontal-scroll">
+        <table class="table table-hover table-borderless ">
+          <thead class="thead-light">
+          <tr>
+            <th>{{'label.register' | translate}} </th>
+            <th>{{'label.date' | translate}}</th>
+            <th>{{'label.name' | translate}}</th>
+            <th>{{'label.profile' | translate}} </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let data of copyArray">
+            <td>{{ data?.description | translate }}</td>
+            <td>{{ utilService.formatDate(data?.action_date)  | date:'short'}}</td>
+            <td>{{ data?.nameUserAction  }}</td>
+            <td>{{ 'profile.' + data?.profileUserActionType?.tag | translate }}</td>
+
+          </tr>
+          </tbody>
+        </table>
+        <div class="col-md-12 centrado">
+          <jw-pagination [items]="historial" (changePage)="onChangePage($event)"
+                         [maxPages]="5" [pageSize]="15"
+          ></jw-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="centrado row">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+  </div>
+</div>
+

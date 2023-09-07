@@ -1,0 +1,606 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  DynamicDisplayComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/dynamic-display/dynamic-display.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dynamic-display</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dynamic-display.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dynamic-display.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dfh" >dfh</a>
+                            </li>
+                            <li>
+                                <a href="#result" >result</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dynamicForm" >dynamicForm</a>
+                            </li>
+                            <li>
+                                <a href="#showResult" >showResult</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dfh: <a href="../injectables/DynamicFormHelperService.html" target="_self">DynamicFormHelperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Used for dynamic deindexing form construction</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dfh</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DynamicFormHelperService.html" target="_self" >DynamicFormHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dynamicForm"></a>
+                        <b>dynamicForm</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IDynamicForm.html" target="_self" >IDynamicForm</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="11" class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:11</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showResult"></a>
+                        <b>showResult</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="12" class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="21"
+                            class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:21</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dfh"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dfh</b></span>
+                        <a href="#dfh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/DynamicFormHelperService.html" target="_self" >DynamicFormHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="result"></a>
+                    <span class="name">
+                        <span ><b>result</b></span>
+                        <a href="#result"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IDynamicFormConditionResult.html" target="_self" >IDynamicFormConditionResult</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="13" class="link-to-prism">src/app/shared/dynamic-display/dynamic-display.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit, SimpleChanges } from &#x27;@angular/core&#x27;;
+import { DynamicFormHelperService } from &#x27;src/app/helpers/dynamic-form-helper.service&#x27;;
+import { IDynamicForm, IDynamicFormConditionResult } from &#x27;src/app/interfaces/IDynamicForm&#x27;;
+
+@Component({
+  selector: &#x27;app-dynamic-display&#x27;,
+  templateUrl: &#x27;./dynamic-display.component.html&#x27;,
+  styleUrls: [&#x27;./dynamic-display.component.css&#x27;]
+})
+export class DynamicDisplayComponent implements OnInit {
+  @Input() dynamicForm: IDynamicForm;
+  @Input() showResult: boolean;
+  result: IDynamicFormConditionResult;
+
+  /**
+   * Used for dynamic deindexing form construction
+   * @param dfh
+   */
+  constructor(public dfh: DynamicFormHelperService) { }
+
+  ngOnInit(): void {
+    this.result &#x3D; this.dfh.evaluateResult(this.dynamicForm);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;dynamicForm&quot;&gt;
+  &lt;div class&#x3D;&quot;row &quot; *ngFor&#x3D;&quot;let section of dynamicForm.sections&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 paddingTop10&quot;&gt;
+      &lt;h3 class&#x3D;&quot;colorPrincipal&quot;&gt;&lt;strong&gt;{{section.label}}&lt;/strong&gt;&lt;/h3&gt;
+      &lt;hr&gt;
+    &lt;/div&gt;
+
+    &lt;div style&#x3D;&quot;display: contents;&quot; *ngFor&#x3D;&quot;let in of section.inputs&quot; &gt;
+      &lt;div class&#x3D;&quot;col-md-{{in.width}}&quot; [ngSwitch]&#x3D;&quot;in.type&quot; *ngIf&#x3D;&quot;in.visible&quot;&gt;
+        &lt;!-- TEXT FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.TEXT_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in.value}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- TEXT AREA FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.TEXT_AREA_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in.value}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- NUMBER FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.NUMBER_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in.value}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- DATEPICKER FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.DATE_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in.value | date}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- RADIO GROUP FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.RADIO_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in?.selectedOption?.label}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- SELECT FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.SELECT_TYPE&quot;&gt;
+          &lt;strong &gt;{{in.label}}&lt;/strong&gt;
+          &lt;p class&#x3D;&quot;colorPrincipal&quot;&gt;{{in?.selectedOption?.label}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- CHECKBOX FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-section paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.CHECKBOX_TYPE&quot;&gt;
+          &lt;strong class&#x3D;&quot;espDer5&quot;&gt;{{in.label}}&lt;/strong&gt;
+          &lt;div class&#x3D;&quot;row paddingTop10&quot;&gt;
+            &lt;p *ngFor&#x3D;&quot;let opt of in?.selectedOptions&quot; style&#x3D;&quot;padding-left: 20px;&quot;&gt;
+              &lt;i class&#x3D;&quot;las la-check colorVerde espDer5&quot;&gt;&lt;/i&gt; 
+              &lt;span class&#x3D;&quot;colorPrincipal&quot;&gt;{{opt?.label}}&lt;/span&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- SWITCH FIELD --&gt;
+        &lt;div class&#x3D;&quot;example-full-width paddingTop10&quot; *ngSwitchCase&#x3D;&quot;dfh.SWITCH_TYPE&quot;&gt;
+          &lt;mat-slide-toggle [(ngModel)]&#x3D;&quot;in.value&quot; name&#x3D;&quot;{{in.name}}&quot; disabled&#x3D;&quot;true&quot;
+              class&#x3D;&quot;noCkeck&quot;&gt;&lt;span class&#x3D;&quot;colorNegro boldFont&quot;&gt;{{in.label}}&lt;/span&gt;&lt;/mat-slide-toggle&gt;
+        &lt;/div&gt;
+
+        &lt;div *ngSwitchDefault&gt;
+          Type Not Supported: Input: {{in.type}} | Name: {{in.name}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row centrado paddingTop10&quot; *ngIf&#x3D;&quot;showResult&quot;&gt;
+    &lt;h2&gt;{{&#x27;tittle.dynamic.display.result&#x27; | translate}}: &lt;/h2&gt;
+    &lt;p&gt;{{result?.label}}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dynamic-display.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="dynamicForm">  <div class="row " *ngFor="let section of dynamicForm.sections">    <div class="col-md-12 paddingTop10">      <h3 class="colorPrincipal"><strong>{{section.label}}</strong></h3>      <hr>    </div>    <div style="display: contents;" *ngFor="let in of section.inputs" >      <div class="col-md-{{in.width}}" [ngSwitch]="in.type" *ngIf="in.visible">        <!-- TEXT FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.TEXT_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in.value}}</p>        </div>        <!-- TEXT AREA FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.TEXT_AREA_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in.value}}</p>        </div>        <!-- NUMBER FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.NUMBER_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in.value}}</p>        </div>        <!-- DATEPICKER FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.DATE_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in.value | date}}</p>        </div>        <!-- RADIO GROUP FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.RADIO_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in?.selectedOption?.label}}</p>        </div>        <!-- SELECT FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.SELECT_TYPE">          <strong >{{in.label}}</strong>          <p class="colorPrincipal">{{in?.selectedOption?.label}}</p>        </div>        <!-- CHECKBOX FIELD -->        <div class="example-section paddingTop10" *ngSwitchCase="dfh.CHECKBOX_TYPE">          <strong class="espDer5">{{in.label}}</strong>          <div class="row paddingTop10">            <p *ngFor="let opt of in?.selectedOptions" style="padding-left: 20px;">              <i class="las la-check colorVerde espDer5"></i>               <span class="colorPrincipal">{{opt?.label}}</span>            </p>          </div>        </div>        <!-- SWITCH FIELD -->        <div class="example-full-width paddingTop10" *ngSwitchCase="dfh.SWITCH_TYPE">          <mat-slide-toggle [(ngModel)]="in.value" name="{{in.name}}" disabled="true"              class="noCkeck"><span class="colorNegro boldFont">{{in.label}}</span></mat-slide-toggle>        </div>        <div *ngSwitchDefault>          Type Not Supported: Input: {{in.type}} | Name: {{in.name}}        </div>      </div>    </div>  </div>  <div class="row centrado paddingTop10" *ngIf="showResult">    <h2>{{\'tittle.dynamic.display.result\' | translate}}: </h2>    <p>{{result?.label}}</p>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'DynamicDisplayComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DynamicDisplayComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

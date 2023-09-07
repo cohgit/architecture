@@ -1,0 +1,206 @@
+<div class="container-fluid ps-md-0" [ngClass]="isClient ? 'login-body' : 'login-body-admin'">
+  <div class="row g-0">
+    <div class="col-md-8 col-lg-6 user_card">
+      <div class="row espDer15">
+        <div class="alinearDerecha paddingTop40">
+          <mat-form-field class="ng-autocomplete">
+            <mat-label><i class="las la-language fa-2x"></i></mat-label>
+            <mat-select
+              [(ngModel)]="language"
+              (selectionChange)="changeLanguage()"
+            >
+              <mat-option
+                *ngFor="let l of translateHelper.languages"
+                [value]="l"
+              >
+                {{ "lang." + l | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="login d-flex align-items-center" *ngIf="!expired">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h1>{{ "title.restore_pass" | translate }}</h1>
+                </div>
+                <div class="col-md-3 col-lg-4 mx-auto">
+                  <img src="../../assets/img/isotipo2.png"/>
+                </div>
+              </div>
+              <!-- Sign In Form -->
+              <form #keyForm="ngForm" (ngSubmit)="(keyForm.form.valid)">
+                <div class="form-floating mb-3">
+                  <mat-form-field class="example-full-width">
+
+                    <input
+                      [(ngModel)]="pass"
+                      name="pass"
+                      #password="ngModel"
+                      matInput
+                      placeholder="{{ 'label.new_password' | translate }} "
+                      required
+                      [type]="hide ? 'password' : 'text'"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    />
+                    <i class="las la-eye colorGris" matSuffix
+                       (click)="hide = !hide"></i>
+                  </mat-form-field>
+                  <div *ngIf="password.errors?.required && keyForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.required" | translate }}
+                    </h5>
+                  </div>
+                  <div *ngIf="password.errors?.pattern">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.password" | translate }}
+                    </h5>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <mat-form-field class="example-full-width">
+                    <input
+                      [(ngModel)]="confirmPass"
+                      name="confirmPass"
+                      #confirmpassword="ngModel"
+                      matInput
+                      placeholder="{{ 'label.confirm_password' | translate }} "
+                      required
+                      [type]="hide ? 'password' : 'text'"
+                      pattern="{{ password.value }}"
+                    />
+
+                  </mat-form-field>
+                  <div *ngIf="confirmpassword.errors?.required && keyForm.submitted">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.required" | translate }}
+                    </h5>
+                  </div>
+                  <div *ngIf="confirmpassword?.errors?.pattern">
+                    <h5 class="colorRojo">
+                      <i class="las la-exclamation-circle espDer5"></i
+                      >{{ "error.password_match" | translate }}
+                    </h5>
+                  </div>
+                </div>
+
+
+                <!--     <div class="form-floating mb-3">
+                       <mat-form-field class="example-full-width">
+                         <input
+                           [(ngModel)]="pass"
+                           name="pass"
+                           #password="ngModel"
+                           matInput
+                           placeholder="{{ 'label.new_password' | translate }} "
+                           required
+                           type="password"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                         />
+                       </mat-form-field>
+                       <div *ngIf="password.errors?.required && keyForm.submitted">
+                         <h5 class="colorRojo">
+                           <i class="las la-exclamation-circle espDer5"></i
+                           >{{ "error.required" | translate }}
+                         </h5>
+                       </div>
+                       <div *ngIf="password.errors?.pattern && keyForm.submitted">
+                         <h5 class="colorRojo">
+                           <i class="las la-exclamation-circle espDer5"></i
+                           >{{ "error.password" | translate }}
+                         </h5>
+                       </div>
+                     </div>
+                     <div class="form-floating mb-3">
+                       <mat-form-field class="example-full-width">
+                         <input
+                           [(ngModel)]="confirmPass"
+                           name="confirmPass"
+                           #confirmpassword="ngModel"
+                           matInput
+                           placeholder="{{ 'label.confirm_password' | translate }} "
+                           required
+                           type="password"
+                           pattern="{{ password.value }}"
+                         />
+                       </mat-form-field>
+                       <div
+                         *ngIf="
+                           confirmpassword.errors?.required && keyForm.submitted
+                         "
+                       >
+                         <h5 class="colorRojo">
+                           <i class="las la-exclamation-circle espDer5"></i
+                           >{{ "error.required" | translate }}
+                         </h5>
+                       </div>
+                       <div *ngIf="confirmpassword?.errors?.pattern">
+                         <h5 class="colorRojo">
+                           <i class="las la-exclamation-circle espDer5"></i
+                           >{{ "error.password_match" | translate }}
+                         </h5>
+                       </div>
+                     </div>-->
+              </form>
+
+              <div class="row centrado paddingTop15" *ngIf="!showGoLogin">
+                <button
+                  (click)="newKey(keyForm)"
+                  class="glow-on-hover espIz15 padding15"
+                  type="submit"
+                  tabindex="1"
+                >
+                  {{ "button.restorepass" | translate }}
+                </button>
+              </div>
+              <div class="row centrado padding20" *ngIf="showGoLogin">
+                <a (click)="goLogin()">{{ "message.go_login" | translate }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login d-flex align-items-center" *ngIf="expired">
+        <div class="container">
+          <div class="row centrado">
+            <strong
+            ><h3 class="colorPrincipal">
+              {{ message | translate }}
+            </h3></strong
+            >
+          </div>
+          <h5 class="centrado padding20">
+            <strong
+            ><a
+              (click)="forgotKey()"
+              class="glow-on-hover padding15 backgroundSecundary"
+            >{{ "button.forgot.password" | translate }}</a
+            ></strong
+            >
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+  </div>
+</div>
+<div class="area">
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  # Servicios REST
+  remove-sr-app:
+    build: .
+    container_name: remove-sr-app
+    environment:
+      #  URL de acceso a la base de datos (WRITE ONLY)
+      - REMOVE_DB_HOST_WO=jdbc:postgresql://bd-remove-dev.cfda9ws4nwwx.us-east-1.rds.amazonaws.com
+      #  URL de acceso a la base de datos (READ ONLY)
+      - REMOVE_DB_HOST_RO=jdbc:postgresql://bd-remove-dev.cfda9ws4nwwx.us-east-1.rds.amazonaws.com
+      #  Puerto de acceso a la base de datos
+      - REMOVE_DB_PORT=5432
+      #  Nombre de la base de datos
+      - REMOVE_DB_NAME=remove_dev_2
+      #  Parametros extra de conexion
+      - REMOVE_DB_PARAMS=
+      #  Usuario de acceso a la base de datos
+      - REMOVE_DB_USER=devadmin
+      #  Contrasena de acceso a la base de datos
+      - REMOVE_DB_PASSWORD=DyhIPdEr#mP8RnQFu#
+      #- REMOVE_HEADERS_FOR_QA=true
+      #- REMOVE_SERVICES_PORT=80
+      - MUSL_LOCPATH=/usr/share/i18n/locales/musl
+    ports:
+      #  Redirección de puerto (El acceso 4600 de los servicios expondrá el puerto 4600 al exterior)
+      - 4600:4600

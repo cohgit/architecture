@@ -1,0 +1,304 @@
+<div *ngIf="dynamicForm">
+  <mat-vertical-stepper [linear]="false">
+    <mat-step *ngFor="let section of dynamicForm.sections; let is = index" [completed]="isComplete">
+      <ng-template matStepLabel>{{ section.label }} </ng-template>
+      <div class="row paddingTop15">
+        <div
+          style="display: contents"
+          *ngFor="let in of section.inputs; let ii = index"
+        >
+          <div [ngSwitch]="in.type" class="col-md-12" *ngIf="in.visible">
+            <div class="row">
+              <div class="col-md-{{ in.width - 1 }} col-xs-{{ in.width - 1 }} col-sm-{{ in.width - 1 }}"
+                   [ngClass]="{'dynamicErrorBorder': in.errorMessage}">
+                <!-- TEXT FIELD -->
+
+                <mat-form-field
+                  class="example-full-width"
+                  *ngSwitchCase="dfh.TEXT_TYPE"
+                >
+                  <!--<mat-label>{{in.label}}</mat-label>-->
+                  <input
+                    matInput
+                    [(ngModel)]="in.value"
+                    name="{{ in.name }}"
+                    required="{{ in.required }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (focusout)="evaluateConditions(in.name)"
+                    placeholder="{{ in.label }}"
+                  />
+
+                  <!--<h5 *ngIf="in.description">{{in.description}} hola</h5>-->
+                </mat-form-field>
+
+                <!-- TEXT AREA FIELD -->
+                <mat-form-field
+                  class="example-full-width paddingTop5"
+                  *ngSwitchCase="dfh.TEXT_AREA_TYPE"
+                >
+                  <!--<mat-label>{{ in.label }}</mat-label>
+                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">
+                    {{ in.description }}
+                  </h5>-->
+                  <textarea
+                    matInput
+                    type="text"
+                    required="{{ in.required }}"
+                    placeholder="{{ in.label }}"
+                    class="example-full-width"
+                    [(ngModel)]="in.value"
+                    name="{{ in.name }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (focusout)="evaluateConditions(in.name)"
+                  ></textarea>
+                </mat-form-field>
+
+                <!-- NUMBER FIELD -->
+                <mat-form-field
+                  class="example-full-width paddingTop5"
+                  *ngSwitchCase="dfh.NUMBER_TYPE"
+                >
+                  <!-- <mat-label>{{ in.label }}</mat-label>
+                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">
+                    {{ in.description }}
+                  </h5>-->
+                  <input
+                    matInput
+                    [(ngModel)]="in.value"
+                    required="{{ in.required }}"
+                    type="number"
+                    placeholder="{{ in.label }}"
+                    name="{{ in.name }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (focusout)="evaluateConditions(in.name)"
+                  />
+                </mat-form-field>
+
+                <!-- DATEPICKER FIELD -->
+                <mat-form-field
+                  class="example-full-width paddingTop5"
+                  *ngSwitchCase="dfh.DATE_TYPE"
+                >
+                  <!--<mat-label>{{ in.label }}</mat-label>
+                  <h5 *ngIf="in.description" class="paddingTop10 colorGris">
+                    {{ in.description }}
+                  </h5>-->
+                  <input
+                    matInput
+                    placeholder="{{ in.label }}"
+                    [matDatepicker]="dynamicPicker"
+                    [(ngModel)]="in.value"
+                    required="{{ in.required }}"
+                    [attr.id]="dtPicker + is + ii"
+                    name="{{ in.name }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (dateChange)="evaluateConditions(in.name)"
+                  />
+                  <mat-datepicker-toggle
+                    matSuffix
+                    [for]="dynamicPicker"
+                  ></mat-datepicker-toggle>
+                  <mat-datepicker #dynamicPicker></mat-datepicker>
+                </mat-form-field>
+
+                <!-- RADIO GROUP FIELD -->
+                <mat-label *ngSwitchCase="dfh.RADIO_TYPE" class="espDer15 paddingTop10">{{ in.label }}</mat-label>
+                <mat-radio-group
+                  [(ngModel)]="in.value"
+                  required="{{ in.required }}"
+                  name="{{ in.name }}"
+                  *ngSwitchCase="dfh.RADIO_TYPE"
+                  (change)="evaluateConditions(in.name)"
+                >
+                  <!--   <mat-label class="espDer5">{{ in.label }}</mat-label>
+                 <h5
+                    *ngIf="in.description"
+                    class="paddingTop10 colorGris espDer5"
+                  >
+                    {{ in.description }}
+                  </h5>-->
+                  <mat-radio-button
+                    class="espDer10"
+                    *ngFor="let inOption of in.options"
+                    disabled="{{ disabled || !in.enabled }}"
+                    [value]="inOption.name"
+                  >{{ inOption.label }}</mat-radio-button
+                  >
+                </mat-radio-group>
+
+                <!-- SELECT FIELD -->
+                <mat-form-field
+                  class="example-full-width paddingTop5"
+                  *ngSwitchCase="dfh.SELECT_TYPE"
+                >
+                  <mat-label>{{ in.label }}</mat-label>
+                  <!-- <h5 *ngIf="in.description" class="paddingTop10 colorGris">
+                    {{ in.description }}
+                  </h5>-->
+                  <mat-select
+                    [(ngModel)]="in.value"
+                    required="{{ in.required }}"
+                    name="{{ in.name }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (selectionChange)="evaluateConditions(in.name)"
+                  >
+                    <mat-option
+                      *ngFor="let inOption of in.options"
+                      [value]="inOption.name"
+                    >
+                      {{ inOption.label }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                <!-- CHECKBOX FIELD -->
+                <section
+                  class="example-full-width paddingTop5"
+                  *ngSwitchCase="dfh.CHECKBOX_TYPE"
+                >
+                  <!--<mat-label class="espDer5">{{ in.label }}</mat-label>
+                  <h5
+                    *ngIf="in.description"
+                    class="paddingTop10 colorGris espDer5"
+                  >
+                    {{ in.description }}
+                  </h5>-->
+                  <mat-checkbox
+                    class="example-margin noCkeck espDer10"
+                    *ngFor="let inOption of in.options"
+                    [(ngModel)]="inOption.checked"
+                    required="{{ in.required }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    (change)="evaluateCheckConditions(in)"
+                  >{{ inOption.label }}</mat-checkbox
+                  >
+                </section>
+
+                <!-- SWITCH FIELD -->
+                <div *ngSwitchCase="dfh.SWITCH_TYPE">
+                  <mat-slide-toggle
+                    [(ngModel)]="in.value"
+                    required="{{ in.required }}"
+                    name="{{ in.name }}"
+                    disabled="{{ disabled || !in.enabled }}"
+                    class="noCkeck"
+                    (change)="evaluateConditions(in.name)"
+                  >{{ in.label }}</mat-slide-toggle
+                  >
+                  <!-- <h5 *ngIf="in.description" class="paddingTop10 colorGris">
+                    {{ in.description }}
+                  </h5>-->
+                </div>
+
+                <!-- DEFAULT FIELD -->
+                <div *ngSwitchDefault>
+                  {{ "label.typeNotsuported" | translate }}: Input:
+                  {{ in.type }} | Name: {{ in.name }}
+                </div>
+              </div>
+              <!-- TEXT FIELD HELP-->
+              <div class="col-md-1col-xs-1 col-sm-1 paddingTop15" *ngSwitchCase="dfh.TEXT_TYPE">
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- TEXT AREA HELP-->
+              <div
+                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"
+                *ngSwitchCase="dfh.TEXT_AREA_TYPE"
+              >
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- NUMBER HELP-->
+              <div
+                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"
+                *ngSwitchCase="dfh.NUMBER_TYPE"
+              >
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- DATE HELP-->
+              <div class="col-md-1 col-xs-1 col-sm-1 paddingTop15" *ngSwitchCase="dfh.DATE_TYPE">
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- RADIO HELP-->
+              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.RADIO_TYPE">
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- SELECT HELP-->
+              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.CHECKBOX_TYPE">
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- CHECKBOX HELP-->
+              <div
+                class="col-md-1 col-xs-1 col-sm-1 paddingTop15"
+                *ngSwitchCase="dfh.SELECT_TYPE"
+              >
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+              <!-- SWITCH HELP-->
+              <div class="col-md-1 col-xs-1 col-sm-1" *ngSwitchCase="dfh.SWITCH_TYPE">
+                <a
+                  *ngIf="in.description !== ''"
+                  popoverTitle="{{ in.label }}"
+                  container="body"
+                  [autoClose]="true"
+                  ngbPopover="{{ in.description }}"
+                ><i class="las la-info-circle colorAzul"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <h5 *ngIf="in.errorMessage" class="colorRojo">
+            <i class="las la-exclamation-circle  espDer5"></i>{{in.errorMessage | translate}}</h5>
+        </div>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>

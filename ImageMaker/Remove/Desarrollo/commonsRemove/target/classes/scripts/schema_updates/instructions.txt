@@ -1,0 +1,5 @@
+En este directorio se deben guardar los scripts de actualizacion de los schemas corporativos.
+
+Deben estar ordenados por orden de ejecución por lo que el formato del nombre de los scripts debe ser el siguiente:
+
+YYYYMMDD_nombre_descriptivo_del_script.sql

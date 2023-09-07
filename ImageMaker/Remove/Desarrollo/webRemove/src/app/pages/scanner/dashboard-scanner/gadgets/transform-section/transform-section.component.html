@@ -1,0 +1,391 @@
+<div class="row paddingBottom40" *ngIf="!isImpulse && showGoal">
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-title class="colorSecundario centrado fontsize18">{{
+        "label.total_threats" | translate
+      }}</mat-card-title>
+      <mat-card-content class="centrado">
+        <h2 class="colorPrincipal">{{ totalSnipGoal }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-title class="colorSecundario centrado fontsize18">{{
+        "label.total_threats_nullified" | translate
+      }}</mat-card-title>
+      <mat-card-content class="centrado">
+        <h2 class="colorPrincipal">{{ totalSuccessGoals }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-title class="colorSecundario centrado fontsize18">{{
+        "label.total_threats_process" | translate
+      }}</mat-card-title>
+      <mat-card-content class="centrado">
+        <h2 class="colorPrincipal">{{ inProcess }}</h2>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2" *ngIf="!isImpulse && showGoal">
+    <ng-template #goal_transform>
+      {{ "help.scanner_goal" | translate }}
+      <br />
+      {{ "label.goal_help" | translate }}
+      : {{ plansGoal }}<br />
+    </ng-template>
+    <a
+      popoverTitle="{{ 'label.goal' | translate }}"
+      container="body"
+      [autoClose]="true"
+      [ngbPopover]="goal_transform"
+      ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i
+    ></a>
+
+    <strong> {{ "label.goal" | translate }}</strong>
+  </div>
+  <div class="col-md-8 paddingTop15" *ngIf="!isImpulse && showGoal">
+    <section class="example-section">
+      <mat-progress-bar
+        class="example-margin"
+        mode="buffer"
+        [value]="data?.target"
+        [bufferValue]="0"
+      >
+      </mat-progress-bar>
+    </section>
+  </div>
+  <div class="col-md-2 paddingTop15" *ngIf="!isImpulse && showGoal">
+    <h1>{{ data?.target| number : "1.0-0" }}%</h1>
+  </div>
+  <div class="col-md-12" *ngIf="isImpulse">
+    <h2 class="colorPrincipal">
+      {{ "message.targetReached" | translate }}: {{ totalImpulsesReached }}
+    </h2>
+  </div>
+  <div
+    class="col-md-12"
+    *ngIf="
+      totalSnipGoal && data?.results.length !== totalSnipGoal && !isImpulse
+    "
+  >
+    <h5
+      class="colorGrisOscuro"
+      [translate]="'message.goal_transform'"
+      *ngIf="successGoals !== 0"
+      [translateParams]="{ urls: successGoals, total: totalSnipGoal }"
+    ></h5>
+  </div>
+</div>
+<div class="row" *ngIf="data?.results?.length > 0">
+  <div class="col-md-12">
+    <div *ngIf="data?.results?.length > 0">
+      <table class="table table-hover table-borderless table-responsive">
+        <thead class="thead-light">
+          <tr>
+            <th (click)="sortFunction('keyword')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.keywords" | translate }}
+            </th>
+            <th class="width40" (click)="sortFunction('snippet.title')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.results" | translate }}
+            </th>
+            <th (click)="sortFunction('snippet.position.position')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.pag_pos" | translate }}
+            </th>
+            <th (click)="sortFunction('snippet.position.position')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.ranking" | translate }}
+            </th>
+            <th
+              (click)="sortFunction('snippet.trend')"
+              *ngIf="scannerType !== 'one_shot'"
+            >
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.position_evolution" | translate }}
+            </th>
+            <th (click)="sortFunction('country')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.scanner.country" | translate }}
+            </th>
+            <th (click)="sortFunction('snippet.searchType')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.scanner.advance.section" | translate }}
+            </th>
+            <th (click)="sortFunction('snippet.lastScan.date_scan')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.scanner_date" | translate }}
+            </th>
+            <th *ngIf="showGoal" (click)="sortFunction('targetReached')">
+              <i class="las la-sort colorPrincipal espDer5"></i
+              >{{ "label.goal" | translate }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of copyArray">
+            <td>
+              <mat-chip-list aria-label="Fish selection espDer15">
+                <mat-chip class="backgorundPrincipal colorBlanco heightAuto">
+                  {{ result?.keyword }}
+                </mat-chip>
+              </mat-chip-list>
+            </td>
+            <td class="width40">
+              <div class="col-md-12">
+                <a target="_blank" href="{{ result?.snippet?.link }}">
+                  {{ result?.snippet?.title }} -
+                  <cite class="gs-url colorGris">{{
+                    result?.snippet?.domain
+                  }}</cite>
+                </a>
+              </div>
+              <span class="gs-content reduceFont">
+                {{
+                  result.snippet?.snippet?.length > 60
+                    ? (result?.snippet?.snippet | slice : 0 : 60) + ".."
+                    : result?.snippet?.snippet
+                }}</span
+              >
+            </td>
+            <!-- <td>  <span [innerHTML]='snippet.trend | tracking'> </span>{{snippet.lastScan.position}}</td>-->
+            <!--Columna de PAg / Posición -->
+            <td>
+              <!--En caso de no encontrarse en los resultados -->
+              <div *ngIf="!result.snippet.stillInResults">
+                {{ "label.pag" | translate }} >
+                {{ scannerInfo?.configuration?.pages }}
+              </div>
+              <!--En caso de  encontrarse en los resultados -->
+              <div *ngIf="result.snippet.stillInResults">
+                {{ result?.snippet?.position?.page }} /
+                {{ result?.snippet?.position?.position_in_page }}
+              </div>
+            </td>
+            <td *ngIf="scannerType !== 'one_shot'">
+              <div *ngIf="!result.snippet.stillInResults">
+                <ng-template #offside>
+                  <h5>
+                    {{ "message.url.offside" | translate }}<br />
+                    {{ "label.page_tomonitor" | translate }}:
+                    {{ scannerInfo?.configuration?.pages }}<br />
+                    <hr />
+                    {{ "label.url_goal" | translate }}<br />
+                    {{ "label.goal_help" | translate }}:
+                    {{ scannerInfo?.restrictions?.detail?.target_page }}
+                  </h5>
+                </ng-template>
+                <a
+                  popoverTitle="{{ 'label.result.left.results' | translate }}"
+                  container="body"
+                  [autoClose]="true"
+                  [ngbPopover]="offside"
+                  ><i
+                    class="las la-info-circle colorAzul espIz15 reduceFont"
+                  ></i
+                ></a>
+              </div>
+              <!--En caso de encontrarse en los resultados y no alcanzar el objetivo-->
+              <div
+                *ngIf="result.snippet.stillInResults && !result.targetReached"
+                class="textali-center"
+              >
+                {{ result?.snippet?.position?.position }}
+              </div>
+              <!--En caso de encontrarse en los resultados y  alcanzar el objetivo-->
+              <div
+                *ngIf="result.snippet.stillInResults && result.targetReached"
+                class="textali-center"
+              >
+                {{ result?.snippet?.position?.position }}
+                <ng-template #targetreached>
+                  <h5>
+                    {{ "label.url_goal" | translate }}<br />
+                    {{ "label.goal_help" | translate }}:
+                    {{ scannerInfo?.restrictions?.detail?.target_page }}
+                  </h5>
+                </ng-template>
+                <a
+                  popoverTitle="{{ 'label.target_reached' | translate }}"
+                  container="body"
+                  [autoClose]="true"
+                  [ngbPopover]="targetreached"
+                  ><i
+                    class="las la-info-circle colorAzul espIz15 reduceFont"
+                  ></i
+                ></a>
+              </div>
+            </td>
+            <td>
+              <span
+                [innerHTML]="result?.snippet.trend | tracking"
+                *ngIf="result?.snippet.stillInResults"
+              >
+              </span>
+              <div *ngIf="!result.snippet.stillInResults">
+                <span>
+                  <i
+                    class="las la-long-arrow-alt-down colorGris espDer5 la-2x float-left"
+                  ></i
+                ></span>
+              </div>
+              <ng-template #initial_position>
+                <span *ngIf="!result.snippet.stillInResults"
+                  ><strong>{{
+                    "label.result.left.results" | translate
+                  }}</strong>
+
+                  <h5>
+                    {{ "label.last_appearance" | translate }}<br />
+                    {{ "label.pag_pos_complete" | translate }}:
+                    {{ result?.snippet?.position.page }} /
+                    {{ result?.snippet?.position.position_in_page }}<br />
+                    {{ "label.date" | translate }}
+                    :
+                    {{
+                      utilService.formatDate(
+                        result?.snippet?.position?.date_scan
+                      ) | date : "shortDate"
+                    }}<br />
+                  </h5>
+                  <hr
+                /></span>
+
+                <h5>
+                  {{ "label.first_result" | translate }}<br />
+                  {{ "label.pag_pos_complete" | translate }}:
+                  {{ result?.snippet?.firstScan.page }} /
+                  {{ result?.snippet?.firstScan.position_in_page }}<br />
+                  {{ "label.date" | translate }}
+                  :
+                  {{
+                    utilService.formatDate(scannerInfo?.creation_date)
+                      | date : "shortDate"
+                  }}<br />
+                </h5>
+              </ng-template>
+              <a
+                popoverTitle="{{ 'label.information' | translate }}"
+                container="body"
+                [autoClose]="true"
+                [ngbPopover]="initial_position"
+                ><i class="las la-info-circle colorAzul espIz15 reduceFont"></i
+              ></a>
+            </td>
+            <td>
+              <img
+                [src]="utilService.checkFlag(result.country)"
+                [width]="utilService.flagWith"
+                [height]="utilService.flagHeight"
+                alt=""
+                class="margin3"
+                onerror="this.src='../../../../assets/img/broken.jpg'"
+              />
+            </td>
+            <td>
+              <i
+                class="las la-image espDer15 colorPrincipal"
+                *ngIf="result?.snippet?.searchType === 'images'"
+                title="{{
+                  'list.scanner.type.' + result?.snippet?.searchType | translate
+                }}"
+              ></i>
+              <i
+                class="las la-search espDer15 colorPrincipal"
+                *ngIf="result?.snippet?.searchType === 'web'"
+                title="{{
+                  'list.scanner.type.' + result?.snippet?.searchType | translate
+                }}"
+              ></i>
+              <i
+                class="las la-newspaper espDer15 colorPrincipal"
+                *ngIf="result?.snippet?.searchType === 'news'"
+                title="{{
+                  'list.scanner.type.' + result?.snippet?.searchType | translate
+                }}"
+              ></i>
+            </td>
+            <td>
+              <span *ngIf="result.snippet.stillInResults">
+                {{
+                  utilService.formatDate(scannerInfo?.results[0]?.query_date)
+                    | date : "medium"
+                }}
+              </span>
+              <span *ngIf="!result.snippet.stillInResults">
+                {{
+                  utilService.formatDate(scannerInfo?.results[0]?.query_date)
+                    | date : "medium"
+                }}
+              </span>
+            </td>
+            <td *ngIf="showGoal">
+              <i
+                *ngIf="result.targetReached"
+                class="las la-check-circle la-2x colorVerde"
+              ></i>
+              <h5 class="paddingTop10" *ngIf="!result.targetReached">
+                {{ "error.not_reached" | translate }}
+              </h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row centrado">
+        <jw-pagination
+          class="{{ paginatorClass }}"
+          [items]="data?.results"
+          (changePage)="onChangePage($event)"
+          [maxPages]="5"
+          [pageSize]="5"
+        ></jw-pagination>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="row"
+  *ngIf="
+    data.timeline.graph &&
+    data.timeline.graph.length !== 0 &&
+    scannerType !== 'one_shot'
+  "
+>
+  <div class="col-md-12">
+    <!--   <h5>{{'message.url_graph' | translate}}</h5>-->
+    <div #containerLines class="centrado row margin8">
+      <ngx-charts-line-chart
+        [view]="[containerLines.offsetWidth, 400]"
+        [xAxisTickFormatting]="dateTickFormatting"
+        [scheme]="colorSchemeFeelings"
+        [showXAxisLabel]="istrue"
+        [showYAxisLabel]="istrue"
+        [xAxis]="istrue"
+        [yAxis]="istrue"
+        [yScaleMin]="data.timeline.minYAxis"
+        [yScaleMax]="data.timeline.maxYAxis"
+        [timeline]="istrue"
+        [results]="data.timeline.graph"
+        [showRefLines]="istrue"
+        (select)="onSelectLineChart($event)"
+      >
+        <ng-template #tooltipTemplate let-model="model">
+          {{ model.tooltipText }}
+        </ng-template>
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+  <div
+    class="col-md-12"
+    *ngIf="data.timeline.graph && data.timeline.graph.length === 0"
+  >
+    <p class="paddingTop5">{{ "error.not_found_results" | translate }}</p>
+  </div>
+</div>

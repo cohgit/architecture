@@ -1,0 +1,24 @@
+<h2 mat-dialog-title><i class="las la-user colorGris espDer5"></i>{{'tittle.client_info' | translate}}:
+  {{info.name}} {{info.lastname}}</h2>
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col-md-12">
+      <mat-tab-group>
+        <mat-tab label="{{'title.edit_client' | translate}}">
+          <app-new-edit-client [infoClient]="info" (close)="closeModal()"></app-new-edit-client>
+        </mat-tab>
+        <!-- <mat-tab label="{{'title.new_plan' | translate}}">
+           <app-change-plan [infoPlan]="info.planActives"></app-change-plan>
+         </mat-tab>-->
+        <mat-tab label="{{'title.bills' | translate}}">
+          <app-client-bill [infoBills]="info.paybills"></app-client-bill>
+        </mat-tab>
+        <mat-tab label="{{'title.history' | translate}}">
+          <app-history [historial]="infoHistory"></app-history>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+
+</div>
+

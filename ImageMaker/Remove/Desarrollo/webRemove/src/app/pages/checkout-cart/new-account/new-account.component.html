@@ -1,0 +1,342 @@
+<div class="row container-fluid">
+  <div class="col-md-6">
+    <h1>{{ "label.step.payment" | translate }}</h1>
+    <hr />
+    <div class="row">
+      <mat-expansion-panel
+        hideToggle
+        class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"
+        expanded
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h4 class="colorPrincipal">
+              <strong>{{ plan?.name }}</strong>
+            </h4>
+          </mat-panel-title>
+          <mat-panel-description class="floatRight margin10">
+            <h2 class="colorSecundario right">
+              {{ plan?.cost | currency : utilService.curr : "symbol-narrow" }}
+            </h2>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="col-md-12">
+          <div class="generic_feature_list">
+            <p>
+              <i class="las la-calendar-alt colorAzul espDer5"></i
+              ><span>{{ plan?.duration_months }}</span>
+              {{ "label.months" | translate }}
+            </p>
+            <p *ngIf="plan?.access_scanner">
+              <i class="las la-check-circle colorVerde"></i>
+              {{ "label.licence.one_shot" | translate }}:
+              {{ plan?.limit_credits }}
+            </p>
+            <p *ngIf="plan?.access_monitor">
+              <i class="las la-check-circle colorVerde"></i>
+              {{ "label.licence.monitor" | translate }}:
+              {{ plan?.total_monitor_licenses }}
+            </p>
+            <p *ngIf="plan?.access_transform">
+              <i class="las la-check-circle colorVerde"></i>
+              {{ "label.licence.transform" | translate }}:
+              {{ plan?.total_transforma_licenses }}
+            </p>
+            <p *ngIf="plan?.access_deindexation">
+              <i class="las la-check-circle colorVerde"></i>
+              {{ "label.licence.deindexing" | translate }}:
+              {{ plan?.max_url_to_deindexate }}
+            </p>
+
+            <p>
+              <i class="las la-globe-americas colorSecundario espDer5"></i
+              >{{ "label.plan.countries" | translate }}:
+              {{ plan?.max_countries }}
+            </p>
+            <p>
+              <i class="las la-search-plus colorSecundario espDer5"></i
+              >{{ "label.plan.keywords" | translate }}:
+              {{ plan?.max_keywords }}
+            </p>
+            <p>
+              <i class="las la-file colorSecundario espDer5"></i
+              >{{ "label.plan.pages" | translate }}:
+              {{ plan?.max_search_page }}
+            </p>
+            <p>
+              <i class="fab fa-google colorSecundario espDer5"></i
+              >{{ "label.sections" | translate }}:
+              {{ plan?.sections_to_search }}
+            </p>
+          </div>
+        </div>
+
+        <!-- <mat-action-row>
+           <a (click)="changePlan()" class="third after colorGris">
+             {{ "button.change" | translate }}</a
+           >
+         </mat-action-row>-->
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        hideToggle
+        class="gn-box padding5 borderRadius10 tracking-in-expand example-full-width"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h4 class="colorPrincipal">
+              <strong>{{ "label.description" | translate }}</strong>
+            </h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="col-md-12">
+          <span [innerHTML]="plan?.description"> </span>
+        </div>
+
+        <!-- <mat-action-row>
+           <a (click)="changePlan()" class="third after colorGris">
+             {{ "button.change" | translate }}</a
+           >
+         </mat-action-row>-->
+      </mat-expansion-panel>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <form
+      #userForm="ngForm"
+      (ngSubmit)="(userForm.form.valid)"
+      class="example-full-width"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="colorPrincipal">{{ "label.register" | translate }}</h2>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="client.name"
+              name="name"
+              matInput
+              placeholder="{{ 'label.name' | translate }} "
+              required
+              #userName="ngModel"
+            />
+          </mat-form-field>
+          <div *ngIf="userName.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="client.lastname"
+              name="lastname"
+              matInput
+              placeholder="{{ 'label.lastname' | translate }} "
+              #lastname="ngModel"
+              required
+            />
+          </mat-form-field>
+          <div *ngIf="lastname.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="client.email"
+              name="email"
+              matInput
+              #email="ngModel"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              (blur)="checkEmailDuplicated(client.email)"
+              placeholder="{{ 'label.email' | translate }}"
+              type="email"
+              required
+              disabled="{{ disabledEmail }}"
+            />
+          </mat-form-field>
+          <div *ngIf="email.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+          <div *ngIf="email.errors?.pattern && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.invalid.email" | translate }}
+            </h5>
+          </div>
+          <div *ngIf="duplicatedEmail">
+            <a routerLink="/client/login">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle espDer5"></i
+                >{{ client.email }}: {{ "error.duplicate_email" | translate }}
+              </h5></a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="client.phone"
+              name="phone"
+              matInput
+              placeholder="{{ 'label.phone' | translate }} "
+              required
+              #phone="ngModel"
+            />
+          </mat-form-field>
+          <div *ngIf="phone.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="pass"
+              name="pass"
+              #password="ngModel"
+              matInput
+              placeholder="{{ 'label.new_password' | translate }} "
+              required
+              [type]="hide ? 'password' : 'text'"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+            <i
+              class="las la-eye colorGris"
+              matSuffix
+              (click)="hide = !hide"
+            ></i>
+          </mat-form-field>
+          <div *ngIf="password.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+          <div *ngIf="password.errors?.pattern">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.password" | translate }}
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <input
+              [(ngModel)]="confirmPass"
+              name="confirmPass"
+              #confirmpassword="ngModel"
+              matInput
+              placeholder="{{ 'label.confirm_password' | translate }} "
+              required
+              [type]="hide ? 'password' : 'text'"
+              pattern="{{ password.value }}"
+            />
+          </mat-form-field>
+          <div *ngIf="confirmpassword.errors?.required && userForm.submitted">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.required" | translate }}
+            </h5>
+          </div>
+          <div *ngIf="confirmpassword?.errors?.pattern">
+            <h5 class="colorRojo">
+              <i class="las la-exclamation-circle espDer5"></i
+              >{{ "error.password_match" | translate }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <mat-slide-toggle
+          [(ngModel)]="terms"
+          name="terms"
+          class="noCkeck"
+        ></mat-slide-toggle>
+        <a (click)="openModal()" class="third after colorGris">
+          {{ "message.conditions" | translate }}</a
+        >
+      </div>
+      <div class="col-md-12">
+        <h5 class="colorGrisOscuro">{{ "message.new_account" | translate }}</h5>
+      </div>
+    </form>
+    <div *ngIf="plan?.cost !== 0" class="paddingTop15">
+      <hr />
+      <div class="col-md-12">
+        <h2 class="colorPrincipal">
+          {{ "label.payment_methods_checkout" | translate }}
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9 paddingTop15">
+          <mat-label class="espDer10 reduceFont colorGris"
+            >{{ "label.payment_methods_description" | translate }}:
+          </mat-label>
+          <mat-radio-group
+            [(ngModel)]="payment"
+            name="payment"
+            required
+            aria-labelledby="example-radio-group-label"
+            class="example-radio-group"
+          >
+            <mat-radio-button
+              value="transfer"
+              class="espDer5"
+              *ngIf="plan?.cost > 1000"
+            >
+              <i class="las la-money-bill-wave colorSecundario espDer5"></i>
+              {{ "label.payment_transfer" | translate }}
+            </mat-radio-button>
+
+            <!-- <mat-radio-button value="transfer" class="espDer5" *ngIf="params?.TRANSFER_MIN_VALUE < plan?.cost"
+           ><i class="las la-money-bill-wave colorSecundario espDer5"></i
+           >{{ "label.payment_transfer" | translate }}</mat-radio-button
+           >-->
+
+            <mat-radio-button value="stripe" class="espDer5"
+              ><i class="lab la-stripe-s colorSecundario espDer5"> </i
+              >{{ "label.payment_stripe" | translate }}</mat-radio-button
+            >
+          </mat-radio-group>
+        </div>
+        <div class="col-md-3 centrado" *ngIf="!duplicatedEmail">
+          <button
+            class="glow-on-hover example-full-width espIz15"
+            (click)="pay(userForm, payment)"
+          >
+            {{ "button.pay" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="plan?.cost === 0" class="paddingTop15">
+      <hr />
+      <div class="col-md-12 centrado" *ngIf="!duplicatedEmail">
+        <button
+          class="glow-on-hover example-full-width espIz15"
+          (click)="pay(userForm, 'demo')"
+        >
+          {{ "label.payment_demo" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

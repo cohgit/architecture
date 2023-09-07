@@ -1,0 +1,204 @@
+<h2 mat-dialog-title>{{ tittle | translate }}</h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="container-fluid">
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <strong *ngIf="message !== ''"
+          ><p [innerHTML]="message | translate" class="colorSecundario"></p
+        ></strong>
+        <h4>{{ "message.confirm_scanner" | translate }}</h4>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-6">
+        <strong>{{ "label.name" | translate }}: </strong> {{ info.name }}
+      </div>
+      <div class="col-md-6">
+        <strong>{{ "label.notification_type" | translate }}: </strong>
+
+        <span *ngIf="info.type === 'monitor'"
+          ><i
+            class="las la-layer-group colorPrincipal"
+            title="{{ info.name | translate }}"
+          ></i>
+          {{ "label." + info.type | translate }}</span
+        >
+        <span *ngIf="info.type === 'transform'"
+          ><i
+            class="las la-sync colorPrincipal"
+            title="{{ info.name | translate }}"
+          ></i
+          >{{ "label." + info.type | translate }}</span
+        >
+        <span *ngIf="info.type === 'one_shot'">
+          <i
+            class="las la-camera colorPrincipal"
+            title="{{ info.name | translate }}"
+          ></i
+          >{{ "label." + info.type | translate }}</span
+        >
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <strong> {{ "label.filter.keywords_modal" | translate }}: </strong>
+          </div>
+          <div class="col-md-9">
+            <mat-chip-list aria-label="Fish  espDer15">
+              <mat-chip *ngFor="let key of info?.keywords">
+                <span class="colorPrincipal">{{ key.word }} </span></mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <strong> {{ "label.scanner.countries" | translate }}: </strong>
+          </div>
+          <div class="col-md-9">
+            <mat-chip-list aria-label="Fish  espDer15">
+              <mat-chip *ngFor="let coun of info?.configuration.countries">
+                <span class="colorPrincipal"
+                  >{{ "list.country." + coun.tag | translate }}
+                </span></mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <strong> {{ "label.scanner.tracking" | translate }}: </strong>
+          </div>
+          <div class="col-md-9">
+            <mat-chip-list aria-label="Fish  espDer15">
+              <mat-chip
+                *ngFor="let tm of info?.justTrackingWords"
+                [ngClass]="{ removeItem: tm.markToDelete }"
+              >
+                <span class="colorPrincipal"
+                  ><span [innerHTML]="tm.feelingObj | feelingColors"></span>
+                  {{ tm.word }}
+                </span></mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <strong *ngIf="info?.type !== 'transform'"
+              >{{ "label.shorten_url" | translate }}:
+            </strong>
+            <strong *ngIf="info?.type === 'transform'"
+              >{{ "label.url_to_remove" | translate }}:
+            </strong>
+          </div>
+          <div class="col-md-9">
+            <mat-chip-list aria-label="Fish  espDer15">
+              <mat-chip
+                class="colorPrincipal"
+                *ngFor="let url of info?.justTrackingURLs"
+                [ngClass]="{ removeItem: url.markToDelete }"
+              >
+                <span
+                  [innerHTML]="url.feelingObj | feelingColors"
+                  *ngIf="info?.type !== 'transform'"
+                ></span>
+                {{ utilService.onlyDomain(url.word) }}</mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <strong
+              >{{ "label.scanner.advance.sections" | translate }}:
+            </strong>
+          </div>
+          <div class="col-md-9">
+            <mat-chip-list aria-label="Fish  espDer15">
+              <mat-chip
+                class="colorPrincipal"
+                *ngFor="let ty of info?.configuration.lstSearchTypes"
+              >
+                <i
+                  class="las la-image espDer15 colorPrincipal"
+                  *ngIf="ty === 'images'"
+                  title="{{ 'list.scanner.type.' + ty | translate }}"
+                ></i>
+                <i
+                  class="las la-search espDer15 colorPrincipal"
+                  *ngIf="ty === 'web'"
+                  title="{{ 'list.scanner.type.' + ty | translate }}"
+                ></i>
+                <i
+                  class="las la-newspaper espDer15 colorPrincipal"
+                  *ngIf="ty === 'news'"
+                  title="{{ 'list.scanner.type.' + ty | translate }}"
+                ></i>
+                {{ "list.scanner.type." + ty | translate }}</mat-chip
+              >
+            </mat-chip-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-4">
+        <strong>{{ "label.scanner.advance.max_pages" | translate }}: </strong>
+        {{ info.configuration.pages }}
+      </div>
+      <div class="col-md-4">
+        <strong>{{ "label.scanner.advance.language" | translate }}: </strong>
+        {{ "list.lang." + info.configuration.language | translate }} -
+        {{ info.configuration.language }}
+      </div>
+      <div class="col-md-4">
+        <strong>{{ "label.scanner.advance.device" | translate }}: </strong>
+        {{ "list.device." + info.configuration.device | translate }}
+      </div>
+    </div>
+    <div class="row paddingTop15">
+      <div class="col-md-12">
+        <h5>
+          <i class="las la-exclamation-circle coloAmarillo espDer5 la-2x"></i
+          >{{ "warning.scanner.terms" | translate }}
+        </h5>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris espDer15">
+    {{ "button.close" | translate }}</a
+  >
+  <button
+    mat-button
+    class="glow-on-hover espIz15"
+    *ngIf="!this.data.isNew"
+    (click)="execute('save')"
+  >
+    {{ "button.save_configuration" | translate }}
+  </button>
+  <button mat-button class="glow-on-hover espIz15" (click)="execute('execute')">
+    {{ "button.save_executed" | translate }}
+  </button>
+</mat-dialog-actions>

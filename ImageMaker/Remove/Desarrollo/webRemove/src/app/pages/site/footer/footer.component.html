@@ -1,0 +1,161 @@
+<div class="row colorBlanco paddingTop40 backgroundLandiongFooter centrado paddingBottom20">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-3 padding10">
+
+
+        <h3><span class="marginLanding"></span> {{ "label.about_us" | translate }}</h3>
+
+        <p class="padding15">
+          {{ "label.about_us_description" | translate }}
+        </p>
+      </div>
+      <div class="col-md-3 padding10">
+        <h3><span class="marginLanding"></span> {{ "label.locations" | translate }}</h3>
+
+        <div class="row padding5">
+          <img src="../../assets/img/img-footer-map.png">
+        </div>
+        <div class="row padding5 colorSecundario">
+          <div class="col-md-6 ">
+            <i class="las la-map-marker"></i>{{'list.country.mx' | translate}}
+          </div>
+          <div class="col-md-6 ">
+            <i class="las la-map-marker"></i>{{'list.country.es' | translate}}
+          </div>
+
+        </div>
+      </div>
+      <!--  <div class="col-md-3 padding20">
+          <h3><span class="marginLanding"></span> {{ "label.client_area" | translate }}</h3>
+
+          <div class="row padding5">
+            <div class="col-md-12">
+              <a
+                class="colorBlanco  third after"
+                (click)="utilService.goToLogin()"
+              >
+                {{ "button.login" | translate }}</a
+              >
+            </div>
+          </div>
+          <div class="row padding5">
+            <div class="col-md-12">
+              <a
+                class="colorBlanco  third after"
+                (click)="utilService.goPlans()"
+              >
+                {{ "button.register" | translate }}</a
+              >
+            </div>
+          </div>
+          <div class="row padding5">
+            <div class="col-md-12">
+              <a
+                class="colorBlanco "
+                href="mailto:contacto@removegroup.com"
+              >
+                {{ "button.support" | translate }}</a
+              >
+            </div>
+          </div>
+        </div>
+  -->
+      <div class="col-md-3 padding10">
+        <h3><span class="marginLanding"></span> {{ "label.contact_us" | translate }}</h3>
+        <p class="padding5">
+          {{ "label.contact_us_description" | translate }}
+        </p>
+        <div class="row padding5">
+          <div class="col-md-12">
+            <a href="tel:+34910442346" class="colorBlanco third after"
+            ><i class="las la-phone espDer5"></i>+34 910 442 346</a
+            >
+          </div>
+        </div>
+        <div class="row padding5">
+          <div class="col-md-12">
+            <a class="colorBlanco" href="mailto:contacto@removegroup.com">
+              <i class="las la-envelope-open espDer5"></i
+              >contacto@removegroup.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 padding10">
+        <h3><span class="marginLanding"></span> {{ "label.politycs" | translate }}</h3>
+
+        <div class="row padding5">
+          <div class="col-md-12">
+            <a class="third after" (click)="utilService.goCookies()">{{
+              "label.cookies_politics" | translate
+              }}</a>
+          </div>
+        </div>
+        <div class="row padding5">
+          <div class="col-md-12">
+            <a class="third after" (click)="utilService.openTerms()">{{
+              "title.terms" | translate
+              }}</a>
+          </div>
+        </div>
+        <div class="row padding5">
+          <div class="col-md-12">
+            <a class="third after" (click)="utilService.openPolitics()">{{
+              "label.privacy_politics" | translate
+              }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row centrado ">
+      <ul class="list-group list-group-horizontal-lg cleanList">
+        <li>
+          <a class="nav-link  third after colorBlanco reduceFont" (click)="utilService.goHomeLanding()">{{
+            "menu.home" | translate | uppercase
+            }}</a>
+        </li>
+        <li>
+          <a class="nav-link  colorBlanco reduceFont third after" (click)="utilService.goDemo()">{{
+            "button.demo" | translate | uppercase
+            }}</a>
+        </li>
+        <li>
+          <a class="nav-link  colorBlanco reduceFont third after"
+             (click)="utilService.goContact()"
+          >{{ "label.contact" | translate | uppercase}}</a>
+        </li>
+        <li>
+          <a class="nav-link  colorBlanco reduceFont third after" (click)="utilService.goFaq()">{{
+            "button.faq" | translate | uppercase
+            }}</a>
+        </li>
+        <li>
+          <a class="nav-link  colorBlanco reduceFont third after" (click)="utilService.goToLogin()"
+          >{{
+            "button.landing.login" | translate | uppercase
+            }}</a>
+        </li>
+
+        <li>
+          <a class="nav-link  colorBlanco reduceFont third after" (click)="utilService.goPlans()"
+          >{{
+            "button.register" | translate | uppercase
+            }}</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<div class="row backgroundWhite paddingTop10">
+  <div class="col-md-12 centrado">
+    <p class="colorGris reduceFont">
+      {{ "label.landing.legal_info" | translate }}
+    </p>
+  </div>
+</div>

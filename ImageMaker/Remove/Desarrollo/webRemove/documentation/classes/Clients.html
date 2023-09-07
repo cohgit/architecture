@@ -1,0 +1,797 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Clases</li>
+  <li >Clients</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/interfaces/IClients.ts</code>
+        </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#active" >active</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#bussiness_name" >bussiness_name</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#corporative" >corporative</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#dni" >dni</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#email" >email</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#expiredDate" >expiredDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#failed_attempts" >failed_attempts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#first_time" >first_time</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#fiscal_address" >fiscal_address</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#goal" >goal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#id_country" >id_country</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#initDate" >initDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#lastname" >lastname</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#phone" >phone</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#plan" >plan</a>
+                            </li>
+                            <li>
+                                <a href="#planSuggestions" >planSuggestions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#postal" >postal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#project_name" >project_name</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Opcional</span>
+                                <a href="#uuid" >uuid</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="active"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>active</b></span>
+                        <a href="#active"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/interfaces/IClients.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bussiness_name"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>bussiness_name</b></span>
+                        <a href="#bussiness_name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="39" class="link-to-prism">src/app/interfaces/IClients.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="corporative"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>corporative</b></span>
+                        <a href="#corporative"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="38" class="link-to-prism">src/app/interfaces/IClients.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dni"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>dni</b></span>
+                        <a href="#dni"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/interfaces/IClients.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="email"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>email</b></span>
+                        <a href="#email"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/interfaces/IClients.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expiredDate"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>expiredDate</b></span>
+                        <a href="#expiredDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="45" class="link-to-prism">src/app/interfaces/IClients.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="failed_attempts"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>failed_attempts</b></span>
+                        <a href="#failed_attempts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="47" class="link-to-prism">src/app/interfaces/IClients.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="first_time"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>first_time</b></span>
+                        <a href="#first_time"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="48" class="link-to-prism">src/app/interfaces/IClients.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fiscal_address"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>fiscal_address</b></span>
+                        <a href="#fiscal_address"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="41" class="link-to-prism">src/app/interfaces/IClients.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goal"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>goal</b></span>
+                        <a href="#goal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="44" class="link-to-prism">src/app/interfaces/IClients.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/interfaces/IClients.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id_country"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>id_country</b></span>
+                        <a href="#id_country"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/interfaces/IClients.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initDate"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>initDate</b></span>
+                        <a href="#initDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="46" class="link-to-prism">src/app/interfaces/IClients.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/interfaces/IClients.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lastname"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>lastname</b></span>
+                        <a href="#lastname"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/interfaces/IClients.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/interfaces/IClients.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="phone"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>phone</b></span>
+                        <a href="#phone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/interfaces/IClients.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="plan"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>plan</b></span>
+                        <a href="#plan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../interfaces/IPlans.html" target="_self" >IPlans[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="43" class="link-to-prism">src/app/interfaces/IClients.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="planSuggestions"></a>
+                    <span class="name">
+                        <span ><b>planSuggestions</b></span>
+                        <a href="#planSuggestions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="49" class="link-to-prism">src/app/interfaces/IClients.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="postal"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>postal</b></span>
+                        <a href="#postal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="42" class="link-to-prism">src/app/interfaces/IClients.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="project_name"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>project_name</b></span>
+                        <a href="#project_name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/interfaces/IClients.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uuid"></a>
+                    <span class="name">
+                            <span class="modifier">Opcional</span>
+                        <span ><b>uuid</b></span>
+                        <a href="#uuid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/interfaces/IClients.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {IPlans} from &#x27;./IPlans&#x27;;
+
+export interface IClients {
+  id?: number;
+  id_country?: number;
+  uuid?: number;
+  name?: string;
+  lastname?: string;
+  email?: string;
+  language?: string;
+  phone?: string;
+  project_name?: string;
+  active?: boolean;
+  corporative?: boolean;
+  bussiness_name?: boolean;
+  dni?: string;
+  fiscal_address?: string;
+  postal?: string;
+  plan?: IPlans[];
+  goal?: number;
+  expiredDate?: string;
+  initDate?: string;
+  failed_attempts?: number;​​
+  first_time?: boolean;
+  planSuggestions: [];
+}
+export class Clients {
+  id?: null;
+  id_country?: null;
+  uuid?: null;
+  name?: &#x27;&#x27;;
+  lastname?: &#x27;&#x27;;
+  email?: &#x27;&#x27;;
+  language?: &#x27;&#x27;;
+  phone?: &#x27;&#x27;;
+  project_name?: &#x27;&#x27;;
+  active?: false;
+  corporative?: false;
+  bussiness_name?: false;
+  dni?: &#x27;&#x27;;
+  fiscal_address?: &#x27;&#x27;;
+  postal?: &#x27;&#x27;;
+  plan?: IPlans[];
+  goal?: number;
+  expiredDate?: &#x27;&#x27;;
+  initDate?: &#x27;&#x27;;
+  failed_attempts?: null;​​
+  first_time?: true;
+  planSuggestions: [];
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Clients.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

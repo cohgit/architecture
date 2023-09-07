@@ -1,0 +1,998 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  ForgotKeyComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/forgot-key/forgot-key.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-forgot-key</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./forgot-key.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./forgot-key.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkParams" >checkParams</a>
+                            </li>
+                            <li>
+                                <a href="#email" >email</a>
+                            </li>
+                            <li>
+                                <a href="#isClient" >isClient</a>
+                            </li>
+                            <li>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                <a href="#showGoLogin" >showGoLogin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translate" >translate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLanguage" >changeLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#goLogin" >goLogin</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#restoreKey" >restoreKey</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, translate: TranslateService, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, restoreService: <a href="../injectables/ResetPassService.html" target="_self">ResetPassService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>it controlls the forget password component</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>restoreService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResetPassService.html" target="_self" >ResetPassService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLanguage"></a>
+                    <span class="name">
+                        <span ><b>changeLanguage</b></span>
+                        <a href="#changeLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLanguage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="56"
+                            class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>function to change language</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goLogin"></a>
+                    <span class="name">
+                        <span ><b>goLogin</b></span>
+                        <a href="#goLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goLogin()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="80"
+                            class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>check admin or client, and then redirrects to login</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="48"
+                            class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="restoreKey"></a>
+                    <span class="name">
+                        <span ><b>restoreKey</b></span>
+                        <a href="#restoreKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>restoreKey(forgotForm: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="65"
+                            class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>receives the data from the main form, allows the change of password and redirects to the login</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Descripción</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>forgotForm</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>receives the data from the main form, allows the change of password and redirects to the login</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkParams"></a>
+                    <span class="name">
+                        <span ><b>checkParams</b></span>
+                        <a href="#checkParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="email"></a>
+                    <span class="name">
+                        <span ><b>email</b></span>
+                        <a href="#email"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isClient"></a>
+                    <span class="name">
+                        <span ><b>isClient</b></span>
+                        <a href="#isClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showGoLogin"></a>
+                    <span class="name">
+                        <span ><b>showGoLogin</b></span>
+                        <a href="#showGoLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translate</b></span>
+                        <a href="#translate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>TranslateService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/forgot-key/forgot-key.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit, Renderer2} from &#x27;@angular/core&#x27;;
+import {UtilService} from &quot;../helpers/util.service&quot;;
+import {ResetPassService} from &quot;../services/reset-pass.service&quot;;
+import {ActivatedRoute, Router} from &quot;@angular/router&quot;;
+import {TranslateHelperService} from &quot;../helpers/translate-helper.service&quot;;
+import {TranslateService} from &quot;@ngx-translate/core&quot;;
+import {NgForm} from &quot;@angular/forms&quot;;
+
+@Component({
+  selector: &#x27;app-forgot-key&#x27;,
+  templateUrl: &#x27;./forgot-key.component.html&#x27;,
+  styleUrls: [&#x27;./forgot-key.component.css&#x27;]
+})
+export class ForgotKeyComponent implements OnInit {
+  email: any;
+  language: string;
+  checkParams: any &#x3D; {};
+  isClient &#x3D; true;
+  showGoLogin &#x3D; false;
+
+  /**
+   * it controlls the forget password component
+   * @param utilService
+   * @param router
+   * @param renderer
+   * @param translateHelper
+   * @param translate
+   * @param activatedRoute
+   * @param restoreService
+   */
+  constructor(private utilService: UtilService, private router: Router, private renderer: Renderer2,
+              public translateHelper: TranslateHelperService, public translate: TranslateService,
+              private activatedRoute: ActivatedRoute, private restoreService: ResetPassService) {
+
+    this.language &#x3D; translateHelper.getTransLanguage();
+
+    this.activatedRoute.data.subscribe(data &#x3D;&gt; {
+      this.checkParams &#x3D; data;
+      this.renderer.addClass(document.body, this.checkParams.class);
+      if (this.checkParams.ADMIN) {
+        this.isClient &#x3D; false;
+      }
+    });
+
+    this.renderer.addClass(document.body, this.checkParams.class);
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  /**
+   * function to change language
+   *
+   */
+  changeLanguage(): void {
+    this.translateHelper.translate.use(this.language);
+  }
+
+  /**
+   *
+   * @param forgotForm
+   * receives the data from the main form, allows the change of password and redirects to the login
+   */
+  restoreKey(forgotForm: NgForm) {
+    if (forgotForm.valid) {
+      this.restoreService.requestNewPassword(forgotForm.value.email, () &#x3D;&gt; {
+        this.utilService.showNotification(&#x27;message.forgot_key&#x27;, &#x27;success&#x27;);
+        this.showGoLogin &#x3D; true;
+        setTimeout(() &#x3D;&gt; {
+          this.router.navigate([this.checkParams.service_key + &#x27;/login&#x27;]);
+        }, 10000);
+      }, {ignoreSuccessMessage: true});
+    }
+  }
+
+  /**
+   * check admin or client, and then redirrects to login
+   */
+  goLogin() {
+    this.router.navigate([this.checkParams.service_key + &#x27;/login&#x27;]);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid ps-md-0&quot; [ngClass]&#x3D;&quot;isClient ? &#x27;login-body&#x27; : &#x27;login-body-admin&#x27;&quot;&gt;
+  &lt;div class&#x3D;&quot;row g-0&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-8 col-lg-6 user_card&quot;&gt;
+      &lt;div class&#x3D;&quot;row espDer15&quot;&gt;
+        &lt;div class&#x3D;&quot;alinearDerecha paddingTop40 &quot;&gt;
+          &lt;mat-form-field class&#x3D;&quot;ng-autocomplete&quot;&gt;
+            &lt;mat-label&gt;&lt;i class&#x3D;&quot;las la-language fa-2x&quot;&gt;&lt;/i&gt;&lt;/mat-label&gt;
+            &lt;mat-select [(ngModel)]&#x3D;&quot;language&quot; (selectionChange)&#x3D;&quot;changeLanguage()&quot;&gt;
+              &lt;mat-option *ngFor&#x3D;&quot;let l of translateHelper.languages&quot; [value]&#x3D;&quot;l&quot;&gt;
+                {{&#x27;lang.&#x27; + l | translate}}
+              &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;login d-flex align-items-center&quot;&gt;
+        &lt;div class&#x3D;&quot;container&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-9 col-lg-8 mx-auto &quot;&gt;
+              &lt;div class&#x3D;&quot;row &quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-9 col-lg-8 mx-auto &quot;&gt;
+                  &lt;h1&gt;{{&quot;title.restore&quot; | translate}}&lt;/h1&gt;
+                  &lt;h5 class&#x3D;&quot;colorGris&quot;&gt;{{&#x27;title.restore_instruction&#x27; | translate}}&lt;/h5&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-md-3 col-lg-4 mx-auto &quot;&gt;
+                  &lt;img src&#x3D;&quot;../../assets/img/isotipo2.png&quot;/&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;!-- Sign In Form --&gt;
+              &lt;form #forgotForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;forgotForm.form.valid&quot;&gt;
+                &lt;div class&#x3D;&quot;form-floating mb-3&quot;&gt;
+                  &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+                    &lt;input [(ngModel)]&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; matInput #mail&#x3D;&quot;ngModel&quot;
+                           pattern&#x3D;&quot;[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$&quot;
+                           placeholder&#x3D;&quot;{{&#x27;label.email&#x27; | translate}}&quot; type&#x3D;&quot;email&quot; required&gt;
+                    &lt;i class&#x3D;&quot;las la-at colorGris&quot; matSuffix&gt;&lt;/i&gt;
+                  &lt;/mat-form-field&gt;
+
+                  &lt;div *ngIf&#x3D;&quot;mail.errors?.required &amp;&amp; forgotForm.submitted&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;&lt;i
+                      class&#x3D;&quot;las la-exclamation-circle  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;error.required&#x27; | translate}}&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div *ngIf&#x3D;&quot;mail.errors?.pattern &amp;&amp; forgotForm.submitted&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;colorRojo&quot;&gt;
+                      &lt;i class&#x3D;&quot;las la-exclamation-circle  espDer5&quot;&gt;&lt;/i&gt;{{&#x27;error.invalid.email&#x27; | translate}}&lt;/h5&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+
+              &lt;/form&gt;
+
+              &lt;div class&#x3D;&quot;row centrado paddingTop15&quot; *ngIf&#x3D;&quot;!showGoLogin&quot;&gt;
+                &lt;button (click)&#x3D;&quot;restoreKey(forgotForm)&quot; class&#x3D;&quot;glow-on-hover backgroundSecundary espIz15 padding20&quot;
+                        type&#x3D;&quot;submit&quot;
+                        tabindex&#x3D;&quot;1&quot;&gt;{{&#x27;button.restorepass&#x27; | translate}}&lt;/button&gt;
+
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;row centrado padding20&quot; *ngIf&#x3D;&quot;showGoLogin&quot;&gt;
+                &lt;a (click)&#x3D;&quot;goLogin()&quot;&gt;{{ &quot;message.go_login&quot; | translate }}&lt;/a&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;d-none d-md-flex col-md-4 col-lg-6 bg-image&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;area&quot;&gt;
+  &lt;ul class&#x3D;&quot;circles&quot;&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./forgot-key.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid ps-md-0" [ngClass]="isClient ? \'login-body\' : \'login-body-admin\'">  <div class="row g-0">    <div class="col-md-8 col-lg-6 user_card">      <div class="row espDer15">        <div class="alinearDerecha paddingTop40 ">          <mat-form-field class="ng-autocomplete">            <mat-label><i class="las la-language fa-2x"></i></mat-label>            <mat-select [(ngModel)]="language" (selectionChange)="changeLanguage()">              <mat-option *ngFor="let l of translateHelper.languages" [value]="l">                {{\'lang.\' + l | translate}}              </mat-option>            </mat-select>          </mat-form-field>        </div>      </div>      <div class="login d-flex align-items-center">        <div class="container">          <div class="row">            <div class="col-md-9 col-lg-8 mx-auto ">              <div class="row ">                <div class="col-md-9 col-lg-8 mx-auto ">                  <h1>{{"title.restore" | translate}}</h1>                  <h5 class="colorGris">{{\'title.restore_instruction\' | translate}}</h5>                </div>                <div class="col-md-3 col-lg-4 mx-auto ">                  <img src="../../assets/img/isotipo2.png"/>                </div>              </div>              <!-- Sign In Form -->              <form #forgotForm="ngForm" (ngSubmit)="forgotForm.form.valid">                <div class="form-floating mb-3">                  <mat-form-field class="example-full-width">                    <input [(ngModel)]="email" name="email" matInput #mail="ngModel"                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"                           placeholder="{{\'label.email\' | translate}}" type="email" required>                    <i class="las la-at colorGris" matSuffix></i>                  </mat-form-field>                  <div *ngIf="mail.errors?.required && forgotForm.submitted">                    <h5 class="colorRojo"><i                      class="las la-exclamation-circle  espDer5"></i>{{\'error.required\' | translate}}</h5>                  </div>                  <div *ngIf="mail.errors?.pattern && forgotForm.submitted">                    <h5 class="colorRojo">                      <i class="las la-exclamation-circle  espDer5"></i>{{\'error.invalid.email\' | translate}}</h5>                  </div>                </div>              </form>              <div class="row centrado paddingTop15" *ngIf="!showGoLogin">                <button (click)="restoreKey(forgotForm)" class="glow-on-hover backgroundSecundary espIz15 padding20"                        type="submit"                        tabindex="1">{{\'button.restorepass\' | translate}}</button>              </div>              <div class="row centrado padding20" *ngIf="showGoLogin">                <a (click)="goLogin()">{{ "message.go_login" | translate }}</a>              </div>            </div>          </div>        </div>      </div>    </div>    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>  </div></div><div class="area">  <ul class="circles">    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>    <li></li>  </ul></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'ForgotKeyComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ForgotKeyComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

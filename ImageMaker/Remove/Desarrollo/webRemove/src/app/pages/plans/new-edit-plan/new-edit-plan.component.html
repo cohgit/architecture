@@ -1,0 +1,323 @@
+<h2 mat-dialog-title *ngIf="isNuevo"><i
+  class="las la-file-invoice colorPrincipal espDer5"></i>{{'title.new_plan' | translate}}</h2>
+<h2 mat-dialog-title
+    *ngIf="!isNuevo"><i class="las la-file-invoice colorPrincipal espDer5"></i>{{'title.edit_plan' | translate}}</h2>
+<div mat-dialog-content>
+
+  <div class="container-fluid padding20">
+    <mat-accordion multi>
+      <form #planForm="ngForm" (ngSubmit)="planForm.form.valid">
+
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{'title.plan_info' | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.name" name="name" disabled="{{!isEditable}}" matInput #planName="ngModel"
+                       placeholder="{{'label.name' | translate}} " required>
+              </mat-form-field>
+              <div *ngIf="planName.errors?.required && endingButton">
+                <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.duration_months" name="duration_months" matInput numbersOnly
+                       placeholder="{{'label.plan.duration_months' | translate}} " type="number"
+                       min="1" disabled="{{!isEditable}}">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.cost" name="cost" matInput placeholder="{{'label.plan.costs' | translate}} "
+                       type="number" numbersOnly min="0" disabled="{{!isEditable}}" required #planCost="ngModel">
+              </mat-form-field>
+
+              <div *ngIf="planCost.errors?.required && endingButton">
+                <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <mat-slide-toggle [(ngModel)]="info.automatic_renewal" name="automatic_renewal" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.automatic_renewal' | translate}}</mat-slide-toggle>
+            </div>
+            <div class="col-md-3">
+              <mat-slide-toggle [(ngModel)]="info.customized" name="customized" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.customized' | translate}}</mat-slide-toggle>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{'title.scanner_restriction' | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_keywords" name="max_keywords" matInput numbersOnly
+                       disabled="{{!isEditable}}"
+                       placeholder="{{'label.plan.keywords' | translate}} " type="number" min="1">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_countries" name="max_countries" matInput numbersOnly
+                       disabled="{{!isEditable}}"
+                       placeholder="{{'label.plan.countries' | translate}} " type="number" min="1">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_search_page" name="max_search_page" matInput numbersOnly
+                       disabled="{{!isEditable}}"
+                       placeholder="{{'label.plan.pages' | translate}} " type="number" min="2" max="10">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <mat-label>{{'label.scanner.advance.sections' | translate}}</mat-label>
+                <mat-select multiple [(ngModel)]="info.sectionsToSearch" name="sectionsToSearch"
+                            disabled="{{!isEditable}}" [compareWith]="utilService.compareValue">
+                  <mat-option *ngFor="let s of allTypes" [value]="s.code">
+                    {{"list.scanner.type." + s.code | translate}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row paddingTop15">
+            <div class="col-md-12 ">
+              <mat-slide-toggle [(ngModel)]="info.access_scanner" name="access_scanner" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.access_scanner' | translate}}</mat-slide-toggle>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6" *ngIf="info.access_scanner">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.limit_credits" name="limit_credits" matInput numbersOnly
+                       placeholder="{{'label.plan.limits_new_plan' | translate}} " disabled="{{!isEditable}}" type="number"
+                       min="1">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row paddingTop15">
+            <div class="col-md-12">
+              <mat-slide-toggle [(ngModel)]="info.access_monitor" name="access_monitor" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.access_monitor' | translate}}</mat-slide-toggle>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6" *ngIf="info.access_monitor">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.total_monitor_licenses" name="total_monitor_licenses" matInput numbersOnly
+                       placeholder="{{'label.licence.monitor' | translate}} " disabled="{{!isEditable}}" type="number"
+                       min="1">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row paddingTop15">
+            <div class="col-md-12">
+              <mat-slide-toggle [(ngModel)]="info.access_transforma" name="access_transforma" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.access_transforma' | translate}}</mat-slide-toggle>
+            </div>
+          </div>
+          <div class="row paddingTop15" *ngIf="info.access_transforma">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.total_transforma_licenses" name="total_transforma_licenses" matInput
+                       numbersOnly
+                       placeholder="{{'label.licence.transform' | translate}} " disabled="{{!isEditable}}" type="number"
+                       min="1">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_url_to_remove" name="max_url_to_remove" matInput numbersOnly
+                       disabled="{{!isEditable}}" placeholder="{{'label.plan.remove' | translate}} " type="number"
+                       min="0">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.target_page" name="target_page" matInput numbersOnly
+                       placeholder="{{'label.plan.target.page' | translate}} " type="number"
+                       min="1" max="10" disabled="{{!isEditable}}">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_url_to_impulse" name="max_url_to_impulse" matInput numbersOnly
+                       placeholder="{{'label.plan.impulse' | translate}} " type="number" min="0"
+                       disabled="{{!isEditable}}">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row paddingTop15">
+            <div class="col-md-12">
+              <mat-slide-toggle [(ngModel)]="info.access_deindexation" name="access_deindexation" class="noCkeck"
+                                disabled="{{!isEditable}}">{{'label.plan.access_deindexation' | translate}}</mat-slide-toggle>
+            </div>
+          </div>
+          <div class="row paddingTop15" *ngIf="info.access_deindexation">
+            <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="info.max_url_to_deindexate" name="max_url_to_deindexate" matInput numbersOnly
+                       placeholder="{{'label.licence.deindexing' | translate}} " type="number" min="0" value="0"
+                       disabled="{{!isEditable}}">
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{'label.description' | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-md-12">
+              <angular-editor [(ngModel)]="info.description" [config]="editorConfig" name="description"
+              >
+              </angular-editor>
+            </div>
+            <div class="col-md-12 ">
+              <h6 class="right"> {{numberOfCharacters}}</h6>
+            </div>
+          </div>
+
+        </mat-expansion-panel>
+      </form>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{'title.suggested_plan' | translate}} - ({{info?.clientSuggestions?.length}})
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-12">
+            <p>{{'message.plans.add_client' | translate}}</p>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-md-5">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="client.client_name" name="client_name" matInput #client_name="ngModel"
+                     placeholder="{{'label.name' | translate}} " type="text"
+              >
+            </mat-form-field>
+            <div *ngIf="!validName">
+              <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="client.client_email" name="client_email" matInput #client_email="ngModel"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" (change)="checkEmail(client.client_email)"
+                     placeholder="{{'label.email' | translate}}" type="email">
+            </mat-form-field>
+
+
+            <div *ngIf="!validMail">
+              <h5 class="colorRojo"><i class="las la-exclamation-circle  espDer5"></i>{{'error.required' | translate}}
+              </h5>
+            </div>
+            <div *ngIf="client_email.errors?.pattern">
+              <h5 class="colorRojo">
+                <i class="las la-exclamation-circle  espDer5"></i>{{'error.invalid.email' | translate}}</h5>
+            </div>
+            <div *ngIf="loading" class="heartbeat">
+              <i class="las la-ellipsis-h la-2x colorSecundario"></i>
+            </div>
+            <div *ngIf="sendForm">
+              <h5 class="colorGrisOscuro" *ngIf="isClient">
+                {{ "message.plans.client" | translate }}
+              </h5>
+              <h5 class="colorGrisOscuro" *ngIf="!isClient ">
+                {{ "message.plans.no_client" | translate }}
+              </h5>
+            </div>
+
+          </div>
+
+          <div class="col-md-1" *ngIf="!client_email.errors?.pattern &&
+            client.client_email !== ''">
+            <button (click)="addItem(client)" class="noBacknoBorder"><i class="las la-plus-circle fa-2x colorVerde"></i>
+            </button>
+          </div>
+          <div *ngIf="encontrado">
+            <h5 class="colorRojo"><i class="las la-exclamation-circle espDer5"></i>{{client.client_email}}
+              {{'error.duplicate' | translate}}</h5>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <strong>
+              <h5><i class="las la-paper-plane colorSecundario espDer5"></i>{{'message.send_email.plans' | translate}}
+              </h5>
+            </strong>
+          </div>
+        </div>
+
+        <div class="row">
+          <table class="table table-hover table-borderless">
+            <thead class="thead-light">
+            <tr>
+              <th>#</th>
+              <th><strong>{{"label.name" | translate}} </strong></th>
+              <th>{{'label.email' | translate}}</th>
+              <th class="centrado">{{'label.actions' | translate}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let client of clientsToSend; index as i">
+              <td [class.removeItem]="client.markToDelete">{{ i + 1 }}</td>
+              <td [class.removeItem]="client.markToDelete">
+                {{ client.client_name }}
+              </td>
+              <td [class.removeItem]="client.markToDelete">
+                {{ client.client_email }}
+              </td>
+              <td class="centrado">
+                <a (click)="sendEmail(client)" *ngIf="client.id > 0 && info.id > 0"><i class="las la-envelope  la-2x"
+                                                                                       title="{{'tooltip.send_email' | translate}}"></i></a>
+                <a (click)="removeItem(client)"><i class="las la-times colorRojo la-2x"
+                                                   title="{{'tooltip.remove' | translate}}"></i></a></td>
+            </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <mat-dialog-actions class="centrado">
+    <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.cancel' | translate}}</a>
+    <button class="glow-on-hover espIz15" type="submit" (click)="onConfirmClick(planForm)"
+            tabindex="1" *ngIf="isNuevo && isEditable">{{'button.add' | translate}}</button>
+    <button (click)="onConfirmClick(planForm)" class="glow-on-hover espIz15" type="submit"
+            tabindex="1" *ngIf="!isNuevo && isEditable">{{'button.edit' | translate}}</button>
+  </mat-dialog-actions>
+</div>
+

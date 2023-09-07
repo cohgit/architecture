@@ -1,0 +1,98 @@
+<nav
+  class="
+      navbar navbar-expand-lg navbar-light
+      bg-light
+      stickyTop
+      backgroundWhite
+    "
+>
+  <a class="navbar-brand" (click)="utilService.goHomeLanding()">
+    <img src="../../assets/img/logo.png" class="logoInicial"/>
+  </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngClass]="{ show: navbarOpen }">
+    <div class="col-md-7 right">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item menuLanding">
+          <a class="nav-link colorPrincipal third after" (click)="utilService.goHomeLanding()">{{
+            "menu.home" | translate | uppercase
+            }}</a>
+        </li>
+        <li class="nav-item menuLanding">
+          <a class="nav-link colorPrincipal third after" (click)="utilService.goDemo()">{{
+            "button.demo" | translate | uppercase
+            }}</a>
+        </li>
+        <li class="nav-item menuLanding">
+          <a class="nav-link colorPrincipal third after"
+             (click)="utilService.goContact()"
+          >{{ "label.contact" | translate | uppercase}}</a>
+        </li>
+        <li class="nav-item menuLanding">
+          <a class="nav-link colorPrincipal third after" (click)="utilService.goFaq()">{{
+            "button.faq" | translate | uppercase
+            }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3 right">
+      <ul class="navbar-nav mr-auto ">
+        <li class="padding5 margin10">
+          <a class="third after colorSecundario" (click)="utilService.goToLogin()"
+          >{{
+            "button.landing.login" | translate | uppercase
+            }}</a>
+        </li>
+        <li class="padding5 margin10 hideMobile">
+          |
+        </li>
+        <li class="padding5 margin10">
+          <a class="borderPrincipal borderRadius10 padding10" (click)="utilService.goPlans()"
+          >{{
+            "button.register" | translate | uppercase
+            }}</a>
+        </li>
+
+      </ul>
+
+
+      <!-- <div class="row">
+         <div class="col-md-5">
+           <a class="third after" (click)="utilService.goToLogin()"
+           ><strong class="colorSecundario left">{{
+             "button.landing.login" | translate | uppercase
+             }}</strong></a>
+         </div>
+         <div class="col-md-2"> |</div>
+         <div class="col-md-5">
+           <a class="third after" (click)="utilService.goPlans()"
+           ><strong class="colorSecundario increaseFont ">{{
+             "button.register" | translate | uppercase
+             }}</strong></a>
+
+         </div>
+       </div>-->
+    </div>
+    <div class="col-md-2">
+      <div class="row right">
+        <mat-form-field class="width100">
+          <mat-select
+            [(ngModel)]="language"
+            (selectionChange)="changeLanguage()"
+          >
+            <mat-option *ngFor="let l of translateHelper.languages" [value]="l">
+              <img [src]="utilService.checkFlag(l)" [width]="utilService.flagWith"
+                   [height]="utilService.flagHeight"
+                   class="margin3"
+                   onerror="this.src='../../../../assets/img/broken.jpg'"> {{ l | uppercase }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,56 @@
+<div class="row paddingTop15 centrado">
+  <div class="col-md-12">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ "title.error404" | translate }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div class="row centrado margin8020"></div>
+        <div class="row centrado margin8020">
+          <i class="las la-user-times colorSecundario espDer5 la-5x"></i>
+        </div>
+        <div class="row centrado">
+          <h2 class="colorPrincipal">
+            <a
+              href="mailto:soporte@removegroup.com?Subject=Solicito%20Soporte"
+            ></a
+            >{{ "message.fail_user" | translate }}
+          </h2>
+        </div>
+        <div class="row centrado">
+          <h3>
+            <strong>{{ reason | translate }}</strong>
+          </h3>
+        </div>
+
+        <div class="row centrado marginTop40"></div>
+      </mat-card-content>
+      <mat-card-actions *ngIf="reason !== 'warning.client.must.verify.email'">
+        <button (click)="back()" class="secondLevelButton">
+          <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}
+        </button>
+        <button mat-button>
+          <a (click)="openBills()" class="glow-on-hover"
+            ><i class="las la-money-bill-wave"></i>
+            {{ "button.payments" | translate }}</a
+          >
+        </button>
+      </mat-card-actions>
+      <mat-card-actions *ngIf="reason === 'warning.client.must.verify.email'">
+        <button (click)="back()" class="secondLevelButton">
+          <i class="las fa-backward espDer5"></i>{{ "button.back" | translate }}
+        </button>
+
+        <button mat-button>
+          <a (click)="reSendMail()" class="glow-on-hover">
+            <i class="las la-envelope-open-text"></i>
+            {{ "button.verify_email" | translate }}</a
+          >
+        </button>
+      </mat-card-actions>
+      <div class="row centrado margin8020"></div>
+    </mat-card>
+  </div>
+</div>

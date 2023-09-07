@@ -1,0 +1,27 @@
+# Commons Artifact Properties
+emails_active: true
+serp_active: true
+
+temp_files_path: D:\temp-atianza\temp\
+
+connection:
+  jndiDsName: jdbc/removeDS
+#  hostWO: jdbc:postgresql://192.168.99.100
+#  hostRO: jdbc:postgresql://192.168.99.100
+  hostWO: jdbc:postgresql://bd-remove-dev.cfda9ws4nwwx.us-east-1.rds.amazonaws.com
+  hostRO: jdbc:postgresql://bd-remove-dev.cfda9ws4nwwx.us-east-1.rds.amazonaws.com
+  port: 5432
+  params: 
+  dbname: remove_dev_2
+#  dbname: remove_dev
+  user: devadmin
+#  user: postgres  
+  password: DyhIPdEr#mP8RnQFu#
+#  password: 12345678
+ 
+  tryTimes: 1
+  waitTime: 5000
+  schemaName: remove
+  init_script_path: 'scripts/script_creator_db.sql'
+  update_folder: 'scripts/schema_updates'
+  script_token: '|schema_remove|'

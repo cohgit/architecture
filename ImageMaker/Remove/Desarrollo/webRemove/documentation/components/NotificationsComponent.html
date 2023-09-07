@@ -1,0 +1,2505 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>remove-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">remove-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li
+  >
+  NotificationsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/notifications/notifications.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-notifications</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./notifications.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./notifications.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allNotification" >allNotification</a>
+                            </li>
+                            <li>
+                                <a href="#arrItems" >arrItems</a>
+                            </li>
+                            <li>
+                                <a href="#copyArray" >copyArray</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                <a href="#filteredNotification" >filteredNotification</a>
+                            </li>
+                            <li>
+                                <a href="#isAdmin" >isAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#objFilter" >objFilter</a>
+                            </li>
+                            <li>
+                                <a href="#open" >open</a>
+                            </li>
+                            <li>
+                                <a href="#pag" >pag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#session" >session</a>
+                            </li>
+                            <li>
+                                <a href="#showHiddenNot" >showHiddenNot</a>
+                            </li>
+                            <li>
+                                <a href="#sortDirection" >sortDirection</a>
+                            </li>
+                            <li>
+                                <a href="#today" >today</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#translateHelper" >translateHelper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addItems" >addItems</a>
+                            </li>
+                            <li>
+                                <a href="#checkOpen" >checkOpen</a>
+                            </li>
+                            <li>
+                                <a href="#checkScanner" >checkScanner</a>
+                            </li>
+                            <li>
+                                <a href="#clean" >clean</a>
+                            </li>
+                            <li>
+                                <a href="#goClients" >goClients</a>
+                            </li>
+                            <li>
+                                <a href="#goImpulse" >goImpulse</a>
+                            </li>
+                            <li>
+                                <a href="#hideChecked" >hideChecked</a>
+                            </li>
+                            <li>
+                                <a href="#loadNotifications" >loadNotifications</a>
+                            </li>
+                            <li>
+                                <a href="#markReaded" >markReaded</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangePage" >onChangePage</a>
+                            </li>
+                            <li>
+                                <a href="#searchResult" >searchResult</a>
+                            </li>
+                            <li>
+                                <a href="#showHidden" >showHidden</a>
+                            </li>
+                            <li>
+                                <a href="#sortFunction" >sortFunction</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(commonService: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, translateHelper: <a href="../injectables/TranslateHelperService.html" target="_self">TranslateHelperService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, session: <a href="../injectables/SessionService.html" target="_self">SessionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/notifications/notifications.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Manage system notifications</p>
+</div>
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateHelper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addItems"></a>
+                    <span class="name">
+                        <span ><b>addItems</b></span>
+                        <a href="#addItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addItems(detail: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="145"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> add or slice checked items to an array</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>detail</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkOpen"></a>
+                    <span class="name">
+                        <span ><b>checkOpen</b></span>
+                        <a href="#checkOpen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkOpen(item: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="72"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> check if a notifications is readed or not</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkScanner"></a>
+                    <span class="name">
+                        <span ><b>checkScanner</b></span>
+                        <a href="#checkScanner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkScanner(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, uuid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="85"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> redirects to the scanner of the selected client</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uuid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clean"></a>
+                    <span class="name">
+                        <span ><b>clean</b></span>
+                        <a href="#clean"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clean()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="190"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>clear filter</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goClients"></a>
+                    <span class="name">
+                        <span ><b>goClients</b></span>
+                        <a href="#goClients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goClients()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="119"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>redirects to clients module</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goImpulse"></a>
+                    <span class="name">
+                        <span ><b>goImpulse</b></span>
+                        <a href="#goImpulse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goImpulse(uuid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="107"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>redirects to the boost module of the selected client</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uuid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideChecked"></a>
+                    <span class="name">
+                        <span ><b>hideChecked</b></span>
+                        <a href="#hideChecked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideChecked()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="161"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>mark an array of elements as hidden</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadNotifications"></a>
+                    <span class="name">
+                        <span ><b>loadNotifications</b></span>
+                        <a href="#loadNotifications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadNotifications()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="53"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>load notificactions lists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markReaded"></a>
+                    <span class="name">
+                        <span ><b>markReaded</b></span>
+                        <a href="#markReaded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>markReaded()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="172"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>mark an array of elements as read</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="43"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangePage"></a>
+                    <span class="name">
+                        <span ><b>onChangePage</b></span>
+                        <a href="#onChangePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangePage(pageOfItems: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="64"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>  function to control the pager</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageOfItems</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchResult"></a>
+                    <span class="name">
+                        <span ><b>searchResult</b></span>
+                        <a href="#searchResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchResult(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="127"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>filter array to search</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHidden"></a>
+                    <span class="name">
+                        <span ><b>showHidden</b></span>
+                        <a href="#showHidden"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHidden(event: MatSlideToggleChange)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="183"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>show all elementes hidden</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MatSlideToggleChange</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortFunction"></a>
+                    <span class="name">
+                        <span ><b>sortFunction</b></span>
+                        <a href="#sortFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortFunction(colName, ckeck)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="203"
+                            class="link-to-prism">src/app/notifications/notifications.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sort table by a firs level param</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ckeck</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Propiedades
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allNotification"></a>
+                    <span class="name">
+                        <span ><b>allNotification</b></span>
+                        <a href="#allNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/notifications/notifications.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrItems"></a>
+                    <span class="name">
+                        <span ><b>arrItems</b></span>
+                        <a href="#arrItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="25" class="link-to-prism">src/app/notifications/notifications.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyArray"></a>
+                    <span class="name">
+                        <span ><b>copyArray</b></span>
+                        <a href="#copyArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="18" class="link-to-prism">src/app/notifications/notifications.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filter"></a>
+                    <span class="name">
+                        <span ><b>filter</b></span>
+                        <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>{
+    recive_date_init: new Date(),
+    recive_date_end: new Date(),
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/notifications/notifications.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredNotification"></a>
+                    <span class="name">
+                        <span ><b>filteredNotification</b></span>
+                        <a href="#filteredNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/notifications/notifications.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAdmin"></a>
+                    <span class="name">
+                        <span ><b>isAdmin</b></span>
+                        <a href="#isAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/notifications/notifications.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objFilter"></a>
+                    <span class="name">
+                        <span ><b>objFilter</b></span>
+                        <a href="#objFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>[&#x27;creation_date&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/notifications/notifications.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="open"></a>
+                    <span class="name">
+                        <span ><b>open</b></span>
+                        <a href="#open"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="17" class="link-to-prism">src/app/notifications/notifications.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pag"></a>
+                    <span class="name">
+                        <span ><b>pag</b></span>
+                        <a href="#pag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/notifications/notifications.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="session"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>session</b></span>
+                        <a href="#session"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/SessionService.html" target="_self" >SessionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/notifications/notifications.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHiddenNot"></a>
+                    <span class="name">
+                        <span ><b>showHiddenNot</b></span>
+                        <a href="#showHiddenNot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/notifications/notifications.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDirection"></a>
+                    <span class="name">
+                        <span ><b>sortDirection</b></span>
+                        <a href="#sortDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/notifications/notifications.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="today"></a>
+                    <span class="name">
+                        <span ><b>today</b></span>
+                        <a href="#today"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Valor por defecto : </i><code>new Date()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/notifications/notifications.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translateHelper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>translateHelper</b></span>
+                        <a href="#translateHelper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/TranslateHelperService.html" target="_self" >TranslateHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="39" class="link-to-prism">src/app/notifications/notifications.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="40" class="link-to-prism">src/app/notifications/notifications.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {TranslateHelperService} from &#x27;../helpers/translate-helper.service&#x27;;
+import {CommonService} from &#x27;../services/common.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
+import {UtilService} from &#x27;../helpers/util.service&#x27;;
+import {MatSlideToggleChange} from &#x27;@angular/material/slide-toggle&#x27;;
+import {SessionService} from &#x27;../helpers/session.service&#x27;;
+
+@Component({
+  selector: &#x27;app-notifications&#x27;,
+  templateUrl: &#x27;./notifications.component.html&#x27;,
+  styleUrls: [&#x27;./notifications.component.css&#x27;]
+})
+export class NotificationsComponent implements OnInit {
+  allNotification &#x3D; [];
+  filteredNotification &#x3D; [];
+  open &#x3D; true;
+  copyArray: Array&lt;any&gt;;
+  filter &#x3D; {
+    recive_date_init: new Date(),
+    recive_date_end: new Date(),
+  };
+  today &#x3D; new Date();
+  objFilter &#x3D; [&#x27;creation_date&#x27;];
+  arrItems &#x3D; [];
+  showHiddenNot &#x3D; false;
+  pag: number;
+  sortDirection &#x3D; false;
+  isAdmin &#x3D; false;
+
+  /**
+   * Manage system notifications
+   * @param commonService
+   * @param translateHelper
+   * @param router
+   * @param utilService
+   * @param session
+   */
+  constructor(private commonService: CommonService, public translateHelper: TranslateHelperService,
+              private router: Router, public utilService: UtilService, public session: SessionService) {
+  }
+
+  ngOnInit(): void {
+    this.loadNotifications();
+    if (this.session.getAccessConfig().ADMIN) {
+      this.isAdmin &#x3D; true;
+    }
+  }
+
+  /**
+   * load notificactions lists
+   */
+  loadNotifications() {
+    this.commonService.listNotifications(null, response &#x3D;&gt; {
+      this.allNotification &#x3D; response;
+      this.filteredNotification &#x3D; this.allNotification;
+    });
+  }
+
+  /**
+   *   function to control the pager
+   * @param pageOfItems
+   */
+  onChangePage(pageOfItems: Array&lt;any&gt;): void {
+    this.copyArray &#x3D; pageOfItems;
+  }
+
+  /**
+   *  check if a notifications is readed or not
+   * @param item
+   */
+  checkOpen(item: any) {
+    if (!item.readed) {
+      this.commonService.markNotificationsAsReaded([item], true, response &#x3D;&gt; {
+        item.readed &#x3D; true;
+      });
+    }
+  }
+
+  /**
+   *  redirects to the scanner of the selected client
+   * @param type
+   * @param uuid
+   */
+  checkScanner(type: string, uuid: string) {
+    if (uuid) {
+      if (!this.isAdmin) {
+        this.router.navigate([&#x27;client/module/scanner/&#x27; + type + &#x27;/&#x27; + uuid + &quot;/view&quot;]);
+      } else {
+        this.router.navigate([&#x27;admin/module/scanner/&#x27; + type + &#x27;/&#x27; + uuid + &quot;/view&quot;]);
+      }
+    } else {
+      if (!this.isAdmin) {
+        this.router.navigate([&#x27;client/module/global_view/&#x27; + type]);
+      } else {
+        this.router.navigate([&#x27;admin/module/global_view/&#x27; + type]);
+      }
+    }
+
+
+  }
+
+  /**
+   * redirects to the boost module of the selected client
+   * @param uuid
+   */
+  goImpulse(uuid: string) {
+    if (!this.isAdmin) {
+      this.router.navigate([&#x27;client/module/impulse&#x27; + &#x27;/&#x27; + uuid]);
+    } else {
+      this.router.navigate([&#x27;admin/module/impulse&#x27; + &#x27;/&#x27; + uuid]);
+    }
+
+  }
+
+  /**
+   * redirects to clients module
+   */
+  goClients() {
+    this.router.navigate([&#x27;admin/module/clients&#x27;]);
+  }
+
+  /**
+   * filter array to search
+   * @param value
+   */
+  searchResult(value: any) {
+    const formatDates &#x3D; {
+      recive_date: {
+        init: new Date(value.recive_date_init).toLocaleDateString(),
+        end: new Date(value.recive_date_end).toLocaleDateString(),
+      }
+    };
+    // this.copyArray &#x3D; this.utilService.filterResult(this.objFilter, formatDates, this.allClients);
+    this.filteredNotification &#x3D; this.allNotification.filter(u &#x3D;&gt;
+      (new Date(u.creation_date).toLocaleDateString() &lt;&#x3D; formatDates.recive_date.end &amp;&amp;
+        new Date(u.creation_date).toLocaleDateString() &gt;&#x3D; formatDates.recive_date.init));
+  }
+
+  /**
+   *  add or slice checked items to an array
+   * @param detail
+   * @param event
+   */
+  addItems(detail: any, event) {
+    if (event.checked) {
+      this.arrItems.push(detail);
+    } else {
+      this.arrItems.forEach(item &#x3D;&gt; {
+        if (item &#x3D;&#x3D;&#x3D; detail) {
+          const index &#x3D; this.arrItems.findIndex(i &#x3D;&gt; i &#x3D;&#x3D;&#x3D; detail);
+          this.arrItems.splice(index, 1);
+        }
+      });
+    }
+  }
+
+  /**
+   * mark an array of elements as hidden
+   */
+  hideChecked() {
+    const isHide &#x3D; true;
+    if (this.arrItems.length !&#x3D;&#x3D; 0) {
+      this.commonService.markNotificationsAsHidden(this.arrItems, isHide, response &#x3D;&gt; {
+        this.loadNotifications();
+      });
+    }
+  }
+  /**
+   * mark an array of elements as read
+   */
+  markReaded() {
+    const readed &#x3D; true;
+    if (this.arrItems.length !&#x3D;&#x3D; 0) {
+      this.commonService.markNotificationsAsReaded(this.arrItems, readed, response &#x3D;&gt; {
+        this.loadNotifications();
+      });
+    }
+  }
+  /**
+   * show all elementes hidden
+   */
+  showHidden(event: MatSlideToggleChange) {
+    this.showHiddenNot &#x3D; event.checked;
+  }
+
+  /**
+   * clear filter
+   */
+  clean() {
+    this.filter &#x3D; {
+      recive_date_init: new Date(),
+      recive_date_end: new Date(),
+    };
+    this.filteredNotification &#x3D; this.allNotification;
+  }
+
+  /**
+   * Sort table by a firs level param
+   * @param colName
+   * @param ckeck
+   */
+  sortFunction(colName, ckeck): void {
+    this.copyArray &#x3D; this.utilService.sortTable(colName, ckeck, this.copyArray, this.sortDirection).array;
+    this.sortDirection &#x3D; this.utilService.sortTable(colName, ckeck, this.copyArray, this.sortDirection).direction;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row paddingTop15&quot; id&#x3D;&quot;toExport&quot;&gt;
+  &lt;!--filters--&gt;
+  &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;allNotification.length !&#x3D;&#x3D; 0&quot;&gt;
+    &lt;div class&#x3D;&quot;row border-filter&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-2 col-sm-12&quot;&gt;
+        &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+          &lt;mat-label&gt;{{ &quot;label.date_range&quot; | translate }}&lt;/mat-label&gt;
+          &lt;mat-date-range-input [rangePicker]&#x3D;&quot;picker&quot; [max]&#x3D;&quot;today&quot;&gt;
+            &lt;input
+              matStartDate
+              [(ngModel)]&#x3D;&quot;filter.recive_date_init&quot;
+              name&#x3D;&quot;start&quot;
+              placeholder&#x3D;&quot;Start date&quot;
+            /&gt;
+            &lt;input
+              matEndDate
+              [(ngModel)]&#x3D;&quot;filter.recive_date_end&quot;
+              name&#x3D;&quot;end&quot;
+              placeholder&#x3D;&quot;End date&quot;
+            /&gt;
+          &lt;/mat-date-range-input&gt;
+          &lt;mat-datepicker-toggle
+            matSuffix
+            [for]&#x3D;&quot;picker&quot;
+          &gt;&lt;/mat-datepicker-toggle&gt;
+          &lt;mat-date-range-picker #picker&gt;&lt;/mat-date-range-picker&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-2 centrado col-sm-12&quot;&gt;
+        &lt;button
+          (click)&#x3D;&quot;searchResult(filter)&quot;
+          class&#x3D;&quot;secondLevelButton reduceFont&quot;
+        &gt;
+          &lt;i class&#x3D;&quot;las la-search espDer5&quot;&gt;&lt;/i&gt;{{ &quot;button.search&quot; | translate }}
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-2 col-sm-12 paddingTop15 float-left&quot;&gt;
+        &lt;a (click)&#x3D;&quot;clean()&quot; class&#x3D;&quot;third after reduceFont&quot;&gt;
+          &lt;i class&#x3D;&quot;las la-broom colorPrincipal espDer5&quot;&gt;&lt;/i
+          &gt;{{ &quot;button.clear_filters&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-1 paddingTop15&quot;&gt;
+        &lt;a (click)&#x3D;&quot;hideChecked()&quot; class&#x3D;&quot;third after reduceFont&quot;
+          &gt;&lt;i
+            class&#x3D;&quot;las la-eye-slash colorPrincipal espDer5&quot;
+            title&#x3D;&quot;{{ &#x27;button.hide&#x27; | translate }}&quot;
+          &gt;&lt;/i
+          &gt;{{ &quot;button.hide&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-2 paddingTop15&quot;&gt;
+        &lt;a (click)&#x3D;&quot;markReaded()&quot; class&#x3D;&quot;third after reduceFont&quot;
+          &gt;&lt;i
+            class&#x3D;&quot;las la-envelope-open colorPrincipal espDer5&quot;
+            title&#x3D;&quot;{{ &#x27;button.markasReaded&#x27; | translate }}&quot;
+          &gt;&lt;/i
+          &gt;{{ &quot;button.markasReaded&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-2 paddingTop15&quot;&gt;
+        &lt;mat-slide-toggle class&#x3D;&quot;noCkeck&quot; (change)&#x3D;&quot;showHidden($event)&quot;&gt;
+          &lt;span class&#x3D;&quot;reduceFont&quot;&gt;{{
+            &quot;message.show_hidden&quot; | translate
+          }}&lt;/span&gt;
+        &lt;/mat-slide-toggle&gt;
+      &lt;/div&gt;
+      &lt;!-- &lt;div class&#x3D;&quot;col-md-1 &quot;&gt;
+         &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
+           &lt;mat-select
+             placeholder&#x3D;&quot;{{ &#x27;label.items&#x27; | translate }}&quot;
+             [(ngModel)]&#x3D;&quot;pag&quot;
+           &gt;
+             &lt;mat-option *ngFor&#x3D;&quot;let item of utilService.pagination&quot; [value]&#x3D;&quot;item&quot;&gt;
+               {{ item }}
+             &lt;/mat-option&gt;
+           &lt;/mat-select&gt;
+         &lt;/mat-form-field&gt;
+       &lt;/div&gt;--&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!--principal table--&gt;
+  &lt;div
+    class&#x3D;&quot;col-md-12&quot;
+    *ngIf&#x3D;&quot;filteredNotification &amp;&amp; filteredNotification.length !&#x3D;&#x3D; 0&quot;
+  &gt;
+    &lt;div
+      class&#x3D;&quot;row paddingTop25 paddingBottom20 colorPrincipal boldFont hideMobile&quot;
+    &gt;
+      &lt;div class&#x3D;&quot;col-md-2&quot;&gt;&lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+        &lt;span *ngIf&#x3D;&quot;!isAdmin&quot;&gt;{{
+          &quot;label.notification_type&quot; | translate
+        }}&lt;/span&gt;
+        &lt;span *ngIf&#x3D;&quot;isAdmin&quot;&gt;{{ &quot;label.user&quot; | translate }}&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        {{ &quot;label.notification_subject&quot; | translate }}
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-1&quot;&gt;
+        &lt;a
+          (click)&#x3D;&quot;sortFunction(&#x27;creation_date&#x27;, sortDirection)&quot;
+          class&#x3D;&quot;espDer50&quot;
+          &gt;{{ &quot;label.date&quot; | translate }}&lt;/a
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot; *ngFor&#x3D;&quot;let detail of copyArray&quot;&gt;
+      &lt;div
+        class&#x3D;&quot;col-md-1 col-sm-12 centrado&quot;
+        *ngIf&#x3D;&quot;!detail.hidden || showHiddenNot&quot;
+      &gt;
+        &lt;mat-checkbox
+          class&#x3D;&quot;paddingTop5 noCkeck&quot;
+          (change)&#x3D;&quot;addItems(detail, $event)&quot;
+        &gt;&lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+      &lt;div
+        class&#x3D;&quot;col-md-11 col-sm-12 paddingTop5&quot;
+        *ngIf&#x3D;&quot;!detail.hidden || showHiddenNot&quot;
+      &gt;
+        &lt;mat-expansion-panel
+          hideToggle
+          class&#x3D;&quot;gn-box padding5 borderRadius10 example-full-width minHei80m&quot;
+          (opened)&#x3D;&quot;checkOpen(detail)&quot;
+        &gt;
+          &lt;mat-expansion-panel-header class&#x3D;&quot;height150Mobile&quot;&gt;
+            &lt;div class&#x3D;&quot;row container-fluid&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+                &lt;mat-chip-list aria-label&#x3D;&quot;Fish selection espDer15&quot;&gt;
+                  &lt;mat-chip class&#x3D;&quot;espDer15&quot;&gt;
+                    &lt;span class&#x3D;&quot;colorPrincipal&quot;
+                      &gt;{{
+                        &quot;notification.type.&quot; + detail?.typeObj?.tag | translate
+                      }}
+                    &lt;/span&gt;&lt;/mat-chip
+                  &gt;
+                &lt;/mat-chip-list&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-1&quot;&gt;
+                &lt;i
+                  class&#x3D;&quot;las la-envelope-open reduceFontMobile colorGris la-2x&quot;
+                  *ngIf&#x3D;&quot;detail.readed&quot;
+                &gt;&lt;/i&gt;
+                &lt;i
+                  class&#x3D;&quot;las la-envelope reduceFontMobile colorPrincipal la-2x&quot;
+                  *ngIf&#x3D;&quot;!detail.readed&quot;
+                &gt;&lt;/i&gt;
+                &lt;i
+                  class&#x3D;&quot;las la-exclamation-circle colorSecundario reduceFontMobile la-2x&quot;
+                  *ngIf&#x3D;&quot;detail.urgent&quot;
+                  title&#x3D;&quot;{{ &#x27;placeholder.urgent&#x27; | translate }}&quot;
+                &gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-7&quot;&gt;
+                {{ &quot;notification.tittle.&quot; + detail.title | translate }}
+                {{ detail.parameters?.name ? detail.parameters.name : &quot;&quot; }}
+                {{
+                  detail.parameters?.info?.name
+                    ? detail.parameters.info.name
+                    : &quot;&quot;
+                }}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-1&quot;&gt;
+                &lt;h6 class&#x3D;&quot;colorGris right&quot;&gt;
+                  {{
+                    utilService.formatDate(detail.creation_date)
+                      | date : &quot;short&quot;
+                  }}
+                &lt;/h6&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/mat-expansion-panel-header&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;mat-tab-group
+              *ngIf&#x3D;&quot;
+                detail?.parameters?.info?.lstInSnippets ||
+                detail?.parameters?.info?.lstOutSnippets
+              &quot;
+            &gt;
+              &lt;mat-tab
+                label&#x3D;&quot;{{ &#x27;label.new_content&#x27; | translate }}: {{
+                  detail?.parameters?.info?.lstInSnippets.length
+                }}&quot;
+                *ngIf&#x3D;&quot;detail?.parameters?.info?.lstInSnippets&quot;
+              &gt;
+                &lt;div class&#x3D;&quot;margin10&quot;&gt;&lt;/div&gt;
+                &lt;div
+                  class&#x3D;&quot;row container-fluid&quot;
+                  *ngFor&#x3D;&quot;
+                    let snip of detail.parameters.info.lstInSnippets;
+                    let i &#x3D; index
+                  &quot;
+                &gt;
+                  &lt;div class&#x3D;&quot;col-md-12 colorGris&quot;&gt;
+                    &lt;!-- &lt;flag-icon country&#x3D;&quot;{{snip?.country?.tag}}&quot; squared class&#x3D;&quot;espDer5&quot;
+                                title&#x3D;&quot;{{snip?.country?.name}}&quot;&gt;&lt;/flag-icon&gt;--&gt;
+                    &lt;img
+                      [src]&#x3D;&quot;utilService.checkFlag(snip?.country?.tag)&quot;
+                      [width]&#x3D;&quot;utilService.flagWith&quot;
+                      [height]&#x3D;&quot;utilService.flagHeight&quot;
+                      alt&#x3D;&quot;{{ snip?.country?.name }}&quot;
+                      class&#x3D;&quot;margin3&quot;
+                      onerror&#x3D;&quot;this.src&#x3D;&#x27;../../../../assets/img/broken.jpg&#x27;&quot;
+                    /&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-image espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;images&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-search espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;web&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-newspaper espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;news&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+
+                    &lt;mat-chip
+                      color&#x3D;&quot;accent&quot;
+                      class&#x3D;&quot;backgorundPrincipal colorBlanco heightAuto&quot;
+                    &gt;
+                      KW: {{ snip?.keyword?.word }}&lt;/mat-chip
+                    &gt;
+
+                    {{ &quot;label.page&quot; | translate }}: {{ snip?.page }} -
+                    {{ &quot;label.position&quot; | translate }}: {{ snip?.position }} -
+                    &lt;cite class&#x3D;&quot;gs-url&quot;&gt;{{ snip?.domain }}&lt;/cite&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;a
+                      class&#x3D;&quot;gs-title&quot;
+                      target&#x3D;&quot;_blank&quot;
+                      href&#x3D;&quot;{{ snip?.link }}&quot;
+                      &gt;{{ snip?.tittle }}&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;span class&#x3D;&quot;gs-content&quot;&gt;{{ snip?.snippet }}&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;mat-chip
+                      color&#x3D;&quot;accent&quot;
+                      *ngFor&#x3D;&quot;let url of snip.trackingWords&quot;
+                    &gt;
+                      &lt;span [innerHTML]&#x3D;&quot;url.feelingObj | feelingColors&quot;&gt;&lt;/span&gt;
+                      {{ url.word }}
+                    &lt;/mat-chip&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class&#x3D;&quot;margin10&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/mat-tab&gt;
+
+              &lt;mat-tab
+                label&#x3D;&quot;{{ &#x27;label.out_content&#x27; | translate }}: {{
+                  detail?.parameters?.info?.lstOutSnippets.length
+                }}&quot;
+                *ngIf&#x3D;&quot;detail?.parameters?.info?.lstOutSnippets&quot;
+              &gt;
+                &lt;div class&#x3D;&quot;margin10&quot;&gt;&lt;/div&gt;
+                &lt;div
+                  class&#x3D;&quot;row container-fluid&quot;
+                  *ngFor&#x3D;&quot;
+                    let snip of detail.parameters.info.lstOutSnippets;
+                    let i &#x3D; index
+                  &quot;
+                &gt;
+                  &lt;div class&#x3D;&quot;col-md-12 colorGris&quot;&gt;
+                    &lt;!--&lt;flag-icon country&#x3D;&quot;{{snip?.country?.tag}}&quot; squared class&#x3D;&quot;espDer5&quot;
+                               title&#x3D;&quot;{{snip?.country?.name}}&quot;&gt;&lt;/flag-icon&gt;--&gt;
+                    &lt;img
+                      [src]&#x3D;&quot;utilService.checkFlag(snip?.country?.tag)&quot;
+                      [width]&#x3D;&quot;utilService.flagWith&quot;
+                      [height]&#x3D;&quot;utilService.flagHeight&quot;
+                      alt&#x3D;&quot;{{ snip?.country?.name }}&quot;
+                      class&#x3D;&quot;margin3&quot;
+                      onerror&#x3D;&quot;this.src&#x3D;&#x27;../../../../assets/img/broken.jpg&#x27;&quot;
+                    /&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-image espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;images&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-search espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;web&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+                    &lt;i
+                      class&#x3D;&quot;las la-newspaper espDer15 colorPrincipal&quot;
+                      *ngIf&#x3D;&quot;snip?.typeSearch &#x3D;&#x3D;&#x3D; &#x27;news&#x27;&quot;
+                      title&#x3D;&quot;{{
+                        &#x27;list.scanner.type.&#x27; + snip?.typeSearch | translate
+                      }}&quot;
+                    &gt;&lt;/i&gt;
+                    &lt;mat-chip
+                      color&#x3D;&quot;accent&quot;
+                      class&#x3D;&quot;backgorundPrincipal colorBlanco heightAuto&quot;
+                    &gt;
+                      KW: {{ snip?.keyword?.word }}&lt;/mat-chip
+                    &gt;
+                    {{ &quot;label.page&quot; | translate }}: {{ snip?.page }} -
+                    {{ &quot;label.position&quot; | translate }}: {{ snip?.position }} -
+                    &lt;cite class&#x3D;&quot;gs-url&quot;&gt;{{ snip?.domain }}&lt;/cite&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;a
+                      class&#x3D;&quot;gs-title&quot;
+                      target&#x3D;&quot;_blank&quot;
+                      href&#x3D;&quot;{{ snip?.link }}&quot;
+                      &gt;{{ snip?.tittle }}&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;span class&#x3D;&quot;gs-content&quot;&gt;{{ snip?.snippet }}&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                    &lt;mat-chip
+                      color&#x3D;&quot;accent&quot;
+                      *ngFor&#x3D;&quot;let url of snip.trackingWords&quot;
+                    &gt;
+                      &lt;span [innerHTML]&#x3D;&quot;url.feelingObj | feelingColors&quot;&gt;&lt;/span&gt;
+                      {{ url.word }}
+                    &lt;/mat-chip&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class&#x3D;&quot;margin10&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/mat-tab&gt;
+            &lt;/mat-tab-group&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class&#x3D;&quot;col-md-12&quot;
+            *ngIf&#x3D;&quot;
+              detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||
+              detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED
+            &quot;
+          &gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-2&quot; *ngIf&#x3D;&quot;isAdmin&quot;&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;{{ &quot;profile.client&quot; | translate }}: &lt;/strong&gt;
+                  {{ detail?.parameters?.client_name }}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-10&quot;&gt;
+                &lt;strong
+                  &gt;{{ &quot;label.impulse.keywords_selected&quot; | translate }}
+                &lt;/strong&gt;
+                &lt;mat-chip-list
+                  aria-label&#x3D;&quot;Fish selection&quot;
+                  placeholder&#x3D;&quot;{{
+                    &#x27;label.impulse.keywords_selected&#x27; | translate
+                  }}&quot;
+                &gt;
+                  &lt;mat-chip
+                    title&#x3D;&quot;{{ &#x27;label.impulse.keywords_selected&#x27; | translate }}&quot;
+                  &gt;
+                    &lt;span class&#x3D;&quot;colorPrincipal&quot;&gt;{{
+                      detail?.parameters?.keyword?.word
+                    }}&lt;/span&gt;&lt;/mat-chip
+                  &gt;
+                &lt;/mat-chip-list&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div
+                class&#x3D;&quot;col-md-4&quot;
+                *ngIf&#x3D;&quot;detail?.parameters?.estimated_publish&quot;
+              &gt;
+                &lt;p&gt;
+                  &lt;strong
+                    &gt;{{ &quot;label.impulse.start_month&quot; | translate }}:
+                  &lt;/strong&gt;
+
+                  {{  utilService.formatDate(detail?.parameters?.estimated_publish)  | date : &quot;MM/yyyy&quot;  }}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-4&quot; *ngIf&#x3D;&quot;detail?.parameters?.publish_date&quot;&gt;
+                &lt;p&gt;
+                  &lt;strong
+                    &gt;{{ &quot;label.impulse.publish_date&quot; | translate }}:
+                  &lt;/strong&gt;
+                  {{  utilService.formatDate(detail?.parameters?.publish_date)  | date  }}
+        
+                &lt;/p&gt;
+              &lt;/div&gt;
+
+              &lt;div class&#x3D;&quot;col-md-4&quot; *ngIf&#x3D;&quot;detail?.parameters?.publish_link&quot;&gt;
+                &lt;p&gt;
+                  &lt;strong
+                    &gt;{{ &quot;label.impulse.tittle_url&quot; | translate }}:
+                  &lt;/strong&gt;
+                  &lt;a
+                    href&#x3D;&quot;{{ detail?.parameters?.publish_link }}&quot;
+                    target&#x3D;&quot;_blank&quot;
+                    &gt;{{
+                      utilService.onlyDomain(detail?.parameters?.publish_link)
+                    }}
+                  &lt;/a&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot; *ngIf&#x3D;&quot;detail?.typeObj.NEW_CLIENT_SUSCRIPTION&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-5 centrado&quot;&gt;
+                &lt;i class&#x3D;&quot;las la-user-circle colorPrincipal la-5x&quot;&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-md-7&quot;&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;{{ &quot;profile.client&quot; | translate }}: &lt;/strong
+                  &gt;{{ detail.parameters.client_name }}
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;{{ &quot;label.email&quot; | translate }}: &lt;/strong
+                  &gt;{{ detail.parameters.client_email }}
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;{{ &quot;title.user_payment&quot; | translate }}: &lt;/strong&gt;
+                  &lt;span
+                    class&#x3D;&quot;&quot;
+                    [innerHTML]&#x3D;&quot;
+                      detail.parameters?.payment_method | paymentsMethods
+                    &quot;
+                  &gt;&lt;/span&gt;
+                  {{
+                    &quot;label.payment_&quot; + detail.parameters?.payment_method
+                      | translate
+                  }}
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;strong&gt;{{ &quot;label.plan&quot; | translate }}: &lt;/strong
+                  &gt;{{ detail.parameters.plan }}
+                &lt;/p&gt;
+
+                &lt;a (click)&#x3D;&quot;goClients()&quot; class&#x3D;&quot;third after reduceFont&quot;
+                  &gt;&lt;i
+                    class&#x3D;&quot;las la-id-card la-2x colorPrincipal espDer15&quot;
+                    title&#x3D;&quot;{{ &#x27;message.go_clients&#x27; | translate }}&quot;
+                  &gt;&lt;/i
+                  &gt;{{ &quot;message.go_clients&quot; | translate }}
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;row centrado margin10&quot;&gt;
+            &lt;!-- go to one shot scanner--&gt;
+            &lt;a
+              (click)&#x3D;&quot;checkScanner(&#x27;one_shot&#x27;, detail.parameters.uuidScanner)&quot;
+              class&#x3D;&quot;third after reduceFont&quot;
+              *ngIf&#x3D;&quot;
+                detail?.typeObj?.ONE_SHOT_STARTING_SCANNER ||
+                detail?.typeObj?.ONE_SHOT_FINISHED_SCANNER
+              &quot;
+              &gt;&lt;i
+                class&#x3D;&quot;las la-camera colorPrincipal la-2x espDer15&quot;
+                title&#x3D;&quot;{{ &#x27;title.scanner_one&#x27; | translate }}&quot;
+              &gt;&lt;/i&gt;
+              {{ &quot;message.go_scan&quot; | translate }}
+            &lt;/a&gt;
+            &lt;!-- go to monitor scanner--&gt;
+            &lt;a
+              (click)&#x3D;&quot;
+                checkScanner(&#x27;monitor&#x27;, detail.parameters.info.uuidScanner)
+              &quot;
+              class&#x3D;&quot;third after reduceFont&quot;
+              *ngIf&#x3D;&quot;
+                detail?.typeObj?.RECURRENT_STARTING_SCANNER ||
+                detail?.typeObj?.RECURRENT_NEW_AND_LEAVING_CONTENT ||
+                detail?.typeObj?.RECURRENT_CONFIGURATION_UPDATED
+              &quot;
+              &gt;&lt;i
+                class&#x3D;&quot;las la-layer-group colorPrincipal la-2x espDer15&quot;
+                title&#x3D;&quot;{{ &#x27;title.monitor&#x27; | translate }}&quot;
+              &gt;&lt;/i&gt;
+              {{ &quot;message.go_scan&quot; | translate }}
+            &lt;/a&gt;
+
+            &lt;!-- go to transform scanner--&gt;
+            &lt;a
+              (click)&#x3D;&quot;checkScanner(&#x27;transform&#x27;, detail.parameters.uuidScanner)&quot;
+              class&#x3D;&quot;third after reduceFont&quot;
+              *ngIf&#x3D;&quot;
+                detail?.typeObj?.TRANSFORM_STARTING_SCANNER ||
+                detail?.typeObj?.TRANSFORM_CONFIGURATION_UPDATED
+              &quot;
+              &gt;&lt;i
+                class&#x3D;&quot;las la-sync colorPrincipal la-2x espDer15&quot;
+                title&#x3D;&quot;{{ &#x27;title.transform&#x27; | translate }}&quot;
+              &gt;&lt;/i
+              &gt;{{ &quot;message.go_scan&quot; | translate }}
+            &lt;/a&gt;
+            &lt;!-- go to transform scanner 2--&gt;
+            &lt;a
+              (click)&#x3D;&quot;
+                checkScanner(&#x27;transform&#x27;, detail.parameters.info.uuidScanner)
+              &quot;
+              class&#x3D;&quot;third after reduceFont&quot;
+              *ngIf&#x3D;&quot;detail?.typeObj?.TRANSFORM_NEW_AND_LEAVING_CONTENT&quot;
+              &gt;&lt;i
+                class&#x3D;&quot;las la-sync colorPrincipal la-2x espDer15&quot;
+                title&#x3D;&quot;{{ &#x27;title.transform&#x27; | translate }}&quot;
+              &gt;&lt;/i
+              &gt;{{ &quot;message.go_scan&quot; | translate }}
+            &lt;/a&gt;
+
+            &lt;!-- go to impulse--&gt;
+            &lt;a
+              (click)&#x3D;&quot;goImpulse(detail.parameters.uuidScanner)&quot;
+              class&#x3D;&quot;third after reduceFont&quot;
+              *ngIf&#x3D;&quot;
+                detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||
+                detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED
+              &quot;
+              &gt;&lt;i
+                class&#x3D;&quot;las la-sort-amount-up-alt colorPrincipal la-2x espDer15&quot;
+                title&#x3D;&quot;{{ &#x27;menu.impulse&#x27; | translate }}&quot;
+              &gt;&lt;/i
+              &gt;{{ &quot;message.go_impulse&quot; | translate }}:
+              {{ detail.parameters.client_name }}
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/mat-expansion-panel&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;col-md-12 centrado paddingBottom50 paddingTop25&quot;&gt;
+    &lt;jw-pagination
+      [items]&#x3D;&quot;filteredNotification&quot;
+      (changePage)&#x3D;&quot;onChangePage($event)&quot;
+      [maxPages]&#x3D;&quot;5&quot;
+      [pageSize]&#x3D;&quot;15&quot;
+    &gt;&lt;/jw-pagination&gt;
+  &lt;/div&gt;
+  &lt;div
+    class&#x3D;&quot;col-md-12 paddingBottom50 paddingTop25&quot;
+    *ngIf&#x3D;&quot;
+      (allNotification &amp;&amp; allNotification.length &#x3D;&#x3D;&#x3D; 0) ||
+      filteredNotification.length &#x3D;&#x3D;&#x3D; 0
+    &quot;
+  &gt;
+    {{ &quot;message.no_notification&quot; | translate }}
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./notifications.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row paddingTop15" id="toExport">  <!--filters-->  <div class="col-md-12" *ngIf="allNotification.length !== 0">    <div class="row border-filter">      <div class="col-md-2 col-sm-12">        <mat-form-field class="example-full-width">          <mat-label>{{ "label.date_range" | translate }}</mat-label>          <mat-date-range-input [rangePicker]="picker" [max]="today">            <input              matStartDate              [(ngModel)]="filter.recive_date_init"              name="start"              placeholder="Start date"            />            <input              matEndDate              [(ngModel)]="filter.recive_date_end"              name="end"              placeholder="End date"            />          </mat-date-range-input>          <mat-datepicker-toggle            matSuffix            [for]="picker"          ></mat-datepicker-toggle>          <mat-date-range-picker #picker></mat-date-range-picker>        </mat-form-field>      </div>      <div class="col-md-2 centrado col-sm-12">        <button          (click)="searchResult(filter)"          class="secondLevelButton reduceFont"        >          <i class="las la-search espDer5"></i>{{ "button.search" | translate }}        </button>      </div>      <div class="col-md-2 col-sm-12 paddingTop15 float-left">        <a (click)="clean()" class="third after reduceFont">          <i class="las la-broom colorPrincipal espDer5"></i          >{{ "button.clear_filters" | translate }}</a        >      </div>      <div class="col-md-1 paddingTop15">        <a (click)="hideChecked()" class="third after reduceFont"          ><i            class="las la-eye-slash colorPrincipal espDer5"            title="{{ \'button.hide\' | translate }}"          ></i          >{{ "button.hide" | translate }}</a        >      </div>      <div class="col-md-2 paddingTop15">        <a (click)="markReaded()" class="third after reduceFont"          ><i            class="las la-envelope-open colorPrincipal espDer5"            title="{{ \'button.markasReaded\' | translate }}"          ></i          >{{ "button.markasReaded" | translate }}</a        >      </div>      <div class="col-md-2 paddingTop15">        <mat-slide-toggle class="noCkeck" (change)="showHidden($event)">          <span class="reduceFont">{{            "message.show_hidden" | translate          }}</span>        </mat-slide-toggle>      </div>      <!-- <div class="col-md-1 ">         <mat-form-field class="example-full-width">           <mat-select             placeholder="{{ \'label.items\' | translate }}"             [(ngModel)]="pag"           >             <mat-option *ngFor="let item of utilService.pagination" [value]="item">               {{ item }}             </mat-option>           </mat-select>         </mat-form-field>       </div>-->    </div>  </div>  <!--principal table-->  <div    class="col-md-12"    *ngIf="filteredNotification && filteredNotification.length !== 0"  >    <div      class="row paddingTop25 paddingBottom20 colorPrincipal boldFont hideMobile"    >      <div class="col-md-2"></div>      <div class="col-md-2">        <span *ngIf="!isAdmin">{{          "label.notification_type" | translate        }}</span>        <span *ngIf="isAdmin">{{ "label.user" | translate }}</span>      </div>      <div class="col-md-6">        {{ "label.notification_subject" | translate }}      </div>      <div class="col-md-1">        <a          (click)="sortFunction(\'creation_date\', sortDirection)"          class="espDer50"          >{{ "label.date" | translate }}</a        >      </div>    </div>    <div class="row" *ngFor="let detail of copyArray">      <div        class="col-md-1 col-sm-12 centrado"        *ngIf="!detail.hidden || showHiddenNot"      >        <mat-checkbox          class="paddingTop5 noCkeck"          (change)="addItems(detail, $event)"        ></mat-checkbox>      </div>      <div        class="col-md-11 col-sm-12 paddingTop5"        *ngIf="!detail.hidden || showHiddenNot"      >        <mat-expansion-panel          hideToggle          class="gn-box padding5 borderRadius10 example-full-width minHei80m"          (opened)="checkOpen(detail)"        >          <mat-expansion-panel-header class="height150Mobile">            <div class="row container-fluid">              <div class="col-md-2">                <mat-chip-list aria-label="Fish selection espDer15">                  <mat-chip class="espDer15">                    <span class="colorPrincipal"                      >{{                        "notification.type." + detail?.typeObj?.tag | translate                      }}                    </span></mat-chip                  >                </mat-chip-list>              </div>              <div class="col-md-1">                <i                  class="las la-envelope-open reduceFontMobile colorGris la-2x"                  *ngIf="detail.readed"                ></i>                <i                  class="las la-envelope reduceFontMobile colorPrincipal la-2x"                  *ngIf="!detail.readed"                ></i>                <i                  class="las la-exclamation-circle colorSecundario reduceFontMobile la-2x"                  *ngIf="detail.urgent"                  title="{{ \'placeholder.urgent\' | translate }}"                ></i>              </div>              <div class="col-md-7">                {{ "notification.tittle." + detail.title | translate }}                {{ detail.parameters?.name ? detail.parameters.name : "" }}                {{                  detail.parameters?.info?.name                    ? detail.parameters.info.name                    : ""                }}              </div>              <div class="col-md-1">                <h6 class="colorGris right">                  {{                    utilService.formatDate(detail.creation_date)                      | date : "short"                  }}                </h6>              </div>            </div>          </mat-expansion-panel-header>          <div class="col-md-12">            <mat-tab-group              *ngIf="                detail?.parameters?.info?.lstInSnippets ||                detail?.parameters?.info?.lstOutSnippets              "            >              <mat-tab                label="{{ \'label.new_content\' | translate }}: {{                  detail?.parameters?.info?.lstInSnippets.length                }}"                *ngIf="detail?.parameters?.info?.lstInSnippets"              >                <div class="margin10"></div>                <div                  class="row container-fluid"                  *ngFor="                    let snip of detail.parameters.info.lstInSnippets;                    let i = index                  "                >                  <div class="col-md-12 colorGris">                    <!-- <flag-icon country="{{snip?.country?.tag}}" squared class="espDer5"                                title="{{snip?.country?.name}}"></flag-icon>-->                    <img                      [src]="utilService.checkFlag(snip?.country?.tag)"                      [width]="utilService.flagWith"                      [height]="utilService.flagHeight"                      alt="{{ snip?.country?.name }}"                      class="margin3"                      onerror="this.src=\'../../../../assets/img/broken.jpg\'"                    />                    <i                      class="las la-image espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'images\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <i                      class="las la-search espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'web\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <i                      class="las la-newspaper espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'news\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <mat-chip                      color="accent"                      class="backgorundPrincipal colorBlanco heightAuto"                    >                      KW: {{ snip?.keyword?.word }}</mat-chip                    >                    {{ "label.page" | translate }}: {{ snip?.page }} -                    {{ "label.position" | translate }}: {{ snip?.position }} -                    <cite class="gs-url">{{ snip?.domain }}</cite>                  </div>                  <div class="col-md-12">                    <a                      class="gs-title"                      target="_blank"                      href="{{ snip?.link }}"                      >{{ snip?.tittle }}</a                    >                  </div>                  <div class="col-md-12">                    <span class="gs-content">{{ snip?.snippet }}</span>                  </div>                  <div class="col-md-12">                    <mat-chip                      color="accent"                      *ngFor="let url of snip.trackingWords"                    >                      <span [innerHTML]="url.feelingObj | feelingColors"></span>                      {{ url.word }}                    </mat-chip>                  </div>                  <div class="margin10"></div>                </div>              </mat-tab>              <mat-tab                label="{{ \'label.out_content\' | translate }}: {{                  detail?.parameters?.info?.lstOutSnippets.length                }}"                *ngIf="detail?.parameters?.info?.lstOutSnippets"              >                <div class="margin10"></div>                <div                  class="row container-fluid"                  *ngFor="                    let snip of detail.parameters.info.lstOutSnippets;                    let i = index                  "                >                  <div class="col-md-12 colorGris">                    <!--<flag-icon country="{{snip?.country?.tag}}" squared class="espDer5"                               title="{{snip?.country?.name}}"></flag-icon>-->                    <img                      [src]="utilService.checkFlag(snip?.country?.tag)"                      [width]="utilService.flagWith"                      [height]="utilService.flagHeight"                      alt="{{ snip?.country?.name }}"                      class="margin3"                      onerror="this.src=\'../../../../assets/img/broken.jpg\'"                    />                    <i                      class="las la-image espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'images\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <i                      class="las la-search espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'web\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <i                      class="las la-newspaper espDer15 colorPrincipal"                      *ngIf="snip?.typeSearch === \'news\'"                      title="{{                        \'list.scanner.type.\' + snip?.typeSearch | translate                      }}"                    ></i>                    <mat-chip                      color="accent"                      class="backgorundPrincipal colorBlanco heightAuto"                    >                      KW: {{ snip?.keyword?.word }}</mat-chip                    >                    {{ "label.page" | translate }}: {{ snip?.page }} -                    {{ "label.position" | translate }}: {{ snip?.position }} -                    <cite class="gs-url">{{ snip?.domain }}</cite>                  </div>                  <div class="col-md-12">                    <a                      class="gs-title"                      target="_blank"                      href="{{ snip?.link }}"                      >{{ snip?.tittle }}</a                    >                  </div>                  <div class="col-md-12">                    <span class="gs-content">{{ snip?.snippet }}</span>                  </div>                  <div class="col-md-12">                    <mat-chip                      color="accent"                      *ngFor="let url of snip.trackingWords"                    >                      <span [innerHTML]="url.feelingObj | feelingColors"></span>                      {{ url.word }}                    </mat-chip>                  </div>                  <div class="margin10"></div>                </div>              </mat-tab>            </mat-tab-group>          </div>          <div            class="col-md-12"            *ngIf="              detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||              detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||              detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||              detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED            "          >            <div class="row">              <div class="col-md-2" *ngIf="isAdmin">                <p>                  <strong>{{ "profile.client" | translate }}: </strong>                  {{ detail?.parameters?.client_name }}                </p>              </div>              <div class="col-md-10">                <strong                  >{{ "label.impulse.keywords_selected" | translate }}                </strong>                <mat-chip-list                  aria-label="Fish selection"                  placeholder="{{                    \'label.impulse.keywords_selected\' | translate                  }}"                >                  <mat-chip                    title="{{ \'label.impulse.keywords_selected\' | translate }}"                  >                    <span class="colorPrincipal">{{                      detail?.parameters?.keyword?.word                    }}</span></mat-chip                  >                </mat-chip-list>              </div>            </div>            <div class="row">              <div                class="col-md-4"                *ngIf="detail?.parameters?.estimated_publish"              >                <p>                  <strong                    >{{ "label.impulse.start_month" | translate }}:                  </strong>                  {{  utilService.formatDate(detail?.parameters?.estimated_publish)  | date : "MM/yyyy"  }}                </p>              </div>              <div class="col-md-4" *ngIf="detail?.parameters?.publish_date">                <p>                  <strong                    >{{ "label.impulse.publish_date" | translate }}:                  </strong>                  {{  utilService.formatDate(detail?.parameters?.publish_date)  | date  }}                        </p>              </div>              <div class="col-md-4" *ngIf="detail?.parameters?.publish_link">                <p>                  <strong                    >{{ "label.impulse.tittle_url" | translate }}:                  </strong>                  <a                    href="{{ detail?.parameters?.publish_link }}"                    target="_blank"                    >{{                      utilService.onlyDomain(detail?.parameters?.publish_link)                    }}                  </a>                </p>              </div>            </div>          </div>          <div class="col-md-12" *ngIf="detail?.typeObj.NEW_CLIENT_SUSCRIPTION">            <div class="row">              <div class="col-md-5 centrado">                <i class="las la-user-circle colorPrincipal la-5x"></i>              </div>              <div class="col-md-7">                <p>                  <strong>{{ "profile.client" | translate }}: </strong                  >{{ detail.parameters.client_name }}                </p>                <p>                  <strong>{{ "label.email" | translate }}: </strong                  >{{ detail.parameters.client_email }}                </p>                <p>                  <strong>{{ "title.user_payment" | translate }}: </strong>                  <span                    class=""                    [innerHTML]="                      detail.parameters?.payment_method | paymentsMethods                    "                  ></span>                  {{                    "label.payment_" + detail.parameters?.payment_method                      | translate                  }}                </p>                <p>                  <strong>{{ "label.plan" | translate }}: </strong                  >{{ detail.parameters.plan }}                </p>                <a (click)="goClients()" class="third after reduceFont"                  ><i                    class="las la-id-card la-2x colorPrincipal espDer15"                    title="{{ \'message.go_clients\' | translate }}"                  ></i                  >{{ "message.go_clients" | translate }}                </a>              </div>            </div>          </div>          <div class="row centrado margin10">            <!-- go to one shot scanner-->            <a              (click)="checkScanner(\'one_shot\', detail.parameters.uuidScanner)"              class="third after reduceFont"              *ngIf="                detail?.typeObj?.ONE_SHOT_STARTING_SCANNER ||                detail?.typeObj?.ONE_SHOT_FINISHED_SCANNER              "              ><i                class="las la-camera colorPrincipal la-2x espDer15"                title="{{ \'title.scanner_one\' | translate }}"              ></i>              {{ "message.go_scan" | translate }}            </a>            <!-- go to monitor scanner-->            <a              (click)="                checkScanner(\'monitor\', detail.parameters.info.uuidScanner)              "              class="third after reduceFont"              *ngIf="                detail?.typeObj?.RECURRENT_STARTING_SCANNER ||                detail?.typeObj?.RECURRENT_NEW_AND_LEAVING_CONTENT ||                detail?.typeObj?.RECURRENT_CONFIGURATION_UPDATED              "              ><i                class="las la-layer-group colorPrincipal la-2x espDer15"                title="{{ \'title.monitor\' | translate }}"              ></i>              {{ "message.go_scan" | translate }}            </a>            <!-- go to transform scanner-->            <a              (click)="checkScanner(\'transform\', detail.parameters.uuidScanner)"              class="third after reduceFont"              *ngIf="                detail?.typeObj?.TRANSFORM_STARTING_SCANNER ||                detail?.typeObj?.TRANSFORM_CONFIGURATION_UPDATED              "              ><i                class="las la-sync colorPrincipal la-2x espDer15"                title="{{ \'title.transform\' | translate }}"              ></i              >{{ "message.go_scan" | translate }}            </a>            <!-- go to transform scanner 2-->            <a              (click)="                checkScanner(\'transform\', detail.parameters.info.uuidScanner)              "              class="third after reduceFont"              *ngIf="detail?.typeObj?.TRANSFORM_NEW_AND_LEAVING_CONTENT"              ><i                class="las la-sync colorPrincipal la-2x espDer15"                title="{{ \'title.transform\' | translate }}"              ></i              >{{ "message.go_scan" | translate }}            </a>            <!-- go to impulse-->            <a              (click)="goImpulse(detail.parameters.uuidScanner)"              class="third after reduceFont"              *ngIf="                detail?.typeObj?.TRANSFORM_IMPULSE_WAITING_APPROVE ||                detail?.typeObj?.TRANSFORM_IMPULSE_APPROVED ||                detail?.typeObj?.TRANSFORM_IMPULSE_REJECTED ||                detail?.typeObj?.TRANSFORM_IMPULSE_PUBLISHED              "              ><i                class="las la-sort-amount-up-alt colorPrincipal la-2x espDer15"                title="{{ \'menu.impulse\' | translate }}"              ></i              >{{ "message.go_impulse" | translate }}:              {{ detail.parameters.client_name }}            </a>          </div>        </mat-expansion-panel>      </div>    </div>  </div>  <div class="col-md-12 centrado paddingBottom50 paddingTop25">    <jw-pagination      [items]="filteredNotification"      (changePage)="onChangePage($event)"      [maxPages]="5"      [pageSize]="15"    ></jw-pagination>  </div>  <div    class="col-md-12 paddingBottom50 paddingTop25"    *ngIf="      (allNotification && allNotification.length === 0) ||      filteredNotification.length === 0    "  >    {{ "message.no_notification" | translate }}  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActiveLicencesComponent', 'selector': 'app-active-licences'},{'name': 'AddItemComponent', 'selector': 'app-add-item'},{'name': 'AdvaceReportComponent', 'selector': 'app-advace-report'},{'name': 'AlertScannersComponent', 'selector': 'app-alert-scanners'},{'name': 'AlertSectionsComponent', 'selector': 'app-alert-sections'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApproveImpulseComponent', 'selector': 'app-approve-impulse'},{'name': 'BaseReportComponent', 'selector': 'app-base-report'},{'name': 'CallYouComponent', 'selector': 'app-call-you'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'CheckoutCartComponent', 'selector': 'app-checkout-cart'},{'name': 'ChoosePlanComponent', 'selector': 'app-choose-plan'},{'name': 'ClientBillComponent', 'selector': 'app-client-bill'},{'name': 'ClientsComponent', 'selector': 'app-clients'},{'name': 'CommentHistoryComponent', 'selector': 'app-comment-history'},{'name': 'CommentScannerComponent', 'selector': 'app-comment-scanner'},{'name': 'ConfigReportComponent', 'selector': 'app-config-report'},{'name': 'ConfigScannerComponent', 'selector': 'app-config-scanner'},{'name': 'ConfirmChangeComponent', 'selector': 'app-confirm-change'},{'name': 'ConfirmScannerComponent', 'selector': 'app-confirm-scanner'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContentModalComponent', 'selector': 'app-content-modal'},{'name': 'CookiesComponent', 'selector': 'app-cookies'},{'name': 'CustomCheckoutComponent', 'selector': 'app-custom-checkout'},{'name': 'CustomPlanComponent', 'selector': 'app-custom-plan'},{'name': 'DashAdminComponent', 'selector': 'app-dash-admin'},{'name': 'DashboardScannerComponent', 'selector': 'app-dashboard-scanner'},{'name': 'DashReportComponent', 'selector': 'app-dash-report'},{'name': 'DeindexingComponent', 'selector': 'app-deindexing'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DynamicDisplayComponent', 'selector': 'app-dynamic-display'},{'name': 'DynamicFormComponent', 'selector': 'app-dynamic-form'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'FailComponent', 'selector': 'app-fail'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FileInputComponent', 'selector': 'app-file-input'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FinalTransferComponent', 'selector': 'app-final-transfer'},{'name': 'FinalURLComponent', 'selector': 'app-final-url'},{'name': 'FirstTimeComponent', 'selector': 'app-first-time'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterReportComponent', 'selector': 'app-footer-report'},{'name': 'ForbiddenWordsComponent', 'selector': 'app-forbidden-words'},{'name': 'ForgotKeyComponent', 'selector': 'app-forgot-key'},{'name': 'GlobalViewComponent', 'selector': 'app-global-view'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderReportComponent', 'selector': 'app-header-report'},{'name': 'HelpPageComponent', 'selector': 'app-help-page'},{'name': 'HistoryAuditUserComponent', 'selector': 'app-history-audit-user'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpulseComponent', 'selector': 'app-impulse'},{'name': 'InfoClientsComponent', 'selector': 'app-info-clients'},{'name': 'KeywordTableComponent', 'selector': 'app-keyword-table'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageNewsComponent', 'selector': 'app-manage-news'},{'name': 'ModalBillingComponent', 'selector': 'app-modal-billing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewAccountComponent', 'selector': 'app-new-account'},{'name': 'NewEditClientComponent', 'selector': 'app-new-edit-client'},{'name': 'NewEditDeindexingComponent', 'selector': 'app-new-edit-deindexing'},{'name': 'NewEditForbiddenWordsComponent', 'selector': 'app-new-edit-forbidden-words'},{'name': 'NewEditImpulseComponent', 'selector': 'app-new-edit-impulse'},{'name': 'NewEditPlanComponent', 'selector': 'app-new-edit-plan'},{'name': 'NewEditTrackingwordsComponent', 'selector': 'app-new-edit-trackingwords'},{'name': 'NewEditUserComponent', 'selector': 'app-new-edit-user'},{'name': 'NewKeyComponent', 'selector': 'app-new-key'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'PaymentsBillsComponent', 'selector': 'app-payments-bills'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PoliticsModalComponent', 'selector': 'app-politics-modal'},{'name': 'RedirectPageComponent', 'selector': 'app-redirect-page'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResultReportComponent', 'selector': 'app-result-report'},{'name': 'ResultScannerComponent', 'selector': 'app-result-scanner'},{'name': 'ScannerComponent', 'selector': 'app-scanner'},{'name': 'ScannerReportComponent', 'selector': 'app-scanner-report'},{'name': 'SelectDateComponent', 'selector': 'app-select-date'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SiteComponent', 'selector': 'app-site'},{'name': 'SuccessComponent', 'selector': 'app-success'},{'name': 'SuccessDemoComponent', 'selector': 'app-success-demo'},{'name': 'TableTrackingProgressComponent', 'selector': 'app-table-tracking-progress'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'TrackingDeindexingComponent', 'selector': 'app-tracking-deindexing'},{'name': 'TrackingwordsComponent', 'selector': 'app-trackingwords'},{'name': 'TransformSectionComponent', 'selector': 'app-transform-section'},{'name': 'UnsubscribeComponent', 'selector': 'app-unsubscribe'},{'name': 'UserConfigComponent', 'selector': 'app-user-config'},{'name': 'UsersComponent', 'selector': 'app-users'},{'name': 'VerifiedEmailComponent', 'selector': 'app-verified-email'},{'name': 'ViewDeindexingComponent', 'selector': 'app-view-deindexing'}];
+    var DIRECTIVES = [{'name': 'OnlynumberDirective', 'selector': '[numbersOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'NotificationsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NotificationsComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

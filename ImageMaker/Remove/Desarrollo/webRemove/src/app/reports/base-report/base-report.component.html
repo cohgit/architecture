@@ -1,0 +1,15 @@
+<h2 mat-dialog-title><i class="las la-file-pdf colorGris espDer5"></i>{{'title.report_scanner' | translate}}</h2>
+<div mat-dialog-content >
+  <div class="container-fluid  margin10" id="toExport">
+    <app-header-report [tittle]="tittle"></app-header-report>
+    <app-scanner-report *ngIf="info?.type?.scan" [infoScan]="info.scan"  [infoDash]="info.dashboard"
+                        [infoResults]="info.filters"></app-scanner-report>
+    <app-footer-report></app-footer-report>
+  </div>
+</div>
+
+<mat-dialog-actions class="centrado">
+  <a mat-dialog-close tabindex="-1" class="third after colorGris"> {{'button.close' | translate}}</a>
+  <button class="glow-on-hover espIz15"  (click)="download('removeReport_')"
+          tabindex="1" >{{'button.download' | translate}}</button>
+</mat-dialog-actions>

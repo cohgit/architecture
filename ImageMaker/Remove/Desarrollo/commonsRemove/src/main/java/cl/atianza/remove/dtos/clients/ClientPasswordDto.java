@@ -1,0 +1,63 @@
+package cl.atianza.remove.dtos.clients;
+
+import java.time.LocalDateTime;
+
+import cl.atianza.remove.dtos.AbstractDto;
+@Deprecated
+public class ClientPasswordDto extends AbstractDto {
+	private Long id_client;
+	private String password;
+	private LocalDateTime creation_date;
+	private LocalDateTime expiration_date;
+	private boolean active;
+	
+	public ClientPasswordDto() {
+		super();
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public Long getId_client() {
+		return id_client;
+	}
+
+	public void setId_client(Long id_client) {
+		this.id_client = id_client;
+	}
+
+	public LocalDateTime getCreation_date() {
+		return creation_date;
+	}
+
+	public void setCreation_date(LocalDateTime creation_date) {
+		this.creation_date = creation_date;
+	}
+
+	public LocalDateTime getExpiration_date() {
+		return expiration_date;
+	}
+
+	public void setExpiration_date(LocalDateTime expiration_date) {
+		this.expiration_date = expiration_date;
+	}
+
+	@Override
+	public String toString() {
+		return "ClientPasswordDto [id_client=" + id_client + ", password=" + password + ", creation_date="
+				+ creation_date + ", expiration_date=" + expiration_date + ", active=" + active + "]";
+	}
+}
