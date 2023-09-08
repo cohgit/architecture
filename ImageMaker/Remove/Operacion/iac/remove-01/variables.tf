@@ -10,3 +10,7 @@ variable "dev_vpc_id" {
 }
 variable "dev_subnet_id" {
 }
+variable "prd_vpc_id" {
+}
+variable "prd_subnet_id" {
+}
