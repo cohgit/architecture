@@ -20,6 +20,22 @@ provider "aws" {
     }
   }
 }
+## Accesos IP Publica
+
+variable "cidr_blocks" {
+    default = [
+        # Cesar Ogalde
+        "186.104.185.166/32",
+        "45.232.32.201/32",
+
+        # Eduardo Leal
+        "190.82.204.22/32",
+
+        #ImageMaker
+        "186.10.244.222/32"
+
+    ] #replace it with your ip address
+}
 
 # Instance Dev
 resource "aws_instance" "pivot_instance" {
@@ -43,16 +59,7 @@ resource "aws_security_group" "pivot_sg" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks = [
-        # Cesar Ogalde
-        "186.104.185.166/32",
-
-        # Eduardo Leal
-        "200.28.37.215/32",
-
-        #ImageMaker
-        "186.10.244.222/32"
-    ] #replace it with your ip address
+    cidr_blocks = var.cidr_blocks
   }
 
   #Outgoing traffic
@@ -65,6 +72,7 @@ resource "aws_security_group" "pivot_sg" {
   tags = {"Name" = "removepivot_sg","environment" = "dev"}
 }
 
+# Instance PRD
 resource "aws_instance" "pivot_instance_prd" {
     tags                                 = {"Name" = "remove01pivotprd","environment" = "prd"}
     associate_public_ip_address          = true
@@ -85,16 +93,7 @@ resource "aws_security_group" "pivot_sg_prd" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks = [
-        # Cesar Ogalde
-        "186.104.185.166/32",
-
-        # Eduardo Leal
-        "200.28.37.215/32",
-
-        #ImageMaker
-        "186.10.244.222/32"
-    ] #replace it with your ip address
+    cidr_blocks = var.cidr_blocks
   }
 
   #Outgoing traffic
@@ -105,4 +104,29 @@ resource "aws_security_group" "pivot_sg_prd" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {"Name" = "removepivotprd_sg","environment" = "prd"}
+}
+
+# aws_instance.bastionwinqa:
+resource "aws_instance" "bastionwinqa" {
+    ami                                  = "ami-064d05b4fe8515623"
+    instance_type                        = "t3.medium"
+    key_name                             = "KP-RemoveDev"
+    subnet_id                            = "subnet-0c52ec97d0c632f4d"
+    tags                                 = {
+        "Name" = "bastion win-QA", "environment" = "dev"
+    }
+    vpc_security_group_ids               = ["sg-09e3ecd6cb5394023"]
+}
+
+resource "aws_instance" "bastionwinprd" {
+    ami                                  = "ami-029bf1f640b75afe0"
+    instance_type                        = "t3.medium"
+    key_name                             = "KP-RemovePrd"
+    subnet_id                            = "subnet-0db66156498d90144"
+    tags                                 = {
+        "Name" = "bastion-windows-PRD","environment" = "prd"
+    }
+    tenancy                              = "default"
+    vpc_security_group_ids               = ["sg-09fc50089904548b3"]
+
 }
