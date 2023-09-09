@@ -16,7 +16,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      project     = "remove-01"
+      proyecto     = "remove-01"
     }
   }
 }
