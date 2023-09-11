@@ -130,3 +130,34 @@ resource "aws_instance" "bastionwinprd" {
     vpc_security_group_ids               = ["sg-09fc50089904548b3"]
 
 }
+
+resource "aws_ecs_cluster" "clusterqa" {
+    name  = "ClusterQA"  
+    service_connect_defaults {
+        namespace = "arn:aws:servicediscovery:us-east-1:253021683072:namespace/ns-5blbksxg7jrffz27"
+    }
+    configuration {
+      execute_command_configuration {
+        logging = "DEFAULT"
+      }
+    }
+    tags = {
+        "environment" = "dev"
+    }
+}
+
+# aws_ecs_cluster.produccion:
+resource "aws_ecs_cluster" "produccion" {
+    name               = "produccion"
+    tags = {
+        "environment" = "prd"
+    }
+    configuration {
+        execute_command_configuration {
+            logging = "DEFAULT"
+        }
+    }
+    service_connect_defaults {
+        namespace = "arn:aws:servicediscovery:us-east-1:253021683072:namespace/ns-gsyxx3amncpkavp4"
+    }
+}
