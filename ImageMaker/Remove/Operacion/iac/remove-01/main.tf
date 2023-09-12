@@ -363,3 +363,100 @@ resource "aws_cloudfront_distribution" "removesolutions" {
         ssl_support_method             = "sni-only"
     }
 }
+
+# aws_db_instance.db_prd:
+resource "aws_db_instance" "db_prd" {
+    allocated_storage                     = 200
+    auto_minor_version_upgrade            = true
+    availability_zone                     = "us-east-1f"
+    backup_retention_period               = 30
+    backup_window                         = "23:00-03:00"
+    ca_cert_identifier                    = "rds-ca-2019"
+    copy_tags_to_snapshot                 = true
+    customer_owned_ip_enabled             = false
+    db_name                               = "remove_prd"
+    db_subnet_group_name                  = "default-vpc-0b54e6ccfbaa7ef81"
+    delete_automated_backups              = true
+    deletion_protection                   = false
+    enabled_cloudwatch_logs_exports       = [
+        "postgresql",
+        "upgrade",
+    ]
+    engine                                = "postgres"
+    iam_database_authentication_enabled   = false
+    identifier                            = "prod-02"
+    instance_class                        = "db.m5.2xlarge"
+    iops                                  = 5000
+    kms_key_id                            = "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe"
+    license_model                         = "postgresql-license"
+    maintenance_window                    = "sat:03:00-sat:07:00"
+    max_allocated_storage                 = 0
+    monitoring_interval                   = 0
+    multi_az                              = true
+    network_type                          = "IPV4"
+    option_group_name                     = "default:postgres-13"
+    parameter_group_name                  = "default.postgres13"
+    performance_insights_enabled          = false
+    performance_insights_retention_period = 0
+    port                                  = 5432
+    publicly_accessible                   = false
+    skip_final_snapshot                   = true
+    storage_encrypted                     = true
+    storage_throughput                    = 0
+    storage_type                          = "io1"
+    tags = {
+        "environment" = "prd"
+    }
+    username                              = "adminprd"
+    vpc_security_group_ids                = [
+        "sg-03f82adbf2af87dd1",
+        "sg-07fb58035f911f19f",
+    ]
+}
+
+# aws_db_instance.db_qa:
+resource "aws_db_instance" "db_qa" {
+    allocated_storage                     = 100
+    auto_minor_version_upgrade            = true
+    availability_zone                     = "us-east-1c"
+    backup_retention_period               = 7
+    backup_window                         = "08:30-09:00"
+    ca_cert_identifier                    = "rds-ca-2019"
+    copy_tags_to_snapshot                 = true
+    customer_owned_ip_enabled             = false
+    db_subnet_group_name                  = "default-vpc-0ba0c20d6f262d95e"
+    delete_automated_backups              = true
+    deletion_protection                   = false
+    enabled_cloudwatch_logs_exports       = []
+    engine                                = "postgres"
+    iam_database_authentication_enabled   = false
+    identifier                            = "remove-qa"
+    instance_class                        = "db.m5.xlarge"
+    iops                                  = 0
+    kms_key_id                            = "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe"
+    license_model                         = "postgresql-license"
+    maintenance_window                    = "sun:07:57-sun:08:27"
+    max_allocated_storage                 = 0
+    monitoring_interval                   = 0
+    multi_az                              = false
+    network_type                          = "IPV4"
+    option_group_name                     = "default:postgres-13"
+    parameter_group_name                  = "default.postgres13"
+    performance_insights_enabled          = false
+    performance_insights_retention_period = 0
+    port                                  = 5432
+    publicly_accessible                   = true
+    skip_final_snapshot                   = true
+    storage_encrypted                     = true
+    storage_throughput                    = 0
+    storage_type                          = "gp2"
+    tags = {
+        "environment" = "dev"
+    }
+    username                              = "devadmin"
+    vpc_security_group_ids                = [
+        "sg-01d6d2e53d548a1bf",
+        "sg-02972ab7dfd6a8c8e",
+        "sg-0700dbd68348d177b",
+    ]
+}
