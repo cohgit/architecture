@@ -138,7 +138,7 @@ resource "aws_db_instance" "db_prd" {
     maintenance_window                    = "sat:03:00-sat:07:00"
     max_allocated_storage                 = 0
     monitoring_interval                   = 0
-    multi_az                              = true
+    multi_az                              = false
     network_type                          = "IPV4"
     performance_insights_enabled          = false
     performance_insights_retention_period = 0
