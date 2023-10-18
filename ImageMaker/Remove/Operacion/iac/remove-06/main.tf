@@ -75,11 +75,11 @@ resource "aws_kms_key" "kmskey" {
 }
 
 resource "aws_rds_export_task" "rdss3export" {
-  export_task_identifier = "dbs3exportv2"
+  export_task_identifier = "dbs3exportv-2023-10-17-23-11"
   source_arn             = "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-10-17-23-11"
   s3_bucket_name         = aws_s3_bucket.s3bck.id
   iam_role_arn           = aws_iam_role.iamrole.arn
   kms_key_id             = aws_kms_key.kmskey.arn
-  export_only            = ["database"]
-  s3_prefix              = "remove/db"
+  #export_only            = ["prod-02"]
+  s3_prefix              = "2023-10-17/23-11"
 }
