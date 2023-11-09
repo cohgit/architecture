@@ -1,0 +1,14 @@
+# Remove Services Artifact Properties
+port: 4600
+restPath: remove/api/rest
+
+loginRetries: 999
+defaultTokenDuration: 9999
+
+# If uses https useSecure is true, if use http is false
+useSecure: false
+
+# Security keystore path
+secureKey: /root/removews/config/security/removews-certificate.jks
+# Security keystore password
+securePassword: r3m0v3s0lut10n52022

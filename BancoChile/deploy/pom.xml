@@ -1,0 +1,53 @@
+<project>
+    <!-- Other project configurations -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cl.bancochile.plataformacomercial.arquitectura.deploys</groupId>
+    <artifactId>bch-deploy</artifactId>
+    <version>1.1.0</version>
+    <properties>
+        <weblogic-maven-plugin.version>10.3.6.0</weblogic-maven-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle.weblogic</groupId>
+            <artifactId>weblogic-maven-plugin</artifactId>
+            <version>${weblogic-maven-plugin.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Configure the WebLogic Maven Plugin for deployment -->
+            <plugin>
+                <groupId>com.oracle.weblogic</groupId>
+                <artifactId>weblogic-maven-plugin</artifactId>
+                <version>${weblogic-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- WebLogic server connection settings -->
+                    <adminurl>t3://${deploy.server.ip}:${deploy.server.port}</adminurl>
+                    <user>${deploy.server.user}</user>
+                    <password>${deploy.server.pass}</password>
+                    <upload>true</upload>
+                    <action>deploy</action>
+                    <remote>true</remote>
+                    <verbose>true</verbose>
+                    <!-- Deployment settings -->
+                    <name>shared-lib-aop-war</name>
+                    <source>../assets/shared-lib-aop-war-1.0.0.war</source> <!-- Path to your WAR file -->
+                    <targets>${deploy.server.cluster}</targets>   
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Other project configurations -->
+</project>

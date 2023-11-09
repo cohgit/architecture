@@ -1,0 +1,3 @@
+# Remove Engine Artifact Properties
+port: 4601
+restPath: remove/api/engine

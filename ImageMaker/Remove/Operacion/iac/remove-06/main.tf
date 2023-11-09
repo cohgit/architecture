@@ -37,7 +37,16 @@ resource "aws_iam_role" "iamrole" {
         Principal = {
           Service = "export.rds.amazonaws.com"
         }
+      },      
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Sid    = ""
+        Principal = {
+          Service = "glue.amazonaws.com"
+        }
       },
+
     ]
   })
 }
@@ -75,11 +84,24 @@ resource "aws_kms_key" "kmskey" {
 }
 
 resource "aws_rds_export_task" "rdss3export" {
-  export_task_identifier = "dbs3exportv-2023-10-17-23-11"
-  source_arn             = "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-10-17-23-11"
+  export_task_identifier = "prod-02-2023-10-19-23-11"
+  source_arn             = "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-10-19-23-11"
   s3_bucket_name         = aws_s3_bucket.s3bck.id
   iam_role_arn           = aws_iam_role.iamrole.arn
   kms_key_id             = aws_kms_key.kmskey.arn
   #export_only            = ["prod-02"]
-  s3_prefix              = "2023-10-17/23-11"
+  #s3_prefix              = "2023-10-17/23-11"
+}
+
+resource "aws_glue_catalog_database" "remove_catalog_database" {
+  name = "remove_catalog_database"
+}
+
+resource "aws_glue_crawler" "example" {
+  database_name = aws_glue_catalog_database.remove_catalog_database.name
+  name          = "remove_crawler"
+  role          = aws_iam_role.iamrole.arn
+  s3_target {
+    path = "s3://${aws_s3_bucket.s3bck.bucket}"
+  }
 }
