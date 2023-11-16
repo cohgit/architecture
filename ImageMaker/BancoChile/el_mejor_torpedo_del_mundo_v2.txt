@@ -1,0 +1,137 @@
+# Usuarios para ambiente QA
+
+	gzambrano / Venta99 (11896303-2)
+	CBILBAO / Motor75 (Jefatura)
+	prios / Venta99 (14202208-7) ---Clave incorrecta
+	sherrerav / Venta81 (TIENE REQUERIMIENTOS) (14527092-8)
+	cvillegas / Banco01 (13293552-1) *Operaciones*
+	alarreaj / Venta99 (8140070-9) *Inversiones*
+	ypenaa / Venta75
+	Cburatti / Banco01 *Inversiones*
+	rmoris / Venta99
+	bfernandez / Banco2108 *Banca Personas* ----- oportunidades persona
+	evlajovicho / Venta99 (14229211-4) *Banca Preferente*
+	vespinozag / Venta75 (9121594-2) *Contact Center Bca. Pref.*
+	cmaximo / Venta99 *Gerente Sucursal*
+	virodriguezb / Banco01 ---Clave incorrecta
+	jcontard / Banco99 *Gerente Area Bca.Privada y Red Edw.*
+	narenas / Venta99 (10823461-K) *Banca Preferente*
+	ccornejoc / Venta99 (13501770-1) *Banca personas*
+	criffo / Banco2108 () *Jefe Validacion Datos Oper.*
+	msmedinaa /
+	racevedos / Banco01 *Banca personas* ----- oportunidades persona
+	#--- Usuarios para ver los requerimientos y oportunidades ---
+	evlajovicho / Venta99
+	alarreaj / Venta99
+	#---- Privados Jumanji ----
+	pbruna / Jumanji2022 (10298823-K)
+	ccastilloi / Jumanji2022 (10213213-0) *tambien sirve para taller*
+	possa / Jumanji2022 (11479934-3)
+	hgutierrez / Jumanji2022 (12162121-5)
+	masilvab / Jumanji2022 (17242605-0) *Banca Personas*
+	rfuenzalidah / Banco01 -- 
+	arivera / AP7Jumanji23 (12.620.154-0)
+	MOLMEDO  / AP7Jumanji22
+	clobosv / Banco01 (14.144.536-7) *usuario para taller*
+	#---- Portabilidad ----
+	iabrito / Portab99
+
+# Rut para Representantes / Avales etc
+	10181788-1
+	9.959.785-2
+	16.104.372-9
+	15899041-5
+
+# Rut jefe de plataforma
+	14028893-4 
+
+# Rut cliente empresa
+	76.978.380-6 IMPORTADORA EMPRESA
+	76.577.450-0
+	76.822.690-3
+	
+# Rut clientes
+	5.775.940-2 Banca Privada
+	8.773.297-5 Banca Privada
+	8.619.499-6 Banca Privada
+	10.000.424-0 Banca Privada
+	9.572.115-K Banca Tradicional
+	6.929.395-6 Banca Corporativa
+	11.648.890-6 Banca Personas
+
+
+# Backend
+## Weblogic credenciales
+Consola de weblogic [aquí](http://localhost:7001/console)
+* User: weblogic
+* Password: welcome1
+/u01/oracle/WLS/user_projects/domains/xyz_domain/
+
+
+## Levantar Backend (TAURUS)
+
+* Por plugin: `Clean->Package->Deploy` (deploy de unknown)
+* Por comando:  `mvn clean package -DskipTests com.oracle.weblogic:weblogic-maven-plugin:10.3.6.0:deploy`
+
+## Resolver falta de dependencias
+* Si faltan librerías (lib que tengan .war): Buscarlas en nexus e intalarlas segun CONFLUENCE.
+* Si faltan catalogos : buscarlas en BITBUCKET e instalarlas en el `C:\u04\Admin\domains\DV_PLAT_WLS12c_Domain\config-internet-banco\catalogos`
+
+# Frontend
+## Levantar front (Los pasos están en CONFLUENCE):
+1. Crear rama (En algunos repos RELEASE es QA, MASTER es PROD, VERIFICAR PRIMERO)
+2. Copiar properties.json al proyecto (bch-properties)
+3. Cambiar usuario proxy.js
+4. `Bower update`
+5. `grunt build`
+6. `npm start`
+
+# Trabajo en Ramas GIT (develop: desarrollo, release: QA, master: producción)
+1. Crear rama desde Develop
+2. Hacer el desarrollo
+3. Crear plan de bamboo para la rama y ejecutarlo
+	* Si da error revisar logs. Normalmente son errores de SONARQ, revisar link en el log y corregir lo que pida.
+4. PR y merge a develop
+5. Correr plan de develop
+6. PR y merge a release
+7. Notificar a QA para hacer Deploy en QA (si es necesario)
+
+## Nomenclatura para Ramas de trabajo:
+Las ramas de desarrollo siguen esta nomenclatura: `Tipo de desarrollo / Jumanji / Codigo HU o Incidencia`
+donde `Tipo de desarrollo` puede ser feature, hotfix o bugfix y `Codigo HU o Incidencia` corresponde al codigo de Jira de la tarea,
+esto se hace para llevar trazabilidad.
+
+* Ejemplo: `hotfix/Jumanji/APC-3734`
+
+Importante: Para los commit se recomienda mencionar el `Codigo HU o Incidencia` para llevar trazabilidad.
+
+* Ejemplo: `AP-99109 - Se añade atributo a oportunidad`
+
+# Links de ayuda
+* [Taller de Productos QA](http://portalcomercial.qa.labchile.cl:8888/miadministracion-web/taller-productos/index.html#/home)
+* [Portal QA](http://portalcomercial.qa.labchile.cl:8888/login/logout/platcom)
+* [Nexus](http://nexus.bch.bancodechile.cl:8081/#browse/browse)
+* [Confluence Front](https://confluence.bch.bancodechile.cl:8443/pages/viewpage.action?spaceKey=PC&title=Setup+Front+2020)
+* [Confluence Back](https://confluence.bch.bancodechile.cl:8443/pages/viewpage.action?pageId=104919106)
+* [Bitbucket](http://bitbucket.bch.bancodechile.cl:7990/dashboard)
+
+
+# Comandos git para versionamiento de front
+
+mversion 1.12.0 -ntm
+git push
+git push --tag
+
+mversion 1.210.0-build.2 -ntm
+
+taurus-venta-empresas: 1.210.0-rc.2
+
+# Otros comandos git
+
+git stash -> guarda cambios temporalmente
+git stash pop -> recupera los cambios guardados temporalmente
+
+Credenciales de nexus
+User: Consulta_Nexus
+
+Pass: En4FtYo07ule

@@ -1,0 +1,140 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+#127.0.0.1	localhost
+#255.255.255.255	broadcasthost
+#::1             localhost
+200.14.165.86:8085  bamboo-cdn.bancochile.cl
+200.14.166.249  stash-cdn.bancochile.cl
+200.14.165.86:9002  sonar-cdn.bancochile.cl
+200.14.165.86:8081  nexus-cdn.bancochile.cl
+200.14.165.41:8090  confluence.bancochile.cl
+200.14.165.43:8080  jira.bancochile.cl
+200.14.166.117 pentaserver
+10.233.80.42 ent-sci-remedy
+#200.14.147.16 portalcomercial portalcomercial.bf.labchile.cl portalcomercial/miplataforma-web/home # BF
+ 
+#campannas
+200.14.164.198 d73r.bancochile.cl
+
+
+#Ambiente DEV
+10.241.244.122 pscldvociatpshdexepcome01.adb.sa-santiago-1.oraclecloud.com
+#Ambiente QA
+10.241.104.116 psclqaociatpshdexepcome01.adb.sa-santiago-1.oraclecloud.com
+
+#QA
+#200.14.169.120 portalcomercial.qa.labchile.cl
+#200.14.169.120	otd-priv #otd-qa
+10.241.67.175   portalcomercial.qa.labchile.cl  
+10.241.67.173	otd-priv #otd-qa
+
+152.139.147.114 lablnx448
+
+200.14.166.235	gw.interno-qa.bancochile.cl
+
+
+ 
+#CDLV
+#152.139.83.7 portalcomercial
+#LGVL
+#152.139.85.139 portalcomercial
+#------------------------------
+ 
+10.67.10.70 portalcomercial 
+ 
++127.0.0.1  localhost
+127.0.1.1   ccolina-GL553VD
+ 
+ 
+#---Requerio para prueba hacia qa----
+ 
+#127.0.0.1  otd-priv
+#127.0.0.1      osb.sb
+#--------------------------------------
+ 
+#200.14.166.247    otd-priv #desarrollo
+
+200.14.147.135   osb.sb
+#---------------------------------------
+ 
+#Spark
+152.139.49.95 bchapp635
+ 
+ 
+200.14.147.170     usbt
+200.14.166.20     d04r
+#200.14.166.139     iflexcore
+200.14.166.56   lablnx298
+200.14.166.56   portalcomercial.dev.labchile.cl
+200.14.166.72   lablnx297
+152.139.147.76  lablnx246
+200.14.169.121  portalcomercial.bf.labchile.cl
+
+10.241.244.122 pscldvociatpshdexepcome01.adb.sa-santiago-1.oraclecloud.com
+10.241.104.116 psclqaociatpshdexepcome01.adb.sa-santiago-1.oraclecloud.com
+ 
+127.0.0.1       localhost
+#152.139.84.49    osb.sb
+#200.14.166.208    osb.sb CENTRO DE NEGOCIOS
+#200.14.147.110    osb.sb
+ 
+ 
+200.14.147.121  osblocal
+200.14.166.139  flexml01
+200.14.147.121  flexml02
+ 
+200.14.166.106  lablnx313
+152.139.23.40   bchapp217
+#osb desarrollo
+#200.14.166.208  osb.sb
+#200.14.147.110  osb.sb
+#osb system test
+200.14.166.208  osb.sbtest
+#osb system QA
+200.14.147.110  osb.sbqa
+#osb BF
+200.14.147.250  osb.sbbf
+152.139.147.77  osb12.sb
+200.14.169.243  osb12.sbqa
+200.14.169.244  osb12.sbqa.lgvl
+152.139.146.184  otd-priv-qa  #qa
+200.14.169.121   otd-priv-bf  #bf
+#200.14.169.113   otd-priv-bf
+200.14.100.24          L134   u231   wasiplanet    wascrm          #SIT
+200.14.101.108  mpapp
+200.14.165.197  COLDVIEW-ECOMM
+200.14.140.170  login.qa.labchile.cl
+# 192.168.56.1  Adaptador
+ 
+10.40.20.220    qa-pc-wls12c-qa01-lgvl-priv
+ 
+#SIEBEL
+200.14.165.12    LTA20     lta20.labchile.cl    # Siebel QA 1
+200.14.165.45    LTA29     lta29.labchile.cl    # Siebel BF
+200.14.165.47    LTA30     lta30.labchile.cl    # Siebel QA FULL
+200.14.165.51    LTA32     lta32.labchile.cl    # Siebel Desarrollo
+200.14.166.215   LTA253    lta253.labchile.cl    # Siebel BF
+ 
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.1.83 host.docker.internal
+192.168.1.83 gateway.docker.internal
+200.14.147.19 bgri.wlgclientes12.ri
+ 
+#PROD PC - CDLV
+#152.139.83.7 portalcomercial
+#PROD PC - LGVL
+#152.139.85.139 portalcomercial
+
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
