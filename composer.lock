@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae62a541bce2204f07aeb0df19d4928d",
+    "content-hash": "bf9d07c1b190d0b797605196df64a4c4",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.286.1",
+            "version": "3.287.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f3276ecb6e5202452d4b64237e6dc1bc9d350ae6"
+                "reference": "06978bfc63111fccd78b364238bf214b4ade8d18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f3276ecb6e5202452d4b64237e6dc1bc9d350ae6",
-                "reference": "f3276ecb6e5202452d4b64237e6dc1bc9d350ae6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/06978bfc63111fccd78b364238bf214b4ade8d18",
+                "reference": "06978bfc63111fccd78b364238bf214b4ade8d18",
                 "shasum": ""
             },
             "require": {
@@ -151,62 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.286.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.287.0"
             },
-            "time": "2023-11-14T19:09:59+00:00"
-        },
-        {
-            "name": "codename/parquet",
-            "version": "v0.6.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codename-hub/php-parquet.git",
-                "reference": "6407bb1749786c59bcdb979e1d9b71ce6c0f8798"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codename-hub/php-parquet/zipball/6407bb1749786c59bcdb979e1d9b71ce6c0f8798",
-                "reference": "6407bb1749786c59bcdb979e1d9b71ce6c0f8798",
-                "shasum": ""
-            },
-            "require": {
-                "ext-bcmath": "*",
-                "ext-gmp": "*",
-                "ext-zlib": "*",
-                "nelexa/buffer": "^1.3",
-                "packaged/thrift": "^0.13.0",
-                "pear/math_biginteger": "^1.0",
-                "php": ">=7.3 <=8.1.99"
-            },
-            "require-dev": {
-                "phpunit/php-code-coverage": "^9.2",
-                "phpunit/phpunit": "^9.0"
-            },
-            "suggest": {
-                "ext-snappy": "Install/compile snappy extension to get support for snappy compression reading/writing"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "codename\\parquet\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Dargel",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Thrift-based PHP implementation for using the Apache Parquet format",
-            "support": {
-                "issues": "https://github.com/codename-hub/php-parquet/issues",
-                "source": "https://github.com/codename-hub/php-parquet/tree/v0.6.2"
-            },
-            "time": "2022-04-10T09:58:33+00:00"
+            "time": "2023-11-17T20:03:36+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -532,6 +479,60 @@
                 }
             ],
             "time": "2023-08-27T10:13:57+00:00"
+        },
+        {
+            "name": "jocoon/parquet",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jocoon/php-parquet.git",
+                "reference": "76f6fa07b07e725b5701f3b10bbea071b6a07e4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jocoon/php-parquet/zipball/76f6fa07b07e725b5701f3b10bbea071b6a07e4b",
+                "reference": "76f6fa07b07e725b5701f3b10bbea071b6a07e4b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "ext-gmp": "*",
+                "ext-zlib": "*",
+                "nelexa/buffer": "^1.3",
+                "packaged/thrift": "^0.13.0",
+                "pear/math_biginteger": "^1.0",
+                "php": ">=7.3 <=8.0.99"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^9.2",
+                "phpunit/phpunit": "^9.0"
+            },
+            "suggest": {
+                "ext-snappy": "Install/compile snappy extension to get support for snappy compression reading/writing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jocoon\\parquet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin",
+                    "email": "kevin@jocoon.de"
+                }
+            ],
+            "description": "Thrift-based PHP implementation for using the Apache Parquet format",
+            "support": {
+                "issues": "https://github.com/Jocoon/php-parquet/issues",
+                "source": "https://github.com/Jocoon/php-parquet/tree/v0.5.1"
+            },
+            "abandoned": "codename/parquet",
+            "time": "2021-11-10T15:55:17+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -957,25 +958,25 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.5.2",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66"
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
-                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.5-dev"
+                    "dev-main": "3.0-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1004,7 +1005,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.2"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.2"
             },
             "funding": [
                 {
@@ -1020,7 +1021,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-01-02T09:55:41+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

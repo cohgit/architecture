@@ -1,0 +1,1 @@
+SELECT * FROM remove.clients_plans WHERE active=true;
