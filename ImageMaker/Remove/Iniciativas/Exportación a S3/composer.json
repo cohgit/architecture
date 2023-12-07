@@ -1,5 +1,7 @@
 {
     "require": {
-        "aws/aws-sdk-php": "^3.286"
+        "aws/aws-sdk-php": "^3.286",
+        "codename/parquet": "^0.6.2"
     }
+
 }

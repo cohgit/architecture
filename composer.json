@@ -1,0 +1,6 @@
+{
+    "require": {
+        "jocoon/parquet": "^0.5.1",
+        "aws/aws-sdk-php": "^3.287"
+    }
+}
