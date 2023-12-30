@@ -32,6 +32,7 @@ resource "azurerm_subnet" "subnetdemo" {
   resource_group_name  = azurerm_resource_group.rg_demo.name
   virtual_network_name = azurerm_virtual_network.net_demo.name
   address_prefixes     = ["10.0.2.0/24"]
+  service_endpoints = ["Microsoft.Sql"]
   depends_on = [ azurerm_virtual_network.net_demo ]
 }
 
@@ -71,6 +72,18 @@ resource "azurerm_network_security_group" "nsg_demo" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "5985"
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
+  }
+
+    security_rule {
+    name                       = "HTTP"
+    priority                   = 1002
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = "80"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
@@ -147,7 +160,7 @@ resource "azurerm_mssql_server" "sql_server_demo" {
   name                         = "sql-server-demo-v2"
   resource_group_name          = azurerm_resource_group.rg_demo.name
   location                     = azurerm_resource_group.rg_demo.location
-  version                      = "12.0"
+  version                      = "19.0"
   administrator_login          = "sqladmin"
   administrator_login_password = "Password1234!"
 }
@@ -160,4 +173,10 @@ resource "azurerm_mssql_database" "db_sql_server_demo" {
   #max_size_gb                 = 250
   sku_name                    = "S0"
   depends_on = [ azurerm_mssql_server.sql_server_demo ]
+}
+
+resource "azurerm_mssql_virtual_network_rule" "sqlvnetrule" {
+  name                = "sql-net-rule-demo"
+  server_id = azurerm_mssql_server.sql_server_demo.id
+  subnet_id = azurerm_subnet.subnetdemo.id
 }
