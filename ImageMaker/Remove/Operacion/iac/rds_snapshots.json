@@ -1,0 +1,1419 @@
+{
+    "DBSnapshots": [
+        {
+            "DBSnapshotIdentifier": "backup17112022",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2022-11-17T20:26:55.370000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1b",
+            "VpcId": "vpc-0ba0c20d6f262d95e",
+            "InstanceCreateTime": "2022-11-07T18:28:55.336000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.7",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "manual",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:backup17112022",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-DGRY5FX5EGDHN35YNRZC7Q47TQ",
+            "TagList": [],
+            "OriginalSnapshotCreateTime": "2022-11-17T20:26:55.370000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "prod-02-07-11-2022",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2022-11-07T17:49:39.617000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1b",
+            "VpcId": "vpc-0ba0c20d6f262d95e",
+            "InstanceCreateTime": "2022-10-24T18:50:15.768000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.7",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "manual",
+            "Iops": 10000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:prod-02-07-11-2022",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-OYMJAGVHALQ5LMCEAS5I3ERJGY",
+            "TagList": [],
+            "OriginalSnapshotCreateTime": "2022-11-07T17:49:39.617000+00:00",
+            "SnapshotTarget": "region"
+        },
+        {
+            "DBSnapshotIdentifier": "prod-02-snapshot",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2022-11-17T21:59:53.478000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1b",
+            "VpcId": "vpc-0ba0c20d6f262d95e",
+            "InstanceCreateTime": "2022-11-07T18:28:55.336000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.7",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "manual",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:prod-02-snapshot",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-DGRY5FX5EGDHN35YNRZC7Q47TQ",
+            "TagList": [],
+            "OriginalSnapshotCreateTime": "2022-11-17T21:59:53.478000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-23-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-23T23:10:50.618000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-23-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-23T23:10:50.618000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-24-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-24T23:10:45.651000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-24-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-24T23:10:45.651000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-25-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-25T23:11:32.107000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-25-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-25T23:11:32.107000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-26-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-26T23:10:35.724000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-26-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-26T23:10:35.724000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-27-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-27T23:10:53.264000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-27-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-27T23:10:53.264000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-28-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-28T23:11:02.895000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-28-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-28T23:11:02.895000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-29-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-29T23:10:24.981000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-29-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-29T23:10:24.981000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-30-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-30T23:10:53.735000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-30-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-30T23:10:53.735000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2023-12-31-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-31T23:10:28.074000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-12-31-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-31T23:10:28.074000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-01-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-01T23:11:04.786000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-01-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-01T23:11:04.786000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-02-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-02T23:11:12.185000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-02-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-02T23:11:12.185000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-03-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-03T23:10:27.091000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-03-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-03T23:10:27.091000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-04-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-04T23:11:18.420000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-04-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-04T23:11:18.420000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-05-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-05T23:10:59.298000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-05-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-05T23:10:59.298000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-06-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-06T23:11:31.327000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-06-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-06T23:11:31.327000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-07-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-07T23:10:40.666000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-07-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-07T23:10:40.666000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-08-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-08T23:11:00.853000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-08-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-08T23:11:00.853000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-09-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-09T23:10:43.191000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-09-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-09T23:10:43.191000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-10-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-10T23:10:43.092000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-10-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-10T23:10:43.092000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-11-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-11T23:11:52.350000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-11-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-11T23:11:52.350000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-12-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-12T23:10:55.142000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-12-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-12T23:10:55.142000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-13-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-13T23:11:51.057000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-13-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-13T23:11:51.057000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-14-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-14T23:10:33+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-14-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-14T23:10:33+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-15-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-15T23:10:29.593000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-15-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-15T23:10:29.593000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-16-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-16T23:11:51.106000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-16-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-16T23:11:51.106000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-17-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-17T23:10:40.536000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-17-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-17T23:10:40.536000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-18-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-18T23:10:25.725000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-18-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-18T23:10:25.725000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-19-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-19T23:10:53.472000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-19-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-19T23:10:53.472000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-20-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-20T23:11:20.635000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-20-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-20T23:11:20.635000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-21-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-21T23:10:42.593000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-21-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-21T23:10:42.593000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-22-23-10",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-22T23:10:41.850000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-22-23-10",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-22T23:10:41.850000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "rds:prod-02-2024-01-23-23-11",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-23T23:11:01.385000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "automated",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2024-01-23-23-11",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-23T23:11:01.385000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "remove-prd-20240108",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2024-01-08T19:50:18.826000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "manual",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:remove-prd-20240108",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2024-01-08T19:50:18.826000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        },
+        {
+            "DBSnapshotIdentifier": "removeprod-202312261600",
+            "DBInstanceIdentifier": "prod-02",
+            "SnapshotCreateTime": "2023-12-26T15:01:25.870000+00:00",
+            "Engine": "postgres",
+            "AllocatedStorage": 200,
+            "Status": "available",
+            "Port": 5432,
+            "AvailabilityZone": "us-east-1f",
+            "VpcId": "vpc-0b54e6ccfbaa7ef81",
+            "InstanceCreateTime": "2022-11-17T22:05:29.154000+00:00",
+            "MasterUsername": "adminprd",
+            "EngineVersion": "13.10",
+            "LicenseModel": "postgresql-license",
+            "SnapshotType": "manual",
+            "Iops": 5000,
+            "OptionGroupName": "default:postgres-13",
+            "PercentProgress": 100,
+            "StorageType": "io1",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:253021683072:key/afe63c03-d033-40c2-9944-ac7477e6bffe",
+            "DBSnapshotArn": "arn:aws:rds:us-east-1:253021683072:snapshot:removeprod-202312261600",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ProcessorFeatures": [],
+            "DbiResourceId": "db-MRFWU4TXHRKWBM3UKJRCFOF65I",
+            "TagList": [
+                {
+                    "Key": "proyecto",
+                    "Value": "remove-01"
+                },
+                {
+                    "Key": "environment",
+                    "Value": "prd"
+                }
+            ],
+            "OriginalSnapshotCreateTime": "2023-12-26T15:01:25.870000+00:00",
+            "SnapshotTarget": "region",
+            "StorageThroughput": 0
+        }
+    ]
+}

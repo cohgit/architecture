@@ -128,7 +128,7 @@ resource "azurerm_windows_virtual_machine" "vm_demo" {
   name                = "vmdemo"
   resource_group_name = azurerm_resource_group.rg_demo.name
   location            = azurerm_resource_group.rg_demo.location
-  size                = "Standard_B2s"
+  size                = "Standard_B4ms"
   admin_username      = "adminuser"
   admin_password      = "P@$$w0rd1234!"
   network_interface_ids = [
@@ -145,6 +145,8 @@ resource "azurerm_windows_virtual_machine" "vm_demo" {
     version   = "latest"
   }
   depends_on = [ azurerm_network_interface_security_group_association.sg_nic_demo ]
+
+
 }
 
 # tarjeta de red
