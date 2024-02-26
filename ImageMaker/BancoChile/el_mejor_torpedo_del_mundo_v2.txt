@@ -133,5 +133,4 @@ git stash pop -> recupera los cambios guardados temporalmente
 
 Credenciales de nexus
 User: Consulta_Nexus
-
 Pass: En4FtYo07ule

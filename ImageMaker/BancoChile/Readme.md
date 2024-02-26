@@ -37,3 +37,27 @@ http://bitbucket.bch.bancodechile.cl:7990/projects/TC/repos/catalogo-api-connect
 
 Catalogo-endpoints-service
 http://bitbucket.bch.bancodechile.cl:7990/projects/TC/repos/catalogo-endpoints-services/browse
+
+
+
+Dependencias y ambientes necesarios para los componentes de Taurus , Orion y bch
+
+ln -s /Users/imagemaker/dev/bch/taurus-venta-empresas /Users/imagemaker/dev/bch/bch-venta-productos/vendor/
+
++-- node-v10.15.3 
++-- angular@1.3.20
++-- bower@1.8.8
++-- bower-nexus3-resolver@1.0.2
++-- grunt-karma@0.8.3
++-- grunt-cli@1.2.0
++-- grunt@0.4.5
++-- mversion@2.0.1
++-- npm@6.4.1
+
+npm install sin vpn
+npm install con vpn
+npm uninstall -g bower-nexus3-resolver
+npm install -g bower-nexus3-resolver@1.0.2
+npm install -g bower@1.8.8
+bower cache clean
+bower install

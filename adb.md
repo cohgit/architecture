@@ -77,8 +77,9 @@ R5CR50X9ZSK	device
 >adb -s 5200ccfae28a442f shell ip addr show wlan0
 
 ### connect to ip and port
->adb connect 192.168.1.87:5555
+>adb connect 192.168.1.91:5555
 >adb shell input keyevent KEYCODE_HOME
 
 ### view phone
->scrcpy -s 192.168.1.87:5555
+>scrcpy -s 192.168.1.91:5555
+>scrcpy -s 5200ccfae28a442f

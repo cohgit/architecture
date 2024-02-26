@@ -112,4 +112,8 @@ echo "Carga finalizada"
 Invoke-WebRequest -Uri 'https://download.microsoft.com/download/6/2/6/626e40a7-449e-418d-9726-33b523a1e336/SSMS-Setup-ENU.exe' -OutFile 'SSMS-Setup-ENU.exe'
 ```
 
-# Power BI Des
+# Usuarios
+1. agrega un usuario al sistema
+view
+1209@Fitit
+1. asigna rol en server
