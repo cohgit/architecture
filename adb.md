@@ -76,7 +76,7 @@ R5CR50X9ZSK	device
 ### view ip wlan
 >adb -s 5200ccfae28a442f shell ip addr show wlan0
 
-### connect to ip and port
+### connect to ip and port Antejardin (192.168.1.91)
 >adb connect 192.168.1.91:5555
 >adb shell input keyevent KEYCODE_HOME
 

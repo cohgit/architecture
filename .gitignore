@@ -1,8 +1,12 @@
 *.class
 .DS_Store
 
+
 # Local .terraform directories
 **/.terraform/*
 
 ## vendor php
 **/vendor/*
+ImageMaker/ControlDeGestion/csv/*.csv
+.DS_Store
+ImageMaker/ControlDeGestion/output/*.csv
