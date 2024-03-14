@@ -1,19 +1,27 @@
 from simple_salesforce import Salesforce
+import salesforce_reporting
 import requests
 import pandas as pd
 from io import StringIO
+import csv
+from collections import OrderedDict
 
 sf = Salesforce(password='Imit2020', username='benjamin.villanueva@imagemaker.com', security_token='6U9QeWPgoKRdPhakQyAISmHg')
-print(sf)
 sf_instance = 'https://imagemakersolutions.lightning.force.com/' #Your Salesforce Instance URL
 reportId = '00O6g0000070I19EAE' # add report id
-report_results = sf.restful('analytics/reports/{}'.format(reportId))
-#df = pd.DataFrame(report_results['records']).drop(columns='attributes')
-print(report_results)
+report = sf.restful('analytics/reports/{}'.format(reportId))
+parser = salesforce_reporting.ReportParser(report)
+parser.records()
+df = pd.DataFrame(report)
+print(df["attributes"]["reportName"])
 
-#export = '?isdtp=p1&export=1&enc=UTF-8&xf=csv'
-#sfUrl = sf_instance + reportId + export
-#response = requests.get(sfUrl, headers=sf.headers, cookies={'sid': sf.session_id})
-#download_report = response.content.decode('utf-8')
-#df1 = pd.read_csv(StringIO(download_report))
-#print (df1)
+print(len(df["factMap"]["T!T"]["rows"]))
+
+#for item in df["factMap"]["T!T"]["rows"]:
+#    print('---------------------')
+#    for cell in item["dataCells"]:
+#        if isinstance(cell["value"], OrderedDict):
+#            print(cell["label"],cell["value"]["amount"], cell["value"]["currency"] )
+#        else :
+#            print(cell["label"],cell["value"] )
+
