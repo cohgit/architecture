@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-04-20T16:51:58.350Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="Qxlm8MzRQMGALsB_JxCm" version="21.1.2" type="device" pages="5">
+<mxfile host="Electron" modified="2023-04-20T17:12:18.369Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="9pimwLLYSovr6m7CcytP" version="21.1.2" type="device" pages="5">
   <diagram id="YfYrUwuygHXuTw3quEls" name="Gitlab X">
     <mxGraphModel dx="2234" dy="483" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -613,94 +613,109 @@
           <mxGeometry x="185" y="550" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-16" value="Procesos CI/CD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="418" y="60" width="315" height="30" as="geometry" />
+          <mxGeometry x="48" y="664" width="315" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-17" value="Gestión de Código" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="105" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="709" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-18" value="Gestión de repositorios, ramas como git." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="107" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="711" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-19" value="Integración Continua&lt;br&gt;CI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="174" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="778" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-20" value="cuando el código cambia se compila, analiza, prueba e instala en un ambiente" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="176" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="780" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-21" value="Gestión de Artefactos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="247" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="851" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-22" value="los instalables (artefactos) deben quedar en un repositorio con sus dependencias" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="249" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="853" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-23" value="Entregas Continuas&lt;br&gt;CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="322" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="926" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-24" value="Cada compilación de artefactos deberán ser desplegados en cada ambiente de manera automática" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="324" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="928" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-25" value="Pruebas Automaticas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="397" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="1001" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-26" value="Pruebas ejecutadas en ambientes pre-propoductivo evaluar la calidad del artefacto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="399" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="1003" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-27" value="Desarrollo Continuo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="475" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="1079" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-28" value="Pasos requeridos para pasar de desarrollo a qa a staging a producción" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="477" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="1081" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-29" value="Monitoreo Continuo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="551" width="120" height="60" as="geometry" />
+          <mxGeometry x="69" y="1155" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-30" value="Los procesos de cambios deben ser monitoreados continuamente relacionado al componente instalado" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="574" y="553" width="180" height="60" as="geometry" />
+          <mxGeometry x="204" y="1157" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-31" value="Activos CI/CD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1077" y="65" width="315" height="30" as="geometry" />
+          <mxGeometry x="529" y="67" width="315" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-32" value="Código de Aplicación" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1077" y="108" width="120" height="60" as="geometry" />
+          <mxGeometry x="529" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-33" value="Fuentes de cada aplicación&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1212" y="110" width="180" height="60" as="geometry" />
+          <mxGeometry x="664" y="112" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-34" value="Código de Infraestructura" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1077" y="177" width="120" height="60" as="geometry" />
+          <mxGeometry x="529" y="179" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-35" value="Fuentes de Infraestructura como código, configuraciones de servidores. Acceso Restringidos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1212" y="179" width="180" height="60" as="geometry" />
+          <mxGeometry x="664" y="181" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-36" value="Templates GitOps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1077" y="250" width="120" height="60" as="geometry" />
+          <mxGeometry x="529" y="252" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-37" value="Tareas automáticas reusables validadas por arquitectura para proyectos&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1212" y="252" width="180" height="60" as="geometry" />
+          <mxGeometry x="664" y="254" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-38" value="Dependencias" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1077" y="322" width="120" height="60" as="geometry" />
+          <mxGeometry x="529" y="324" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-39" value="Librerías de uso de terceros&amp;nbsp; e imágenes de sistemas." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1212" y="324" width="180" height="60" as="geometry" />
+          <mxGeometry x="664" y="326" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-40" value="BitBucket" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="772" y="116" width="94" height="44" as="geometry" />
+          <mxGeometry x="402" y="720" width="94" height="44" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-41" value="Jira / Confluence" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="772" y="487" width="94" height="44" as="geometry" />
+          <mxGeometry x="402" y="1091" width="94" height="44" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-42" value="Bambo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="772" y="180" width="94" height="44" as="geometry" />
+          <mxGeometry x="402" y="784" width="94" height="44" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-43" value="Jenkins" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="873" y="180" width="94" height="44" as="geometry" />
+          <mxGeometry x="503" y="784" width="94" height="44" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-44" value="Istio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="772" y="559" width="94" height="44" as="geometry" />
+          <mxGeometry x="402" y="1163" width="94" height="44" as="geometry" />
         </mxCell>
         <mxCell id="oEpVYgerBKvVrMjgMrqf-45" value="Dynatrace" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="873" y="559" width="94" height="44" as="geometry" />
+          <mxGeometry x="503" y="1163" width="94" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="oEpVYgerBKvVrMjgMrqf-46" value="Terraform ¿Como menjan el estado de la infra?&lt;br&gt;Ansible" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="863" y="192" width="173" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="oEpVYgerBKvVrMjgMrqf-47" value="Prometheus&lt;br&gt;Grafana&lt;br&gt;(72 Nodos Desa)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="604" y="1163" width="94" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="oEpVYgerBKvVrMjgMrqf-48" value="Veracode&lt;br&gt;(Seguridad)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="604" y="784" width="94" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="oEpVYgerBKvVrMjgMrqf-49" value="Registry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="402" y="856" width="94" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="oEpVYgerBKvVrMjgMrqf-50" value="(Ambientes)&lt;br&gt;desa, qa, beta, dr, prod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="506" y="1091" width="94" height="44" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
