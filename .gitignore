@@ -10,3 +10,5 @@
 ImageMaker/ControlDeGestion/csv/*.csv
 .DS_Store
 ImageMaker/ControlDeGestion/output/*.csv
+
+cyg/

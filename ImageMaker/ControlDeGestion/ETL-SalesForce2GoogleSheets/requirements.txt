@@ -1,1 +1,15 @@
 simple-salesforce
+
+#Recorre columnas
+for item in df["reportExtendedMetadata"]["detailColumnInfo"].values():
+    print (item["label"])
+
+
+# Recorre Lista de Resultados
+for item in df["factMap"]["T!T"]["rows"]:
+    for cell in item["dataCells"]:
+        if isinstance(cell["value"], OrderedDict):
+            print(f'\t dato : {cell["value"]["amount"], cell["value"]["currency"]}')
+        else :
+            print(f'\t dato : {cell["label"], ""}')
+    break
