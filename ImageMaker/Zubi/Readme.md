@@ -93,6 +93,19 @@ reconfigura gitlab
 ```console
 %  sudo gitlab-ctl reconfigure
 ```
+## Registro a ZeroTier
+
+referencia https://www.zerotier.com/download/ parte "Linux (DEB/RPM)"
+
+```console
+$ curl -s https://install.zerotier.com | sudo bash
+```
+
+registro a la red "e3918db48393fa2e" de Zewro Tier provista por Alfredo Ayala (alfredo@feelingdevs.com)
+```console
+¢ sudo zerotier-cli join e3918db48393fa2e
+```
+
 
 ## Configuracion de correo en gitlab
 1. Configurar Mails : https://docs.gitlab.com/omnibus/settings/smtp
@@ -182,6 +195,33 @@ https://help.ovhcloud.com/csm?id=kb_article_view&sysparm_article=KB0050386
 % gitlab-runner register  --url https://repositorio.greenest.app  --token glrt-rYBxtCRqzr172niDqG_5
 ```
 
+## agregar en configuración de gitlab-runner la configuración del host de docker
+
+agrega al archivo config.toml la configuración de 
+
+```console
+$sudo cat /etc/gitlab-runner/config.toml
+[[runners]]
+  name = "d2-8-gra11"
+  url = "https://repositorio.greenest.app"
+  id = 3
+  token = "glrt-nC42oMEy48hRe3SFme4G"
+  token_obtained_at = 2024-04-07T16:12:47Z
+  token_expires_at = 0001-01-01T00:00:00Z
+  executor = "docker"
+  [runners.docker]
+    tls_verify = false
+    image = "ruby:2.7"
+    privileged = false
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+    volumes = ["/var/run/docker.sock:/var/run/docker.sock","/cache"]
+    shm_size = 0
+    network_mtu = 0
+```
+
+
 agrega docker al server
    69  echo "Instaklación Docker Para Gitlab runner"
    70  sudo apt-get update
@@ -194,6 +234,64 @@ agrega docker al server
    76  sudo apt-get update
    77  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    78  sudo docker run hello-world
+
+Permisos de ejecuccion de docker para ubuntu y gitlab-runner
+
+   sudo usermod -aG docker gitlab-runner
+   sudo usermod -aG docker ubuntu (reiniciar)
+
+## Acceso a Base de Datos
+172.24.99.26 DevFrontSaaSWeb
+172.24.99.34 DevFrontAPI_NEW
+
+## creación de usuario base de datos desarrollo
+cesar.ogalde / UBf8svg0b26tno4VDZdW
+
+## Conectar a base de datos desde servidor VPN por linea de comando
+Copiar Certificado de acceso en Home
+```console
+$scp -i epv2-key-vpn crt-db-mysql-dev.pem ubuntu@141.95.166.176:~
+```
+Conectarse al servidor VPN
+```console
+$ ssh -i epv2-key-vpn ubuntu@141.95.166.176
+```
+Instalar cliente Mysql para pruebas de comunicación
+```console
+$ sudo apt-get install mysql-client
+$ mysql --version
+```
+Obtener IP pública de VPN para autorización en OVH
+```console
+$ curl ifconfig.me
+```
+Autorizar IP en OVH
+
+https://www.ovh.com/manager/#/public-cloud/pci/projects/e483a249d934437e8646532df9209249/storages/databases-analytics/databases/e0770d11-0533-4df1-8b6e-9d72838dc906/allowed-ips
+
+IP Máscara : 141.95.166.176/32
+Descripción : EPV2 VPN Server Access IP
+
+Conectar a BDD via linux
+```console
+$ mysql -u cesar.ogalde -p -P 20184 -h mysql-e0770d11-o5945d2ef.database.cloud.ovh.net --ssl-mode=VERIFY_CA --ssl_ca=crt-db-mysql-dev.pem
+```
+
+## Conectar a base de datos desde servidor VPN por DBeaver
+URL : jdbc:mysql://localhost:3306/defaultdb?ssl-mode=REQUIRED
+Usuario : cesar.ogalde 
+Password : UBf8svg0b26tno4VDZdW
+Certificado : crt-db-mysql-dev.pem
+SSH Tunel
+   IP Pùblica VPN : 141.95.166.176 / IP Zerotier ¿?
+   Usuario : ubuntu
+   Private Key : epv2-key-vpn
+   LocalHost : localhost (colocar en url)
+   LocalPort : 3306 (colocar en url)
+   RemoteHost : mysql-e0770d11-o5945d2ef.database.cloud.ovh.net
+   RemotePort : 20184
+
+Test Conection OK!
 
 
 ## Deploy From Helm
