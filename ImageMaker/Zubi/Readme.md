@@ -1,90 +1,159 @@
-Acceso a OVH
+# Servicio de Creación de Infraestructura Cloud para Zubi Group
 
-https://www.ovh.com/manager/#/hub
-3151-0720-06/Cesar
-Greenest.2024
+La grupo empresarial ZubiGroup nos ha encomendado la misión de crear la infraestructura en su nube demnominada OVH Cloud para aplicación Energy Panel.
+
+## Entrega de Requerimientos
+
+Se solicita la creación de infraestructura para el sistema Energy Panel para ambientes de desarrollo y producción. una arquitectura escalable que permita la demanda.
+
+### Requerimientos
+
+A continuación se describen los componentes que se deben considerar.
+
+1. Servidor de Repositorio Git para proyectos Front y Back, en tecnología Gitlab.
+1. Base de Datos MySQL con Backup, se configurará un servidor MySQL para almacenar los datos de la aplicación, con un sistema de respaldo automatizado para garantizar la integridad de los datos.
+1. Frontend con Escalabilidad Horizontal Automática según carga, se implementará el Frontend en un entorno que permita la escalabilidad horizontal automática, utilizando tecnologías como contenedores Docker y orquestación de contenedores con Kubernetes.
+1. Backend con Escalabilidad Horizontal Automática según carga, se implementará el Backend en un entorno similar al Frontend, con capacidades de escalabilidad horizontal automática para manejar cargas de trabajo variables.
+1. VPN / Mecanismo de Acceso para Desarrolladores a los Servicios OVH, se establecerá una VPN u otro sewvicio provisto por OVH para permitir el acceso seguro de los desarrolladores a los servicios alojados en OVH. Se implementarán medidas de seguridad necesarias.
+1. Balanceo para Servicios Escalados (Backend y Frontend), se configurará un sistema de balanceo de carga para distribuir el tráfico entre las instancias escaladas tanto del Backend como del Frontend, utilizando soluciones provista por el proveedor cloud u otras.
+1. Configuración de Dominios, se configurarán los dominios correspondientes para apuntar a los ambientes, asegurando la disponibilidad y accesibilidad de la aplicación.
 
 
-Energy Panel OV2 Ambientes Dev y Prod en la nube OVH Cloud
+### Insumos 
 
-GitHub Server
-Github Repos Front y Back
-Base de Datos Mysql con backup
-Front con escalabilidad horizontal automágtica
-Back con escalabilidad horizontal automática
-VPN / Mecanismo de acceso  para los desarrolladores a los servicios OVH
-Balanceo para servicios escalados (Back y Front)
-Crear Server Ubuntu con GitHub
+Zubi hace entrega de credenciales para la nube OVH Cloud con el objetivo de crear los componentes.
 
-## Crear Red General / Front / Back
+- URL: https://www.ovh.com/manager/#/hub
+- Username : 3151-0720-06/Cesar
+- Password : Greenest.2024
+
+Se evalúa terraform para la creación de componentes sin embargo no está muy avanzado y tiene una mezcla entre openstack, aws y ovh por tanto sen crearán los componentes a través de la interfaz web.
+
+En caso de requerir se puede ver la referencia : [public-cloud-compute-terraform](https://help.ovhcloud.com/csm/en-public-cloud-compute-terraform?id=kb_article_view&sysparm_article=KB0050797)
+
+## Diseño de Arquitectura
+
+La definción de arquitectura responde principalmente a una arquitectura escalable y resilente a la demanda esperada.
+
+Un aspecto importante es actualizar arquitectura monolitica a una de microservicios.
+
+Acceso seguro con certificados y también con pivote sobre todo por la base de datos.
+
+![alt](assets/IM-Zubi-Energy%20Panel%20V2.png)
+
+### Algunos Componentes
+
+1. Repositorio de fuentes.
+1. Acceso Seguro.
+1. Servios Contenerizados escalables.
+1. Registro de Imagenes.
+1. Base de Datos.
+1. Nube OVH.
+
+## Creación de infraestructura Energy Panel 
+
+Se identifica que es la 2da versión por tanto los recursos usarán un nombrado con prefijo epv2 que significa Energy Panel v2.
+
+### Crear Red General / Front / Back para Dev y Producción
+Se define una localización para las redes, esto es en Gravelines (GRA11) con servicio gateway activando DHCP.
 Localizacion : Gravelines GRA11
 
-## Instalacion GitLab Server
-requerimientos https://docs.gitlab.com/ee/install/requirements.html
-instalacion https://about.gitlab.com/install/#ubuntu
+la lista de redes son :
+1. VLan id 1701 con nombre "epv2-red-general".
+   red destinada a los componentes transversales como VPNsss, y servidor de repositorio
+1. VLan id 1702 con nombre "epv2-red-front".
+   red destinada a los componentes dedicados aislados del front ambiente de desarrollo
+1. VLan id 1703 con nombre "epv2-red-back".
+   red destinada a los componentes backend asilados de otras capas ambiente de desarrollo
+1. VLan id 1702 con nombre "epv2-red-front-prd".
+   red destinada a los componentes front aislados para ambiente de producción
+1. VLan id 1703 con nombre "epv2-red-back-prd".
+   red destinada a los componentes backend aislados para ambiente de producción.
+
+
+### Repositorios de fuentes
+
+Se define para el repositorio de fuentes con instalación onpremise, con ejecución de devops en el mismo server onpremise.
+
+#### Instalacion GitLab Server
+
+Se indentifica en el sitio web de gitlab la documentación para la los requerimientos minimos del servidor en https://docs.gitlab.com/ee/install/requirements.html
+
+Con esta información se identifica que se va a realizar una instancia del tipo Discovery d2-8 (se uso compartido) con 8GB de RAM, 4 vCores de procesamiento, 50gb de almacenamiento, 500Mbit/s banda ancha públioca localizada en Gravelines GRA11.
+
+Además se obtiene la documentación de la instalación del servidor en la siguiente referencia https://about.gitlab.com/install/#ubuntu
 
 1. Crear Maquina d2-8-gra11-epv2-gitlab RAM 8 GB 4 vCores ( Discovery : d2-8 / Location : Gravelines GRA11 )
-1. Crear Red
+1. Utilizar la red "epv2-red-general"
 1. Crear Key : https://help.ovhcloud.com/csm/en-dedicated-servers-ssh-introduction?id=kb_article_view&sysparm_article=KB0044021
-1. Asignar IP Floating
-1. Configurar dominio gitlab 141.94.173.137 en https://my.noip.com/dynamic-dns
+1. Asignar IP Floating 141.94.173.137
+1. Configurar DNS gitlab 141.94.173.137 con el nombre repositorio.greenest.app (Hablar con Juan David david@zubi.group )
 
-## LLave creada
-La llave creada se configura en la consola ovh con el nombre epv2-key-gitlab
+## Llave Creada para gitlab server.
 
-### Pub
+La llave creada se configura en la consola ovh con el nombre epv2-key-gitlab adjunto en los archivos:
+
+1. Clave Privada : [epv2-key-gitlab](assets/epv2-key-gitlab)
+   ```console
+   % cat epv2-key-gitlab
+   -----BEGIN OPENSSH PRIVATE KEY-----
+   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
+   1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQQfchS7qNberr/h4WmJmDrEjqi0Ufel
+   6ZFlMBL9Pj81obMxofnP5U1zMHBXcpmpZB5LVFz4+xoPSxYlyFOAx7VXAAAAuHUDmyR1A5
+   skAAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBB9yFLuo1t6uv+Hh
+   aYmYOsSOqLRR96XpkWUwEv0+PzWhszGh+c/lTXMwcFdymalkHktUXPj7Gg9LFiXIU4DHtV
+   cAAAAgHxINOm9sQUOtpldJmZetWjgaDzvvE96hXjtZUAZHE7oAAAAcaW1hZ2VtYWtlckBJ
+   TUNMLUJVTFZDSC5sb2NhbAECAwQ=
+   -----END OPENSSH PRIVATE KEY-----
+   ```
+
+1. Clave Pública : [epv2-key-gitlab.pub](assets/epv2-key-gitlab.pub)
+   ```console
+   % cat epv2-key-gitlab.pub 
+   ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBB9yFLuo1t6uv+HhaYmYOsSOqLRR96XpkWUwEv0+PzWhszGh+c/lTXMwcFdymalkHktUXPj7Gg9LFiXIU4DHtVc= imagemaker@IMCL-BULVCH.local
+   ```
+
+## Conectarse a servidor
+
+Para poder conectarse al servicio de gitlab es necesario tener la llave privada en el mismo directorio.
+
 ```console
-% cat id_ecdsa_epv2.pub 
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBB9yFLuo1t6uv+HhaYmYOsSOqLRR96XpkWUwEv0+PzWhszGh+c/lTXMwcFdymalkHktUXPj7Gg9LFiXIU4DHtVc= imagemaker@IMCL-BULVCH.local
-```
-### Private
-```console
-% cat id_ecdsa_epv2
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
-1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQQfchS7qNberr/h4WmJmDrEjqi0Ufel
-6ZFlMBL9Pj81obMxofnP5U1zMHBXcpmpZB5LVFz4+xoPSxYlyFOAx7VXAAAAuHUDmyR1A5
-skAAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBB9yFLuo1t6uv+Hh
-aYmYOsSOqLRR96XpkWUwEv0+PzWhszGh+c/lTXMwcFdymalkHktUXPj7Gg9LFiXIU4DHtV
-cAAAAgHxINOm9sQUOtpldJmZetWjgaDzvvE96hXjtZUAZHE7oAAAAcaW1hZ2VtYWtlckBJ
-TUNMLUJVTFZDSC5sb2NhbAECAwQ=
------END OPENSSH PRIVATE KEY-----
+% ssh -i epv2-key-gitlab ubuntu@repositorio.greenest.app
 ```
 
-## conectarse a servidor
-```console
-% ssh -i id_ecdsa_epv2 ubuntu@epv2gitlab.ddns.net
-```
+## Instalacion Gitlab
 
-## Script Instalacion Gitlab
+La instalación de gitlab está provista por la dcoumentación de gitlab https://about.gitlab.com/install/#ubuntu
+
+Script de instalación
 ```console
 $sudo apt-get update
 $sudo apt-get install -y curl openssh-server ca-certificates tzdata perl
 $curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
-$sudo EXTERNAL_URL="https://epv2gitlab.ddns.net" apt-get install gitlab-ee
+$sudo EXTERNAL_URL="https://repositorio.greenest.app" apt-get install gitlab-ee
 $sudo cat /etc/gitlab/initial_root_password
 ```
 
-## WARNING: This value is valid only in the following conditions
-#          1. If provided manually (either via `GITLAB_ROOT_PASSWORD` environment variable or via `gitlab_rails['initial_root_password']` setting in `gitlab.rb`, it was provided before database was seeded for the first time (usually, the first reconfigure run).
-#          2. Password hasn't been changed manually, either via UI or via command line.
-#
-#          If the password shown here doesn't work, you must reset the admin password following https://docs.gitlab.com/ee/security/reset_user_password.html#reset-your-root-password.
-Password: dAszKsvX3x9vjdhfDxZXv8AsOTcp7KpqC52zBQvgQtU=
-# NOTE: This file will be automatically deleted in the first reconfigure run after 24 hours.
-
-
 ## Servicio Gitlab
-URL : https://epv2gitlab.ddns.net/
+
+Una vez instalado el servicio ingresar con la URL + usuario (root) y la password generada en el archivo /etc/gitlab/initial_root_password
+
+Credenciales
+
+URL : https://repositorio.greenest.app/
+
 Login : root 
+
 Password: dAszKsvX3x9vjdhfDxZXv8AsOTcp7KpqC52zBQvgQtU=
 
 ## Cambio de DNS
 
+En caso de cambio de DNS del repositorio se debe editar el siguiente archivo.
+
 ```console
 % sudo vi /etc/gitlab/gitlab.rb
 ```
-Cambia la variable external_url con la nueva url
+Cambia la variable external_url 
 
 external_url 'https://repositorio.greenest.app'
 
@@ -93,24 +162,46 @@ reconfigura gitlab
 ```console
 %  sudo gitlab-ctl reconfigure
 ```
+
+
 ## Registro a ZeroTier
 
-referencia https://www.zerotier.com/download/ parte "Linux (DEB/RPM)"
+referencia de descarga e instalación https://www.zerotier.com/download/ parte "Linux (DEB/RPM)"
+
+Instalación
 
 ```console
 $ curl -s https://install.zerotier.com | sudo bash
 ```
 
 registro a la red "e3918db48393fa2e" de Zewro Tier provista por Alfredo Ayala (alfredo@feelingdevs.com)
+
 ```console
-¢ sudo zerotier-cli join e3918db48393fa2e
+$ sudo zerotier-cli join e3918db48393fa2e
 ```
 
+Revisar la MAC para pedir que el administrador de la red lo autorice, ya estará como ACCESS_DENIED
+
+```console
+$ sudo zerotier-cli listnetworks
+200 listnetworks <nwid> <name> <mac> <status> <type> <dev> <ZT assigned ips>
+200 listnetworks e3918db48393fa2e  2e:5c:d6:53:93:e5 ACCESS_DENIED PRIVATE ztk4jb4tvn -
+```
+
+Indicar al adminiatrador que autorice la MAC 2e:5c:d6:53:93:e5, una vez autorizado mostrará la IP Asignada.
+
+```console
+$ sudo zerotier-cli listnetworks
+200 listnetworks <nwid> <name> <mac> <status> <type> <dev> <ZT assigned ips>
+200 listnetworks e3918db48393fa2e GreenestAI 2e:fe:07:f5:1f:24 OK PRIVATE ztk4jb4tvn 172.24.99.136/16
+```
 
 ## Configuracion de correo en gitlab
 1. Configurar Mails : https://docs.gitlab.com/omnibus/settings/smtp
 
-## Instalación de Kubernete FRONT
+### Componentes Contenerizados
+
+## Instalación de Kubernetes FRONT
 crear un servicio de contenedores administrado
 Localizacion : Gravelines GRA11
 Versión: 1.29.3-0
@@ -120,7 +211,7 @@ Tipo de Nodo : Discovery D2-4 4GB RAM / 2VCores / 250mbs
 Nombre : d2-4-epv2-kubernetes-front
 
 
-## Instalación de Kubernete BACK
+## Instalación de Kubernetes BACK
 crear un servicio de contenedores administrado
 Localizacion : Gravelines GRA11
 Versión: 1.29.3-0
@@ -143,10 +234,16 @@ https://help.ovhcloud.com/csm/en-public-cloud-private-registry-connect-to-ui?id=
 
 ## Generar Claves de Private Registry
 URL : https://vjv08g10.c1.gra9.container-registry.ovh.net/harbor/projects
-Username : xIdDgmuqsB 
+
+Username : xIdDgmuqsB
+
 Password : 0P9w27g135V6xi48
 
+
+
 ## Crear Proyecto en Registry
+
+
 epv2
 
 ## Push Imagen
@@ -167,7 +264,8 @@ https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-deploy-application?i
 
 
 ## crea usuario admin
-user-pP2ab4RUw9xu 
+user-pP2ab4RUw9xu
+
 AmBrgdMzqsmmrBrg9Vfy86TnCYSUSq99.
 
 ## Deploy to kubernetes
@@ -277,7 +375,13 @@ Conectar a BDD via linux
 $ mysql -u cesar.ogalde -p -P 20184 -h mysql-e0770d11-o5945d2ef.database.cloud.ovh.net --ssl-mode=VERIFY_CA --ssl_ca=crt-db-mysql-dev.pem
 ```
 
-## Conectar a base de datos desde servidor VPN por DBeaver
+## Conectar a base de datos desde servidor VPN 
+El objetivo es bajar la carga operativa de acceso a la base de desarrollo ya que los desarrolladores cambian de ubicacion y hay que repetir el acceso a cada día.
+
+La solución a esto acceder directamente vá ByPass como pivote
+
+### Configuración de acceso por DBeaver
+
 URL : jdbc:mysql://localhost:3306/defaultdb?ssl-mode=REQUIRED
 Usuario : cesar.ogalde 
 Password : UBf8svg0b26tno4VDZdW
@@ -292,6 +396,10 @@ SSH Tunel
    RemotePort : 20184
 
 Test Conection OK!
+
+### Configuración de acceso por tunnel directo SSH
+
+
 
 
 ## Deploy From Helm
