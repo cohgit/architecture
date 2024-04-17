@@ -44,6 +44,8 @@ for item in df["factMap"]["T!T"]["rows"]:
     for j, cell in enumerate(item["dataCells"]):
         if isinstance(cell["value"], OrderedDict):
             row_data[column_labels[j]] = cell["value"]["amount"]
+        elif cell["label"] in ["Canada","Sweden", "Norway"]:
+            row_data[column_labels[j]] = "United Kingdom"
         else:
             row_data[column_labels[j]] = cell["label"]
     rows_data.append(row_data)
