@@ -14,7 +14,7 @@ provider "aws" {
   region  = var.region
   default_tags {
     tags = {
-      proyecto     = "remove-06"
+      proyecto     = "remove-01"
     }
   }
 }
@@ -83,6 +83,11 @@ resource "aws_kms_key" "kmskey" {
   deletion_window_in_days = 10
 }
 
+/**
+Esto está comentado ya que no se avanzada con la generación de task por terraform
+
+Solo lo ejecutaremos por ver en el archivo Readme.md
+
 resource "aws_rds_export_task" "rdss3export" {
   export_task_identifier = "prod-02-2023-10-19-23-11"
   source_arn             = "arn:aws:rds:us-east-1:253021683072:snapshot:rds:prod-02-2023-10-19-23-11"
@@ -105,3 +110,5 @@ resource "aws_glue_crawler" "example" {
     path = "s3://${aws_s3_bucket.s3bck.bucket}"
   }
 }
+
+*/
