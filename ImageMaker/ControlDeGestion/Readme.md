@@ -23,3 +23,19 @@ docker compose -f docker-compose-v3-video.yml up
 Imit2023
 
 ## Ejcución de Obtención de Resumen de venta.
+
+
+
+#Recorre columnas
+for item in df["reportExtendedMetadata"]["detailColumnInfo"].values():
+    print (item["label"])
+
+
+# Recorre Lista de Resultados
+for item in df["factMap"]["T!T"]["rows"]:
+    for cell in item["dataCells"]:
+        if isinstance(cell["value"], OrderedDict):
+            print(f'\t dato : {cell["value"]["amount"], cell["value"]["currency"]}')
+        else :
+            print(f'\t dato : {cell["label"], ""}')
+    break
