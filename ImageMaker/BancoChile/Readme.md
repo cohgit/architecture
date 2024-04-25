@@ -1,3 +1,18 @@
+## Credenciales 
+
+CheckList de Conexiones
+1.- Usuario de dominio  (https://portalbch.bancochile.cl:11443/my.policy)
+2.- MFA Configurado (https://aka.ms/mfasetup)
+3.- Teams (https://teams.microsoft.com/)
+4.- Correo (https://outlook.office.com/mail/)
+5.- VPN [Vpn_ext_desarrollo_mfa] (https://bchmfa.bancochile.cl/)
+6.- Jira [jira-users] (http://jira.bch.bancodechile.cl:8080/)
+7.- Confluence [confluence-users] (https://confluence.bch.bancodechile.cl:8443)
+8.- BitBucket [cdn-apc2, Developers-CDN](http://bitbucket.bch.bancodechile.cl:7990)
+9.- Bamboo [bamboo-users] (http://bamboo.bch.bancodechile.cl:8085/)
+
+
+
 ## Fuentes Requerimientos de subida de documentos
 [16:32] Joan Delgado Delgado Torres
 

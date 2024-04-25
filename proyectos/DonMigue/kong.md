@@ -1,0 +1,89 @@
+## Registrate en Kong Konnect
+Utiliza la creación estandar de kong konnect para hacer un API Gateway, usa créditos de 500USD
+
+##  Crea la organización 
+Yo cree la organización coh
+
+usa la referencia 
+https://docs.konghq.com/gateway/latest/install/docker/
+
+corre el api gateway para levantar
+```console
+docker run -d -e "KONG_ROLE=data_plane" -e "KONG_DATABASE=off" -e "KONG_VITALS=off" -e "KONG_CLUSTER_MTLS=pki" -e "KONG_CLUSTER_CONTROL_PLANE=4353d89905.us.cp0.konghq.com:443" -e "KONG_CLUSTER_SERVER_NAME=4353d89905.us.cp0.konghq.com" -e "KONG_CLUSTER_TELEMETRY_ENDPOINT=4353d89905.us.tp0.konghq.com:443" -e "KONG_CLUSTER_TELEMETRY_SERVER_NAME=4353d89905.us.tp0.konghq.com" -e "KONG_CLUSTER_CERT=-----BEGIN CERTIFICATE-----
+MIIDlDCCAn6gAwIBAgIBATALBgkqhkiG9w0BAQ0wNDEyMAkGA1UEBhMCVVMwJQYD
+VQQDHh4AawBvAG4AbgBlAGMAdAAtAGQAZQBmAGEAdQBsAHQwHhcNMjQwNDE4MTQ0
+NjI3WhcNMzQwNDE4MTQ0NjI3WjA0MTIwCQYDVQQGEwJVUzAlBgNVBAMeHgBrAG8A
+bgBuAGUAYwB0AC0AZABlAGYAYQB1AGwAdDCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAMtERApS/sF3pogM6bVDt3Vnh97rP0MC57gAlzAuXqqltJXQPf+M
+DRo5HdLsHXNZJyjh+24ZYM1FMccwXlVkj8DELBAUqwuztbTmluH3WyECM1xYXfX8
+spqyGacnE1Gjoh0zkEtY6GADPhB0GqmdX810piShCvlzhYWrsClCqIFXtDd+so1H
+J1iOvHGox3xMnArHae8K3W0BRJB/WPUt5UTQfB+41ZpgDHmMBkKEEKgNudx6+zv5
+/P/osPBg5t1Ex9bqC8/K1gGLxa5ufL1erF1GFtds/28DFxZgtYjUyuq2WDgNrZjx
+MyPyYRMY3K5Z0C3syE6IRBKbyWhKc2dRhkcCAwEAAaOBtDCBsTASBgNVHRMBAf8E
+CDAGAQH/AgEDMAsGA1UdDwQEAwIABjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYB
+BQUHAwIwFwYJKwYBBAGCNxQCBAoMCGNlcnRUeXBlMCMGCSsGAQQBgjcVAgQWBBQB
+AQEBAQEBAQEBAQEBAQEBAQEBATAcBgkrBgEEAYI3FQcEDzANBgUpAQEBAQIBCgIB
+FDATBgkrBgEEAYI3FQEEBgIEABQACjALBgkqhkiG9w0BAQ0DggEBAHHPp67Wq4rG
+Q7TTem7idZwcCBnnDFAkeen5gQ0THa9CVU0inaenjVGNm8cmV/q1qYQldjawFToT
+1kiWCqqfljY6IrrKbGmBXLyy9n1XdsuTi43HPq0XmbvKXS+7xRsRfdDiM/PSDbUM
+6te9AfE9zZ0hRrLTXXIMlcHjwc3uvN4dhRIPRR9MencmHJ46DQzOrczYiXhz9kTB
+za50kJNOGNEDjjOpaIl2lnVar3zJNKk6h4kpfSDRH+3L++L62BkhL6MZxy+GPzut
+iUzKeGAY+sLltLrdvvWRUc5Gbc7sm9G39ySpH5EB56EFPHlyDKdwhEmgwCXi2+Qs
+xOXBywKAYd0=
+-----END CERTIFICATE-----" -e "KONG_CLUSTER_CERT_KEY=-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLREQKUv7Bd6aI
+DOm1Q7d1Z4fe6z9DAue4AJcwLl6qpbSV0D3/jA0aOR3S7B1zWSco4ftuGWDNRTHH
+MF5VZI/AxCwQFKsLs7W05pbh91shAjNcWF31/LKashmnJxNRo6IdM5BLWOhgAz4Q
+dBqpnV/NdKYkoQr5c4WFq7ApQqiBV7Q3frKNRydYjrxxqMd8TJwKx2nvCt1tAUSQ
+f1j1LeVE0HwfuNWaYAx5jAZChBCoDbncevs7+fz/6LDwYObdRMfW6gvPytYBi8Wu
+bny9XqxdRhbXbP9vAxcWYLWI1Mrqtlg4Da2Y8TMj8mETGNyuWdAt7MhOiEQSm8lo
+SnNnUYZHAgMBAAECggEADb3PNb13oH+kv/TTheAOkn7Nxim0LKURIjTUA7tWxgWO
+yEP8NP70Uc4DsKMquIYR6icg1sgbbbUcUOF5tx8lwrvgWLP0/kUHZzPhhmQxAnHC
+JB+LNpp/PosExfKT0USVLJE0U4uupfMCKp2Wwdm0RND6fGZwtf1zzN4W+isZ9ihn
+Nr4jfELx1+Re5PwqKCFr+Ir+nS7wguj9P7/eXmHvijRQrzkdHUo6PYYTQqECQ/0K
++Xq3lAbyDvOh3xZE6cYQRG/IE1St9eDXrM7YxV3i/AKTBjLUXaxpCz6XyLQJ8WQI
+K6TodHV8ld3ABGFeRhN6aWrFIJWRjK4rRziGnclA2QKBgQD7dXtNc0bWpqZmVq3n
+7npZz/mVqFJunfd5WekO6QG6jVmJG6Lu7XfsZS2NmdGktm1OtTCZnMNPckf3a3WW
+nXBTke2/nQ1pRdjfVTgGvsjB9T+yyxG72hW75xaI7W3TYI0OaZ5McDvsfZxzhPYr
+fpVFEyx8c7iHzSJ5rTqEmHEUiQKBgQDO7/yfD91Z+nCKB7xCUGUwz4j5Rl7jtX+3
+WgANEuLu/dnC/1vw/rSNw0idFAn+y49RRCQn2vypHCnKyHx9K/u+OsFjkHJKz+8E
+pWVnVackoIC2OfRSqZjPQiW90rzv40LwjZIv4Rdxnl8Qay84xgrVw5PcJJ2hnqzx
+ATDvdF6wTwKBgQCvUsQ7xgo4E02lwP3T3iSUhjtgq1F+KsmnZJbofHFmHrO0sv4x
+VITu38SZHAxdqYwg+pf+IpzSwb2Htvbvoqn0uqRnmxsEsVx6qrI7kb3r7hERmiCt
+N2s77e16XwDaBlGTIPTsGrzNMO9qY+Q3gzSUSsATraOVm+NTrwJD/P2q8QKBgBoD
+459fkDVSnblMladEkiQbwx2LcjxwQdkcEGuUV0EyWqEAF1/ptWspBMTykvscPi06
+Qs1b422jI8HhiHz3/ZMBsfRBYYz0LRlJbcEa7INXRjcifAu0VIihyTre9m+2A2FY
+eutYAel/vnXC89HQW+ZZywne9I4v84/s1WkVGR5TAoGBAN2sHCfSCEElokS69lfI
+TtKZoerxruL23ARQBkB1h3UGqhKFdXJp8Va9VJoY4M0GnHafEjMbjThCG5zlEnZg
+5wfS8tGtA8CKdlTzEQ0+RXKjPUGY9miGrtK8SvbKdXdt0zYbItO0MeCU0NJs16Ke
+P1flgBBfhYTCf57HL3Gq9nCI
+-----END PRIVATE KEY-----" -e "KONG_LUA_SSL_TRUSTED_CERTIFICATE=system" -e "KONG_KONNECT_MODE=on" -p 8000:8000 -p 8443:8443 kong/kong-gateway:3.6.0.0
+```
+
+## Prueba los servicios con key autentication
+
+con la referencia : https://docs.konghq.com/gateway/latest/get-started/key-authentication/
+
+ingresa a consumers
+
+![alt](assets/Consumers.png)
+
+Ingresa a Credentials / Key autentication / copia el key
+
+![alt](assets/KeyAuth.png)
+
+
+apuntando al docker iniciado agrega en la llamada el key con la variable header apikey
+
+```console
+curl --location 'localhost:8000/examples/weather/utopia' \
+--header 'apikey: 5fb915e7c'
+```
+
+apuntando al servicio de kong
+
+```console
+curl --location 'global.api.konghq.com/examples/weather/utopia' \
+--header 'apikey: 5fb915e7c'
+```
+
