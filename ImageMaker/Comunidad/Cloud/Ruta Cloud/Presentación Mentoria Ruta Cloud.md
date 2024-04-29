@@ -2,13 +2,13 @@
 
 Hola soy César Ogalde, Arquitecto Cloud de imagemaker apoyando las estimaciones de iniciativas Cloud, el aprendisaje em imagemaker participo en la  comunidad multicloud, apoyo equipos o celulas con conocimiento técnico.
 
-## ¿de que eres mentor?
+Lidero
 
-Tengo la oportunidad de ser mentor de la ruta Cloud + DevOps : Google Cloud Platform (GCP), Amazon Web Service (AWS), Microsoft Azure, OVHCloud , Oracle Cloud Infrestructure (OCI).
+Soy mentor de la ruta Cloud + DevOps : Google Cloud Platform (GCP), Amazon Web Service (AWS), Microsoft Azure, OVHCloud , Oracle Cloud Infrestructure (OCI).
 
 Tambien soy mentor en DevOps en las siguientes soluciones : Azure DevOps, Gitlab, GitHub
 
-## ¿que aprenderás en la ruta?
+Ruta
 
 Esta ruta es para cualquier persona que quiera aprender de la computación en la nube que tenga conocimientos básicos de las tecnolgas de información.
 
