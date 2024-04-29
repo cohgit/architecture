@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-29T16:18:57.889Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="W5FXFJzk-EBNx0QR6dGK" version="24.2.8" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2024-04-29T16:19:55.544Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="kxVvcD5MH6glYZsox4dh" version="24.2.8" type="gitlab">
   <diagram name="Requerimiento general" id="A9YsAqewT_fJsP3N-sSb">
     <mxGraphModel dx="1834" dy="772" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="xePJMmK36LTgD4nEiuTE-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Exponer&lt;br&gt;API&lt;/h1&gt;&lt;div&gt;- Componente priorizados que se cran en microservicios pasando por un API Gateway&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="49" y="234" width="180" height="142" as="geometry" />
         </mxCell>
-        <mxCell id="xePJMmK36LTgD4nEiuTE-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Actualización Front&lt;/h1&gt;&lt;div&gt;- Aislación de sistema en contenedor.&lt;/div&gt;&lt;div&gt;- Servidor o VM en regla sin vulnerabilidades&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="xePJMmK36LTgD4nEiuTE-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Actualización Front&lt;/h1&gt;&lt;div&gt;Creación de un Front que use las API&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="232" y="234" width="180" height="135" as="geometry" />
         </mxCell>
         <mxCell id="xePJMmK36LTgD4nEiuTE-7" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=34;" vertex="1" parent="1">
