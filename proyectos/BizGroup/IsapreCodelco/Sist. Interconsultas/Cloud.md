@@ -1,15 +1,10 @@
 Mail / PDF
 Libreria obsoletas
 TLS1.2 y TLS1.3
-
-
-IIS TLS 
-
+IIS TLS
 ODBC a la Base TLS1.0
 SQL Server 2016
 Navigation Path
-
-
 
 Proyecto Técnico Aislar y Actualizar
 
@@ -20,8 +15,10 @@ Proyecto Técnico Aislar y Actualizar
 
 Explicar complejidad.
 Cambio de proceso de instalación - procedimiento.
- 
-
 
 
 Programa Actualización
+Licencia e instalación de Windows Container
+https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce#windows-server-1
+
+https://www.docker.com/pricing/
