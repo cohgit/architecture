@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-29T16:07:28.781Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="T_mtHvSHJ0ogOHgQueM1" version="24.2.8" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2024-04-29T16:11:06.868Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="WcQo5eVY-5yMzAVXLvv3" version="24.2.8" type="gitlab">
   <diagram name="Requerimiento general" id="A9YsAqewT_fJsP3N-sSb">
     <mxGraphModel dx="1834" dy="772" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="-137" y="236" width="180" height="135" as="geometry" />
         </mxCell>
         <mxCell id="xePJMmK36LTgD4nEiuTE-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Exponer&lt;br&gt;API&lt;/h1&gt;&lt;div&gt;- Aislación de sistema en contenedor.&lt;/div&gt;&lt;div&gt;- Servidor o VM en regla sin vulnerabilidades&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="49" y="234" width="180" height="135" as="geometry" />
+          <mxGeometry x="49" y="234" width="180" height="142" as="geometry" />
         </mxCell>
         <mxCell id="xePJMmK36LTgD4nEiuTE-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Actualización Front&lt;/h1&gt;&lt;div&gt;- Aislación de sistema en contenedor.&lt;/div&gt;&lt;div&gt;- Servidor o VM en regla sin vulnerabilidades&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="232" y="234" width="180" height="135" as="geometry" />
