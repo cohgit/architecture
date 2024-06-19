@@ -10,7 +10,7 @@ import os
 import csv
 
 # Lista los archivos CSV y los ordena por fecha de modificación, del más reciente al más antiguo
-csv_files = glob('/Users/imagemaker/dev/architecture/ImageMaker/ControlDeGestion/csv/*csv')
+csv_files = glob('/home/cogalde/dev/architecture/ImageMaker/ControlDeGestion/csv/*csv')
 csv_files.sort(key=lambda x: os.path.getmtime(x), reverse=True)
 
 # Crea listas para almacenar los DataFrames
@@ -52,7 +52,7 @@ elif final_df_14 is not None:
 else:
     merged_df = None
 
-merged_df.to_csv('/Users/imagemaker/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw.csv', index=False)
+merged_df.to_csv('/home/cogalde/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw.csv', index=False)
 print(merged_df.size)
 
 merged_df = merged_df.drop_duplicates()
@@ -65,12 +65,12 @@ for col in ['Documento', 'Folio', 'Fecha Emision', 'Rut', 'RazonSocial', 'Codigo
 
 merged_df.fillna('', inplace=True)
 
-merged_df.to_csv('/Users/imagemaker/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw_merge.csv', index=False)
+merged_df.to_csv('/home/cogalde/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw_merge.csv', index=False)
 
 unique_cols = ['Documento', 'Folio', 'Rut', 'RazonSocial', 'Codigo Vendedor'] #, 'Glosa'
 merged_df = merged_df.drop_duplicates(subset=unique_cols, keep='first')
 
-merged_df.to_csv('/Users/imagemaker/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw_merge_drop.csv', index=False)
+merged_df.to_csv('/home/cogalde/dev/architecture/ImageMaker/ControlDeGestion/output/salida_raw_merge_drop.csv', index=False)
 
 # Define el orden de las columnas
 column_order = [
@@ -88,5 +88,5 @@ merged_df['MontoExento'] = merged_df['MontoExento'].fillna(0)
 merged_df['MontoNeto'] = merged_df['MontoNeto'].fillna(0)
 merged_df['Exento + Neto'] = merged_df['MontoExento'] + merged_df['MontoNeto']
 
-merged_df.to_csv('/Users/imagemaker/dev/architecture/ImageMaker/ControlDeGestion/output/salida.csv', index=False)
+merged_df.to_csv('/home/cogalde/dev/architecture/ImageMaker/ControlDeGestion/output/salida.csv', index=False)
 
