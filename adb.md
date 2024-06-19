@@ -1,8 +1,6 @@
 
 db pull '/storage/emulated/0/Download/Sesiones de Trabajo. IBS a la Nube-20230118_080858-Grabación de la reunión.zip.002'
 
-
-
 adb devices
 adb logcat
 
@@ -80,6 +78,17 @@ R5CR50X9ZSK	device
 >adb connect 192.168.1.91:5555
 >adb shell input keyevent KEYCODE_HOME
 
+### connect to ip and port Patio 
+>adb -s N7SW697T7SBEK7JV tcpip 5555
+>adb shell ip addr show wlan0
+>adb connect 192.168.1.91:5555
+>adb shell input keyevent KEYCODE_HOME
+>scrcpy -s 192.168.1.91:5555
+
 ### view phone
 >scrcpy -s 192.168.1.91:5555
 >scrcpy -s 5200ccfae28a442f
+
+## Android TV Philco
+$adb connect 192.168.1.90:5555
+$scrcpy -s 192.168.1.90:5555

@@ -22,6 +22,14 @@ docker compose -f docker-compose-v3-video.yml up
 18572064-0
 Imit2023
 
+## Ejecución de Pyhton con ambiente
+```console
+cd ~/dev/architecture/ImageMaker/ControlDeGestion
+source ~/venv/cyg/bin/activate
+pip install -r SeleniumGrid/requirements.txt
+python3 obtieneFacturas.py
+```
+
 ## Ejcución de Obtención de Resumen de venta.
 
 
