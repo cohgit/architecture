@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PruebaAPIWSO2.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="prueba-t%C3%A9cnica">PRUEBA TÉCNICA</h1>
+<h2 id="perfil-wso2-micro-integrator-fecha-junio-2024">PERFIL WSO2 MICRO INTEGRATOR Fecha: Junio 2024</h2>
+<h3 id="parte-1-integraci%C3%B3n-y-almacenamiento-de-datos">Parte 1: Integración y Almacenamiento de Datos:</h3>
+<ol>
+<li>
+<p>Consulta a API de Feriados</p>
+<ol>
+<li>Configurar WSO2 Micro Integrator para hacer Ilamadas periódicas al endpoint de feriados de Chile.</li>
+<li>Usar el endpoint https://apis.digital.gob.cl/fl/feriados/2023 que retorna los feriados del año en curso.</li>
+</ol>
+<h4 id="pasos-para-resolver-este-punto">Pasos para resolver este punto:</h4>
+<ul>
+<li>Abre el WSO2 Integrator Studio</li>
+<li>Crea un Integrator Integrator Selecionado Create ESB Config y Create Composite Exporter</li>
+<li>Crea un EndPoint (el nombre del archivo debe coincidir con el name)</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">endpoint</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"feriadosEndpoint"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://ws.apache.org/ns/synapse"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">http</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"get"</span> <span class="hljs-attr">uri-template</span>=<span class="hljs-string">"https://apis.digital.gob.cl/fl/feriados/2024"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">suspendOnFailure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">initialDuration</span>&gt;</span>-1<span class="hljs-tag">&lt;/<span class="hljs-name">initialDuration</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">progressionFactor</span>&gt;</span>1.0<span class="hljs-tag">&lt;/<span class="hljs-name">progressionFactor</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">suspendOnFailure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">markForSuspension</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">retriesBeforeSuspension</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">retriesBeforeSuspension</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">markForSuspension</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">http</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">endpoint</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>crea una secuencia apuntando al endpoint</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">sequence</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"feriadosSecuence"</span> <span class="hljs-attr">trace</span>=<span class="hljs-string">"disable"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://ws.apache.org/ns/synapse"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">send</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">endpoint</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"feriadosEndpoint"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">send</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">sequence</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>crea un proxy-service para la llamada al servicio</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">proxy</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"feriadosProxyService"</span> <span class="hljs-attr">startOnLoad</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">transports</span>=<span class="hljs-string">"http https"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://ws.apache.org/ns/synapse"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">inSequence</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sequence</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"feriadosSecuence"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">inSequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">outSequence</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">send</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">outSequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">faultSequence</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">target</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">proxy</span>&gt;</span>
+</div></code></pre>
+</li>
+<li>
+<p>Transformación de Datos</p>
+<ol>
+<li>Transformar la respuesta recibida del servicio de feriados para adaptarla a un esquema JSON especifico que podria incluir campos como nombreFeriado, fecha, tipo y descripción.</li>
+</ol>
+</li>
+</ol>
+<h4 id="pasos-para-resolver-este-punto">Pasos para resolver este punto:</h4>
+<ul>
+<li>Agrega la iteracion que cambia el payload de cada elemento con el siguiente código en el proxy-sevice antes de llamar al &lt;send/&gt; dentro del &lt;outSequence&gt;.</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">foreach</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"json-eval($)"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"foreach_1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">payloadFactory</span> <span class="hljs-attr">media-type</span>=<span class="hljs-string">"json"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>
+                {
+                    "nombreFeriado": "$1",
+                    "fecha": "$2",
+                    "tipo": "$3",
+                    "descripcion": "$4"
+                }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">args</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">arg</span> <span class="hljs-attr">evaluator</span>=<span class="hljs-string">"json"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"$.nombre"</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">arg</span> <span class="hljs-attr">evaluator</span>=<span class="hljs-string">"json"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"$.fecha"</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">arg</span> <span class="hljs-attr">evaluator</span>=<span class="hljs-string">"json"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"$.tipo"</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">arg</span> <span class="hljs-attr">evaluator</span>=<span class="hljs-string">"json"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"$.comentarios"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">args</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">payloadFactory</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sequence</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">foreach</span>&gt;</span>
+</div></code></pre>
+<ol>
+<li>Almacenamiento en Base de Datos:
+<ol>
+<li>Almacenar los datos transformados en una base de datos. Puedes elegir entre una base de datos SOL como MySOL o Postgres.</li>
+<li>Asegurar que el proceso maneje correctamente conexiones y posibles excepciones durante las operaciones de la base de datos.</li>
+</ol>
+</li>
+</ol>
+<h4 id="pasos-para-resolver-este-punto">Pasos para resolver este punto:</h4>
+<ul>
+<li>Crear una base de datos mysql 5.7 con docker en tu máquina y exporner el puerto de la base de datos.
+Usa las siguientes variable :
+<ol>
+<li>nombre del contenedor <em>prueba-mysql</em></li>
+<li>puerto expouesto de la base <em>3306</em></li>
+<li>password del root <em>my-secret-pw</em></li>
+<li>usuario de conexion <em>prueba</em></li>
+<li>password de usuario de conexion <em>prueba</em></li>
+<li>base de datos llamada <em>test</em></li>
+</ol>
+</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">$</span><span class="bash"> docker run --name prueba-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -e MYSQL_USER=prueba -e MYSQL_PASSWORD=prueba -e MYSQL_DATABASE=<span class="hljs-built_in">test</span> -d mysql:5.7</span>
+</div></code></pre>
+<ul>
+<li>Descargar driver mysql my-secret-pw y pegarlo en lib</li>
+</ul>
+<pre class="hljs"><code><div>/wso2mi-4.2.0/lib$ ls -la
+total 2476
+drwxrwxr-x  2 cogalde cogalde    4096 Jun 21 16:39 .
+drwxrwxr-x 15 cogalde cogalde    4096 Jun 21 22:06 ..
+-rwxr-xr-x  1 cogalde cogalde 2495536 Jun 21 16:39 mysql-connector-j-8.3.0.jar
+</div></code></pre>
+<ul>
+<li>conectate a la base de datos y crea la base con el siguiente script del archivo script-db.sql</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> test.FERIADOS (
+	nombre <span class="hljs-built_in">varchar</span>(<span class="hljs-number">100</span>) <span class="hljs-literal">NULL</span>,
+	fecha <span class="hljs-built_in">varchar</span>(<span class="hljs-number">100</span>) <span class="hljs-literal">NULL</span>,
+	tipo <span class="hljs-built_in">varchar</span>(<span class="hljs-number">100</span>) <span class="hljs-literal">NULL</span>,
+	descripcion <span class="hljs-built_in">varchar</span>(<span class="hljs-number">100</span>) <span class="hljs-literal">NULL</span>
+)
+<span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span>
+<span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=latin1
+<span class="hljs-keyword">COLLATE</span>=latin1_swedish_ci;
+</div></code></pre>
+<ul>
+<li>agrega el siguiente código en el proxy-service, posterior a la transformación para guardar en la base de datos, la expresion expression=&quot;//fecha/child::text()&quot; toma el elemento raiz de la iteracion obteniendo su nombre e hijo del tipo texto.</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">dbreport</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">connection</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pool</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">driver</span>&gt;</span>com.mysql.jdbc.Driver<span class="hljs-tag">&lt;/<span class="hljs-name">driver</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>jdbc:mysql://localhost:3306/test<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">user</span>&gt;</span>prueba<span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">password</span>&gt;</span>prueba<span class="hljs-tag">&lt;/<span class="hljs-name">password</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">pool</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">connection</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">statement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">sql</span>&gt;</span>&lt;![CDATA[insert into FERIADOS (nombre, fecha, tipo, descripcion) values (?, ?, ?, ?)]]&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">parameter</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"//nombreFeriado/child::text()"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"VARCHAR"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">parameter</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"//fecha/child::text()"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"VARCHAR"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">parameter</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"//tipo/child::text()"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"VARCHAR"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">parameter</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"//comentarios/child::text()"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"VARCHAR"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">statement</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbreport</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>Prueba</li>
+</ul>
+<h3 id="parte-2-exposici%C3%B3n-de-api-rest">Parte 2: Exposición de API REST:</h3>
+<ol>
+<li>Desarrollo de API REST:
+<ol>
+<li>Utilizar WSO2 Micro Integrator para crear un servicio API REST.</li>
+<li>Este servicio debe aceptar una fecha en formato yyyy-mm-dd como entrada y responder si es un feriado o no, consultando la base de datos.</li>
+</ol>
+</li>
+</ol>
+<h4 id="pasos-para-resolver-este-punto">Pasos para resolver este punto:</h4>
+<ul>
+<li>Crear API el contexto será la url inicial, el nombre del API y el uri-template la continuación de la ruta ej. /api/esFeriado/2024-01-02</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">api</span> <span class="hljs-attr">context</span>=<span class="hljs-string">"/api"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"FeriadoAPI"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://ws.apache.org/ns/synapse"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">resource</span> <span class="hljs-attr">methods</span>=<span class="hljs-string">"GET"</span> <span class="hljs-attr">uri-template</span>=<span class="hljs-string">"/esFeriado/{fecha}"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">inSequence</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- Extraer la fecha de la URL --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"get-property('uri.var.fecha')"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fecha"</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"default"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"STRING"</span>/&gt;</span>
+            <span class="hljs-comment">&lt;!-- Registrar la fecha recibida --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">log</span> <span class="hljs-attr">level</span>=<span class="hljs-string">"full"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"get-property('fecha')"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Fecha Recibida"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">log</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">inSequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">outSequence</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">faultSequence</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">resource</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">api</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>Luego agrega la consulta a la Base de datos luego del log, apuntando a la tabla que ya creamos anteriormente (debe tener datos)</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment">&lt;!-- Consulta a la base de datos para verificar si la fecha es un feriado --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dblookup</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">connection</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pool</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">driver</span>&gt;</span>com.mysql.jdbc.Driver<span class="hljs-tag">&lt;/<span class="hljs-name">driver</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>jdbc:mysql://localhost:3306/test<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">user</span>&gt;</span>prueba<span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">password</span>&gt;</span>prueba<span class="hljs-tag">&lt;/<span class="hljs-name">password</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">pool</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">connection</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">statement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">sql</span>&gt;</span>&lt;![CDATA[SELECT nombre FROM FERIADOS WHERE fecha = ?]]&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">parameter</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"get-property('fecha')"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"VARCHAR"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"nombre"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"nombreFeriado"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">statement</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dblookup</span>&gt;</span>
+</div></code></pre>
+<ul>
+<li>Agregamos un filter para poder evaluar si obtuvo respuesta devolviendo un http 200 y si no devuelga un 404 not found</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment">&lt;!-- Evaluar el resultado y establecer la respuesta --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">filter</span> <span class="hljs-attr">xpath</span>=<span class="hljs-string">"get-property('nombreFeriado') != ''"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">then</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">payloadFactory</span> <span class="hljs-attr">media-type</span>=<span class="hljs-string">"json"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>
+                {
+                    "mensaje": "El día es un feriado"
+                }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">args</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">payloadFactory</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">respond</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">then</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">else</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">payloadFactory</span> <span class="hljs-attr">media-type</span>=<span class="hljs-string">"json"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>
+                {
+                    "mensaje": "El día no es un feriado"
+                }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">args</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">payloadFactory</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"HTTP_SC"</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"axis2"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"STRING"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"404"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">respond</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">else</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">filter</span>&gt;</span>
+</div></code></pre>
+<h3 id="entregables">Entregables</h3>
+<ol>
+<li>Código fuente del proyecto</li>
+<li>Scripts de creación de la base de datos y cualquier script adicional necesario para la configuracion.</li>
+<li>Documentacion de la API en formato swagger (yaml o json).</li>
+</ol>
+<p>Archivo swagger API :</p>
+<pre class="hljs"><code><div><span class="hljs-attr">openapi:</span> <span class="hljs-number">3.0</span><span class="hljs-number">.0</span>
+<span class="hljs-attr">info:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">API</span> <span class="hljs-string">de</span> <span class="hljs-string">Feriados</span>
+  <span class="hljs-attr">version:</span> <span class="hljs-number">1.0</span><span class="hljs-number">.0</span>
+  <span class="hljs-attr">description:</span> <span class="hljs-string">Una</span> <span class="hljs-string">API</span> <span class="hljs-string">para</span> <span class="hljs-string">verificar</span> <span class="hljs-string">si</span> <span class="hljs-string">una</span> <span class="hljs-string">fecha</span> <span class="hljs-string">dada</span> <span class="hljs-string">es</span> <span class="hljs-string">un</span> <span class="hljs-string">feriado</span>
+<span class="hljs-attr">paths:</span>
+  <span class="hljs-string">/api/esFeriado/{fecha}:</span>
+    <span class="hljs-attr">get:</span>
+      <span class="hljs-attr">summary:</span> <span class="hljs-string">Verificar</span> <span class="hljs-string">si</span> <span class="hljs-string">una</span> <span class="hljs-string">fecha</span> <span class="hljs-string">es</span> <span class="hljs-string">un</span> <span class="hljs-string">feriado</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">Devuelve</span> <span class="hljs-string">un</span> <span class="hljs-string">mensaje</span> <span class="hljs-string">indicando</span> <span class="hljs-string">si</span> <span class="hljs-string">la</span> <span class="hljs-string">fecha</span> <span class="hljs-string">dada</span> <span class="hljs-string">es</span> <span class="hljs-string">un</span> <span class="hljs-string">feriado</span>
+      <span class="hljs-attr">parameters:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">fecha</span>
+          <span class="hljs-attr">in:</span> <span class="hljs-string">path</span>
+          <span class="hljs-attr">required:</span> <span class="hljs-literal">true</span>
+          <span class="hljs-attr">schema:</span>
+            <span class="hljs-attr">type:</span> <span class="hljs-string">string</span>
+            <span class="hljs-attr">format:</span> <span class="hljs-string">date</span>
+            <span class="hljs-attr">example:</span> <span class="hljs-string">'2024-06-21'</span>
+          <span class="hljs-attr">description:</span> <span class="hljs-string">La</span> <span class="hljs-string">fecha</span> <span class="hljs-string">en</span> <span class="hljs-string">formato</span> <span class="hljs-string">yyyy-mm-dd</span>
+      <span class="hljs-attr">responses:</span>
+        <span class="hljs-attr">'200':</span>
+          <span class="hljs-attr">description:</span> <span class="hljs-string">La</span> <span class="hljs-string">fecha</span> <span class="hljs-string">es</span> <span class="hljs-string">un</span> <span class="hljs-string">feriado</span>
+          <span class="hljs-attr">content:</span>
+            <span class="hljs-attr">application/json:</span>
+              <span class="hljs-attr">schema:</span>
+                <span class="hljs-attr">type:</span> <span class="hljs-string">object</span>
+                <span class="hljs-attr">properties:</span>
+                  <span class="hljs-attr">mensaje:</span>
+                    <span class="hljs-attr">type:</span> <span class="hljs-string">string</span>
+                    <span class="hljs-attr">example:</span> <span class="hljs-string">"El día es un feriado"</span>
+        <span class="hljs-attr">'404':</span>
+          <span class="hljs-attr">description:</span> <span class="hljs-string">La</span> <span class="hljs-string">fecha</span> <span class="hljs-literal">no</span> <span class="hljs-string">es</span> <span class="hljs-string">un</span> <span class="hljs-string">feriado</span>
+          <span class="hljs-attr">content:</span>
+            <span class="hljs-attr">application/json:</span>
+              <span class="hljs-attr">schema:</span>
+                <span class="hljs-attr">type:</span> <span class="hljs-string">object</span>
+                <span class="hljs-attr">properties:</span>
+                  <span class="hljs-attr">mensaje:</span>
+                    <span class="hljs-attr">type:</span> <span class="hljs-string">string</span>
+                    <span class="hljs-attr">example:</span> <span class="hljs-string">"El día no es un feriado"</span>
+<span class="hljs-attr">servers:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">url:</span> <span class="hljs-string">http://localhost:8280</span>
+    <span class="hljs-attr">description:</span> <span class="hljs-string">WSO2</span> <span class="hljs-string">Micro</span> <span class="hljs-string">Integrator</span>
+
+</div></code></pre>
+
+</body>
+</html>

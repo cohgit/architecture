@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: API de Feriados
+  version: 1.0.0
+  description: Una API para verificar si una fecha dada es un feriado
+paths:
+  /api/esFeriado/{fecha}:
+    get:
+      summary: Verificar si una fecha es un feriado
+      description: Devuelve un mensaje indicando si la fecha dada es un feriado
+      parameters:
+        - name: fecha
+          in: path
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2024-06-21'
+          description: La fecha en formato yyyy-mm-dd
+      responses:
+        '200':
+          description: La fecha es un feriado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mensaje:
+                    type: string
+                    example: "El día es un feriado"
+        '404':
+          description: La fecha no es un feriado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mensaje:
+                    type: string
+                    example: "El día no es un feriado"
+servers:
+  - url: http://localhost:8280
+    description: WSO2 Micro Integrator
