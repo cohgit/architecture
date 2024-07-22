@@ -1,5 +1,3 @@
-
-
 ## Sin proxy
 ssh -i "cogalde.pem" ec2-user@ec2-3-88-145-108.compute-1.amazonaws.com
 
@@ -25,3 +23,12 @@ put app.zip
 
 
 rsync -av --exclude='.git' /Users/imagemaker/dev_p/cronicare.net/cronicare-git-ops-bck/ /Users/imagemaker/dev_p/cronicare.net/cronicare-git-ops/
+
+
+Credenciales ssh
+comando : ssh fergus@104.237.133.145
+host: acm.opengato.cl / 
+user: fergus
+pass: Fergus.,3221
+
+scp fergus@104.237.133.145:~/acm-manager-db_2024-07-07T04_00-04_00.sql .
