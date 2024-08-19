@@ -1,5 +1,35 @@
 
-db pull '/storage/emulated/0/Download/Sesiones de Trabajo. IBS a la Nube-20230118_080858-Grabación de la reunión.zip.002'
+## Problema con Display Service
+
+ejecuta en cmd con permisos de administracion
+
+```console
+C:\Users\cesar.ogalde_imagema>sc stop SuperDisplay
+
+NOMBRE_SERVICIO: SuperDisplay
+        TIPO               : 10  WIN32_OWN_PROCESS
+        ESTADO             : 3  STOP_PENDING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        CÓD_SALIDA_WIN32   : 0  (0x0)
+        CÓD_SALIDA_SERVICIO: 0  (0x0)
+        PUNTO_COMPROB.     : 0x1
+        INDICACIÓN_INICIO  : 0x3e8
+
+C:\Users\cesar.ogalde_imagema>wmic service where "name like '%SuperDisplay%' or displayname like '%SuperDisplay%'" get Name, DisplayName, State, StartMode, PathName
+DisplayName   Name          PathName                                         StartMode  State
+SuperDisplay  SuperDisplay  C:\Program Files\SuperDisplay\MirrorService.exe  Auto       Stopped
+
+
+C:\Users\cesar.ogalde_imagema>TASKKILL /PID 31540 /F
+Correcto: se terminó el proceso con PID 31540.
+
+C:\Users\cesar.ogalde_imagema>tasklist /FI "IMAGENAME eq adb.exe"
+INFORMACIÓN: no hay tareas ejecutándose que coincidan con los
+criterios especificados.
+
+```
+
+adb pull '/storage/emulated/0/Download/Sesiones de Trabajo. IBS a la Nube-20230118_080858-Grabación de la reunión.zip.002'
 
 adb devices
 adb logcat

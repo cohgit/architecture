@@ -1,0 +1,1 @@
+docker exec mysql /usr/bin/mysqldump -u root --password=abstract-doing-tacking acm-mails > acm-mails_20240812.sql
