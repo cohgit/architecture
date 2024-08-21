@@ -219,3 +219,60 @@ Este enfoque te proporcionará una visión clara del estado actual de las capaci
      - **Estándar:** Deprecación y obsolescencia gestionadas con planes documentados y proactivos.
      - **Avanzado:** Gestión avanzada de la deprecación y obsolescencia, con monitoreo continuo y planificación estratégica.
      - **Optimizado:** Deprecación y obsolescencia completamente optimizadas, con una gestión proactiva y alineada con la innovación y los objetivos de negocio.
+
+## Agrupación de Dimensiones por Categorias
+
+Para una dinámica más liviana se agrupan las dimensiones en 4 preguntas, tal que la respuesta permita responder cada dimensión.
+
+### Categoría 1: **Desarrollo y Pruebas**
+1. **Testing**
+2. **Integraciones**
+3. **Control de Versiones**
+4. **CI/CD**
+
+**Pregunta**: 
+- ¿Cómo se gestionan y automatizan las pruebas, integraciones, y despliegues continuos en el desarrollo, y qué mecanismos existen para el control de versiones?
+
+### Categoría 2: **Infraestructura y Operaciones**
+1. **Servidores**
+2. **Mantenimiento y Actualizaciones**
+3. **Compatibilidad, Deprecación y Obsolescencia**
+4. **Obsolescencia (reemplazos Deprecados)**
+
+**Pregunta**: 
+- ¿De qué manera se administran los servidores, y cómo se aseguran la compatibilidad, el mantenimiento, y la actualización de los sistemas mientras se gestionan las tecnologías obsoletas?
+
+### Categoría 3: **Arquitectura y Seguridad**
+1. **Arquitectura del Proyecto**
+2. **Tecnologías Utilizadas**
+3. **Seguridad**
+4. **API**
+
+**Pregunta**: 
+- ¿Qué tan madura es la arquitectura del proyecto en términos de tecnologías utilizadas y seguridad, y cómo se gestionan las APIs dentro de esta estructura?
+
+### Categoría 4: **Gestión y Metodologías**
+1. **Metodologías**
+2. **Administración de Proyectos**
+3. **Tecnologías Utilizadas**
+4. **Mantenimiento y Actualizaciones**
+
+**Pregunta**: 
+- ¿Cómo se aplican las metodologías y se administran los proyectos para asegurar que las tecnologías utilizadas y los procesos de mantenimiento se mantengan alineados con las mejores prácticas? 
+
+Cada una de estas preguntas está diseñada para explorar en profundidad las dimensiones específicas dentro de su categoría, proporcionando una visión integral del nivel de madurez técnica en diferentes aspectos de un proyecto o sistema.
+
+
+####
+- Nombre del Equipo
+- Conversacion técnica 
+
+
+- Mural Incorporar la dinamíca 
+- Excel Agregar Dimensiones y Agrupaciones
+
+16:30 Ensayo
+17:00 Dinamica 
+17:30 
+=====
+

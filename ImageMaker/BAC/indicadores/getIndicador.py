@@ -34,7 +34,8 @@ else:
             print(versions_response.text)
         else:
             versions_data = versions_response.json()
-
+            cantidad = len(versions_data)
+            print(f"Cantidad de registros encontrados {cantidad}")
             # Process data
             results = []
 
