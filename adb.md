@@ -1,8 +1,6 @@
 
 db pull '/storage/emulated/0/Download/Sesiones de Trabajo. IBS a la Nube-20230118_080858-Grabación de la reunión.zip.002'
 
-
-
 adb devices
 adb logcat
 
@@ -88,50 +86,4 @@ R5CR50X9ZSK	device
 >scrcpy -s 192.168.1.91:5555
 
 ### view phone
->scrcpy -s 192.168.1.91:5555
->scrcpy -s 5200ccfae28a442f
-
-## Android TV Philco
-$adb connect 192.168.1.90:5555
-$scrcpy -s 192.168.1.90:5555
-
-
-## Busqueda de Aplicaicones e inicio
-```console
-$ adb shell pm list packages | grep spacedesk
-package:ph.spacedesk.beta
-```
-
-## encontrar la actividad principal
-```console
-$ adb shell cmd package resolve-activity --brief ph.spacedesk.beta | tail -n 1
-ph.spacedesk.beta/ph.spacedesk.httpwww.spacedesk.SAActivityConnect
-```
-
-## Iniciar aplicacion
-```console
-adb shell am start -n ph.spacedesk.beta/ph.spacedesk.httpwww.spacedesk.SAActivityConnect
-```
-
-## Detener aplicacion
-```console
-adb shell am force-stop ph.spacedesk.beta
-```
-
-
-## Seguidad
-
-### Instalar Software de la camara
-```console
-adb install camon-live-streaming.apk
-```
-
-### Iniciar camara
-```console
-adb shell am start -n com.spynet.camon/com.spynet.camon.ui.OnboardingActivity
-```
-
-### Detener camara
-```console
-adb shell am force-stop com.spynet.camon
-```
+>scrcpy -s 192.168.1.87:5555
