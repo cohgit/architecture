@@ -49,3 +49,186 @@ Story ID,Story Key,Story Summary,Story Priority,Creator,Story Creation Date,Vers
 4378025,MATM-127883,16:00-16:30 Consolidado,oalfarofu@baccredomatic.cr,2024-08-21 17:30:39.667000-06:00
 4378024,MATM-127882,16:00-17:00 Atención de la red,oalfarofu@baccredomatic.cr,2024-08-21 17:30:36.833000-06:00
 4378023,MATM-127881,16:00-16:30 Atención de la red,oalfarofu@baccredomatic.cr,2024-08-21 17:30:33.725000-06:00
+Story ID,Story Key,Story Summary,Story Priority,Creator,Story Creation Date,Version ID,Version Name,Version Realease Date,Time to Release (days)
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33021,MSN-333 R1. Cero Papel crédito - Distribución,2018-09-28 00:00:00+00:00,-2028
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33027,MSN-333 R2. Cero Papel Crédito - Sucursales,2019-02-01 00:00:00+00:00,-1902
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44510,MSN-333 R3. Entrega de compass,2019-03-25 00:00:00+00:00,-1850
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33028,MSN-333 R4. Cero Papel cuenta bancaria de Producción ( no nuevas),2019-06-04 00:00:00+00:00,-1779
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44511,MSN-333 R5. Seguros PPI,2019-06-24 00:00:00+00:00,-1759
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,38630,MSN-333 R6. Notificación de subproductos HTML,2019-08-06 00:00:00+00:00,-1716
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44513,MSN-333 R7. Automatizar huella,2019-08-23 00:00:00+00:00,-1699
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44512,MSN-333 R8. Entregas Cero Papel área comercial,2019-09-23 00:00:00+00:00,-1668
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,38423,MSN-333 R9. Cambio de trasiego,2019-12-19 00:00:00+00:00,-1581
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33031,MSN-333 R10. Motor de reglas,2020-01-16 00:00:00+00:00,-1553
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,37732,MSN-333 R11. Mejoras Cero Papel,2020-01-30 00:00:00+00:00,-1539
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,39289,MSN-333 R12. Piloto CEPA sin CITRIX,2020-02-12 00:00:00+00:00,-1526
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,39005,MSN-333 R13. Geolocalización (Pineo),2020-02-18 00:00:00+00:00,-1520
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44514,MSN-333 R14. Formalización Cuenta Nuevas Débito - Cero Papel,2020-02-24 00:00:00+00:00,-1514
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,37261,MSN-333 R16. Mejoras en SAC,2020-03-30 00:00:00+00:00,-1479
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,38368,MSN-333 R17.  Nuevo HTML con Subproductos ,2020-04-02 00:00:00+00:00,-1476
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,39056,MSN-333 R15. Encuesta de Servicio Distribución,2020-03-20 00:00:00+00:00,-1489
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,38403,Indexación automática,2020-04-14 00:00:00+00:00,-1464
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,38274,MSN-333 R18. Módulo de Inconsistencias,2020-05-28 00:00:00+00:00,-1420
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,39620,MSN-333 R19. Motor de reglas para adicionales/LG,2020-06-30 00:00:00+00:00,-1387
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44519,MSN-333 R20. Panel Geolocalización,2020-08-25 00:00:00+00:00,-1331
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,41617,MSN-333 R21. Dashboard indicadores,2020-10-22 00:00:00+00:00,-1273
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,40139,MSN-333 R23. Entrega de valores,2020-11-11 00:00:00+00:00,-1253
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,40271,MSN-333 R22. Actualización de datos clientes en AS400,2021-08-30 00:00:00+00:00,-961
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33030,MSN-333 R24. Planillas formalización con CEPA,2021-02-25 00:00:00+00:00,-1147
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,33034,MSN-333 R25.  AS400 para la eliminación de qrys Prod.,2021-05-31 00:00:00+00:00,-1052
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,45025,MSN-333 R25 Bitácora de logs,2021-07-22 00:00:00+00:00,-1000
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,43772,MSN-2741 R1. Proceso de Archivos COM y BAC,2020-12-07 00:00:00+00:00,-1227
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44826,MSN-2741 R2. Procesamiento de cortes EC con plantilla actual,2021-06-30 00:00:00+00:00,-1022
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,44457,MSN-2741 R3. BE Módulo de procesamiento,2021-06-30 00:00:00+00:00,-1022
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,49632,MSN-4614 R1,2021-11-19 00:00:00+00:00,-880
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,49566,MSN-2528 R1,2021-09-09 00:00:00+00:00,-951
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,50826,MSN-2355 R1,2021-12-20 00:00:00+00:00,-849
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,51623,MSN-333 R23,2022-01-24 00:00:00+00:00,-814
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,50705,MSN-3557 R1,2022-02-03 00:00:00+00:00,-804
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,51624,MSN-3557 R2,2022-02-18 00:00:00+00:00,-789
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,52568,MSN-194 R1,2022-05-11 00:00:00+00:00,-707
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53408,MSN-194 R3,2022-02-28 00:00:00+00:00,-779
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53415,MSN-194 R2,2022-03-10 00:00:00+00:00,-769
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53417,MSN-194 R4,2022-03-10 00:00:00+00:00,-769
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,62323,MSN-5010 R22,2023-10-09 00:00:00+00:00,-191
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53864,MSN-3557 R3,2022-04-06 00:00:00+00:00,-742
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,52843,MSN-333 R4,2022-01-27 00:00:00+00:00,-811
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,54907,MSN-5010 R1,2022-09-30 00:00:00+00:00,-565
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53753,FCN-5487,2022-05-17 00:00:00+00:00,-701
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,54783,MSN-194 R5,2022-06-17 00:00:00+00:00,-670
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,53409,FCN-7059 R1,2022-06-01 00:00:00+00:00,-686
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,55176,MSN-3831 R3,2022-08-12 00:00:00+00:00,-614
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,55177,MSN-3831 R2,2022-09-06 00:00:00+00:00,-589
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,52723,MSN-3831 R1,2022-08-25 00:00:00+00:00,-601
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,55550,MSN-4430 R1,2022-07-29 00:00:00+00:00,-628
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,54784,MSN-3271 R1,2022-07-22 00:00:00+00:00,-635
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,55595,MSN-5010 R3,2022-06-30 00:00:00+00:00,-657
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,55598,MSN-4113 RI,2022-07-22 00:00:00+00:00,-635
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,56149,MSN-5010 R4,2022-07-27 00:00:00+00:00,-630
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,56658,MSN-5010 R6,2022-09-06 00:00:00+00:00,-589
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,56667,MSN-3831 R4,2022-09-06 00:00:00+00:00,-589
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,56968,MSN-5010 R7,2022-09-08 00:00:00+00:00,-587
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57001,MSN-5010 R8,2022-09-16 00:00:00+00:00,-579
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57036,MSN-5010 R9,2022-09-13 00:00:00+00:00,-582
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57119,MSN-5010 R10,2022-09-19 00:00:00+00:00,-576
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57157,MSN-5010 R11,2022-09-22 00:00:00+00:00,-573
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57400,MSN-5010 R12,2022-10-10 00:00:00+00:00,-555
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57430,MSN-5010 R13,2022-10-07 00:00:00+00:00,-558
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,57780,MSN-6053 R1,2022-12-01 00:00:00+00:00,-503
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,58118,MSN-5010 R14,2022-12-05 00:00:00+00:00,-499
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,58383,MSN-3831 R5,2023-01-26 00:00:00+00:00,-447
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,58417,MSN-5010 R16,2023-01-05 00:00:00+00:00,-468
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,58746,MSN-5010 R17 ,2023-01-11 00:00:00+00:00,-462
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,59316,MSN-5010 R18,2023-01-26 00:00:00+00:00,-447
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,59362,MSN-5010 R21,2023-04-24 00:00:00+00:00,-359
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,59723,MSN-5010 R19,2023-02-14 00:00:00+00:00,-428
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,60918,MSN-5010 R20 ,2023-03-01 00:00:00+00:00,-413
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,63577,MSN-5010 R23,2023-07-11 00:00:00+00:00,-281
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,64080,MSN-5010 R24,2023-08-22 00:00:00+00:00,-239
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,64480,MSN-5010 R25,2023-09-06 00:00:00+00:00,-224
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,64889,MSN-5010 R26,2023-09-18 00:00:00+00:00,-212
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,66225,MSN-5010 R30,2023-12-05 00:00:00+00:00,-134
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,65165,MSN-5010 R28,2023-10-13 00:00:00+00:00,-187
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,65175,MSN-5010 R29,2023-10-27 00:00:00+00:00,-173
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,65699,MSN-5077 R1,2023-10-30 00:00:00+00:00,-170
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,66696,MSN-7703 R1,2024-01-02 00:00:00+00:00,-106
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,67035,MSN-7703 R2,2024-01-02 00:00:00+00:00,-106
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,67599,INC0122416 R1,2024-01-24 00:00:00+00:00,-84
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,68466,INC0122757,2024-03-05 00:00:00+00:00,-43
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,68930,MSN-7145 R1 Pren1,2024-04-11 00:00:00+00:00,-6
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,68931,MSN-5077 R2 UMO,2024-04-01 00:00:00+00:00,-16
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,69113,MSN-8091 R2 BiomURL,2024-05-08 00:00:00+00:00,21
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,69342,INC-Hoja Form,2024-03-19 00:00:00+00:00,-29
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,69443,MSN-5077 SaldoDeudor,2024-04-11 00:00:00+00:00,-6
+3988330,EDPEH-9970,Pruebas: Formalización planillas en Sucursales,Highest,andres.navarro@baccredomatic.cr,2024-04-16 07:57:41.781000-06:00,70437,MSN-6329,2024-05-31 00:00:00+00:00,44
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33021,MSN-333 R1. Cero Papel crédito - Distribución,2018-09-28 00:00:00+00:00,-2016
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33027,MSN-333 R2. Cero Papel Crédito - Sucursales,2019-02-01 00:00:00+00:00,-1890
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44510,MSN-333 R3. Entrega de compass,2019-03-25 00:00:00+00:00,-1838
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33028,MSN-333 R4. Cero Papel cuenta bancaria de Producción ( no nuevas),2019-06-04 00:00:00+00:00,-1767
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44511,MSN-333 R5. Seguros PPI,2019-06-24 00:00:00+00:00,-1747
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,38630,MSN-333 R6. Notificación de subproductos HTML,2019-08-06 00:00:00+00:00,-1704
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44513,MSN-333 R7. Automatizar huella,2019-08-23 00:00:00+00:00,-1687
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44512,MSN-333 R8. Entregas Cero Papel área comercial,2019-09-23 00:00:00+00:00,-1656
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,38423,MSN-333 R9. Cambio de trasiego,2019-12-19 00:00:00+00:00,-1569
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33031,MSN-333 R10. Motor de reglas,2020-01-16 00:00:00+00:00,-1541
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,37732,MSN-333 R11. Mejoras Cero Papel,2020-01-30 00:00:00+00:00,-1527
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,39289,MSN-333 R12. Piloto CEPA sin CITRIX,2020-02-12 00:00:00+00:00,-1514
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,39005,MSN-333 R13. Geolocalización (Pineo),2020-02-18 00:00:00+00:00,-1508
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44514,MSN-333 R14. Formalización Cuenta Nuevas Débito - Cero Papel,2020-02-24 00:00:00+00:00,-1502
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,37261,MSN-333 R16. Mejoras en SAC,2020-03-30 00:00:00+00:00,-1467
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,38368,MSN-333 R17.  Nuevo HTML con Subproductos ,2020-04-02 00:00:00+00:00,-1464
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,39056,MSN-333 R15. Encuesta de Servicio Distribución,2020-03-20 00:00:00+00:00,-1477
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,38403,Indexación automática,2020-04-14 00:00:00+00:00,-1452
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,38274,MSN-333 R18. Módulo de Inconsistencias,2020-05-28 00:00:00+00:00,-1408
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,39620,MSN-333 R19. Motor de reglas para adicionales/LG,2020-06-30 00:00:00+00:00,-1375
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44519,MSN-333 R20. Panel Geolocalización,2020-08-25 00:00:00+00:00,-1319
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,41617,MSN-333 R21. Dashboard indicadores,2020-10-22 00:00:00+00:00,-1261
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,40139,MSN-333 R23. Entrega de valores,2020-11-11 00:00:00+00:00,-1241
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,40271,MSN-333 R22. Actualización de datos clientes en AS400,2021-08-30 00:00:00+00:00,-949
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33030,MSN-333 R24. Planillas formalización con CEPA,2021-02-25 00:00:00+00:00,-1135
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,33034,MSN-333 R25.  AS400 para la eliminación de qrys Prod.,2021-05-31 00:00:00+00:00,-1040
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,45025,MSN-333 R25 Bitácora de logs,2021-07-22 00:00:00+00:00,-988
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,43772,MSN-2741 R1. Proceso de Archivos COM y BAC,2020-12-07 00:00:00+00:00,-1215
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44826,MSN-2741 R2. Procesamiento de cortes EC con plantilla actual,2021-06-30 00:00:00+00:00,-1010
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,44457,MSN-2741 R3. BE Módulo de procesamiento,2021-06-30 00:00:00+00:00,-1010
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,49632,MSN-4614 R1,2021-11-19 00:00:00+00:00,-868
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,49566,MSN-2528 R1,2021-09-09 00:00:00+00:00,-939
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,50826,MSN-2355 R1,2021-12-20 00:00:00+00:00,-837
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,51623,MSN-333 R23,2022-01-24 00:00:00+00:00,-802
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,50705,MSN-3557 R1,2022-02-03 00:00:00+00:00,-792
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,51624,MSN-3557 R2,2022-02-18 00:00:00+00:00,-777
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,52568,MSN-194 R1,2022-05-11 00:00:00+00:00,-695
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53408,MSN-194 R3,2022-02-28 00:00:00+00:00,-767
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53415,MSN-194 R2,2022-03-10 00:00:00+00:00,-757
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53417,MSN-194 R4,2022-03-10 00:00:00+00:00,-757
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,62323,MSN-5010 R22,2023-10-09 00:00:00+00:00,-179
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53864,MSN-3557 R3,2022-04-06 00:00:00+00:00,-730
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,52843,MSN-333 R4,2022-01-27 00:00:00+00:00,-799
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,54907,MSN-5010 R1,2022-09-30 00:00:00+00:00,-553
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53753,FCN-5487,2022-05-17 00:00:00+00:00,-689
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,54783,MSN-194 R5,2022-06-17 00:00:00+00:00,-658
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,53409,FCN-7059 R1,2022-06-01 00:00:00+00:00,-674
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,55176,MSN-3831 R3,2022-08-12 00:00:00+00:00,-602
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,55177,MSN-3831 R2,2022-09-06 00:00:00+00:00,-577
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,52723,MSN-3831 R1,2022-08-25 00:00:00+00:00,-589
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,55550,MSN-4430 R1,2022-07-29 00:00:00+00:00,-616
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,54784,MSN-3271 R1,2022-07-22 00:00:00+00:00,-623
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,55595,MSN-5010 R3,2022-06-30 00:00:00+00:00,-645
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,55598,MSN-4113 RI,2022-07-22 00:00:00+00:00,-623
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,56149,MSN-5010 R4,2022-07-27 00:00:00+00:00,-618
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,56658,MSN-5010 R6,2022-09-06 00:00:00+00:00,-577
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,56667,MSN-3831 R4,2022-09-06 00:00:00+00:00,-577
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,56968,MSN-5010 R7,2022-09-08 00:00:00+00:00,-575
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57001,MSN-5010 R8,2022-09-16 00:00:00+00:00,-567
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57036,MSN-5010 R9,2022-09-13 00:00:00+00:00,-570
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57119,MSN-5010 R10,2022-09-19 00:00:00+00:00,-564
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57157,MSN-5010 R11,2022-09-22 00:00:00+00:00,-561
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57400,MSN-5010 R12,2022-10-10 00:00:00+00:00,-543
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57430,MSN-5010 R13,2022-10-07 00:00:00+00:00,-546
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,57780,MSN-6053 R1,2022-12-01 00:00:00+00:00,-491
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,58118,MSN-5010 R14,2022-12-05 00:00:00+00:00,-487
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,58383,MSN-3831 R5,2023-01-26 00:00:00+00:00,-435
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,58417,MSN-5010 R16,2023-01-05 00:00:00+00:00,-456
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,58746,MSN-5010 R17 ,2023-01-11 00:00:00+00:00,-450
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,59316,MSN-5010 R18,2023-01-26 00:00:00+00:00,-435
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,59362,MSN-5010 R21,2023-04-24 00:00:00+00:00,-347
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,59723,MSN-5010 R19,2023-02-14 00:00:00+00:00,-416
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,60918,MSN-5010 R20 ,2023-03-01 00:00:00+00:00,-401
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,63577,MSN-5010 R23,2023-07-11 00:00:00+00:00,-269
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,64080,MSN-5010 R24,2023-08-22 00:00:00+00:00,-227
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,64480,MSN-5010 R25,2023-09-06 00:00:00+00:00,-212
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,64889,MSN-5010 R26,2023-09-18 00:00:00+00:00,-200
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,66225,MSN-5010 R30,2023-12-05 00:00:00+00:00,-122
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,65165,MSN-5010 R28,2023-10-13 00:00:00+00:00,-175
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,65175,MSN-5010 R29,2023-10-27 00:00:00+00:00,-161
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,65699,MSN-5077 R1,2023-10-30 00:00:00+00:00,-158
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,66696,MSN-7703 R1,2024-01-02 00:00:00+00:00,-94
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,67035,MSN-7703 R2,2024-01-02 00:00:00+00:00,-94
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,67599,INC0122416 R1,2024-01-24 00:00:00+00:00,-72
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,68466,INC0122757,2024-03-05 00:00:00+00:00,-31
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,68930,MSN-7145 R1 Pren1,2024-04-11 00:00:00+00:00,6
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,68931,MSN-5077 R2 UMO,2024-04-01 00:00:00+00:00,-4
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,69113,MSN-8091 R2 BiomURL,2024-05-08 00:00:00+00:00,33
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,69342,INC-Hoja Form,2024-03-19 00:00:00+00:00,-17
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,69443,MSN-5077 SaldoDeudor,2024-04-11 00:00:00+00:00,6
+3957504,EDPEH-9939,Seguro Colectivo ASSA - Creación documento para TCO,Highest,andres.navarro@baccredomatic.cr,2024-04-04 11:12:57.427000-06:00,70437,MSN-6329,2024-05-31 00:00:00+00:00,56
