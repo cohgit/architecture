@@ -1,0 +1,1 @@
+docker run --name dboracle -p 1521:1521 -e ORACLE_PWD=MyPass container-registry.oracle.com/database/free:latest

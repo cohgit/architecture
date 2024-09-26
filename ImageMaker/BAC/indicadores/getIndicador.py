@@ -11,7 +11,7 @@ import csv
 auth = ('roberto.rozas@cr.asesorexternoca.com', 'ATATT3xFfGF05PFfNVS1mzk1TJQ-MfVtQts-n6IIhqrBw2L6sMt8sxvxC9IOWVYrJt7M0la643SN7CkfYmtueqUKQAmkxiQJ3NZ24Pbwmg8lzpHb-VtC1t-AhBIBUsZDQ8rK_0QSysl_PBkNjNn8Ty4hvUaEasC0410PY1dcmWGPU4ddptWPpfg=C55B82AB')
 
 # Consulta Obtiene las historias creadas hace 2 meses ordenadas descendente
-jql = f'project=EDPEH AND issuetype=Story AND created > startOfMonth(-2) ORDER BY created DESC'
+jql = f'issuetype=Story AND created > startOfMonth(-2) ORDER BY created DESC'
 stories_url = f'https://bac-latam.atlassian.net/rest/api/2/search?jql={jql}'
 stories_response = requests.get(stories_url, auth=auth, headers={'Accept': 'application/json'})
 
