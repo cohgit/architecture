@@ -1,0 +1,411 @@
+César Ogalde Hernández: 00:00 
+ No te escucho, Cristian.
+
+Matias Alberto López Muñoz: 00:02 
+ ¿No estás en mute por casualidad? No te logro escuchar.
+
+Cristian Rojas Olivares: 00:51 
+ Ÿousand.
+
+Matias Alberto López Muñoz: 00:52 
+ ¿Sí, ya, dame 1 s que ingresa.
+
+Cristian Rojas Olivares: 00:56 
+ César y los dejo, vale? Si, ningún problema. Perfecto. Luciérnagas es el que toma notas por ti, parece.
+
+César Ogalde Hernández: 03:42 
+ Hola, soy Hola, buen día. ¿Cómo estás?
+
+Matias Alberto López Muñoz: 03:45 
+ ¿Bien, y tú? ¿Cómo estáis?
+
+César Ogalde Hernández: 03:47 
+ Bien, bien, genial.
+
+Matias Alberto López Muñoz: 03:49 
+ Bueno, aquí está Cristian. Quería asesorarme que estuvieran conectados y los dejo.
+
+César Ogalde Hernández: 03:53 
+ Bueno, Ÿousand Vale, perfecto. Muchas gracias.
+
+Matias Alberto López Muñoz: 03:55 
+ Que estén bien. Chau.
+
+César Ogalde Hernández: 03:56 
+ Chau.
+
+Cristian Rojas Olivares: 03:57 
+ Dale, chau. Chau. Chau.
+
+César Ogalde Hernández: 04:00 
+ ¿Hola, Cristian, cómo estáis?
+
+Cristian Rojas Olivares: 04:02 
+ Hola. ¿Ahora, Bisny, tú?
+
+César Ogalde Hernández: 04:03 
+ Bien, bien. ¿Chileno, colombiano, venezolano?
+
+Cristian Rojas Olivares: 04:07 
+ No, chileno. De hecho también está así como chileno, parece.
+
+César Ogalde Hernández: 04:14 
+ Sí, parece que los tres somos chilenos. Este muchacho no lo conocía, me chateó ayer el césar. Si, tiene pinta. ¿Es chileno?
+
+Cristian Rojas Olivares: 04:23 
+ Si, es chileno. Por lo que tengo entendido, entró como a image maker, así como hace una semana, me dijo sí, sí, antes trabajó en Stefanini, dijo. Y ahí me dijo si podía tener una reunión hoy. Y fue como ya, vale.
+
+César Ogalde Hernández: 04:41 
+ Cristian, mira, yo trabajo en el equipo técnico de Matchmaker. He tenido varios roles.
+
+Cristian Rojas Olivares: 04:50 
+ ¿Para el cliente Latam o para todos los?
+
+César Ogalde Hernández: 04:52 
+ No, no, para Image Maker General. Antes tenía asignación por cliente, ahora estoy para todos los clientes. Entonces, dependiendo de los perfiles.
+
+Cristian Rojas Olivares: 05:05 
+ Claro.
+
+César Ogalde Hernández: 05:05 
+ Me piden que valide técnicamente algunos perfiles, así que la idea es que tengamos una conversación técnica. Yo te voy a hacer algunas preguntas técnicas y en la medida que vamos respondiendo correctamente, yo entrego este feedback al equipo.
+
+Cristian Rojas Olivares: 05:20 
+ ¿A este muchacho, como se llama?
+
+César Ogalde Hernández: 05:22 
+ ¿César, también se llama el Mitocallo, no?
+
+Cristian Rojas Olivares: 05:26 
+ Matías.
+
+César Ogalde Hernández: 05:29 
+ Sí, Matías, claro, Matías. Porque sí me habría dado cuenta si era sí.
+
+Cristian Rojas Olivares: 05:37 
+ Ahí a modo de consultas, dijiste que tuviste varios roles. Data era sysadmin.
+
+César Ogalde Hernández: 05:43 
+ Ah, me ha tocado ser arquitecto dato, arquitecto de digital, arquitecto cloud. He tenido varios roles. Ya no soy second dato, por ejemplo.
+
+Cristian Rojas Olivares: 05:53 
+ ¿Y a modo de consulta, tienes alguna certificación de arquitectura?
+
+César Ogalde Hernández: 05:58 
+ Tengo las de hachu.
+
+Cristian Rojas Olivares: 06:03 
+ Oh, qué crack.
+
+César Ogalde Hernández: 06:06 
+ Pasé un examen de arquitectura en azul, me faltó pasar el otro. Esto fue hace un tiempo, Ÿousand. Y bueno, sé las tres nubes. ¿La verdad que casi vi a Amazon y hecho, no?
+
+Cristian Rojas Olivares: 06:19 
+ Había estado estudiando hace como un año para la The Cloud y pensé que Kubernetes iba a ser lo más complejo y choqué con redes. Oh, Dios mío, que he estado sufriendo.
+
+César Ogalde Hernández: 06:28 
+ Ah, pero es que te lanzaste a un curso avanzado, te apuesto, no hiciste el fundamento, el primero.
+
+Cristian Rojas Olivares: 06:34 
+ Justamente me enteré del fundamento en la semana pasada. Así como que hay fundamentos de redes, Ÿousand y no sufrí así como la vida administrador. No, el de Cloud Engineer, el candidato. ¿No, el de Cloud Engineer porque quería como generalizar, así como entender Docker, Kubernetes.
+
+César Ogalde Hernández: 06:55 
+ Y después en qué nube es la de GCP, no? Esa ruta grande. No, el que está certificado en eso está ganando $15000 mensuales, probablemente.
+
+Cristian Rojas Olivares: 07:09 
+ De verdad hay entonces tengo que seguir. No, si ahora hasta me compro los cursos los sábados, así como no me importa.
+
+César Ogalde Hernández: 07:16 
+ Si acá en Imagen tenemos rutas de aprendizaje, yo las lidero y nos juntamos, no sé, por tres o cuatro meses para Voy a los procesos de certificación de la gente.
+
+Cristian Rojas Olivares: 07:29 
+ Eso me gustó que me presentó Maura. Maura me mandó como el voto y me dijo te establecemos una ruta. Y fue como ya, eso es lo que necesito yo, porque nosotros te acompañamos.
+
+César Ogalde Hernández: 07:40 
+ El equipo de People define las fechas y vamos a hacer rutas dos veces este año. Una básica para los principiantes y otra que está orientada a obtener certificaciones. Y ahí tenéis que meterte.
+
+Cristian Rojas Olivares: 07:56 
+ No está súper bueno, pero tenéis que.
+
+César Ogalde Hernández: 07:58 
+ Partir por la principiante porque sí, sí.
+
+Cristian Rojas Olivares: 08:03 
+ No es rudo.
+
+César Ogalde Hernández: 08:06 
+ Porque uno trabaja y usa la nube en un tópico particular, pero la nube es todo. Es como estudiar data center, tenéis que estudiar de todo.
+
+Cristian Rojas Olivares: 08:17 
+ Sí, sí. Es como cercisadmin, pero en cloud.
+
+César Ogalde Hernández: 08:21 
+ La nube implica todas las cosas por seguridad, red, no sé, estándares. Hay mucha infraestructura. Esa parte va a estar. Y el club engineer en GCP está orientado a la operación de la nube, como si fuera un senior en infraestructura. No es tu rol. Te prometo que no es tu rol.
+
+Cristian Rojas Olivares: 08:48 
+ Me he dado cuenta. Sí, porque no me ha servido nada. Te prometo que tengo que estudiar informática y ciencias de la computación de nuevo.
+
+César Ogalde Hernández: 08:55 
+ Ÿousand si no, tú tenés que estudiar datos, tenés que sacar el data engineer.
+
+Cristian Rojas Olivares: 09:02 
+ No, es que la de datos no es por ahí. Lo siento que.
+
+César Ogalde Hernández: 09:07 
+ Eso es lo que voy. Tú tienes que validar tu conocimiento en razón de lo que de tu perfil, porque así vaya a poder obtener el certificado, el otro te va a costar más porque necesitas adquirir conocimiento y experiencia que probablemente no tenía. Así que no está bueno eso.
+
+Cristian Rojas Olivares: 09:27 
+ Ya no está claro. Está bueno, pero es bueno perder, es.
+
+César Ogalde Hernández: 09:30 
+ Bueno tener fracaso, porque así uno va repitiendo y va avanzando. Sí, sí. El otro día estaba de cumpleaños un compañero y le decía feliz cumpleaños y dijo muchas gracias, éxito en todos sus proyectos. Así como de vuelta dándome iglesia que según Gardner, seis de 10 proyectos son exitosos y según y se metió otra compañera en la conversación. Entonces el 20 % me dijo si buscar ese 20 % sea un proyecto de última tecnología, que si yo que sea grande.
+
+Cristian Rojas Olivares: 10:19 
+ No sé. ¿Hoy en día todos quieren hacer un unicornio, Amazon, no sé qué, pero de repente es como uno puede vivir bien sabiendo cómo se llama? Estructuras de datos, alguno alguno que otro algoritmo vaya aplicando bien y desenvolviendo bien en el trabajo. Si se puede.
+
+César Ogalde Hernández: 10:37 
+ ¿Oye, y tú tienes el resultado de tu examen Zweitausendein? Viste que salen los scores por tema.
+
+Cristian Rojas Olivares: 10:45 
+ En los bueno, lo más débil fue redes.
+
+César Ogalde Hernández: 10:49 
+ No, pero lo tienes, tienes el pantallazo. Me lo voy a compartir.
+
+Cristian Rojas Olivares: 10:53 
+ No, es que lo he tomado por coursera, por GCP Cloud Skill Boost. Y ahí es como que te dan todas las pruebas de diagnóstico.
+
+César Ogalde Hernández: 11:02 
+ Pero tenía buenas fotos de la prueba de diagnóstico o resultado de eso.
+
+Cristian Rojas Olivares: 11:06 
+ Son como 10 preguntas por tópicos, no es como una general al final no.
+
+César Ogalde Hernández: 11:11 
+ Importa, lo tenía.
+
+Cristian Rojas Olivares: 11:15 
+ Claro. Pero para la prueba de diagnóstico, supongamos, la primera vez que la hago, no sé, dos de 10. Ya la segunda vez que la hago es como ocho de 10.
+
+César Ogalde Hernández: 11:21 
+ No, pero muéstrame la última no más. Me sirve la primera.
+
+Cristian Rojas Olivares: 11:27 
+ Te la puedo mandar por correo si.
+
+Matias Alberto López Muñoz: 11:29 
+ Lo tengo que tener.
+
+Cristian Rojas Olivares: 11:30 
+ Pero para que no perdamos odio, porque.
+
+César Ogalde Hernández: 11:32 
+ Me ahorraste como 10 preguntas.
+
+Cristian Rojas Olivares: 11:35 
+ ¿En serio?
+
+César Ogalde Hernández: 11:37 
+ Si lo hacemos más corta. Aparte que tengo una reunión a nueve y media. Si estuviste estudiando, tenía esto detrás que te lo valía.
+
+Cristian Rojas Olivares: 11:47 
+ Claro. Déjame ver dónde está esta.
+
+César Ogalde Hernández: 11:51 
+ Te pregunto otras cosas.
+
+Cristian Rojas Olivares: 11:53 
+ Claro, o sea, claro, mientras tanto, no sé, pues yo entré al mundo como quería hacer data scientist antes y me gustó el tema de me fue gustando cada vez más la programación que la ciencia de datos. Entonces entré, como dije, nadie contrata un data scientist sin experiencia. Tirémonos por la inteligencia negocio. Ya, inteligencia negocio. Todo lo que era SQL estuve quereando, quereando así distintas tablas, tablas con distintos niveles de agrupaciones y que entendí los distintos como cierto, hacer group by múltiples a diferentes tablas y todos los hacer joints de varias tablas, ir optimizando el desempeño de las queries. Ya después como metiéndole python, fue como ah, con python puedo hacer lo mismo, pero a niveles como más grandes. Ahí ir viendo los distintos métodos. Sorry que mi gato no se ve.
+
+César Ogalde Hernández: 12:45 
+ No lo veo. O sea, veo una mancha que se.
+
+Cristian Rojas Olivares: 12:47 
+ Está moviendo, pero no, esa mancha es el bebé que quiere salir. Nada, así que después cuando me quise dar el paso al salto cloud, entre acá equifax, [sos/eos] ya que en equifax estaban mirando todos los procesos gcp y tuve que profundizar un poquito más en todo lo que era linux y algunas cosas share porque tenía servidores, hacia cosas powershell porque tenían servidores Microsoft y servidores linux. Entonces como que lo mismo, era mejor ocupar directamente la shell de Microsoft que tenían disponible algunos algunos servers. ¿Nada, después como que haciéndole sus tratamientos de datos, te fijas? Y claro, todo lo que son los pipelines y ahí haciendo hartas cositas, básicamente solucionando varios cachos, como mi día a día en cuanto a datos, llega a datos como de si no me equivoco son como 150 proveedores en formatos distintos de ancho fijo que hay que convertir a hay que extraer como los primeros dos valores.
+
+César Ogalde Hernández: 14:03 
+ Oye, y cuando tú me decías hacer querear, me llama la atención el verbo.
+
+Cristian Rojas Olivares: 14:08 
+ Está bueno mi ex jefear.
+
+César Ogalde Hernández: 14:14 
+ ¿Cómo optimizáis las consultas cuando hay muchos joins y filtros?
+
+Cristian Rojas Olivares: 14:20 
+ Lo que hacíamos es trabajar con SQL Server. ¿Y la trabajáis en tablas temporales? Una, porque el niño que estuvo antes que yo se creía el super crack mundial, por lo que me dijeron, parece que duró tres semanas. Y cuando tenían distintos niveles de agrupación, supongamos, una se llama producto diario, que obviamente estaba el cliente una vez por compra, 1 vez por día. Y en otra era como que estaba el cliente solo una vez, y el niño lo que hizo fue sumar todo, y al cruzar las tablas fue como unos clientes que debían así como 12 veces lo que realmente porque si justo ese día compró 12, no sé, tres polerones. Tres poleras, se le hizo el producto cartesiano y el niño tuvo que salir a buscar trabajo al otro día. Ya. Entonces se trabajaba en tablas temporales, así como pegar los datos que querías en una tabla y luego la iba cruzando con la otra tabla y ahí lo que hacíais era como agrupar por ruta. Y ahí lo sumabais por ruta. ¿Pero de ahí tenías que ver bien qué es lo que estabas qué es lo que tú querías ver, te fijas? Porque supongamos, si tú querías ver cuánto consumió un cliente, te servía la suma. ¿Si queréis ver el número de el número de compras que hizo aleridad, hay un contacto asterisco agrupado por agrupado la otra tabla que lo tenía por por compra, te fijas? Y ahí si queríais ver, no sé, por la cantidad de boletas, ahí teníamos una proporción que era local, caja, fecha, boleta, Zweitausendein y esta sí era única, ahí tenía una llave primaria compuesta, tenía y la cruzaba. Y no teníais los datos del cliente. Y ahí lo típico, estaban mi jefe llevaba 13 años como trabajando en la empresa, así que prácticamente construyó las bases de datos y tenía índices en ciertas tablas. Era como supongamos, el producto siempre fíltralo por el SKU. ¿Por qué? Porque el SKU le puso un índice, entonces va a funcionar más rápido. Ah, y ahí uno dice hay que ponerle índice a todo. Y si le pone índice a todo no funciona. Es como un típico error de de persona novata para cierto, a él le gustaban más utilizar las vistas. A mí nunca me gustaron tanto las vistas. La verdad las cosas, pero ahí eran temas de gusto. Obviamente las vistas, si siempre vais a estar consultando lo mismo, servía para ciertos casos eso. No sé si quizás me desvié, pero eso creo que en el caso que.
+
+César Ogalde Hernández: 16:46 
+ Quisieras evitar las subconsultas, que Ÿousand tenía alguna palabra clave para poder hacerlo.
+
+Cristian Rojas Olivares: 16:53 
+ A ver, si quisiera editar la subconsulta, entonces es como una sub query. Claro, a ver qué podríamos hacer. Claro, lo que hacía yo era pasar por tablas temporales. O si yo quisiera evitar una subconsulta, claro, es que igual de realmente la ocupaba porque me solucionaban mal la vida. Si quería traerme algo, ÿ su round number partition by su función ventana. Entonces como que la vais ordenando a través el primer valor igual debería ser más óptimo, supongamos lo ordenáis por la primera vez que ocurrió un evento y te traes siempre el número uno. Así como que lo haría con la función mental.
+
+César Ogalde Hernández: 17:42 
+ ¿Respecto al python, con qué gestionáis las dependencias? ¿Te ha tocado armar ambientes virtuales?
+
+Cristian Rojas Olivares: 17:55 
+ Acá repoco, la verdad de las cosas es como que trabajamos con Jupyter y ahora que bueno, trabajamos con Jupiter cuando lo teníamos local y ahora con Vertex Ai. Entonces básicamente importar, importar la librería. Lo que si no tiene, no tenemos salida Internet porque no tenemos el Natausend, porque el Jupyterlab a nivel de Docker tiene bloqueada la salida interna. Entonces para acá, por tema de seguridad nos restringen la vida. Así que lo más que he podido usar es como un pip, un pip install y hasta ahí de repente es como no, no tienes permisos para instalar cosas.
+
+César Ogalde Hernández: 18:32 
+ Vale.
+
+Cristian Rojas Olivares: 18:34 
+ Es como que ciberseguridad nos protege y nos bloquea y nos hace la vida más complicada.
+
+César Ogalde Hernández: 18:39 
+ Sí, como el efecto burbuja Zweitausendein, como cuando Daniel niño quería protegerlo y no.
+
+Cristian Rojas Olivares: 18:43 
+ Lo expone a nada. No, no, no podía romper cosas. Pero si lo decís por el tema de optimizar, es como claro, no importa toda la librería, no te traes todo el módulo, sino que supongamos, te traes solo lo que necesitáis. Supongamos eso, supongamos, no importa, no importáis todo, sino que le colocáis Chrome, la librería importante.
+
+César Ogalde Hernández: 19:12 
+ ¿Con respecto a la programación orientada a objeto, te ha tocado definir polimorfismo? Por ejemplo, en las clases la intenté.
+
+Cristian Rojas Olivares: 19:21 
+ Sufrir, la intenté aprender cuando recién comencé en Java, porque acá hay algunas cosas que se hacen con Java igual y dije ya, el momento de darle duro a esto. Ay, qué manera en sufrir, dios mío. Y luego estuve como dos meses y en Python fue como esto es más simple. En una es más simple. En Python era mucho, mucho más simple, aunque ya igual es más estructurado.
+
+César Ogalde Hernández: 19:44 
+ Pero cómo definir una clase sería def.
+
+Cristian Rojas Olivares: 19:48 
+ Class, le colocáis el self como los distintos atributos que vaya a necesitar, dos puntos, la identación, self, punto, y ahí vais colocando los distintos atributos. Y el polimorfismo es que, supongamos, el típico ejemplo que se da es que tú difieres la clase animales, creas un objeto y en función cada objeto se va a ir funcionando de manera, va a ir haciendo un sonido diferente. Supongamos, el perro va a ladrar, la rama va a croar, entonces va tomando distintas formas según la naturaleza intrínseca del objeto.
+
+César Ogalde Hernández: 20:26 
+ Perfecto. ¿Y tocó hacerlo en la pega o no?
+
+Cristian Rojas Olivares: 20:28 
+ No, sabéis que todavía no intento meterle. Sí he intentado meterle objetos, pero no he encontrado todavía el polimorfismo. Lo más que he hecho es como en mi local tengo una. ¿Realizamos muchas conexiones a servidores, usamos servidores arlanning, que es como un caso de que te hackeen solo un servidor tiene salida Internet, te fijas? Y tú te conectas a ese servidor y ese servidor tiene cloud shell instalada. Cloud shell, la command sla de gcp. Y ahí que es lo que hace, te conectas por ssh, onda capacity, y tenemos distintas ips con distintas claves, la clave pública, la id rca. ¿Y cuando nos conectamos a eso, qué es lo que hacemos? ¿Bueno, qué es lo que yo hago? Tengo como los comandos, los voy armando. Supongamos, si quiero traerme el JSON de tal estructura, ah, un. Si quiero traerme los errores del JSON, si quiero traerme tal fila, es como. Y tengo los comandos, entonces yo aprieto un botón y me arma el comando de manera automática y tengo el ambiente PRD y el ambiente UAT. Entonces ahí lo que he hecho es como, ah, ya, pero puedo reutilizar el código. ¿Es como, ah, ya, primero defino los parámetros y según los parámetros que definí como la, cómo se llama? Le paso la conexión como, ay, sorry, los bebés tan horribles. ¿Ya, según los distintos, a la IP que me quiera conectar, le paso la IP como atributo, te fijas? Entonces como que lo optimizando. Pero no creo, yo creo que ahí podría ser que la conexión, cuando le digo, oye, conecta tal cosa a tal puerto, donde el puerto va a cambiar, ahí es, creo que estaría habiendo el polimorfismo. Es como el único ejemplo que se me ocurre que he hecho. Porque uno se va a conectar al 114 y el otro se va a conectar al 221, pero yo le estoy diciendo, conéctate al servidor. ¿Pero cómo se va a conectar a un servidor distinto?
+
+César Ogalde Hernández: 22:38 
+ Oye, te ha tocado desarrollar modelos de procesamiento de datos, por ejemplo, sabes cuál es la diferencia entre un modelo estrella y copo de nieve en base de datos.
+
+Cristian Rojas Olivares: 22:55 
+ Cuando trabajaba en inteligencia, negocio donde era empresa más pequeña, Zweitausendein, teníamos que ver con la base de datos. Y claro, nosotros la generamos en base al copo de nieve, que es como que tú tienes cada tabla, le intentas hacer como, no me acuerdo si era la segunda forma, me parece que era la segunda forma normal, cuando cada tabla tiene solo la llave primaria y no recuerdo el resto de la definición, pero va teniendo la llave esporánea en cada otra, pero con el modelo, en cada otra tabla referencia con la entidad relación, pero con el modelo estrella no me ha tocado trabajar ahí. Igual sería echarle una ley a nomás.
+
+César Ogalde Hernández: 23:38 
+ Antono, pero el concepto lo entiende de qué se trata.
+
+Cristian Rojas Olivares: 23:43 
+ No lo he, no lo tengo en la memoria. ¿No, ahí no te voy a mentir, lo leí, era alguna vez como cuando ves como todos los distintos modelos, pero no, no, después dije, cuando me toque trabajar le echaré una revisada, no? Mientras tanto.
+
+César Ogalde Hernández: 24:00 
+ Experiencia en Bigquery. ¿Cuáles son las consultas particionadas en Bigquery y cómo se mejora el rendimiento de ellas?
+
+Cristian Rojas Olivares: 24:11 
+ Sí, porque tienes que utilizar, cuando entra Kan, comenza a trabajar con Bigquery y va teniendo distintas particiones, porque si bien usa SQL, no es que sea relacional en sí, sino que va teniendo como distintas particiones. Entonces el tema de las particiones es que te las va optimizando, porque no va a buscar a toda la tabla, sino que va generando distintas particiones y primero consulta la partición que tú le estás consultando. Otro tema que también es como que me pasó acá, es que a bigquery tú no le haces un select asterisco para consultar. Antes yo a todos era como hace les top 10 asteriscos y ahí veía la estructura de la tabla. Acá no, haces como control, clic, clic, y ahí como que vas en las columnas de la tabla hasta demuestra la previsualización. Porque si haces un select asterisco vas a gastar más dinero que muchos sueldos tuyos. Ya, porque GCP te cobra por los datos que te muestra y no sé qué. También otra cosa que no es totalmente racional, porque te soportan los distintos array y los array puedes llegar a distintos niveles de profundidad. Entonces como que tienes que colocar el uned, el campo que tú quieres, que te aplana, y ahí te lo aplana, que como yo lo entendí, es como que básicamente te va haciendo una función ventana, te va repitiendo el campo n veces y ahí pueden bajar varias veces. Supongamos, acá trabajamos con tablas que viene hasta como tres niveles de raíz para abajo de profundidad.
+
+César Ogalde Hernández: 25:49 
+ Ok, respecto a los procesos etl, me.
+
+Cristian Rojas Olivares: 25:54 
+ Puede explicar qué significa etl extract transform y lo haz. Antiguamente se hacía con con SQL server en mis tiempos cuando estabais declarando las cajitas y ibas viendo tú mismo las cajitas acá el producto que más el producto estaría como dxg, el dcom alias el vet, boletín electrónico de com y eso antiguamente funcionaba con etl dsql server, que lo que hacía era que le mandaban los archivos en excel, cada cliente los mandaba de manera distinta, algunos csd, algunos excel y luego la etl, la persona encargada que lleva 22 años en la compañía, ejecutaba la etl así en su computador, iba limpiando los procesos y de repente algunos procesos tenían un case when, entonces como que pasaba una cosa y se rompía toda la etl y ahí había que entrar a profundizar y eso era el 67 % de la facturación. Ya. ¿Qué fue lo que pasó acá? Después cuando lo miramos toda la nube era como oye, no tenemos ese cuel en la nube.
+
+César Ogalde Hernández: 27:01 
+ ¿Y qué fue?
+
+Cristian Rojas Olivares: 27:02 
+ Yo lo que se hizo fue un proceso en Jupiter Vertex, ahí Zweitausendein, que lo que hace es que básicamente definimos varias funciones, que se yo, es como quítale la cabecera, limpia caracteres especiales y la persona lo que hacía era que lo depositaba en una casilla sftp, después por composer se ejecutaba que fuera a buscarlo, se ejecutara el python, fuera a buscar los archivos, los archivos los limpiara, que se yo, y los dejara en otra carpeta de la casilla HTTP. Entonces después de eso ya se cargaba los distintos procesos que nosotros tenemos. ¿Los procesos igual tienen así como su capa de dataprep ingesta, dataprep ingesta antes de llegar al journal y propósito, te fijas? Entonces el journal es donde tú están todas las cargas que tú realizas, que cada carga se realiza mediante un data flow, que es básicamente un pipeline que corre, un pipeline que se ejecuta Serverless. Pues quizás fue mucha información. Sí.
+
+César Ogalde Hernández: 28:05 
+ Está bien. Igual respondiste la pregunta. ¿Conoces Airflow?
+
+Cristian Rojas Olivares: 28:12 
+ Sí, sí.
+
+César Ogalde Hernández: 28:14 
+ ¿Por qué parámetros manejan las dependencias de.
+
+Cristian Rojas Olivares: 28:16 
+ Las tareas de Airflow? Básicamente acá nos pasan el Docker y tú puedes construir y lo subes y ahí básicamente como que se va ejecutando. Es básicamente para. Nosotros trabajamos con bigtable, que es una base de datos no relacional, que es lo que vendría a ser como Cassandra, entonces tú no la puedes querear. ¿Entonces qué es lo que haces? Tú vienes, es una consulta por API, la API lo que hace es ejecutar un pipeline de airflow que apache bean por detrás y lo que hace es que te viera, te consulta toda la estructura de dictape que es no relacional, la pasa por el pipeline, le va haciendo las transformaciones, te la deja en un bucket de gcp, baguettes, como un repositorio, cualquier cosa para guardar datos. Bueno, tú sabito ya. Entonces después de eso, tú lo que haces como que lo tomas y lo puedes, lo pasas a una tabla en bigquella y como que tú lo puedes consultar en caso de que quieras hacerle uat o ver el comportamiento que tomó o cómo se ve reflejado en la tabla final de bigtable. Cualquier proceso que tú realices, supongamos los snapshots, que los snapshots cuando te traes toda la la tabla, la tabla de bigtable también se generan en en pipelines de airflow. Y si, básicamente es como usar alto airflow, básicamente todo corre, le pega la API, recibe una consulta y lo que hace es que te ejecuta un un jobs por detrás. Ah, pero respecto a las dependencias, no nos las gestiono yo no tengo, no tengo sus padres acá está todo súper compartimentalizado, entonces como que nos dan todo.
+
+César Ogalde Hernández: 29:57 
+ ¿Oye, explícame cuál es tu experiencia en Git?
+
+Cristian Rojas Olivares: 30:01 
+ Yo diría que es como voy aprendiendo a medida que voy necesitando más cosas, pero de momento lo que hacemos es como cuando nos botan las máquinas virtuales de vértice, vamos respaldando todo en jit y como que cada uno tiene su cada uno tiene como su carpeta en la que va dejando como sus propios procesos con sus propios avances. No he tenido que hacer merch así como a la rama principal, muy complejo y estar resolviendo distintas casuísticas, así como, o resolviendo conflictos, no, acá es como que cada uno se lo maneja y es como que, ah, ya, Zweitausendein. Y prácticamente la empresa te da como tu repositorio y no me ha tocado estar como trabajando así, desplegando a uno solo en producción.
+
+César Ogalde Hernández: 30:48 
+ ¿Pero cuando te mandáis un cambio que no querís, cómo lo reversas en jit? Hubo algún comando o volví a modificar el archivo nomás y subí.
+
+Cristian Rojas Olivares: 30:59 
+ Nunca me he mandado un cambio que no quiera. Quizás en mi repositorio local, pero es que no es como que lo ocupo más que nada para. No, ahí no me sé el comando de memoria.
+
+César Ogalde Hernández: 31:26 
+ ¿Qué conoces de data flow?
+
+Cristian Rojas Olivares: 31:35 
+ ¿Data flow son los, básicamente interactúo con los jobs, te fijas? Con los distintos jobs que se va creando. Cuando tú te pongas a progresar una carga de un archivo, no sé, tú lo limpiaste, lo procesaste, lo dejaste en una carpeta, luego se genera un job id y ahí como que lo vas a buscar y cada job id es como serverless. Gcp lo que hace es que te gestiona todo lo todo por detrás y que a veces cuando se cae la imagen de docker es como ya hay que hablarle al osr porque se cayó la imagen, porque posiblemente tiene renovaron la ip. No le he tocado mucho la verdad las cosas.
+
+César Ogalde Hernández: 32:23 
+ ¿Y en Terraform te ha tocado hacer cosas? ¿En Terraform?
+
+Cristian Rojas Olivares: 32:27 
+ Sí, poquito pero sí. Por eso quise tomar la certificación también por el tema de poder profundizar más, porque acá tengo muchos permisos los bloqueado por el tema de que igual te puede anotar un señor cóndor. Si estoy como practicando, pero básicamente.
+
+César Ogalde Hernández: 32:44 
+ ¿Pero cómo manejan el estado ahí en donde trabajáis? ¿Lo manejan en donde el local, no?
+
+Cristian Rojas Olivares: 32:53 
+ Mayoritariamente donde tengo los permisos bloqueados como local y es como tú puedes hacer de todo en Terraform, todo lo que sea provisional, infraestructura, hasta crear las tablas de Bigquery, que se yo. Ÿ pero claro, de repente como para lanzar pipelines o supongamos lo que hacemos acá es como levantar y matar y matar una máquina virtual chiquitita que tenemos nosotros como are. ¿Te fijas? Porque por políticas de la compañía cada 30 días tienes que cambiarle el IP.
+
+César Ogalde Hernández: 33:17 
+ Claro, pero el manejo del estado, tú cachés que Terrafund tiene, maneja el estado y ahí almacena la información de lo que tú tienes en la nube y lo que tienes en nuestro archivo de configuración. Dónde lo configura que quede guardado ese estado.
+
+Cristian Rojas Olivares: 33:34 
+ Donde lo configuro que quede guardado. Entonces si es como en el plan, cuando le da el Terraform plan y como que dice actualmente tienes esto y los cambios que vas a hacer son.
+
+César Ogalde Hernández: 33:43 
+ Como estos, esa información queda en un estado en Terraform. Sí, cierto. Eso él sabe que tú tienes una diferencia con la infraestructura configurado.
+
+Cristian Rojas Olivares: 33:55 
+ Ÿ claro.
+
+César Ogalde Hernández: 33:56 
+ Y para poder saber eso, el manejo de un archivo estado.
+
+Cristian Rojas Olivares: 33:59 
+ Sí.
+
+César Ogalde Hernández: 34:00 
+ ¿Y eso dónde lo almacenan? ¿Lo manejan localmente en una carpeta o lo subes a un Storage?
+
+Cristian Rojas Olivares: 34:10 
+ Ya, nosotros lo manejamos localmente en una carpeta que tenemos en nosotros. Pero lo sre no, ellos sí lo manejan así como que tienen el confluence que te van llegando como los pasos de cómo lo tienen, desde cómo lo manejan ellos, pero ellos ya están como a otro nivel porque ellos son como los que están continuamente viendo la infraestructura. Nosotros todos tenemos como nuestra maquinita pequeña y a veces como lo que hacemos darle más RAM si queremos procesar, si se toca procesar un archivo más más grande lo cambiamos, pero no, nosotros lo manejamos solo en una carpeta local. Están muteados me parece.
+
+César Ogalde Hernández: 34:59 
+ Lo siento Jenkins, te ha tocado trabajar con jenkins re poco, pero lo ubico.
+
+Cristian Rojas Olivares: 35:07 
+ Es cuando es básicamente para gente como que no se maneja mucho en línea de comando. Tú como que le das una cosa, le das una cosa, le das como una interfaz gráfica en la que ella solo puede ingresar ciertos datos y básicamente lo que va haciendo es que le va construyendo el comando por detrás. Es como una interfaz gráfica de la terminal al fin y al caucho. Así lo veo. Obviamente tiene muchísimas funcionalidades, pero sí.
+
+César Ogalde Hernández: 35:31 
+ Bueno, acá otra pregunta que tiene que ver más con matemática. ¿Tú sabes cómo se calcula la desviación estándar de un conjunto de datos?
+
+Cristian Rojas Olivares: 35:44 
+ El promedio menos el valor partido en el al cuadrado, obviamente, partido en me parece que era el promedio, no, es el promedio menos x partido el promedio menos x al cuadrado. Porque si no me equivoco así elimina la los valores negativos. Esa estuvo ruda. Esa era inestudiable.
+
+César Ogalde Hernández: 36:17 
+ Este perfil es rudo, no sé si lo sabe o no. Integración continua. ¿Qué es lo que es CICD?
+
+Cristian Rojas Olivares: 36:27 
+ CICD básicamente todo lo que se basa en la metodología de Vox. El padre básicamente es que no se te vaya a caer producción cuando vaya implementando ciertas cosas, poder hacer los reversos de manera rápida. Supongamos como ese cayo producción. Ya, rollback a la versión anterior. Eso en la práctica, obviamente está la metodología en la que tú vas desplegando continuamente. Eso es como un resumen ejecutivo.
+
+César Ogalde Hernández: 36:57 
+ Perfecto, Cristian. Mira, nos pasamos un poquito del tiempo. Yo tenía hasta las 9:30 Zweitausendein. Pero está súper buena la entrevista. Y yo con esto ya tengo armado panorama. ¿Hago el feedback, cierto? Se lo mando a los chicos. No te olvides de enviarme el print de lo que hiciste ahí. Reenvíamelo por correo para poder juntarlo al feedback para profundizar. Eso te puede ayudar harto con con respecto de la validación de los skills.
+
+Cristian Rojas Olivares: 37:31 
+ Te mando un pantallazo de celular.
+
+César Ogalde Hernández: 37:33 
+ No hay broma, no hay un problema, me da lo mismo. Lo veo y lo junto al feedback.
+
+Cristian Rojas Olivares: 37:39 
+ ¿Ya?
+
+César Ogalde Hernández: 37:40 
+ Ya, Cristian, estoy abrazado. Me encanta hablar más tiempo contigo. Dale, que te haya súper bien. Éxito. ¿Y si vamos a la siguiente instancia y nos volvemos a conectar? Ya, dale, chau.
+
+Cristian Rojas Olivares: 37:53 
+ Chau, Toto.
+

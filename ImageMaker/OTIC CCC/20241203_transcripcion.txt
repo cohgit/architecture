@@ -1,0 +1,402 @@
+César Ogalde Hernández: 13:22 
+ Hola, hola.
+
+Alejandro Araya: 13:23 
+ Hola, Gonzalo.
+
+Claudioº Jara: 13:23 
+ Hola César.
+
+César Ogalde Hernández: 13:24 
+ ¿Buenos días, don Alejandro, cómo está? Mucho gusto. ¿Tanto tiempo.
+
+Alejandro Araya: 13:31 
+ Tanto tiempo sin vernos, cierto?
+
+Gonzalo Pizarro Arriagada: 13:34 
+ Se conoce por lo que veo.
+
+Alejandro Araya: 13:35 
+ Sí, lamentablemente. Mira donde te vengo a encontrar.
+
+Gonzalo Pizarro Arriagada: 13:42 
+ Mira qué buena. ¿Y de dónde?
+
+César Ogalde Hernández: 13:46 
+ ¿Nacimos en el ti juntos prácticamente, no?
+
+Alejandro Araya: 13:50 
+ ¿Cuántos años atrás?
+
+César Ogalde Hernández: 13:51 
+ 20 años.
+
+Alejandro Araya: 13:53 
+ No, no soy tan viejo.
+
+César Ogalde Hernández: 13:55 
+ Vamos, vamos, sube Ÿousand.
+
+Alejandro Araya: 13:59 
+ 15, como 15 años atrás.
+
+Valentina Jara: 14:03 
+ Sí.
+
+Alejandro Araya: 14:04 
+ ¿Ahí vi, te acordáis de vi o no?
+
+César Ogalde Hernández: 14:08 
+ Sí, me acuerdo. ¿Nunca hay que olvidar de dónde uno viene, no?
+
+Alejandro Araya: 14:13 
+ No hay que cubrir al cielo tampoco. ¿Cómo te ha ido, César?
+
+César Ogalde Hernández: 14:20 
+ Bien, gracias a Dios. Bien. Acá estamos con Gonzalo Ÿousand, ya entrando más en preventa. Viste que me fui por el lado técnico, full arquitectura, varios años y ahora estoy apoyando a Imagemaker con distintos clientes en términos técnicos.
+
+Alejandro Araya: 14:37 
+ Está bien, está bien.
+
+Gonzalo Pizarro Arriagada: 14:38 
+ Hola, Viviana, buenos días.
+
+César Ogalde Hernández: 14:40 
+ Hola, Viviana. Hola Ivy.
+
+Gonzalo Pizarro Arriagada: 14:44 
+ Oye Alejandro, cuéntame un poco. Yo bueno, yo soy nuevo, me presento, soy Gonzalo Pizarro. De todas maneras tengo que esperar ahí que ahí viene la Andreina. Qué bueno. Hola Andreina.
+
+Andreina Arévalo Cabrera: 14:57 
+ ¿Cómo están? Disculpen la demora, estamos terminando una revoca.
+
+Gonzalo Pizarro Arriagada: 15:00 
+ No pasa nada, como estoy. Bienvenida.
+
+Andreina Arévalo Cabrera: 15:03 
+ Muchas gracias. Aquí ya se están incorporando el resto del equipo. Minuto.
+
+Gonzalo Pizarro Arriagada: 15:16 
+ ¿Y tú en qué parte estáis de la Otique, Alejandro?
+
+Alejandro Araya: 15:20 
+ Yo estamos en un equipo de arquitectura hace poco tiempo se está armando como una oficina arquitectura, que es la Tique. Entonces estamos aquí apoyando de manera transversal a todos los proyectos, iniciativas, de todo un poco.
+
+Gonzalo Pizarro Arriagada: 15:39 
+ Ayer tu trabajo.
+
+Alejandro Araya: 15:42 
+ Sí, sí, siempre hay acto que hacer allá.
+
+Claudioº Jara: 15:52 
+ Mucho gusto.
+
+César Ogalde Hernández: 15:54 
+ Hola, mucho gusto.
+
+Gonzalo Pizarro Arriagada: 15:57 
+ Valentina. Hola, bienvenido a todos.
+
+Valentina Jara: 16:00 
+ Hola, buenos días.
+
+Andreina Arévalo Cabrera: 16:10 
+ Bueno, comencemos. Bueno, Gonzalo, hemos hablado por WhatsApp y por correo. César, un gusto. Voy a presentarles rápidamente al equipo que nos acompaña hoy. Está, bueno, Alejandro que ya se presentó, Ÿousand Claudio, que también está en el área de arquitectura y en el área de que estamos llevando el proyecto que les vamos a presentar ahora. Está Valentina Jara y Viviana Cisterna como pro owner. Y nos falta Carla que está por entrar, que lleva todo el área, lo que tiene que ver con los procesos, la definición de los procesos operativos y yo que estoy como como líder de proyectos. Entonces nosotros ahora estamos, no sé si zweitausendein lo había comentado Contigo Gonzalo, pero igual se los cuento. El año pasado comenzamos todo un proceso de transformación digital dentro de la compañía, bueno, en realidad desde el 2021 aproximadamente. Y el año pasado desarrollamos lo que era nuestro core nuevo de cero. Fue un sistema a medida que se desarrolló y sin embargo con el proceso de entuer que tenía que ver con Ÿousand, nuestro negocio core, valga la redundancia, que tiene que ver con la franquicia tributaria. La franquicia tributaria es la gestión de este beneficio que se le da a las empresas para capacitar a sus colaboradores. Y este tiene y nosotros como TIC tenemos entonces dos dos áreas de negocio, digamos, que es la gestión de la franquicia tributaria como tal y luego tenemos ÿousand, una que tiene una que se llama cuenta dos, como un servicio que se llama cuenta dos, que son aquellos cursos que se le dan por lo general a empresas mucho más grandes y son cursos que no están dentro de la franquicia, bien sea porque son el exterior, porque son cursos más costosos, como diplomados o magíster, doctorados, o a colaboradores que están fuera por en el rango salarial están fuera también de la franquicia. Entonces, nosotros en el desarrollo de este sistema trabajamos el proceso end to end de lo que tiene que ver con la franquicia tributaria, que es, tiene procesos bien marcados, normativos, que es la inscripción, comunicaciones, gestión documental, rectificaciones, liquidación, pago, cierre del curso. Sin embargo, bueno, como les dije, hicimos todo el año pasado, quedó parte de este proceso del servicio de cuenta dos y por fuera del sistema y es lo que nosotros estamos ahora buscando desarrollar. Nosotros hicimos un levantamiento, un Discovery bastante amplio con otro proveedor, con todas las personas que trabajan en ese vicio, que son personas de operaciones, de comercial, incluso también de tecnología. Y es lo que le queremos presentar ahora. Le queremos presentar cuáles son los procesos que componen este servicio de cuenta dos y que ahora lo estamos llevando, parte de esto lo estamos llevando de forma manual y lo queremos automatizar, obviamente, porque tiene un volumen importante de cursos que se gestionan. Entonces, ahora le vamos a presentar justamente estos procesos y la idea es que después que nosotros podemos ir interactuando, si tienen algunas consultas, etc. Y al terminar la reunión, la idea es que les mando yo el documento con los procesos y alguna información adicional para que sobre eso ustedes hagan su propuesta y si es que tienen alguna duda también, pues, y tenemos al respecto.
+
+Gonzalo Pizarro Arriagada: 20:10 
+ Perfecto. Mira, antes de presentar, bueno, agradecer la convocatoria. Mi nombre es Gonzalo Pizarro, soy client partner de Imagemaker, me encargo del área comercial, abrir nuevos negocios, desarrollar negocios, hacerle seguimiento. Y me tomé la libertad de invitar a Cesar Hogalde, que es tech manager en Image Maker, con años de recorrido. Así que con la idea de tener la reunión lo más completa posible y hacerle honor al tiempo. Así que Andreina, vale, Valentina les va.
+
+Andreina Arévalo Cabrera: 20:46 
+ A presentar entonces el proceso. Ah, perdón, Viviana.
+
+Viviana Elena Cisterna Quiroz: 20:57 
+ Buenas tardes. Les voy a presentar.
+
+Andreina Arévalo Cabrera: 21:37 
+ 1 min, por.
+
+Gonzalo Pizarro Arriagada: 21:38 
+ Favor, si no hay problema.
+
+Viviana Elena Cisterna Quiroz: 21:47 
+ ¿Se ve? ¿Se ve bien?
+
+Gonzalo Pizarro Arriagada: 21:50 
+ Yo lo veo, yo lo veo súper. No alcanzo a leer.
+
+Viviana Elena Cisterna Quiroz: 21:53 
+ No, no, sí, lo voy a ampliar hasta donde.
+
+Gonzalo Pizarro Arriagada: 21:56 
+ Sí, todavía estoy viendo bien.
+
+Viviana Elena Cisterna Quiroz: 21:57 
+ Sí. Ya, vamos a iniciar el flujo de la inscripción de la cuenta dos que corresponde a los cursos que no son franquicia. Inicia con, como lo dice el nombre, Inscripción del Servicio. Ya, ahí ustedes me dicen si se visualiza bastante bien lo que está en celeste, lo que tenemos desarrollado y lo que vamos a ver en color naranjo es lo que aspiramos a seguir desarrollando. ¿Ya? Entonces, el ingreso por su curso virtual tenemos actualmente, nos vamos a la pestaña de Inscripción de cursos, en este caso sería, o Servicios, seleccionamos el cliente que quiere realizar dicha inscripción y la línea de trabajo, que en este caso sería no franquicia, Zweitausendein, ya vamos a partir con los cursos cuenta dos, que es lo que tenemos desarrollado en este minuto y que también buscamos mejorar. En este caso acá quisiéramos incorporarle unas mejoras, por ejemplo incorporando información que es importante para nuestros clientes como el centro de costo, el estado de gastos y algún campo extendido que nuestros clientes van requiriendo ÿ ya esta parte me la voy a saltar porque la vemos después. Y también como mejora quisiéramos que cada inscripción pudiera seleccionar los requisitos documentales que se van a requerir para dar cierre a dicho curso, ya en este caso tenemos solamente como requisito obligatorio la asistencia, pero tenemos algunos clientes que nos piden documentos puntuales, por ejemplo diplomas, certificados, las notas, aparte de la asistencia, etc. También quisiéramos poder incorporarle si hay que agregar o asociar algún tipo de servicio a esta inscripción de curso. ¿Cuando hablo de algún tipo de servicio nos referimos a Zweitausendein, algún alojamiento, alguna relatoría, algún algún costo que se financie también en la capacitación como alimentación para los participantes, etc. Ya tenemos desarrollado para que se puedan incorporar los horarios, el lugar de realización, fechas, algún comentario si quisieran incorporar en la inscripción que tenemos actualmente y comentarles que tenemos un un ingreso máximo de 200 participantes actualmente por inscripción y que esto quisiéramos modificarlo y poder aumentarlo porque tenemos el límite de 200 porque está inscripción cuenta dos está homologada con los cursos de inscripción de franquicia y para la inscripción de franquicia tenemos un límite de 200. Ya?
+
+Gonzalo Pizarro Arriagada: 25:10 
+ Perdón viví que te interrumpa, al final hacemos todas las preguntas, si quieren interrumpir.
+
+Viviana Elena Cisterna Quiroz: 25:15 
+ En el momento lo vamos.
+
+Gonzalo Pizarro Arriagada: 25:20 
+ Yo creo que es mejor al final para entender el macro y vamos avanzando.
+
+César Ogalde Hernández: 25:27 
+ ¿Perfecto.
+
+Viviana Elena Cisterna Quiroz: 25:31 
+ Esto lo voy a acá también tenemos desarrollado una vez que voy la parte final de la inscripción, seleccionar la cuenta de financiamiento y acá en la parte final que es cuando tengo la integración con SAP, no? Comentarles que nosotros tenemos nuestro sistema core con integración con SAP para generar la solicitud de compra de la inscripción, pues también nos gustaría poder ver a qué correo se va a enviar la solicitud de compra y poder editarlo, ya 1 vez que finalizamos la inscripción, poder ver la inscripción realizada y la también la solicitud de compra generada. Ya eso es como lo que tenemos desarrollado y que quisiéramos incorporarle mejoras a la inscripción de cursos no franquicia. ¿Ya? Luego tenemos otro otro tipo de cursos no franquicia que les denominamos cursos Comex, ya que actualmente los tenemos incorporados acá en los cursos cuenta dos, pero igual requieren algún tipo de mejora o modificación. Los cursos Comex son cursos con proveedores extranjeros y que se pagan en moneda extranjera. Ya el curso Comex, bueno, también requeriría una incorporación de datos adicionales al curso de acuerdo a lo que ya tenemos desarrollado, es decir, que el cliente pudiera poder incorporar centro de costo, estado de gasto o algún tipo de campo extendido que él requiriera. ¿Ya? También en el curso Comex nosotros buscamos poder seleccionar el tipo de moneda en el cual se va a pagar el curso e indicar el valor por participante. Ejemplo, hoy día nuestro sistema está solamente desarrollado para peso Chile, no Zweitausendein, pero tenemos capacitaciones que se pagan en dólares o en euros, entonces poder hacer la inscripción y señalar en la moneda en que está siendo cobrado el monto. ¿Ya? También sería importante para los cursos Comex poder seleccionar qué requisitos documentales puedo asignarle por curso, es decir, tener unos como de base y poder yo incorporarle adicionales para el curso Comex. También se puede dar la opción de tener que seleccionarle algún tipo de servicio a relacionar, como lo mencioné anteriormente, que era el tema de puede ser, estoy dando ejemplos solamente, puede ser el alojamiento de los participantes, el pago de la relatoría de la persona que va a dictar la capacitación, o el alojamiento del relator, cualquier tipo de servicio que vaya relacionado con la capacitación. El incorporar todos los datos que corresponden al curso, horarios, fechas, lugar de realización, comentarios, si requiero realizarlo. ¿También para el Comex requeriríamos poder incorporar participantes infinito o más allá del límite que tenemos actualmente que es 200. Y también que cuando yo quiera ver los montos del curso Comex, pueda ver en los valores, en la moneda seleccionada y en pesos, ya? Por ejemplo, $10 y $10500, etc.
+
+Gonzalo Pizarro Arriagada: 29:22 
+ Y.
+
+Viviana Elena Cisterna Quiroz: 29:23 
+ También seleccionar la cuenta de financiamiento, poder ay, me fui, perdón, perdón. Seleccionar la cuenta de financiamiento, también poder ver a qué persona le va a llegar la solicitud de compra, y si es que requiero editar el correo de la persona que le va a llevar la solicitud de compra, poder realizarlo y finalizar la inscripción. También poder ver la inscripción realizada y la solicitud de compra generada, como poder descargarla. Ahí me van interrumpiendo, si tienen dudas, por favor.
+
+Gonzalo Pizarro Arriagada: 30:31 
+ Gracias.
+
+Viviana Elena Cisterna Quiroz: 30:33 
+ Ok, tenemos otro tipo de servicio respecto de los cursos no franquicia, que se llaman cursos internos y que corresponden a las capacitaciones que hacen nuestros clientes Ÿousand en forma interna, como lo dice el nombre, y que requieren registrar para efectos de registro y reportabilidad. ¿Ya? Actualmente tenemos desarrollado este punto, pero lo tenemos desarrollado solo de forma individual. Entonces los clientes nos solicitan este servicio, pero para poder hacer cargas de cursos internos en modalidad masiva. ¿Ya? Si yo espero tener una carga de curso interno en forma masiva, también deseo poder facilitarle la plantilla Modelo al Cliente y también una pestaña donde pueda cargar la plantilla con los cursos internos de forma masiva. ¿Ya? A su vez que el sistema pueda validar los datos, es decir, que me pueda indicar si es que el cliente está indicando algún dato que no corresponde o un dato erróneo donde tiene que ir un número, pusieron letras o viceversa. Y si existen errores, que me indique cuál es el error y no me deje manejar para poder continuar. Ya 1 vez que mi carga masiva está realizada en forma correcta, con los datos correctos, pueda crear yo el curso interno. Y acá voy, acá finalizo la inscripción. También que pueda ver el id de inscripción generada y el registro o la solicitud también generada. Y en este caso de los cursos internos, poder descargar un listado con los cursos internos y su respectivo registro de ID. ¿Hasta ahí alguna duda o lo van a revisar después?
+
+Gonzalo Pizarro Arriagada: 32:47 
+ Sí, yo estoy imponiendo internamente algunas cosas con César, pero creo que podría ser.
+
+Viviana Elena Cisterna Quiroz: 32:51 
+ Al final un ok, si no hay problema. Y otro de los servicios que prestamos respecto de la cuenta dos a los clientes es, como lo dice el nombre, los servicios ya que vienen derivados, como lo mencioné anteriormente acá y acá, de las inscripciones. Por ejemplo, que paguen arriendo de salones de hoteles donde se realizó la capacitación, que le paguen el traslado a los participantes, cualquier tipo de servicio que se derive de dicha capacitación que están inscribiendo acá. ¿Ahora, este servicio puede ser asociado a una inscripción o puede ser en forma individual? Ÿousand no necesariamente tiene que estar asociado. La idea es que cuando yo ingrese a Sucursal Virtual y seleccione la línea no franquicia, pueda seleccionar también la opción de servicio. Selecciono el tipo de servicio, selecciono el proveedor que me va a brindar el servicio. También requiero poder ingresar datos convenientes de o pertinentes de esta información, como Ÿousand, Fechas donde se realizó, Lugar, Información del Solicitante. Y también poder seleccionar la etapa de la cuenta de financiamiento, poder ver o editar el correo a quien le va a llegar la solicitud de compra por dicho servicio y finalizar la inscripción. Y también que pueda ver el id de inscripción y descargar o visualizar la solicitud de compra generada. Y si no realizo ningún tipo de servicio, pueda salir y finalizar mi incursión en la etapa de inscripción de la línea cuenta dos. Eso, eso es por la parte de inscripción de cursos y servicios cuenta dos.
+
+Gonzalo Pizarro Arriagada: 35:06 
+ Perfecto.
+
+Viviana Elena Cisterna Quiroz: 35:08 
+ ¿Quieren realizar las dudas, las consultas ahora o continuamos con la etapa de la.
+
+Gonzalo Pizarro Arriagada: 35:12 
+ Gestión documental por lado mío? Después le voy a dar la palabra a César. Yo tengo comentarios bien macro, sin ir tanto al detalle, quiero comentar algunas funcionalidades que hemos desarrollado antes, pero yo preferiría hacerlo al final. No sé si César quiere hacer alguna intervención ahora.
+
+César Ogalde Hernández: 35:32 
+ ¿No, me gustaría ver toda la parte funcional, cierto? Y después puedo preguntar si hay definiciones, estándares y esas cosas las podemos recolectar al final, digamos, para no interrumpir a Viviana, y pues yo estoy entendiendo perfecto el flujo, así que dale nomás.
+
+Viviana Elena Cisterna Quiroz: 35:49 
+ Viviana, yo terminé mi parte de inscripción, ahora le toca a presentar la gestión de cursos y servicios a Valentina.
+
+César Ogalde Hernández: 36:00 
+ ¿Este es un mismo sistema todo, no son vamos a ver distintos flujos del mismo sistema, cierto?
+
+Viviana Elena Cisterna Quiroz: 36:05 
+ Mismo sistema, distintos flujos de acuerdo a los servicios que prestamos.
+
+Valentina Jara: 36:18 
+ Entonces continuando con el flujo, luego de la inscripción viene todo lo que es la gestión de cursos y servicios, como es la gestión documental que nosotros le llamamos para la posterior emisión de la orden de compra. Como bien mencionaba Viviana, lo que está en celeste es lo que ya se encuentra desarrollado, sin embargo, dentro del ingreso a nuestra plataforma ya contamos con la administración del curso y queremos tener atlas, también una división de administración de servicios en donde en ambas partes contamos con un dashboard, este dashboard ya se encuentra desarrollado, sin embargo queremos incorporar nuevos filtros de líneas de trabajo, ya sea interno, cuenta dos o comex por la parte de cursos y por la parte de servicio incorporar más buscadores y filtros. Ya en ambas administraciones o pantallas podemos ingresar al detalle de cada curso, ya en una grilla que contamos e ingresar al detalle del curso y poder generar diferentes acciones dentro del detalle. En primer lugar generar un anticipo, ya en el caso del curso o servicio poder generar un anticipo, una pantalla en donde podamos ingresar el monto y seleccionar la solicitud de compra a la cual yo quiero generar este anticipo y realizar la orden de compra por el monto que quiero anticipar, ya sea cuenta dos o Comex. Por otra parte también queremos generar la edición de los datos de un curso que nosotros le llamamos rectificación, en donde podemos modificar datos de la actividad, agregar participantes, modificar montos, etc. Y la otra acción que queremos generar dentro del detalle del curso es poder poder visualizar los requisitos del curso o servicio, ya en este caso nosotros queremos poder gestionar y administrar los requisitos que son los que mencionó Viviana anteriormente, al momento de inscribir el cliente pueda seleccionar cuáles son sus requisitos documentales para poder adjuntar y validar para poder generar la orden de compra, ya sean diplomas, encuestas, certificado de asistencia, entre otros y poder dentro del detalle del curso cargar esta documentación, que se puedan operaciones pueda validarlo de validar el documento, que estén con los correctos datos o poder también descargar el documento, 1 vez validado poder confirmar que la documentación se encuentre correcta, 1 vez confirmado pueda gatillar el ÿousand la generación de la orden de compra. Una vez que los requisitos se encuentren ok, se puede generar la orden de compra cuenta dos o Comex y de esta forma también poder actualizar el estatus de este curso para luego ir a la sección de Pagos y Facturación que también es una nueva sección que queremos desarrollar esta nueva sección se la voy a explicar en el próximo flujo ya pero bueno acá también lo que a continuación de lo que es la rectificación o la edición de los de los Datos del Curso acá más que nada poder editar ya sea un curso o servicio y de esta forma también se actualizaría ya la solicitud de Compra u Orden de Compra que son los datos que queremos Zweitausendein actualizar hasta acá esto como gestión de la del Curso tanto documental como son los datos de la actividad ya luego de este flujo pasamos a lo que es la gestión de pagos una vez que se emite la orden de compra se factura ya por lo tanto pasamos a el siguiente flujo que es la gestión de pagos Ÿ siguiendo con el mismo flujo ya ingresando la sucursal dentro del Dashboard y dando Clic al Detalle del Curso ya podemos visualizar también queremos una pantalla donde podamos ver las aprobaciones del tanto del curso como del servicio ya en estas aprobaciones que nos referimos a las aprobaciones del estado de pago que es el estado de pago es una lista de facturas ya que tienen con ciertos datos de los proveedores ya estas facturas las pagamos nosotros como Tic en donde el cliente luego debe reembolsar que ese flujo de reembolso lo vamos a explicar en el próximo flujo ya pero dentro de lo que es el detalle del curso también queremos contar con una sección en donde podamos aprobar, rechazar o cargar estas aprobaciones de estado de pago de esta forma poder confirmar la acción y esta confirmación de este estado de pago se pueda enviar a SAP ya que ya contamos con una integración con SAP y notificar a operaciones sobre esta Aprobación del Estado de pago bueno esta confirmación que se pueda enviar también el comprobante se pueda visualizar en en la plataforma y esta actualización este estado también es importante que se debe actualizar en la sección de pagos y facturas ya que por otra parte dentro de este mismo detalle como les mencionaba anteriormente poder visualizar aparte de los Detalles del Curso si tiene facturas o pagos asociados dentro de lo que es facturación es importante mencionar que también tenemos integración con Árticos ya en donde podemos visualizar que sean aceptadas, validadas como corresponde ya y en el caso de esta sección de lo que es Facturas y Pagos visualizar si tienes facturas aceptadas o si tienes pagos generados en este caso en el caso de que tenga casos estados de pago generados tener una sección específicamente también para ver el estado de pago o también de entre estos ÿousand poder crear un estado de pago como lo mencioné anteriormente aparte de ya contamos como la con la administración de servicio, la administración de curso queremos tener una sección específicamente de una administración de estados de pago, ya que es donde dentro del detalle del curso estos mismos links nos van a llevar a esta misma sección del que la administración de los estados de pago que va a contar con su propio dashboard ÿousand ya para poder tener con filtros específicos por estados, empresas o proveedores, ya esto como parte de todo lo que es la gestión de pago. Finalizando la gestión del pago y la generación de los estados de pago pasamos al flujo de la rendición y reembolso que como les mencionaba el cliente posterior al estado de la generación del estado de pago reembolsa esta factura y siguiendo con la línea que es el ingreso a la plataforma ya tenemos queremos la administración de servicios ingresando al dashboard inicial y viendo el detalle del curso con tanto tanto como es la gestión de servicios como de cursos dentro del detalle y al visualizar la sección de pagos y factura también poder ver si se efectuó el pago del estado de pago que se generó anteriormente y como mencionaba también generar la rendición de pago y ésta debe ser enviada al ejecutivo dedicado de capacitación que contamos en la otic o al cliente con los estados de pago generados ya esto también para que ellos puedan tener una visualización de las facturas que se quieran reembolsar, ya en esta parte también ellos puedan ver el cambio de estado del estado de pago y también una sección para que ellos puedan descargar o reenviar la rendición. Siguiendo con la misma línea de lo que es la factura y el reembolso, si bien dentro del detalle del curso queremos tener específico visualizar qué facturas o pagos tiene asociados, también queremos tener una sección aparte como general para visualizar el estado de las facturas, ya ver un listado de facturas por cliente, ya ver en el caso de que el cliente realizó un reembolso a la otic y visualizar el aporte realizado por el cliente de esta forma que se vaya actualizando los montos según el reembolso o contra el aporte que tenga el cliente. De esta manera el EdC, el ejecutivo dedicado a capacitación seleccione las facturas en esta pantalla que se deben marcar como reembolsadas con el cliente que con el aporte que realice el cliente. Por otro lado contar también con una pestaña de reembolso ya en donde visualizar si existe la generación de reembolso y de esta forma el supervisor o líder comercial pueda aprobar, modificar o rechazar la relación de este estado de este estado de pago de las facturas de esta forma ellos este esta aprobación se pueda notificar a SAP con el documento con el aporte que el cliente para de esta forma se puede actualizar el sobregiro ya una vez actualizada el estado, el aporte en SAP, se pueda modificar el Estado del Estado de pago en pantalla de lo reembolsado por el cliente y así visualizar los documentos sobregirados, no reembolsados, según los criterios de sus plazos. Y también se pueda actualizar la pantalla de lo que es los pagos, las facturas y los pagos reembolsados. Esto finalizando con lo que es la rendición y reembolso. Hasta acá llegaría el flujo de lo que es la gestión de la cuenta dos. Esos chicos.
+
+Gonzalo Pizarro Arriagada: 47:35 
+ Faltaría.
+
+Andreina Arévalo Cabrera: 47:37 
+ Esos son todos los procesos, sí, que queremos automatizar.
+
+Gonzalo Pizarro Arriagada: 47:43 
+ Perfecto. Mira, está buenísimo. Lo bueno es que el uni está súper claro. Tienen muy claro lo que quieren lograr y cómo quieren lograrlo. Yo, yo en el fondo voy a hacer un par de intervenciones mientras vamos imponiendo la conversación. ¿Todo lo que está en colores, no rojo, no es cierto? ¿Ese color, no sé qué color es, azul, es lo que hay que desarrollar, no es cierto? Porque se hablaba en queremos que está.
+
+Andreina Arévalo Cabrera: 48:17 
+ En color naranjo, es lo que hay que desarrollar.
+
+Gonzalo Pizarro Arriagada: 48:22 
+ ¿A mí, yo, yo pensando como cliente o como empresa que quiere capacitar, lo primero que me saltó entre tanto proceso, que son procesos simples que se ven en otras plataformas, no hay muchas cosas nuevas, es qué pasa cuando uno se pierde en el journey como cliente? Los invito a ponerse en la silla del cliente. ¿Entonces, qué pasa cuando, oye, dónde cargo el estado pago donde hablé? Creo que la vivi en algún minuto incluso mencionó algo de hospedaje. Entonces, en este gran ecosistema, me faltó ver algún chatbox, me gustaría meter la inteligencia artificial, no sé cómo lo están viendo, para darle soporte, y ahí abro la pregunta, Andreina, al usuario final, al cliente que se me pueda perder dentro de la plataforma. ¿Entonces, por ejemplo, si yo como cliente tengo un problema, dónde recurro? ¿Dónde pregunto, oye, me quedé pegado acá, qué pasa? ¿Qué hice mal?
+
+Andreina Arévalo Cabrera: 49:19 
+ Sí, mira, inicialmente esto está pensado como un proceso interno de operaciones, que es quien operaciones, por un lado. Y también me faltó contarte que los clientes que utilizan este servicio por lo general tienen un analista o un ejecutivo de cuenta, que le llamamos nosotros, asignado para que ejecute estos procesos.
+
+Gonzalo Pizarro Arriagada: 49:44 
+ ¿De acuerdo?
+
+Andreina Arévalo Cabrera: 49:44 
+ Entonces siempre ha estado pensado de esa forma. Pero la pregunta que tú haces es muy buena, porque efectivamente en algún punto también los clientes tienen que autogestionarse en este tipo de servicio. Entonces, claro, inicialmente no está con esa mirada, pero me encanta que le agregues eso dentro de la propuesta, porque es como no todo lo va a poder hacer el cliente, porque hay cosas que son más internas como los pagos, que se yo, que la gestión de pagos, que es de finanzas, etc. Pero si hay puntos donde el mismo cliente podría incorporar información o buscar información.
+
+Gonzalo Pizarro Arriagada: 50:23 
+ O sea, yo creo que en este ecosistema que nos acabáis de mostrar hay varias verticales donde el cliente puede ir buscando cursos, ver dónde inscribirse, cuáles son los horarios. ¿Me perdí, oye, quiero un curso de esto que me recomienda y empezar a interactuar con la interfaz que tienen ustedes o que quieren generar y empezar también a, desconozco si miden ratios de satisfacción a atención del cliente, pero también darle una mano a toda el área del ejecutivo, no es cierto? Que está ahí día a día. Me imagino que en una cantidad de preguntas no menor. No sé cuántos clientes están manejando, deben ser varios, así como empresas grandes, empresas chicas. Entonces me falta eso en experiencia de usuario y creo que además se puede incorporar de manera interna. Ojo. Ÿousand. Sí, sí, que puede servir incluso para el mismo ejecutivo, para los que están entrando nuevos, para los que no se están recién en onboarding. Me faltó eso como soporte. César, metámonos en el área técnica.
+
+César Ogalde Hernández: 51:35 
+ Vale, gracias. Me queda bastante claro los procesos. Necesito información, por ejemplo, del contexto de técnico. ¿En qué lenguaje está esto? ¿Cuál es la situación actual del sistema? No sé, lenguaje, versión, no sé si está muy antiguo o hay que renovarlo. Arquitectura quizás tenga definiciones nuevas. Si me pueden contar un poquitito, no detallado para que estén 8 h, sino que los high legs más importantes en términos técnicos.
+
+Claudioº Jara: 52:12 
+ Sí, estimado. Te comento que de cara al front, esto está construido en arquitectura de micro front con single spa, react y tailwind. Lo voy a dejar anotado igual ahí en el chat. Respecto del back, esto está escrito en nest js y usamos bases de datos SQL server.
+
+César Ogalde Hernández: 52:35 
+ Vale, y respecto a la situación actual, porque por ejemplo, me asaltaron unas preguntas cuando hablaban de los límites, de los límites de inscripción. ¿Esos límites estaban sujetos a temas técnicos o eran solamente definiciones de negocio?
+
+Andreina Arévalo Cabrera: 52:52 
+ En este caso fueron definiciones de negocio porque la franquicia se gestiona con el cense y todos estos cursos de franquicia hay que comunicarlos al cense y ellos tienen ese límite de 200. Pero la cuenta dos no tiene ese límite porque no tiene ninguna normativa, es un servicio aparte. Entonces, inicialmente es como una limitante de negocio que se definió.
+
+César Ogalde Hernández: 53:17 
+ Vale, perfecto. Otro tema que me llamó la atención también, que ha hablado de manejar múltiples localizaciones o múltiples monedas en uno de los procesos. ¿Hoy día actualmente, el sistema es capaz de de manejar eso o es algo que hay que incorporarle de manera transversal?
+
+Andreina Arévalo Cabrera: 53:37 
+ Mira, este sistema estaría integrado con el sistema financiero que es SAP Business One y ese cambio de moneda se trabajaría directamente en SAP. Nosotros tendríamos que leerlo, pero digamos que esa información vendría de allí.
+
+Gonzalo Pizarro Arriagada: 53:57 
+ Zweitausendein.
+
+César Ogalde Hernández: 53:59 
+ Perfecto.
+
+Andreina Arévalo Cabrera: 54:01 
+ También, no sé si lo vas a preguntar, pero te lo voy a comentar de una vez antes que se me olvide, que también tenemos una, tendríamos que tener una integración con articles, que es el facturador con el que nosotros trabajamos para todo, para la recepción automática de la factura y validación, etc. Que ya la tenemos implementada para cuenta con franquicia y tenemos parte también implementada para algunos temas de cuenta, pero tendríamos que integrarlo en este flujo, en este proceso que estamos presentando.
+
+César Ogalde Hernández: 54:39 
+ Perfecto. Ahí justo Claudio estaba colocando algunos datos que son bien técnicos y justo iba a preguntar por la nube, así que súper. Yo soy certificado en action, por si acaso, por si necesitan algunas otras, pueden profundizar otras cosas que puede ser aparte de, digamos, el proyecto en integración continua, también dentro de Imagemaker. Así que dejo abierto el canal si quieren hacer una sesión más técnica y pueden preguntarnos cosas. Bueno, como dijo Gonzalo, Gonzalo tiró un Inteligencia artificial, tenemos algunas exploraciones también de asistentes en inteligencia artificial y generadores de gráficos también. Y por ahí hay uno con un call center que escucha el audio y hace las derivaciones de manera automática que hicimos con un cliente. ¿Así que ahí podemos, digamos, abrir otra otra vertiente, cierto? ¿El contexto que estoy absorbiendo, que esto es un equipo que va a desarrollar, cierto? ¿Estas mantenciones tan mejores, estos procesos en estas tecnologías que nos contó Claudio en términos de microservicios, estos están contenidos en un contenedor, Claudio, a la redundancia, o están en modalidad Serverless?
+
+Claudioº Jara: 56:03 
+ Estamos ocupando App service en estos momentos.
+
+César Ogalde Hernández: 56:05 
+ Ÿ Ah, ya, perfecto. Con un plan, digamos, de consumo.
+
+Claudioº Jara: 56:09 
+ Sí, exacto, exacto. Ya son seis servicios, si no mal recuerdo, que tenemos ahí. Y de hecho, es muy probable que la lógica que ustedes tengan que agregar dentro de todo el recorrido que mostraron las chicas, sea probablemente sumarse a lo que ya existe en alguno de esos servicios, más que crear nuevos. Entonces, eso se los comento porque igual ahí es como dentro del tiempo, un poco quizás de esta estimación o de lo que ustedes puedan ofrecer, igual hay que considerar un poco como el el empaparse del código que actualmente existe para hacer las modificaciones.
+
+César Ogalde Hernández: 56:40 
+ ¿Vale? ¿Entonces, y esos lineamientos estarán, por ejemplo, en algún documento, algo que nos puedan compartir como para poder entender, digamos, el estándar que tienen que cumplir los desarrolladores? ¿No sé, cosas tan básicas, por ejemplo, como los repositorios están en azure DevOps? ¿Ÿousand la gestión de la historia se hace en Jira o no se hace en Azure Board, o cada equipo tiene que hacer sus propios pipelines de despliegue? No, sabes que aquí hay un área central que hace los pipelines. ¿Pedimos, no sé, por ejemplo, porcentajes de calidad del código, lo hacemos pasar por zona, por veraco, por temas de seguridad, etc. Zweitausendein si tienen esas definiciones, nos las pueden entregar? Nos va a ayudar también a definir mejor los perfiles de los desarrollos.
+
+Claudioº Jara: 57:37 
+ Sí, ahí mira, no tenemos un documento escrito, pero gran parte de eso está definido. Entonces me serviría si es que lo pueden anotar como a lo mejor dentro de un correo inicial, como estas consultas que ustedes tienen y nosotros las podemos responder ahí mismo.
+
+César Ogalde Hernández: 57:51 
+ Perfecto.
+
+Claudioº Jara: 57:52 
+ De apuntar directamente a las dudas que ustedes tengan.
+
+César Ogalde Hernández: 57:55 
+ Vale, ya, genial. Bueno, que otra Hice la pregunta de los límites, las localizaciones. Había un tema de reportes que me dio la sensación de que las capacidades de reporte del sistema actual ya están quedando chicas. Entonces quería preguntar si ya tienen algo definido como un data lake, un data warehouse, no con los volúmenes de grandes empresas, pero digamos orientado ustedes. Zweitausendeinousand hay gente que se dedica a la extracción de reportes más que desarrollar.
+
+Andreina Arévalo Cabrera: 58:31 
+ Sí, mira, aquí como te digo, este sistema inicialmente es un sistema que se diseñó para la gestión interna y por eso es que te comentaban de estos reportes que tiene o de estos dashboard donde está la información de los cursos críticos, etc. Sin embargo, tenemos un proyecto aparte ÿousand asociado netamente a datos. Entonces en el fondo acá este es más transaccional y más de gestión este desarrollo que estamos solicitando.
+
+César Ogalde Hernández: 59:07 
+ ¿Claro, lo preguntaba porque a veces hay que desarrollar el insumo para el equipo de datos, cierto? Que inyectar o hay que hacer directamente el reporte en en el operacional o a veces hay que inyectarlo, desarrollar el reporte en el equipo de datos y después conectarlo para descargarlo en el sistema. Entonces es por eso, digamos, para ver si colocamos personal que tiene capacidades de desarrollo de datos, por ejemplo.
+
+Andreina Arévalo Cabrera: 59:42 
+ Yo creo que todo suma en realidad y como ahora estamos haciendo esta evaluación, que creo que igual lo que ustedes estén viendo de acuerdo a su experiencia con otros clientes, que como lo que comentaba Gonzalo con respecto al soporte o a la ayuda puntual de cara a clientes, toda su suma y sería importante que lo incorporaran en la propuesta, porque si bien nosotros hicimos este discovery y tenemos como esta solicitud, igual es importante el valor que ustedes puedan agregar de acuerdo a la experiencia que tengan. Entonces incorporen estos temas que ustedes vayan viendo que nosotros aunque no lo hayamos pedido, pueden sumar.
+
+Gonzalo Pizarro Arriagada: 01:00:24 
+ Perfecto, perfecto. ¿Te queda alguna pregunta más, César?
+
+César Ogalde Hernández: 01:00:34 
+ ¿No, gestor documental, el gestor documental está en la misma arquitectura que que el sistema o es un sistema aparte?
+
+Andreina Arévalo Cabrera: 01:00:45 
+ Muy buena pregunta. Ahora mismo lo tenemos como un sistema aparte, pero nos gustaría como incorporarlo a este, a este, al sistema Core. Entonces ahí también podría ser la propuesta que ustedes nos dé, pero inicialmente acá estaba como incorporado, está como si fuera incorporada en el sistema Core, pero ahora lo tenemos por fuera ahí Claudio.
+
+Claudioº Jara: 01:01:13 
+ Claro, eso es un aplicativo en realidad que está un poco fuera de los lineamientos que te comenté ahora, al menos en cuanto a arquitectura y lenguaje. Entonces igual estamos viendo como la posibilidad un poco de incluso migrar todo eso a lo nuevo. Entonces ahí quizás valdría la pena una propuesta de justamente construir todo eso nuevo y rescatando quizás algunas lógicas de negocios del aplicativo antiguo.
+
+César Ogalde Hernández: 01:01:38 
+ ¿Vale, y en términos de volumen, eso sí, me falta preguntar qué me pueden contar en términos de transacciones o de almacenamiento básico, digamos, no? Un sitio detallado, pero que no sé de cuánto estamos hablando. Por ejemplo, el mes de inscripciones se.
+
+Viviana Elena Cisterna Quiroz: 01:02:00 
+ Gestionan 800 cursos mensuales aproximadamente.
+
+Andreina Arévalo Cabrera: 01:02:09 
+ Luego tenemos todo lo que es de franquicia que se gestiona en este otro gestor documental. No tengo el número ahora, pero digamos al año unos 38000 cursos al año aprox.
+
+Claudioº Jara: 01:02:30 
+ Con distintas cantidades de participantes y por ende distintos documentos también para cada tipo.
+
+César Ogalde Hernández: 01:02:36 
+ ¿Y Claudio, en términos de documento, de cuánto estamos hablando?
+
+Claudioº Jara: 01:02:40 
+ Tera PETA no, no tengo el no tengo el dato.
+
+César Ogalde Hernández: 01:02:45 
+ Ya. Otra otra pregunta importante es que si esto va a estar sujeto a algún presupuesto de la nueva. Siempre uno como que se extrapola y quiere hacer las mejores soluciones, pero ÿousand, pero deja la conversa presupuesto al final. Entonces realmente es bueno tener el monto de banda que vamos a tener para poder hacer un diseño, cierto, en la nube y que eso no escape.
+
+Claudioº Jara: 01:03:10 
+ Sí, bueno, y en realidad siempre estamos buscando ahorrar lo más posible en cuanto a presupuesto en la nube, pero sí o sí depende mucho también de la solución que se proponga. Si es que el la solución estar atacando el problema, entonces pudiésemos ahí como tener a lo mejor más presupuesto para eso, pero sí, hay que tratar de minimizar.
+
+César Ogalde Hernández: 01:03:32 
+ Perfecto. Comentario adicional, hemos hecho varias optimizaciones de presupuesto en V con clientes, tuvimos un cliente.
+
+Claudioº Jara: 01:03:41 
+ Eso está interesante. Sí, igual también cabe la pena mencionar que lo ideal es que todo esto sea más o menos agnóstico a la nube, porque hay planes quizás de migración. Entonces lo ideal es ocupar a lo mejor componentes que estén disponibles en cualquiera de los grandes proveedores.
+
+César Ogalde Hernández: 01:04:01 
+ Ya, perfecto. ¿Eso implica terrafone, por ejemplo, para poder desplegar en otras nubes, cierto? Y proceso de integración continua con el equipo. ¿Escuchan propuestas de nube? ¿O sea, por ejemplo, si nosotros hacemos esta propuesta de desarrollo y la calculamos en Axel, la calculamos en Amazon, en GCP, a ustedes les sirve? Porque podríamos aprovechar, digamos, el empleo.
+
+Andreina Arévalo Cabrera: 01:04:28 
+ Sí, sí, sí.
+
+Gonzalo Pizarro Arriagada: 01:04:29 
+ Todos los pájaros de un tiro.
+
+Andreina Arévalo Cabrera: 01:04:31 
+ Exacto.
+
+César Ogalde Hernández: 01:04:32 
+ No, es muy buena estrategia meterse en tantas cosas, pero quizás es bueno empezar a saborear, digamos, qué es lo que significa. Claro, en términos de nube y presupuesto, porque me pasó, me pasó que un cliente que quería emigrarse de azul y cuando hicimos los cálculos con el pricing, así como componente por componente, resultaba que actuar era lo más barato. Entonces un ida y vuelta. Entonces para evitar eso y si es que lo podemos ayudar con eso, si me parece buenísimo.
+
+Andreina Arévalo Cabrera: 01:05:02 
+ Como les digo, nosotros les vamos a dar esta solicitud, pero cualquier observación y aporte que ustedes tengan, bienvenido, porque eso se trata un poco también. Nosotros hicimos un desarrollo con un proveedor que trabajamos muy bien, pero también la meta de la organización es poder trabajar con varios proveedores al mismo tiempo y justamente para eso, para enriquecernos todos de las experiencias y de los trabajos que han hecho en otras áreas o en otras industrias. Y así vamos nosotros, vamos todos agregando valor de distintas formas.
+
+Gonzalo Pizarro Arriagada: 01:05:47 
+ Perfecto, perfecto, César. Entonces no sé si alguien quiere comentar algo más. ¿Por el lado de ustedes estamos claro, César, cómo estáis viendo el avance? Tenemos que redactar un correo con las preguntas técnicas de ahí yo creo que vamos a tener que tener una segunda reunión, Andreina, lo antes posible, entendiendo cuando ya tengamos nuestra contraparte lista en términos de requerimientos técnicos y empezar a alinear también y aterrizar ideas, porque hemos hablado mucho, están las ganas de cambio. ¿Ÿ me alegro mucho porque aquí estamos nosotros, no es cierto? Tenemos experiencia, tenemos casos de éxito. Entonces también hay que ir aterrizando y dándole prioridades, entendiendo presupuesto y requerimiento. ¿Entonces, César, cuándo nos podemos comprometer a mandar ese correo?
+
+César Ogalde Hernández: 01:06:56 
+ Hoy lo dejo enviado.
+
+Gonzalo Pizarro Arriagada: 01:06:58 
+ Perfecto.
+
+César Ogalde Hernández: 01:06:59 
+ Te lo envío a ti y por último tú lo los reenvía.
+
+Gonzalo Pizarro Arriagada: 01:07:03 
+ Ya está muteada Andreina.
+
+Andreina Arévalo Cabrera: 01:07:08 
+ Que yo también les voy a dejar enviado el documento que hicimos con todas estas, con los que les mostramos y e información adicional que también les sirve ustedes de insumo y se los mando en un ratito más. Y ahí si quieres sobre ese nos.
+
+Gonzalo Pizarro Arriagada: 01:07:25 
+ Mandas el correo, una línea de mail y sobre ese nos vamos pimponiendo. Eso, eso, perfecto. Seguimos avanzando.
+
+Andreina Arévalo Cabrera: 01:07:38 
+ Listo.
+
+César Ogalde Hernández: 01:07:38 
+ Y ahí vamos organizando sobre la respuesta a las preguntas, solo las que puedan responder rápido. La idea tampoco es que ustedes se den vueltas en la organización y haga un Discovery técnico de sistemas. Si hay alguna respuesta que ustedes ven que no, mejor, no es necesario verla. Ahora bien, no hay problema por ese lado. Sabemos que ustedes están trabajando, está finalizando el año, hay un montón de trabajo. Entonces el objetivo es poder estructurar una propuesta que sea exactamente a la medida que ustedes necesitan, ni más ni menos. O sea, igual vamos a hacer un apartado con las cosas nuevas que sé cómo lo vemos para dónde han mirado a otros clientes que hemos tenido para que ustedes les sirva ejemplo. ¿Pero la idea es, digamos, colocar tiempo, no? Preguntamos tiempo. ¿Sabes si esto es objetivo 2025?
+
+Andreina Arévalo Cabrera: 01:08:28 
+ Sí, esto ya está 2025, claramente. Y ahí nos gustaría que ustedes vean también, o sea, hagan la estimación completa del tiempo que ven para desarrollar esto. El equipo, como te digo, lo que sí nosotros hemos estado pensando o hemos hablado de hacer esto por fases o por proceso. Si ven, son procesos que obviamente están integrados, pero que igual podemos ir agregando valor al negocio por separado. Entonces ahí sí la propuesta sería buena que también la vieran como por proceso, o sea, por fase. Puede ser por proceso, puede ser varios procesos, como ustedes vean que debería ser el desarrollo.
+
+César Ogalde Hernández: 01:09:18 
+ ¿Pero sí como parcializado, claramente va a ser iterativo, cierto? Como con agilidad. Digamos que el tenor de nuestras propuestas siempre como que apunta a la agilidad. Nosotros contamos con Agoach y Tiny Coach, que podría ser yo mismo o podría ser otro compañero. ¿Así que bueno, cuando te mostremos la propuesta, ahí te vamos a contar todas las cosas ÿousand que soportan, cierto? Este equipo, los procesos que tenemos, cómo lo, en caso de emergencia, no sé, por algún incidente técnico, algún incidente con las mismas personas, cómo lo resolvemos y te mostramos el framework de matrimonio. Y Gonzalo se puede explayar ahí con esa línea de servicio. Si estamos dando valor en eso, no solo es colocar la gente, estamos apoyando con otros procesos adicionales a las personas, incluso hasta la rotación inmediata. En alguna oportunidad nos ha pasado que hemos tenido que hacer un rollout de, no porque no sepa, sino que porque los contextos a veces los proyectos son diferentes, los desafíos técnicos, los desafíos personales son distintos, no ha tocado respaldar eso, esos procesos, pero siempre en lo positivo con la agilidad. Ÿ y temprano, digamos. Eso es lo que más tratamos, a ser bien temprano.
+
+Andreina Arévalo Cabrera: 01:10:44 
+ Buenísimo.
+
+Gonzalo Pizarro Arriagada: 01:10:45 
+ Oye, entonces quedamos a la espera del correo de Andreina. ¿César, por qué no le compartiste un mail?
+
+Andreina Arévalo Cabrera: 01:10:56 
+ Si quieres lo dejas acá. Exacto. O lo dejas en el chat.
+
+César Ogalde Hernández: 01:10:59 
+ Sí, está aquí en el sí, en el chat.
+
+Gonzalo Pizarro Arriagada: 01:11:02 
+ Y yo, Andreina, me pongo de cabeza a trabajar en esto para empezar a generar valor y idealmente juntarnos lo antes posible para alguna propuesta. Bueno, perfecto. Seguramente te voy a poner algunos WhatsApp o algún llamado telefónico, siempre corto y ahí vamos. Justo horario para ir imponiendo algunas cosas y no tanto mail y que respondamos rápido.
+
+Andreina Arévalo Cabrera: 01:11:29 
+ Me parece perfecto. Listo, aquí ya lo copié y les mando esto en unos minutos.
+
+Gonzalo Pizarro Arriagada: 01:11:40 
+ Listo, entonces, muchas gracias, César. Te llamo en un rato, tengo que entrar unión ahora.
+
+César Ogalde Hernández: 01:11:56 
+ Ya, perfecto.
+
+Gonzalo Pizarro Arriagada: 01:11:58 
+ Ya. ¿Oye, buena o no? Buena.
+

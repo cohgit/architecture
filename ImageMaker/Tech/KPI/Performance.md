@@ -7,3 +7,9 @@ El objetivo del indicador es impactar positivamente a la evaluación técnica de
 -> Cuenta : BAC
 -> Célula : Cero Papel
 -> Equipo 
+
+
+BAC Una reunion al mes.
+Ultimo Jueves del mes feedback de DevOps.
+
+https://dev.azure.com/ORG-CRI-GTI/DEVOPS/_wiki/wikis/ProjectWiki/59/ProjectWiki

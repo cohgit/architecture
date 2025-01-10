@@ -1,3 +1,13 @@
+Organization (o-coj9s6ha8b)
+UserName : caogaldh
+Password : 1209@Image
+Mail : cesar.ogalde@imagemaker.com
+
+r-3ro3 Root
+	810163013292 caogaldh
+	964949711765 coh-service-poc
+	161944847861 coh-service-layer
+
 
 ## AWS Personal - administrador
 User name : administraidor
@@ -18,10 +28,7 @@ Shell -> cloudshell:CreateEnvironment
 ARN -> arn:aws:cloudshell:us-west-2:810163013292:*
 
 
-Organization 
-r-3ro3 Root
-	810163013292 caogaldh
-	964949711765 coh-service-poc
+
 
 Role 
 https://signin.aws.amazon.com/switchrole?roleName=AWSCloudSheller&account=810163013292
