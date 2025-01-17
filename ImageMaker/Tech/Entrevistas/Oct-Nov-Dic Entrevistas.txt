@@ -1,0 +1,43 @@
+### Lista de reuniones por fecha:
+
+**Octubre 2024:**  
+2/10 - 1:00-1:30pm, Entrevista Sebastián Marulanda (Java).  
+2/10 - 1:30-2:00pm, Entrevista Einstein Castro (Java).  
+2/10 - 5:30-6:00pm, Entrevista Stiven Romero (Java).  
+3/10 - 10:00-10:30am, Entrevista Andrés Felipe Menco (Java).  
+3/10 - 1:00-1:30pm, Entrevista Ferney Jimenez (Java).  
+3/10 - 5:30-6:00pm, Entrevista Davier Guarin (Remplazo).  
+3/10 - 6:00-6:30pm, Entrevista Alexander.  
+4/10 - 11:30am-12:00pm, Entrevista Esteban Ruiz (.Net).  
+4/10 - 12:00-12:30pm, Entrevista Alexander Alvarez (.Net).  
+7/10 - 4:00-4:45pm, Entrevista Lorena Alfonso (Java).  
+8/10 - 5:30-6:00pm, Entrevista Edgar Munar (Java).  
+16/10 - 10:00-10:45am, Entrevista Juan Carlos Hurtado (Java).  
+22/10 - 10:00-10:30am, Entrevista Yesid Suarez (Java).  
+22/10 - 10:30-11:00am, Entrevista Julian Roman (Java).  
+23/10 - 10:00-10:45am, Entrevista Jesús Castro (Data Engineer).  
+28/10 - 11:00-11:45am, Entrevista Victor Araya (Data Engineer).  
+28/10 - 4:15-5:00pm, Entrevista Denisse Pérez (Data Engineer).  
+28/10 - 5:00-5:30pm, Entrevista Ricardo Atiliano (Data Engineer).  
+
+**Noviembre 2024:**  
+6/11 - 10:00-10:30am, Entrevista Luis Poleo (Java).  
+6/11 - 1:00-1:45pm, Entrevista Juan Pablo H. (Data Engineer).  
+7/11 - 5:30-6:00pm, Entrevista Rafael Moncada (Java).  
+14/11 - 11:30am-12:00pm, Entrevista Raúl Muñoz (Data Engineer).  
+
+**Diciembre 2024:**  
+3/12 - 9:00-9:30am, Entrevista Cristian Rojas (Data Engineer).  
+4/12 - 1:00-1:30pm, Entrevista Aldo Palma (Data Engineer).  
+6/12 - 8:30-9:00am, Entrevista Rodrigo Lozano (Data Engineer).  
+10/12 - 12:00-12:30pm, Entrevista Sebastián Rojas (Data Engineer).  
+10/12 - 4:30-5:00pm, Entrevista Sebastián Leiva (Data Engineer).  
+11/12 - 11:00-11:30am, Entrevista Jorge Hernández (Data Engineer).  
+13/12 - 2:30-3:00pm, Entrevista Nicolás Szoloch Barra (Data Engineer).  
+
+### Reuniones por mes:  
+- **Octubre:** 18 reuniones.  
+- **Noviembre:** 4 reuniones.  
+- **Diciembre:** 7 reuniones.  
+
+**Total:** 29 reuniones.

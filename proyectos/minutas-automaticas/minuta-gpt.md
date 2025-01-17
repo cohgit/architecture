@@ -9,8 +9,6 @@ Proceso : Grabacion de la reunion, transcripcion y evaluacion
 Output : Calificación segun la tabla de evaluación en la planilla compartida
 
 
-
-
 ```console
 ffmpeg -i "../grabaciones/Entrevista Técnica - Diego Cabezas Vásquez.m4a" -b:a 64k "../grabaciones/Entrevista Técnica - Diego Cabezas Vásquez_comprimido.m4a"
 
@@ -29,3 +27,5 @@ curl --request POST --url https://api.openai.com/v1/audio/transcriptions --heade
 
 ```
 
+
+export OPENAI_API_KEY="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"
