@@ -95,6 +95,10 @@ def evalua_entrevista(archivos):
                                             -Experiencia en Apache Airflow \
                                             -Experiencia en Git \
                                             -Experiencia en Dataflow \
+                                            -Conocimientos en Terraform \
+                                            -Conocimientos en Jenkins \
+                                            -Conocimientos en Matemáticas \
+                                            -Conocimientos en CI/CD \
                                             \
                                             con estos criterios de eveluacion: \
                                             \
