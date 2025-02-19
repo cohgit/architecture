@@ -85,5 +85,5 @@ R5CR50X9ZSK	device
 >adb shell input keyevent KEYCODE_HOME
 >scrcpy -s 192.168.1.91:5555
 
-### view phone
+### view S8
 >scrcpy -s 192.168.1.87:5555
